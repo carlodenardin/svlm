@@ -1,0 +1,10 @@
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [7, 34, 12], "output": "", "expected output": "34"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [15, 8, 5], "output": "", "expected output": "5"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [3, 33, 5212], "output": "", "expected output": "33"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [1259, 3, 52], "output": "", "expected output": "3"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [7919, -1, 12], "output": "", "expected output": "-1"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [3609, 1245, 583], "output": "", "expected output": "583"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [91, 56, 129], "output": "", "expected output": "129"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [6, 34, 1234], "output": "", "expected output": "1234"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [1, 2, 0], "output": "", "expected output": "0"}
+{"success": false, "error": "x_or_y() missing 2 required positional arguments: 'x' and 'y'", "input": [2, 2, 0], "output": "", "expected output": "2"}

@@ -1,0 +1,4 @@
+{"success": false, "error": "name 'math' is not defined", "input": 5, "output": "", "expected output": "[1, 2, 6, 24, 15]"}
+{"success": false, "error": "name 'math' is not defined", "input": 7, "output": "", "expected output": "[1, 2, 6, 24, 15, 720, 28]"}
+{"success": true, "error": "", "input": 1, "output": "[1]", "expected output": "[1]"}
+{"success": false, "error": "name 'math' is not defined", "input": 3, "output": "", "expected output": "[1, 2, 6]"}

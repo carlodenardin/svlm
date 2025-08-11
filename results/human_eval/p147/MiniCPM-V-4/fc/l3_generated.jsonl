@@ -1,0 +1,50 @@
+{"success": false, "error": "list index out of range", "input": 20, "output": "", "expected output": "321"}
+{"success": false, "error": "list index out of range", "input": 3, "output": "", "expected output": "0"}
+{"success": true, "error": "", "input": 0, "output": "0", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 23, "output": "", "expected output": "511"}
+{"success": false, "error": "list index out of range", "input": 8, "output": "", "expected output": "11"}
+{"success": false, "error": "list index out of range", "input": 7, "output": "", "expected output": "10"}
+{"success": false, "error": "list index out of range", "input": 7, "output": "", "expected output": "10"}
+{"success": false, "error": "list index out of range", "input": 4, "output": "", "expected output": "1"}
+{"success": false, "error": "list index out of range", "input": 23, "output": "", "expected output": "511"}
+{"success": false, "error": "list index out of range", "input": 3, "output": "", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 21, "output": "", "expected output": "399"}
+{"success": false, "error": "list index out of range", "input": 23, "output": "", "expected output": "511"}
+{"success": false, "error": "list index out of range", "input": 17, "output": "", "expected output": "185"}
+{"success": true, "error": "", "input": 2, "output": "0", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 18, "output": "", "expected output": "240"}
+{"success": false, "error": "list index out of range", "input": 13, "output": "", "expected output": "88"}
+{"success": true, "error": "", "input": 1, "output": "0", "expected output": "0"}
+{"success": true, "error": "", "input": 0, "output": "0", "expected output": "0"}
+{"success": true, "error": "", "input": 2, "output": "0", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 6, "output": "", "expected output": "4"}
+{"success": false, "error": "list index out of range", "input": 7, "output": "", "expected output": "10"}
+{"success": false, "error": "list index out of range", "input": 16, "output": "", "expected output": "175"}
+{"success": false, "error": "list index out of range", "input": 19, "output": "", "expected output": "306"}
+{"success": true, "error": "", "input": 0, "output": "0", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 17, "output": "", "expected output": "185"}
+{"success": false, "error": "list index out of range", "input": 6, "output": "", "expected output": "4"}
+{"success": false, "error": "list index out of range", "input": 22, "output": "", "expected output": "490"}
+{"success": false, "error": "list index out of range", "input": 20, "output": "", "expected output": "321"}
+{"success": false, "error": "list index out of range", "input": 22, "output": "", "expected output": "490"}
+{"success": false, "error": "list index out of range", "input": 17, "output": "", "expected output": "185"}
+{"success": false, "error": "list index out of range", "input": 13, "output": "", "expected output": "88"}
+{"success": false, "error": "list index out of range", "input": 7, "output": "", "expected output": "10"}
+{"success": false, "error": "list index out of range", "input": 14, "output": "", "expected output": "94"}
+{"success": false, "error": "list index out of range", "input": 18, "output": "", "expected output": "240"}
+{"success": false, "error": "list index out of range", "input": 8, "output": "", "expected output": "11"}
+{"success": false, "error": "list index out of range", "input": 25, "output": "", "expected output": "736"}
+{"success": true, "error": "", "input": 0, "output": "0", "expected output": "0"}
+{"success": false, "error": "list index out of range", "input": 24, "output": "", "expected output": "616"}
+{"success": false, "error": "list index out of range", "input": 25, "output": "", "expected output": "736"}
+{"success": false, "error": "list index out of range", "input": 5, "output": "", "expected output": "1"}
+{"success": false, "error": "list index out of range", "input": 22, "output": "", "expected output": "490"}
+{"success": false, "error": "list index out of range", "input": 13, "output": "", "expected output": "88"}
+{"success": false, "error": "list index out of range", "input": 10, "output": "", "expected output": "36"}
+{"success": false, "error": "list index out of range", "input": 8, "output": "", "expected output": "11"}
+{"success": false, "error": "list index out of range", "input": 4, "output": "", "expected output": "1"}
+{"success": false, "error": "list index out of range", "input": 6, "output": "", "expected output": "4"}
+{"success": false, "error": "list index out of range", "input": 24, "output": "", "expected output": "616"}
+{"success": false, "error": "list index out of range", "input": 10, "output": "", "expected output": "36"}
+{"success": false, "error": "list index out of range", "input": 3, "output": "", "expected output": "0"}
+{"success": true, "error": "", "input": 2, "output": "0", "expected output": "0"}
