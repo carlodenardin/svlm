@@ -1,9 +1,50 @@
-import gradio as gr
-import os
-import json
-import pandas as pd
 from ast import literal_eval
-import re # Importa il modulo per le espressioni regolari
+from src.utils.const import MODEL_MAP
+
+import contextlib
+import io
+import json
+import os
+import pynvml as nvml
+import re
+
+def get_css_style():
+    with open("src/ui/styles.css", "r") as f:
+        style = f.read()
+    
+    return style
+
+def get_gpu_info():
+    nvml.nvmlInit()
+    handle = nvml.nvmlDeviceGetHandleByIndex(0)
+    name = nvml.nvmlDeviceGetName(handle)
+    info = nvml.nvmlDeviceGetMemoryInfo(handle)
+    total_mem_mib = info.total // (1024 * 1024)
+    used_mem_mib = info.used // (1024 * 1024)
+    
+    return (
+        f"```\n"
+        f"Name: {name}\n"
+        f"Memory: {used_mem_mib} MiB / {total_mem_mib} MiB\n"
+        f"```"
+    )
+
+def run_python_code(code: str):
+    stdout_capture = io.StringIO()
+    with contextlib.redirect_stdout(stdout_capture):
+        try:
+            local_vars = {}
+            exec(code, {}, local_vars)
+            output = stdout_capture.getvalue()
+        except Exception as e:
+            output = f"An error occurred:\n{e}"
+    return output
+
+def update_link(model_name):
+    if model_name and model_name in MODEL_MAP:
+        model_id = MODEL_MAP[model_name]["model"]
+        return f'<a href="https://huggingface.co/{model_id}" target="_blank" style="text-decoration: none;">https://huggingface.co/{model_id}</a>'
+    return ""
 
 def _load_test_cases(file_path):
     """
@@ -123,135 +164,3 @@ def load_problem_data(p_name):
                                     data["TEST_RESULTS"][model][diagram][level][test_type] = results
 
     return data
-
-def _update_test_output(input_val, tests):
-    """
-    Callback generica per aggiornare l'output di un test.
-    """
-    if input_val == "Select Input":
-        return gr.update(value=""), gr.update(choices=["Select Input"] + [str(test['input']) for test in tests])
-
-    for test_case in tests:
-        if str(test_case['input']) == input_val:
-            output = str(test_case['output'])
-            new_choices = [str(test['input']) for test in tests]
-            return gr.update(value=output), gr.update(choices=new_choices)
-    
-    return gr.update(value="Output non trovato."), gr.update()
-
-def _create_interactive_test_block(tests, label):
-    """
-    Funzione ausiliaria che crea un blocco Gradio per i test interattivi.
-    """
-    test_inputs = [str(test['input']) for test in tests]
-    dropdown_choices = ["Select Input"] + test_inputs
-
-    with gr.Row():
-        test_input_dropdown = gr.Dropdown(
-            choices=dropdown_choices,
-            label=label,
-            value="Select Input",
-            interactive=True
-        )
-        test_output_box = gr.Textbox(label="Output")
-    
-    tests_state = gr.State(value=tests)
-    
-    test_input_dropdown.change(
-        fn=_update_test_output,
-        inputs=[test_input_dropdown, tests_state],
-        outputs=[test_output_box, test_input_dropdown]
-    )
-
-def _create_results_table_block(results, label):
-    """
-    Funzione ausiliaria per creare un blocco con la tabella dei risultati.
-    """
-    if not results:
-        gr.Markdown(f"Nessun risultato disponibile per i test **{label}**.")
-        return
-
-    df = pd.DataFrame(results)
-    
-    # Calcola il numero di test passati, falliti e la percentuale
-    num_tests = len(df)
-    num_passed = df['success'].sum()
-    num_failed = num_tests - num_passed
-    success_rate = f"{(num_passed / num_tests) * 100:.0f}%" if num_tests > 0 else "0%"
-
-    summary_text = f"{label} Test ({num_passed}/{num_tests} -> {success_rate})"
-    
-    def style_row_by_success(row):
-        color = 'green' if row['success'] else 'red'
-        return [f'color: {color};'] * len(row)
-
-    styled_df = df.style.apply(style_row_by_success, axis=1)
-
-    gr.Markdown(f"### {summary_text}")
-    gr.Dataframe(
-        value=styled_df,
-        interactive=False,
-    )
-
-def create_problem_accordion(p_name):
-    """
-    Genera un blocco Accordion per un problema specifico.
-    """
-    data = load_problem_data(p_name)
-    
-    with gr.Accordion(p_name, open=False):
-        with gr.Accordion("Definition", open=False):
-            with gr.Accordion("Problem", open=False):
-                gr.Code(
-                    language="python",
-                    value=data["PROBLEM_CODE"],
-                    interactive=False
-                )
-            with gr.Accordion("Solution", open=False):
-                gr.Code(
-                    language="python",
-                    value=data["SOLUTION_CODE"],
-                    interactive=False
-                )
-            with gr.Accordion("Unit Test (Official)", open=False):
-                _create_interactive_test_block(data["OFFICIAL_TESTS"], "Select Official Input")
-
-            with gr.Accordion("Unit Test (Generated)", open=False):
-                _create_interactive_test_block(data["GENERATED_TESTS"], "Select Generated Input")
-
-        with gr.Accordion("Dataset", open=False):
-            with gr.Accordion("Flowchart", open=False):
-                with gr.Row():
-                    for i, path in enumerate(data["FLOWCHART_PATHS"]):
-                        if os.path.exists(path):
-                            gr.Image(label=f"L{i+1}", value=path, show_label=True)
-                        else:
-                            gr.Markdown(f"Immagine L{i+1} non trovata.")
-            with gr.Accordion("BPMN", open=False):
-                with gr.Row():
-                    for i, path in enumerate(data["BPMN_PATHS"]):
-                        if os.path.exists(path):
-                            gr.Image(label=f"L{i+1}", value=path, show_label=True)
-                        else:
-                            gr.Markdown(f"Immagine L{i+1} non trovata.")
-            with gr.Accordion("Block Diagram", open=False):
-                with gr.Row():
-                    for i, path in enumerate(data["BLOCK_DIAGRAM_PATHS"]):
-                        if os.path.exists(path):
-                            gr.Image(label=f"L{i+1}", value=path, show_label=True)
-                        else:
-                            gr.Markdown(f"Immagine L{i+1} non trovata.")
-        
-        with gr.Accordion("Results", open=False):
-            for model, diagrams in data["TEST_RESULTS"].items():
-                with gr.Accordion(model.upper(), open=False):
-                    for diagram, levels in diagrams.items():
-                        with gr.Accordion(diagram.upper(), open=False):
-                            sorted_levels = sorted(levels.keys())
-                            for level in sorted_levels:
-                                results = levels[level]
-                                with gr.Accordion(level.upper(), open=False):
-                                    if "official" in results:
-                                        _create_results_table_block(results["official"], "Official")
-                                    if "generated" in results:
-                                        _create_results_table_block(results["generated"], "Generated")

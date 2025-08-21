@@ -76,28 +76,23 @@ def _load_generated_code(file_path):
             return f.read()
     return ""
 
-def load_problem_data(p_name):
+def load_problem_data(problem):
     """
-    Load all data related to a specific problem, including dynamic results and generated code for all models.
+        Load all the dataset related to a specifc problem:
+        1a. Load diagram paths (flowchart 3 levels, BPMN 3 levels, block 1 level)
+        1b. Load test case (official and generated)
     """
-    base_path = f"problems/human_eval/{p_name}"
-    results_base_path = f"results/human_eval/{p_name}"
+    results_base_path = f"results/human_eval/{problem}"
     data = {}
-    
-    # Load problem and solution code
-    with open(os.path.join(base_path, "problem.py"), "r") as f:
-        data["PROBLEM_CODE"] = f.read()
-    with open(os.path.join(base_path, "solution.py"), "r") as f:
-        data["SOLUTION_CODE"] = f.read()
         
-    # Load diagram paths
-    data["FLOWCHART_PATHS"] = [f"data/human_eval/{p_name}/fc/l{i}.drawio.png" for i in range(1, 4)]
-    data["BPMN_PATHS"] = [f"data/human_eval/{p_name}/bpmn/l{i}.drawio.png" for i in range(1, 4)]
-    data["BLOCK_DIAGRAM_PATHS"] = [f"data/human_eval/{p_name}/block/l1.drawio.png"]
+    # 1a. Load Diagram paths
+    data["FLOWCHART_PATHS"] = [f"data/human_eval/{problem}/fc/l{i}.drawio.png" for i in range(1, 4)]
+    data["BPMN_PATHS"] = [f"data/human_eval/{problem}/bpmn/l{i}.drawio.png" for i in range(1, 4)]
+    data["BLOCK_DIAGRAM_PATHS"] = [f"data/human_eval/{problem}/block/l1.drawio.png"]
     
-    # Load test cases
-    data["OFFICIAL_TESTS"] = _load_test_cases(f"problems/human_eval/{p_name}/official.jsonl")
-    data["GENERATED_TESTS"] = _load_test_cases(f"problems/human_eval/{p_name}/generated.jsonl")
+    # 1b. Load test cases
+    data["OFFICIAL_TESTS"] = _load_test_cases(f"problems/human_eval/{problem}/official.jsonl")
+    data["GENERATED_TESTS"] = _load_test_cases(f"problems/human_eval/{problem}/generated.jsonl")
     
     # Load results and generated code for all models
     data["TEST_RESULTS"] = {}
@@ -134,9 +129,6 @@ def load_problem_data(p_name):
     return data
 
 def get_available_problems():
-    """
-    Retrieve a sorted list of available problem directories.
-    """
     problems_path = "problems/human_eval"
     if not os.path.exists(problems_path):
         return []

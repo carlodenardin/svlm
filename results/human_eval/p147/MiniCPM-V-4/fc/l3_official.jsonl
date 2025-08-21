@@ -1,4 +1,0 @@
-{"success": false, "error": "list index out of range", "input": 5, "output": "", "expected output": "1"}
-{"success": false, "error": "list index out of range", "input": 6, "output": "", "expected output": "4"}
-{"success": false, "error": "list index out of range", "input": 10, "output": "", "expected output": "36"}
-{"success": false, "error": "list index out of range", "input": 100, "output": "", "expected output": "53361"}
