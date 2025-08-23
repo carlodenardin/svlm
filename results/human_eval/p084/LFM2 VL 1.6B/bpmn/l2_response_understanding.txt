@@ -1,0 +1,54 @@
+### Algorithm Overview
+
+The algorithm is designed to perform the following tasks:
+
+1. **Receive an integer number**: The algorithm starts by receiving an integer number from the user.
+2. **Initialize two variables**: It initializes two variables, `sum` and `res`, to zero.
+3. **Compute and allocate the sum**: The algorithm computes the sum of the digits of the integer number and allocates this sum to the variable `res`.
+4. **Convert the sum to binary**: The algorithm converts the sum to binary representation.
+5. **Save the binary sum in the res variable**: The binary sum is stored in the variable `res`.
+6. **Return the variable res**: Finally, the algorithm returns the value stored in `res`.
+
+### Input Data
+
+- **Integer number**: The input to the algorithm is an integer number.
+
+### Main Logical Flow
+
+1. **Receive the integer number**: The algorithm begins by receiving an integer number from the user.
+2. **Initialize two variables**: It initializes two variables, `sum` and `res`, to zero.
+3. **Compute and allocate the sum**: The algorithm computes the sum of the digits of the integer number and allocates this sum to the variable `res`.
+4. **Convert the sum to binary**: The algorithm converts the sum to binary representation.
+5. **Save the binary sum in the res variable**: The binary sum is stored in the variable `res`.
+6. **Return the variable res**: Finally, the algorithm returns the value stored in `res`.
+
+### Expected Output
+
+- **Binary sum**: The algorithm returns the binary sum of the input integer number.
+
+### Implementation
+
+Here is the implementation of the algorithm in Python:
+
+```python
+def receive_integer():
+    # Receive the integer number from the user
+    number = int(input("Enter an integer number: "))
+    return number
+
+def initialize_variables():
+    # Initialize two variables, sum and res, to zero
+    sum = 0
+    res = 0
+
+def compute_sum():
+    # Compute the sum of the digits of the integer number
+    while number > 0:
+        digit = number % 10
+        sum += digit
+        number //= 10
+    return sum
+
+def convert_to_binary():
+    # Convert the sum to binary representation
+    binary = bin(sum

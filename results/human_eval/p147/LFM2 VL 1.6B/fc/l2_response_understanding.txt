@@ -1,0 +1,15 @@
+Overview:
+The algorithm is designed to count the number of distinct triplets in a vector of dimension n. It iterates over each triple of elements in the vector, checks if they are distinct, and increments a counter if they are.
+
+Input Data:
+The input data required is a vector of n integers, denoted as A = [a1, a2,..., an], where 1 ≤ i ≤ n and a_i ∈ ℝ.
+
+Main Logical Flow:
+1. Initialize a counter variable to 0.
+2. Iterate over each triple (a1, a2, a3) in the vector A.
+3. Check if the triple (a1, a2, a3) is distinct by comparing it with all other triplets in A.
+4. If the triple is distinct, increment the counter by 1.
+5. After iterating over all triplets, return the counter value.
+
+Expected Output:
+The expected output is the count of distinct triplets in the vector A.

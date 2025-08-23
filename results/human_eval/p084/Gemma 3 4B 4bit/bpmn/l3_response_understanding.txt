@@ -1,0 +1,42 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+The algorithm appears to calculate a result based on an integer input, `n`. It seems to be related to calculating a value based on the digits of `n` and potentially some modular arithmetic.  The algorithm iteratively modifies the `sum` and `res` variables until a condition is met, ultimately returning a value.
+
+**2. Input Data**
+
+*   **Input:** An integer number, `n`.
+
+**3. Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `sum = 0` (Initialize a variable `sum` to 0)
+    *   `res = ""` (Initialize a variable `res` to an empty string)
+
+2.  **Loop:** The algorithm enters a `while` loop that continues as long as `n` is greater than 0.
+
+3.  **Decision:**
+    *   `n > 0?` (Check if `n` is greater than 0)
+        *   If `n` is greater than 0:
+            *   `sum += n % 10` (Add the last digit of `n` to `sum`)
+            *   `n = n // 10` (Integer division of `n` by 10, effectively removing the last digit)
+            *   `r = sum % 2` (Calculate the remainder when `sum` is divided by 2)
+            *   `sum = sum // 2` (Integer division of `sum` by 2)
+            *   `res += str(r)` (Append the string representation of `r` to `res`)
+
+4.  **Decision:**
+    *   `sum > 0?` (Check if `sum` is greater than 0)
+        *   If `sum` is greater than 0:
+            *   The loop continues.
+
+5.  **Output:**
+    *   `Return the res variable` (The algorithm returns the value of the `res` variable).
+
+**4. Expected Output**
+
+The algorithm will return a string.  The string `res` will contain the concatenated string representations of the remainders calculated in the loop.  The exact value of `res` depends on the initial value of `n`.
+
+**Example:**
+
+Let

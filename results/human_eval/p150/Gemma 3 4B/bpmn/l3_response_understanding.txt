@@ -1,0 +1,35 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm appears to be designed to determine the smallest integer among three input integers (n, x, and y) based on specific conditions related to the square root and modulo operations.
+
+**2. Input Data Required**
+
+The algorithm requires three integer inputs:
+
+*   `n`: An integer.
+*   `x`: An integer.
+*   `y`: An integer.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+Here's a detailed breakdown of the algorithm's logic:
+
+1.  **Initialization:** The algorithm starts with an empty state.
+2.  **Input:** The algorithm receives the three integer inputs `n`, `x`, and `y`.
+3.  **Check if n is 1:** It first checks if `n` is equal to 1.
+    *   **If `n` is 1:** The algorithm returns `y`.
+    *   **If `n` is not 1:** The algorithm proceeds to the next step.
+4.  **Initialize i:**  A variable `i` is initialized to 2. This variable will be used in the loop.
+5.  **Check if i < sqrt(n):** The algorithm calculates the square root of `n` and checks if `i` (which is initially 2) is less than the square root of `n`.
+    *   **If `i < sqrt(n)`:** The algorithm returns `x`.
+    *   **If `i >= sqrt(n)`:** The algorithm proceeds to the next step.
+6.  **Check if i % n == 0:** The algorithm checks if the remainder of `i` divided by `n` is equal to 0.
+    *   **If `i % n == 0`:** The algorithm returns `y`.
+    *   **If `i % n != 0`:** The algorithm increases `i` by 1 (i.e., `i = i + 1`).
+7.  **Loop:** The algorithm returns to step 5 and repeats the checks until `i` becomes greater than or equal to `sqrt(n)` and `i % n != 0`.
+
+**4. Expected Output**
+
+The algorithm will return one of the following values:

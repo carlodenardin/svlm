@@ -1,0 +1,39 @@
+:  <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> 
+You are a software engineer. Given an image of a flowchart, describe the algorithm's implementation using a step-by-step process. Your response should include:
+- A brief overview of the algorithm's purpose.
+- The input data required.
+- The main logical flow, detailing decisions, loops, and function calls.
+- The expected output.
+Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts a simple algorithm for solving a quadratic equation. The purpose of the algorithm is to find the roots of a quadratic equation using the quadratic formula.
+
+The input data required is the quadratic equation in the form ax^2 + bx + c = 0.
+
+The main logical flow of the algorithm involves the following steps:
+
+1. Calculate the values of a, b, and c using the quadratic formula.
+2. Check if the discriminant (b^2 - 4ac) is positive, negative, or zero.
+3. If the discriminant is positive, the roots are real and can be found using the quadratic formula.
+4. If the discriminant is negative, the roots are complex and can be found using the imaginary unit i.
+5. If the discriminant is zero, the roots are real and can be found using the quadratic formula.
+
+The expected output is the two real or complex roots of the quadratic equation.
+
+Here is a step-by-step implementation of the algorithm:
+```python
+def solve_quadratic(a, b, c):
+    # Calculate the values of a, b, and c using the quadratic formula
+    d = b**2 - 4*a*c
+    if d > 0:
+        # The roots are real
+        x1, x2 = (-b + d**0.5) / (2*a), (-b - d**0.5) / (2*a)
+        return x1, x2
+    elif d == 0:
+        # The roots are real
+        x1, x2 = (-b + d**0.5) / (2*a), (-b - d**0.5) / (2*a)
+        return x1, x2
+    elif d < 0:
+        # The roots are complex
+        x1, x2 = (-b + d**0.5) / (2*a) + 1j*(-b - d**0.5) / (2*a), (-b - d**0.5) / (2*a) + 1j*(-b + d**0.5) / (2*a)
+        return x1, x2
+```
+This implementation of the algorithm can be used to find the roots

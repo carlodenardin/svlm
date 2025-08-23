@@ -1,0 +1,3 @@
+def sort_integers(integers):
+    sorted_integers = sorted(integers)
+    return sorted_integers

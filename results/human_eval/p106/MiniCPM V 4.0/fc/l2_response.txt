@@ -1,0 +1,15 @@
+```python
+```python
+def generate_res(n):
+    res = []
+    i = 1
+    while i <= n:
+        if i % 2 == 0:
+            res.append(i)
+        else:
+            res.append(i)
+        i += 1
+    return res
+```
+```python
+```

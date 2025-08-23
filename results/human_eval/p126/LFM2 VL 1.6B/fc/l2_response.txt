@@ -1,0 +1,5 @@
+def check_numbers(lst):
+    for i in lst:
+        if i < i + 1:
+            return True
+    return False

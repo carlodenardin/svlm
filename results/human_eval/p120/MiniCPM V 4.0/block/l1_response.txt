@@ -1,0 +1,6 @@
+```python
+```python
+def sort_and_return_last(lst, k):
+    lst.sort()
+    return lst[-k:]
+```

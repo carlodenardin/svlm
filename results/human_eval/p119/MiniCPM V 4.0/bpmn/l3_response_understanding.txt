@@ -1,0 +1,25 @@
+The flowchart represents an algorithm designed to check if a given string is composed of two concatenated strings. Here's the step-by-step process for implementation:
+
+### Purpose:
+The primary purpose of this algorithm is to determine whether a provided string can be split into exactly two substrings by concatenating them together in different orders and checking their equality with the original input string.
+
+### Input Data Required:
+1. A list containing two strings.
+2. The function `check_string(s)` which will perform the checks on individual characters.
+
+### Main Logical Flow:
+1. **Receive the List**: Start by receiving the list consisting of two strings.
+2. **Concatenate Strings**: Concatenate these two strings together.
+3. **Initialize Variables**: Set up initial variables, such as `c1` and `c2`, representing potential combinations of the concatenated strings.
+4. **Check Combinations**: Use the function `check_string(s)` to compare each combination (`c1` or `c2`) against the concatenated result from step 2.
+5. **Decision Points**:
+   - If either `c1` or `c2` matches the concatenated string, return "Yes".
+   - Otherwise, continue looping through other possible combinations until all possibilities are checked.
+6. **Loop Through Characters**: For any remaining unchecked substring after combining, iterate over its characters using the `check_string(s)` function.
+7. **Update Indices**: Increment indices based on character comparisons within the current substring.
+8. **Final Decision**: If no valid combination returns true, conclude that there is no match and return "False".
+
+### Expected Output:
+- The output will be either "Yes" if the input string is formed by concatenating two specified strings, or "False" otherwise.
+
+This structured approach ensures thorough examination of all possible ways to form the target string from smaller parts, making it robust for various testing scenarios.

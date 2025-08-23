@@ -1,0 +1,1 @@
+i will generate a code that does the following function : add n integers from 1 to n , and return the sum .

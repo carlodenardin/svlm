@@ -1,0 +1,29 @@
+The flowchart outlines an algorithm designed to receive a list of integers and an integer \( k \) as input, sort the list, and return the last \( k \) elements. Here’s a detailed step-by-step implementation:
+
+1. **Input Data**: 
+   - Receive a list of integers (`lst`).
+   - Receive an integer `k` indicating how many elements from the end should be returned.
+
+2. **Main Logical Flow**:
+   - **Sorting the List**: Use a sorting function or method (e.g., Python's `sorted()` or built-in sort methods) to arrange the list in ascending order. This ensures that the subsequent selection is based on the sorted sequence.
+   - **Return Last k Elements**: After sorting, access the last \( k \) elements of the sorted list directly since they will naturally occupy the highest indices.
+
+3. **Expected Output**:
+   - Return the sublist containing the last \( k \) elements of the original list after it has been sorted.
+
+### Pseudocode Implementation:
+```plaintext
+function getLastKElements(lst, k):
+    # Step 1: Sort the list in ascending order
+    sorted_lst = sorted(lst)
+    
+    # Step 2: Return the last k elements
+    return sorted_lst[-k:]
+```
+
+### Example:
+Given a list `[5, 2, 8, 12, 3]` and \( k = 3 \):
+1. The list is sorted: `[2, 3, 5, 8, 12]`.
+2. The last three elements are selected: `[8, 12, 3]`.
+
+Thus, the output would be `[8, 12, 3]`.

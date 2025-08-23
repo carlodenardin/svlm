@@ -1,0 +1,59 @@
+### Algorithm Overview
+
+**Purpose:**  
+This algorithm counts how many numbers in a given list of integers have a sum of their digits greater than zero.
+
+---
+
+**Input Data Required:**  
+- A list of integers (e.g., `[10, -5, 0, 23]`).
+
+---
+
+**Step-by-Step Logical Flow:**
+
+1. **Start**
+2. **Input:** Read or receive a list of integers.
+3. **Initialize a counter** (e.g., `count = 0`).
+4. **Loop** over each value in the list:
+    1. For each integer, calculate the sum of its digits (consider the absolute value if negative).
+    2. **Decision:** If the sum of digits is greater than 0:
+        - **Increment** the counter by 1 (`count += 1`).
+5. **After the loop**, return the counter value.
+
+---
+
+**Expected Output:**  
+- An integer representing how many numbers in the list have a sum of digits greater than zero.
+
+---
+
+### **Example Implementation (Python)**
+```python
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(abs(n)))
+
+def count_numbers_with_positive_digit_sum(lst):
+    count = 0
+    for num in lst:
+        if sum_of_digits(num) > 0:
+            count += 1
+    return count
+
+# Example usage:
+numbers = [10, -5, 0, 23]
+result = count_numbers_with_positive_digit_sum(numbers)
+print(result)  # Output: 3
+```
+
+---
+
+**Summary Table:**
+
+| Step                   | Action                                              |
+|------------------------|-----------------------------------------------------|
+| Input                  | List of integers                                    |
+| Process                | For each number, sum digits, check if > 0           |
+| Output                 | Count of numbers with digit sum > 0                 |
+
+Ready for implementation!

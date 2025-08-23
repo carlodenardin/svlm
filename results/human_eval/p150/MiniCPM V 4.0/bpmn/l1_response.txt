@@ -1,0 +1,7 @@
+```python
+def process_input(n, x, y):
+    if is_prime(n):
+        return x
+    else:
+        return y
+```

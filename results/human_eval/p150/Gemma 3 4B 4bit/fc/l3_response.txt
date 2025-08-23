@@ -1,0 +1,23 @@
+```python
+def algorithm(n):
+    """
+    This function implements the algorithm described in the flowchart.
+
+    Args:
+        n: An integer.
+
+    Returns:
+        x: If the algorithm terminates with x.
+    """
+    if n == 1:
+        return
+
+    i = 2
+    while i < int(n**0.5):
+        if n % i == 0:
+            return x
+        i += 1
+    if n % i == 0:
+        return x
+    return
+```

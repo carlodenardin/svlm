@@ -1,0 +1,24 @@
+```python
+def product_of_even_digits(n):
+    # Check if there are any odd digits in n
+    temp = abs(n)
+    has_odd_digit = False
+    if temp == 0:
+        has_odd_digit = not (0 % 2 == 0)
+    while temp > 0:
+        if (temp % 10) % 2 != 0:
+            has_odd_digit = True
+            break
+        temp //= 10
+    if not has_odd_digit:
+        return 0
+
+    product = 1
+    n = abs(n)
+    while n > 0:
+        d = n % 10
+        if d % 2 == 0:
+            product *= d
+        n //= 10
+    return product
+```

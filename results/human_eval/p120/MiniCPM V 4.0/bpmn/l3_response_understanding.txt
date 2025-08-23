@@ -1,0 +1,9 @@
+The flowchart represents an algorithm designed to sort a list of integers and then return the last element from the sorted list. Here's a step-by-step description:
+
+1. **Start**: The process begins at the start node.
+2. **Receive input**: The first action is to receive a list of integers and a variable `k` as input data.
+3. **Sorting**: Utilize Python's built-in function `list.sort()` to sort the provided list in ascending order.
+4. **Extract last element**: After sorting, retrieve the last element from the sorted list using `list[-k:]`. This extracts elements starting from the end of the list up to but not including the index specified by `k`.
+5. **End**: The process concludes here, returning the extracted last element.
+
+This implementation efficiently sorts a sublist defined by `k` positions from the end of the original list and returns that portion.

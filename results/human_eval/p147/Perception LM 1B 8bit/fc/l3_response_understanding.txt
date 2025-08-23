@@ -1,0 +1,58 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+
+The algorithm is designed to calculate the sum of all elements in a given array. It iterates through the array, performing a specific operation on each element and accumulating the results.
+
+### Input Data
+
+*   The input data is an array of integers, where each element represents the value of an element in the array.
+*   The array is represented as a list or array in the programming language.
+
+### Main Logical Flow
+
+#### Step 1: Initialize Variables
+
+*   `n`: The number of elements in the array.
+*   `i`: The current index of the current element.
+*   `a`: The current element being processed.
+*   `count`: A counter variable to keep track of the sum of the elements.
+
+#### Step 2: Process Each Element
+
+*   For each element `a[i]` in the array:
+    *   Calculate the sum of all elements in the array using the formula `sum = a[i-1] + a[i]`.
+    *   Update the `count` variable by adding the sum of all elements in the array.
+    *   Increment the `i` variable to move to the next element in the array.
+
+#### Step 3: Handle Edge Cases
+
+*   If the current index `i` is less than the length of the array `len(a)`, it means the end of the array has been reached, and the algorithm returns without processing any more elements.
+*   If the current index `i` is greater than the length of the array `len(a)`, it means the end of the array has been reached, and the algorithm returns without processing any more elements.
+
+#### Step 4: Return the Sum
+
+*   After processing all elements in the array, the algorithm returns the sum of all elements in the array.
+
+### Example Use Case
+
+Suppose we have the following array: `[1, 2, 3, 4, 5]`.
+*   The algorithm will iterate through the array, calculating the sum of each element and accumulating the results.
+*   The final sum will be `1 + 2 + 3 + 4 + 5 = 15`.
+
+### Code Implementation
+
+```python
+def calculate_sum(arr):
+    """
+    Calculate the sum of all elements in a given array.
+
+    Args:
+        arr (list): The input array of integers.
+
+    Returns:
+        int: The sum of all elements in the array.
+    """
+    n = len(arr)
+   

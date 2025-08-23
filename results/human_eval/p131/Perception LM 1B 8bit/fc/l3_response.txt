@@ -1,0 +1,24 @@
+def calculate_product(n):
+    if n == 0:
+        return 0
+    else:
+        product = 1
+        odd_flag = 0
+        while n > 0:
+            if n % 2 == 0:
+                product *= n
+            n //= 2
+            odd_flag *= 2
+        if odd_flag!= 0:
+            product *= n
+        return product
+
+def main():
+    n = int(input("Enter a number: "))
+    if n == 0:
+        print("Error: Input must be a positive integer.")
+    else:
+        print("The product of the number is:", calculate_product(n))
+
+if __name__ == "__main__":
+    main()

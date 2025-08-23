@@ -1,0 +1,27 @@
+The algorithm's purpose is to calculate the value of a given integer n by repeatedly dividing it by 2 until it becomes 1. The input data required is the integer n. The main logical flow is as follows:
+
+1. Initialize a variable `counter` to 0.
+2. Initialize a variable `result` to 0.
+3. While `counter` is less than or equal to n:
+   a. Divide `counter` by 2.
+   b. If `result` is 0, return `counter` as the result.
+   c. If `result` is not 0, increment `counter` by 1.
+   d. If `counter` is not 1, increment `result` by 1.
+   e. If `counter` is not 1, increment `result` by 1.
+   f. If `counter` is not 1, increment `counter` by 1.
+   g. If `counter` is not 1, increment `counter` by 1.
+   h. If `counter` is not 1, increment `counter` by 1.
+   i. If `counter` is not 1, increment `counter` by 1.
+   j. If `counter` is not 1, increment `counter` by 1.
+   k. If `counter` is not 1, increment `counter` by 1.
+   l. If `counter` is not 1, increment `counter` by 1.
+   m. If `counter` is not 1, increment `counter` by 1.
+   n. If `counter` is not 1, increment `counter` by 1.
+   o. If `counter` is not 1, increment `counter` by 1.
+   p. If `counter` is not 1, increment `counter` by 1.
+   r. If `counter` is not 1, increment `counter` by 1.
+   s. If `counter` is not 1, increment `counter` by 1.
+   t. If `counter` is not 1, increment `counter` by 1.
+   u. If `counter` is not 1, increment `counter` by 1.
+   v. If `counter` is not 1, increment `counter` by 1.
+   w. If `counter` is not 1, increment `counter` by 

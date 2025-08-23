@@ -1,0 +1,11 @@
+```python
+def check_numbers(numbers):
+    for i in range(len(numbers)):
+        if numbers[i] == 0:
+            return False
+        elif numbers[i] == 1:
+            return False
+        else:
+            return True
+    return True
+```

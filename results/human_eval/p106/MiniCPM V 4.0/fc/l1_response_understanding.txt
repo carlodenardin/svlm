@@ -1,0 +1,28 @@
+The algorithm depicted in the flowchart is designed to calculate a specific mathematical result based on an integer input. Here's a step-by-step description of its implementation:
+
+### Purpose:
+The purpose of this algorithm is to compute either the product or sum of all integers from 1 to a given number \( n \), depending on whether \( n \) is even or odd.
+
+### Input Data:
+- **Input**: An integer \( n \) representing the upper limit for the range of numbers to be considered.
+
+### Main Logical Flow:
+1. **Start**: The process begins here.
+2. **Input n as Integer**: Take the user input for the value of \( n \).
+3. **Initialize the Result List and Counter**: Create an empty list to store results and initialize a counter variable.
+4. **Check Condition \( i < n \)**: Determine if the current iteration index \( i \) is less than \( n \).
+   - If **YES**: Proceed to check if \( i \) is even.
+     - **If i is Even**: Calculate the product of numbers from 1 to \( i \) using nested loops or a built-in function like `math.prod()` (Python).
+     - **Otherwise**: Calculate the sum of numbers from 1 to \( i \) using another loop.
+   - After performing the calculation, add the computed value to the result list and increment the counter.
+   - Go back to checking condition \( i < n \).
+   - If **NO**: Move directly to outputting the final result.
+5. **Output Result**: Display the contents of the result list along with the total count of iterations performed.
+6. **End**: The process concludes here.
+
+### Expected Output:
+The expected output will be two values separated by a newline character:
+- The calculated result (either the product or sum of numbers up to \( n \)).
+- The total number of elements processed during the computation.
+
+This structured approach ensures clarity and efficiency in implementing the required calculations.

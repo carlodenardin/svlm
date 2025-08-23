@@ -1,0 +1,27 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to count the number of "triples" within a vector (array) of integers. A "triple" is defined as a set of three elements (i, j, k) where i < j < k, and all three elements are equal to 1.  Essentially, it's counting the number of triplets (i, j, k) such that 1 <= i < j < k <= n, and all three elements are equal to 1.
+
+**2. Input Data Required**
+
+*   **n:** An integer representing the size (dimension) of the vector.
+*   **vector:** A vector (array) of integers of size 'n'.  The vector is assumed to be initialized with values according to the rule A[i] = 1 if i <= n, and 0 otherwise.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   Create a vector (array) named `vector` of size `n`.
+    *   Initialize all elements of the `vector` to 1. This is done using the rule: `vector[i] = 1` for all `i` from 0 to `n-1`.
+
+2.  **Triple Counting Loop:**
+    *   Initialize a counter variable `count` to 0.
+    *   Enter a `while` loop that continues as long as there are any triples left to check.
+    *   Inside the loop:
+        *   Iterate through all possible triples (i, j, k) where `1 <= i < j < k <= n`.  This is done using nested loops:
+            *   The outer loop iterates from `i = 1` to `n-2`.
+            *   The middle loop iterates from `j = i + 1` to `n-1`.
+            *   The inner loop iterates from `k = j + 1` to `n`.
+        *   For each triple (i, j, k), check if `vector[i] == 1`, `vector[j] == 1`, and `vector[k] == 1`.
+        *   If all three elements are equal to 1, increment the `count`

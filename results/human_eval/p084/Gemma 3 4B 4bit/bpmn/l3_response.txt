@@ -1,0 +1,21 @@
+```python
+def calculate_result(n):
+    """
+    Calculates a result based on the input integer n.
+
+    Args:
+        n: An integer.
+
+    Returns:
+        The result of the calculation.
+    """
+    sum = 0
+    res = ""
+    while n > 0:
+        r = sum % 2
+        sum = sum // 10
+        sum += str(r)
+        n = n // 10
+        res += str(r)
+    return res
+```

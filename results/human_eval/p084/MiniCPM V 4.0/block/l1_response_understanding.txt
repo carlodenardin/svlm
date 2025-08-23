@@ -1,0 +1,11 @@
+The algorithm depicted in the flowchart aims to convert an integer input into a binary string representation. Here’s a step-by-step implementation of this process:
+
+1. **Input**: Receive an integer as input, ensuring it falls within the range 0 ≤ n ≤ n. This means the input should be a non-negative integer less than or equal to a specified maximum value (not shown in the image).
+
+2. **Sum the Digits**: Calculate the sum of all digits in the given integer. For example, if the input is 37, the sum of its digits would be 3 + 7 = 10.
+
+3. **Convert into Binary**: Convert the resulting sum from step 2 into binary format. This involves repeatedly dividing the number by 2 and recording the remainders. The remainder values will form the binary digits when read from bottom to top. Continuing with the previous example, converting 10 into binary results in 1010.
+
+4. **Return Result as a String**: Finally, return the binary result as a string. Thus, for our example where the sum was 10, the output would be "1010".
+
+This logical sequence ensures that any positive integer input can be accurately transformed into its corresponding binary equivalent through clear steps involving summation, conversion, and formatting.

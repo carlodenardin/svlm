@@ -1,0 +1,9 @@
+```python
+def count_positive_digit_sums(input_list):
+    count = 0
+    for num in input_list:
+        sum_digits = sum(int(digit) for digit in str(num))
+        if sum_digits > 0:
+            count += 1
+    return count
+```

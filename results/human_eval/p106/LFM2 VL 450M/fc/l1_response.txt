@@ -1,0 +1,13 @@
+```python
+def calculate_result(numbers):
+    if not numbers:
+        return 0
+    else:
+        result = 1
+        for i in range(1, len(numbers)):
+            if numbers[i] % 2 == 0:
+                result *= 2
+            else:
+                result *= 4
+        return result
+```

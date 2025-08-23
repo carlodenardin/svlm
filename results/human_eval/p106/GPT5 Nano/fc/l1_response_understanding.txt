@@ -1,0 +1,78 @@
+Certainly! Here’s how you would describe and implement the algorithm shown in the flowchart:
+
+---
+
+### **Algorithm Overview**
+This algorithm generates a list based on iterating numbers from 1 to **n-1**. For each number **i**:
+- If **i** is even, it calculates the product of all numbers from 1 to **i** (i.e., factorial of **i**).
+- If **i** is odd, it calculates the sum of all numbers from 1 to **i**.
+Each computed value is added to a result list, which is returned at the end.
+
+---
+
+### **1. Input Data Required**
+- A single integer `n`, where `n > 0`.
+
+---
+
+### **2. Main Logical Flow**
+1. **Start.**
+2. **Input n** as an integer.
+3. **Initialize** an empty list called `result` and set a counter `i = 1`.
+4. **Loop while** `i < n`:
+    - **Decision:** Is `i` even or odd?
+      - **If `i` is even:**  
+         - Calculate `product = 1 * 2 * ... * i` (factorial of `i`).
+         - Append `product` to `result` list.
+      - **If `i` is odd:**  
+         - Calculate `sum = 1 + 2 + ... + i`.
+         - Append `sum` to `result` list.
+    - Increment `i` by 1.
+5. **After loop ends:**  
+   - Output or return the `result` list as the final result.
+
+---
+
+### **3. Step-by-Step Outline (Pseudocode)**
+
+```plaintext
+Input: n as integer
+Initialize result as empty list
+Initialize i = 1
+
+While i < n:
+    If i % 2 == 0:
+        // i is even, calculate factorial
+        value = 1
+        for j in range(1, i+1):
+            value *= j
+    Else:
+        // i is odd, calculate sum
+        value = 0
+        for j in range(1, i+1):
+            value += j
+    Append value to result
+    Increment i by 1
+
+Output result
+```
+
+---
+
+### **4. Expected Output**
+- A list of integers, each corresponding to:
+    - The sum (for odd i) or
+    - The factorial (for even i)  
+  for each `i` from 1 to `n-1`.
+
+**Example:**  
+If `n = 5`,  
+- i = 1 (odd): sum(1) = 1  
+- i = 2 (even): product(1,2) = 2  
+- i = 3 (odd): sum(1,2,3) = 6  
+- i = 4 (even): product(1,2,3,4) = 24  
+**Output:** `[1, 2, 6, 24]`
+
+---
+
+**Ready for implementation in a programming language of your choice.**

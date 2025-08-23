@@ -1,0 +1,66 @@
+```python
+def process_list(list):
+    res = 0
+    if list[0] == '0':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if list[0] == '1':
+        res = 1
+    if

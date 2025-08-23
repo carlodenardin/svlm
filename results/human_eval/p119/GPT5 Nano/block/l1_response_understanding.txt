@@ -1,0 +1,92 @@
+Certainly! Here’s a clear breakdown for implementing the algorithm depicted in the flowchart:
+
+---
+
+### 1. **Algorithm Overview**
+
+The algorithm checks if **at least one concatenation** of two given strings results in a **balanced parenthesis string**. "Balanced" means every '(' has a matching ')', and no ')' appears before its matching '('.
+
+---
+
+### 2. **Input Data Required**
+
+- **A list of two strings**, e.g.: `["string1", "string2"]`
+- Each string contains only parentheses characters `(` and `)`.
+
+---
+
+### 3. **Main Logical Flow**
+
+#### Step 1: Receive Input
+
+- Input: `strings` → a list with 2 string elements.
+
+#### Step 2: Concatenate in Both Orders
+
+- `combo1 = strings[0] + strings[1]`
+- `combo2 = strings[1] + strings[0]`
+
+#### Step 3: Check Each Combination for Balance
+
+Define a function `is_balanced(s)`:
+
+- Initialize a `balance` counter to 0.
+- Loop over each `char` in `s`:
+  - If `char == '('`: increment `balance`.
+  - If `char == ')'`: decrement `balance`.
+    - If `balance` becomes negative at any point: return `False` immediately (there are more closing than opening brackets).
+- After the loop: if `balance` is 0, return `True` (fully balanced), else `False`.
+
+#### Step 4: Evaluate Both Combinations
+
+- If **either** `is_balanced(combo1)` **or** `is_balanced(combo2)` returns `True`:
+  - **Output**: `'Yes'`
+- Otherwise:
+  - **Output**: `'No'`
+
+---
+
+### 4. **Expected Output**
+
+- **"Yes"** if at least one concatenated combination is balanced.
+- **"No"** if both concatenated combinations are unbalanced.
+
+---
+
+## **Implementation Skeleton (Python Example)**
+
+```python
+def is_balanced(s):
+    balance = 0
+    for char in s:
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+            if balance < 0:
+                return False
+    return balance == 0
+
+def check_combinations(strings):
+    combo1 = strings[0] + strings[1]
+    combo2 = strings[1] + strings[0]
+    if is_balanced(combo1) or is_balanced(combo2):
+        return "Yes"
+    else:
+        return "No"
+```
+
+---
+
+### **Summary Table**
+
+| Step      | Description                                                       |
+|-----------|--------------------------------------------------------------------|
+| 1         | Receive **2 parentheses strings** as input                         |
+| 2         | Concatenate in both possible orders                                |
+| 3         | Check each result for balanced parentheses using `is_balanced()`   |
+| 4         | Output `'Yes'` if at least one is balanced, `'No'` otherwise       |
+
+---
+
+**Ready for direct implementation!**

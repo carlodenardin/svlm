@@ -1,0 +1,21 @@
+The flowchart outlines an algorithm designed to compute the sum of distinct triples from a vector initialized according to specific rules. Here’s a step-by-step implementation description:
+
+### Algorithm Overview:
+The purpose of this algorithm is to calculate the number of unique triple sums in a given vector where each element follows a defined rule based on its position within the vector.
+
+### Input Data:
+- An integer `n` which determines the dimension of the vector A.
+
+### Main Logical Flow:
+1. **Receive an Integer**: Start by receiving an integer input representing the size of the vector, denoted as `n`.
+2. **Initialize Vector A**: Create a vector A of length `n` using the specified initialization formula: 
+   \[
+   A[i-1] = i \times i - i + 1 \quad \text{for} \quad 1 \leq i \leq n
+   \]
+3. **Calculate Sum of Distinct Triples**: Implement logic to find and return the count of unique sums formed by triples (three elements) from the vector A such that their sums are multiples of 3.
+4. **End Process**: The process concludes after calculating the required output.
+
+### Expected Output:
+The final result will be the count of distinct triple sums whose values are multiples of 3.
+
+This structured approach ensures clarity and precision for implementing the described algorithm effectively.

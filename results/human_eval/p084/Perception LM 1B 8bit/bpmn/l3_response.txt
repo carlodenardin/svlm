@@ -1,0 +1,96 @@
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 10
+    res += str(n // 10)
+    return res
+
+def calculate_res(n):
+    res = 0
+    res += n % 2
+    res += str(n // 2)
+    return res
+

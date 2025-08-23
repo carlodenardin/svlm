@@ -1,0 +1,32 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This flowchart implements an algorithm to count the number of distinct characters in a given string. It essentially determines the number of unique characters present within the input string.
+
+**2. Input Data Required**
+
+*   **`n`:** An integer representing the length of the input string.  (Although the flowchart doesn't explicitly show `n`, it's implied by the loop condition `i <= n`.)
+*   **`a`:** A string (character array) representing the input string.  The flowchart initializes `a[0]` and then uses indexing to access characters within the string.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `n` is an integer (length of the string).
+    *   `i` is initialized to 1.
+    *   `a` is initialized to `a[0]`.
+    *   `count` is initialized to 0.
+
+2.  **Outer Loop (Character Iteration):**
+    *   The `while` loop continues as long as `i <= n`. This loop iterates through each character of the string `a`.
+    *   Inside the loop:
+        *   `a[i] = a[i] * i + i + 1` : This is the core logic. It calculates a value based on the current character `a[i]` and its index `i`. The calculation is `a[i] = a[i] * i + i + 1`.
+        *   `i = i + 1`: Increment the index `i` to move to the next character in the string.
+
+3.  **Inner Loop (Distinct Character Check):**
+    *   The `while` loop continues as long as `i < len(a)`. This loop checks if the current character `a[i]` is distinct from the previous characters.
+    *   Inside the loop:
+        *   `j = i + 1`: Initialize `j` to the next character index.
+        *   `j = j + 1`: Increment `j` to move to the next character.
+        *   `k = j + 1`: Initialize `k` to the next character index.
+        *   

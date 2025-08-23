@@ -1,0 +1,18 @@
+```python
+def check_string(s1, s2):
+    c1 = s1.count('(') + s1.count(')')
+    c2 = s2.count('[') + s2.count(']')
+    return c1, c2
+
+def main():
+    I = list('string')
+    s1 = I[0] + I[1]
+    s2 = I[1] + I[2]
+    c1, c2 = check_string(s1, s2)
+    if c1 or c2:
+        print("Yes")
+    else:
+        print("No")
+
+main()
+```

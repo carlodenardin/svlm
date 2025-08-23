@@ -1,0 +1,61 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to balance two strings, ensuring that every opening and closing bracket in the string never exceeds the openings in order. It takes a list of two strings as input and returns a boolean value indicating whether the strings are balanced.
+
+### Input Data
+*   A list of two strings, `s1` and `s2`
+
+### Main Logical Flow
+#### Step 1: Receive a List of Two Strings
+*   The algorithm receives a list of two strings, `s1` and `s2`, as input.
+
+#### Step 2: Concatenate the Strings with Both the Combination
+*   The algorithm concatenates the two strings with both the combination.
+
+#### Step 3: Initialize and Set c1 and c2 with the Result of the Function check_string(s) for Each Combination of Strings
+*   The algorithm initializes and sets `c1` and `c2` with the result of the function `check_string(s)` for each combination of strings.
+
+#### Step 4: Check if s is Balanced
+*   The algorithm checks if `s` is balanced by comparing the number of opening and closing brackets in the string.
+
+#### Step 5: Return True or False
+*   The algorithm returns `True` if the string is balanced and `False` otherwise.
+
+### Expected Output
+*   The algorithm returns a boolean value indicating whether the input strings are balanced.
+
+### Implementation
+```python
+def balance_strings(s1, s2):
+    """
+    Checks if two strings are balanced.
+
+    Args:
+    s1 (str): The first string.
+    s2 (str): The second string.
+
+    Returns:
+    bool: True if the strings are balanced, False otherwise.
+    """
+    # Initialize and set c1 and c2 with the result of the function check_string(s) for each combination of strings
+    c1 = 0
+    c2 = 0
+    for i in range(len(s1)):
+        if s1[i] == '<':
+            c1 += 1
+        elif s1[i] =='greater than':
+            c2 += 1
+        elif s1[i] == '<':
+            c1 -= 1
+        elif s1[i] =='greater than':
+            c2 -= 1
+
+    # Check if s is balanced
+    return c1 == c2
+
+# Example usage:
+s1 = "a b c"
+s2 = "b c d"
+print

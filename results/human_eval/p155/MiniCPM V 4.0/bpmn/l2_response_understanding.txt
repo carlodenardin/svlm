@@ -1,0 +1,15 @@
+The algorithm depicted in the flowchart aims to determine whether a given integer is even or odd by iterating through its digits. Here's a step-by-step description of the implementation:
+
+1. **Receive an Integer**: Start with an input integer that needs to be analyzed for parity (even or odd).
+
+2. **Initialize Variables**: Set up two counters, `even` and `odd`, both initialized to 0. These will keep track of how many even and odd digits are encountered during iteration.
+
+3. **Iterate Over Digits**: Begin processing each digit of the input integer one by one. This involves converting the integer into a string so individual digits can be accessed easily.
+
+4. **Increment Counters Based on Digit**: For each digit:
+   - If the digit is even (divisible by 2), increment the `even` counter.
+   - If the digit is odd (not divisible by 2), increment the `odd` counter.
+
+5. **Return Result**: After all digits have been processed, return a tuple containing the counts of even and odd digits found within the original integer.
+
+This method ensures accurate identification of even and odd components in any integer provided as input, providing clear results regarding their distribution.

@@ -1,0 +1,31 @@
+The algorithm depicted in the flowchart is designed to compute a specific mathematical result based on input integers \( n \), \( x \), and \( y \). Here’s a step-by-step implementation of the algorithm:
+
+### Algorithm Overview
+The purpose of this algorithm is to calculate an output value using given integers \( n \), \( x \), and \( y \) through a series of logical steps involving loops and conditional checks.
+
+### Input Data Required
+- Three integer inputs: \( n \), \( x \), and \( y \).
+
+### Main Logical Flow
+1. **Start**: Begin with receiving the input values for \( n \), \( x \), and \( y \).
+2. **Check Condition**: Determine if \( n \) equals 1.
+   - If yes, return the value of \( y \).
+   - If no, proceed to set \( i \) to 2.
+3. **Set Initial Value**: Assign \( i \) the initial value of 2.
+4. **Loop Execution**:
+   - While \( i < \sqrt{n} \):
+     - Check if \( n \% i == 0 \).
+       - If yes, increment \( i \) by 1 (i.e., increase \( i \) by 1).
+       - If no, continue looping without changing \( i \).
+5. **Return Result**:
+   - After exiting the loop, check if \( n \% i == 0 \).
+     - If yes, return the value of \( x \).
+     - If no, return the value of \( y \).
+6. **Increment Counter**: Increase \( i \) by 1 after each iteration within the loop.
+
+### Expected Output
+The final output will be either \( x \) or \( y \) depending on whether \( n \) is divisible by \( i \) up to its square root. Specifically:
+- If \( n \) divides evenly into \( x \), then \( x \) is returned.
+- Otherwise, \( y \) is returned.
+
+This structured approach ensures that the algorithm efficiently processes the input data to produce the desired outcome.

@@ -1,0 +1,68 @@
+Certainly! Below is a step-by-step breakdown of the algorithm depicted in the provided flowchart.
+
+---
+
+## **Algorithm Overview**
+The algorithm checks whether the integer `n` is 1 or if it has any divisors less than its square root. Depending on these checks, it outputs either value `x` or `y`. This is commonly used for checking primality or special conditions.
+
+---
+
+## **Input Data Required**
+
+- **n**: Integer value to be checked.
+- **x**: Integer value, to be output under specific conditions (e.g., when `n` is "prime-like").
+- **y**: Integer value, to be output under other specific conditions (e.g., when `n` is "not prime-like").
+
+---
+
+## **Main Logical Flow**
+
+1. **Initialize variables**:  
+   Accept inputs for `n`, `x`, and `y`.
+
+2. **Immediate check for n = 1**:  
+   - If `n` equals 1, output `y` and **end** the process.
+
+3. **Set loop start**:  
+   - Set `i = 2`.
+
+4. **Loop while `i` is less than `sqrt(n)`**:
+   - If `i` is not less than `sqrt(n)`, output `x` and **end**.
+   - If `i` is less than `sqrt(n)`, proceed to next step.
+
+5. **Check divisibility**:
+   - If `n % i == 0`:  
+     - Output `y` and **end** the process.
+   - Else:  
+     - Increment `i` by 1 (`i = i + 1`).
+     - Repeat loop.
+
+---
+
+## **Expected Output**
+
+- **Outputs either `x` or `y`**, depending on the checks:
+  - If `n == 1`, output `y`.
+  - If `n` has a divisor in [2, sqrt(n)), output `y`.
+  - Otherwise, output `x`.
+
+---
+
+## **Pseudocode Implementation**
+
+```python
+def process(n, x, y):
+    if n == 1:
+        return y
+    i = 2
+    while i < int(n ** 0.5):
+        if n % i == 0:
+            return y
+        i += 1
+    return x
+```
+
+---
+
+**Summary:**  
+This algorithm distinguishes numbers with divisors below their square root (and the number 1) from others, outputting different values accordingly. The main constructs used are a conditional and a loop. This pattern is common for (but not strictly identical to) primality tests or number classification tasks.

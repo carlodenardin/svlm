@@ -1,0 +1,20 @@
+The flowchart represents an algorithm for generating a sequence based on the input integer `n`. Here's a step-by-step description of its implementation:
+
+1. **Start**: The process begins here.
+2. **Input Data**: 
+   - An integer `n` is required as input. This will determine the length and elements of the output sequence.
+3. **Initialize Variables**:
+   - Initialize an empty list `res` to store the resulting sequence values.
+   - Set an initial index variable `i` to 1.
+4. **Loop Condition**:
+   - Check if `i` is less than or equal to `n`. This determines whether the loop should continue executing.
+5. **Decision Point**:
+   - If `i <= n`, proceed with summing values from 1 to `i` and appending them to the `res` list.
+   - If `i % 2 == 0`, multiply values from 1 to `i` and append them to the `res` list.
+6. **Increment Index**:
+   - Increment the value of `i` by 1 (`i = i + 1`) to move to the next iteration in the loop.
+7. **Output**:
+   - Once all iterations are complete, the final result stored in `res` is obtained.
+8. **End**: The process concludes here.
+
+**Expected Output**: The algorithm generates either a sum or a product sequence up to the specified number `n`. Depending on the condition checked within the loop, it outputs either the cumulative sums or products of integers from 1 to `n`.

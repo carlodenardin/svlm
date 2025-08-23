@@ -1,0 +1,53 @@
+The algorithm depicted in the flowchart aims to determine how many distinct triples of a list are multiples of 3. Here's a step-by-step implementation based on the provided image:
+
+### Algorithm Overview:
+The purpose of this algorithm is to process an integer input and generate a list where each element follows a specific rule, then count how many unique triplets within this list result in sums that are multiples of 3.
+
+### Input Data Required:
+- An integer `n` representing the dimension of the list to be created.
+
+### Main Logical Flow:
+1. **Receive an Integer as Input:**
+   - The user inputs an integer value for `n`, which determines the size of the list to be generated.
+
+2. **Create a List of Dimension n:**
+   - Initialize an empty list named `A` with dimensions up to `n` (i.e., `[0] * n`).
+
+3. **Populate the List with Specific Rule:**
+   - Use nested loops to fill the list according to the given formula: `A[i-1] = i * i - i + 1` for `1 <= i <= n`. This means filling each position from index 0 to `n-1` using the specified mathematical expression.
+
+4. **Count Distinct Triplets Summing to a Multiple of 3:**
+   - Iterate through all possible combinations of three elements in the populated list.
+   - For each combination, check if their sum is divisible by 3.
+   - Count the number of such valid triples.
+
+5. **Return the Result:**
+   - Output the total count of distinct triples whose sums are multiples of 3.
+
+### Example Implementation (Python):
+```python
+def count_triples_multiple_of_three(n):
+    # Step 2: Create a list of dimension n
+    A = [0] * n
+    
+    # Step 3: Populate the list with the specified rule
+    for i in range(1, n+1):
+        A[i-1] = i * i - i + 1
+    
+    # Step 4: Count distinct triplets summing to a multiple of 3
+    count = 0
+    for i in range(n):
+        for j in range(i, n):
+            for k in range(j, n):
+                if (A[i] + A[j] + A[k]) % 3 == 0:
+                    count += 1
+    
+    # Step 5: Return the result
+    return count
+
+# Example usage
+n = 5
+result = count_triples_multiple_of_three(n)
+print(f"Number of distinct triplets summing to a multiple of 3: {result}")
+```
+This code snippet outlines the steps described above, providing a clear structure for implementing the algorithm effectively.

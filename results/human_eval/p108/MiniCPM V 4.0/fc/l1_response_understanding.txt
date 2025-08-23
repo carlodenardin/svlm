@@ -1,0 +1,14 @@
+The flowchart outlines an algorithm designed to count the number of integers in a list whose digits sum up to greater than zero. Here's a step-by-step description:
+
+1. **Start**: The process begins at the 'Start' node.
+2. **Input List of Integers**: The first action is to receive or input a list of integers into the system.
+3. **Initialize Count**: Set a variable, say `count`, to 0. This will keep track of how many numbers meet the specified condition.
+4. **Iterate Through List**: Use a loop (e.g., for loop) to iterate through each integer in the provided list.
+5. **Check Digit Sum**: For each integer within the list:
+   - Convert the integer to a string to easily access individual digits.
+   - Calculate the sum of these digits using a function that sums their values.
+   - If the digit sum is greater than 0, increment the `count` variable by 1.
+6. **Return Count**: After iterating through all integers, return the value stored in the `count` variable as the output.
+7. **End**: The process concludes at the 'End' node.
+
+This implementation ensures that every integer in the list is evaluated based on its digit sum, and the final result is the total count of such integers.

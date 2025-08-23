@@ -1,0 +1,16 @@
+The flowchart outlines an algorithm designed to determine whether a given integer is even or odd by extracting its last digit and incrementing counters accordingly. Here's the step-by-step implementation:
+
+1. **Start**: The process begins at the "Start" node.
+2. **Input Data**: An integer `n` is required as input.
+3. **Initialize Counters**: Set both `even` and `odd` counters to 0. Also, store the absolute value of `n` in a variable named `num`.
+4. **Check for Zero**: If `n` equals zero, set `even` to 0 (since zero is neither even nor odd) and proceed to output the result.
+5. **Loop Until n > 0**: Continue processing while `n` remains greater than 0.
+   - **Extract Last Digit**: Extract the last digit of `n` using modulo operation (`n % 10`).
+   - **Increment Counter**: Increment the counter based on the extracted digit:
+     - If the last digit is 0, increment the `even` counter.
+     - Otherwise, increment the `odd` counter.
+   - **Remove Last Digit**: Remove the last digit from `n` by performing integer division by 10 (`n //= 10`).
+6. **Output Result**: After the loop ends, generate a tuple containing the values of `even` and `odd`.
+7. **End**: The process concludes at the "End" node.
+
+This algorithm efficiently categorizes integers into either even or odd categories through iterative digit extraction and conditional logic.

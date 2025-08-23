@@ -1,0 +1,11 @@
+```python
+def check_list(lst):
+    i = 0
+    while i < len(lst):
+        if lst[i] < lst[-1]:
+            return False
+        if i > 1 and lst[i] == lst[i-1] == lst[i-2]:
+            return False
+        i += 1
+    return True
+```

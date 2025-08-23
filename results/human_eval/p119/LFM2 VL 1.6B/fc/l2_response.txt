@@ -1,0 +1,28 @@
+```python
+def check_string(s):
+    c1 = 0
+    c2 = 0
+    for i in s:
+        if check_string(i):
+            c1 += 1
+        else:
+            c2 += 1
+    return c1, c2
+
+def balanced_string(s):
+    c1, c2 = check_string(s)
+    if c1 == c2:
+        return True
+    else:
+        return False
+
+def main():
+    s = input("Enter a string: ")
+    if balanced_string(s):
+        print("The string is balanced.")
+    else:
+        print("The string is not balanced.")
+
+if __name__ == "__main__":
+    main()
+```

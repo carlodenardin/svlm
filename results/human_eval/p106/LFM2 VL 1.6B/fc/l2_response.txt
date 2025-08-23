@@ -1,0 +1,6 @@
+def iterate(n, i=1):
+    res = [i]
+    while i <= n:
+        res.append(i)
+        i += 1
+    return res

@@ -1,0 +1,10 @@
+The algorithm's purpose is to determine whether a given list of integers contains duplicate elements. The input data required is a list of integers. The main logical flow is as follows:
+
+1. Start
+2. Input a list of integers
+3. Check if the list is sorted in ascending order and has no more than one duplicate element of the same number
+4. If True, end
+5. If False, continue to step 3
+6. If True, end
+
+The expected output is True if the list contains duplicate elements, and False otherwise.

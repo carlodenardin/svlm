@@ -1,0 +1,22 @@
+```python
+def check_string(s):
+    """
+    Checks if a string is balanced with respect to parentheses.
+
+    Args:
+        s: The string to check.
+
+    Returns:
+        True if the string is balanced, False otherwise.
+    """
+    s1 = 0
+    s2 = 0
+    for char in s:
+        if char == '[':
+            s1 += 1
+        elif char == ']':
+            s2 += 1
+        if s2 > s1:
+            return False
+    return s1 == s2
+```

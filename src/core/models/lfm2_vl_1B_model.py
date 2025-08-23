@@ -26,7 +26,6 @@ class LFM21B(BaseModel):
             return f"Error: {str(e)}"
         
     def generate_response(self, image_input, prompt):
-        print(prompt)
         try:
             conversation = [
                 {

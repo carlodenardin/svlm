@@ -1,0 +1,41 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to find the *minimum* of the values `x` and `y` among a set of integers `n`, `x`, and `y`.  It's essentially a comparison and selection process.
+
+**2. Input Data Required**
+
+The algorithm requires three integer inputs:
+
+*   `n`:  This is likely the size of a set of integers, though the flowchart doesn't explicitly show it being used as a set.
+*   `x`: An integer value.
+*   `y`: An integer value.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+Here's a breakdown of the algorithm's logic, following the flowchart:
+
+1.  **Initialization:**
+    *   Receive the integer inputs `n`, `x`, and `y`.
+    *   Set the loop counter `i` to 2.
+
+2.  **Outer Loop (i = 2):**
+    *   **Check if `n` is equal to 1:** If `n` is 1, the algorithm returns `y`.
+    *   **If `n` is not 1:** Proceed to the next step.
+
+3.  **Inner Loop (i = 2):**
+    *   **Comparison 1: `i < sqrt(n)`:**  Calculate the square root of `n`.  If `i` (which is initially 2) is less than the square root of `n`, proceed to the next comparison.
+        *   **If `i < sqrt(n)`:**  Return `x`.
+    *   **Comparison 2: `n % i == 0`:**  Calculate the remainder when `n` is divided by `i`. If the remainder is 0, return `y`.
+        *   **If `n % i == 0`:** Return `y`.
+
+4.  **Increment Loop Counter:**
+    *   Increment the loop counter `i` by 1 (i.e., `i = i + 1`).
+
+5.  **Loop Continuation:**
+    *   The outer loop continues with the new value of `i` until `i` becomes greater than 1.
+
+**4. Expected Output**
+
+The algorithm will return

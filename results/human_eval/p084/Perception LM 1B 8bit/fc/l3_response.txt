@@ -1,0 +1,18 @@
+def calculate_string(n):
+    if n > 0:
+        sum = 0
+        res = ""
+        while n % 10!= 0:
+            res += str(n % 10)
+            n = n // 10
+        return res
+    else:
+        return "sum += n % 10, n = n // 10"
+
+def main():
+    n = int(input("Enter a number: "))
+    result = calculate_string(n)
+    print("The final result is:", result)
+
+if __name__ == "__main__":
+    main()

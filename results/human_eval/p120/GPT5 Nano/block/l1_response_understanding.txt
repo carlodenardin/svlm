@@ -1,0 +1,60 @@
+Certainly! Here is a clear description of the algorithm represented by the flowchart:
+
+---
+
+### Overview
+This algorithm finds the **k largest elements** in a given list of integers. It does so by sorting the list and then selecting the last `k` elements, which are guaranteed to be the largest after sorting.
+
+---
+
+### Input Data
+- **A list of integers**, e.g., `[3, 1, 4, 1, 5, 9, 2]`
+- **An integer `k`**, representing how many of the largest elements to return, e.g., `k = 3`
+
+---
+
+### Main Logical Flow
+
+1. **Receive Inputs**  
+   - Accept a list of integers and an integer `k`.
+
+2. **Sort the List**  
+   - Apply a sorting algorithm (e.g., built-in `sort()` function) to arrange the integers in **ascending order**.
+
+3. **Select Last k Elements**  
+   - Extract the last `k` elements from the sorted list (as these are the largest).
+
+---
+
+### Expected Output
+- A **list containing the `k` largest integers** from the input list, in ascending order.
+
+---
+
+### Example
+
+#### Input
+```python
+numbers = [3, 1, 4, 1, 5, 9, 2]
+k = 3
+```
+
+#### Output
+```python
+[4, 5, 9]
+```
+
+---
+
+### Implementation (Python Example)
+
+```python
+def k_largest_elements(numbers, k):
+    numbers.sort()
+    return numbers[-k:]
+```
+
+---
+
+**Summary:**  
+This algorithm sorts the input list and returns the largest `k` items. It is simple, effective for small to medium input sizes, and ensures the output is sorted.

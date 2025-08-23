@@ -1,0 +1,12 @@
+The algorithm depicted in the flowchart is designed to compute and return a list of factorials for integers from 1 to n. Here’s a step-by-step implementation:
+
+1. **Input**: Receive an integer \( n \) as input. This represents the upper limit up to which factorial values will be computed.
+2. **Initialize List**: Create an empty list to store the calculated factorials.
+3. **Iteration Loop**: Start with \( i \) set to 1 and iterate through each integer from 1 to \( n \) (inclusive).
+4. **Factorial Calculation**: For each integer \( i \):
+   - If \( i \) is even, calculate its factorial by multiplying all integers from 1 to \( i \).
+   - If \( i \) is odd, directly append \( i \) to the list since its factorial can be represented as \( i \times (i-1)! \) using previously computed factorials.
+5. **List Update**: Append the result of the factorial calculation to the initialized list.
+6. **Output**: Return the completed list containing the factorials from 1 to \( n \).
+
+This process ensures that all required factorial values are correctly computed and stored in a structured format for easy retrieval or further processing.

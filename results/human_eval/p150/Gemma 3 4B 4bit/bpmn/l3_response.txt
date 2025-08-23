@@ -1,0 +1,27 @@
+```python
+def find_min_max(n, x, y):
+    """
+    Finds the minimum and maximum of three integers n, x, and y.
+
+    Args:
+        n: The first integer.
+        x: The second integer.
+        y: The third integer.
+
+    Returns:
+        The minimum of the three integers.
+    """
+    if n == 1:
+        return y
+    
+    i = 2
+    while True:
+        if i < n:
+            if x < i:
+                return x
+            elif n % i == 0:
+                return y
+            else:
+                return y
+        i += 1
+```

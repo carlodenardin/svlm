@@ -1,0 +1,12 @@
+The algorithm's purpose is to calculate the sum of all integers in a given list. The input data required is a list of integers. The main logical flow is as follows:
+
+1. Receive a list of integers.
+2. Initialize a variable `res` to 0.
+3. If the list is empty, return `res = 0`.
+4. If the list has only one element, return `res = 1`.
+5. If the list has more than one element, initialize `res` to the sum of the first element and the sum of the remaining elements.
+6. Iterate through the list starting from the second element.
+7. For each element, add it to `res`.
+8. Return `res`.
+
+The expected output is the sum of all integers in the list.

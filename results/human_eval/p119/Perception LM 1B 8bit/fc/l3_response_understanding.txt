@@ -1,0 +1,64 @@
+**Algorithm Overview**
+=======================
+
+### Purpose
+
+The algorithm is designed to check the length of a string and return the result. It takes a string as input and returns the length of the string.
+
+### Input Data
+
+*   The algorithm requires a string as input.
+
+### Main Logical Flow
+
+#### Step 1: Check the Length of the String
+
+*   The algorithm starts by checking the length of the input string.
+*   It uses the `len()` function to get the length of the string.
+
+#### Step 2: Check if the Length is Zero
+
+*   If the length of the string is zero, the algorithm returns the length as zero.
+*   This is because an empty string has a length of zero.
+
+#### Step 3: Return the Length
+
+*   If the length of the string is not zero, the algorithm returns the length as the result.
+
+#### Step 4: Check for Empty Strings
+
+*   The algorithm also checks if the input string is empty.
+*   If the string is empty, the algorithm returns the length as zero.
+
+#### Step 5: Return the Length
+
+*   If the string is not empty, the algorithm returns the length as the result.
+
+### Expected Output
+
+*   The algorithm returns the length of the input string.
+
+### Implementation
+
+```python
+def check_string_length(s):
+    """
+    Checks the length of a string and returns the result.
+
+    Args:
+        s (str): The input string.
+
+    Returns:
+        int: The length of the string.
+    """
+    if not s:  # Check if the string is empty
+        return 0
+    else:
+        return len(s)
+
+# Example usage:
+print(check_string_length("Hello"))  # Output: 5
+print(check_string_length(""))  # Output: 0
+```
+
+In this implementation, the `check_string_length` function takes a string as input and returns the length of the string. It uses the `len()` function to get the length of the string and returns zero if the string is empty. If the string is not empty, it returns the length as the result.

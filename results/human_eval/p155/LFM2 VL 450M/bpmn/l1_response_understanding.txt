@@ -1,0 +1,11 @@
+The algorithm's purpose is to count the even and odd digits in an input string and return a tuple containing the count of even and odd digits.
+
+Input data required: A string of digits.
+
+Main logical flow:
+
+1. Receive an integer: The input string is received and converted to a string.
+2. Count the even and odd digits: The string is iterated over, and each digit is checked to see if it is even or odd.
+3. Return a tuple: A tuple containing the count of even and odd digits is returned.
+
+Expected output: A tuple containing the count of even and odd digits.

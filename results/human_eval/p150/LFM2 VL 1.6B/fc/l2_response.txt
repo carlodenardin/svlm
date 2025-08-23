@@ -1,0 +1,8 @@
+def start(n, x, y, int):
+    if n == 1:
+        return y
+    else:
+        if x == int(y):
+            return y
+        else:
+            return x

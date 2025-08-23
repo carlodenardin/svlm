@@ -1,0 +1,13 @@
+The flowchart outlines an algorithm designed to count the number of even and odd digits in a given integer. Here’s a step-by-step description of its implementation:
+
+1. **Start**: The process begins here.
+2. **Input**: An integer `n` is provided as input.
+3. **Initialize Variables**: Two variables, `even_count` and `odd_count`, are initialized to zero to keep track of the counts of even and odd digits respectively.
+4. **Loop Through Digits**: 
+   - Extract each digit from the integer `n` by continuously dividing it by 10 using modulus operation (`n % 10`).
+   - Increment `even_count` if the current digit is divisible by 2 (even).
+   - Increment `odd_count` otherwise.
+5. **Output**: After processing all digits, output the values of `even_count` and `odd_count` which represent the counts of even and odd digits found in `n`.
+6. **End**: The algorithm concludes here.
+
+This structured approach ensures that every digit of the input integer is evaluated for being either even or odd, providing accurate results based on the specified conditions.

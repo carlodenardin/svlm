@@ -1,0 +1,45 @@
+Okay, let's break down the algorithm described by the flowchart.
+
+**Overview:**
+
+The algorithm's purpose is to count the number of integers in a given list where the sum of their digits is greater than 0.  Essentially, it checks if each number has a non-zero digit sum.
+
+**Input Data:**
+
+*   **Input:** A list (or array) of integers.  These integers can be positive, negative, or zero.
+
+**Algorithm Implementation (Step-by-Step):**
+
+1.  **Initialization:**
+    *   Create a counter variable (e.g., `count = 0`). This variable will store the number of integers that meet the criteria.
+
+2.  **Iterate through the List:**
+    *   Use a loop (e.g., a `for` loop) to iterate through each integer in the input list.
+
+3.  **Calculate the Sum of Digits:**
+    *   For each integer in the list:
+        *   Convert the integer to a string.
+        *   Iterate through the characters (digits) of the string.
+        *   Convert each character back to an integer.
+        *   Add the integer value of each digit to a running sum.
+
+4.  **Check the Sum:**
+    *   After calculating the sum of digits for the current integer, check if the sum is greater than 0.
+
+5.  **Increment the Counter:**
+    *   If the sum of digits is greater than 0, increment the `count` variable.
+
+6.  **Return the Count:**
+    *   After iterating through all the integers in the list, return the final value of the `count` variable.
+
+**Expected Output:**
+
+The algorithm will return a single integer representing the number of integers in the input list whose sum of digits is greater than 0.
+
+**Example:**
+
+Let's say the input list is `[12, -34, 5, 0, 100]`.
+
+1.  `12`: Sum of digits = 1 + 2 = 3.  3 > 0, so `count` becomes 1.
+2.  `-34`: Sum of digits = 3 + 4 = 7.  7 > 0, so `count` becomes 2.
+3.  `5`: Sum of digits = 5.

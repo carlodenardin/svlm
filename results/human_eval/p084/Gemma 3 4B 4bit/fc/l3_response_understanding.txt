@@ -1,0 +1,41 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to calculate a string representation of the sum of digits of a non-negative integer `n`.  It essentially converts the integer into a string by repeatedly adding the digit sum to the string until the sum becomes zero.
+
+**2. Input Data Required**
+
+*   **n:** An integer (non-negative). This is the input value for which we want to calculate the digit sum string.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `sum = 0` (Initialize the sum of digits to zero)
+    *   `res = ""` (Initialize an empty string to store the result)
+
+2.  **Loop:** The algorithm enters a loop that continues as long as `n > 0`.
+
+3.  **Decision (n > 0):**
+    *   **If `n > 0`:**
+        *   `sum += n % 10` (Add the last digit of `n` to the `sum`)
+        *   `n = n // 10` (Integer division to remove the last digit of `n`)
+    *   **Else (n <= 0):**
+        *   The loop terminates.
+
+4.  **Decision (sum > 0):**
+    *   **If `sum > 0`:**
+        *   `r = sum % 2` (Calculate the remainder when `sum` is divided by 2)
+        *   `sum = sum //= 2` (Integer division to divide `sum` by 2)
+        *   `res += str(r)` (Append the remainder `r` (0 or 1) as a string to the `res` string)
+    *   **Else (sum <= 0):**
+        *   The loop terminates.
+
+5.  **Output:**
+    *   `res` (The `res` string, which now contains the digit sum representation, is returned as the output).
+
+**4. Expected Output**
+
+The algorithm will produce a string that represents the sum of the digits of the input integer `n`.  The string will be built up digit by digit, starting from the least significant digit.
+
+**Example

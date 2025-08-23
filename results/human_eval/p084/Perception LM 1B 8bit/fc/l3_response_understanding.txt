@@ -1,0 +1,57 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to calculate the sum of a series of numbers and return the result as a string. It takes an integer input `n` and calculates the sum using a loop, then converts the result to a string.
+
+### Input Data
+* `n`: an integer representing the number of terms in the series
+
+### Main Logical Flow
+#### Step 1: Initialize variables
+* `sum = 0`, `res = ""` (initially set to an empty string)
+
+#### Step 2: Loop through each term
+* `n > 0` (loop condition)
+* `sum += n % 10` (add the remainder of `n` divided by 10 to the sum)
+* `n = n // 10` (divide `n` by 10 and update `n`)
+
+#### Step 3: Calculate the sum
+* `sum += n % 2` (add the remainder of `n` divided by 2 to the sum)
+* `res += str(sum)` ( convert the sum to a string)
+
+#### Step 4: Return the result
+* `return res` (return the final result)
+
+### Expected Output
+The algorithm returns the sum of the series as a string.
+
+**Implementation**
+```python
+def calculate_sum(n):
+    """
+    Calculate the sum of a series of numbers and return the result as a string.
+
+    Args:
+        n (int): The number of terms in the series.
+
+    Returns:
+        str: The sum of the series as a string.
+    """
+    if n <= 0:
+        raise ValueError("Input must be a positive integer")
+
+    sum = 0
+    res = ""
+
+    for i in range(1, n + 1):
+        sum += i % 10
+        res += str(sum)
+
+    return res
+
+# Example usage:
+n = 10
+result = calculate_sum(n)
+print(result)  # Output: "12345678"
+```

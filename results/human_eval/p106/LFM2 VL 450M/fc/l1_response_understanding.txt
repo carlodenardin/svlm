@@ -1,0 +1,14 @@
+The algorithm's purpose is to calculate the sum of products of numbers from 1 to i, where i is the input integer. The input data required is the integer i. The main logical flow is as follows:
+
+1. Start
+2. Input as integer
+3. Initialize the result list and the counter
+4. Initialize the result list
+5. Initialize the counter
+6. If i is even, calculate the product of numbers from 1 to i and add it to the result list
+7. If i is odd, calculate the sum of products of numbers from 1 to i
+8. Add the calculated value to the result list
+9. Increment the counter
+10. End
+
+The expected output is the sum of products of numbers from 1 to i.

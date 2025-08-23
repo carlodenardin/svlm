@@ -1,0 +1,80 @@
+### Overview of the Algorithm's Purpose
+This algorithm calculates the product of all even digits in a given integer **only if the integer contains at least one odd digit**. If the number contains **no odd digits**, it returns `0`.
+
+---
+
+### Input Data Required
+- A single integer `n`.
+
+---
+
+### Main Logical Flow
+
+1. **Input Reception:**  
+   Receive an integer `n`.
+
+2. **Initialization:**  
+   Set `product` to `1`.
+
+3. **Odd Digit Check:**  
+   Check if the number `n` contains at least one odd digit.
+   - **If NO odd digits are found:** Immediately return `0` (terminate).
+   - **If YES:** Continue.
+
+4. **Processing Each Digit:**  
+   Loop while `n > 0`:
+   - Extract the last digit: `d = n % 10`.
+   - Check if `d` is even (`d % 2 == 0`):
+     - If YES: multiply `product` by `d`.
+     - If NO: do nothing.
+   - Remove the last digit: `n //= 10`.
+
+5. **Result:**  
+   When all digits are processed (`n == 0`), return `product`.
+
+---
+
+### Expected Output
+- **If no odd digits are present in the input:**  
+  Output is `0`.
+- **If odd digits are present:**  
+  Output is the product of all even digits (or `1` if there are no even digits).
+
+---
+
+## Example Implementation (Python)
+
+```python
+def product_even_digits_with_odd_check(n):
+    n_str = str(abs(n))  # Handle negative numbers as well
+    # Check for at least one odd digit
+    if not any(int(d) % 2 == 1 for d in n_str):
+        return 0
+
+    product = 1
+    n = abs(n)
+    while n > 0:
+        d = n % 10
+        if d % 2 == 0:
+            product *= d
+        n //= 10
+    return product
+
+# Example usage:
+print(product_even_digits_with_odd_check(2436))  # Returns 48 (2*4*6)
+print(product_even_digits_with_odd_check(2468))  # Returns 0 (no odd digit)
+```
+
+---
+
+## Summary Table
+
+| **Input** | **Output** | **Reason**                                    |
+|-----------|------------|-----------------------------------------------|
+| 2436      | 48         | Odd digit exists, product of even digits: 2\*4\*6 |
+| 2468      | 0          | No odd digits present                         |
+| 135       | 1          | Odd digits present, but no even digits        |
+
+---
+
+**Ready for implementation in your language or workflow of choice.**

@@ -1,0 +1,24 @@
+The algorithm depicted in the flowchart is designed to calculate the sum of digits within an integer array. Here’s a step-by-step description:
+
+1. **Start**: The process begins at the "Start" node.
+2. **Initialize Variables**: 
+   - An integer array `arr` is defined as input data.
+   - A variable `res` is initialized to 0, which will store the cumulative sum of the digits.
+3. **Iterate Through Array**: 
+   - The loop continues while there are elements left in the array (`has the list been fully iterated?`).
+4. **Digit Extraction and Summation**:
+   - For each element in the array, create a new list containing only its digits.
+   - Compute the sum of these digits.
+5. **Check Sum Condition**:
+   - If the computed sum is greater than 0, increment the result by 1 (`res += 1`).
+6. **Loop Termination**:
+   - If no more sums need to be calculated (i.e., `sum > 0`), exit the iteration loop.
+7. **End**: Once all iterations are complete, the process ends with the output being stored in `res`.
+
+**Input Data**:
+- An integer array `arr` where each element can contain multiple digits.
+
+**Expected Output**:
+- The final value of `res`, representing the total sum of all digit values across the entire array.
+
+This straightforward approach ensures that every digit from the array's elements contributes to the overall summation without repetition or omission.

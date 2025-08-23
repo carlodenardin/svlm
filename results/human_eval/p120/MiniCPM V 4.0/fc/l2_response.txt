@@ -1,0 +1,5 @@
+```python
+def generate_ordered_list(lst, k):
+    sorted_lst = sorted(lst)
+    return sorted_lst[-k:]
+```

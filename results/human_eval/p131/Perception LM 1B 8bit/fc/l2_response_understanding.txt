@@ -1,0 +1,54 @@
+**Algorithm Overview:**
+The algorithm is designed to compute the multiplication between the odd digits of a given integer `n`. It takes an integer `n` as input and returns the product of its odd digits.
+
+**Input Data:**
+The input data required for this algorithm is an integer `n`, which can be any non-negative integer.
+
+**Main Logical Flow:**
+
+1. **Start**: The algorithm begins with the input `n` and initializes a variable `result` to 0.
+2. **n: int**: The algorithm checks if `n` is an integer. If not, it throws an error.
+3. **At least one odd digit in n**: If `n` is not an integer, the algorithm checks if it has at least one odd digit. If not, it throws an error.
+4. **Compute the multiplication between the odd digits of n**: If `n` has at least one odd digit, the algorithm computes the product of these odd digits.
+5. **product**: The algorithm multiplies the product of the odd digits by the input `n`.
+6. **End**: The algorithm ends with the product of the odd digits and the input `n`.
+
+**Expected Output:**
+The algorithm returns the product of the odd digits of the input `n`.
+
+**Implementation:**
+```python
+def compute product_of_odd_digits(n):
+    """
+    Compute the product of the odd digits of a given integer n.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        int: The product of the odd digits of n.
+
+    Raises:
+        ValueError: If n is not an integer.
+    """
+    if not isinstance(n, int):
+        raise ValueError("Input must be an integer")
+
+    # Check if n has at least one odd digit
+    if not any(int(digit) % 2 == 1 for digit in str(n)):
+        raise ValueError("Input must have at least one odd digit")
+
+    # Compute the product of the odd digits
+    product = 1
+    for digit in str(n):
+        if int(digit) % 2 == 1:
+            product *= int(digit)
+
+    return product
+
+# Example usage:
+n = 12345
+result = compute product_of_odd_digits(n)
+print(result)  # Output: 1
+```
+This implementation follows the algorithm's logical flow and includes error handling for invalid inputs.

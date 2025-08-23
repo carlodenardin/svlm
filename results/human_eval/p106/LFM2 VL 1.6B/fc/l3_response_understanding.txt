@@ -1,0 +1,27 @@
+The flowchart represents an algorithm for finding the greatest common divisor (GCD) of two integers, x and y. The algorithm uses the Euclidean algorithm, which is a method for finding the GCD of two numbers by repeatedly applying the division algorithm.
+
+The input data required for this algorithm is two integers, x and y.
+
+The main logical flow of the algorithm is as follows:
+
+1. Start: The algorithm begins with the input integers x and y.
+2. n: Initialize a variable n with the value of the input integers x and y.
+3. i: Initialize a variable i with the value 1.
+4. While i is less than n:
+   a. If i is less than or equal to n, set i to n and continue to the next iteration.
+   b. If i is greater than n, set i to i-1 and continue to the next iteration.
+   c. If i is equal to 1, set i to 1 and continue to the next iteration.
+   d. If i is greater than 1, set i to i-1 and continue to the next iteration.
+5. If i is equal to 1, set j to i and continue to the next iteration.
+6. If j is less than i, set j to j+1 and continue to the next iteration.
+7. If j is equal to i, set j to i and continue to the next iteration.
+8. If j is greater than i, set j to j-1 and continue to the next iteration.
+9. If j is equal to i+1, set j to i+1 and continue to the next iteration.
+10. If j is greater than i+1, set j to j-1 and continue to the next iteration.
+11. If j is equal to i+1, set j to i+1 and continue to the next iteration.
+12. If j is greater than i+1, set j to j-1 and continue to the next iteration.
+13. If j is equal to i+1, set j to i+1 and continue to the next iteration.
+14. If j is greater than i+1, set j to j-1 and continue to the next iteration.
+15. If j is equal to i+1, set j to i+1 and continue to the next iteration.
+16. If j is greater than i+1, set j to j-1 and continue to the next iteration.
+17. If

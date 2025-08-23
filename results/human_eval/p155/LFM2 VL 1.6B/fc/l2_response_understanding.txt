@@ -1,0 +1,17 @@
+Overview:
+The algorithm is designed to find the largest odd divisor of a given integer. It starts by checking if the input number is even, and if so, it divides the number by 2 and checks if the result is odd. If the result is odd, it increments the number by 1 and checks again. This process continues until the number is odd. If the number is odd, it returns the number as the largest odd divisor.
+
+Input Data:
+The input data required is an integer.
+
+Main Logical Flow:
+1. Start: The algorithm begins.
+2. n = int: The input number is converted to an integer.
+3. even = 0: A variable to track if the number is even is initialized to 0.
+4. odd = n: The input number is stored in the variable 'odd'.
+5. if odd == 0: The algorithm checks if the number is divisible by 2. If so, it divides the number by 2 and checks if the result is odd. If the result is odd, it increments the number by 1 and checks again. This process continues until the number is odd.
+6. if odd > 0: The algorithm checks if the number is odd. If so, it returns the number as the largest odd divisor.
+7. End: The algorithm ends.
+
+Expected Output:
+The expected output is the largest odd divisor of the input number.

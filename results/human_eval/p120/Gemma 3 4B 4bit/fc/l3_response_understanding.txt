@@ -1,0 +1,43 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**Overview:**
+
+This flowchart appears to be a simple algorithm for calculating the factorial of a number. Factorial is a mathematical function that multiplies all positive integers less than or equal to a given number.  For example, the factorial of 5 (denoted as 5!) is 5 * 4 * 3 * 2 * 1 = 120.
+
+**Input Data:**
+
+*   **Integer Input:** The algorithm requires a single integer as input, which represents the number for which the factorial will be calculated.  This input is expected to be a non-negative integer.
+
+**Main Logical Flow (Step-by-Step):**
+
+1.  **Start:** The algorithm begins at the "Start" state.
+2.  **Input:** The algorithm receives the integer input (let's call it `n`).
+3.  **Initialization:**  A variable `factorial` is initialized to 1. This variable will store the calculated factorial value.
+4.  **Loop:** A `while` loop is used to iterate from 1 to `n`.
+5.  **Multiplication:** Inside the loop, in each iteration, the current value of `factorial` is multiplied by the current loop counter (which starts at 1 and increments in each iteration).  This multiplication is performed using the `*` operator.
+6.  **Output:** After the loop completes, the algorithm outputs the final value of `factorial`.
+7.  **End:** The algorithm ends at the "End" state.
+
+**Pseudocode (Illustrative):**
+
+```
+function calculate_factorial(n):
+  factorial = 1
+  i = 1
+  while i <= n:
+    factorial = factorial * i
+    i = i + 1
+  return factorial
+```
+
+**Expected Output:**
+
+The algorithm will output the factorial of the input integer `n`.  For example:
+
+*   If the input is 5, the output will be 120.
+*   If the input is 0, the output will be 1 (by definition, 0! = 1).
+*   If the input is 1, the output will be 1.
+
+**Notes for Implementation:**
+
+*   **Error Handling:**  A robust implementation would include error handling to check for invalid inputs (e.g., negative

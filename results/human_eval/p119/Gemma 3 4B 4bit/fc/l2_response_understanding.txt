@@ -1,0 +1,32 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**1. Overview**
+
+The algorithm's purpose is to determine if a given string of parentheses is "balanced."  A balanced string of parentheses means that every opening parenthesis '(' has a corresponding closing parenthesis ')' in the correct order, and the number of opening and closing parentheses are equal.
+
+**2. Input Data**
+
+*   **Input:** A string `s` consisting of characters '(' and ')'.  The string can be empty, contain only opening parentheses, only closing parentheses, or a mix of both.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `s1 = [0]` : Initialize a list `s1` (or array) to store the count of opening parentheses encountered so far.  It starts at 0.
+    *   `s2 = [0]` : Initialize a list `s2` to store the count of closing parentheses encountered so far. It starts at 0.
+
+2.  **Iterate through the string:**
+    *   `fnc_check_string(s)`:  This function is called to process the string `s`.
+
+3.  **Inside `fnc_check_string(s)`:**
+    *   `s = s.str`:  The string `s` is assigned to the variable `s` within the function.
+    *   **Loop:** Iterate through each character in the string `s`.
+        *   **If the character is '(':**
+            *   `s1[0] += 1`: Increment the count of opening parentheses.
+        *   **If the character is ')':**
+            *   `s2[0] += 1`: Increment the count of closing parentheses.
+        *   **Check for Balance:**
+            *   `if s1[0] > s2[0]`:  If the number of opening parentheses encountered is greater than the number of closing parentheses, the string is unbalanced.
+                *   `return False`:  The function immediately returns `False`.
+            *   `else if s1[0] < s2[0]`: If the number of closing parentheses encountered is greater than the number of opening parentheses, the string is unbalanced.
+                *   `return False`: The function immediately returns `False`.
+            *

@@ -1,0 +1,48 @@
+### Algorithm Overview
+
+The algorithm is designed to perform a simple arithmetic operation on an integer input. It involves counting the number of even and odd digits in the integer and then returning a tuple containing the counts of even and odd digits.
+
+### Input Data
+
+- **Input**: An integer.
+
+### Main Logical Flow
+
+1. **Receive an integer**: The algorithm starts by receiving an integer from the user or an input source.
+
+2. **Count the even digits**:
+   - Initialize a counter for even digits to zero.
+   - Iterate through each digit of the integer.
+   - For each digit, check if it is even (i.e., divisible by 2).
+   - If the digit is even, increment the counter.
+
+3. **Count the odd digits**:
+   - Initialize a counter for odd digits to zero.
+   - Iterate through each digit of the integer.
+   - For each digit, check if it is odd (i.e., not divisible by 2).
+   - If the digit is odd, increment the counter.
+
+4. **Return a tuple**:
+   - After counting the even and odd digits, return a tuple containing the counts of even and odd digits.
+
+### Expected Output
+
+- **Output**: A tuple of two integers, where the first element is the count of even digits and the second element is the count of odd digits.
+
+### Example
+
+**Input**: 12345
+
+**Steps**:
+1. Receive the integer 12345.
+2. Count the even digits:
+   - 1 (odd), 2 (even), 3 (odd), 4 (even), 5 (odd).
+   - Count: 3 even digits.
+3. Count the odd digits:
+   - 1 (odd), 2 (even), 3 (odd), 4 (even), 5 (odd).
+   - Count: 3 odd digits.
+4. Return the tuple (3, 3).
+
+**Output**: (3, 3)
+
+This algorithm efficiently counts the even and odd digits in the integer and returns the counts as a tuple.

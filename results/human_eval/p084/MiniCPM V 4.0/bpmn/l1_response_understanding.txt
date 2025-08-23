@@ -1,0 +1,20 @@
+The algorithm's purpose is to convert an integer number into its binary representation by summing the digits of the input number and then converting that sum into a binary string.
+
+Input Data:
+- An integer number `n` as input.
+
+Main Logical Flow:
+1. Start at the beginning node.
+2. Receive the integer number `n` from the user or another source.
+3. Initialize a variable `sum` to store the cumulative sum of the digits of `n`.
+4. Convert the integer `n` to a string so individual digits can be accessed easily.
+5. Iterate through each character (digit) in the string representation of `n`.
+6. For each digit, add it to the `sum` variable.
+7. Once all digits have been processed, convert the accumulated `sum` back to a binary string using the appropriate conversion method.
+8. Output the resulting binary string.
+9. End the process.
+
+Expected Output:
+- A binary representation of the original integer number `n`, where each bit corresponds to a positional value starting from the least significant bit on the right.
+
+This step-by-step description outlines how the flowchart translates the given visual structure into executable code for converting integers to their binary equivalents.

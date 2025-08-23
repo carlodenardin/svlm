@@ -1,0 +1,29 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This flowchart implements a function called `check_string` that appears to be designed to determine if two input strings, `s1` and `s2`, are anagrams of each other. Anagrams are words or phrases that contain the same characters, but in a different order.  The algorithm checks if the character counts in the two strings are identical.
+
+**2. Input Data Required**
+
+*   **s1:** The first string (character string).
+*   **s2:** The second string (character string).
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `s1` = `||[0] + [1]` (This likely represents the string `s1` being initialized to an array of two elements, where the first element is 0 and the second element is 1.  This is a bit unusual, but it's likely a placeholder for character counts.)
+    *   `s2` = `||[1] + [2]` (Similar to `s1`, this is likely a placeholder for character counts for `s2`).
+    *   `i` = 0 (Index for iterating through the strings)
+    *   `c` = 0 (Counter for character counts - likely initialized to 0)
+
+2.  **Outer Loop (Iteration):**
+    *   The `while` loop continues as long as `i < len(s1)` (or `len(s2)` - the loop appears to iterate through both strings simultaneously).
+
+3.  **Character Check:**
+    *   `if i < len(s1)`:  This checks if the current index `i` is within the bounds of string `s1`.
+    *   `if len(s1) == len(s2)`: This checks if the length of the strings are equal.
+    *   `s[i] == '?'`: This checks if the character at index `i` in `s1` is equal to the character at index `i` in `s2`.
+
+4.  **Increment Counter:**
+    *   If the character check passes (i.e., `s[i]` is equal to the character at the same index in `s2

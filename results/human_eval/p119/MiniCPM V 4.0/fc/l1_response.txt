@@ -1,0 +1,17 @@
+```python
+def check_balance(strings):
+    concatenated = ''.join(strings)
+    if '(' in concatenated and ')' in concatenated:
+        if all(concatenated[i] == '(' if i % 2 == 0 else ')' for i in range(len(concatenated))):
+            return True
+    return False
+
+def process_strings():
+    strings = list(map(str, input("Enter two strings separated by space: ").split()))
+    if check_balance(strings):
+        print("Yes")
+    else:
+        print("No")
+
+process_strings()
+```

@@ -1,0 +1,39 @@
+```python
+def calculate_product(n):
+    """
+    Calculates the product of digits of an integer if the integer has odd digits.
+    If the integer has even digits, it returns the product of the last two digits.
+    If the integer has no odd digits, it returns 0.
+    """
+    product = 1
+    if n < 0:
+        n = abs(n)
+
+    has_odd_digits = False
+    temp = n
+    while temp > 0:
+        digit = temp % 10
+        if digit % 2 != 0:
+            has_odd_digits = True
+            break
+        temp //= 10
+
+    if not has_odd_digits:
+        return 0
+
+    if n > 0:
+        while n > 0:
+            d = n % 10
+            if d % 2 == 0:
+                product *= d
+                n //= 10
+            else:
+                break
+    else:
+        return 0
+
+    if n == 0:
+        return product
+    else:
+        return product
+```

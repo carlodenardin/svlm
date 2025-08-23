@@ -1,0 +1,13 @@
+def compute product_of_odd_digits(n):
+    if n % 2 == 0:
+        return 0
+    else:
+        return n
+
+def main():
+    n = int(input("Enter a number: "))
+    result = compute product_of_odd_digits(n)
+    print("The product of the odd digits of", n, "is", result)
+
+if __name__ == "__main__":
+    main()

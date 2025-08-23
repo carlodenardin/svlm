@@ -1,0 +1,42 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm checks if a list of integers meets two specific criteria:
+
+*   **Sorted:** The list must be in ascending order.
+*   **Duplicate Frequency:**  Every number in the list must appear at least three times.
+
+If both conditions are met, the algorithm returns `True`; otherwise, it returns `False`.
+
+**2. Input Data Required**
+
+*   **Input:** A list (or array) of integers.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Receive Input:** The algorithm begins by receiving a list of integers as input.
+2.  **Check for Sorted Order:** It then checks if the input list is sorted in ascending order. This can be done using a sorting algorithm (like bubble sort or merge sort) or by iterating through the list and comparing adjacent elements.
+    *   **If Not Sorted:** If the list is not sorted, the algorithm immediately returns `False`.
+3.  **Check for Duplicate Frequency:** If the list *is* sorted, the algorithm proceeds to check if each number appears at least three times in the list. This can be done by:
+    *   Creating a frequency count (a dictionary or hash map) to store the number of occurrences of each integer.
+    *   Iterating through the list and updating the frequency count.
+    *   Checking if the count of each number is greater than or equal to 3.
+    *   **If Not All Numbers Appear More Than Twice:** If any number appears less than three times, the algorithm returns `False`.
+4.  **Return True:** If the list is sorted *and* every number appears at least three times, the algorithm returns `True`.
+
+**4. Expected Output**
+
+*   **Output:** A boolean value (`True` or `False`).
+    *   `True`:  If the input list is sorted and every number appears at least three times.
+    *   `False`: Otherwise (if the list is not sorted or if any number appears less than three times).
+
+**Example Implementation (Conceptual - Python)**
+
+```python
+def check_list_criteria(numbers):
+  """
+  Checks if a list of integers is sorted and has each number appearing at least three times.
+
+  Args:
+    numbers: A list

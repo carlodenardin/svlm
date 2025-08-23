@@ -1,0 +1,57 @@
+Here’s a clear description ready for implementation based on the provided flowchart:
+
+---
+
+#### **Algorithm Overview**
+This algorithm counts how many distinct triples (combinations of three elements) from a generated vector sum up to a multiple of 3. The vector is built according to a specific formula based on the input integer.
+
+---
+
+#### **Input Data**
+- A single positive integer **n**.
+
+---
+
+#### **Main Logical Flow**
+
+1. **Input**: Receive a positive integer `n`.
+2. **Vector Initialization**:
+    - Create a vector/array `A` of length `n`.
+    - Populate each element in `A` according to the formula:
+      - For index `i` from `1` to `n`:
+        - `A[i - 1] = i * i - i + 1`
+3. **Process Triples**:
+    - Iterate over all possible **distinct triples** `(i, j, k)` such that `0 <= i < j < k < n`.
+    - For each triple, compute the sum: `A[i] + A[j] + A[k]`.
+    - If this sum is **divisible by 3**, increment the count.
+4. **Output**:
+    - Return or print the total count of such triples.
+
+---
+
+#### **Expected Output**
+- A single integer: the number of distinct triples from the vector whose sum is a multiple of 3.
+
+---
+
+## **Example Implementation Skeleton (Python-style pseudocode)**
+```python
+def count_triples_multiple_of_three(n):
+    # Step 1: Generate the vector
+    A = [i * i - i + 1 for i in range(1, n+1)]
+    count = 0
+    
+    # Step 2: Check all distinct triples
+    for i in range(n):
+        for j in range(i+1, n):
+            for k in range(j+1, n):
+                if (A[i] + A[j] + A[k]) % 3 == 0:
+                    count += 1
+    return count
+```
+
+---
+
+**Notes:**  
+- Time complexity is O(n³) due to the triple loop. For large n, consider optimizing or limiting n.
+- Ensure the function receives the integer, builds the vector, processes, and outputs/counts the valid triples.

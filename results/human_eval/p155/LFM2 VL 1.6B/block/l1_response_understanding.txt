@@ -1,0 +1,61 @@
+### Algorithm Implementation Overview
+
+**Purpose:**
+The algorithm is designed to process an integer input, count the number of even and odd digits, and return the counts as output.
+
+**Input Data Required:**
+- An integer (digit) as input.
+
+**Main Logical Flow:**
+1. **Receive the integer as input:** The algorithm starts by accepting an integer value from the user or a predefined source.
+2. **Count the even digits:** The algorithm iterates through each digit of the integer.
+3. **Count the odd digits:** The algorithm iterates through each digit of the integer.
+4. **Return the counts:** The algorithm outputs the counts of even and odd digits.
+
+**Expected Output:**
+- The output is a pair of integers representing the counts of even and odd digits in the input integer.
+
+### Step-by-Step Implementation
+
+1. **Receive the integer as input:**
+   - Initialize a variable `even_count` to 0.
+   - Initialize a variable `odd_count` to 0.
+   - Prompt the user to input an integer.
+
+2. **Count the even digits:**
+   - Convert the input integer to a string to iterate over each digit.
+   - For each digit in the string:
+     - Convert the digit back to an integer.
+     - Check if the digit is even (i.e., `digit % 2 == 0`).
+     - If the digit is even, increment `even_count` by 1.
+
+3. **Count the odd digits:**
+   - Convert the input integer to a string to iterate over each digit.
+   - For each digit in the string:
+     - Convert the digit back to an integer.
+     - Check if the digit is odd (i.e., `digit % 2!= 0`).
+     - If the digit is odd, increment `odd_count` by 1.
+
+4. **Return the counts:**
+   - Output the values of `even_count` and `odd_count` as a pair.
+
+### Pseudocode
+
+```plaintext
+Input: integer input
+Initialize even_count = 0
+Initialize odd_count = 0
+
+For each digit in input:
+    Convert digit to integer
+    If digit is even:
+        even_count = even_count + 1
+    Else:
+        odd_count = odd_count + 1
+
+Output even_count and odd_count
+```
+
+### Example
+
+**Input:

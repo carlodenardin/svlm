@@ -1,0 +1,18 @@
+```python
+def product_of_odd_digits(n):
+    """
+    Calculates the product of the odd digits in an integer.
+    If there are no odd digits, returns 0.
+    """
+    product = 1
+    has_odd = False
+    for digit in str(n):
+        digit = int(digit)
+        if digit % 2 != 0:
+            product *= digit
+            has_odd = True
+    if not has_odd:
+        return 0
+    else:
+        return product
+```

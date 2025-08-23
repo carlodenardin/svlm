@@ -1,0 +1,30 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to find the greatest common divisor (GCD) of two integers, *n* and *y*, using the Euclidean algorithm.  The GCD is the largest positive integer that divides both *n* and *y* without leaving a remainder.
+
+**2. Input Data Required**
+
+*   **n:** An integer (representing the first number).
+*   **y:** An integer (representing the second number).
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   Declare three integer variables: `n`, `y`, and `i`.
+    *   The flowchart starts by setting `n` to the first integer input.
+    *   `y` is initialized to the second integer input.
+    *   `i` is initialized to 2.
+
+2.  **Initial Check:**
+    *   The algorithm first checks if `n` is equal to 1. If it is, the algorithm terminates and outputs `y` as the GCD.
+
+3.  **Iteration (Loop):**
+    *   If `n` is not equal to 1, the algorithm enters a loop.
+    *   **Square Root Check:** Inside the loop, it checks if `i` (which represents the current iteration number) is less than the square root of `n`.
+    *   **If `i` is NOT less than the square root of `n`:** The algorithm terminates and outputs `x` (which is undefined in the flowchart, but likely represents a value or a message indicating that the GCD is not found).
+    *   **If `i` IS less than the square root of `n`:** The algorithm proceeds to the next step.
+    *   **Modulo Check:** It then checks if `n` is divisible by `i` (i.e., `n % i == 0`).
+    *   **If `n` is divisible by `i`:** The algorithm sets `y` to `i` and terminates.  This is the core of the Euclidean algorithm.
+    *   **If `n` is NOT divisible by `i`:** The algorithm increments `i` by 1 (`i = i + 1`) and continues to the next iteration of the loop

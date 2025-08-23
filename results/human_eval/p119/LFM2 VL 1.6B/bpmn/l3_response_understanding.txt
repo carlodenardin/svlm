@@ -1,0 +1,18 @@
+The flowchart represents an algorithm for checking if a list of two strings is a valid combination. The purpose of the algorithm is to determine whether the concatenation of the two input strings matches the result of a function check(s) for each combination of strings.
+
+The input data required for the algorithm is a list of two strings.
+
+The main logical flow of the algorithm involves the following steps:
+
+1. Receive a list composed of 2 strings.
+2. Concatenate the strings with both the combination.
+3. Initialize and set c1 and c2 with the result of the function check(s) for each combination of strings.
+4. Check if the concatenated string matches the result of the function check(s) for each combination of strings.
+5. If the concatenated string matches the result of the function check(s) for each combination of strings, return 'Yes'.
+6. If the concatenated string does not match the result of the function check(s) for each combination of strings, return 'No'.
+
+The expected output of the algorithm is either 'Yes' or 'No', depending on whether the concatenated string matches the result of the function check(s) for each combination of strings.
+
+The algorithm uses a combination of conditional statements, loops, and function calls to implement the logic. The flowchart also includes decision points and loops to handle different cases and iterate over the combinations of strings.
+
+Overall, the algorithm is designed to efficiently check if a list of two strings is a valid combination by concatenating the strings and comparing the result with the output of a function check(s) for each combination.

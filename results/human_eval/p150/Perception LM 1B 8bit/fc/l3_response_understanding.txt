@@ -1,0 +1,57 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to calculate the sum of the first `n` positive integers, where `n` is an integer input. It iterates through the numbers from 1 to `n`, adding them together and storing the result in a variable `y`. The algorithm then returns `y` as the final output.
+
+### Input Data
+* `n`: an integer input representing the number of positive integers to sum
+
+### Main Logical Flow
+#### Step 1: Input Validation
+* Check if `n` is a positive integer. If not, raise an error.
+
+#### Step 2: Loop Through Numbers
+* Initialize a variable `i` to 1 and a variable `sum` to 0.
+* Iterate through the numbers from 1 to `n` using a loop.
+* For each number `i`, add `i` to `sum` and increment `i` by 1.
+* After the loop, `sum` will hold the sum of the first `n` positive integers.
+
+#### Step 3: Return the Sum
+* Return the final sum `sum` as the output.
+
+### Expected Output
+* The sum of the first `n` positive integers, where `n` is an integer input.
+
+### Implementation
+```python
+def sum_of_integers(n):
+    """
+    Calculate the sum of the first n positive integers.
+
+    Args:
+        n (int): The number of positive integers to sum.
+
+    Returns:
+        int: The sum of the first n positive integers.
+
+    Raises:
+        ValueError: If n is not a positive integer.
+    """
+    if not isinstance(n, int) or n <= 0:
+        raise ValueError("n must be a positive integer")
+
+    sum = 0
+    i = 1
+    while i <= n:
+        sum += i
+        i += 1
+
+    return sum
+
+# Example usage:
+n = 5
+result = sum_of_integers(n)
+print(f"The sum of the first {n} positive integers is: {result}")
+```
+This implementation follows the algorithm's steps, including input validation, loop through numbers, and returning the sum. The example usage demonstrates how to use the function with a specific input value.

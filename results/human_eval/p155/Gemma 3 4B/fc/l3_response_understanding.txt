@@ -1,0 +1,40 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm determines whether a given integer `n` is divisible by 10. It essentially checks if the last digit of `n` is 0.
+
+**2. Input Data Required**
+
+*   **Input:** An integer `n`.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `even = 0` (Initialize a variable to track even numbers)
+    *   `odd = 0` (Initialize a variable to track odd numbers)
+    *   `n = abs(num)` (Take the absolute value of the input number `n`. This ensures the algorithm works correctly for both positive and negative numbers.)
+
+2.  **Outer Loop Condition:**
+    *   `n > 0`:  The loop continues as long as `n` is greater than 0.
+
+3.  **Division by 10:**
+    *   `d = n % 10`: Calculate the remainder when `n` is divided by 10. This gives us the last digit of `n`.
+
+4.  **Odd Number Check:**
+    *   `d % 2 == 0`: Check if the last digit `d` is even.
+
+5.  **Conditional Branching:**
+    *   **If `n > 0` and `d % 2 == 0` (Last digit is even):**
+        *   `even = 1`: Increment the `even` counter.
+    *   **Else (If `n > 0` and `d % 2 != 0` (Last digit is odd)):**
+        *   `odd = 1`: Increment the `odd` counter.
+
+6.  **Update n:**
+    *   `n = n // 10`: Integer division of `n` by 10. This effectively removes the last digit from `n`.
+
+7.  **Loop Continuation:**
+    *   The algorithm returns to step 2 (Outer Loop Condition) to repeat the process with the updated value of `n`.
+
+8.  **Termination:**
+    *   The loop terminates when `n` is no longer greater than 0 (i.e., `n` becomes 0 or negative).

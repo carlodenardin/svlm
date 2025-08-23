@@ -1,0 +1,27 @@
+Overview:
+The algorithm is designed to check if a given list of integers contains duplicate numbers. It iterates through the list, comparing each number with the previous ones to determine if there are any duplicates.
+
+Input Data:
+The algorithm requires a list of integers as input.
+
+Main Logical Flow:
+1. Start: Begin the algorithm.
+2. For each number in the list:
+   a. Check if the number is smaller than the next number.
+   b. If yes, continue to the next number.
+   c. If no, check if the number is smaller than the previous number.
+   d. If yes, there is a duplicate, so mark the number as found and break out of the loop.
+   e. If no, mark the number as not found and continue to the next number.
+3. If no duplicates are found, mark the list as not containing duplicates and end the algorithm.
+
+Expected Output:
+The algorithm outputs "True" if the list contains duplicates, and "False" if it does not.
+
+Implementation:
+```python
+def contains_duplicates(numbers):
+    for i in range(len(numbers) - 1):
+        if numbers[i] < numbers[i + 1]:
+            return True
+    return False
+```

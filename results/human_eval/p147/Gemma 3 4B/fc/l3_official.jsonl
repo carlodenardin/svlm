@@ -1,0 +1,4 @@
+{"success": false, "error": "'int' object is not subscriptable", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "'int' object is not subscriptable", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "'int' object is not subscriptable", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "'int' object is not subscriptable", "input": 100, "output": null, "correct_output": 53361}

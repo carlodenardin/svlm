@@ -1,0 +1,9 @@
+```python
+def process_data(n, x, y):
+    if n == 1:
+        return x
+    elif n == 2:
+        return x + y
+    else:
+        return x - y
+```

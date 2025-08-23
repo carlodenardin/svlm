@@ -1,0 +1,75 @@
+Certainly! Here’s a clear breakdown for implementing the algorithm depicted in the flowchart:
+
+---
+
+### **Overview of the Algorithm's Purpose**
+
+The algorithm iterates over a list of integers, analyzes each integer by splitting it into its digits, computes the sum of those digits, and counts how many values in the list have a digit-sum greater than zero. 
+
+---
+
+### **Input Data Required**
+
+- `arr`: A list of integers (`List[int]`)
+
+---
+
+### **Main Logical Flow**
+
+1. **Initialization:**
+    - Create an integer variable `res` and initialize it to 0. This will act as a counter for the matching numbers.
+
+2. **Iteration:**
+    - Loop through each element in `arr`.
+
+3. **Processing Each Element:**
+    - For the current integer, extract each digit and build a list of its digits.
+    - Compute the sum of the digits.
+
+4. **Condition Check:**
+    - If the sum of the digits is greater than 0, increment `res` by 1.
+
+5. **Repeat or End:**
+    - Continue with the next element until all elements have been processed.
+
+6. **Output:**
+    - At the end, output (or return) the value of `res`.
+
+---
+
+### **Expected Output**
+
+- An integer value (`res`) representing the number of elements in `arr` whose digits sum to more than zero.
+
+---
+
+### **Example Step-by-Step Implementation (Python)**
+
+```python
+def count_positive_digit_sums(arr):
+    res = 0
+    for num in arr:
+        # Extract digits and sum them
+        digits = [int(d) for d in str(abs(num))]  # Handles negative values too
+        digit_sum = sum(digits)
+        if digit_sum > 0:
+            res += 1
+    return res
+```
+
+---
+
+### **Summary Table**
+
+| Step                      | Action                                                              |
+|---------------------------|---------------------------------------------------------------------|
+| 1                         | Initialize `res = 0`                                                |
+| 2                         | For each value in `arr`                                             |
+| 3                         | Extract digits and compute their sum                                |
+| 4                         | If sum > 0, increment `res`                                         |
+| 5                         | Repeat for all elements                                             |
+| 6                         | Output/return `res`                                                 |
+
+---
+
+Let me know if you need further details or language-specific implementation!

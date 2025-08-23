@@ -1,0 +1,27 @@
+The flowchart represents an algorithm designed to check if a given string is balanced, meaning that every opening parenthesis has a matching closing parenthesis in the correct order. The algorithm takes a string as input and performs the following steps:
+
+1. The algorithm starts by initializing an empty list called "str" and a boolean variable "c1" to keep track of the first character encountered.
+
+2. The algorithm then checks if the first character of the string is a closing parenthesis. If it is, the algorithm calls the function "check_str" with the first character as an argument.
+
+3. The function "check_str" is not shown in the flowchart, but it is assumed to return a boolean value indicating whether the string is balanced.
+
+4. If the first character is not a closing parenthesis, the algorithm calls the function "check_str" again with the second character as an argument.
+
+5. The algorithm continues to call the function "check_str" with the next character until it reaches the end of the string.
+
+6. If the function "check_str" returns "No", indicating that the string is not balanced, the algorithm ends.
+
+7. If the function "check_str" returns "Yes", indicating that the string is balanced, the algorithm checks if the first character is a matching opening parenthesis.
+
+8. If the first character is a matching opening parenthesis, the algorithm calls the function "check_paren" with the first character as an argument.
+
+9. The function "check_paren" is not shown in the flowchart, but it is assumed to return a boolean value indicating whether the string is balanced.
+
+10. If the function "check_paren" returns "True", indicating that the string is balanced, the algorithm ends.
+
+11. If the function "check_paren" returns "False", indicating that the string is not balanced, the algorithm ends.
+
+12. If the function "check_paren" returns "No", indicating that the string is not balanced, the algorithm ends.
+
+The expected output of the algorithm is a boolean value indicating whether the string is balanced or not. If the string is balanced, the algorithm returns "True". If the string is not balanced, the algorithm returns "False".

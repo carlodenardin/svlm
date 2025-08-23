@@ -1,0 +1,19 @@
+```python
+def calculate_sum(arr):
+    res = 0
+    while True:
+        has_list_been_iterated = False
+        for num in arr:
+            digits = [int(digit) for digit in str(num)]
+            if not digits:
+                has_list_been_iterated = True
+                break
+        if has_list_been_iterated:
+            break
+        sum_of_digits = sum(digits)
+        if sum_of_digits > 0:
+            res += 1
+        else:
+            break
+    return res
+```

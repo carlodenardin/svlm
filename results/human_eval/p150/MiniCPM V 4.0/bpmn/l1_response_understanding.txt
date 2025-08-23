@@ -1,0 +1,16 @@
+The algorithm depicted in the flowchart appears to be designed for determining whether an integer \( n \) is prime and returning either \( x \) or \( y \) based on this determination. Here's a step-by-step description of the implementation:
+
+1. **Input Reception**: The process begins by receiving input values for integers \( n \), \( x \), and \( y \).
+
+2. **Prime Check**: 
+   - A decision point checks if the number \( n \) is prime.
+   - If \( n \) is prime, the value of \( x \) is returned.
+   - If \( n \) is not prime, the function proceeds to return \( y \).
+
+3. **Output Determination**: Based on the result of the primality check:
+   - If \( n \) is prime, output \( x \).
+   - If \( n \) is not prime, output \( y \).
+
+4. **End of Process**: The algorithm concludes here with the appropriate output determined by the initial conditions provided.
+
+This structured approach ensures that the correct value (\( x \) or \( y \)) is appropriately handled based on the prime status of \( n \).

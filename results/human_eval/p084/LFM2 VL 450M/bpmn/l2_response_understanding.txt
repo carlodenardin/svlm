@@ -1,0 +1,12 @@
+The algorithm's purpose is to receive an integer number, initialize two variables, compute and allocate the sum of the two variables, convert the sum to binary, and then return the variable.
+
+Input data required: An integer number.
+
+Main logical flow:
+
+1. Receive an integer number.
+2. Initialize two variables: sum = 0 and res = 0.
+3. Compute and allocate the sum of the two variables.
+4. Convert the sum to binary and save it in the variable.
+
+Expected output: The variable contains the sum of the two variables.

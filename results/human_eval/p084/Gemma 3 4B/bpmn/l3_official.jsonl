@@ -1,0 +1,5 @@
+{"success": false, "error": "unsupported operand type(s) for +=: 'int' and 'str'", "input": 1000, "output": null, "correct_output": "1"}
+{"success": false, "error": "unsupported operand type(s) for +=: 'int' and 'str'", "input": 150, "output": null, "correct_output": "110"}
+{"success": false, "error": "unsupported operand type(s) for +=: 'int' and 'str'", "input": 147, "output": null, "correct_output": "1100"}
+{"success": false, "error": "unsupported operand type(s) for +=: 'int' and 'str'", "input": 333, "output": null, "correct_output": "1001"}
+{"success": false, "error": "unsupported operand type(s) for +=: 'int' and 'str'", "input": 963, "output": null, "correct_output": "10010"}

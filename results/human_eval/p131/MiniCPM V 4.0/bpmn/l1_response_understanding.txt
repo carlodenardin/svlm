@@ -1,0 +1,15 @@
+The algorithm depicted in the flowchart aims to compute the product of the odd digits of an integer. Here's a step-by-step implementation:
+
+1. **Receive Input**: Start by receiving an integer `n` as input. This is typically done using user input or reading from a file/database.
+   
+2. **Extract Odd Digits**: 
+   - Convert the integer `n` into a string to easily access each digit.
+   - Initialize a variable, say `product`, to store the product of the odd digits. Set it initially to 1 (or 0 if no odd digits are found).
+   - Iterate through each character in the string representation of `n`.
+   - Check if the current character represents a digit and whether it is odd. If both conditions are met, multiply the `product` by this digit.
+
+3. **Return Result**: After processing all digits, return the value stored in `product`. If there were no odd digits present during the iteration, the result will be 0.
+
+4. **End Process**: The process ends here with the computed product being ready for further use or output.
+
+This straightforward approach ensures that we handle any positive integer input effectively, computing only the desired product based on the specified logic.

@@ -1,0 +1,13 @@
+```python
+def process_integer(number):
+    """
+    Processes an integer number.
+
+    Args:
+        number (int): The integer number to process.
+
+    Returns:
+        int: The binary representation of the number.
+    """
+    return bin(number)[2:]  # Convert to binary and remove the '0b' prefix
+```

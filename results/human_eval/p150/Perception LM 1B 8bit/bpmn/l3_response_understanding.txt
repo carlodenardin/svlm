@@ -1,0 +1,50 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to calculate the value of `y` based on the input integers `n`, `x`, and `y`. It iterates through the input integers, checks if `n` is equal to 1, and then calculates `y` accordingly.
+
+### Input Data
+* `n`: integer
+* `x`: integer
+* `y`: integer
+
+### Main Logical Flow
+#### Step 1: Check if `n` is equal to 1
+If `n` is equal to 1, the algorithm returns `y`.
+
+#### Step 2: Set `i` to 2
+If `n` is not equal to 1, the algorithm sets `i` to 2.
+
+#### Step 3: Calculate `n` squared
+The algorithm calculates `n` squared using the formula `n^2`.
+
+#### Step 4: Check if `n` is less than the square root of `n`
+If `n` is less than the square root of `n`, the algorithm returns `x`.
+
+#### Step 5: Calculate `n` modulo `i`
+The algorithm calculates `n` modulo `i` using the formula `n % i`.
+
+#### Step 6: Return `y` if `n` is less than the square root of `n` or `n` modulo `i` equals 0
+If either condition is true, the algorithm returns `y`.
+
+#### Step 7: Increase `i` by 1
+The algorithm increments `i` by 1.
+
+### Expected Output
+The algorithm returns the value of `y` based on the input integers `n`, `x`, and `y`.
+
+**Implementation**
+```python
+def calculate_y(n, x, y):
+    if n == 1:
+        return y
+    else:
+        set_i = 2
+        if n < math.sqrt(n):
+            return x
+        else:
+            return y
+    return calculate_y(n % i, x, y)
+```
+Note: The `math.sqrt` function is used to calculate the square root of `n`.

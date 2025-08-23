@@ -1,0 +1,16 @@
+```python
+```python
+def algorithm_logic(n, x, y):
+    if n == 1:
+        return y
+    i = 2
+    while i <= n:
+        if i % sqrt(n) != 0:
+            return x
+        else:
+            n %= i
+            if n == 0:
+                return y
+            i += 1
+```
+```

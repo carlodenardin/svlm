@@ -1,0 +1,11 @@
+```python
+def n_abs_odd(n):
+    if n == 0:
+        return 0
+    else:
+        d = n % 10
+        if d == 0:
+            return d
+        else:
+            return n // 10 + d
+```

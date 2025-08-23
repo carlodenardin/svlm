@@ -1,0 +1,10 @@
+```python
+def binary_conversion(n):
+    if n == 0:
+        return "0"
+    else:
+        return str(bin(n)[2:])
+
+n = int(input("Enter a number: "))
+print(binary_conversion(n))
+```

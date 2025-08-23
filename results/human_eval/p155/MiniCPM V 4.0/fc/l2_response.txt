@@ -1,0 +1,16 @@
+```python
+```python
+def analyze_number(n):
+    even = 0
+    odd = 0
+    n = abs(n)
+    while n > 0:
+        digit = n % 10
+        n = n // 10
+        if digit % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return (even, odd)
+```
+```

@@ -1,0 +1,22 @@
+The flowchart outlines an algorithm designed to determine whether a given integer `n` is either even or odd. Here's a step-by-step description of the implementation:
+
+1. **Input Data**: 
+   - The input required for this algorithm is an integer `n`.
+
+2. **Initialization**:
+   - Initialize two boolean variables, `even` and `odd`, both set to 0. This indicates that initially, no parity (even or odd) has been identified.
+   - Assign the absolute value of `n` to `n`. This ensures that negative numbers are handled correctly by treating them as positive integers.
+
+3. **Main Logical Flow**:
+   - Begin with a decision point checking if `n` is greater than 0. If true, proceed; otherwise, exit the loop.
+   - Calculate the remainder (`d`) when `n` is divided by 10. This helps in determining the last digit of `n`.
+   - Check if the last digit (`d`) is divisible by 2. If not, increment the `odd` variable by 1. If yes, increment the `even` variable by 1.
+   - Update `n` by performing integer division (`n //= 10`). This effectively removes the last digit from `n`.
+
+4. **Loop Termination**:
+   - Continue the process until `n` becomes 0. At each iteration, check the current values of `even` and `odd`. Once `n` reaches 0, output the tuple containing the values of `even` and `odd`.
+
+5. **Expected Output**:
+   - The expected output is a tuple indicating whether the number was determined to be even or odd. For example, if the final state shows `even = 1` and `odd = 0`, it means the original number was odd. Conversely, if `even = 1` and `odd = 0`, the number was even.
+
+This structured approach ensures accurate determination of the parity of any given integer through systematic evaluation and iterative processing.

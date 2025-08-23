@@ -1,0 +1,70 @@
+Certainly! Here's a structured breakdown based on the provided flowchart:
+
+---
+
+### **1. Overview of the Algorithm's Purpose**
+The algorithm is designed to analyze an integer `n` and output one of two values (`x` or `y`) based on properties of `n`:
+- If `n` equals 1, it returns a specific value (`y`).
+- If `n` is not divisible by any integer in `[2, sqrt(n)]`, it returns another value (`x`).
+- If `n` is divisible by any integer in `[2, sqrt(n)]`, it returns `y`.
+
+This is useful for distinguishing if `n` is a prime number or has special qualities depending on the context of `x` and `y`.
+
+---
+
+### **2. Input Data Required**
+- **n**: An integer — the main number to be analyzed.
+- **x**: An integer — return value in the case where no divisors are found in `[2, sqrt(n)]`.
+- **y**: An integer — return value in the case where a divisor is found (or if `n == 1`).
+
+---
+
+### **3. Main Logical Flow**
+#### **Step-by-Step Process:**
+1. **Read inputs:** Receive the integers `n`, `x`, and `y`.
+2. **Check if n is 1:**
+   - If `n == 1`, **return `y`** and terminate.
+3. **Initialize loop variable:** Set `i = 2`.
+4. **Loop while `i <= sqrt(n)`:**
+   - If `i > sqrt(n)`, **return `x`** and terminate (no divisors found, `n` is likely prime).
+   - If `n % i == 0` (if `n` is divisible by `i`),
+     - **Return `y`** and terminate (divisor found).
+   - Otherwise, increment `i` and repeat the loop.
+   
+---
+
+### **4. Expected Output**
+- **`y`** if `n` is 1.
+- **`y`** if `n` is divisible by any number in `[2, sqrt(n)]`.
+- **`x`** if `n` is not divisible by any such number (implying `n` is prime when `n > 1`).
+
+---
+
+## **Pseudocode Implementation**
+
+```python
+def algorithm(n, x, y):
+    import math
+    if n == 1:
+        return y
+    i = 2
+    while i <= math.isqrt(n):
+        if n % i == 0:
+            return y
+        i += 1
+    return x
+```
+
+---
+
+## **Summary Table**
+
+| Condition                      | Output   |
+|---------------------------------|----------|
+| n == 1                         | y        |
+| n % i == 0 for some i in [2,sqrt(n)] | y  |
+| n > 1 and no divisors found    | x        |
+
+---
+
+Ready for implementation in any language of your choice! Let me know if you need the code in a specific language.

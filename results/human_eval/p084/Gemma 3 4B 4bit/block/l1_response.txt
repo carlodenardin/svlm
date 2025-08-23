@@ -1,0 +1,13 @@
+```python
+def sum_digits_and_binary(n):
+    """
+    Given an integer n, calculate the sum of its digits, convert it into binary, and return the result as a string.
+    """
+    sum_of_digits = 0
+    for digit in str(n):
+        sum_of_digits += int(digit)
+
+    binary_representation = bin(sum_of_digits)[2:]  # Convert to binary and remove the "0b" prefix
+
+    return binary_representation
+```

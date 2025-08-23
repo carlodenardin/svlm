@@ -1,0 +1,21 @@
+The flowchart describes an algorithm designed to validate the balance of parentheses within a given string. Here's a step-by-step implementation:
+
+1. **Input**: The algorithm requires a list containing a string `str` as input.
+2. **Initialization**: 
+   - Create two empty lists, `s1` and `s2`, which will be used to track opening and closing brackets respectively.
+3. **String Splitting**: 
+   - Convert the input string into a list of characters for easier manipulation.
+4. **Validation Loop**: 
+   - Iterate through each character in the list.
+   - If the current character is an opening bracket ('(' or '['), append it to `s1`.
+   - If the current character is a closing bracket (')' or ']'), check if `s1` is not empty.
+     - If `s1` is not empty, pop the last element from `s1` and add it to `s2`.
+     - If `s1` is empty, proceed without adding anything to `s2` because there’s no matching opening bracket.
+5. **Validation Check**:
+   - After processing all characters, compare `s1` with `s2`.
+   - If they are equal, the string has balanced parentheses; otherwise, it does not.
+6. **Output**:
+   - If the string is balanced, output "True".
+   - If the string is unbalanced, output "False".
+
+This process ensures that every opening parenthesis has a corresponding closing parenthesis, maintaining the correct order of operations represented by the brackets.

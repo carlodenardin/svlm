@@ -1,0 +1,21 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**1. Overview**
+
+The algorithm's purpose is to create a list of numbers based on a given integer input `n`.  For each integer `i` from 1 to `n`, it calculates either the factorial of `i` (if `i` is even) or the sum of integers from 1 to `i` (if `i` is odd).  The algorithm then returns this list of calculated values.
+
+**2. Input Data**
+
+*   **`n` (integer):** This is the primary input to the algorithm. It determines the length of the list to be generated.  It must be a non-negative integer.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Receive Input:** The algorithm begins by receiving an integer `n` as input.
+2.  **Create List:**  An empty list (or array) is created to store the calculated values.
+3.  **Loop from 1 to n:**  The algorithm iterates through the integers from 1 to `n` (inclusive).  This is typically done using a `for` loop or a similar iteration mechanism.
+4.  **Decision (Even/Odd):** Inside the loop, for each integer `i`, the algorithm checks if `i` is even or odd. This can be done using the modulo operator (`%`).  `i % 2 == 0` indicates that `i` is even.
+5.  **Calculate Value:**
+    *   **If `i` is even:** The algorithm calculates the factorial of `i`.  The factorial of a number `x` (denoted as `x!`) is the product of all positive integers less than or equal to `x`.  For example, 5! = 5 * 4 * 3 * 2 * 1 = 120.
+    *   **If `i` is odd:** The algorithm calculates the sum of integers from 1 to `i`. This can be done using the formula: `sum = i * (i + 1) / 2`.
+6.  **Append to List:**  The calculated value (either factorial or sum) is appended to the list.
+7.  **Return List:** After the loop completes (i.e., after processing all integers from 1 to `n

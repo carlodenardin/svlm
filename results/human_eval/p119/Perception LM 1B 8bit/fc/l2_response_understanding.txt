@@ -1,0 +1,79 @@
+**Algorithm Overview**
+=======================
+
+### Purpose
+
+The algorithm is designed to validate the validity of strings and check for balanced parentheses in a given input. It takes a string as input and returns a boolean value indicating whether the string is valid or not.
+
+### Input Data
+
+*   The algorithm requires a string as input, which is processed and validated throughout the execution.
+
+### Main Logical Flow
+
+#### Step 1: String Validation
+
+*   The algorithm starts by checking if the input string is empty. If it is, the function returns `False`.
+*   If the string is not empty, the algorithm proceeds to validate the string.
+
+#### Step 2: String Composition
+
+*   The algorithm creates a new string by concatenating the input string with a new string containing the string itself.
+*   This new string is then passed to the `check_string` function.
+
+#### Step 3: String Composition (continued)
+
+*   The `check_string` function is called with the new string as input.
+*   The function checks if the string is balanced, meaning that every opening parenthesis has a matching closing parenthesis, and closures never exceed openings in order.
+
+#### Step 4: Decision Points
+
+*   If the string is balanced, the algorithm returns `True`.
+*   If the string is not balanced, the algorithm returns `False`.
+
+#### Step 5: End
+
+*   The algorithm ends with a boolean value indicating whether the string is valid or not.
+
+### Expected Output
+
+*   The algorithm returns a boolean value indicating whether the input string is valid or not.
+
+### Implementation
+
+```python
+def is_valid_string(s):
+    """
+    Validate the validity of a string.
+
+    Args:
+    s (str): The input string to be validated.
+
+    Returns:
+    bool: True if the string is valid, False otherwise.
+    """
+    # Check if the string is empty
+    if not s:
+        return False
+
+    # Create a new string with the input string and a new string containing the input string
+    new_string = s + s
+
+    # Check if the string is balanced
+    if not is_balanced(new_string):
+        return False
+
+    return True
+
+def is_balanced(s):
+    """
+    Check if a string is balanced.
+
+    Args:
+    s (str): The input string to be checked.
+
+    Returns:
+    bool: True if the string is balanced, False otherwise.
+    """
+    # Check if every opening parenthesis has a matching closing parenthesis
+    if not s.count('(', 1

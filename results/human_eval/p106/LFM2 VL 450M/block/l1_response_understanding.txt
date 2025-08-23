@@ -1,0 +1,7 @@
+The algorithm's purpose is to create a list of values from 1 to n, where n is the input number. The input data required is the number n. The main logical flow is as follows:
+
+1. Start from i = 1 to i = n
+2. Create a list of values from 1 to i
+3. Return the list of values
+
+The expected output is a list of values from 1 to n.

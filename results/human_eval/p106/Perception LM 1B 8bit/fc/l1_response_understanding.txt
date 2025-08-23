@@ -1,0 +1,59 @@
+**Algorithm Overview:**
+The algorithm is designed to calculate the product of numbers from 1 to `n` if `n` is even, and the sum of numbers from 1 to `n` if `n` is odd. It initializes a result list and counter, and iteratively calculates the product or sum based on the input `n`.
+
+**Input Data:**
+The algorithm requires the input `n` as an integer.
+
+**Main Logical Flow:**
+
+1. **Initialization**: The algorithm initializes the result list and counter.
+2. **Input `n` as Integer**: The algorithm checks if `n` is an integer. If not, it throws an error.
+3. **Initialization the Result List and Counter**: The algorithm initializes the result list and counter.
+4. **Decision: `i < n`**: The algorithm checks if `i` is less than `n`. If true, it proceeds to the next step. If false, it returns.
+5. **Product Calculation**: If `i` is even, the algorithm calculates the product of numbers from 1 to `i`. Otherwise, it calculates the sum of numbers from 1 to `i`.
+6. **Result Calculation**: The algorithm calculates the result by adding the calculated value to the result list and incrementing the counter.
+7. **End**: The algorithm ends the process.
+
+**Expected Output:**
+The algorithm calculates the product of numbers from 1 to `n` if `n` is even, and the sum of numbers from 1 to `n` if `n` is odd.
+
+**Implementation:**
+```python
+def calculate_product(n):
+    if not isinstance(n, int):
+        raise ValueError("Input must be an integer")
+    
+    result = 1
+    counter = 1
+    
+    while n > 1:
+        if n % 2 == 0:
+            result *= n
+        else:
+            result += n
+        n -= 1
+        counter += 1
+    
+    return result
+
+def calculate_sum(n):
+    if not isinstance(n, int):
+        raise ValueError("Input must be an integer")
+    
+    result = 0
+    counter = 1
+    
+    while n > 1:
+        if n % 2 == 0:
+            result += n
+        else:
+            result += n * counter
+        n -= 1
+        counter += 1
+    
+    return result
+
+# Example usage:
+n = 5
+result = calculate_product(n)
+print(f"Product

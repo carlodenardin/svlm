@@ -1,0 +1,12 @@
+```python
+def process_number(n):
+    sum_ = 0
+    res = 0
+    if n > 0:
+        sum_ = n * 0.1
+        res = n // 10
+    else:
+        sum_ = n * 0.1
+        res = n // 10
+    return sum_ % 10, res
+```

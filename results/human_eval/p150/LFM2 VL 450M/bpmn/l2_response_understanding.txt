@@ -1,0 +1,8 @@
+The algorithm's purpose is to find a divisor of a given number n. The input data required is the number n. The main logical flow is as follows:
+
+1. Receive n in input the integers x, and y.
+2. Find a divisor of n from 2 to n-1.
+3. If a divisor is found, return it.
+4. If no divisor is found, return y.
+
+The expected output is the divisor of n.

@@ -1,0 +1,31 @@
+The flowchart outlines an algorithm designed to compute the product of odd digits from a given positive integer. Here’s a detailed step-by-step implementation:
+
+### Purpose
+The purpose of this algorithm is to process a positive integer and return the product of its odd digits. If there are no odd digits, it should output 0.
+
+### Input Data Required
+- A positive integer `n` as input.
+
+### Main Logical Flow
+1. **Receiving Input**: Begin by receiving the input value `n` which represents a positive integer.
+2. **Extracting Odd Digits**: Iterate through each digit of the number `n`. Identify and extract only the odd digits.
+3. **Computing Product**: Calculate the product of these identified odd digits.
+4. **Returning Result**: Determine if any odd digits were found. If at least one odd digit exists, return the computed product. Otherwise, return 0.
+
+### Implementation Steps
+1. **Input Handling**: Accept the positive integer `n`.
+2. **Digit Extraction**: Use modulo operation (`n % 10`) to isolate each digit. Check if the digit is odd (i.e., `n % 2 != 0`).
+3. **Product Calculation**: Initialize a variable `product` to 1. Multiply `product` with each identified odd digit.
+4. **Result Determination**: After computing the product, check if `product` equals zero or not. If non-zero, return the product; otherwise, return 0.
+
+### Example Execution
+Consider the input `12345`:
+1. Extract odd digits: 3, 5
+2. Compute their product: 3 * 5 = 15
+3. Return 15 since there are odd digits present.
+
+For the input `45678`:
+1. Extract odd digits: None
+2. Since no odd digits exist, return 0.
+
+This structured approach ensures clarity and correctness in implementing the described algorithm.

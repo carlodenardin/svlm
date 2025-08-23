@@ -1,0 +1,46 @@
+**Algorithm Overview:**
+The algorithm is designed to calculate the remainder of a division operation, specifically to find the remainder of `n` divided by `10` and then calculate the remainder of the result divided by `2`. The process involves several steps to determine the final remainder.
+
+**Input Data:**
+- The input data required is an integer `n`.
+
+**Main Logical Flow:**
+
+1. **Initialization**: The algorithm initializes two variables: `sum` to 0 and `res` to an empty string.
+
+2. **Decision to Calculate Remainder**: The algorithm checks if `n` is greater than 0. If true, it calculates the remainder of `n` divided by 10 and updates `res` with the remainder. If false, it returns `res` as is.
+
+3. **Decision to Calculate Second Remainder**: After calculating the first remainder, the algorithm checks if the result is greater than 0. If true, it calculates the remainder of the first remainder divided by 2 and updates `res` with the remainder. If false, it returns `res` as is.
+
+4. **Return the Result**: The final remainder is calculated and returned.
+
+**Expected Output:**
+The algorithm returns the remainder of `n` divided by 10, and then the remainder of the result divided by 2.
+
+**Implementation:**
+```python
+def calculateRemainder(n):
+    # Initialize variables
+    sum = 0
+    res = ""
+
+    # Calculate the first remainder
+    if n > 0:
+        remainder = n % 10
+        res += str(remainder)
+        n = n // 10
+
+    # Calculate the second remainder
+    if n > 0:
+        remainder = n % 2
+        res += str(remainder)
+        n = n // 2
+
+    # Return the final remainder
+    return res
+
+# Example usage
+n = 17
+result = calculateRemainder(n)
+print(result)  # Output: "1 7"
+```

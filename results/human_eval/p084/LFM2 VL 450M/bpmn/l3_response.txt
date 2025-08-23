@@ -1,0 +1,7 @@
+```python
+def calculate_sum(n):
+    if n > 0:
+        return n * (1 + n / 10)
+    else:
+        return 0
+```

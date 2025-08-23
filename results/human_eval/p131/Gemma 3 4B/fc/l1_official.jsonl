@@ -1,0 +1,7 @@
+{"success": true, "error": "", "input": 5, "output": 5.0, "correct_output": 5}
+{"success": false, "error": "", "input": 54, "output": 20.0, "correct_output": 5}
+{"success": false, "error": "", "input": 120, "output": 0.0, "correct_output": 1}
+{"success": false, "error": "", "input": 5014, "output": 0.0, "correct_output": 5}
+{"success": false, "error": "", "input": 98765, "output": 15120.0, "correct_output": 315}
+{"success": false, "error": "", "input": 5576543, "output": 63000.0, "correct_output": 2625}
+{"success": false, "error": "", "input": 2468, "output": 384.0, "correct_output": 0}

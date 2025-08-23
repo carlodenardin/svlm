@@ -1,0 +1,16 @@
+The algorithm's purpose is to determine whether a given flag value is equal to a specified value. The input data required is the flag value and the value to compare it against. The main logical flow is as follows:
+
+1. Initialize variables: Set the flag value to 1 and the value to compare against to 0.
+2. Return the res variable: Return the flag value.
+3. If the flag value is equal to 0, return the res variable.
+4. If the flag value is not equal to 0, extract the value from the res variable.
+5. If the flag value is equal to 1, set the flag value to 1.
+6. If the flag value is not equal to 1, set the flag value to 0.
+7. If the flag value is equal to 0, set the flag value to 1.
+8. If the flag value is not equal to 0, set the flag value to 0.
+9. If the flag value is equal to 1, set the flag value to 0.
+10. If the flag value is not equal to 1, set the flag value to 1.
+11. If the flag value is equal to 0, increase the res variable by 1.
+12. If the flag value is not equal to 0, increase the res variable by 1.
+
+The expected output is the flag value.

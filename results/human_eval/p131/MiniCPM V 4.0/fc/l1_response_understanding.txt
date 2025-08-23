@@ -1,0 +1,13 @@
+The flowchart outlines an algorithm designed to calculate the product of odd digits in a given positive integer. Here's a detailed step-by-step implementation:
+
+1. **Start**: Begin the process by accepting a positive integer `n` as input.
+2. **Input Data**: The required input is a non-negative integer, denoted as `n`.
+3. **Initialize Product**: Set up a variable named `product` and initialize it to 1. This will store the cumulative product of odd digits encountered during processing.
+4. **Check for Odd Digits**: Iterate through each digit of the number `n` using a loop. For each iteration:
+   - Extract the current digit from `n`.
+   - Determine if the digit is odd. This can be done by checking if the remainder when divided by 2 is not zero (`digit % 2 != 0`).
+5. **Update Product**: If the digit is odd, multiply the `product` variable by this digit.
+6. **Handle Edge Case**: After iterating through all digits, check if the final value of `product` remains unchanged (i.e., no even digits were found). If so, set `product` to 0 since multiplying any number with 0 results in 0.
+7. **Output Result**: Return the calculated `product` as the output of the algorithm.
+
+This structured approach ensures that only odd digits are multiplied together, effectively handling both scenarios where there are odd or even digits present within the input number.

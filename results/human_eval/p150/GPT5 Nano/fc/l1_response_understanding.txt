@@ -1,0 +1,71 @@
+Certainly! Here is a clear breakdown of the algorithm represented in the flowchart:
+
+---
+
+### **Overview**
+The algorithm checks whether an input number `n` is a prime number and outputs one of two values (`x` or `y`) based on the result.  
+- **Purpose:** Conditional value selection based on the primality of a given number.
+
+---
+
+### **Input Data Required**
+- Three integers:  
+  - `n` (the number to test for primality)  
+  - `x` (the output if `n` is prime)  
+  - `y` (the output if `n` is not prime)  
+
+---
+
+### **Main Logical Flow**
+1. **Input Step:**  
+   - Read or accept three integers from the user: `n`, `x`, and `y`.
+
+2. **Primality Check:**  
+   - Determine whether `n` is a prime number:
+     - If `n` is less than 2, it is **not** prime.
+     - If `n` is 2, it **is** prime.
+     - If `n > 2`, iterate through all integers from 2 up to `sqrt(n)`:
+       - If `n` is divisible by any number in this range, it is **not** prime.
+       - Otherwise, it **is** prime.
+
+3. **Conditional Output:**  
+   - If `n` **is** prime, output `x`.
+   - If `n` **is not** prime, output `y`.
+
+---
+
+### **Expected Output**
+- A single integer:  
+  - `x` if `n` is prime  
+  - `y` if `n` is not prime
+
+---
+
+### **Sample Pseudocode**
+
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Input n, x, y
+n = int(input("Enter n: "))
+x = int(input("Enter x: "))
+y = int(input("Enter y: "))
+
+if is_prime(n):
+    print(x)
+else:
+    print(y)
+```
+
+---
+
+**Summary:**  
+This algorithm provides a basic structure to check for primality and conditionally choose and output between two values based on that result. The key components are input collection, a primality check function, and a conditional output.

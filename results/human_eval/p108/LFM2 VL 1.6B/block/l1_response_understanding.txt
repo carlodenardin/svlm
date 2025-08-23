@@ -1,0 +1,47 @@
+### Algorithm Implementation Overview
+
+#### Purpose
+The algorithm is designed to count the number of integers in a given list that have a digit greater than 0 for each value of the list.
+
+#### Input Data Required
+- A list of integers.
+
+#### Main Logical Flow
+1. **Initialization**: Start the process.
+2. **Iterate through each integer in the list**:
+   - For each integer, check if it has any digits.
+   - If it has digits, proceed to the next step.
+3. **Check for digits**:
+   - Convert the integer to a string to easily iterate over its digits.
+   - For each digit in the string:
+     - If the digit is greater than 0, increment the count.
+4. **Return the count**: After checking all integers, return the total count of integers with digits greater than 0.
+
+#### Expected Output
+- The output is the total count of integers in the list that have at least one digit greater than 0.
+
+### Step-by-Step Implementation
+
+1. **Initialize the count**: Set a variable `count` to 0 to keep track of the number of integers with digits greater than 0.
+2. **Iterate through each integer**:
+   - For each integer `num` in the list:
+     - Convert `num` to a string `num_str`.
+     - Check if `num_str` is not empty.
+     - If `num_str` is not empty, increment `count` by 1.
+3. **Return the count**: After the loop, return the value of `count`.
+
+### Pseudocode
+```plaintext
+function countDigitsGreaterThanZero(inputList):
+    count = 0
+    for num in inputList:
+        if num_str(num) is not empty:
+            count = count + 1
+    return count
+```
+
+### Example
+- **Input**: `[123, 456, 789, 0, 111]`
+- **Output**: `3` (since there are 3 integers with digits greater than 0: 123, 456, 789)
+
+This algorithm efficiently counts the integers with digits greater than 0 by leveraging the conversion of integers to strings, ensuring that the logic is straightforward and easy to understand.

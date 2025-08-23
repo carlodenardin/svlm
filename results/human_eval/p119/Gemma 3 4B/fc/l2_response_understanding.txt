@@ -1,0 +1,26 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm's purpose is to determine if a given string of parentheses is "balanced."  A balanced string of parentheses means that every opening parenthesis '(' has a corresponding closing parenthesis ')' and that the closing parentheses appear in the correct order (i.e., no closing parenthesis comes before its corresponding opening parenthesis).
+
+**2. Input Data Required**
+
+*   **String (s):** The input string consisting of parentheses characters ('(' and ')'). This is the string we want to check for balance.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `s = str`:  The input string `s` is assigned to the variable `s`.
+    *   `list[0] = 0`, `list[1] = 1`: Two integer variables, `list[0]` and `list[1]`, are initialized to 0 and 1 respectively. These variables are used to track the balance of the string.
+2.  **Function Call: `check_string(s)`:**
+    *   The `check_string` function is called with the input string `s`. This function performs the core logic of the algorithm.
+3.  **Inside `check_string(s)`:**
+    *   **Looping and Balancing Check:** The `check_string` function iterates through the string `s`.
+        *   For each character:
+            *   If the character is '(': `list[0]` is incremented by 1.
+            *   If the character is ')': `list[1]` is incremented by 1.
+            *   If `list[1]` becomes greater than `list[0]`, it means there are more closing parentheses than opening parentheses at that point, so the string is unbalanced. The function immediately returns `False`.
+    *   **Balanced Check:** After iterating through the entire string, if `list[0]` is equal to `list[1]`, it means the number of opening and closing parentheses are equal, and the string is balanced. The function returns `True`. Otherwise, it returns `False`.
+4.  **Post-Processing (Flowchart Branching):**
+    *   The flowchart shows two branches after the `check_string`

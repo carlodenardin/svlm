@@ -1,0 +1,73 @@
+Certainly! Here's a structured analysis and implementation guide based on the flowchart:
+
+---
+
+### **Algorithm Overview**
+**Purpose:**  
+To count the number of even and odd digits in a given integer.
+
+---
+
+### **Input Data**
+- **n:** An integer (can be negative or positive).
+
+---
+
+### **Main Logical Flow (Step-by-step Process)**
+
+1. **Input Handling:**
+   - Receive an integer input `n`.
+
+2. **Initialization:**
+   - Set two counters: `even = 0` and `odd = 0`.
+   - Convert `n` to absolute value (`n = abs(n)`) to handle negative numbers.
+
+3. **Digit Examination Loop:**
+   - **Condition:** While `n > 0`, repeat the following:
+     - **Extract Last Digit:** `digit = n % 10`
+     - **Even/Odd Check:**
+       - If `digit % 2 == 0`, increment `even`.
+       - Else, increment `odd`.
+     - **Remove Last Digit:** `n = n // 10`
+   - This loop processes all digits, from least to most significant.
+
+4. **Output:**
+   - Return a tuple: `(even, odd)`, representing the counts of even and odd digits, respectively.
+
+---
+
+### **Expected Output**
+- A tuple: **(even, odd)**
+  - `even`: Number of even digits in the input integer.
+  - `odd`: Number of odd digits in the input integer.
+
+---
+
+### **Summary (Pseudo-code for Implementation)**
+
+```python
+def count_even_odd_digits(num: int) -> tuple:
+    even = 0
+    odd = 0
+    n = abs(num)
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+        n //= 10
+    return (even, odd)
+```
+
+---
+
+#### **Usage Example:**
+
+- **Input:** 12345
+- **Output:** (2, 3)  
+  (Even digits: 2, 4; Odd digits: 1, 3, 5)
+
+---
+
+**This approach ensures robust, language-agnostic digit counting within any integer input.**

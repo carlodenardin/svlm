@@ -6,6 +6,8 @@ from src.core.models.gemma_quant_model import GemmaQuantModel
 from src.core.models.perception_model import PerceptionModel
 from src.core.models.lfm2_vl_model import LFM2
 from src.core.models.lfm2_vl_1B_model import LFM21B
+from src.core.models.paligemma2_model import PaliGemma2Model
+from src.core.models.gpt5_nano import GPT5NanoModel
 
 MODEL_MAP = {
     #"DeepSeek VL2 Tiny": {
@@ -22,6 +24,11 @@ MODEL_MAP = {
         "name": "Gemma 3 4B 4bit",
         "model": "unsloth/gemma-3-4b-it-bnb-4bit",
         "class": GemmaQuantModel
+    },
+    "GPT5 Nano": {
+        "name": "GPT5 Nano",
+        "model": "gpt5-nano",
+        "class": GPT5NanoModel
     },
     "LFM2 VL 450M": {
         "name": "LFM2 VL 450M",
@@ -43,6 +50,11 @@ MODEL_MAP = {
         "model": "openbmb/MiniCPM-V-4",
         "class": MiniCPMV4Model
     },
+    "Paligemma2 3B Mix": {
+        "name": "Paligemma2 3B Mix",
+        "model": "google/paligemma2-3b-mix-448",
+        "class": PaliGemma2Model
+    },
     "Perception LM 1B 8bit": {
         "name": "Perception LM 1B 8bit",
         "model": "facebook/Perception-LM-1B",
@@ -61,5 +73,12 @@ DIAGRAM_MAP = {
 }
 
 PROMPT = """You are a Python code generation assistant. Given a diagram of an algorithm, generate a single, syntactically correct function that implements the logic shown. Return only the Python code, enclosed in a ```python``` block."""
+
+PROMPT2 = """You are a software engineer. Given an image of a flowchart, describe the algorithm's implementation using a step-by-step process. Your response should include:
+- A brief overview of the algorithm's purpose.
+- The input data required.
+- The main logical flow, detailing decisions, loops, and function calls.
+- The expected output.
+Present the information clearly and concisely, ready for implementation."""
 
 PATTERN = r"```python\n(.*?)\n```"

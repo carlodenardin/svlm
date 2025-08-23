@@ -1,0 +1,37 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**Overview:**
+
+The algorithm's purpose is to determine if a given integer `n` is a prime number. If it is, the algorithm returns `x`; otherwise, it returns `y`.  The values `x` and `y` are likely intended to be some default values, possibly 0 or a specific error code, to indicate that `n` is not prime.
+
+**Input Data:**
+
+The algorithm requires three integer inputs:
+
+*   `n`: The integer to be checked for primality.
+*   `x`:  A value to be returned if `n` is a prime number.
+*   `y`: A value to be returned if `n` is not a prime number.
+
+**Main Logical Flow (Step-by-Step):**
+
+1.  **Receive Input:** The algorithm begins by receiving the three integer inputs: `n`, `x`, and `y`.
+
+2.  **Primality Check:** The core of the algorithm is determining if `n` is a prime number.  Here's how this is typically done:
+    *   **Handle Edge Cases:**  First, check if `n` is less than or equal to 1. If it is, it's not prime, so return `y`.
+    *   **Check for Divisibility:** Iterate from 2 up to the square root of `n`. For each number `i` in this range, check if `n` is divisible by `i` (i.e., `n % i == 0`).
+    *   **If Divisible:** If `n` is divisible by any `i` in the loop, it's not prime. Return `y`.
+    *   **If No Divisors Found:** If the loop completes without finding any divisors, it means `n` is prime.
+
+3.  **Return Value:**
+    *   If the primality check determines that `n` is prime, return `x`.
+    *   Otherwise (if `n` is not prime), return `y`.
+
+**Expected Output:**
+
+*   **If `n` is a prime number:** The algorithm will return the value `x`.
+*   **If `n` is not a prime number:** The algorithm will return the value `y`.
+
+**Example:**
+
+Let's say:
+

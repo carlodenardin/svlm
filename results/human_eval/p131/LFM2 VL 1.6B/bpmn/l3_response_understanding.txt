@@ -1,0 +1,19 @@
+Overview:
+The algorithm is designed to find the greatest common divisor (GCD) of two integers using the Euclidean algorithm. It repeatedly applies the division algorithm to find the remainder until the remainder is zero, at which point the GCD is the last non-zero remainder.
+
+Input Data:
+The algorithm requires two integers as input.
+
+Main Logical Flow:
+1. Initialize the product variable to 1.
+2. While the input integers are not equal:
+   a. Divide the larger number by the smaller number and store the remainder in a variable.
+   b. If the remainder is zero, return 0 as the GCD.
+   c. Otherwise, set the product variable to the product of the larger and smaller numbers.
+   d. Divide the larger number by the smaller number and store the remainder in a variable.
+   e. If the remainder is zero, return 0 as the GCD.
+   f. Otherwise, set the product variable to the product of the larger and smaller numbers.
+3. Return the product variable as the GCD.
+
+Expected Output:
+The algorithm returns the greatest common divisor of the two input integers.

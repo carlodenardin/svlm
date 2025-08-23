@@ -1,0 +1,91 @@
+Sure! Here’s a structured breakdown of the algorithm depicted in the flowchart:
+
+---
+
+**1. Overview:**
+This algorithm counts how many numbers in a list (input) have the sum of their digits greater than zero. Negative numbers are handled by making their last digit negative.
+
+---
+
+**2. Input Required:**
+- **A list of integers** (e.g., [15, -24, 135, 0, -8]).
+
+---
+
+**3. Main Logical Flow:**
+
+1. **Initialization:**
+   - Set `res = 0` (result counter).
+   - Set `i = 0` (index for the list).
+
+2. **Main Loop:** While `i < len(list)`:
+   - Extract the i-th list value into variable `n`.
+
+   - **Digit Extraction Setup:**
+     - Initialize `digits = []`.
+     - Initialize `isNeg = 1`.
+
+   - **Check for Negative:**  
+     - If `n < 0`, set `isNeg = -1`.
+
+   - **Absolute Value:**
+     - Set `n = abs(n)`.
+
+   - **Digit Extraction:**  
+     - While `n > 0`:
+       - Append `n % 10` to `digits`.
+       - Set `n = n // 10`.
+
+   - **Sign Correction:**
+     - Multiply the last element in `digits` by `isNeg` (to reflect negative sign if needed).
+
+   - **Sum the Digits:**
+     - If the **sum of the digits > 0**, increment `res` by 1.
+
+   - **Loop Increment:**
+     - Increment `i` by 1.
+
+4. **Return Output:**
+   - Return the value of `res`.
+
+---
+
+**4. Expected Output:**
+- An **integer (`res`)** representing the count of numbers in the list for which the sum of their (possibly sign-adjusted) digits is greater than zero.
+
+---
+
+**Example Code Skeleton (Python):**
+```python
+def count_numbers_with_positive_digit_sum(lst):
+    res = 0
+    i = 0
+    while i < len(lst):
+        n = lst[i]
+        digits = []
+        isNeg = 1
+        if n < 0:
+            isNeg = -1
+        n = abs(n)
+        while n > 0:
+            digits.append(n % 10)
+            n = n // 10
+        if digits:
+            digits[-1] *= isNeg
+        if sum(digits) > 0:
+            res += 1
+        i += 1
+    return res
+```
+
+---
+
+**Key Decision Points and Loops:**
+- **While loop** for traversing the list.
+- **If-else** for negative numbers.
+- **Inner while loop** for digit extraction.
+- **If check** for sum of digits.
+
+---
+
+This structure should allow a straightforward and clear implementation in code. If you need a version in another language or further clarifications on any step, let me know!

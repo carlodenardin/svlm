@@ -1,0 +1,13 @@
+def compute_product(n):
+    if n % 2 == 0:
+        return n // 2
+    else:
+        return n * (n - 1) // 2
+
+def main():
+    n = int(input("Enter a number: "))
+    result = compute_product(n)
+    print("The product is:", result)
+
+if __name__ == "__main__":
+    main()

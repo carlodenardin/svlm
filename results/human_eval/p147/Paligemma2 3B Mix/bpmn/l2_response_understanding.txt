@@ -1,0 +1,2 @@
+- Include a flowchart for the main body of the algorithm, and a separate flowchart for the data-dependent loops.
+- Include a flowchart for the function that returns the counter after the loop terminates.

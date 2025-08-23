@@ -1,0 +1,15 @@
+```python
+```python
+def convert_to_binary(n):
+    if n == 0:
+        return "0"
+    elif n < 0:
+        raise ValueError("Input must be a non-negative integer")
+    else:
+        binary = ""
+        while n > 0:
+            binary = str(n % 2) + binary
+            n //= 2
+        return binary
+```
+```

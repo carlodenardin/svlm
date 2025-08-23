@@ -1,0 +1,14 @@
+The flowchart outlines an algorithm designed to determine if a list of integers is strictly increasing. Here's a step-by-step description:
+
+1. **Receive Input**: Start by receiving a list of integers as input. This forms the dataset that will be analyzed.
+2. **Initialize Counter**: Initialize a counter variable `i` to 0. This variable will track the current index in the list during iteration.
+3. **Iterate Through List**: Use a loop to iterate through each element in the list starting from the first element up to the second last element (since we need access to both adjacent elements).
+4. **Check Increasing Condition**: Within the loop, check two conditions:
+   - If the current element (`list[i]`) is less than or equal to the previous element (`list[i-1]`), return `False` immediately since the sequence is not strictly increasing.
+   - If neither condition is met and the next pair of consecutive elements are also equal, return `False` indicating no strict increase exists between those indices.
+5. **Continue Iteration**: If all checks pass without returning early, increment the counter `i` by 1 and continue with the next comparison.
+6. **Final Check**: After iterating through all valid comparisons, return `True` if the entire list meets the criteria for being strictly increasing.
+
+**Expected Output**: The output of this algorithm is a boolean value (`True` or `False`) indicating whether the given list of integers is strictly increasing.
+
+This process ensures that any potential non-strictly increasing segments within the list are identified accurately.

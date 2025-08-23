@@ -1,0 +1,6 @@
+```python
+def check_combinations(input_list):
+    combined_strings = ''.join(input_list)
+    balanced = all(c == ')' and c != input_list[-1] for c in combined_strings)
+    return 'No' if balanced else 'Yes'
+```

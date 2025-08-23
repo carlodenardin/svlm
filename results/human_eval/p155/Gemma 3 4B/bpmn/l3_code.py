@@ -1,0 +1,22 @@
+def even_odd(n):
+    """
+    Determines if a number is even or odd and returns a tuple containing the result.
+
+    Args:
+        n: An integer.
+
+    Returns:
+        A tuple containing "even" if n is even, "odd" if n is odd, and the result of the modulo operation.
+    """
+    even = 0
+    odd = 0
+    n = abs(n)
+    if n > 0:
+        d = n % 10
+        if d % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    while n // 10 != 0:
+        n = n // 10
+    return (even, odd)

@@ -1,0 +1,21 @@
+```python
+def generate_pyramid(n):
+    list = []
+    i = 1
+    while i <= n:
+        x = 0
+        j = 1
+        if i % 2 == 0:
+            x = j
+        else:
+            x *= j
+        if i <= n:
+            if x <= i:
+                list.append(x)
+                j += 1
+            else:
+                list.append(x)
+                i += 1
+        i += 1
+    return list
+```

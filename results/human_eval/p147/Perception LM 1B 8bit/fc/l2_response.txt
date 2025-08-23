@@ -1,0 +1,24 @@
+def create_vector(n, A):
+    count = 0
+    for i in range(n):
+        if i < n - 1:
+            count += 1
+            if count % 3 == 0:
+                return A[i] + A[i] + A[k]
+    return A[n-1] + A[n-1] + A[k]
+
+def main():
+    n = int(input("Enter the dimension of the vector: "))
+    A = [0] * n
+    print("Create a vector of dimension", n, "and initialise the values with the rule:")
+    print("A[i-1] = i * i - i - 1 where 1 <= i <= n")
+    print("Iterate over each triple of a (a[i], a[j], a[k]), with i < j < k")
+    print("a[i]+a[j]+a[k]%3 ==0")
+    print("Any triples left? ", end=" ")
+    print("No", end=" ")
+    print("Yes", end=" ")
+    print("count += 1")
+    print("End")
+
+if __name__ == "__main__":
+    main()

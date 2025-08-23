@@ -1,0 +1,36 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+The algorithm appears to be designed to determine a relationship between four input integers: `n`, `x`, and `y`.  It seems to be a conditional logic problem where the outcome depends on whether `n` is greater than or equal to 1 and whether a divisor of `n` exists within a specific range.
+
+**2. Input Data**
+
+The algorithm requires the following input integers:
+
+*   `n`:  An integer (presumably a positive integer).
+*   `x`: An integer.
+*   `y`: An integer.
+
+**3. Logical Flow (Step-by-Step)**
+
+Here's a breakdown of the algorithm's execution, following the flowchart:
+
+1.  **Receive Input:** The algorithm begins by receiving the three integer values `n`, `x`, and `y` as input.
+2.  **Check if n >= 1:**  The first decision point is to check if the value of `n` is greater than or equal to 1.
+    *   **If `n` is equal to 1:** The algorithm immediately returns the value of `y`.
+    *   **If `n` is not equal to 1:** The algorithm proceeds to the next step.
+3.  **Find Divisor:** The algorithm searches for a divisor of `n` within the range from 2 up to the square root of `n` (inclusive).  This is done by iterating through numbers from 2 to `sqrt(n)`.
+4.  **Check for Divisor:** After finding a divisor, the algorithm checks if a divisor exists.
+    *   **If a divisor exists:** The algorithm returns the value of `x`.
+    *   **If no divisor exists:** The algorithm returns the value of `y`.
+
+**4. Expected Output**
+
+The algorithm will return one of the following values:
+
+*   `y`:  If `n` is equal to 1.
+*   `x`: If a divisor of `n` is found within the range [2, sqrt(n)].
+*   `y`: If no divisor of `n` is found within the range [2, sqrt(n)].
+
+**In essence, the algorithm seems to be a conditional logic problem where the value of `x` is returned if a divisor of `n

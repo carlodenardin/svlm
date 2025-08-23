@@ -1,0 +1,29 @@
+The flowchart outlines an algorithm designed to compute a list of factorials or their sum based on the input integer \( n \). Here’s a step-by-step implementation description:
+
+### Purpose:
+The purpose of this algorithm is to generate and return either a list of factorials up to a given dimension \( n \) or the sum of values from 1 to \( n \).
+
+### Input Data:
+- **Input**: An integer \( n \) representing the size of the list or range for summation.
+
+### Main Logical Flow:
+1. **Receive an Integer as Input (n)**: Start by accepting the integer value \( n \) which will determine the dimensions or limits of operations.
+2. **Create a List of Dimension n**: Initialize an empty list that will store the results of calculations, with a length corresponding to \( n \).
+3. **Populate the List with Factorials or Summation**:
+   - If \( i \) is even: Compute the factorial of \( i \) using a recursive function or iterative approach.
+   - If \( i \) is odd: Compute the sum of values from 1 to \( i \).
+4. **Return the List**: After populating the list according to the rules specified above, return the populated list.
+
+### Expected Output:
+- The output should be a list containing either the calculated factorials or the cumulative sums depending on whether the input was treated as a limit for factorial computation or a direct summation range.
+
+### Implementation Steps:
+1. Define a function `compute_factorial(i)` to calculate the factorial of a number iteratively if necessary.
+2. Create an empty list named `result_list` initialized with zeroes.
+3. Use a loop starting from \( i = 1 \) to \( n \):
+   - Check if \( i \) is even.
+   - If true, call `compute_factorial(i)` and append the result to `result_list`.
+   - If false, compute the sum of numbers from 1 to \( i \) and append it to `result_list`.
+4. Return `result_list` after completing the iteration.
+
+This structured process ensures clarity and correctness in handling both factorial computations and summations based on user inputs.

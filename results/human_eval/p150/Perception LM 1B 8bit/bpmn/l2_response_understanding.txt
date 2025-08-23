@@ -1,0 +1,43 @@
+**Algorithm Overview:**
+The algorithm is designed to find a divisor of a given number `n` from 2 to the square root of `n`. It receives input in the form of integers `n`, `x`, and `y`. The algorithm's purpose is to determine if there exists a divisor of `n` within the specified range.
+
+**Input Data:**
+- `n`: The number to find a divisor for.
+- `x`: An integer representing the divisor.
+- `y`: An integer representing the result.
+
+**Main Logical Flow:**
+
+1. **Input Validation**: Check if `n` is equal to 1. If true, return `y` directly. Otherwise, proceed to the next step.
+2. **Divisor Search**: Find a divisor of `n` from 2 to the square root of `n`. This involves checking all numbers in the range to see if they are divisors of `n`.
+3. **Decision Point**: If no divisor is found within the specified range, return `y`.
+4. **Return Statement**: If a divisor is found, return `x`.
+
+**Expected Output:**
+The algorithm returns either `y` (if `n` is 1) or `x` (if no divisor is found within the specified range).
+
+**Implementation:**
+```python
+import math
+
+def find_divisor(n, x, y):
+    # Input validation
+    if n == 1:
+        return y
+    
+    # Find a divisor of n from 2 to sqrt(n)
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return i
+    
+    # Return y if no divisor is found
+    return y
+
+# Example usage
+n = 10
+x = 3
+y = find_divisor(n, x, y)
+print(f"The divisor is {y}")
+```
+
+This implementation follows the algorithm's steps, ensuring that it correctly finds a divisor of `n` within the specified range.

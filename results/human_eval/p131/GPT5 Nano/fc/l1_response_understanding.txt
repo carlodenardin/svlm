@@ -1,0 +1,58 @@
+### Algorithm Overview
+**Purpose:**  
+Given a positive integer \( n \), the algorithm calculates the product of its odd digits. If \( n \) contains no odd digits, the algorithm returns 0.
+
+---
+
+### Input Data Required
+- A single positive integer, **n**.
+
+---
+
+### Step-by-Step Logical Flow
+
+1. **Start**
+2. **Input**: Read the positive integer \( n \).
+3. **Initialize Variables**:
+   - Set `product = 1`
+   - Set `foundOdd = False` (a flag to check if any odd digit is present)
+4. **Traverse Each Digit**:
+   - While \( n > 0 \):
+     - Extract the last digit: `digit = n % 10`
+     - If `digit` is odd (i.e., `digit % 2 == 1`):
+       - Set `foundOdd = True`
+       - Update `product = product * digit`
+     - Remove the last digit from \( n \): `n = n // 10`
+5. **Check for Odd Digits**:
+   - If `foundOdd` is `False` (i.e., no odd digits were found):
+     - Set `product = 0`
+6. **Output**: Return the value of `product`.
+7. **End**
+
+---
+
+### Example Implementation (Python-like Pseudocode)
+```python
+def product_of_odd_digits(n):
+    product = 1
+    foundOdd = False
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 1:
+            foundOdd = True
+            product *= digit
+        n = n // 10
+    if not foundOdd:
+        return 0
+    return product
+```
+
+---
+
+### Expected Output
+- **Returns:** The product of all odd digits in \( n \).
+- **If no odd digits** are found, **returns 0**.
+
+---
+
+This step-by-step breakdown provides a clear, ready-to-implement structure based on the given flowchart image.

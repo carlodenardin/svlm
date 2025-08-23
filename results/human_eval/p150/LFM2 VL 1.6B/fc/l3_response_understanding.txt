@@ -1,0 +1,48 @@
+### Algorithm Overview
+
+The algorithm is designed to calculate the value of a mathematical expression involving a variable `x` and a constant `y`. The expression is `n * x + y`, where `n` is an integer and `x` and `y` are constants. The algorithm starts with an initial value of `n` set to 1 and iteratively calculates the value of `x` and `y` based on the given expression. The final output is the result of the expression evaluated with the initial values of `n`, `x`, and `y`.
+
+### Input Data
+
+- `n`: An integer representing the number of times the expression should be evaluated.
+- `x`: A constant value.
+- `y`: A constant value.
+
+### Main Logical Flow
+
+1. **Initialization**: Set `n` to 1.
+2. **Iteration**: For each iteration from 1 to `n`:
+   - Calculate `x` as `x * n`.
+   - Calculate `y` as `y * n`.
+3. **Termination**: After `n` iterations, the final value of `x` and `y` are returned as the result of the expression.
+
+### Expected Output
+
+The output is the result of the expression `n * x + y`, evaluated with the initial values of `n`, `x`, and `y`.
+
+### Implementation Steps
+
+1. **Start**: Begin the algorithm.
+2. **Initialize**: Set `n` to 1.
+3. **Loop**: Iterate from 1 to `n` (inclusive).
+   - **Calculate x**: `x = x * n`
+   - **Calculate y**: `y = y * n`
+4. **End**: After the loop, return the final values of `x` and `y`.
+5. **End**: End the algorithm.
+
+### Pseudocode
+
+```
+START
+  n = 1
+  FOR i = 1 TO n
+    x = x * n
+    y = y * n
+  END FOR
+  RETURN x + y
+END
+```
+
+### Conclusion
+
+The algorithm efficiently calculates the value of the expression `n * x + y` by iterating `n` times and updating `x` and `y` in each iteration. The final result is the sum of `n` and

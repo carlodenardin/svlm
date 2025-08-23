@@ -1,0 +1,25 @@
+```python
+def solve(n, x, y):
+    """
+    This function implements the algorithm described in the flowchart.
+
+    Args:
+        n: An integer.
+        x: An integer.
+        y: An integer.
+
+    Returns:
+        The result of the algorithm, which is either x or y.
+    """
+    if n == 1:
+        return y
+    else:
+        i = 2
+        while i <= n:
+            if i < (n**0.5):
+                return x
+            if i % n == 0:
+                return y
+            i += 1
+        return y
+```

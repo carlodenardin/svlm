@@ -1,0 +1,14 @@
+The flowchart outlines an algorithm designed to check if a list of integers is sorted in ascending order and contains no more than one duplicate of the same number. Here's a step-by-step description:
+
+1. **Start**: The process begins here.
+2. **Input a list of integers**: The user or system provides a sequence of integer values.
+3. **Check if the list is sorted (ascending) and has no more than one duplicate of the same number**: 
+   - This decision point evaluates whether the input list meets the specified conditions.
+4. **Decision Path**: Based on the evaluation, proceed accordingly:
+   - If true, indicate that the list is valid ("True").
+   - If false, conclude with "End" as there are issues with the list.
+5. **Output**: 
+   - For a valid list, output "End" indicating success.
+   - For an invalid list, end the process without further action.
+
+This algorithm ensures data integrity by verifying both sorting order and uniqueness within the dataset before finalizing the result.

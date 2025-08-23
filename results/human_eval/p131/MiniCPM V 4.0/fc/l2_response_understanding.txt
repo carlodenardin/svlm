@@ -1,0 +1,42 @@
+The algorithm depicted in the flowchart aims to compute the multiplication of odd digits present in a given integer \( n \). Here is a step-by-step description and implementation:
+
+1. **Start**: Begin the process.
+2. **Input**: Accept an integer \( n \) as input.
+3. **Check for Odd Digits**: 
+   - Determine if there is at least one odd digit within \( n \).
+   - If no odd digits are found, proceed directly to the end.
+4. **Extract Odd Digits**:
+   - Convert the integer \( n \) into a string or use modulo operations to extract each digit individually.
+   - Identify and store all odd digits encountered during this extraction.
+5. **Compute Multiplication**:
+   - Multiply the identified odd digits together to get the product.
+6. **Output Result**: 
+   - The computed product represents the result of multiplying all the odd digits from the original number \( n \).
+7. **End**: Terminate the process.
+
+### Pseudocode Implementation:
+```plaintext
+function multiplyOddDigits(n):
+    product = 1
+    foundOddDigits = false
+    
+    while n > 0:
+        digit = n % 10
+        if digit % 2 != 0:
+            product *= digit
+            foundOddDigits = true
+        n //= 10
+    
+    if not foundOddDigits:
+        return 0
+    else:
+        return product
+```
+
+### Explanation:
+- **Input Handling**: Start by taking an integer \( n \) as input.
+- **Checking for Odd Digits**: Iterate through each digit of \( n \) using division by 10. Check if the digit is odd (i.e., remainder when divided by 2 is non-zero).
+- **Multiplication Process**: If an odd digit is found, multiply it with the current value of `product`. Mark that an odd digit has been found (`foundOddDigits`).
+- **Output**: If no odd digits were detected after checking all digits, return 0. Otherwise, return the final product obtained from the multiplication of odd digits.
+
+This structured approach ensures that the algorithm accurately identifies and multiplies only the odd digits from the provided integer, producing the expected output.

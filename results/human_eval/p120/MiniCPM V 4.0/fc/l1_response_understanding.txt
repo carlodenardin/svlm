@@ -1,0 +1,23 @@
+The flowchart outlines an algorithm designed to sort a list of integers and retain the last k elements. Here’s a detailed step-by-step implementation:
+
+### Algorithm Overview:
+The purpose of this algorithm is to process a list of integers, identify the number of elements (k), sort the remaining elements after keeping the last k, and produce a new sorted list containing only these retained elements.
+
+### Input Data:
+1. **List of Integers**: The initial dataset comprising multiple integer values.
+2. **Integer k**: Specifies how many of the original elements should be kept at the end of the output list.
+
+### Main Logical Flow:
+1. **Start**: Begin the sorting process.
+2. **Input List and k**: Accept the input list and the value of k.
+3. **Sorting Process**: 
+   - Sort the entire list in ascending order.
+4. **Retain Last k Elements**: 
+   - Extract the last k elements from the sorted list.
+5. **Output Result**: Return the newly formed list with the required length.
+6. **End**: Conclude the algorithm execution.
+
+### Expected Output:
+- A new list consisting of the last k elements from the originally provided list, now sorted in ascending order.
+
+This structured approach ensures that the specified requirements are met efficiently through clear decision points and iterative processes as depicted in the flowchart.

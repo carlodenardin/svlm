@@ -1,0 +1,24 @@
+```python
+def find_factors(n, x, y):
+    """
+    Finds the factors of a number n.
+
+    Args:
+        n: The number to find the factors of.
+        x: Placeholder variable (not used in the algorithm).
+        y: Placeholder variable (not used in the algorithm).
+
+    Returns:
+        None. The function doesn't return a value, but it prints the result.
+    """
+    i = 2
+    while i * i < n:
+        if n % i == 0:
+            print(i)
+            if n // i != i:
+                print(n // i)
+        i += 1
+
+    if n > 1:
+        print(n)
+```

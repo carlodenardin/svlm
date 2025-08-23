@@ -1,0 +1,12 @@
+The algorithm's purpose is to calculate the sum of two variables, `sum = n / 10`, where `n` is an integer input. The input data required is the integer `n`. The main logical flow is as follows:
+
+1. Receive an integer number `n`.
+2. Initialize two variables: `sum = 0` and `res = 0`.
+3. Initialize two variables: `n > 0` and `res = 0`.
+4. If `n > 0`, calculate `sum = n / 10`.
+5. If `sum > 0`, calculate `res = sum / 10`.
+6. If `sum < 0`, return the value of `res`.
+7. If `sum > 0`, calculate `res = sum * 2 / 10`.
+8. If `sum < 0`, return the value of `res`.
+
+The expected output is the calculated sum of `n` divided by 10.

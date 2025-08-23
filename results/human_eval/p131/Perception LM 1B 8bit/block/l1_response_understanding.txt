@@ -1,0 +1,22 @@
+**Algorithm Overview:**
+The algorithm is designed to compute the product of odd digits from a given positive integer input. It receives the input as a positive integer and returns the product if there are no odd digits, or 0 if there are.
+
+**Input Data:**
+- The input is a positive integer.
+
+**Main Logical Flow:**
+
+1. **Input Processing:**
+   - The algorithm first checks if the input is a positive integer. If not, it returns 0, indicating no product can be computed.
+
+2. **Product Computation:**
+   - If the input is a positive integer, the algorithm proceeds to compute the product of the odd digits.
+
+3. **Output Generation:**
+   - After computing the product of odd digits, the algorithm returns the product. If there are no odd digits, the function returns 0.
+
+**Expected Output:**
+- The algorithm's expected output is the product of the odd digits from the input integer, or 0 if there are no odd digits.
+
+**Implementation Steps:**
+- The algorithm's implementation involves checking the input's positivity, then computing the product of odd digits, and finally returning the product or 0 based on the input's characteristics.

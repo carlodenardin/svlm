@@ -1,0 +1,62 @@
+### **Algorithm Overview**
+**Purpose:**  
+To find the largest `k` elements in a given list of integers.
+
+---
+
+### **Input Data**
+- **A list of integers** (e.g., `[10, 4, 23, 7, 89]`)
+- **An integer `k`** (e.g., `3`), representing how many of the largest elements to retain
+
+---
+
+### **Main Logic Flow**
+1. **Receive Input:**  
+   Accept a list of integers and the integer `k`.
+
+2. **Sort the List:**  
+   Sort the input list in ascending order (smallest to largest).
+
+3. **Select Last `k` Elements:**  
+   After sorting, extract the last `k` elements from the sorted list (since these will be the largest).
+
+4. **Return the Result:**  
+   Output the list of the largest `k` elements.
+
+---
+
+### **Expected Output**
+- **A list of the `k` largest integers** from the input list, sorted in ascending order.
+
+---
+
+### **Step-by-Step Process for Implementation**
+
+#### **Example Implementation (in Python)**
+```python
+def get_k_largest_elements(integer_list, k):
+    # Step 1: Sort the list in ascending order
+    sorted_list = sorted(integer_list)
+    
+    # Step 2: Get the last k elements from the sorted list
+    largest_k_elements = sorted_list[-k:]
+    
+    # Step 3: Return the result
+    return largest_k_elements
+
+# Example use:
+input_list = [10, 4, 23, 7, 89]
+k = 3
+result = get_k_largest_elements(input_list, k)
+print(result)  # Output: [10, 23, 89]
+```
+
+---
+
+**Note:**  
+- If `k` is greater than the length of the list, return the entire sorted list.
+- This implementation assumes `k` is a non-negative integer.
+
+---
+
+This process is ready to be implemented in any programming language, adapting the steps as required by language syntax.

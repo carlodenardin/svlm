@@ -1,0 +1,73 @@
+**Algorithm Overview:**
+The algorithm checks if a given list of integers is strictly increasing (each element is less than the next) and ensures that no element appears more than twice in the list. It returns **True** if both conditions are satisfied; otherwise, it returns **False**.
+
+---
+
+**1. Purpose of the Algorithm:**
+To validate a list of integers by confirming:
+- The list is strictly increasing (`list[i] < list[i+1]`).
+- No integer appears more than twice.
+
+---
+
+**2. Input Data Required:**
+- A list of integers `I: list[int]` (example: `[1, 2, 3, 4]`).
+
+---
+
+**3. Main Logical Flow:**
+
+**Step 1:**
+- Iterate over the list and check if each element is smaller than the next.
+  - For `i` in `0` to `len(list)-2`, verify `list[i] < list[i+1]`.
+  - If any comparison fails, return **False**.
+
+**Step 2:**
+- Count the occurrence of each number in the list.
+  - For each unique number, check if its count exceeds 2.
+  - If any number appears more than twice, return **False**.
+
+**Step 3:**
+- If both checks pass, return **True**.
+
+---
+
+**4. Expected Output:**
+- **True:** if the list is strictly increasing and no number appears more than twice.
+- **False:** if either condition fails.
+
+---
+
+**Pseudocode Implementation:**
+
+```python
+def validate_list(I: list[int]) -> bool:
+    # Step 1: Strictly increasing check
+    for i in range(len(I) - 1):
+        if I[i] >= I[i + 1]:
+            return False
+
+    # Step 2: Occurrence check
+    from collections import Counter
+    counts = Counter(I)
+    for value in counts.values():
+        if value > 2:
+            return False
+
+    # Both conditions are satisfied
+    return True
+```
+
+---
+
+**Summary Table:**
+
+| Step                        | Condition/Action               | Result  |
+|-----------------------------|-------------------------------|---------|
+| Strict Order Check          | I[i] < I[i+1] for all i       | Proceed/False |
+| Count Occurrence            | frequency(num) <= 2 for all   | Proceed/False |
+| Return Value                | Passed both                   | True    |
+
+---
+
+You can now implement this logic in your codebase as described!

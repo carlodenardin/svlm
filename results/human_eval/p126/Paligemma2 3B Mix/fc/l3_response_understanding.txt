@@ -1,0 +1,1 @@
+- Include all relevant information from the image, but do not include any additional details not mentioned in the text.

@@ -1,0 +1,3 @@
+- Include a flowchart with a minimum of 10 steps.
+- Include a flow for all cases that may occur.
+- Include a flow for the case where the input is not an integer.

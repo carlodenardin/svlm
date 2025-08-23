@@ -1,0 +1,15 @@
+**Algorithm Overview:**
+The algorithm checks if a list of integers is sorted in ascending order. It receives a list of integers as input and returns True if the list is sorted, False otherwise.
+
+**Input Data:**
+The algorithm requires a list of integers as input.
+
+**Main Logical Flow:**
+
+1. **Input**: The algorithm receives a list of integers as input.
+2. **Check if the list is sorted in ascending order**: The algorithm checks if the list is sorted in ascending order. If it is, the algorithm proceeds to the next step. Otherwise, it returns False.
+3. **Check if the list has no more than one duplicate of the same number**: The algorithm checks if the list has no more than one duplicate of the same number. If it does, the algorithm returns True. Otherwise, it returns False.
+4. **Return True if both conditions are satisfied, False otherwise**: The algorithm returns True if both conditions are satisfied (the list is sorted and has no more than one duplicate of the same number). Otherwise, it returns False.
+
+**Expected Output:**
+The algorithm returns True if the list is sorted and has no more than one duplicate of the same number, and False otherwise.

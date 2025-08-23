@@ -1,0 +1,17 @@
+The flowchart represents an algorithm designed to check whether a list of integers is sorted without any duplicate numbers. Here's the step-by-step implementation:
+
+1. **Input Data**: The algorithm requires a list of integers as input. This data will be processed to determine if it meets the specified criteria.
+
+2. **Initialization**: Begin by receiving the list of integers and setting up any necessary variables or structures for further processing.
+
+3. **Main Logical Flow**:
+   - **Decision Point 1**: Check if the current integer being examined is different from the previous one in the sequence. If not, proceed with the next element.
+   - **Loop**: Continue examining each subsequent integer in the list until you reach the end.
+   - **Decision Point 2**: After checking all elements, verify if there are any duplicates within the list. Ensure that no number repeats more than once.
+   - **Conditional Checks**: Based on the results of these checks:
+     - If the list passes both conditions (sorted and unique), output "Give back True".
+     - If either condition fails, output "Give back False".
+
+4. **Expected Output**: The final result indicates whether the provided list of integers satisfies the sorting and uniqueness requirements. Specifically, it outputs either "True" if the list is valid or "False" otherwise.
+
+This process ensures thorough validation of the given list against the defined criteria, providing clear feedback based on its compliance.

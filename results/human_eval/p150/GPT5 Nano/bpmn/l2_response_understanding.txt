@@ -1,0 +1,59 @@
+Certainly! Here is a step-by-step explanation, ready for implementation, of the algorithm represented in the flowchart:
+
+---
+
+### **Overview**
+
+This algorithm checks if the given integer `n` is equal to 1, prime, or composite. Based on these checks, it returns one of the two values, `x` or `y`, as specified in the input.
+
+---
+
+### **Input Data Required**
+
+- Three integers:  
+  - `n` (the number to be checked)
+  - `x` (return value for composite numbers)
+  - `y` (return value for when `n` is 1 or prime)
+
+---
+
+### **Main Logical Flow**
+
+1. **Input**:  
+   Receive integers `n`, `x`, and `y`.
+
+2. **Check if `n` is 1**:  
+   - If `n == 1`, **return `y`** and terminate.
+
+3. **Check for Divisors (Primality Test)**:  
+   - For each integer `i` from 2 to `sqrt(n)` **(inclusive)**:
+     - If `n % i == 0` (**divisor exists**):
+       - **Return `x`** (composite) and terminate.
+
+4. **If No Divisor is Found**:  
+   - **Return `y`** (`n` is prime).
+
+---
+
+### **Expected Output**
+
+- Returns `y` if `n` is 1 or prime.
+- Returns `x` if `n` is composite.
+
+---
+
+### **Pseudocode**
+
+```python
+def special_return(n, x, y):
+    if n == 1:
+        return y
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return x
+    return y
+```
+
+---
+
+This format provides a concise blueprint for direct implementation in any programming language.

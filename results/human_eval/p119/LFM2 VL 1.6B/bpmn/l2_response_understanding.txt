@@ -1,0 +1,19 @@
+Overview:
+The algorithm is designed to check if a given list of strings is balanced. A balanced list is one where every string has a matching opening and closing string, and no string exceeds the maximum allowed length.
+
+Input Data:
+The input data required for the algorithm is a list of strings.
+
+Main Logical Flow:
+1. The algorithm starts by receiving a list of strings.
+2. It then concatenates the strings with both the combination.
+3. The algorithm initializes two variables, c1 and c2, with the result of the function check_string(s) for each combination of strings.
+4. The algorithm checks if c1 or c2 is balanced.
+5. If c1 or c2 is balanced, the algorithm returns "Yes".
+6. If c1 or c2 is not balanced, the algorithm returns "No".
+
+Expected Output:
+The expected output of the algorithm is "Yes" if the list of strings is balanced, and "No" if it is not.
+
+Implementation:
+The algorithm can be implemented using a recursive function that checks each combination of strings in the list. The function should return true if the list is balanced and false otherwise. The function should also return the maximum allowed length of the strings in the list.

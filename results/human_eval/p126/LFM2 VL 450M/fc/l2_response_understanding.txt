@@ -1,0 +1,28 @@
+The algorithm's purpose is to determine whether a given list of numbers is smaller than the next one. The input data required is a list of numbers. The main logical flow is as follows:
+
+1. Start
+2. For each number in the list (list[int]):
+   a. Check if the number is smaller than the next one (list[1]).
+   b. If the number is smaller than the next one, end the loop.
+   c. If the number is not smaller than the next one, end the loop.
+   d. If the number is not smaller than the next one, check if there are any numbers that appear more than twice in the list.
+   e. If there are any numbers that appear more than twice, end the loop.
+   f. If there are no numbers that appear more than twice, end the loop.
+   g. If there are no numbers that appear more than twice, end the loop.
+   h. If the loop completes without any numbers appearing more than twice, end the loop.
+   i. If the loop completes without any numbers appearing more than twice, end the loop.
+   j. If the loop completes without any numbers appearing more than twice, end the loop.
+   k. If the loop completes without any numbers appearing more than twice, end the loop.
+   l. If the loop completes without any numbers appearing more than twice, end the loop.
+   m. If the loop completes without any numbers appearing more than twice, end the loop.
+   n. If the loop completes without any numbers appearing more than twice, end the loop.
+   o. If the loop completes without any numbers appearing more than twice, end the loop.
+   p. If the loop completes without any numbers appearing more than twice, end the loop.
+   q. If the loop completes without any numbers appearing more than twice, end the loop.
+   r. If the loop completes without any numbers appearing more than twice, end the loop.
+   s. If the loop completes without any numbers appearing more than twice, end the loop.
+   t. If the loop completes without any numbers appearing more than twice, end the loop.
+   u. If the loop completes without any numbers appearing more than twice, end the loop.
+   v. If the loop completes without any numbers appearing more than twice, end the loop.
+   w. If the loop completes without any numbers appearing more than twice, end the loop.
+   x. If the loop completes without any numbers appearing more than twice

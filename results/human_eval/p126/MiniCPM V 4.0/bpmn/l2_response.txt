@@ -1,0 +1,10 @@
+```python
+```python
+def check_sorted_list(lst):
+    if not sorted(lst) == lst:
+        return False
+    if len(set(lst)) != len(lst):
+        return False
+    return True
+```
+```

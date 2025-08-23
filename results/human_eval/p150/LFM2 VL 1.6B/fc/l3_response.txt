@@ -1,0 +1,12 @@
+```python
+def start(n, x, y, i):
+    if n == 1:
+        return y
+    elif i == 2:
+        return x
+    else:
+        if i < n:
+            return y
+        else:
+            return x
+```

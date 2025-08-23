@@ -1,0 +1,50 @@
+### Algorithm Overview
+
+The algorithm is designed to calculate the sum of a variable `n` and the result of a mathematical expression involving `n`. The expression is `sum = 0; n * res = n;`. The algorithm performs the following steps:
+
+1. **Initialize Variables**: Set `sum` to 0 and `res` to the result of the expression `n * res = n`.
+2. **Check Condition**: Determine if `n` is greater than 0.
+3. **Calculate `n`**: If `n` is greater than 0, calculate `n` as `n * 2`.
+4. **Update `res`**: If `n` is greater than 0, update `res` to `n`.
+5. **Return Result**: Return the final value of `res`.
+
+### Input Data
+
+- **Input**: A variable `n` representing the number for which the sum and expression need to be calculated.
+
+### Main Logical Flow
+
+1. **Initialize Variables**:
+   - Set `sum` to 0.
+   - Set `res` to the result of `n * res = n`.
+
+2. **Check Condition**:
+   - If `n` is greater than 0, proceed to the next step.
+   - If `n` is not greater than 0, return the value of `res`.
+
+3. **Calculate `n`**:
+   - If `n` is greater than 0, calculate `n` as `n * 2`.
+
+4. **Update `res`**:
+   - If `n` is greater than 0, update `res` to `n`.
+
+5. **Return Result**:
+   - Return the final value of `res`.
+
+### Expected Output
+
+- The output is the final value of `res`, which is the result of the expression `sum = 0; n * res = n;` evaluated for the given value of `n`.
+
+### Implementation
+
+```plaintext
+Receive an integer number n
+Initialize two variables: sum = 0; res = n * res = n
+n > 0
+Calculate n = n * 2
+If n > 0
+    Update res = n
+Return the final value of res
+```
+
+This algorithm efficiently calculates the sum of `n` and the result of the expression `n * res

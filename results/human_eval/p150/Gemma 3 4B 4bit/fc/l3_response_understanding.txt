@@ -1,0 +1,34 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+This flowchart describes an algorithm to determine if a given integer `n` is a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors (divisors excluding the number itself).
+
+**2. Input Data**
+
+*   `n`: An integer (positive integer). This is the number we'll be testing to see if it's a perfect number.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   The algorithm starts with `Start`.
+    *   It declares three integer variables: `n`, `x`, and `y`.
+    *   `n` is initialized with the input integer.
+    *   `x` is initialized to 0 (this will store the sum of divisors).
+    *   `y` is initialized to 0 (this is a placeholder, it's not used in the algorithm).
+
+2.  **Base Case:**
+    *   The first `if` statement checks if `n` is equal to 1. If `n` is 1, the algorithm immediately ends (goes to `End`). This is because 1 is considered a perfect number by definition.
+
+3.  **Loop for Divisor Calculation:**
+    *   `i` is initialized to 2. This loop iterates from 2 up to the square root of `n`.
+
+4.  **Divisor Check:**
+    *   Inside the loop, the `if` statement checks if `i` is less than the square root of `n` (`i < sqrt(n)`).
+        *   **If `i < sqrt(n)`:** This means `i` is a potential divisor.
+            *   The algorithm checks if `i` is a divisor of `n` (using the modulo operator `%`).  If `n % i == 0`, then `i` is a divisor.
+            *   If `i` is a divisor, `x` is incremented by `i` (i.e., `x = x + i`).
+        *   **If `i >= sqrt(n)`:** The loop continues to the next iteration.
+
+5.  **Check for Zero Remainder:**
+    *   After the loop completes, the algorithm checks if `n

@@ -1,0 +1,24 @@
+The algorithm's purpose is to determine whether a given integer \( n \) is a prime number. If it is, the function should return \( x \); otherwise, it should return \( y \).
+
+### Input Data:
+- The input consists of three integers: \( n \), \( x \), and \( y \).
+
+### Main Logical Flow:
+1. **Receiving Input**: 
+   - Accept three integers as input: \( n \), \( x \), and \( y \).
+
+2. **Checking for Primality**:
+   - Implement a function `is_prime(n)` that checks if \( n \) is a prime number.
+   - Use an iterative loop from 2 to the square root of \( n \) (inclusive) to check divisibility.
+   - If any divisor divides \( n \) exactly without leaving a remainder, then \( n \) is not a prime number.
+   - Return `False` in this case.
+   - If no divisors are found within the range, conclude that \( n \) is a prime number and proceed to output \( x \).
+
+3. **Returning Output**:
+   - After determining whether \( n \) is prime using the `is_prime` function, return the value stored in \( x \).
+   - If \( n \) is not prime, return the value stored in \( y \).
+
+### Expected Output:
+- The output will be either \( x \) or \( y \) depending on whether \( n \) is determined to be a prime number or not.
+
+This step-by-step process ensures clarity and precision in implementing the flowchart logic effectively.

@@ -1,0 +1,75 @@
+Certainly! Here is a clear, step-by-step breakdown for implementing the algorithm shown in the flowchart.
+
+---
+
+## Overview of the Algorithm's Purpose
+
+**Purpose:**  
+To determine if a given list of integers is sorted in ascending order **and** contains **no more than one duplicate of any number**.  
+The algorithm returns `True` if both conditions are met, and `False` otherwise.
+
+---
+
+## Input Data Required
+
+- A list (array) of integers.
+
+---
+
+## Main Logical Flow
+
+1. **Input:**  
+   Receive a list of integers (e.g., `[1, 2, 2, 3, 4]`).
+
+2. **Initialize:**  
+   - Set up a counter (dictionary/hash map) to keep track of how many times each number appears.
+
+3. **Iterate Through the List:**  
+   - **For** each integer from the first element to the last:
+      - a. **Check Ascending Order:**
+         - If the current number is less than the previous number, the list is not sorted; return `False`.
+      - b. **Update Count:**
+         - Increment the count for the current number in the counter.
+      - c. **Check Duplicates:**
+         - If the count for any number exceeds 2, return `False`.
+
+4. **Final Check:**  
+   - If the loop completes without returning `False`, return `True`.
+
+---
+
+## Expected Output
+
+- **Boolean:**  
+  - `True` if the list is sorted (ascending) **and** all numbers have at most one duplicate  
+  - `False` otherwise
+
+---
+
+## Example Implementation (Python)
+
+```python
+def is_sorted_with_limited_duplicates(nums):
+    if not nums:
+        return True  # empty list is trivially sorted with no duplicates
+    
+    count = {}
+    for i, num in enumerate(nums):
+        if i > 0 and nums[i] < nums[i - 1]:
+            return False  # not ascending
+        
+        count[num] = count.get(num, 0) + 1
+        if count[num] > 2:
+            return False  # more than one duplicate
+    
+    return True
+
+# Examples
+print(is_sorted_with_limited_duplicates([1, 2, 2, 3, 4]))  # True
+print(is_sorted_with_limited_duplicates([1, 3, 2, 4]))      # False
+print(is_sorted_with_limited_duplicates([1, 2, 2, 2, 3]))   # False
+```
+
+---
+
+This structure is ready for direct implementation in code.

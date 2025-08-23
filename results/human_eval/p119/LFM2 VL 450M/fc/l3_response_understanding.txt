@@ -1,0 +1,18 @@
+The algorithm's purpose is to determine whether a given string is a substring of another string. The input data required is the two strings to be compared. The main logical flow is as follows:
+
+1. Start
+2. Check if the first string is a substring of the second string (string1) using the condition s1 = (1) or s1 = (2) and c1 = (1) or c2 = (2).
+3. If s1 is a substring of string1, check if s2 is a substring of string2 using the condition s2 = (1) or s2 = (2) and c1 = (1) or c2 = (2).
+4. If s2 is a substring of string2, check if s1 is a substring of string1 using the condition s1 = (1) or s1 = (2) and c1 = (1) or c2 = (2).
+5. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+6. If s2 is not a substring of string2, c1 = (1) or c2 = (2).
+7. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+8. If s2 is a substring of string1, c1 = (1) or c2 = (2).
+9. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+10. If s2 is not a substring of string2, c1 = (1) or c2 = (2).
+11. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+12. If s2 is a substring of string1, c1 = (1) or c2 = (2).
+13. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+14. If s2 is not a substring of string2, c1 = (1) or c2 = (2).
+15. If s1 is not a substring of string1, c1 = (1) or c2 = (2).
+16. If s2 is a substring of string1, c1 =

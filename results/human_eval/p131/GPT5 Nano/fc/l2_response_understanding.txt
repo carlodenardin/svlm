@@ -1,0 +1,64 @@
+### Overview of the Algorithm's Purpose
+The algorithm calculates the product of all **odd digits** within a given integer `n`. If there are no odd digits in `n`, the algorithm outputs `0`.
+
+---
+
+### Input Data Required
+- An **integer** value `n`.
+
+---
+
+### Main Logical Flow (Step-by-Step)
+
+1. **Start** the process.
+2. **Input**: Read the integer value `n`.
+3. **Check** if `n` contains at least one odd digit:
+    - Parse each digit of `n`.
+    - Check if any digit is odd (i.e., digit % 2 != 0).
+4. **Decision**:
+    - **If there is at least one odd digit:**  
+      - **Compute** the multiplication of all odd digits in `n`.  
+        - Initialize a variable `product = 1`.
+        - For each digit in `n`:
+            - If the digit is odd:
+                - Multiply `product` by that digit.
+      - **Output** the computed `product`.
+    - **If there are NO odd digits:**  
+      - **Output** `0`.
+5. **End** the process.
+
+---
+
+### Expected Output
+- If the integer `n` contains at least one odd digit:  
+  - Output the product of all **odd digits** in `n`.
+- If no odd digit is present:
+  - Output `0`.
+
+---
+
+### Example Implementation (Python)
+
+```python
+def odd_digits_product(n):
+    n = abs(n)  # Ensure n is positive to handle negative numbers
+    odd_digits = [int(d) for d in str(n) if int(d) % 2 != 0]
+    
+    if not odd_digits:
+        return 0
+
+    product = 1
+    for digit in odd_digits:
+        product *= digit
+    return product
+
+# Example usage:
+n = 34682
+result = odd_digits_product(n)
+print(result)  # Output: 3 * 7 = 21 (assuming the odd digits are 3 and 7)
+```
+
+---
+
+**Summary:**  
+This algorithm finds the product of all odd digits in an integer. If there are no odd digits, it returns `0`. The key steps are digit extraction, odd digit checking, and conditional multiplication.

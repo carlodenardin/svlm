@@ -1,0 +1,13 @@
+The algorithm's purpose is to determine if a string is balanced by checking if it is equal to the longest string in the list. The input data required is a list of strings. The main logical flow is as follows:
+
+1. Start
+2. List of 2 strings
+3. Check if at least one string is balanced? (This is a decision based on the length of the longest string in the list)
+   - If the length of the longest string is not equal to 1, then the string is not balanced.
+   - If the length of the longest string is equal to 1, then the string is balanced.
+4. If the string is not balanced, then the string is not equal to the longest string in the list.
+   - If the string is equal to the longest string in the list, then the string is balanced.
+   - If the string is not equal to the longest string in the list, then the string is not balanced.
+5. End
+
+The expected output is a boolean value indicating whether the string is balanced or not.

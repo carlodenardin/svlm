@@ -1,0 +1,10 @@
+The algorithm depicted in the flowchart is designed to compute a specific result based on an integer input. Here's a step-by-step description of its implementation:
+
+1. **Receive Input**: The process begins by receiving an integer number \( n \) as input.
+2. **Initialization**: Two variables are initialized: `sum` set to 0 and `res` set to an empty string ("").
+3. **Check for Positive Value**: The algorithm checks if \( n \) is greater than 0. If not, it proceeds directly to return the value of `res`.
+4. **Sum Calculation Loop**: If \( n \) is positive, the algorithm enters a loop where it repeatedly adds the remainder of \( n \) divided by 10 to `sum`. Simultaneously, \( n \) is updated by performing integer division by 10 (`n = n // 10`). This continues until \( n \) becomes zero.
+5. **Modulo Operation**: After exiting the sum calculation loop, the algorithm calculates the modulus of `sum` with 2 (`r = sum % 2`). It then divides `sum` by 10 (`sum //= 10`) and appends the current value of `r` to `res` using `res += str(r)`.
+6. **Output**: Finally, the algorithm returns the computed value stored in the variable `res`.
+
+**Expected Output**: The output will be a string representation of the binary form of the original integer \( n \), calculated through the described steps. For example, given \( n = 123 \), the expected output would be "110110" representing the binary digits of 123.

@@ -1,0 +1,7 @@
+The algorithm's purpose is to sort a list of integers and variables in ascending order. The input data required is a list of integers and variables, represented as a list of tuples where each tuple contains an integer and a variable name. The main logical flow is as follows:
+
+1. Receive a list of integers and variables, represented as a list of tuples where each tuple contains an integer and a variable name.
+2. Sort the list of integers and variables in ascending order.
+3. Return the sorted list with only the last k elements.
+
+The expected output is a sorted list of integers and variables, with the last k elements included.

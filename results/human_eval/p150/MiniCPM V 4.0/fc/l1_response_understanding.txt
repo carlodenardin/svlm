@@ -1,0 +1,14 @@
+The flowchart outlines an algorithm designed to determine whether a given integer \( n \) is a prime number. Here's the step-by-step implementation:
+
+1. **Start**: The process begins here.
+2. **Input**: Take three integers \( n \), \( x \), and \( y \) as input from the user or another source.
+3. **Check if \( n \) is a prime number**: 
+   - If \( n \) is not a prime number, proceed directly to output \( y \) and end the process.
+   - If \( n \) is a prime number, continue with further checks.
+4. **Prime Number Check Loop**: 
+   - Use a loop to check divisibility of \( n \) by all integers from 2 up to \( \sqrt{n} \).
+   - If any divisor divides \( n \) evenly (i.e., remainder is zero), then \( n \) is not a prime number. Output \( x \) and terminate the process.
+   - If no divisors are found within this range, conclude that \( n \) is a prime number and output \( y \).
+5. **End**: The process concludes after determining if \( n \) is prime.
+
+This structured approach ensures accurate identification of prime numbers through systematic checking and decision points.

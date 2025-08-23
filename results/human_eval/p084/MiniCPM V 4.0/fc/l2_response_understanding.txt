@@ -1,0 +1,15 @@
+The flowchart outlines an algorithm designed to calculate the sum of digits in a given integer and convert that sum into binary format. Here is a step-by-step implementation based on the provided image:
+
+1. **Start**: The process begins at the 'Start' node.
+2. **Input**: An integer `n` is required as input.
+3. **Initialize Variables**: Set `sum` to 0 and `res` to an empty string ("").
+4. **Iterate Through Digits**:
+   - Use a loop to iterate through each digit of the number `n`.
+   - Inside the loop, extract each digit by using modulo operation (`n % 10`).
+5. **Calculate Sum**: Add the extracted digit to the current value of `sum`.
+6. **Update Number**: Divide the number `n` by 10 to remove the last processed digit.
+7. **Convert to Binary**: Once all digits are processed, convert the accumulated `sum` back to its binary representation and store it in the variable `res`.
+8. **Output Result**: The final result, stored in `res`, represents the binary form of the sum of the original number's digits.
+9. **End**: The process concludes at the 'End' node.
+
+This algorithm efficiently calculates the sum of digits from an integer and converts this sum into binary, providing a clear output for further use or processing.

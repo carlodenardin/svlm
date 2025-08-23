@@ -1,0 +1,7 @@
+def even_odd_loop(n):
+    if n == 0:
+        return 0
+    elif n % 2 == 0:
+        return 2 * n
+    else:
+        return n + 1

@@ -1,0 +1,28 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm appears to be designed to check if two strings, `s1` and `s2`, are anagrams of each other. Anagrams are words or phrases that contain the same characters, but in a different order.  The algorithm achieves this by counting the occurrences of each character in both strings and comparing the counts.
+
+**2. Input Data Required**
+
+*   **`s1`:** The first string to be checked.
+*   **`s2`:** The second string to be checked.
+*   **`len(s1)`:** The length of the string `s1`.
+*   **`len(s2)`:** The length of the string `s2`.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `s1` = `[|0| + [1]`, `s2` = `[|0| + [2]`.  This initializes `s1` and `s2` as lists containing the character counts. The `[0]` is likely a placeholder for a count of 0, and `[1]` and `[2]` are placeholders for the counts of the first and second characters, respectively.
+    *   `c = 0`:  Initializes a counter `c` to 0. This counter will track the number of characters that are equal in both strings.
+    *   `i = 0`: Initializes an index `i` to 0. This index will iterate through the strings.
+
+2.  **Outer Loop:**
+    *   The `while` loop continues as long as `i < len(s1)` (or `i < len(s2)` – the flowchart doesn't explicitly state which one).
+
+3.  **Inner Conditionals:**
+    *   `i < len(s1)`: Checks if the index `i` is within the bounds of the string `s1`.
+    *   `s[i] == ' '`: Checks if the character at index `i` in string `s1` is equal to a space character (' ').
+    *   If `s[i] == ' '` then `c = 1`.
+    *   `c < 0`:

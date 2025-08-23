@@ -1,0 +1,13 @@
+```python
+```python
+def calculate_sum(integers):
+    res = 0
+    for num in integers:
+        if num < 0:
+            num = -num
+        sum_of_digits = sum(int(digit) for digit in str(abs(num)))
+        if sum_of_digits > 0:
+            res += 1
+    return res
+```
+```

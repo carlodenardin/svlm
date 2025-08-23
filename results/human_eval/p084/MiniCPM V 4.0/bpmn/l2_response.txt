@@ -1,0 +1,12 @@
+```python
+```python
+def calculate_sum_and_convert_to_binary(num):
+    sum = 0
+    res = ""
+    while num > 0:
+        sum += num % 10
+        num //= 10
+        res = str(sum) + res
+    return res
+```
+```

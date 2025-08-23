@@ -1,0 +1,13 @@
+def get_top_k_elements(lst, k):
+    """
+  Receives a list of integers and a variable k, sorts the list, and returns the top k elements.
+
+  Args:
+    lst: A list of integers.
+    k: An integer representing the number of top elements to return.
+
+  Returns:
+    A list containing the top k elements from the input list, sorted in ascending order.
+  """
+    lst.sort()
+    return lst[-k:]

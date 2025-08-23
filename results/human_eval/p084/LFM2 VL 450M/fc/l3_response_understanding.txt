@@ -1,0 +1,59 @@
+The algorithm's purpose is to calculate the sum of the string representation of a given number. The input data required is the number to be summed. The main logical flow is as follows:
+
+1. Start
+2. n is not equal to 0
+3. sum = 0
+4. n is equal to 0
+5. sum = n / 10
+6. if sum > 0
+7. sum = sum + 10
+8. if sum > 0
+9. sum = sum / 2
+10. if sum > 0
+11. sum = sum + sum
+12. if sum > 0
+13. sum = sum / 2
+14. if sum > 0
+15. sum = sum / 2
+16. if sum > 0
+17. sum = sum / 2
+18. if sum > 0
+19. sum = sum / 2
+20. if sum > 0
+21. sum = sum / 2
+22. if sum > 0
+23. sum = sum / 2
+24. if sum > 0
+25. sum = sum / 2
+26. if sum > 0
+27. sum = sum / 2
+28. if sum > 0
+29. sum = sum / 2
+30. if sum > 0
+31. sum = sum / 2
+32. if sum > 0
+33. sum = sum / 2
+34. if sum > 0
+35. sum = sum / 2
+36. if sum > 0
+37. sum = sum / 2
+38. if sum > 0
+39. sum = sum / 2
+40. if sum > 0
+41. sum = sum / 2
+42. if sum > 0
+43. sum = sum / 2
+44. if sum > 0
+45. sum = sum / 2
+46. if sum > 0
+47. sum = sum / 2
+48. if sum > 0
+49. sum = sum / 2
+50. if sum > 0
+51. sum = sum / 2
+52. if sum > 0
+53. sum = sum / 2
+54. if sum > 0
+55. sum = sum / 2
+56. if sum > 0
+57.

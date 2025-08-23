@@ -1,0 +1,91 @@
+Certainly! Here’s a step-by-step breakdown of the algorithm represented in the flowchart:
+
+---
+
+### **Overview**
+
+**Purpose:**  
+This algorithm calculates the product of all odd digits in a given integer `n`. If the integer contains no odd digits, it outputs 0.
+
+---
+
+### **Input Data Required**
+
+- An integer `n`.
+
+---
+
+### **Logical Flow**
+
+1. **Initialization**
+   - Set `product = 1`.
+   - Set `odd_flag = 0` (to track if any odd digits have been found).
+
+2. **Main Loop:** Repeat while `n > 0`:
+   - Extract the last digit: `d = n % 10`.
+   - **Decision:** Is `d` odd? (`d % 2 != 0`)
+     - **Yes (odd digit):**
+       - Update `product *= d`.
+       - Set `odd_flag = 1`.
+     - **No (even digit):**
+       - Do nothing.
+   - Remove last digit from `n`: `n //= 10` (integer division).
+
+3. **After Loop Completes (when `n == 0`):**
+   - **Decision:** Was any odd digit found? (`odd_flag != 0`)
+     - **Yes:** Output `product`.
+     - **No:** Output `0`.
+
+---
+
+### **Expected Output**
+
+- If the input number contains at least one odd digit: Output the product of all its odd digits.
+- If the input number contains no odd digits: Output `0`.
+
+---
+
+### **Summary Table**
+
+| Step  | Description                        | Variables/Operations         |
+|-------|------------------------------------|-----------------------------|
+| 1     | Initialization                     | `product=1, odd_flag=0`     |
+| 2     | Check `n > 0`                      | Loop start                  |
+| 3     | Get last digit                     | `d = n % 10`                |
+| 4     | Is `d` odd?                        | If `d%2 != 0`               |
+| 4.1   | Yes: Multiply product, set flag    | `product *= d, odd_flag=1`  |
+| 5     | Remove digit                       | `n //= 10` (n divided by 10)|
+| 6     | Repeat steps 2–5                   | Loop until `n == 0`         |
+| 7     | After loop, is odd_flag set?       | If `odd_flag != 0`          |
+| 7.1   | Yes: Output product                | Print product               |
+| 7.2   | No: Output 0                       | Print 0                     |
+
+---
+
+### **Sample Implementation (Python)**
+
+```python
+def product_of_odd_digits(n):
+    product = 1
+    odd_flag = 0
+
+    while n > 0:
+        d = n % 10
+        if d % 2 != 0:
+            product *= d
+            odd_flag = 1
+        n //= 10
+
+    if odd_flag != 0:
+        return product
+    else:
+        return 0
+
+# Example usage:
+n = 4235
+print(product_of_odd_digits(n))  # Output: 15 (since 3*5=15)
+```
+
+---
+
+Let me know if you need this in another programming language or further explanation!

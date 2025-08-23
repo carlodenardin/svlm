@@ -1,0 +1,10 @@
+The flowchart outlines an algorithm designed to compute the product of the odd digits in a given integer. Here is a step-by-step description:
+
+1. **Receive an integer**: Start by receiving an integer input from the user or another source.
+2. **Check for odd digits**: Determine if there are any odd digits within the received integer. This involves iterating through each digit and checking its parity (odd or even).
+   - If no odd digits are found, proceed directly to return 0 as the output.
+   - If odd digits are present, continue with the next steps.
+3. **Compute the product of odd digits**: For those integers containing odd digits, extract these digits and calculate their product.
+4. **Return the product**: After computing the product of the odd digits, return this result as the final output.
+
+This process ensures that only relevant calculations are performed on valid inputs, providing a clear and efficient method for handling such computations.

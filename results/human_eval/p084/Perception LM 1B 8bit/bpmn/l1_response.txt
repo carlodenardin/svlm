@@ -1,0 +1,12 @@
+def convert_to_binary(n):
+    # Receive an integer number
+    num = int(input("Enter an integer number: "))
+    
+    # Sum the digits of n and convert it to binary
+    binary = bin(num)[2:]
+    
+    # Give back the binary result as string
+    return binary
+
+# Test the function
+print(convert_to_binary(123))

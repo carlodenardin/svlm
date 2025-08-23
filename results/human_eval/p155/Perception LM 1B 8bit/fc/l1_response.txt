@@ -1,0 +1,13 @@
+def count even_odd(n):
+    if n % 2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+
+def main():
+    n = int(input("Enter a number: "))
+    result = count even_odd(n)
+    print("The result is:", result)
+
+if __name__ == "__main__":
+    main()

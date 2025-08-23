@@ -1,0 +1,20 @@
+The flowchart outlines an algorithm designed to process a list of integers. Here's a step-by-step implementation based on the provided image:
+
+### Purpose
+The purpose of this algorithm is to count how many digits in each integer are greater than 0 and return the total count for all integers in the input list.
+
+### Input Data Required
+- A list of integers as input.
+
+### Main Logical Flow
+1. **Receiving Input**: Begin by receiving the list of integers from the user or data source.
+2. **Initialization**: Initialize a counter variable to zero, which will keep track of the number of non-zero digits across all integers.
+3. **Iteration Through List**: Use a loop (e.g., a `for` loop) to iterate through each integer in the list.
+4. **Digit Sum Calculation**: For each integer, calculate the sum of its digits using a helper function that extracts individual digits and sums them up.
+5. **Decision Check**: Inside the loop, check if the calculated digit sum is greater than 0. If true, increment the counter.
+6. **Output Result**: After processing all integers, return the final value of the counter, representing the total count of non-zero digits.
+
+### Expected Output
+The output should be an integer indicating the total count of digits greater than 0 present in all numbers within the given list.
+
+This structured approach ensures clarity and efficiency in implementing the required functionality.

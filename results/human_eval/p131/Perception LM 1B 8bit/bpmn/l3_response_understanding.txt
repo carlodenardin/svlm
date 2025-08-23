@@ -1,0 +1,43 @@
+**Algorithm Overview:**
+The algorithm is designed to calculate the product of two integers. It receives an integer as input, initializes the product to 1, and then iteratively checks if the number of digits in the input number is odd. If it is, the algorithm returns 0. Otherwise, it calculates the product by dividing the number by 10 and repeating the process until the number is 0. The final product is then returned.
+
+**Input Data:**
+The algorithm requires an integer as input.
+
+**Main Logical Flow:**
+
+1. **Initialization**: The algorithm initializes the product to 1.
+2. **Odd Digits Check**: It checks if the number of digits in the input number is odd. If it is, the algorithm returns 0.
+3. **Loop**: If the number of digits is odd, the algorithm calculates the product by dividing the number by 10 and repeating the process until the number is 0.
+4. **Product Calculation**: Once the number is 0, the algorithm calculates the product by multiplying the remaining digits.
+5. **Output**: The final product is returned.
+
+**Expected Output:**
+The algorithm returns the product of the two input integers.
+
+**Implementation:**
+```python
+def calculate_product(n):
+    # Initialize product to 1
+    product = 1
+    
+    # Check if the number of digits is odd
+    if n % 2!= 0:
+        return 0
+    
+    # Loop until the number is 0
+    while n > 0:
+        # Calculate the product by dividing the number by 10
+        product = product * 10
+        
+        # Check if the number is 0
+        if n % 10 == 0:
+            break
+    
+    # Return the product
+    return product
+
+# Example usage:
+print(calculate_product(10))  # Output: 2
+print(calculate_product(20))  # Output: 1
+```

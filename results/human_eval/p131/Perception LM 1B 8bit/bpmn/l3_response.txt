@@ -1,0 +1,13 @@
+def calculate_product(n):
+    if n == 0:
+        return 0
+    else:
+        product = 1
+        while n > 0:
+            if n % 2 == 1:
+                product *= 2
+            n //= 2
+        return product
+
+# Test the function
+print(calculate_product(10))

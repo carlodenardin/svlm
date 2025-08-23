@@ -1,0 +1,82 @@
+Certainly! Here is a step-by-step algorithm description, ready for implementation, based on the flowchart provided.
+
+---
+
+### **Overview**
+This algorithm counts the number of unique triplets `(i, j, k)` with `i < j < k` in a specially generated sequence where the sum of the elements at those positions is divisible by 3.
+
+---
+
+### **Input Data**
+- An integer **n**.
+
+---
+
+### **Main Logical Flow & Steps**
+
+1. **Input:** Receive integer `n`.
+
+2. **Initialize Sequence**
+   - Create a vector **A** of size `n`.
+   - Set each element as:  
+     `A[i-1] = i * i - i + 1` for `1 ≤ i ≤ n`.
+
+3. **Set Up Counters**
+   - Initialize a **counter** to `0` (to count qualifying triplets).
+   - Set `i = 1`.
+   - **Note:** Indices in the pseudocode are 1-based, but use 0-based for typical programming languages.
+
+4. **Triple-Nested Loop Structure**
+   - **Loop 1:** While `i < n`:
+     - Set `j = i + 1`
+     - **Loop 2:** While `j < n`:
+       - Set `k = j + 1`
+       - **Loop 3:** While `k < n`:
+         - **Check Condition:**  
+           If `(A[i] + A[j] + A[k]) % 3 == 0`:  
+           - Increment `counter` by 1
+         - Increment `k` by 1
+       - Increment `j` by 1
+     - Increment `i` by 1
+
+5. **Output:** Return the **counter** value.
+
+---
+
+### **Expected Output**
+- An integer representing the number of ordered triplets `(i, j, k)` chosen such that `i < j < k` and the sum of the elements at those indices is divisible by 3.
+
+---
+
+## **Pseudocode Example**
+
+```python
+def count_triplets(n):
+    # Step 2: Initialize sequence
+    A = [i*i - i + 1 for i in range(1, n+1)]
+    counter = 0
+    # Step 4: Triple nested loop
+    for i in range(0, n - 2):         # maps to i from 1 to n-2 (0-indexed)
+        for j in range(i + 1, n - 1): # maps to j from i+1 to n-1
+            for k in range(j + 1, n): # maps to k from j+1 to n
+                if (A[i] + A[j] + A[k]) % 3 == 0:
+                    counter += 1
+    return counter
+```
+
+---
+
+### **Summary Table**
+
+| Step                      | Description                                                              |
+|---------------------------|--------------------------------------------------------------------------|
+| 1                         | Input integer `n`                                                        |
+| 2                         | Create array `A` of length `n`, `A[i] = i^2 - i + 1` for `i` in `1..n`   |
+| 3                         | Initialize `counter = 0`                                                 |
+| 4                         | Triple-nested loop for indices `i < j < k` in array                      |
+| 5                         | If sum at `(i, j, k)` divisible by 3, increment `counter`                |
+| 6                         | Return counter                                                           |
+
+---
+
+Let me know if you need the implementation in a specific programming language!

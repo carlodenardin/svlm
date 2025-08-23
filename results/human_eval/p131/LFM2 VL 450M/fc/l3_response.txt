@@ -1,0 +1,11 @@
+```python
+def process_product(product, flag):
+    if product == 1:
+        return flag
+    else:
+        return d = n // 10
+        if d == 0:
+            return 0
+        else:
+            return d % 10
+```

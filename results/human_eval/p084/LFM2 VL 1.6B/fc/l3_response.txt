@@ -1,0 +1,8 @@
+```python
+def calculate_term(n, res):
+    if n == 0:
+        return res
+    else:
+        res += (n - 1) * (calculate_term(n - 1, res))
+        return res
+```

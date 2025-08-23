@@ -1,0 +1,14 @@
+The flowchart outlines an algorithm designed to process a list of integers. Here's a step-by-step description:
+
+1. **Receive Input**: The algorithm starts by receiving a list of integers as input.
+2. **Initialize Variables**: Set the result variable `res` to 0 and initialize a loop counter `i` to 0.
+3. **Loop Through List**: Begin a loop that continues while there are elements in the list (`len(list) > 0`).
+4. **Extract Element**: Extract the i-th value from the current list element `n`.
+5. **Check for Negativity**: Check if `n` is smaller than 0. If yes, set a flag `isNeg` to -1.
+6. **Set n to Absolute Value**: If `n` is not negative, set `n` equal to its absolute value.
+7. **Check Flag**: If `isNeg` equals -1, increment `i` by 1 and continue with the next iteration. Otherwise, append the remainder of `n` divided by 10 (modulo operation) to a new list called `digits`.
+8. **Update Result**: Multiply each element in the `digits` list by `isNeg` and sum these products. If the resulting sum is greater than or equal to 0, increase `res` by 1; otherwise, leave it unchanged.
+9. **Increment Loop Counter**: Increment `i` by 1 to move to the next integer in the list.
+10. **Return Result**: Once all integers have been processed, return the final value of `res`.
+
+**Expected Output**: The output of this algorithm will be the sum of digits modified according to their original sign. For instance, if the input list was `[-3, 4, -2, 1]`, the expected output would be calculated considering the signs and magnitudes of each digit.

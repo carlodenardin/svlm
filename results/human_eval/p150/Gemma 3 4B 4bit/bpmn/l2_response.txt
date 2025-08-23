@@ -1,0 +1,13 @@
+```python
+def find_result(n, x, y):
+    """
+    This function takes three integers n, x, and y as input and returns a result based on the algorithm shown in the diagram.
+    """
+    if n == 1:
+        return y
+    else:
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return x
+        return y
+```

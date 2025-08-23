@@ -1,0 +1,30 @@
+### Algorithm Overview
+
+The algorithm is designed to perform a series of mathematical operations on the integers n, x, and y. The primary purpose is to calculate the value of the expression `(n * x) / y` under certain conditions. The algorithm checks if the integer `y` is divisible by `n`, and if so, it divides `n * x` by `y`. If `y` is not divisible by `n`, the algorithm returns `x`. If `y` is not an integer or is not divisible by `n`, the algorithm returns `y`.
+
+### Input Data
+
+The algorithm requires three integers as input:
+- `n`: The numerator in the expression.
+- `x`: The multiplier in the expression.
+- `y`: The denominator in the expression.
+
+### Main Logical Flow
+
+1. **Input Validation**: The algorithm first checks if `n` is an integer. If not, it returns `y`.
+2. **Divisibility Check**: The algorithm then checks if `y` is divisible by `n`. If `y % n == 0`, it proceeds to the next step.
+3. **Division Operation**: If `y` is divisible by `n`, the algorithm divides `n * x` by `y`.
+4. **Integer Check**: The algorithm checks if the result of the division is an integer. If not, it returns `y`.
+5. **Integer Check**: The algorithm checks if the result of the division is an integer. If not, it returns `y`.
+
+### Expected Output
+
+The expected output of the algorithm is the result of the expression `(n * x) / y`. If `y` is not an integer or is not divisible by `n`, the algorithm returns `y`.
+
+### Implementation Steps
+
+1. **Input Validation**: Check if `n` is an integer. If not, return `y`.
+2. **Divisibility Check**: Check if `y` is divisible by `n`. If not, return `y`.
+3. **Division Operation**: If `y` is divisible by `n`, divide `n * x` by `y`.
+4. **Integer Check**: Check if the result of the division is an integer. If not, return `y`.
+5. **Integer Check**: Check if the result of the division is an integer. If not,

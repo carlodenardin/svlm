@@ -1,0 +1,51 @@
+**Algorithm Overview:**
+The algorithm is designed to generate a list of distinct triples from a given input integer. It takes an integer as input and returns the list of triples that meet the specified rule.
+
+**Input Data:**
+The input data required for the algorithm is an integer, which serves as the starting point for generating the list of triples.
+
+**Main Logical Flow:**
+
+1. **Receive an integer as input**: The algorithm receives an integer as input.
+2. **Create a list of dimension n**: The algorithm creates a list of dimension n, which will be used to generate the list of triples.
+3. **Populate the list with this rule**: The algorithm populates the list with the rule A[i-1] = i*i-i+1, where 1 <= i <= n. This rule generates the list of triples based on the input integer.
+4. **Return how many sum of distinct triples of the list are multiple of 3**: The algorithm returns the number of distinct triples in the list that are multiples of 3.
+
+**Expected Output:**
+The algorithm's expected output is the number of distinct triples in the list that are multiples of 3.
+
+**Implementation:**
+The algorithm's implementation can be achieved using a programming language such as Python or Java. The code would involve the following steps:
+
+*   Initialize an empty list to store the triples.
+*   Iterate over the range of the input integer (1 to n).
+*   For each iteration, calculate the value of A[i-1] using the given rule.
+*   Check if the calculated value is a multiple of 3. If it is, add the triple to the list.
+*   Return the total number of triples that are multiples of 3.
+
+Here is a simple Python implementation of the algorithm:
+
+```python
+def generate_triples(n):
+    """
+    Generate a list of triples that are multiples of 3.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        list: A list of triples that are multiples of 3.
+    """
+    triples = []
+    for i in range(1, n + 1):
+        if i * i - i + 1 % 3 == 0:
+            triples.append((i, i * i - i + 1, i))
+    return triples
+
+# Example usage:
+n = 5
+triples = generate_triples(n)
+print(triples)
+```
+
+This implementation generates a list of triples that are multiples of 3 and returns

@@ -1,0 +1,16 @@
+```python
+def get_first_k_elements(lst, k):
+  """
+  Receives a list of integers and a variable k.
+  Sorts the list and returns the first k elements.
+
+  Args:
+    lst: A list of integers.
+    k: An integer representing the number of elements to return.
+
+  Returns:
+    A new list containing the first k elements of the sorted list.
+  """
+  lst.sort()
+  return lst[-k:]
+```

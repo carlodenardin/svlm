@@ -1,0 +1,9 @@
+def sort_list(k, list_of_integers):
+    # receive a list of integers and a variable k
+    # sort the list in ascending order
+    # return the last k elements
+    return sorted(list_of_integers, reverse=True, k=k)
+
+# test the function
+list_of_integers = [5, 2, 8, 1, 9]
+print(sort_list(5, list_of_integers))
