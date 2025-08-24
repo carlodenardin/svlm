@@ -1,0 +1,13 @@
+The flowchart outlines an algorithm designed to sort a list of integers and retain the last k elements. Here's a step-by-step description:
+
+1. **Start**: The process begins at the initial node labeled 'Start'.
+2. **Input Data**: An input is required, specifically a list of integers along with an integer \( k \) that specifies how many elements from the end of the list should be retained after sorting.
+3. **Sorting Process**: 
+   - The main task involves sorting the entire list of integers. This can typically be achieved using standard algorithms like quicksort or mergesort.
+4. **Retaining Elements**: 
+   - After sorting the complete list, identify and keep only the last \( k \) elements. This may involve slicing the sorted list to achieve this.
+5. **Output**: 
+   - The final output is a new list containing the specified number of elements from the end of the original sorted list.
+6. **End**: The process concludes here, as indicated by the 'End' node.
+
+This approach ensures efficient handling of large datasets where retaining specific portions of data based on their position in the sorted order is necessary.

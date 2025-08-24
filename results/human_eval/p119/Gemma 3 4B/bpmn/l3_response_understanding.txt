@@ -1,0 +1,32 @@
+Okay, let's break down this flowchart and describe the algorithm's implementation.
+
+**1. Overview**
+
+The algorithm appears to be designed to check if a given string `s` is a substring of one of two strings that are concatenated together.  It essentially tests if `s` exists within a combined string formed by joining the two input strings.
+
+**2. Input Data**
+
+*   **`string1`**: A string.
+*   **`string2`**: A string.
+*   **`s`**: A string.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Receive Input:** The algorithm begins by receiving the two strings, `string1` and `string2`, and the target string `s`.
+
+2.  **Concatenate Strings:** The algorithm concatenates `string1` and `string2` into a single string, let's call it `combined_string`.
+
+3.  **Initialization:** Two integer variables, `i` and `c`, are initialized to 0. `i` will be used as a counter, and `c` will likely be used to track the length of the combined string.
+
+4.  **Outer Loop (Iteration):** The algorithm enters a loop that iterates using the variable `i`.  This loop continues as long as `i` is not equal to 0.
+
+5.  **Increment `i`:** Inside the loop, `i` is incremented by 1 in each iteration.
+
+6.  **Increment `c`:** `c` is incremented by 1 in each iteration.
+
+7.  **Length Check:** The algorithm checks if the length of `combined_string` (`len(combined_string)`) is less than the length of `s` (`len(s)`).
+
+    *   **If `len(combined_string) < len(s)`:** This means `s` cannot possibly be a substring of `combined_string`.  The algorithm sets `c` to 0 and goes to step 8.
+    *   **If `len(combined_string) >= len(s)`:** This means `s` *might* be a substring. The algorithm proceeds to check if `s` is actually present in `combined_string`.
+
+8.  **Substring Check:** The algorithm checks if `s` is a substring of `combined_string` using the `

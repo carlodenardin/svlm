@@ -1,0 +1,9 @@
+```python
+def sort_and_last_k(numbers, k):
+    sorted_list = []
+    for i in range(len(numbers)):
+        element = numbers[i]
+        if element <= k:
+            sorted_list.append(element)
+    return sorted_list
+```

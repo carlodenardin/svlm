@@ -1,0 +1,37 @@
+def check_string(sub):
+    # Returns "Yes" if the substring is a palindrome (empty string considered palindrome)
+    if sub == sub[::-1]:
+        return "Yes"
+    else:
+        return "No"
+
+def process_input(data):
+    # Expects data to be a list/tuple with a single string element
+    if not data or len(data) == 0:
+        return ""
+    s = data[0]
+    if not isinstance(s, str):
+        s = str(s)
+
+    n = len(s)
+    mid = n // 2
+    s1 = s[:mid]
+    s2 = s[mid:]
+
+    c1 = check_string(s1)
+    c2 = check_string(s2)
+
+    if c1 != "Yes" and c2 != "Yes":
+        return "End"
+
+    i = 0
+    c = 0
+    while i < n:
+        if s[i] == s[n - 1 - i]:
+            c += 1
+        i += 1
+
+    if c > 0:
+        return "Success"
+    else:
+        return "Failure"

@@ -1,0 +1,10 @@
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [7, 34, 12], "output": null, "correct_output": 34}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [15, 8, 5], "output": null, "correct_output": 5}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [3, 33, 5212], "output": null, "correct_output": 33}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [1259, 3, 52], "output": null, "correct_output": 3}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [7919, -1, 12], "output": null, "correct_output": -1}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [3609, 1245, 583], "output": null, "correct_output": 583}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [91, 56, 129], "output": null, "correct_output": 129}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [6, 34, 1234], "output": null, "correct_output": 1234}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [1, 2, 0], "output": null, "correct_output": 0}
+{"success": false, "error": "is_divisible_by_two() takes 1 positional argument but 3 were given", "input": [2, 2, 0], "output": null, "correct_output": 2}

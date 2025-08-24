@@ -1,0 +1,71 @@
+**Algorithm Overview**
+======================
+
+**Purpose**: The algorithm calculates the sum of a series of numbers and returns the result.
+
+**Input Data**:
+
+*   `n`: An integer representing the number of terms in the series.
+*   `res`: A string representing the result of the calculation.
+
+**Main Logical Flow**
+--------------------
+
+### Step 1: Initialize Variables
+
+*   `sum = 0`: Initialize the sum variable to 0.
+*   `res = ""`: Initialize the result variable to an empty string.
+
+### Step 2: Calculate the Sum
+
+*   `n >= 0`: Check if the input number `n` is greater than or equal to 0.
+*   If true, calculate the sum as `n % 10` and update `n` to be divided by 10.
+*   If false, return the result variable `res`.
+
+### Step 3: Calculate the Sum of the Series
+
+*   `r = sum % 2`: Calculate the remainder of the sum divided by 2.
+*   `sum // 10`: Calculate the quotient of the sum divided by 10.
+*   `res = str(r) + res`: Append the remainder to the result string.
+
+### Step 4: Return the Result
+
+*   Return the result variable `res`.
+
+**Expected Output**
+-----------------
+
+The algorithm calculates the sum of the series and returns the result.
+
+**Implementation**
+-----------------
+
+```python
+def calculate_series(n):
+    """
+    Calculate the sum of a series of numbers.
+
+    Args:
+        n (int): The number of terms in the series.
+
+    Returns:
+        str: The sum of the series.
+    """
+    if n < 0:
+        raise ValueError("Input number must be a non-negative integer.")
+
+    sum = 0
+    res = ""
+
+    for i in range(n):
+        if i >= 0:
+            sum += i % 10
+            res += str(i % 10) + res
+
+    return res
+
+# Example usage:
+n = 10
+result = calculate_series(n)
+print(result)  # Output: 10
+```

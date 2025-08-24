@@ -1,0 +1,8 @@
+def countDistinctTriples(input_list):
+    distinct_triples = set()
+    for num1 in input_list:
+        for num2 in input_list:
+            for num3 in input_list:
+                if (num1, num2, num3) not in distinct_triples:
+                    distinct_triples.add((num1, num2, num3))
+    return len(distinct_triples)

@@ -1,0 +1,13 @@
+The flowchart outlines an algorithm designed to compute the sum of signed digits in a list of integers. Here's a step-by-step description:
+
+1. **Input**: Receive a list of integers as input.
+2. **Initialization**: Initialize a variable `res` to 0. This will store the cumulative sum of the signed digits.
+3. **Iteration Check**: Determine if the list has been fully iterated over. If yes, proceed to return the result stored in `res`.
+4. **Digit Extraction and Summation**: Extract a value from the current position in the list and calculate the sum of its signed digits.
+5. **Condition Check**: Verify whether the computed sum is greater than 0.
+   - If no (sum is not greater than 0), do nothing further with this iteration.
+   - If yes (sum is greater than 0), increment the `res` variable by 1.
+6. **Loop Continuation**: Return to the beginning of the loop to process the next integer in the list until all elements have been considered.
+7. **Output**: The final value of `res` represents the total sum of the signed digits across all numbers in the provided list.
+
+This structured approach ensures that each digit within the numbers is correctly evaluated for sign and summation before moving on to the subsequent number.

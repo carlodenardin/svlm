@@ -1,0 +1,19 @@
+```python
+def process_number(n):
+    """
+    Processes an integer n and returns a string result based on the algorithm.
+    """
+    sum_val = 0
+    result = ""
+
+    while n > 0:
+        sum_val += n % 10
+        n //= 10
+
+        if sum_val > 0:
+            r = sum_val % 2
+            sum_val = sum_val // 2
+            result = str(r) + result
+
+    return result
+```

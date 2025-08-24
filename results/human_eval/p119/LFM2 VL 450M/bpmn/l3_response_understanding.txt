@@ -1,0 +1,11 @@
+The algorithm's purpose is to determine whether a given string is a valid check string. The input data required is a string. The main logical flow is as follows:
+
+1. Receive a list of 2 strings.
+2. Concatene the strings with both the combination.
+3. Initialize and set c1 and c2 with the result of the function check_strings(s) for each combination of strings.
+4. Return 'No' if c1 or c2 is 0.
+5. Return 'Yes' if c1 or c2 is 1.
+6. Return 'Yes' if c1 or c2 is 0.
+7. Return 'False' if c1 or c2 is 1.
+
+The expected output is a string indicating whether the given string is a valid check string.

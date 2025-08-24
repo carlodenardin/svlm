@@ -1,0 +1,43 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+The algorithm's purpose is to convert a given integer (`n`) into its binary representation as a string. It achieves this by calculating the sum of the digits of the number and then converting that sum to its binary equivalent.
+
+**2. Input Data**
+
+*   **`n`:** An integer (whole number) representing the number to be converted.
+
+**3. Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `sum = 0` (Initialize a variable `sum` to 0. This will store the sum of the digits.)
+    *   `res = ""` (Initialize an empty string `res`. This will store the final binary representation as a string.)
+
+2.  **Digit Sum Calculation:**
+    *   The algorithm iterates through the digits of the input number `n`.
+    *   In each iteration:
+        *   Extract the last digit of `n` (using the modulo operator `%`).
+        *   Add the last digit to the `sum`.
+        *   Remove the last digit from `n` (using integer division `//` or `div`).
+
+3.  **Binary Conversion:**
+    *   Convert the `sum` (which now holds the sum of the digits) to its binary representation. This is the core of the algorithm.  This can be done using the following steps:
+        *   While the `sum` is greater than 0:
+            *   Find the remainder when `sum` is divided by 2 (using the modulo operator `%`). This remainder will be either 0 or 1, representing a binary digit.
+            *   Append this remainder to the `res` string.
+            *   Divide `sum` by 2 (integer division) to remove the last digit.
+
+4.  **Output:**
+    *   Once the loop finishes (when `sum` becomes 0), the `res` string will contain the binary representation of the original number's digit sum.
+    *   The algorithm returns the `res` string.
+
+**4. Expected Output**
+
+A string representing the binary equivalent of the sum of the digits of the input integer `n`.
+
+**Example:**
+
+Let's say `n = 123`.
+
+1.  `sum = 0`, `

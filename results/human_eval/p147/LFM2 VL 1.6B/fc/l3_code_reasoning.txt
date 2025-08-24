@@ -1,0 +1,20 @@
+```python
+def count_fibonacci(limit):
+    count = 0
+    while limit >= 0:
+        count += 1
+        fibonacci_number = fibonacci_number_function(limit)
+        if fibonacci_number <= limit:
+            count += 1
+        else:
+            break
+    return count
+
+def fibonacci_number_function(limit):
+    if limit == 0:
+        return 0
+    elif limit == 1:
+        return 1
+    else:
+        return fibonacci_number_function(limit-1) + fibonacci_number_function(limit-2)
+```

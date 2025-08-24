@@ -1,0 +1,6 @@
+def sort_integers_and_variables(input_list):
+    """
+    Sort a list of integers and variables in ascending order.
+    Assumes all elements are mutually comparable for sorting.
+    """
+    return sorted(input_list)

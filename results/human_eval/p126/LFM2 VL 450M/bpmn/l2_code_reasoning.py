@@ -1,0 +1,10 @@
+def is_sorted_and_even_length(nums):
+    """
+    Returns True if nums is sorted in non-decreasing order and has an even length.
+    Otherwise returns False.
+    """
+    n = len(nums)
+    for i in range(n - 1):
+        if nums[i] > nums[i + 1]:
+            return False
+    return n % 2 == 0

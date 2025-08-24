@@ -1,0 +1,20 @@
+```python
+def count_digits_even_odd_sum(n: int) -> int:
+    even_count = 0
+    odd_count = 0
+    for ch in str(abs(n)):
+        digit = ord(ch) - ord('0')
+        if digit % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return even_count + odd_count
+
+if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1:
+        n = int(sys.argv[1])
+    else:
+        n = 0
+    print(count_digits_even_odd_sum(n))
+```

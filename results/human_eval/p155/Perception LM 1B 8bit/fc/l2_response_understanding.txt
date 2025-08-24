@@ -1,0 +1,57 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to extract the last digit of a given number and increment the odd or even counter based on the digit. It takes an integer input and returns the last digit of the number.
+
+### Input Data
+*   The algorithm requires an integer input, `n`, which represents the number to be processed.
+
+### Main Logical Flow
+#### Step 1: Initial Conditions
+*   The algorithm starts with the input `n` and initializes variables to track the parity of the number.
+*   It checks if the number is even or odd by comparing the remainder of `n` divided by 2.
+
+#### Step 2: Parity Calculation
+*   If the number is even, the algorithm sets `even` to 0 and `odd` to 1, and then calculates the absolute difference between `n` and the sum of `even` and `odd`.
+*   If the number is odd, `even` is set to 1 and `odd` to 0, and the same calculation is performed.
+
+#### Step 3: Looping and Function Calls
+*   The algorithm enters a loop that continues until `n` becomes 0.
+*   Inside the loop, it extracts the last digit of `n` using the modulo operator (`n % 10`).
+*   It increments the `odd` counter based on the last digit extracted.
+*   If the last digit is even, the algorithm increments the `even` counter.
+*   If the last digit is odd, the algorithm increments the `odd` counter.
+
+#### Step 4: Output
+*   After the loop, the algorithm returns the last digit of `n` as the output.
+
+### Expected Output
+*   The algorithm returns the last digit of the input number `n`.
+
+### Implementation
+```python
+def extract_last_digit(n):
+    """
+    Extracts the last digit of a given number and increments the odd or even counter based on the digit.
+
+    Args:
+        n (int): The input number.
+
+    Returns:
+        int: The last digit of the number.
+    """
+    even = 0
+    odd = 0
+    while n > 0:
+        last_digit = n % 10
+        if last_digit % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+        n = n // 10
+    return last_digit
+
+# Example usage:
+n = 12345
+last_digit

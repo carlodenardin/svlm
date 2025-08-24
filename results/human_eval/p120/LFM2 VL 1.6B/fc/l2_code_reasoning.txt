@@ -1,0 +1,14 @@
+```python
+def sort_list(int_list):
+    # Step 1: Input Validation
+    if not int_list:
+        return []
+    if len(int_list) == 1:
+        return int_list
+
+    # Step 2: Sorting the List
+    sorted_list = sorted(int_list)
+
+    # Step 3: Output
+    return sorted_list
+```

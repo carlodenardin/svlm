@@ -1,0 +1,17 @@
+```python
+def sort_list(lst):
+    # Step 1: Input Validation
+    if not lst:
+        return []
+
+    # Step 2: Sorting the List
+    lst.sort()
+
+    # Step 3: Output
+    return lst
+
+# Example usage
+input_list = [5, 3, 8, 1, 2]
+sorted_list = sort_list(input_list)
+print(sorted_list)  # Output: [1, 2, 3, 5, 8]
+```

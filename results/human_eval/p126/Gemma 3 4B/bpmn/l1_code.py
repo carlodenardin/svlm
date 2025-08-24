@@ -1,0 +1,17 @@
+def check_list(input_list):
+    """
+  Checks if a list of integers is sorted and has no more than one duplicate of the same number.
+
+  Args:
+    input_list: A list of integers.
+
+  Returns:
+    True if the list is sorted and has no more than one duplicate of the same number, False otherwise.
+  """
+    if not input_list:
+        return True
+    sorted_list = sorted(input_list)
+    for i in range(len(sorted_list) - 1):
+        if sorted_list[i] == sorted_list[i + 1]:
+            return False
+    return True

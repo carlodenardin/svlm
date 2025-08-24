@@ -1,0 +1,22 @@
+```python
+def contains_non_lowercase_dash(s: str) -> bool:
+    # Initialization
+    i = 0
+    c = 0
+    s_local = s
+
+    # Initial checks
+    if len(s_local) == 0:
+        return False  # algorithm ends for empty string
+
+    if c == 0:
+        # Looping through the string
+        while c < len(s_local) and i < len(s_local):
+            if s_local[i] == '-':
+                c += 1
+            i += 1
+
+    # Decision point (c < 0) is redundant in the described flow; ignore
+    # Return True if at least one '-' was found, else False
+    return c > 0
+```

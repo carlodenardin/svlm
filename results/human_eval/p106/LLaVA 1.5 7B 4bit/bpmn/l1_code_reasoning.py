@@ -1,0 +1,21 @@
+import math
+
+def generate_dimensions(N):
+    """
+    Generates a list of factorials for integers from 1 to N.
+    This implementation follows the described reasoning:
+    - Loop i from 1 to N
+    - If i is even, compute factorial(i) and append to the list
+    - If i is odd, also compute factorial(i) and append to the list (as per the described flow)
+    """
+    dims = []
+    i = 1
+    while i <= N:
+        if i % 2 == 0:
+            fact = math.factorial(i)
+            dims.append(fact)
+        else:
+            fact = math.factorial(i)
+            dims.append(fact)
+        i += 1
+    return dims

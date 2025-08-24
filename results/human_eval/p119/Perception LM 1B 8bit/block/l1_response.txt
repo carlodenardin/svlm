@@ -1,0 +1,18 @@
+```python
+def check_combinations(s1, s2):
+    # Receive a list of 2 strings as input
+    input_strs = s1 + s2
+    
+    # Concatenate the strings with both combinations
+    combined_strs = input_strs + input_strs
+    
+    # Check if at least one combination is balanced
+    balanced = True
+    for i in range(len(combined_strs)):
+        if combined_strs[i] == combined_strs[i + 1]:
+            balanced = False
+            break
+    
+    # Return 'No' if both the combinations are unbalanced, 'Yes' otherwise
+    return 'No' if balanced else 'Yes'
+```

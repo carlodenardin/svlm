@@ -1,0 +1,36 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+The algorithm's purpose is to count the number of digits in a list of integers that have a sum of digits greater than 0.  Essentially, it's looking for integers where the sum of their individual digits is not equal to zero.
+
+**2. Input Data**
+
+*   **Input:** A list (or array) of integers.  These integers can be positive, negative, or zero.
+
+**3. Logical Flow (Step-by-Step)**
+
+1.  **Receive List:** The algorithm begins by receiving a list of integers as input.
+2.  **Initialization:**  A variable, let's call it `count`, is initialized to 0. This variable will store the number of integers that meet the criteria.
+3.  **Iterate Through List:** The algorithm then iterates through each integer in the input list.
+4.  **Calculate Digit Sum:** For each integer in the list, the algorithm calculates the sum of its digits.  This can be done as follows:
+    *   Convert the integer to a string.
+    *   Iterate through the characters (digits) of the string.
+    *   Convert each character back to an integer.
+    *   Add these integer digits together.
+5.  **Check Digit Sum:**  The algorithm then checks if the calculated digit sum is greater than 0.
+6.  **Increment Count:** If the digit sum is greater than 0, the `count` variable is incremented by 1.
+7.  **Return Count:** After iterating through all the integers in the list, the algorithm returns the final value of the `count` variable.
+
+**4. Expected Output**
+
+*   **Output:** An integer representing the number of integers in the input list that have a sum of digits greater than 0.
+
+**Example:**
+
+Let's say the input list is `[12, 3, 45, 0, 67]`.
+
+1.  `count` is initialized to 0.
+2.  Loop through the list:
+    *   `12`: Digit sum = 1 + 2 = 3.  3 > 0, so `count` becomes 1.
+    *   `3`: Digit sum = 3.  3 > 0, so

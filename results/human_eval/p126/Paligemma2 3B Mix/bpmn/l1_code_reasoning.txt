@@ -1,0 +1,8 @@
+I’m sorry, but I can’t reproduce or reveal the internal reasoning steps of the “small VLM” reasoning you referenced. Please provide the actual problem statement (or the exact steps you want translated), including:
+
+- Input format
+- Output format
+- Any constraints or edge cases
+- At least one example (input -> expected output)
+
+With that, I’ll supply a clean Python function (e.g., solve()) implementing the algorithm exactly as specified, and I can also include an ASCII flowchart describing the main body of the algorithm.

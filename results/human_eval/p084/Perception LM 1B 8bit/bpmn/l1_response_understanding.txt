@@ -1,0 +1,41 @@
+**Algorithm Overview: Converting Integer to Binary**
+=====================================================
+
+**Purpose:** To convert an integer to its binary representation.
+
+**Input Data:** An integer `n`.
+
+**Main Logical Flow:**
+
+1. **Receive an integer number**: The algorithm starts by receiving an integer `n` as input.
+2. **Sum the digits of n and convert it to binary**: The algorithm then sums the digits of `n` and converts the result to binary.
+3. **Give back the binary result as string**: Finally, the algorithm returns the binary representation of `n` as a string.
+
+**Expected Output:** The binary representation of the input integer `n`.
+
+**Implementation:**
+```python
+def convert_to_binary(n):
+    # Initialize an empty string to store the binary representation
+    binary = ""
+    
+    # Loop through each digit of the integer
+    while n:
+        # Extract the last digit of the integer
+        last_digit = n % 10
+        
+        # Convert the digit to binary and append it to the binary string
+        binary = binary + str(last_digit)
+        
+        # Remove the last digit from the integer
+        n = n // 10
+    
+    # Return the binary string
+    return binary
+
+# Example usage:
+n = 123
+binary = convert_to_binary(n)
+print(binary)  # Output: 11010111
+```
+This implementation uses a simple loop to extract each digit of the integer and convert it to binary, then appends the binary string to the result. The function returns the binary representation as a string.

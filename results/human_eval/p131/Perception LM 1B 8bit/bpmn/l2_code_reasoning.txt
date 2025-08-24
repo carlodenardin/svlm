@@ -1,0 +1,36 @@
+```python
+import sys
+
+def product_of_odd_digits(n: int) -> int:
+    m = abs(n)
+    has_odd = False
+    product = 1
+
+    if m == 0:
+        return 0
+
+    while m > 0:
+        digit = m % 10
+        if digit % 2 == 1:
+            has_odd = True
+            product *= digit
+        m //= 10
+
+    if not has_odd:
+        return 0
+    return product
+
+def main():
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    try:
+        n = int(data[0])
+    except ValueError:
+        return
+    result = product_of_odd_digits(n)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```

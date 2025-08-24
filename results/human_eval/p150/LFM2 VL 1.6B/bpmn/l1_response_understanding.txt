@@ -1,0 +1,39 @@
+### Algorithm Overview
+
+The algorithm is designed to perform a series of operations on three integers, \( n \), \( x \), and \( y \). The primary purpose of this algorithm is to compute the value of \( n \) based on the input values of \( x \) and \( y \). The algorithm starts by receiving the input values, then checks if \( n \) is prime, and if it is, it returns \( n \). If \( n \) is not prime, it returns \( x \). The algorithm does not include any loops or function calls, as the flowchart does not show any such elements.
+
+### Input Data Required
+
+The algorithm requires three integers as input:
+- \( n \): The integer to be checked for primality.
+- \( x \): The integer to be compared with \( n \).
+- \( y \): The integer to be compared with \( n \).
+
+### Main Logical Flow
+
+1. **Input Reception**: The algorithm starts by receiving the input values \( n \), \( x \), and \( y \).
+2. **Prime Check**: The algorithm checks if \( n \) is prime.
+   - **If \( n \) is prime**: The algorithm returns \( n \).
+   - **If \( n \) is not prime**: The algorithm returns \( x \).
+
+### Expected Output
+
+- If \( n \) is prime, the algorithm returns \( n \).
+- If \( n \) is not prime, the algorithm returns \( x \).
+
+### Implementation Steps
+
+1. **Input Reception**: The algorithm receives the input values \( n \), \( x \), and \( y \).
+2. **Prime Check**:
+   - **Decision**: Check if \( n \) is prime.
+   - **Function Call**: If \( n \) is prime, call the function `is_prime(n)`.
+   - **Return**: If `is_prime(n)` returns `True`, return \( n \).
+   - **Else**: If `is_prime(n)` returns `False`, return \( x \).
+3. **Output**: The algorithm outputs the value of \( n \) if it is prime, or \( x \) if it is not.
+
+### Pseudocode
+
+```plaintext
+Input: n, x, y
+1. Check if n is prime
+   - If is_prime(n) is True

@@ -1,0 +1,18 @@
+def calculate_sum_and_product(n):
+    """
+    Calculates the sum and product of numbers from 1 to n.
+
+    Args:
+        n (int): The upper limit of the range of numbers.
+
+    Returns:
+        tuple: A tuple containing the sum and product of the numbers from 1 to n.
+    """
+    res = []
+    result_sum = 0
+    result_product = 1
+    for i in range(1, n + 1):
+        res.append(i)
+        result_sum += i
+        result_product *= i
+    return (result_sum, result_product)

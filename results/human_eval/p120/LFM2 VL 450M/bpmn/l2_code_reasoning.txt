@@ -1,0 +1,10 @@
+```python
+def solve(nums, k):
+    # 1. Receive a list of integers and variables k.
+    # 2. Sort the list in ascending order.
+    sorted_nums = sorted(nums)
+    # 3. Return the last k elements.
+    if k <= 0:
+        return []
+    return sorted_nums[-k:]
+```

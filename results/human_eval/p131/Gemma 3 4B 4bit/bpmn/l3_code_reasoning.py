@@ -1,0 +1,27 @@
+def compute_product(n: int) -> int:
+    """
+    Follows the described algorithm:
+    - Check if any odd digits exist in abs(n); if not, return 0.
+    - Else, iterate through digits from least significant to most, multiplying
+      the product by the digit if it is odd; finally return the product.
+    """
+    tmp = abs(n)
+    has_odd = False
+    t = tmp
+    if t != 0:
+        while t > 0:
+            d = t % 10
+            if d % 2 == 1:
+                has_odd = True
+                break
+            t //= 10
+    if not has_odd:
+        return 0
+    product = 1
+    nn = tmp
+    while nn > 0:
+        d = nn % 10
+        if d % 2 == 1:
+            product *= d
+        nn //= 10
+    return product

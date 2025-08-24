@@ -1,0 +1,13 @@
+```python
+def check_list(lst: list[int]) -> bool:
+    # Check if the list is non-decreasing
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+    # Check if any number appears more than twice
+    from collections import Counter
+    counts = Counter(lst)
+    if any(count > 2 for count in counts.values()):
+        return False
+    return True
+```

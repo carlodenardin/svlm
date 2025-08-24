@@ -1,0 +1,27 @@
+```python
+def is_balanced_strings(s1, s2):
+    # Step 2: List of Strings
+    strings = [s1, s2]
+    # Step 3: Concatenation
+    combined = strings[0] + strings[1]
+
+    open_count = 0
+    close_count = 0
+
+    # Step 4: Balance Check
+    for ch in combined:
+        if ch == '(':
+            open_count += 1
+        elif ch == ')':
+            close_count += 1
+        # After processing each character, check if open_count >= close_count
+        if open_count >= close_count:
+            # The string is considered "balanced" at that point (no action needed)
+            pass
+
+    # Step 5: Final Check
+    if open_count == close_count:
+        return "Yes"
+    else:
+        return "No"
+```

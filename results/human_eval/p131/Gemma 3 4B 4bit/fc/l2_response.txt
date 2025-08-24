@@ -1,0 +1,27 @@
+```python
+def multiply_odd_digits(n):
+  """
+  This function takes an integer n as input and returns the product of the odd digits in n.
+
+  Args:
+    n: An integer.
+
+  Returns:
+    The product of the odd digits in n.
+  """
+  n_str = str(n)
+  odd_digits = []
+  for digit in n_str:
+    digit = int(digit)
+    if digit % 2 != 0:
+      odd_digits.append(digit)
+
+  if not odd_digits:
+    return 0
+
+  product = 1
+  for digit in odd_digits:
+    product *= digit
+
+  return product
+```

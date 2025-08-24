@@ -1,0 +1,43 @@
+Algorithm: Counting Fibonacci Numbers
+
+Overview:
+The algorithm is designed to count the number of Fibonacci numbers up to a given limit. It uses a recursive approach to calculate the Fibonacci sequence and count the numbers that are less than or equal to the given limit.
+
+Input Data:
+- limit: The maximum number to consider in the Fibonacci sequence.
+
+Main Logical Flow:
+1. Start the algorithm.
+2. Initialize a variable count to 0.
+3. While the current number is less than or equal to the limit:
+   a. Increment the count by 1.
+   b. Calculate the next Fibonacci number using the formula: fib(n) = fib(n-1) + fib(n-2).
+   c. Check if the next Fibonacci number is less than or equal to the limit.
+   d. If the next Fibonacci number is less than or equal to the limit, increment the count by 1.
+   e. Otherwise, continue to the next iteration of the loop.
+4. End the algorithm.
+
+Expected Output:
+- The count of Fibonacci numbers less than or equal to the given limit.
+
+Implementation:
+```python
+def count_fibonacci(limit):
+    count = 0
+    while limit >= 0:
+        count += 1
+        fibonacci_number = fibonacci_number_function(limit)
+        if fibonacci_number <= limit:
+            count += 1
+        else:
+            break
+    return count
+
+def fibonacci_number_function(limit):
+    if limit == 0:
+        return 0
+    elif limit == 1:
+        return 1
+    else:
+        return fibonacci_number_function(limit-1) + fibonacci_number_function(limit-2)
+```

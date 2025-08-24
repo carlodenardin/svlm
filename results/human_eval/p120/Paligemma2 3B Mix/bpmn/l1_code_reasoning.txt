@@ -1,0 +1,10 @@
+I’m missing the actual reasoning text and the specific problem you want solved. To translate the exact reasoning into executable Python code (with the requested flowcharts), please provide:
+
+- The exact problem statement (input/output specification).
+- The step-by-step reasoning or decision process the small VLM should follow (the algorithm).
+- Any constraints or edge cases I should handle.
+- Whether ASCII flowcharts are acceptable for both the main algorithm and each function, or if you prefer another format.
+
+Once I have that, I’ll output a Python function (or module) that follows the reasoning precisely and include:
+- A flowchart for the main body of the algorithm.
+- A separate diagram for each function.

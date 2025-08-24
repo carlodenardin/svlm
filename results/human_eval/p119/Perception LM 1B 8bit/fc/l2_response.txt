@@ -1,0 +1,9 @@
+```python
+def check_string(s):
+    # Check if each string is valid with the function check_string and save the result in c1 and c2
+    s1 = [0] + [1]
+    s2 = [1] + [0]
+    c1 = s1[0]
+    c2 = s2[0]
+    return c1, c2
+```

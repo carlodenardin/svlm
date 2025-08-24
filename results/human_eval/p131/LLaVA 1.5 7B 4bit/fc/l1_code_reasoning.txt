@@ -1,0 +1,33 @@
+```python
+import sys
+
+def solve():
+    data = sys.stdin.read()
+    s = data.strip().split()[0] if data.strip() else ''
+    
+    # Step 1-3: initialize counter
+    count = 0
+    
+    # Step 4-6: iterate over digits and adjust counter
+    for ch in s:
+        if ch == '0':
+            count += 1
+        elif ch == '1':
+            count -= 1
+        # ignore other digits (per described logic)
+    
+    # Step 7-8: determine output
+    if count == 0:
+        # interpret input as a decimal number and print
+        try:
+            val = int(s, 10) if s else 0
+        except ValueError:
+            val = 0
+        print(val)
+    else:
+        # print input as a binary string (i.e., output the input unchanged)
+        print(s)
+
+if __name__ == "__main__":
+    solve()
+```

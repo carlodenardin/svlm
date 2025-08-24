@@ -1,0 +1,15 @@
+```python
+def calculate_triples(n):
+    # Initialize vector A with the given rule
+    A = [i * i - i + 1 for i in range(1, n + 1)]
+
+    # Calculate the number of distinct triples of A that are multiples of 3
+    count = sum(1 for x in A if x % 3 == 0)
+
+    return count
+
+if __name__ == "__main__":
+    n = 5
+    result = calculate_triples(n)
+    print(f"The number of distinct triples of A that are multiples of 3 is: {result}")
+```

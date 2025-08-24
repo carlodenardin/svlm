@@ -1,0 +1,8 @@
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [], "output": null, "correct_output": 0}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [-1, -2, 0], "output": null, "correct_output": 0}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [1, 1, 2, -2, 3, 4, 5], "output": null, "correct_output": 6}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [1, 6, 9, -6, 0, 1, 5, 963], "output": null, "correct_output": 5}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [1, 100, 98, -7, 1, -1], "output": null, "correct_output": 4}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [12, 23, 34, -45, -56, 0], "output": null, "correct_output": 5}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [0, 1], "output": null, "correct_output": 1}
+{"success": false, "error": "calculate_list_count() takes 0 positional arguments but 1 was given", "input": [1], "output": null, "correct_output": 1}

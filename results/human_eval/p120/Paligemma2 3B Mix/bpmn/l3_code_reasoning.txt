@@ -1,0 +1,6 @@
+I’m missing the actual reasoning steps you want translated into code. Please provide:
+
+- The reasoning snippet (the step-by-step approach the VLM uses), or
+- The exact problem statement and any constraints, plus an example of input/output.
+
+Once I have that, I will translate the given reasoning into a faithful Python function exactly as described.

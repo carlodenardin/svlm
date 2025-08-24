@@ -1,0 +1,62 @@
+```python
+import numpy as np
+
+def process_signal(signal, filter_window=5, threshold=0.5, group_bits=8):
+    """
+    Implements the described flowchart algorithm:
+    1) Initialize and prepare input signal.
+    2) Apply a low-pass filter (moving-average) to remove high-frequency components.
+    3) Apply a threshold to obtain a binary signal.
+    4) Convert the binary signal to digital output by grouping bits into integers.
+
+    Parameters:
+    - signal: array-like of numeric samples (float/int).
+    - filter_window: int, window size for the moving-average low-pass filter.
+    - threshold: float, value used to threshold the filtered signal into 0/1.
+    - group_bits: int, number of bits per group to form integers (0 or negative disables grouping).
+
+    Returns:
+    A dict with:
+    - 'input': original signal as a 1D numpy array
+    - 'filtered': low-pass filtered signal (float array)
+    - 'binary': binary 0/1 array after threshold
+    - 'integers': list of integers formed by grouping binary bits (MSB first in each group)
+    """
+    sig = np.asarray(signal, dtype=float)
+
+    # 1) Initialize/prepare input
+    if sig.size == 0:
+        return {
+            'input': sig,
+            'filtered': sig,
+            'binary': np.array([], dtype=int),
+            'integers': []
+        }
+
+    # 2) Low-pass filter (simple moving-average)
+    k = max(1, int(filter_window))
+    kernel = np.ones(k) / k
+    filtered = np.convolve(sig, kernel, mode='same')
+
+    # 3) Threshold to binary
+    binary = (filtered >= threshold).astype(int)
+
+    # 4) Binary-to-digital conversion (group bits into integers)
+    integers = []
+    if group_bits > 0:
+        bits = binary
+        remainder = bits.size % group_bits
+        if remainder != 0:
+            padding = group_bits - remainder
+            bits = np.concatenate([bits, np.zeros(padding, dtype=int)])
+        groups = bits.reshape(-1, group_bits)
+        powers = 2 ** np.arange(group_bits - 1, -1, -1)
+        integers = (groups * powers).sum(axis=1).astype(int).tolist()
+
+    return {
+        'input': sig,
+        'filtered': filtered,
+        'binary': binary,
+        'integers': integers
+    }
+```

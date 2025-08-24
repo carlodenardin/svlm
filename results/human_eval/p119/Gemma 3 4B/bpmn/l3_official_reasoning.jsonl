@@ -1,0 +1,12 @@
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "is_substring_of_concatenation() missing 2 required positional arguments: 'string2' and 's'", "input": [")", "("], "output": null, "correct_output": "Yes"}

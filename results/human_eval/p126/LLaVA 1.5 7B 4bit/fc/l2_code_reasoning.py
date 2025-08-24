@@ -1,0 +1,26 @@
+def find_numbers_more_than_twice(nums):
+    """
+    Implements the described flowchart:
+    - Initialize a counter 'count' for distinct numbers encountered.
+    - Maintain a set 'counted' of numbers already counted.
+    - Iterate through 'nums':
+        - If the number has not been counted yet, mark it as counted and increment 'count'.
+        - If 'count' is greater than 2, print the current number and its current count,
+          and record the pair in the results list.
+    - Return the list of (number, count) pairs that were printed.
+    Input:
+        nums: iterable of numbers
+    Output:
+        list of tuples (num, count) corresponding to each print event
+    """
+    counted = set()
+    count = 0
+    results = []
+    for num in nums:
+        if num not in counted:
+            counted.add(num)
+            count += 1
+        if count > 2:
+            print(num, count)
+            results.append((num, count))
+    return results

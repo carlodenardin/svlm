@@ -1,0 +1,11 @@
+The algorithm's purpose is to receive an integer number, sum the digits of that number, and then convert the sum to a binary number.
+
+Input data required: An integer number.
+
+Main logical flow:
+
+1. Receive an integer number.
+2. Sum the digits of the number.
+3. Convert the sum to a binary number.
+
+Expected output: A binary number.

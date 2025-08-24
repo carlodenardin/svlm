@@ -1,0 +1,18 @@
+```python
+def vlm_gcd_style(n, x, y):
+    """
+    Implements the described algorithm:
+    - If n == 1: return y
+    - Else if exists integer i in [2, floor(sqrt(n))] such that n % i == 0: return x
+    - Else return y
+    """
+    if n == 1:
+        return y
+    i = 2
+    limit = int(n ** 0.5)
+    while i <= limit:
+        if n % i == 0:
+            return x
+        i += 1
+    return y
+```

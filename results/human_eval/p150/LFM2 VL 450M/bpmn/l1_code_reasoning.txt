@@ -1,0 +1,26 @@
+```python
+def is_prime(n: int) -> bool:
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0:
+        return False
+    i = 3
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
+def solve(n: int, x: int, y=None) -> bool:
+    # Step 2: Check if n is prime
+    if is_prime(n):
+        return True
+    # Step 3: If n is not prime, check if x is divisible by any integer from 2 to sqrt(n)
+    limit = int(n ** 0.5)
+    for d in range(2, limit + 1):
+        if x % d == 0:
+            return False
+    return True
+```

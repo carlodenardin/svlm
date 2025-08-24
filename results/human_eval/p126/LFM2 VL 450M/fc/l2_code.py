@@ -1,0 +1,10 @@
+def check_numbers(start):
+    if start:
+        for i in range(start):
+            if i == start:
+                return True
+            elif i < start:
+                return False
+        return False
+    else:
+        return False

@@ -1,0 +1,12 @@
+```python
+def calculate_result(n):
+    result = []
+    i = 1
+    while i <= n:
+        if i % 2 == 0:
+            result.append(i)
+            i += 1
+        else:
+            result.append(i)
+    return result
+```

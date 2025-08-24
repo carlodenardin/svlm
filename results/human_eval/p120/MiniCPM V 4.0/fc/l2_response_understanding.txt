@@ -1,0 +1,12 @@
+The flowchart outlines an algorithm designed to sort a list of integers in ascending order and return the last k elements. Here is a detailed step-by-step description:
+
+1. **Start**: The process begins at the 'Start' node.
+2. **Input Data**: The input consists of a list of integers denoted as `lst` and an integer value `k` representing the number of elements to be returned from the sorted list.
+3. **Sorting Process**: 
+   - Implement a sorting function (e.g., using Python's built-in `sorted()` function) that sorts the entire list of integers in ascending order. This results in an ordered list.
+4. **Extract Last k Elements**: 
+   - Once the list is sorted, extract the last `k` elements from this ordered list. This can be done by slicing the list with `lst[-k:]`.
+5. **Output**: The final output is the ordered list containing the last `k` elements obtained after sorting.
+6. **End**: The process concludes at the 'End' node.
+
+This approach ensures efficient retrieval of the required portion of the sorted list without modifying the original data structure significantly.

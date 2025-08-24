@@ -1,0 +1,46 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to count the number of digits greater than 0 in a list of integers.
+
+### Input Data
+* A list of integers
+
+### Main Logical Flow
+#### Step 1: Input a List of Integers
+* The algorithm starts by inputting a list of integers into the `Input a list of integers` function.
+
+#### Step 2: Count Sum of Digits Greater than 0
+* For each value in the list, the algorithm calculates the sum of digits greater than 0.
+* The function returns the count of such digits.
+
+#### Step 3: Return the Count
+* The final output is the count of digits greater than 0 in the input list.
+
+### Expected Output
+* The algorithm returns the count of digits greater than 0 in the input list.
+
+### Implementation
+```python
+def count_digitsgreater_than_0(numbers):
+    """
+    Counts the number of digits greater than 0 in a list of integers.
+
+    Args:
+        numbers (list): A list of integers.
+
+    Returns:
+        int: The count of digits greater than 0 in the input list.
+    """
+    count = 0
+    for num in numbers:
+        if any(int(digit) > 0 for digit in str(num)):
+            count += 1
+    return count
+
+# Example usage:
+numbers = [123, 456, 789, 101]
+print(count_digitsgreater_than_0(numbers))  # Output: 3
+```
+This implementation uses a simple loop to iterate through each number in the input list, checking if the sum of its digits is greater than 0. If it is, the count is incremented. The function returns the final count.

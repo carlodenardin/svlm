@@ -1,0 +1,39 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+The algorithm appears to be designed to determine if two integers, `x` and `y`, are relatively prime (or coprime).  Two integers are relatively prime if their greatest common divisor (GCD) is 1.  The flowchart implements a specific method to calculate the GCD.
+
+**2. Input Data**
+
+The algorithm requires the following input:
+
+*   `n`: An integer.
+*   `x`: An integer.
+*   `y`: An integer.
+
+**3. Logical Flow (Step-by-Step)**
+
+1.  **Receive Input:** The algorithm begins by receiving the three integer values `n`, `x`, and `y` as input.
+
+2.  **Check if n is equal to 1:**  The first decision point checks if `n` is equal to 1.
+    *   If `n` is equal to 1, the algorithm immediately returns `y`.
+
+3.  **Find a Divisor:** If `n` is not equal to 1, the algorithm proceeds to find a divisor of `n` within the range from 2 to the square root of `n` (inclusive).  This is done by iterating through numbers in that range.
+
+4.  **Check for Divisor:** After finding a potential divisor, the algorithm checks if that divisor exists.
+    *   If a divisor is found, the algorithm returns `y`.
+
+5.  **Return x:** If no divisor is found within the specified range, the algorithm returns `x`.
+
+**4. Expected Output**
+
+The algorithm's expected output is:
+
+*   If `n` is 1, the output is `y`.
+*   If a divisor of `n` is found between 2 and `sqrt(n)`, the output is `y`.
+*   If no divisor of `n` is found between 2 and `sqrt(n)`, the output is `x`.
+
+**In essence, the algorithm is attempting to find a common divisor of `n` and `y`. If it finds a divisor of `n` within the specified range, it assumes that `y` is also a divisor of `n` and therefore the GCD is 1. If no such divisor is found, it concludes that `x` is the GCD.**
+
+**Note:** This algorithm is a simplified approach

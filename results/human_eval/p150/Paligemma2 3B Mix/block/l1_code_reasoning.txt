@@ -1,0 +1,9 @@
+```python
+def solve():
+    # The required reasoning block to translate into executable code is not present in the prompt.
+    # This placeholder signals that without the explicit reasoning, we cannot produce the exact solution.
+    raise RuntimeError("Missing reasoning block: cannot translate into executable Python function without the described steps.")
+
+if __name__ == "__main__":
+    solve()
+```

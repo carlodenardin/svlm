@@ -1,0 +1,11 @@
+```python
+def convert_to_string(n):
+    # Convert to digits
+    digits = [str(d) for d in str(n)]
+    
+    # Convert digits to string
+    string_representation = ''.join(digits)
+    
+    # Return result
+    return string_representation
+```

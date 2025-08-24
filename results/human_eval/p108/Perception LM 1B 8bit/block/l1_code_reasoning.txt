@@ -1,0 +1,30 @@
+```python
+def count_sum_of_digits(input_list):
+    """
+    Counts the sum of digits in a list of integers.
+
+    Args:
+        input_list (list): A list of integers.
+
+    Returns:
+        list: A list of counts, where each count represents the sum of digits for a corresponding value in the input list.
+    """
+    # Initialize an empty list to store the counts
+    counts = []
+
+    # Iterate over each value in the input list
+    for value in input_list:
+        # Calculate the sum of digits for the current value
+        sum_of_digits = sum(int(digit) for digit in str(value))
+
+        # Append the count to the list
+        counts.append(sum_of_digits)
+
+    # Return the list of counts
+    return counts
+
+# Example usage
+input_list = [123, 456, 789]
+counts = count_sum_of_digits(input_list)
+print(counts)
+```

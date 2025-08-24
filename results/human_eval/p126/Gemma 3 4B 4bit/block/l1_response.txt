@@ -1,0 +1,31 @@
+```python
+def check_list(numbers):
+    """
+    Checks if a list of integers is sorted in ascending order and has no more than one duplicate of the same number.
+
+    Args:
+        numbers: A list of integers.
+
+    Returns:
+        True if both conditions are satisfied, False otherwise.
+    """
+    if not numbers:
+        return True  # Empty list is considered sorted and has no duplicates
+
+    for i in range(len(numbers) - 1):
+        if numbers[i] > numbers[i+1]:
+            return False
+
+    counts = {}
+    for num in numbers:
+        if num in counts:
+            counts[num] += 1
+        else:
+            counts[num] = 1
+
+    for num in counts:
+        if counts[num] > 1:
+            return False
+
+    return True
+```

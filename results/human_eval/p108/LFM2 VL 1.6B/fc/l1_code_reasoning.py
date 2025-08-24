@@ -1,0 +1,6 @@
+def countGreaterThanZero(integers):
+    count = 0
+    for value in integers:
+        if value > 0:
+            count += 1
+    return count

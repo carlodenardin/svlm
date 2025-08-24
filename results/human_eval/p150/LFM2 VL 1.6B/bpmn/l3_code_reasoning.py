@@ -1,0 +1,40 @@
+import math
+
+def algorithm_value(n, x, y):
+    # Step 2: Check if n is even
+    if n % 2 != 0:
+        return y
+
+    # Step 3: Set i to 2
+    i = 2
+
+    # Step 4: Calculate x
+    x = math.sqrt(n)
+
+    # Step 5: Check if x >= sqrt(n)
+    if not (x >= math.sqrt(n)):
+        return x
+
+    # Step 6: Calculate y if x < sqrt(n)
+    if x < math.sqrt(n):
+        y = x * y
+
+    # Step 7: Increase i by 1 if i != 2
+    if i != 2:
+        i += 1
+
+    return y
+
+def main():
+    import sys
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    n, x, y = map(int, data[:3])
+    result = algorithm_value(n, x, y)
+    if isinstance(result, float) and result.is_integer():
+        result = int(result)
+    print(result)
+
+if __name__ == "__main__":
+    main()

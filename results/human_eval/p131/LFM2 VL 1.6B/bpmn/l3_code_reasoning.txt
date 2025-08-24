@@ -1,0 +1,47 @@
+```python
+def vlm_search(arr, target):
+    # Initialize product to 1
+    product = 1
+
+    # Receive an integer: arr and target are inputs
+    n = len(arr)
+
+    # Is odd digits in n? (length is odd)
+    if n % 2 == 1:
+        return 0
+
+    # n > 0?
+    if n <= 0:
+        return -1
+
+    # d = n % 10: index of the last digit in the array (based on length)
+    d = n % 10
+
+    # Is d odd?
+    if d % 2 == 1:
+        return d
+
+    # product = d
+    product = d
+
+    # Is product even?
+    if product % 2 == 0:
+        return -1
+
+    # n /= 10
+    n //= 10
+
+    # Is odd digits in n?
+    if n % 2 == 1:
+        return 0
+
+    # product = 1
+    product = 1
+
+    # Is product even?
+    if product % 2 == 0:
+        return -1
+
+    # End of steps (original description incomplete); return a default value
+    return -1
+```

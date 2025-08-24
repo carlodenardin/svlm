@@ -1,0 +1,11 @@
+def value_based_on_primality(n, x, y):
+    if n <= 1:
+        return y
+    i = 2
+    is_prime = True
+    while i * i <= n:
+        if n % i == 0:
+            is_prime = False
+            break
+        i += 1
+    return x if is_prime else y

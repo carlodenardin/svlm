@@ -1,0 +1,59 @@
+**Algorithm Overview**
+=======================
+
+**Purpose**: The algorithm is designed to count the even and odd digits of a given integer and return a tuple containing these counts.
+
+**Input Data**: The algorithm requires an integer as input.
+
+**Main Logical Flow**
+--------------------
+
+### Step 1: Receive an Integer
+The algorithm starts by receiving an integer as input.
+
+### Step 2: Count the Even and Odd Digits
+The algorithm then counts the even and odd digits of the input integer.
+
+### Step 3: Return a Tuple (Even, Odd)
+Finally, the algorithm returns a tuple containing the counts of even and odd digits.
+
+**Expected Output**
+-----------------
+
+The algorithm's expected output is a tuple containing the counts of even and odd digits in the input integer.
+
+**Implementation**
+-----------------
+
+Here is a Python implementation of the algorithm:
+
+```python
+def count_even_odd_digits(n):
+    """
+    Counts the even and odd digits of a given integer.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        tuple: A tuple containing the counts of even and odd digits.
+    """
+    even_count = 0
+    odd_count = 0
+
+    # Count the digits
+    for digit in str(n):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+
+    return even_count, odd_count
+
+# Example usage
+n = 12345
+even_count, odd_count = count_even_odd_digits(n)
+print(f"Even digits: {even_count}, Odd digits: {odd_count}")
+```
+
+This implementation uses a simple loop to iterate over the digits of the input integer and increments the corresponding count for even and odd digits. The function returns a tuple containing these counts.

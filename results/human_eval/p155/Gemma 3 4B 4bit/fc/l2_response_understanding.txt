@@ -1,0 +1,35 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to count the number of even and odd digits in a given integer. It essentially analyzes the digits of a number and determines how many are even and how many are odd.
+
+**2. Input Data Required**
+
+*   **n:** An integer (whole number).  The algorithm expects this to be a positive integer.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `even = 0` (Initialize a counter for even digits to 0)
+    *   `odd = 0` (Initialize a counter for odd digits to 0)
+    *   `n = abs(num)` (Take the absolute value of the input number `num`. This ensures the algorithm works correctly for negative numbers as well.  The flowchart doesn't explicitly show `num` being defined, but it's assumed to be the input.)
+
+2.  **Looping:** The algorithm enters a `while` loop that continues as long as `n > 0`.
+
+3.  **Digit Extraction and Counting:**
+    *   `Extract the last digit of n`:  The last digit of `n` is extracted (likely using the modulo operator `%`).
+    *   `Increment the odd or even counter`:  Based on whether the extracted digit is even or odd, the corresponding counter (`even` or `odd`) is incremented.
+    *   `Remove the last digit of n`: The last digit of `n` is removed (likely using integer division or modulo operator).  This prepares `n` for the next iteration.
+
+4.  **Loop Condition:** The loop continues as long as `n > 0`.  This means the loop repeats until all digits of the number have been processed.
+
+5.  **Output:**
+    *   `End`:  Once the loop finishes (when `n` becomes 0), the algorithm produces an output.
+    *   `(even, odd): tuple`: The algorithm returns a tuple containing the count of even digits and the count of odd digits.  The order of the elements in the tuple is likely (even count, odd count).
+
+**4. Expected Output**
+
+The algorithm will return a tuple (or similar data structure) containing two values:
+
+*   

@@ -1,0 +1,13 @@
+def multiply(a, b):
+    """
+    Implements the described flowchart-like algorithm for multiplying two numbers.
+    - Start with the first number.
+    - If the second number is zero, return the first number.
+    - Otherwise, multiply the first number by the second number and store the result.
+    - Return the final product.
+    """
+    first = a
+    if b == 0:
+        return first
+    first = first * b
+    return first

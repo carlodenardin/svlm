@@ -1,0 +1,16 @@
+```python
+def get_last_k_elements(numbers, k):
+    """
+    Receives a list of integers and an integer k as input.
+    Sorts the list and returns the list with the last k elements.
+
+    Args:
+        numbers (list): A list of integers.
+        k (int): An integer representing the number of last elements to return.
+
+    Returns:
+        list: The sorted list with the last k elements.
+    """
+    numbers.sort()
+    return numbers[-k:]
+```

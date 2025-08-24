@@ -1,0 +1,1 @@
+I’m missing the actual reasoning text you want me to translate. Please paste the “reasoning of a small VLM” or provide the exact problem statement along with the expected input/output format. Once I have that, I’ll implement an executable Python function that follows that reasoning verbatim and return only the code block.

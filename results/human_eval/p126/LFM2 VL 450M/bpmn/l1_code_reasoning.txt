@@ -1,0 +1,29 @@
+```python
+def check_sorted(nums):
+    # Step 2: Check if the list is empty or has only one element
+    if len(nums) == 0:
+        return "No", "No"
+    if len(nums) == 1:
+        return "No", "No"
+
+    # Step 4: If the list is sorted in ascending order
+    is_asc = True
+    for i in range(len(nums) - 1):
+        if nums[i] > nums[i + 1]:
+            is_asc = False
+            break
+    if is_asc:
+        return "Yes", "No"
+
+    # Step 5: If the list is sorted in descending order
+    is_desc = True
+    for i in range(len(nums) - 1):
+        if nums[i] < nums[i + 1]:
+            is_desc = False
+            break
+    if is_desc:
+        return "Yes", "No"
+
+    # Step 6: If the list is not sorted
+    return "No", "No"
+```

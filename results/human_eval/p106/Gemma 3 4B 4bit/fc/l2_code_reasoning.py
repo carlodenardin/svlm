@@ -1,0 +1,14 @@
+def compute_res(n):
+    res = []
+    i = 1
+    while i <= n:
+        if i % 2 == 0:
+            prod = 1
+            for k in range(1, i + 1):
+                prod *= k
+            res.append(prod)
+        else:
+            s = i * (i + 1) // 2
+            res.append(s)
+        i += 1
+    return res

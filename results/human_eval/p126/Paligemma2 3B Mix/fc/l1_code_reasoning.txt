@@ -1,0 +1,8 @@
+I’m missing the actual reasoning content you want me to translate into code. Please paste the “reasoning of a small VLM” or describe the exact problem, including:
+
+- The task or objective (e.g., compute something, classify, optimize, etc.)
+- The input format and sample data
+- Any specific steps, rules, or heuristics the VLM uses (in order)
+- Desired output format
+
+If you can provide the reasoning text verbatim (or a detailed description), I’ll generate the exact Python function that follows it step by step.

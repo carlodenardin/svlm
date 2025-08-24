@@ -1,0 +1,12 @@
+```python
+def algorithm(diagram):
+    # Extract the algorithm logic from the diagram
+    logic = diagram.split(";")
+    
+    # Generate the Python code based on the extracted logic
+    code = ""
+    for line in logic:
+        code += f"{line}\n"
+    
+    return code
+```</s>

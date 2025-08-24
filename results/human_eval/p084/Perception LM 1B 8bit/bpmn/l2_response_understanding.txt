@@ -1,0 +1,62 @@
+**Algorithm Overview**
+=======================
+
+### Purpose
+The algorithm is designed to convert an integer number to its binary representation and return the result.
+
+### Input Data
+*   Integer number
+
+### Main Logical Flow
+#### Step 1: Initialize Variables
+*   `sum = 0` (initially set to 0)
+*   `res = ""` (initially set to an empty string)
+
+#### Step 2: Compute and Allocate Sum Variable
+*   Compute the sum of the digits of the input number
+*   Allocate the sum variable to store the sum of the digits
+
+#### Step 3: Convert Sum to Binary
+*   Convert the sum to binary format
+*   Save the binary representation in the `res` variable
+
+#### Step 4: Return Result
+*   Return the `res` variable containing the binary representation of the input number
+
+### Expected Output
+The algorithm returns the binary representation of the input integer number.
+
+### Implementation
+```python
+def convert_to_binary(n):
+    """
+    Convert an integer number to its binary representation.
+
+    Args:
+        n (int): The input integer number.
+
+    Returns:
+        str: The binary representation of the input number.
+    """
+    # Initialize variables
+    sum = 0
+    res = ""
+
+    # Compute and allocate sum variable
+    while n > 0:
+        # Extract the last digit of the number
+        digit = n % 10
+        # Add the digit to the sum
+        sum += digit
+        # Convert the digit to binary and append it to the result
+        res += str(digit)
+        # Remove the last digit from the number
+        n //= 10
+
+    # Return the binary representation
+    return res
+
+# Example usage
+print(convert_to_binary(10))  # Output: "1010"
+```
+This implementation follows the step-by-step process outlined above, using a simple while loop to extract the last digit of the input number and convert it to binary. The result is then returned as a string.

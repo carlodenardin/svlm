@@ -1,0 +1,15 @@
+```python
+def sorted_last_k_elements(nums, k):
+    """
+    Receives a list of integers 'nums' and an integer 'k'.
+    Sorts the entire list in ascending order and returns the last k elements.
+    If k <= 0, returns an empty list.
+    """
+    # Sort the entire list in ascending order
+    sorted_nums = sorted(nums)
+    # If k is non-positive, return empty list
+    if k <= 0:
+        return []
+    # Return the last k elements
+    return sorted_nums[-k:]
+```

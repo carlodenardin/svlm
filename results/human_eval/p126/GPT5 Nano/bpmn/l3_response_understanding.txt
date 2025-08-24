@@ -1,0 +1,73 @@
+Certainly! Here's a detailed step-by-step breakdown of the algorithm depicted in the flowchart:
+
+---
+
+### **Overview of the Algorithm's Purpose**
+This algorithm checks whether a given list of integers is **strictly increasing** (each element is greater than the previous one), with an additional constraint: there cannot be two consecutive equal values (and no triplet where values repeat with one element in between).
+
+---
+
+### **Input Data Required**
+- **Input:** A list (array) of integers, for example: `[1, 2, 3, 5, 6]`.
+
+---
+
+### **Main Logical Flow**
+
+1. **Receive Input:** The algorithm takes a list of integers as an input.
+2. **Initialization:** Set an index variable `i` to `1`.
+3. **Loop Condition:**  
+   a. **Check if `i < len(list)`:**  
+      - If `No`: The end of the list has been successfully reached, so **return `True`**.
+      - If `Yes`: Continue to the next check.
+   b. **Check if `list[i] <= list[i - 1]`:**  
+      - If `Yes`: A non-increasing or equal pair detected, **return `False`**.
+      - If `No`: Continue to the next condition.
+   c. **Check if `i > 1 and list[i] == list[i - 1] == list[i - 2]`:**  
+      - If `Yes`: Three consecutive equal values detected, **return `False`**.
+      - If `No`: Continue.
+   d. **Increment i:** Increase the value of `i` by 1.
+   e. **Repeat loop** from step 3.
+4. **End of Algorithm:**  
+   - If the algorithm completes without encountering a `False` return, it will eventually return `True`.
+
+---
+
+### **Expected Output**
+- **Boolean Value:**
+  - **`True`** if the input list is strictly increasing and has no illegal repetitions as defined.
+  - **`False`** if a pair is not strictly increasing, or three consecutive (or spaced) elements are identical.
+
+---
+
+### **Ready for Implementation - Pseudocode**
+
+```python
+def is_strictly_increasing(lst):
+    i = 1
+    while i < len(lst):
+        if lst[i] <= lst[i-1]:
+            return False
+        if i > 1 and lst[i] == lst[i-1] == lst[i-2]:
+            return False
+        i += 1
+    return True
+```
+
+---
+
+#### **Summary Table**
+
+| Step                    | Action                                                  |
+|-------------------------|--------------------------------------------------------|
+| Receive input           | List of integers                                       |
+| Initialize `i`          | Set `i = 1`                                            |
+| Loop, check `i`         | If `i < len(list)`, proceed; else, return `True`       |
+| Compare values          | If `list[i] <= list[i-1]`, return `False`              |
+| Check triple repeat     | If `i > 1` and `list[i] == list[i-1] == list[i-2]`, return `False` |
+| Increment and repeat    | `i += 1` and repeat loop                               |
+| Return                  | `True` if all checks passed                            |
+
+---
+
+This makes it clear and concise, ready for direct code implementation.

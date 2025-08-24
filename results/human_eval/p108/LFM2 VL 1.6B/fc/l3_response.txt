@@ -1,0 +1,29 @@
+```python
+def is_negative(n):
+    if n < 0:
+        return -1
+    else:
+        return 1
+
+def process_arr(arr):
+    n = abs(arr)
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        isNeg = is_negative(n)
+        n = abs(n)
+        if n > 0:
+            return n
+        else:
+            return n + 1
+
+def main():
+    arr = [1, 2, 3, 4, 5]
+    res = process_arr(arr)
+    print(res)
+
+if __name__ == "__main__":
+    main()
+```

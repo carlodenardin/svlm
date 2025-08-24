@@ -1,0 +1,51 @@
+```python
+def has_odd_digits(n: int) -> bool:
+    """
+    Return True if the integer n contains at least one odd digit.
+    Negative numbers are treated by their absolute value.
+    """
+    n = abs(n)
+    if n == 0:
+        return False  # 0 has no odd digits
+    while n:
+        d = n % 10
+        if d % 2 == 1:
+            return True
+        n //= 10
+    return False
+
+def calculate_product(n: int) -> int:
+    """
+    Calculate the product of n and 10, handling odd digits.
+
+    Args:
+        n (int): The input number.
+
+    Returns:
+        int: The computed product according to the described algorithm.
+    """
+    # Step 1: Initialize the product
+    product = 1
+
+    # Step 2: Odd Digits Check
+    if not has_odd_digits(n):
+        return 0
+
+    # Step 3: Product Calculation
+    d = n % 10
+    if d % 2 == 0:
+        # If d is even, divide by 10
+        product = d // 10
+    else:
+        # If d is odd, multiply by n
+        product = d * n
+
+    # Step 4: Output
+    return product
+
+# Example usage:
+if __name__ == "__main__":
+    n = 12345
+    result = calculate_product(n)
+    print(result)  # Output depends on the algorithm's logic
+```

@@ -1,0 +1,21 @@
+```python
+def calculate_remainder(n):
+    return n % 2
+
+def is_even(n):
+    return calculate_remainder(n) == 0
+
+def determine_parity(n):
+    return is_even(n)
+
+def get_parity(n):
+    return determine_parity(n)
+
+def main():
+    n = int(input("Enter a number: "))
+    parity = get_parity(n)
+    print(parity)
+
+if __name__ == "__main__":
+    main()
+```

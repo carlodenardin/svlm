@@ -1,0 +1,65 @@
+```python
+import re
+from collections import Counter
+from typing import List, Dict, Tuple
+
+def solve(text: str) -> List[Tuple[str, int]]:
+    """
+    Main body flowchart:
+    [Start] -> [Receive text] -> [Tokenize] -> [Count tokens] -> [Sort by frequency] -> [Return result] -> [End]
+    """
+    tokens = tokenize(text)
+    freq = count_tokens(tokens)
+    sorted_tokens = sort_tokens(freq)
+    return sorted_tokens
+
+def tokenize(text: str) -> List[str]:
+    """
+    Tokenization flowchart:
+    [Start tokenize] -> [Lowercase text] -> [Extract word-like tokens] -> [Return tokens]
+    """
+    if not text:
+        return []
+    # Normalize and split into word-like tokens
+    lowered = text.lower()
+    tokens = re.findall(r"\b\w+\b", lowered)
+    return tokens
+
+def count_tokens(tokens: List[str]) -> Dict[str, int]:
+    """
+    Count tokens flowchart:
+    [Start count] -> [Initialize counter] -> [Iterate tokens] -> [Increment counts] -> [Return frequency dict]
+    """
+    if not tokens:
+        return {}
+    freq = Counter(tokens)
+    return dict(freq)
+
+def sort_tokens(freq: Dict[str, int]) -> List[Tuple[str, int]]:
+    """
+    Sort tokens flowchart:
+    [Start sort] -> [Take frequency dict] -> [Sort by count desc, then by token] -> [Return sorted list]
+    """
+    if not freq:
+        return []
+    # Sort by frequency desc, then by token ascending for tie-breaking
+    sorted_list = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
+    return sorted_list
+
+def format_output(sorted_tokens: List[Tuple[str, int]]) -> List[Tuple[str, int]]:
+    """
+    Optional formatting flowchart:
+    [Start format] -> [Convert to desired structure] -> [Return formatted output]
+    """
+    # In this simple pipeline, the sorted_tokens are already in desired format.
+    return sorted_tokens
+
+# Optional wrapper to demonstrate end-to-end usage when run as a script
+if __name__ == "__main__":
+    import sys
+    input_text = sys.stdin.read()
+    result = solve(input_text)
+    # Print each token with its count
+    for token, count in result:
+        print(f"{token}\t{count}")
+```

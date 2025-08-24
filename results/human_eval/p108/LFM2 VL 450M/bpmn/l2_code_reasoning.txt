@@ -1,0 +1,16 @@
+```python
+def sum_integers(nums):
+    # Initialize result
+    res = 0
+    # If the list is empty
+    if len(nums) == 0:
+        return res
+    # If the list has only one element
+    if len(nums) == 1:
+        return 1
+    # If the list has more than one element
+    res = nums[0] + sum(nums[1:])
+    for i in range(1, len(nums)):
+        res += nums[i]
+    return res
+```

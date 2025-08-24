@@ -1,0 +1,21 @@
+def count_distinct_vlm(a):
+    """
+    Mimics the described flowchart algorithm to count distinct characters.
+    Note: This implementation follows the described nested loops exactly as stated,
+    which does not reliably count distinct characters for general strings.
+    """
+    n = len(a)
+    i = 1
+    count = 0
+    a_seq = a
+    while i <= n:
+        j = 1
+        while j <= len(a_seq):
+            j += 1
+            k = 0
+            while k < len(a_seq):
+                k += 1
+                if a_seq[j - 1] != a_seq[k - 1]:
+                    count = 1
+        i += 1
+    return count

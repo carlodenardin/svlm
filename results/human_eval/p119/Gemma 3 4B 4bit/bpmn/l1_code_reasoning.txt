@@ -1,0 +1,21 @@
+```python
+def is_balanced(strings):
+    """
+    Determine if the given list of strings is balanced according to the described algorithm.
+    Returns "Yes" or "No".
+    """
+    open_count = 0
+    for s in strings:
+        concatenated = s + s
+        for ch in concatenated:
+            if ch == '(':
+                open_count += 1
+            elif ch == ')':
+                open_count -= 1
+        if open_count > 0:
+            return "No"
+        if open_count == 0:
+            return "Yes"
+        # If open_count < 0, continue to next string
+    return "No"
+```

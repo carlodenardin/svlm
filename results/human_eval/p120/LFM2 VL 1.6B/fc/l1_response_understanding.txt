@@ -1,0 +1,62 @@
+### Algorithm Overview
+
+The algorithm is designed to process a list of integers and an integer `k`. Its purpose is to sort the list of integers in ascending order and then return the last `k` elements of the sorted list.
+
+### Input Data
+
+- **List of integers**: A sequence of integers that needs to be sorted.
+- **Integer `k`**: An integer that determines the number of elements to be returned from the list.
+
+### Main Logical Flow
+
+1. **Start**: The process begins.
+2. **List of integers and integer `k`**: These are the inputs provided to the algorithm.
+3. **Sort the list and keep the last `k` elements**:
+   - **Decision**: Check if `k` is greater than or equal to the length of the list.
+   - **Loop**: If `k` is valid, sort the list in ascending order.
+   - **Function Call**: Use a sorting algorithm (e.g., quicksort, mergesort) to sort the list.
+   - **Decision**: If `k` is valid, return the last `k` elements of the sorted list.
+4. **End**: The process ends.
+
+### Expected Output
+
+- **Sorted list of integers**: The list of integers sorted in ascending order.
+- **Last `k` elements**: The last `k` elements of the sorted list, if `k` is valid.
+
+### Implementation Steps
+
+1. **Input Validation**:
+   - Ensure `k` is a positive integer.
+   - Ensure the list has at least `k` elements.
+
+2. **Sorting**:
+   - Use a sorting algorithm to sort the list in ascending order.
+
+3. **Output**:
+   - Return the last `k` elements of the sorted list.
+
+### Pseudocode
+
+```plaintext
+Start
+  Input: List of integers and integer k
+  Validate k
+  If k >= length of list
+    Return empty list
+  Sort list in ascending order
+  Return last k elements
+End
+```
+
+### Pseudocode Implementation
+
+```python
+def sort_and_return_last_k(integers, k):
+    # Input validation
+    if k <= 0 or k > len(integers):
+        return []
+
+    # Sort the list
+    sorted_integers = sorted(integers)
+
+    # Return the last k elements

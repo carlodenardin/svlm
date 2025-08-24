@@ -1,0 +1,17 @@
+```python
+def sum_digits_to_binary(num):
+    # Initialization
+    sum = 0
+    res = ""
+
+    # Digit Sum Calculation
+    while num > 0:
+        last_digit = num % 10
+        sum += last_digit
+        num = num // 10
+
+    # Binary Conversion
+    res = bin(sum)[2:]
+
+    return res
+```

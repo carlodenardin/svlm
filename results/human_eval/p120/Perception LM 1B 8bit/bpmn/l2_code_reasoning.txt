@@ -1,0 +1,25 @@
+```python
+def last_k_sorted_elements(nums, k):
+    """
+    Sort the input list in ascending order and return the last k elements
+    according to the described approach.
+    """
+    # Step 2: sort ascending
+    sorted_list = sorted(nums)
+
+    # Step 1: initialize an empty storage and iterate, appending each element
+    buffer = []
+
+    # Guard for non-positive k (not described, but sensible)
+    if k <= 0:
+        return []
+
+    for val in sorted_list:
+        buffer.append(val)
+        # Step 3: once the buffer has k elements, return the last k elements
+        if len(buffer) == k:
+            return buffer[-k:]
+
+    # If there were fewer than k elements, return the last k elements of what we have.
+    return buffer[-k:]
+```

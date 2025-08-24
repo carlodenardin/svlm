@@ -1,0 +1,12 @@
+{"success": false, "error": "", "input": ["()(", ")"], "output": [false, true], "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", ")"], "output": [false, true], "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(())", "())())"], "output": [true, false], "correct_output": "No"}
+{"success": false, "error": "", "input": [")())", "(()()("], "output": [true, false], "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())))", "(()())(("], "output": [true, false], "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()", "())"], "output": [true, false], "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(", "()))()"], "output": [true, false], "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((", "((())"], "output": [true, false], "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()", "(()("], "output": [true, false], "correct_output": "No"}
+{"success": false, "error": "", "input": [")(", ")("], "output": [true, false], "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": [true, false], "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": [false, true], "correct_output": "Yes"}

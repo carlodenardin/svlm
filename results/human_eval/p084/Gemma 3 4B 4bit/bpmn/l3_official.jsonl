@@ -1,0 +1,5 @@
+{"success": false, "error": "", "input": 1000, "output": "000110//= 10", "correct_output": "1"}
+{"success": false, "error": "", "input": 150, "output": "0510//= 10110//= 10", "correct_output": "110"}
+{"success": false, "error": "", "input": 147, "output": "710//= 10400//= 10110//= 10", "correct_output": "1100"}
+{"success": false, "error": "", "input": 333, "output": "310//= 10310//= 10310//= 10", "correct_output": "1001"}
+{"success": false, "error": "", "input": 963, "output": "310//= 10600//= 10910//= 10", "correct_output": "10010"}

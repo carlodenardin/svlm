@@ -1,0 +1,18 @@
+def gcd(x, y):
+    a = abs(x)
+    b = abs(y)
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def main():
+    import sys
+    data = sys.stdin.read().split()
+    if not data:
+        return
+    x = int(data[0])
+    y = int(data[1]) if len(data) > 1 else 0
+    print(gcd(x, y))
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,8 @@
+The algorithm's purpose is to calculate the number of ways to partition a set of elements into non-empty subsets. The input data required is a list of elements. The main logical flow is as follows:
+
+1. Receive an image of a flowchart.
+2. Create a list of dimensions n.
+3. Populate the list with the number of ways to partition the list with n elements.
+4. Return the number of ways to partition the list.
+
+The expected output is the number of ways to partition the list.

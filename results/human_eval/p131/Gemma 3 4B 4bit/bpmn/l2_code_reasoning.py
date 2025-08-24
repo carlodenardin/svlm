@@ -1,0 +1,15 @@
+def product_of_odd_digits(n: int) -> int:
+    """
+    Compute the product of all odd digits in the given integer.
+    If no odd digits are found, return 0.
+    """
+    s = str(n)
+    product = 1
+    found = False
+    for ch in s:
+        if ch.isdigit():
+            d = int(ch)
+            if d % 2 == 1:
+                product *= d
+                found = True
+    return product if found else 0

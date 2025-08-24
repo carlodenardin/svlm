@@ -1,0 +1,8 @@
+def prime_based_output(n: int, x: int, y: int) -> int:
+    if n < 2:
+        return y
+    limit = int(n ** 0.5)
+    for i in range(2, limit + 1):
+        if n % i == 0:
+            return y
+    return x

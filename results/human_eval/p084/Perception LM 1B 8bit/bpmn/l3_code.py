@@ -1,0 +1,19 @@
+def calculate_series(n):
+    """
+    Calculate the sum of a series of numbers.
+
+    Args:
+        n (int): The number of terms in the series.
+
+    Returns:
+        str: The sum of the series.
+    """
+    if n < 0:
+        raise ValueError('Input number must be a non-negative integer.')
+    sum = 0
+    res = ''
+    for i in range(n):
+        if i >= 0:
+            sum += i % 10
+            res = str(i % 10) + res
+    return res

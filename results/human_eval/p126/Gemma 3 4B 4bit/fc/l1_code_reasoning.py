@@ -1,0 +1,18 @@
+def is_sorted_and_unique(nums):
+    """
+    Returns True if nums is sorted in ascending order and contains no duplicates.
+    Follows the two-step approach described:
+    1) Check consecutive pairs to ensure non-decreasing order.
+       If any nums[i] > nums[i+1], return False.
+    2) Check for duplicates by ensuring each element does not appear earlier in the list.
+       For each i, if nums[i] is found in nums[:i], return False.
+    If both checks pass, return True.
+    """
+    n = len(nums)
+    for i in range(n - 1):
+        if nums[i] > nums[i + 1]:
+            return False
+    for i in range(n):
+        if nums[i] in nums[:i]:
+            return False
+    return True

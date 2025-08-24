@@ -1,0 +1,48 @@
+def compute_counter(n: int) -> int:
+    # Step 2: Initialize vector A with A[i-1] = i^3 + 1 for i in 1..n
+    A = [(i ** 3) + 1 for i in range(1, n + 1)]
+
+    # Step 3: Initialize counter
+    i = 0
+    counter = 0
+
+    # Step 4: Outer loop
+    while i <= n:
+        # If i equals length of A, exit the outer loop
+        if i == len(A):
+            break
+
+        # Increment i by 1 to move to the next iteration
+        i += 1
+
+        # Step 5: Inner loop with j and k initialized to i+1 and (i+1)+1 respectively
+        j = i + 1
+        k = j + 1
+
+        # Inner loop as described (bounded to avoid infinite loop)
+        while j < len(A) and k < len(A):
+            # Increment j and k if within bounds
+            if j < len(A):
+                j += 1
+            if k < len(A):
+                k += 1
+
+            # Compute the condition A[j-1] + A[j-1] + A[k-1]^3 == 0
+            if A[j - 1] + A[j - 1] + (A[k - 1] ** 3) == 0:
+                counter += 1
+            # If false, continue inner loop without modifying the output vectors (no other action)
+
+    return counter
+
+
+def main():
+    import sys
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    n = int(data[0])
+    print(compute_counter(n))
+
+
+if __name__ == "__main__":
+    main()

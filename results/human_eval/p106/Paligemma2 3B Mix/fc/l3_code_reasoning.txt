@@ -1,0 +1,10 @@
+```python
+def solve():
+    # This placeholder assumes the required reasoning content to translate into executable code
+    # was provided in the prompt. Since the actual reasoning text is not included here,
+    # we cannot faithfully translate it into executable Python code.
+    #
+    # If you provide the reasoning content (the step-by-step approach or the DSL used by the VLM),
+    # replace the body of this function with the translated implementation that follows that reasoning.
+    raise NotImplementedError("Reasoning content is missing. Please provide the reasoning to translate.")
+```

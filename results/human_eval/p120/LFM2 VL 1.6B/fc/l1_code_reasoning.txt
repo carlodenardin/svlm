@@ -1,0 +1,10 @@
+```python
+def sort_and_return_last_k(integers, k):
+    # Input validation
+    if k <= 0 or k > len(integers):
+        return []
+    # Sort the list
+    sorted_integers = sorted(integers)
+    # Return the last k elements
+    return sorted_integers[-k:]
+```

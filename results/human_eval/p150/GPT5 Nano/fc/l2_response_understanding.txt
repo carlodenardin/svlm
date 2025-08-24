@@ -1,0 +1,57 @@
+**Overview of the Algorithm's Purpose:**  
+This algorithm determines whether a given integer `n` is **prime** (with special handling for `n=1`), and based on this test, outputs either value `x` or value `y`.
+
+---
+
+**Input Data Required:**
+- `n` (integer): The number to be tested for primality.
+- `x` (integer): Value to output if `n` is prime (other than 1).
+- `y` (integer): Value to output if `n` is not prime or if `n` is 1.
+
+---
+
+**Main Logical Flow:**
+
+1. **Initialize Inputs:**  
+   Receive `n`, `x`, `y`.
+
+2. **Check if n is 1:**  
+   - If `n == 1`, output `y` and terminate.
+   - Otherwise, continue.
+
+3. **Prime Test:**  
+   - For each integer `i` from 2 to `sqrt(n)` (inclusive), check if `n` is divisible by `i`:
+     - If any such `i` exists (i.e., `n % i == 0`), output `y` and terminate.
+     - If **no** such divisor is found (i.e., the loop completes with no divisors), output `x` and terminate.
+
+---
+
+**Expected Output:**
+- `y` if:
+  - `n == 1`, **or**
+  - `n` has a divisor from 2 to `sqrt(n)` (i.e., `n` is not prime).
+- `x` if:
+  - `n > 1` **and** `n` is prime (i.e., no divisors in [2, sqrt(n)]).
+
+---
+
+**Pseudocode Example:**  
+```python
+def custom_prime_check(n: int, x: int, y: int):
+    if n == 1:
+        return y
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return y
+    return x
+```
+
+**Key Points for Implementation:**
+- Use integer square root for the upper bound in the divisor loop.
+- Edge case (n == 1) is immediately handled as non-prime.
+- Efficient: the divisor check only goes up to `sqrt(n)`.
+
+---
+
+**Summary:**  
+This algorithm checks if `n` is a prime number (with `n=1` being a special non-prime case) and produces a specific output depending on primality.

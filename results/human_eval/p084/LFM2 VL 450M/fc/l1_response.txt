@@ -1,0 +1,13 @@
+```python
+def sum_digits(n):
+    """
+    Sum the digits of n and convert it to binary.
+
+    Args:
+        n (int): The number to be summed.
+
+    Returns:
+        int: The sum of the digits of n.
+    """
+    return bin(n)[2:]  # Convert to binary and remove the '0b' prefix
+```

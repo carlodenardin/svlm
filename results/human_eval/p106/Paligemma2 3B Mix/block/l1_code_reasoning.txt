@@ -1,0 +1,157 @@
+```python
+import ast
+import operator
+import re
+from typing import Any
+
+# Safe evaluator for arithmetic expressions
+_ALLOWED_BINOPS = {
+    ast.Add: operator.add,
+    ast.Sub: operator.sub,
+    ast.Mult: operator.mul,
+    ast.Div: operator.truediv,
+    ast.FloorDiv: operator.floordiv,
+    ast.Mod: operator.mod,
+    ast.Pow: operator.pow,
+    ast.MatMult: operator.matmul if hasattr(operator, 'matmul') else None,  # guard for older py versions
+}
+
+_ALLOWED_UNARYOPS = {
+    ast.UAdd: operator.pos,
+    ast.USub: operator.neg,
+}
+
+
+def _eval_ast(node: ast.AST) -> Any:
+    # Recursively evaluate a sanitized AST
+    if isinstance(node, ast.Expression):
+        return _eval_ast(node.body)
+    if isinstance(node, ast.BinOp):
+        left = _eval_ast(node.left)
+        right = _eval_ast(node.right)
+        op_type = type(node.op)
+        if op_type in _ALLOWED_BINOPS:
+            op_func = _ALLOWED_BINOPS[op_type]
+            if op_func is None:
+                raise ValueError("Unsupported binary operation")
+            return op_func(left, right)
+        else:
+            raise ValueError("Unsupported binary operator")
+    if isinstance(node, ast.UnaryOp):
+        if type(node.op) in _ALLOWED_UNARYOPS:
+            func = _ALLOWED_UNARYOPS[type(node.op)]
+            return func(_eval_ast(node.operand))
+        else:
+            raise ValueError("Unsupported unary operator")
+    if isinstance(node, ast.Num):  # Python <=3.7
+        return node.n
+    if isinstance(node, ast.Constant):  # Python 3.8+
+        if isinstance(node.value, (int, float)):
+            return node.value
+        else:
+            raise ValueError("Unsupported constant type")
+    # Disallow anything else (functions, names, calls, etc.)
+    raise ValueError("Unsupported expression")
+
+
+def safe_eval(expr: str) -> Any:
+    """
+    Safely evaluate a numeric expression. Returns a number if successful,
+    otherwise raises ValueError.
+    """
+    # Pre-parse: ensure it's a string
+    if not isinstance(expr, str):
+        raise ValueError("Expression must be a string")
+
+    # Remove underscores and stray characters that could be there due to cleaning
+    # Build a sanitized expression by allowing digits, operators, parentheses, dot, and percent.
+    sanitized = re.sub(r"[^0-9+\-*/().% ]", " ", expr)
+
+    # Collapse multiple spaces
+    sanitized = re.sub(r"\s+", " ", sanitized).strip()
+
+    if sanitized == "":
+        raise ValueError("Empty expression after sanitization")
+
+    # Parse the sanitized expression
+    try:
+        parsed = ast.parse(sanitized, mode="eval")
+    except SyntaxError as e:
+        raise ValueError("Invalid syntax in expression") from e
+
+    # Evaluate the AST safely
+    return _eval_ast(parsed)
+
+
+def _extract_expression_from_text(text: str) -> str:
+    """
+    Attempt to extract a numeric expression from a problem text by:
+    - Keeping characters likely part of an expression: digits, operators, parentheses, dot, percent.
+    - Removing most letters and separators.
+    """
+    if text is None:
+        return ""
+
+    # If the text is already a simple number, return it directly
+    t = text.strip()
+    if re.fullmatch(r"-?\d+(\.\d+)?", t):
+        return t
+
+    # Build candidate by loosening non-expression characters
+    candidate = re.sub(r"[^0-9+\-*/().% ]", " ", text)
+
+    # If there are obvious words like "=", take the part after it
+    if "=" in candidate:
+        parts = candidate.split("=")
+        candidate = parts[-1]
+
+    candidate = re.sub(r"\s+", " ", candidate).strip()
+    return candidate
+
+
+def solve_problem(text: str) -> str:
+    """
+    Main solver function:
+    - Attempts to extract an arithmetic expression from the input text.
+    - Safely evaluates the expression if possible.
+    - Returns the numeric result as string, or a descriptive error message.
+    """
+    if text is None:
+        return ""
+
+    expr = _extract_expression_from_text(text)
+
+    if not expr:
+        # If nothing sensible could be extracted, attempt to parse numbers separated by spaces as a sum
+        nums = re.findall(r"-?\d+(?:\.\d+)?", text)
+        if nums:
+            try:
+                total = sum(float(n) for n in nums)
+                # If all numbers are integers, present as int
+                if total.is_integer():
+                    total = int(total)
+                return str(total)
+            except Exception:
+                return "Cannot solve the problem with the given input."
+        return "Cannot solve the problem with the given input."
+
+    try:
+        value = safe_eval(expr)
+        if isinstance(value, float) and value.is_integer():
+            value = int(value)
+        return str(value)
+    except Exception:
+        return "Cannot solve the problem with the given input."
+
+
+# Example usage (uncomment to test):
+# if __name__ == "__main__":
+#     samples = [
+#         "What is 12 plus 7?",
+#         "Calculate 3 * (4 + 5) / 3",
+#         "Find result of 10 - 3 * 2",
+#         "1 2 3"  # heuristic sum for fallback
+#     ]
+#     for s in samples:
+#         print(f"Input: {s}\nOutput: {solve_problem(s)}\n")
+```

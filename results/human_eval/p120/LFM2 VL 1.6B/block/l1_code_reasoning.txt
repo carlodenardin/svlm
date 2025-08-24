@@ -1,0 +1,8 @@
+```python
+def sort_list(list_of_integers, integer_k):
+    # Sort the list in ascending order
+    list_of_integers.sort()
+    
+    # Return the sorted list
+    return list_of_integers
+```

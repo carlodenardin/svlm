@@ -1,0 +1,11 @@
+```python
+def last_k_elements_sorted(numbers, k):
+    # Step 1: Start
+    # Step 2: Receive input
+    # Step 3: Sorting
+    sorted_nums = sorted(numbers)
+    # Step 4: Extract last k elements
+    if k <= 0:
+        return []
+    return sorted_nums[-k:]
+```

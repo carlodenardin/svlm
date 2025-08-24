@@ -1,0 +1,25 @@
+```python
+def is_prime_flow(n: int) -> bool:
+    import math
+
+    # Initialize placeholders for End points (as described by flowchart)
+    x = 0
+    y = 0
+
+    # Step: Check if n == 1
+    if n == 1:
+        return False  # End
+
+    # Step: Initialize i
+    i = 2
+
+    # Step: Check if i <= sqrt(n)
+    while i <= math.isqrt(n):
+        # Step: Check if n % i == 0
+        if n % i == 0:
+            return False  # End
+        i += 1
+
+    # Step: No divisors found; n is prime
+    return True
+```

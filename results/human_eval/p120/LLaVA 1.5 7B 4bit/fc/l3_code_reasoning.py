@@ -1,0 +1,40 @@
+def flawed_sort_by_values(items):
+    """
+    Implements the described (flawed) sorting approach:
+    - Start with an empty 'sorted_list'.
+    - For each item in 'items':
+        - Compare the item's value to the value of the last element in 'sorted_list'
+          (the "value of the sorted list" is interpreted as the last value currently in the
+           sorted_list).
+        - If the current item's value is less than that last value, append the item to
+          'sorted_list'.
+        - Otherwise, skip adding (interpreting "remove the current item from the list").
+    - Return the resulting 'sorted_list'.
+    
+    Input:
+      - items: a sequence of items. Each item can be:
+          * a scalar (numeric) value, in which case the value is the item itself
+          * a 2+ length tuple/list where the value is the second element (item[1])
+          * a dict with a 'value' key
+    Output:
+      - A list containing a subset of the original items, in the order they were added.
+    """
+    sorted_list = []
+
+    def get_value(x):
+        if isinstance(x, dict) and 'value' in x:
+            return x['value']
+        if isinstance(x, (list, tuple)) and len(x) >= 2:
+            return x[1]
+        return x
+    for item in items:
+        if not sorted_list:
+            sorted_list.append(item)
+            continue
+        last_val = get_value(sorted_list[-1])
+        cur_val = get_value(item)
+        if cur_val < last_val:
+            sorted_list.append(item)
+        else:
+            pass
+    return sorted_list

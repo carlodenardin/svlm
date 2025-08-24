@@ -1,0 +1,61 @@
+```python
+def check_string(s):
+    """
+    Checks if a string is balanced.
+
+    Args:
+        s (str): The input string to check.
+
+    Returns:
+        bool: True if the string is balanced, False otherwise.
+    """
+    # Check if the string is valid with the function check_string
+    if hasattr(s, 'is_valid'):
+        if not s.is_valid():
+            return False
+    else:
+        # Fallback: consider only parentheses characters valid
+        for ch in s:
+            if ch not in '()':
+                return False
+
+    # Check if the string, composed by rounded parentheses is balanced
+    if not is_balanced(s):
+        return False
+
+    return True
+
+def is_balanced(s):
+    """
+    Checks if a string is balanced.
+
+    Args:
+        s (str): The input string to check.
+
+    Returns:
+        bool: True if the string is balanced, False otherwise.
+    """
+    # Check if every opening parenthesis has a matching closing parenthesis
+    if not has_matching_closing_parentheses(s):
+        return False
+
+    # Check if closures never exceed openings in order
+    if not closures_exceed_openings(s):
+        return False
+
+    return True
+
+def has_matching_closing_parentheses(s):
+    return s.count('(') == s.count(')')
+
+def closures_exceed_openings(s):
+    balance = 0
+    for ch in s:
+        if ch == '(':
+            balance += 1
+        elif ch == ')':
+            balance -= 1
+        if balance < 0:
+            return False
+    return True
+```

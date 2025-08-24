@@ -1,0 +1,40 @@
+**Algorithm Overview**
+=======================
+
+### Purpose
+The algorithm is designed to compute the factorial of a given integer `n` by iteratively calculating the factorial of each integer from 1 to `n` and appending the results to a list.
+
+### Input Data
+* `n`: The input integer for which the factorial is to be computed.
+
+### Main Logical Flow
+#### Step 1: Receive an integer as `n`
+* The algorithm receives an integer `n` as input.
+
+#### Step 2: Create a list of dimension `n`
+* The algorithm creates a list of dimension `n` to store the factorial values.
+
+#### Step 3: Compute the factorial of each integer from 1 to `n`
+* The algorithm iterates from 1 to `n` and computes the factorial of each integer using a loop.
+
+#### Step 4: Append the results to the list
+* The algorithm appends the computed factorial values to the list.
+
+#### Step 5: Return the list of factorials
+* The algorithm returns the list of factorials as output.
+
+### Expected Output
+The algorithm returns a list of factorials of integers from 1 to `n`, where each factorial value is computed and appended to the list.
+
+### Example Use Case
+Suppose the input `n` is 5. The algorithm will compute the factorials of integers from 1 to 5 and return the resulting list:
+
+| Factorial | Value |
+| --- | --- |
+| 1 | 1 |
+| 2 | 2 |
+| 3 | 6 |
+| 4 | 24 |
+| 5 | 120 |
+
+Note: The actual output may vary depending on the input value of `n`.

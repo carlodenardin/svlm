@@ -1,0 +1,33 @@
+def vlm_sort_like_vlm(arr):
+    """
+    Implements the VLM-provided sorting flow:
+    - Start with an empty sorted_list (here named sorted_list).
+    - Work on a working copy of the input list (lst).
+    - While lst is not empty:
+        - If there is only one element, move it to sorted_list.
+        - Otherwise, compare adjacent elements at the start of the list:
+            - If lst[i] <= lst[i+1], remove lst[i] and append to sorted_list.
+            - Else, swap lst[i] and lst[i+1].
+        - Repeat until lst is empty.
+    - Return the accumulated sorted_list (ascending order).
+    Note: This mirrors the described, albeit unconventional, approach.
+    """
+    lst = list(arr)
+    sorted_list = []
+    while lst:
+        if len(lst) == 1:
+            sorted_list.append(lst.pop(0))
+            continue
+        progressed = False
+        for i in range(len(lst) - 1):
+            if lst[i] <= lst[i + 1]:
+                sorted_list.append(lst.pop(i))
+                progressed = True
+                break
+            else:
+                lst[i], lst[i + 1] = (lst[i + 1], lst[i])
+                progressed = True
+                break
+        if not progressed:
+            sorted_list.append(lst.pop(0))
+    return sorted_list

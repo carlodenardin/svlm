@@ -1,0 +1,13 @@
+I’m missing the actual problem statement and the VLM reasoning you want me to follow. Please provide:
+
+- The problem description (what needs to be solved).
+- The reasoning steps from the small VLM that I should translate into a Python function (the exact algorithm/approach).
+- Any example inputs and the expected outputs (to verify the implementation).
+- Any constraints or edge cases I should handle.
+- The preferred format for the flowcharts/diagrams (ASCII diagrams are fine, or you can specify a different style).
+
+Once I have those, I will output a Python function that strictly follows that reasoning, plus:
+- a flowchart for the main body of the algorithm
+- a separate diagram for each function
+- a flowchart for each data input and the expected output for each function
+in ASCII diagram form embedded in the code as docstrings or string literals, as requested.

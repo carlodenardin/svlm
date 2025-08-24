@@ -1,0 +1,25 @@
+```python
+def analyze_number(number: int) -> str:
+    # Step 2: Handle negative numbers
+    if number < 0:
+        number = abs(number)
+
+    # Step 3: Initialize counters
+    even_count = 0
+    odd_count = 0
+
+    # Step 4: Iterate through digits
+    while number > 0:
+        digit = number % 10
+        if digit % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+        number //= 10
+
+    # Step 6: Return result
+    if even_count == odd_count:
+        return "even"
+    else:
+        return "odd"
+```

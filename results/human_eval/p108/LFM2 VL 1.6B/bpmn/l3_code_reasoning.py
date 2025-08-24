@@ -1,0 +1,12 @@
+def smallest_positive_n(values):
+    """
+    Returns the smallest positive integer n such that every element in values is <= n.
+    This is equivalent to max(values) with a lower bound of 1.
+    """
+    if not values:
+        return 1
+    max_val = values[0]
+    for v in values:
+        if v > max_val:
+            max_val = v
+    return max(1, max_val)

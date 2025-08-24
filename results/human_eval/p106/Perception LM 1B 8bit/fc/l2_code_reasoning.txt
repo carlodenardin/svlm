@@ -1,0 +1,34 @@
+```python
+def compute_res(i: int):
+    # Initialization
+    n = int(i)
+    res = []
+    # Track last calculated values
+    last_sum = 0
+    last_prod = 1
+
+    # Loop: continues while i <= n
+    while i <= n:
+        if i <= n:
+            # Sum calculation: sum of 1..i if i is even, else 0
+            sum_val = sum(range(1, i + 1)) if (i % 2 == 0) else 0
+            # Product calculation: product of 1..i
+            prod = 1
+            for k in range(1, i + 1):
+                prod *= k
+            last_sum = sum_val
+            last_prod = prod
+            # i = i + 1
+            i += 1
+        else:
+            break
+
+    # After the loop, append the calculated sum and product to res
+    res.append(last_sum)
+    res.append(last_prod)
+    return res
+
+# Example usage
+if __name__ == "__main__":
+    print(compute_res(5))  # Output: [0, 120]
+```

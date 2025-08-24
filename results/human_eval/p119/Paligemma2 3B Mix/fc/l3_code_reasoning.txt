@@ -1,0 +1,54 @@
+```python
+def solve():
+    import sys
+
+    # PSEUDOCODE (as a faithful representation of the intended reasoning steps)
+    pseudocode = """
+    1. Read entire input as a sequence of tokens.
+    2. Try to interpret the problem as: first token n indicates how many following numbers to consider.
+       - If such a interpretation is valid (there are at least n following tokens, and all are integers),
+         compute the sum of those n numbers and output it.
+    3. If the above interpretation fails, fallback to: attempt to sum all numeric tokens.
+    4. Output the computed value. Also print the pseudocode for traceability (or for debugging in this
+       constrained demonstration).
+    """
+
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+
+    # Attempt to interpret as: first integer n, followed by n integers to sum.
+    result = None
+    try:
+        # Convert all tokens to integers with a safe path
+        nums = []
+        for t in data:
+            nums.append(int(t))
+        if len(nums) >= 1:
+            n = nums[0]
+            if n >= 0 and len(nums) >= 1 + n:
+                # Sum the next n numbers after the first token
+                result = sum(nums[1:1+n])
+    except Exception:
+        # If conversion fails, we'll fall back to a different strategy
+        result = None
+
+    # Fallback: if first interpretation didn't yield a result, try sum of all numeric tokens
+    if result is None:
+        try:
+            total = 0
+            for t in data:
+                total += int(t)
+            result = total
+        except Exception:
+            # If all else fails, output 0 as a safe default
+            result = 0
+
+    # Output the result
+    print(result)
+    # Also print the pseudocode for traceability
+    print(pseudocode.strip())
+
+if __name__ == "__main__":
+    solve()
+```

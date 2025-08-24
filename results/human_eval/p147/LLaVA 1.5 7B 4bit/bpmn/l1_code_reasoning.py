@@ -1,0 +1,23 @@
+from typing import List
+
+def count_distinct_triples_by_reasoning(nums: List[int]) -> int:
+    n = len(nums)
+
+    def is_part_of_distinct_triple(i: int) -> bool:
+        for j in range(n):
+            if j == i:
+                continue
+            for k in range(j + 1, n):
+                if k == i:
+                    continue
+                a, b, c = (nums[i], nums[j], nums[k])
+                if a != b and a != c and (b != c):
+                    return True
+        return False
+    count = 0
+    for i in range(n):
+        if is_part_of_distinct_triple(i):
+            count += 1
+        elif i == n - 1:
+            return count
+    return count

@@ -1,0 +1,79 @@
+**Overview of the Algorithm’s Purpose:**
+This algorithm counts the number of unique triplets (i, j, k) within a generated array of size n that satisfy a specific arithmetic condition: the sum of the elements at these positions is divisible by 3. The positions i, j, and k must be distinct and ordered such that i < j < k.
+
+---
+
+### 1. **Input Data Required**
+- A single integer `n` (size of the array/vector).
+
+---
+
+### 2. **Main Logical Flow (Decision, Loops, and Function Calls)**
+
+#### **Step 1: Generate the Array**
+- Create an array `A` of size `n` using the rule:
+  ```
+  A[i-1] = i * i - i + 1; for 1 <= i <= n
+  ```
+  (Note: Array indexing is zero-based.)
+
+#### **Step 2: Initialize Variables**
+- Set a counter `count` to 0 (to hold the result).
+- Set variable `i = 0`.
+
+#### **Step 3: Outer Loop for i**
+- While `i < n`:
+  - Set `j = i + 1`.
+
+  ##### **Step 4: Middle Loop for j**
+  - While `j < n`:
+    - Set `k = j + 1`.
+
+    ###### **Step 5: Inner Loop for k**
+    - While `k < n`:
+      - Check if the sum `A[i] + A[j] + A[k]` is divisible by 3:
+        ```
+        if (A[i] + A[j] + A[k]) % 3 == 0:
+            count += 1
+        ```
+      - Increment `k` by 1.
+    - Increment `j` by 1.
+  - Increment `i` by 1.
+
+#### **Step 6: Output**
+- After all loops, return the value of `count`.
+
+---
+
+### 3. **Expected Output**
+- **An integer:** The total number of unique triplets `(i, j, k)` (with `i < j < k`) such that the sum of their corresponding array values is divisible by 3.
+
+---
+
+## **Pseudocode for Implementation**
+
+```python
+def count_divisible_triplets(n):
+    # Step 1: Initialize array with the given rule
+    A = [(i + 1) * (i + 1) - (i + 1) + 1 for i in range(n)]
+    count = 0
+
+    # Step 2: Triple nested loops for i, j, k
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(j + 1, n):
+                if (A[i] + A[j] + A[k]) % 3 == 0:
+                    count += 1
+
+    return count
+```
+
+---
+
+## **Summary**
+- **Purpose:** Count unique triplets from an array generated via a formula, where the sum is divisible by 3.
+- **Input:** Integer `n` (size of array).
+- **Process:** Initialize array, iterate over all triplets with nested loops, check divisibility of sum, and count valid triplets.
+- **Output:** Integer count of valid triplets.
+
+This breakdown should allow you to implement the algorithm directly in any programming language. If you need code for a specific language, let me know!

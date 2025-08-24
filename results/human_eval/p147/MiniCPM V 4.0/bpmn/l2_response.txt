@@ -1,0 +1,11 @@
+```python
+def count_multiples_of_three(n):
+    A = [0] * n
+    for i in range(n):
+        A[i] = i * (i - 1) // 2 + 1
+    count = 0
+    for triple in A:
+        if triple % 3 == 0:
+            count += 1
+    return count
+```

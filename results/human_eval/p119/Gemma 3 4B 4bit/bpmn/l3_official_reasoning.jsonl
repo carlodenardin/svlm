@@ -1,0 +1,12 @@
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "check_contains_all_characters() missing 1 required positional argument: 'str1'", "input": [")", "("], "output": null, "correct_output": "Yes"}

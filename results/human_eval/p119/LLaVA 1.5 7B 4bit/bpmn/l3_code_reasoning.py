@@ -1,0 +1,46 @@
+def process_strings(inputs, pattern=None, transformer=None):
+    """
+    Process a sequence of input strings following a simple pattern-driven flow.
+
+    - Purpose: Iterate over input strings, and for consecutive strings that match a
+      specified pattern, apply a transformer to produce processed strings. If a string
+      does not match the pattern, return the collected processed outputs so far.
+
+    - Inputs:
+        inputs: Iterable of strings to process.
+        pattern: Optional. Defines what constitutes a "match".
+                 - If None: any string containing a digit is considered a match.
+                 - If a callable: treated as a predicate function pattern(s) -> bool.
+                 - If a string: treated as a regular expression to search in each string.
+        transformer: Optional. Function to apply to each matching string. If None, identity
+                     function is used.
+
+    - Output:
+        List of processed strings corresponding to the leading consecutive matches.
+        If a non-matching string is encountered, returns the outputs collected up to that point.
+    """
+    if inputs is None:
+        return []
+    if pattern is None:
+
+        def pattern_fn(s):
+            return any((ch.isdigit() for ch in s))
+    elif callable(pattern):
+        pattern_fn = pattern
+    else:
+        import re
+        regex = re.compile(pattern)
+
+        def pattern_fn(s):
+            return bool(regex.search(s))
+    if transformer is None:
+
+        def transformer(s):
+            return s
+    outputs = []
+    for s in inputs:
+        if pattern_fn(s):
+            outputs.append(transformer(s))
+        else:
+            return outputs
+    return outputs

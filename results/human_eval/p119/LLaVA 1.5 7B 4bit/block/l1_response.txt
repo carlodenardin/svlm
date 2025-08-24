@@ -1,0 +1,7 @@
+```python
+def check_if_at_least_balanced_combination_is_balanced():
+    if balanced_means_has_a_matching_'() never_extends_in_order():
+        return True
+    else:
+        return False
+```</s>

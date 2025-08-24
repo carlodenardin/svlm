@@ -1,0 +1,10 @@
+The algorithm's purpose is to calculate the sum of two numbers, `n` and `0`, and then divide the sum by `n` to get the result. The input data required is the two numbers `n` and `0`. The main logical flow is as follows:
+
+1. Start
+2. Calculate the sum of `n` and `0`: `sum = n + 0`
+3. Check if `sum` is greater than `0`: `sum > 0`
+4. If `sum` is greater than `0`, then divide `sum` by `n`: `res = sum / n`
+5. If `sum` is less than or equal to `0`, then return `res` as the result
+6. If `sum` is less than or equal to `0`, then return `res` as the result
+
+The expected output is the result of dividing the sum by `n`.

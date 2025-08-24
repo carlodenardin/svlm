@@ -1,0 +1,21 @@
+def process_values(values):
+    """
+    Process a list of numeric values and return a list of processed values for elements
+    that satisfy the criterion.
+    Criterion: value is greater than 0.
+    Processing: multiply by 2.
+    """
+
+    def meets_criteria(x):
+        try:
+            return x > 0
+        except Exception:
+            return False
+
+    def process_value(x):
+        return x * 2
+    output = []
+    for v in values:
+        if meets_criteria(v):
+            output.append(process_value(v))
+    return output

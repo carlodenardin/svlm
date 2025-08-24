@@ -1,0 +1,9 @@
+```python
+def process_number():
+    res = None
+    res = int(input("Enter an integer number: "))
+    res = sum(0, res)
+    res = res % res
+    res = int(res)
+    return res
+```

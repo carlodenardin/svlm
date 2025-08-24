@@ -1,0 +1,7 @@
+```python
+def extract_first_k_vlm_style(numbers, k):
+    # Sort the list in ascending order (in-place)
+    numbers.sort()
+    # Return the sublist using the described [-k:] slicing
+    return numbers[-k:]
+```

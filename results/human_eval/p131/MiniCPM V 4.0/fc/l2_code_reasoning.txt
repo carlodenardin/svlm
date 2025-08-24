@@ -1,0 +1,24 @@
+```python
+def product_of_odd_digits(n: int):
+    s = str(abs(n))
+
+    # Check if at least one odd digit is present
+    has_odd = False
+    for ch in s:
+        if (ord(ch) - ord('0')) % 2 == 1:
+            has_odd = True
+            break
+
+    if not has_odd:
+        # If there are no odd digits, as per the described flow, do not compute a product
+        return None
+
+    # Multiply all odd digits
+    product = 1
+    for ch in s:
+        d = ord(ch) - ord('0')
+        if d % 2 == 1:
+            product *= d
+
+    return product
+```

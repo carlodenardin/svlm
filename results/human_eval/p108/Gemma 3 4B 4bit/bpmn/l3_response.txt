@@ -1,0 +1,41 @@
+```python
+def sum_digits_of_integer_list(int_list):
+    """
+    Calculates the sum of the digits of each integer in a list of integers.
+    Handles negative integers by considering their absolute values.
+
+    Args:
+        int_list: A list of integers.
+
+    Returns:
+        The sum of the digits of each integer in the list.
+    """
+    res = 0
+    i = 0
+    while i < len(int_list):
+        if int_list[i] < 0:
+            i += 1
+            continue
+
+        digits = []
+        n = int_list[i]
+        isNeg = False
+        if n < 0:
+            isNeg = True
+            n = abs(n)
+
+        if n == 0:
+            digits.append(0)
+        else:
+            while n > 0:
+                digits.append(n % 10)
+                n //= 10
+
+        if isNeg:
+            digits[-1] *= -1
+
+        res += sum(digits)
+        i += 1
+
+    return res
+```

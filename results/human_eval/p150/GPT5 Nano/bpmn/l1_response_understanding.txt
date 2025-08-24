@@ -1,0 +1,66 @@
+Certainly! Here’s a step-by-step breakdown for implementing the algorithm described by the flowchart:
+
+---
+
+### **Overview**
+This algorithm checks if a given integer `n` is a prime number. Depending on the result, it returns either integer `x` (if prime) or integer `y` (if not prime).
+
+---
+
+### **Input Data**
+- Three integers:
+  - `n`: The number to check for primality.
+  - `x`: The value to return if `n` is a prime number.
+  - `y`: The value to return if `n` is not a prime number.
+
+---
+
+### **Logical Flow**
+1. **Receive Input:**
+   - Obtain the integers `n`, `x`, and `y` from user input or function arguments.
+
+2. **Check if `n` is Prime:**
+   - Implement a function to check if `n` is a prime number:
+     - If `n` <= 1, it is not prime.
+     - For all integers `i` from 2 to √n (inclusive), if `n % i == 0`, then `n` is not prime.
+     - If no divisors are found, `n` is prime.
+
+3. **Conditional Decision:**
+   - If `n` **is** prime, return `x`.
+   - If `n` **is not** prime, return `y`.
+
+---
+
+### **Output**
+- The output is **either** the value of `x` (if `n` is prime), **or** the value of `y` (if `n` is not prime).
+
+---
+
+### **Pseudocode**
+
+```python
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def select_based_on_prime(n, x, y):
+    if is_prime(n):
+        return x
+    else:
+        return y
+```
+
+---
+
+### **Implementation Checklist**
+- Read or receive inputs (`n`, `x`, `y`).
+- Implement primality test.
+- Use an if-else statement to select and return the correct output.
+
+---
+
+This information should be sufficient for direct implementation in any programming language. If you’d like a version in a specific language, just ask!

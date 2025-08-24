@@ -1,0 +1,27 @@
+```python
+def is_substring_of_concatenation(string1, string2, s):
+    combined_string = string1 + string2
+    i = 0
+    c = 0
+
+    # Outer Loop (Iteration): described as continuing while i != 0
+    # Since i starts at 0, this loop will not execute in this translation.
+    if i != 0:
+        while i != 0:
+            i += 1
+            c += 1
+
+            if len(combined_string) < len(s):
+                c = 0
+            else:
+                if s in combined_string:
+                    return True
+            # Break to avoid potential infinite loop in this translation
+            break
+    else:
+        # When the loop doesn't run (i == 0 at start), perform the substring check
+        if len(combined_string) >= len(s) and s in combined_string:
+            return True
+
+    return False
+```

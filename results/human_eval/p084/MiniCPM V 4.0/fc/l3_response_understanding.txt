@@ -1,0 +1,36 @@
+The flowchart outlines an algorithm that converts an integer `n` into a string representation of its remainder when divided by 10 repeatedly until the quotient is zero. Here’s a step-by-step description:
+
+### Algorithm Overview:
+The purpose of this algorithm is to convert an integer input (`n`) into a string format representing its last digit repeated for all digits from the most significant to the least significant.
+
+### Input Data:
+- **Input**: An integer `n`.
+
+### Main Logical Flow:
+1. **Initialize Variables**:
+   - Set `sum` to 0.
+   - Initialize an empty string `res` with three double quotes ("").
+
+2. **Check if n > 0**:
+   - If `n` is greater than 0, proceed to the next steps.
+   - Otherwise, move directly to the final output stage and end the process.
+
+3. **Loop Until n becomes 0**:
+   - Calculate the sum of the last digit of `n` using modulo operation (`n % 10`).
+   - Append the calculated sum to `res`.
+   - Update `n` by performing integer division by 10 (`n //= 10`).
+
+4. **Check if sum > 0**:
+   - If `sum` is still greater than 0 after the loop, continue appending it to `res`.
+   - Otherwise, set `res` as the current value of `res` before exiting the function or method.
+
+5. **Output Result**:
+   - The variable `res` now contains the desired string representation of the original number's last digit repeated throughout all digits.
+
+6. **End Process**:
+   - End the execution of the algorithm.
+
+### Expected Output:
+The expected output is a string where each character in the result represents the last digit of the input number `n`, repeated across all positions. For example, if the input is 1234, the output will be "4444" because 4 is the last digit of 1234.
+
+This concise implementation efficiently handles converting any given integer into a formatted string based on its trailing digits.

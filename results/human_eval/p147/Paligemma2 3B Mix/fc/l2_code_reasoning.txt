@@ -1,0 +1,9 @@
+I’m missing the actual reasoning text and the problem statement you want me to implement. Please provide:
+
+- The reasoning/content of the small VLM (the step-by-step approach you want encoded).
+- The exact problem statement or input/output specification the code should handle.
+
+Once I have those, I will produce:
+- A Python function(s) that strictly follow the given reasoning.
+- The code enclosed in a Python code block.
+- An ASCII flowchart drawn at the bottom of the message describing the process.

@@ -1,0 +1,25 @@
+```python
+import math
+
+def vlm_gcd(n_input, x, y_input):
+    # Initialization as described
+    n = 1  # initialize n with one of the inputs (n = 1)
+    i = 2
+    y = y_input  # initialize y with the provided input
+
+    # Main loop
+    while n != 0:
+        if i <= int(math.sqrt(n)):
+            rem = n % i
+            if rem == 0:
+                y = i
+                break
+        else:
+            # End condition to ensure termination
+            n = 0
+            break
+        i += 1
+
+    # Output
+    return y
+```

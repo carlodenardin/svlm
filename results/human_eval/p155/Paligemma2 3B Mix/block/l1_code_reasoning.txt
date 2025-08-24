@@ -1,0 +1,30 @@
+```python
+import sys
+import re
+
+def solve():
+    # Read entire input
+    data = sys.stdin.read().strip()
+    # Extract all integers (handles negative numbers as well)
+    nums = list(map(int, re.findall(r'-?\d+', data)))
+    
+    if not nums:
+        # If no numbers are found, nothing to do
+        print("")
+        return
+    
+    if len(nums) == 1:
+        # If only one number is provided, compute the triangular number: n*(n+1)/2
+        n = nums[0]
+        print(n * (n + 1) // 2)
+    elif len(nums) == 2:
+        # If two numbers are provided, compute their sum
+        a, b = nums
+        print(a + b)
+    else:
+        # If more than two numbers are provided, compute their total sum
+        print(sum(nums))
+
+if __name__ == "__main__":
+    solve()
+```

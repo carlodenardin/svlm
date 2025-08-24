@@ -1,0 +1,28 @@
+```python
+def count_even_odd_digits(n: int):
+    s = str(abs(n))
+    even = 0
+    odd = 0
+    for ch in s:
+        d = ord(ch) - ord('0')
+        if d % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return even, odd
+
+def main():
+    import sys
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    try:
+        n = int(data[0])
+    except ValueError:
+        return
+    even_count, odd_count = count_even_odd_digits(n)
+    print(even_count, odd_count)
+
+if __name__ == "__main__":
+    main()
+```

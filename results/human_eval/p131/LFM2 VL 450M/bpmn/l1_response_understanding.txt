@@ -1,0 +1,10 @@
+The algorithm's purpose is to receive an integer, compute the product of its odd digits, and return the product or 0 if no odd digits are present.
+
+Input data required: An integer n.
+
+Main logical flow:
+1. Receive an integer n.
+2. Compute the product of the odd digits of n.
+3. Return the product or 0 if no odd digits are present.
+
+Expected output: The product of the odd digits of n or 0 if no odd digits are present.

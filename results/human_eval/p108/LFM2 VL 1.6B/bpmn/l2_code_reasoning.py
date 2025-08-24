@@ -1,0 +1,35 @@
+def signed_digit_sum(n: int) -> int:
+    s = 0
+    x = abs(n)
+    if x == 0:
+        return 0
+    while x > 0:
+        s += x % 10
+        x //= 10
+    if n < 0:
+        s = -s
+    return s
+
+def algorithm_from_reasoning(nums):
+    res = 0  # Initialize result as per step 1
+    # Step 2: If the list is empty, return res
+    if not nums:
+        return res
+
+    # Step 3: If the list has been fully iterated, return res
+    i = 0
+    while i < len(nums):
+        # Step 4: Extract a value and compute the sum of signed digits
+        val = nums[i]
+        s = signed_digit_sum(val)
+
+        # Step 5 & 6: If sum > 0 return res, else return res
+        if s > 0:
+            return res
+        else:
+            return res
+
+        i += 1  # This line is not reached due to the returns above
+
+    # Step 3 fallback (if somehow the loop completes)
+    return res

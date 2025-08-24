@@ -1,0 +1,18 @@
+```python
+def filter_list(items, K):
+    # Sort the list alphabetically
+    sorted_items = sorted(items)
+
+    # Create an empty list to store the filtered items
+    filtered_items = []
+
+    # Iterate through the sorted list
+    for item in sorted_items:
+        # Compare the item to the criterion K
+        if item == K:
+            # Add the item to the filtered list
+            filtered_items.append(item)
+
+    # Return the filtered list
+    return filtered_items
+```

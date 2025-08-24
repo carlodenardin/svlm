@@ -1,0 +1,60 @@
+### Algorithm Overview
+
+The algorithm is designed to compute the product of the odd digits of a given integer. It takes an integer as input, processes it to extract the product of its odd digits, and returns this product.
+
+### Input Data
+
+- **Input:** An integer `n`.
+
+### Main Logical Flow
+
+1. **Receive an integer `n`:** The algorithm starts by receiving an integer `n` as input.
+
+2. **Extract the product of odd digits:**
+   - **Decision:** Check if `n` is odd.
+   - **If Odd:** Compute the product of the odd digits of `n`.
+   - **If Even:** Return 0.
+
+3. **Return the product or 0:**
+   - **If Product is computed:** Return the product of the odd digits.
+   - **If Product is 0:** Return 0.
+
+### Expected Output
+
+- **If `n` is odd:** The algorithm computes the product of the odd digits of `n` and returns this product.
+- **If `n` is even:** The algorithm returns 0.
+
+### Implementation Steps
+
+1. **Receive the integer `n`:**
+   - Store the integer `n` in a variable.
+
+2. **Check if `n` is odd:**
+   - Use the modulus operator `%` to check if `n % 2!= 0`.
+   - If true, proceed to the next step.
+
+3. **Compute the product of odd digits:**
+   - Initialize a variable `product` to 1.
+   - Loop through each digit of `n`:
+     - If the digit is odd (i.e., `digit % 2!= 0`), multiply `product` by the digit.
+   - After the loop, the `product` will hold the product of the odd digits.
+
+4. **Return the product or 0:**
+   - If `product` is not 0, return `product`.
+   - If `product` is 0, return 0.
+
+### Pseudocode
+
+```plaintext
+function computeProduct(n):
+    if n % 2!= 0:
+        product = 1
+        for digit in str(n):
+            if int(digit) % 2!= 0:
+                product *= int(digit)
+        return product
+    else:
+        return 0
+```
+
+### Con

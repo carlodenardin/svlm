@@ -1,0 +1,35 @@
+```python
+def flawed_factorial_like(n):
+    """
+    Implements the described (flawed) flowchart:
+    - Iterates i from 1 to n
+    - Initializes x, possibly j
+    - If i is even, x = 1; If i is odd, x = 1 and j = 1
+    - If j < i, x = x + j; else x = x * j
+    - Appends x to the result list
+    Returns the list of accumulated x values.
+    """
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("n must be a non-negative integer")
+
+    res = []
+    i = 1
+    while i <= n:
+        x = 0
+        j = 1  # initialize j to satisfy usage in checks
+        if i % 2 == 0:
+            x = 1
+        else:
+            x = 1
+            j = 1  # explicitly set as per description
+
+        if j < i:
+            x = x + j
+        else:
+            x = x * j
+
+        res.append(x)
+        i += 1
+
+    return res
+```

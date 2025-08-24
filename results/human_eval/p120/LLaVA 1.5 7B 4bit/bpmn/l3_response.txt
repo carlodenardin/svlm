@@ -1,0 +1,5 @@
+```python
+def list_sort():
+    # Insert the logic of the algorithm here
+    pass
+```</s>

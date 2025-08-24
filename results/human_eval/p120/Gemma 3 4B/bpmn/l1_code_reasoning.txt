@@ -1,0 +1,14 @@
+```python
+def top_k_desc_last(integer_list, k):
+    # Step 2: Sort the list in descending order
+    sorted_list = sorted(integer_list, reverse=True)
+
+    # Step 4: Handle edge cases as described
+    if k <= 0:
+        return []
+    if k >= len(sorted_list):
+        return sorted_list
+
+    # Step 3: Extract the last k elements from the sorted list
+    return sorted_list[-k:]
+```

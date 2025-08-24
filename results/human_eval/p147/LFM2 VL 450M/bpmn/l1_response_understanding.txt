@@ -1,0 +1,14 @@
+The algorithm's purpose is to initialize a vector of dimensions with a given rule, and then return the sum of the distinct triplets of elements in the vector.
+
+Input data required: The input data required is the vector of dimensions with a given rule.
+
+Main logical flow:
+
+1. Initialize a vector of dimensions with a given rule.
+2. Initialize a variable to store the sum of the distinct triplets.
+3. Iterate through each element in the vector.
+4. For each element, check if it satisfies the rule.
+5. If the element satisfies the rule, add it to the sum of the distinct triplets.
+6. Return the sum of the distinct triplets.
+
+Expected output: The output of the algorithm is the sum of the distinct triplets of elements in the vector.

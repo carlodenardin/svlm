@@ -1,0 +1,15 @@
+def productOfOddDigits(num):
+    originalNum = num
+    oddDigits = ''
+    s = str(num)
+    for i in range(len(s)):
+        digit = int(s[i])
+        if digit % 2 != 0:
+            oddDigits += str(digit)
+    if len(oddDigits) == 0:
+        return 0
+    else:
+        product = 1
+        for ch in oddDigits:
+            product *= int(ch)
+        return product

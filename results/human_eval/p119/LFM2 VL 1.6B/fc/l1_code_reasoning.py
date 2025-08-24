@@ -1,0 +1,23 @@
+def check_strings(strings):
+    if not isinstance(strings, (list, tuple)) or len(strings) != 2:
+        raise ValueError('Expected two strings')
+    s1, s2 = strings
+    c1, c2 = (s1 + s2, s2 + s1)
+
+    def is_balanced(s):
+        bal = 0
+        for ch in s:
+            if ch == '(':
+                bal += 1
+            elif ch == ')':
+                bal -= 1
+                if bal < 0:
+                    return False
+        return bal == 0
+
+    def at_least_one_balanced():
+        return is_balanced(c1) or is_balanced(c2)
+    for _ in range(8):
+        if not at_least_one_balanced():
+            return 'No'
+    return 'Yes'

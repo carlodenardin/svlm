@@ -1,0 +1,8 @@
+I’m missing the VLM reasoning text and the problem statement you want me to implement. Please provide:
+
+- The exact reasoning text to follow (as-is).
+- The problem statement or task description.
+- Desired function signature (name, inputs, outputs) and any constraints.
+- Any sample input/output if available.
+
+Once you share those, I’ll translate the reasoning into executable Python code and return only the code block.

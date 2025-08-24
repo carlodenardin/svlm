@@ -1,0 +1,7 @@
+def countDigitsGreaterThanZero(inputList):
+    count = 0
+    for num in inputList:
+        num_str = str(num)
+        if num_str != '':
+            count += 1
+    return count

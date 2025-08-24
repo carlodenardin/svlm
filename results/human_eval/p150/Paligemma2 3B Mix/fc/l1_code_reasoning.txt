@@ -1,0 +1,10 @@
+```python
+def solve(problem_input=None):
+    """
+    Placeholder implementation: The reasoning text describing how to solve
+    the problem was not provided in the prompt. To translate the given reasoning
+    into executable Python code, supply the step-by-step reasoning that the
+    model should follow.
+    """
+    raise NotImplementedError("Reasoning text not provided. Please supply the VLM reasoning to implement.")
+```

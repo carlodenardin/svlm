@@ -1,0 +1,22 @@
+```python
+from typing import List
+
+def sort_with_last_k(nums: List[int], k: int) -> List[int]:
+    """
+    Sort the input list of integers in ascending order using a quicksort-like approach
+    and return the sorted list. The last k elements are considered part of the output
+    as per the specification.
+    """
+    def quicksort(arr: List[int]) -> List[int]:
+        if len(arr) <= 1:
+            return arr
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quicksort(left) + middle + quicksort(right)
+
+    arr_copy = list(nums)
+    sorted_list = quicksort(arr_copy)
+    return sorted_list
+```

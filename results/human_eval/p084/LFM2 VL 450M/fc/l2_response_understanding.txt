@@ -1,0 +1,10 @@
+The algorithm's purpose is to calculate the sum of the digits of a given number. The input data required is the number to be summed. The main logical flow is as follows:
+
+1. Start
+2. Input the number to be summed.
+3. Calculate the sum of the digits of the number.
+4. Convert the sum to binary.
+5. Convert the binary sum to an integer.
+6. End.
+
+The expected output is the sum of the digits of the input number.

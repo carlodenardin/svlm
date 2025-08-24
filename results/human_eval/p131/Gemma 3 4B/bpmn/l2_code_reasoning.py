@@ -1,0 +1,14 @@
+def product_of_odd_digits(n: int) -> int:
+    """
+    Returns the product of all odd digits in n.
+    If no odd digits are present, returns 0.
+    """
+    s = str(abs(n))
+    product = 1
+    found = False
+    for ch in s:
+        d = int(ch)
+        if d % 2 != 0:
+            product *= d
+            found = True
+    return product if found else 0

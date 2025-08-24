@@ -1,0 +1,23 @@
+```python
+def generate_values(base):
+    """
+    Implements the described flowchart logic:
+    - Start with the base number.
+    - Compute half = base / 2.
+    - If half is an integer, store (half * 2).
+    - Repeat using the new base = int(half) until the base becomes 1.
+    - Finally return the generated sequence, appending 1 at the end.
+    """
+    n = int(base)
+    seq = []
+    current = n
+
+    while current != 1:
+        half = current / 2.0
+        if half.is_integer():
+            seq.append(int(half * 2))
+        current = int(half)
+
+    seq.append(1)
+    return seq
+```

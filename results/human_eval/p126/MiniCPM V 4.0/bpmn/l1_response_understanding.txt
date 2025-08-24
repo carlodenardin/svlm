@@ -1,0 +1,14 @@
+The purpose of this algorithm is to determine whether a given list of integers is sorted and contains no duplicate numbers. Here’s the step-by-step implementation:
+
+1. **Input Data**: Receive a list of integers as input.
+2. **Initial Check**: Verify if the received data is indeed a list of integers. Ensure it's not empty or null.
+3. **Sorting and Uniqueness Check**: 
+   - Sort the list of integers in ascending order.
+   - Iterate through the sorted list starting from the second element.
+   - For each element, check if it matches the previous one. If they do not match, confirm that there are no duplicates by comparing with subsequent elements.
+4. **Decision Point**:
+   - If all elements are unique after sorting, output "Give back True" indicating the list is sorted without duplicates.
+   - If any element finds a duplicate during iteration, output "Give back False" indicating the presence of duplicates.
+5. **Loop Termination**: The loop continues until either uniqueness is confirmed or a duplicate is found.
+
+This process ensures the integrity of the list while providing clear feedback on its condition.

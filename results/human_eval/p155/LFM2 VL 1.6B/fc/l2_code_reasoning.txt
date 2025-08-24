@@ -1,0 +1,15 @@
+```python
+def largest_odd_divisor(n):
+    # Convert to int as per the described input handling
+    n = int(n)
+    
+    # Edge case: if n is zero, there is no positive largest odd divisor
+    if n == 0:
+        return 0
+    
+    # Repeatedly divide by 2 until the number becomes odd
+    while n % 2 == 0:
+        n //= 2
+    
+    return n
+```

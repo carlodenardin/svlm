@@ -1,0 +1,8 @@
+The algorithm depicted in the flowchart aims to calculate the number of distinct triples from a vector initialized with specific rules. Here's a step-by-step description:
+
+1. **Receive an integer**: The process begins by receiving an input integer which will determine the dimension 'n' of the vector A.
+2. **Initialize a vector**: Create a vector A of size n. Initialize each element according to the formula \( A[i-1] = i * i - i + 1 \) for \( 1 \leq i \leq n \). This ensures that each element is computed based on its position within the vector.
+3. **Calculate sum of distinct triples**: Iterate through all possible combinations of three elements (triples) from the vector A. For each combination, check if their sum is divisible by 3. Count how many such sums meet this condition.
+4. **Output result**: Return the total count of these valid triple sums as the output.
+
+This approach efficiently computes the required sum using nested loops and conditional checks, ensuring correctness and clarity in implementation.

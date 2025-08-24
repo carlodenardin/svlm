@@ -1,0 +1,64 @@
+```python
+def check_string(s):
+    """
+    Check if a string s is balanced with respect to parentheses.
+    Considers (), {}, [] as valid pairs. Ignores other characters.
+    """
+    stack = []
+    opening = {'(', '[', '{'}
+    matching = {')': '(', ']': '[', '}': '{'}
+    for ch in s:
+        if ch in opening:
+            stack.append(ch)
+        elif ch in matching:
+            if not stack or stack[-1] != matching[ch]:
+                return False
+            stack.pop()
+        else:
+            # ignore non-parenthesis characters
+            continue
+    return len(stack) == 0
+
+
+def build_forward(strings, idx, acc):
+    """
+    Recursively build the concatenation of strings in forward order.
+    Returns the resulting concatenated string when idx reaches len(strings).
+    """
+    if idx == len(strings):
+        return acc
+    return build_forward(strings, idx + 1, acc + strings[idx])
+
+
+def balance_strings(strings):
+    """
+    Main routine:
+    - Concatenate strings in forward order (via recursion) to form s1, then check if s1 is balanced.
+    - Concatenate strings in reverse order (via recursion) to form s2, then check if s2 is balanced.
+    - If either s1 or s2 is balanced, return "Yes", else "No".
+    - Also returns the maximum length among the input strings.
+    Returns:
+        (result_str, max_len)
+        where result_str is "Yes" or "No".
+    """
+    if not strings:
+        max_len = 0
+        c1 = check_string("")
+        c2 = check_string("")
+        result = "Yes" if (c1 or c2) else "No"
+        return result, max_len
+
+    max_len = max((len(s) for s in strings), default=0)
+
+    # Forward combination
+    s1 = build_forward(strings, 0, "")
+    c1 = check_string(s1)
+
+    # Reverse combination
+    rev_strings = list(reversed(strings))
+    s2 = build_forward(rev_strings, 0, "")
+    c2 = check_string(s2)
+
+    result = "Yes" if (c1 or c2) else "No"
+    return result, max_len
+```

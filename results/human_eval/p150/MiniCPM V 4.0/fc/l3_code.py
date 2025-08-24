@@ -1,0 +1,10 @@
+def algorithm_logic():
+    n = 1
+    i = 2
+    while n != 1:
+        if i <= int(n ** 0.5):
+            if n % i == 0:
+                print(i)
+            else:
+                print(n)
+        i += 1

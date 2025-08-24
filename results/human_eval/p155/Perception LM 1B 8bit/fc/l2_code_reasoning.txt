@@ -1,0 +1,27 @@
+```python
+def extract_last_digit(n):
+    """
+    Extracts the last digit of a given number and increments the odd or even counter based on the digit.
+
+    Args:
+        n (int): The input number.
+
+    Returns:
+        int: The last digit of the number.
+    """
+    even = 0
+    odd = 0
+    while n > 0:
+        last_digit = n % 10
+        if last_digit % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+        n = n // 10
+    return last_digit
+
+# Example usage:
+n = 12345
+last_digit = extract_last_digit(n)
+print(last_digit)
+```

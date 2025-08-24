@@ -1,0 +1,15 @@
+```python
+def product_of_odd_digits(n: int) -> int:
+    n_abs = abs(n)
+    product = 1
+    has_odd = False
+
+    while n_abs > 0:
+        d = n_abs % 10
+        if d % 2 == 1:
+            has_odd = True
+            product *= d
+        n_abs //= 10
+
+    return product if has_odd else 0
+```

@@ -1,0 +1,16 @@
+The flowchart outlines an algorithm designed to calculate the product of the odd digits of a given positive integer \( n \). Here is a step-by-step description of its implementation:
+
+1. **Start**: The process begins at the start node.
+2. **Input**: A positive integer \( n \) is required as input.
+3. **Processing**: 
+   - Convert the integer \( n \) into a string to easily access each digit.
+   - Initialize a variable `product` to 1, which will store the product of the odd digits encountered.
+4. **Iteration and Condition Checking**:
+   - Loop through each character in the string representation of \( n \).
+   - For each character (digit), check if it is an odd number by using the modulo operator (`%`) with 2. If the remainder is not zero, the digit is odd.
+5. **Product Calculation**:
+   - Multiply the current value of `product` by the identified odd digit.
+6. **Output**: Once all digits have been processed, return the final value of `product`.
+7. **End**: The process concludes here.
+
+This straightforward approach ensures that only the odd digits are considered for multiplication, adhering to the specified conditions outlined in the flowchart.

@@ -1,0 +1,21 @@
+Overview:
+The algorithm calculates the sum of a series of numbers based on a given condition. It starts with an initial sum of 0 and iteratively adds a percentage of the current sum to it. The condition for adding the percentage is that the current sum must be greater than 0. If the condition is not met, the algorithm adds the string representation of the current sum to the end of the string. The loop continues until the condition is met.
+
+Input Data:
+The algorithm requires two inputs: the initial sum (n) and the percentage (r). The initial sum can be any non-negative integer, and the percentage can be any value between 0 and 1.
+
+Main Logical Flow:
+1. Start: The algorithm begins.
+2. n = int: The input sum (n) is converted to an integer.
+3. sum = 0: The initial sum is set to 0.
+4. while n > 0: The loop continues as long as the sum is greater than 0.
+5. n = n * 10: The current sum is multiplied by 10.
+6. if n > 0: The condition is checked. If the current sum is greater than 0, the algorithm adds the string representation of the current sum to the end of the string.
+7. else: The condition is not met, and the algorithm adds the string representation of the current sum to the end of the string.
+8. sum += 0.1: The current sum is incremented by 0.1.
+9. n = n + 0.1: The input sum is incremented by 0.1.
+10. while n > 0: The loop continues as long as the sum is greater than 0.
+11. Exit: The loop exits.
+
+Expected Output:
+The algorithm calculates the sum of the series of numbers based on the given condition. The output is a string that represents the sum of the series.

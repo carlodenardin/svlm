@@ -1,0 +1,12 @@
+def solve():
+    import sys
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    n = int(data[0])
+    A = [i * i - i + 1 for i in range(1, n + 1)]
+    count = 0
+    for val in A:
+        if val % 3 == 0:
+            count += 1
+    print(count)

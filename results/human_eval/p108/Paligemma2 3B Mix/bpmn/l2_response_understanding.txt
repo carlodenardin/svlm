@@ -1,0 +1,7 @@
+- Include a flowchart for the main body of the algorithm, and a separate diagram for each function.
+- Include a flowchart for each data structure used in the algorithm.
+- Include a flowchart for the final output.
+- Include a flowchart for the input data validation.
+- Include a flowchart for the main loop.
+- Include a flowchart for the summation of the signed digits.
+- Include a flowchart for the final output.

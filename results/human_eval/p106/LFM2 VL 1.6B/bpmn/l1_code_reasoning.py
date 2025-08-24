@@ -1,0 +1,6 @@
+def generate_dimensions(n: int):
+    dimensions = []
+    while len(dimensions) < n:
+        for i in range(1, n + 1):
+            dimensions.append(i)
+    return dimensions

@@ -1,0 +1,12 @@
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "concatenate_two_strings() missing 1 required positional argument: 'b'", "input": [")", "("], "output": null, "correct_output": "Yes"}

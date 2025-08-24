@@ -1,0 +1,12 @@
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "not all arguments converted during string formatting", "input": [")", "("], "output": null, "correct_output": "Yes"}

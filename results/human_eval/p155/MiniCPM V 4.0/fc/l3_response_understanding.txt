@@ -1,0 +1,17 @@
+The algorithm depicted in the flowchart appears to be designed for determining whether a given integer is either even or odd, and possibly further processing if it's not divisible by 10. Here’s a step-by-step description of its implementation:
+
+1. **Start**: The process begins at the "Start" node.
+2. **Input**: An integer `n` is required as input.
+3. **Initialization**: Set variables `even` and `odd` to 0. Also, calculate the absolute value of `n` and assign it to `n`.
+4. **Condition Check**: Determine if `n` is greater than 0. If true, proceed; otherwise, exit the loop.
+5. **Modulo Operation**: Calculate `d = n % 10`, which gives the remainder when `n` is divided by 10.
+6. **Decision Point**: Check if `d % 2 == 0` (i.e., check if `d` is divisible by 2).
+   - If false, increment `odd` by 1.
+   - If true, increment `even` by 1.
+7. **Division Operation**: Divide `n` by 10 (`n //= 10`). This effectively removes the last digit from `n`.
+8. **Loop Back**: Return to step 5 to repeat the process until `n` becomes less than or equal to 0.
+9. **Output**: After exiting the loop, output the values of `even` and `odd` as a tuple.
+
+**Expected Output**: A tuple containing two integers representing the count of numbers encountered that were either even or odd during the iteration through the digits of `n`.
+
+This logic ensures that all iterations focus on single-digit parts of the number without considering higher place values initially, making use of modulo operations to isolate each digit efficiently.

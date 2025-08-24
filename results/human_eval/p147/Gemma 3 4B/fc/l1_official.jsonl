@@ -1,0 +1,4 @@
+{"success": false, "error": "", "input": 5, "output": 10, "correct_output": 1}
+{"success": false, "error": "", "input": 6, "output": 20, "correct_output": 4}
+{"success": false, "error": "", "input": 10, "output": 120, "correct_output": 36}
+{"success": false, "error": "", "input": 100, "output": 161700, "correct_output": 53361}

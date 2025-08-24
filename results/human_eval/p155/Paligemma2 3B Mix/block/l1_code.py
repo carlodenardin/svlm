@@ -1,0 +1,1 @@
+i will write a code that does the following : count the even and odd digits of an input integer .

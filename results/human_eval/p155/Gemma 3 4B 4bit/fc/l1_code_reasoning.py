@@ -1,0 +1,15 @@
+def count_even_odd_digits(n: int):
+    """
+    Count the number of even and odd digits in the given integer n.
+    Returns a tuple: (even_count, odd_count)
+    """
+    s = str(abs(n))
+    even_count = 0
+    odd_count = 0
+    for ch in s:
+        digit = ord(ch) - ord('0')
+        if digit % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return (even_count, odd_count)

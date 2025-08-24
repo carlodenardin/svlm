@@ -1,0 +1,67 @@
+Certainly! Here’s a structured algorithm description based on the provided flowchart:
+
+---
+
+### 1. **Overview**
+This algorithm takes an integer as input and counts how many even and odd digits it contains. It then returns this information as a tuple: (number of even digits, number of odd digits).
+
+---
+
+### 2. **Input Data**
+- **Single integer** (positive or negative; the sign is typically ignored for digit counting).
+
+---
+
+### 3. **Main Logical Flow**
+1. **Receive the integer input.**
+2. **Initialize two counters:**  
+   - `even_count = 0`  
+   - `odd_count = 0`
+3. **Process each digit:**
+   - Convert the integer to its absolute value (to ignore the sign).
+   - Iterate over each digit (convert the number to a string or use modulo operators).
+   - For each digit:
+     - If the digit modulo 2 equals 0, increment `even_count`.
+     - Else, increment `odd_count`.
+4. **After all digits are processed:**
+   - Return a tuple: `(even_count, odd_count)`
+
+---
+
+### 4. **Expected Output**
+- **Output:** A tuple containing two integers:  
+  - First element: Number of even digits  
+  - Second element: Number of odd digits
+
+---
+
+## **Example Implementation (Python)**
+
+```python
+def count_even_odd_digits(n):
+    even_count = 0
+    odd_count = 0
+    for digit in str(abs(n)):
+        if int(digit) % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return (even_count, odd_count)
+
+# Example usage:
+result = count_even_odd_digits(123456)
+print(result)  # Output: (3, 3)
+```
+
+---
+
+### **Summary Table**
+
+| Step                          | Description                                                                     |
+|-------------------------------|---------------------------------------------------------------------------------|
+| Receive input                 | Accept an integer                                                               |
+| Initialize counters           | Set up even and odd digit counters                                              |
+| Loop over each digit          | Determine if each digit is even or odd, update counters accordingly             |
+| Return result                 | Provide output as a tuple (even_count, odd_count)                              |
+
+---

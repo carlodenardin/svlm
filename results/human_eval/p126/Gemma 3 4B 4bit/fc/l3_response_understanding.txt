@@ -1,0 +1,33 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This flowchart describes an algorithm to determine if a given string `list` contains a substring that is equal to its reverse.  In other words, it checks if `list` is a palindrome.
+
+**2. Input Data Required**
+
+*   **`list`:**  This is the input data – a string (or a list of characters representing a string).  It's assumed to be a sequence of characters.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   The algorithm starts at the "Start" node.
+    *   It initializes an index `i` to 1. This index will be used to iterate through the string.
+
+2.  **Outer Loop (i < len(list)):**
+    *   The algorithm enters a loop that continues as long as the index `i` is less than the length of the `list`.
+
+3.  **Inner Loop (i[i] < i[len(list) - i - 1]):**
+    *   Inside the outer loop, there's another loop. This inner loop compares the character at index `i` with the character at index `len(list) - i - 1`.  This effectively compares the character at the beginning of the string with the character at the end of the string, moving inwards.
+
+4.  **Comparison and Decision (i[i] < i[len(list) - i - 1]):**
+    *   The algorithm compares the characters at the beginning and end of the string.
+    *   If `i[i]` is less than `i[len(list) - i - 1]`, it means the characters at the beginning and end are different.  The algorithm immediately exits (goes to "End").
+
+5.  **Increment i:**
+    *   If the inner loop condition is false (i.e., the characters are equal), the index `i` is incremented (`i = i + 1`).  This moves the comparison to the next pair of characters.
+
+6.  **Outer Loop Termination:**
+    *   The outer loop continues until `i` becomes greater than or equal to `len(list)`.
+
+7.  **Final Check (i > 1 and i

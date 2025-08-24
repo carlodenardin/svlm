@@ -1,0 +1,26 @@
+def count_digits(n: int):
+    """
+    Counts digits of a given integer according to the described algorithm:
+    - even_digits: number of digits that are even (including 0)
+    - odd_digits: number of digits that are odd
+    - total_digits: increments only when the digit is 0 (as per the provided step)
+    Returns a tuple (even_digits, odd_digits, total_digits)
+    """
+    n_abs = abs(n)
+    even_digits = 0
+    odd_digits = 0
+    total_digits = 0
+    if n_abs == 0:
+        even_digits += 1
+        total_digits += 1
+        return (even_digits, odd_digits, total_digits)
+    while n_abs > 0:
+        d = n_abs % 10
+        if d % 2 == 0:
+            even_digits += 1
+        else:
+            odd_digits += 1
+        if d == 0:
+            total_digits += 1
+        n_abs //= 10
+    return (even_digits, odd_digits, total_digits)

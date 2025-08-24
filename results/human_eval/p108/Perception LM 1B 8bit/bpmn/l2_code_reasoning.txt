@@ -1,0 +1,14 @@
+```python
+def calculate_sum_of_signed_digits(numbers):
+    res = 0
+    for val in numbers:
+        n = abs(val)
+        if val < 0:
+            s = -sum(int(ch) for ch in str(n))
+        else:
+            s = sum(int(ch) for ch in str(n))
+        res += s
+        if s > 0:
+            res += 1
+    return res
+```

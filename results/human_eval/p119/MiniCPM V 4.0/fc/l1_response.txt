@@ -1,0 +1,8 @@
+```python
+def check_balance(strings):
+    concatenated = ''.join(strings)
+    if '(' in concatenated and ')' in concatenated:
+        if all(c == c[1:] for c in concatenated):
+            return True
+    return False
+```

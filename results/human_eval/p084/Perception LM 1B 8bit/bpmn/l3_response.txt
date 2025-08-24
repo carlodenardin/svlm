@@ -1,0 +1,22 @@
+```python
+def calculate_sum(n):
+    if n > 0:
+        res = "0"
+        sum = 0
+        while n % 10 == 0:
+            sum += n % 10
+            n = n // 10
+        return sum
+    else:
+        return "No"
+
+def calculate_res(n):
+    if n > 0:
+        res = "0"
+        r = sum % 2
+        sum /= 10
+        res = str(r) + res
+        return res
+    else:
+        return "No"
+```python

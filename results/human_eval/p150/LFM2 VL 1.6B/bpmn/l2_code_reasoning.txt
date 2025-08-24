@@ -1,0 +1,18 @@
+```python
+def find_divisor(n, range_start, range_end):
+    # Input Validation
+    if not isinstance(n, int) or n <= 0:
+        return None
+
+    # Normalize start to at least 2 as per algorithm
+    if range_start < 2:
+        range_start = 2
+
+    # Divisor Search
+    for i in range(range_start, range_end):
+        if n % i == 0:
+            return i
+
+    # No Divisor Found
+    return None
+```

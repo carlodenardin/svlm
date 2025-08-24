@@ -1,0 +1,24 @@
+```python
+def smallest_divisible_by_all_upto_n(n):
+    # Step 2: Initialize a list of dimensions (unused) and i = 1
+    dims = []
+    i = 1
+
+    # Step 3: Initialize a list of n-1 elements to 1
+    n_minus_1 = max(0, n - 1)
+    lst = [1] * n_minus_1
+
+    # Step 4-5: Loop through the list
+    for _ in range(n_minus_1):
+        # Step 5: If i is divisible by all integers from 1 to n-1, append it
+        if all(i % d == 0 for d in range(1, n)):
+            lst.append(i)
+        else:
+            # Step 7-9: If not, loop through the list again and possibly append, then return
+            for __ in range(n_minus_1):
+                if all(i % d == 0 for d in range(1, n)):
+                    lst.append(i)
+            return lst
+    # Step 6: Return the list
+    return lst
+```

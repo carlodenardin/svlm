@@ -1,0 +1,5 @@
+def increment_counter(numbers):
+    counter = 0
+    for num in numbers:
+        counter += 1
+    return (counter, numbers)

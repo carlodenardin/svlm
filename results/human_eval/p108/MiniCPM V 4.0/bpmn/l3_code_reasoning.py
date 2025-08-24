@@ -1,0 +1,19 @@
+def flow_chart_like_algorithm(n):
+    res = 0
+    i = 0
+    while i < len(n):
+        value = n[i]
+        digits = []
+        isNeg = -1
+        if value < 0:
+            isNeg = 1
+        value = abs(value)
+        if value > 0:
+            while value > 0:
+                digits.append(value % 10)
+                value //= 10
+        total = sum((d * isNeg for d in digits))
+        if total > 0:
+            res += 1
+        i += 1
+    return res

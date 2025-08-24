@@ -1,0 +1,7 @@
+I’m missing the specific reasoning text the VLM is supposed to follow. Please provide:
+
+- The problem statement (if any)
+- The exact reasoning steps or the chain-of-thought you want me to translate
+- The desired function signature (e.g., def solve():) and input/output format
+
+With those, I’ll generate the exact Python implementation that mirrors the given reasoning.

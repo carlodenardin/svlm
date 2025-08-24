@@ -1,0 +1,76 @@
+```python
+# PSEUDOCODE (translated approach)
+# 1. Read the problem text (input).
+# 2. Extract all integers (including negatives) from the text.
+# 3. Normalize the text to lowercase for keyword detection.
+# 4. If the text mentions "sum"/"total"/"add"/"plus", compute the sum of extracted numbers.
+#    Else if it mentions "average"/"mean", compute the average (sum(nums) / len(nums)).
+#    Else if it mentions "product"/"multiply", compute the product of extracted numbers.
+#    Else if it mentions "max"/"maximum", compute the maximum of extracted numbers.
+#    Else if it mentions "min"/"minimum", compute the minimum of extracted numbers.
+#    Else if it mentions "count", compute the count of extracted numbers.
+#    Else default to computing the sum of extracted numbers.
+# 5. Return/print the computed result. If there are no numbers, handle gracefully (return 0 or None).
+# 6. Provide a small entry point to read input and output the result.
+
+import sys
+import re
+from functools import reduce
+import operator
+
+def solve_problem(problem_text: str):
+    """
+    Solve a problem described in problem_text by extracting numbers and computing
+    a result based on detected keywords.
+
+    Returns:
+        A numeric result (int or float) or 0/None if no numbers and no sensible operation.
+    """
+    # Normalize and extract numbers
+    lower = problem_text.lower()
+    nums = list(map(int, re.findall(r'-?\d+', problem_text)))
+
+    # If there are no numbers, we can't perform numeric operations.
+    if not nums:
+        # If user asked for a count of items without numbers, we can't infer.
+        # Return 0 as a safe default.
+        return 0
+
+    # Decide operation based on keywords
+    if any(tok in lower for tok in ["sum", "total", "add", "plus"]):
+        return sum(nums)
+    elif any(tok in lower for tok in ["average", "mean"]):
+        return sum(nums) / len(nums) if nums else 0
+    elif any(tok in lower for tok in ["product", "multiply", "multiplication"]):
+        return reduce(operator.mul, nums, 1)
+    elif any(tok in lower for tok in ["max", "maximum"]):
+        return max(nums)
+    elif any(tok in lower for tok in ["min", "minimum"]):
+        return min(nums)
+    elif "count" in lower:
+        return len(nums)
+    else:
+        # Default fallback: sum
+        return sum(nums)
+
+def main():
+    # Read entire input as the problem statement
+    # If input comes with trailing newlines, strip at the end for clean processing
+    problem_text = sys.stdin.read().strip()
+    # If no input provided, nothing to solve
+    if not problem_text:
+        print(0)
+        return
+
+    result = solve_problem(problem_text)
+
+    # Print result. If result is float but close to integer, keep as float unless formatting requested.
+    if isinstance(result, float) and result.is_integer():
+        # Optional: represent as int if no fractional part
+        print(int(result))
+    else:
+        print(result)
+
+if __name__ == "__main__":
+    main()
+```

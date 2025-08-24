@@ -1,0 +1,19 @@
+def generate_sequence(n):
+    """
+    Generate a list of length n where for each i from 1 to n:
+    - if i is even: append i! (factorial)
+    - if i is odd: append sum 1..i
+    """
+    if n <= 0:
+        return []
+    result = []
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            fact = 1
+            for k in range(1, i + 1):
+                fact *= k
+            result.append(fact)
+        else:
+            s = i * (i + 1) // 2
+            result.append(s)
+    return result

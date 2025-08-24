@@ -1,0 +1,22 @@
+```python
+def count_even_odd_digits(n):
+    # Start
+    n = abs(int(n))  # Ensure we work with the absolute value and an integer
+
+    # Count Even Digits
+    even_count = 0
+    for ch in str(n):
+        digit = int(ch)
+        if digit % 2 == 0:
+            even_count += 1
+
+    # Count Odd Digits
+    odd_count = 0
+    for ch in str(n):
+        digit = int(ch)
+        if digit % 2 != 0:
+            odd_count += 1
+
+    # End
+    return (even_count, odd_count)
+```

@@ -1,0 +1,51 @@
+### Algorithm Overview
+
+The algorithm is designed to calculate the count of integers in a given list of integers. It starts by taking a list of integers as input, then iterates through each value in the list to determine how many integers are greater than zero. The final output is the count of such integers.
+
+### Input Data
+
+The algorithm requires a list of integers as input. This list can be of any size and can contain both positive and negative integers.
+
+### Main Logical Flow
+
+1. **Start**: The process begins.
+2. **Input a list of integers**: The algorithm takes a list of integers as input.
+3. **For each value in the list**: The algorithm iterates through each value in the list.
+4. **Return the count**: For each value, the algorithm checks if it is greater than zero. If it is, the algorithm increments a counter. The counter keeps track of the number of integers greater than zero.
+5. **End**: The process ends.
+
+### Expected Output
+
+The expected output is the count of integers in the list that are greater than zero. If there are no integers greater than zero, the count will be zero.
+
+### Implementation Steps
+
+1. **Initialize a counter**: Set a variable to zero to keep track of the count of integers greater than zero.
+2. **Iterate through the list**: For each value in the list, perform the following steps:
+   - Check if the value is greater than zero.
+   - If it is, increment the counter.
+3. **Return the count**: After iterating through the entire list, return the value of the counter.
+
+### Pseudocode
+
+```
+function countGreaterThanZero(integers):
+    count = 0
+    for value in integers:
+        if value > 0:
+            count = count + 1
+    return count
+```
+
+### Example
+
+**Input**: `[1, -2, 3, 0, 5]`
+
+**Process**:
+- Initialize `count` to 0.
+- Iterate through the list:
+  - `1` is greater than zero, increment `count` to 1.
+  - `-2` is not greater than zero, do nothing.
+  - `3` is greater than zero, increment `count` to 2.
+  - `0` is not greater than zero, do nothing.
+  - `5` is greater than zero

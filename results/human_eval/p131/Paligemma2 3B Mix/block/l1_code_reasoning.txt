@@ -1,0 +1,1 @@
+I’m missing the actual reasoning/text that describes the steps the VLM would take. Please paste the reasoning (or the exact problem statement and expected behavior) so I can translate it into an executable Python function exactly as requested.

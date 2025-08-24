@@ -1,0 +1,21 @@
+The algorithm's purpose is to determine if there exists a divisor of the integer \( n \) within the range from 2 to the square root of \( n \).
+
+**Input Data:**
+- Three integers: \( n \), \( x \), and \( y \).
+
+**Main Logical Flow:**
+1. **Start**: Begin with receiving input values for \( n \), \( x \), and \( y \).
+2. **Decision Point 1**: Check if \( n \) equals 1.
+   - If yes, proceed directly to return \( y \).
+   - If no, continue to the next step.
+3. **Step 1**: Find all divisors of \( n \) in the range from 2 to the square root of \( n \) (denoted as \( \sqrt{n} \)).
+4. **Decision Point 2**: Determine if any divisor has been found.
+   - If no divisor exists, proceed directly to return \( x \).
+   - If a divisor exists, proceed to the final output step.
+5. **Output Step**: Return \( y \).
+
+**Expected Output:**
+- The value of \( y \) if a divisor is found between 2 and \( \sqrt{n} \).
+- The value of \( x \) otherwise.
+
+This flowchart outlines an efficient method to check for divisibility constraints on \( n \) using mathematical properties related to its factors.

@@ -1,0 +1,21 @@
+```python
+def count_trigger_event(start_value: int, event_happened: bool) -> int:
+    """
+    Implements the flowchart algorithm for a simple event counter.
+
+    - Input:
+        - start_value: integer initial counter value.
+        - event_happened: boolean indicating whether the triggering event occurred.
+
+    - Process:
+        - Initialize counter with start_value.
+        - If event_happened is True, increment counter by 1.
+
+    - Output:
+        - The current counter value after processing the event.
+    """
+    counter = start_value
+    if event_happened:
+        counter += 1
+    return counter
+```

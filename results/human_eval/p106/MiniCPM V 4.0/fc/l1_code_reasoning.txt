@@ -1,0 +1,24 @@
+```python
+def compute_final_result(n: int):
+    # Initialize a list to store intermediate results and a counter i
+    results = []
+    i = 1
+
+    # Iterate while i <= n
+    while i <= n:
+        if i % 2 == 0:
+            # If i is even, compute the product of numbers from 1 to i
+            prod = 1
+            for k in range(1, i + 1):
+                prod *= k
+            results.append(prod)
+        else:
+            # If i is odd, compute the sum of numbers from 1 to i
+            s = i * (i + 1) // 2
+            results.append(s)
+        # Increment the counter
+        i += 1
+
+    # Output the final result obtained from the calculations stored in the result list
+    return results[-1] if results else 0
+```

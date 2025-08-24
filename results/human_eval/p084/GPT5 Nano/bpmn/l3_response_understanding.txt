@@ -1,0 +1,76 @@
+Certainly! Here is the algorithm's implementation based on the provided flowchart:
+
+---
+
+## **Algorithm Overview**
+
+This algorithm takes an integer input, computes the sum of its digits, and **converts that sum to its binary representation as a string**.
+
+---
+
+## **Input Data Required**
+
+- A single integer `n`.
+
+---
+
+## **Main Logical Flow**
+
+### 1. **Initialization**
+- Receive integer input `n`.
+- Initialize two variables:
+  - `sum = 0` (to accumulate the sum of digits)
+  - `res = ""` (to build the binary representation as a string)
+
+### 2. **Sum of Digits Loop**
+- While `n` is greater than 0:
+  - Add the last digit of `n` to `sum` (`sum += n % 10`)
+  - Remove the last digit from `n` (`n = n // 10`)
+
+### 3. **Decimal to Binary Conversion Loop**
+- While `sum` is greater than 0:
+  - Get the remainder when `sum` is divided by 2 (`r = sum % 2`)
+  - Update `sum` to integer-divide by 2 (`sum //= 2`)
+  - Prepend the string value of `r` to `res` (`res = str(r) + res`)
+
+### 4. **Return**
+- Return the value of `res`, which now contains the binary representation of the sum of the digits of `n`.
+
+---
+
+## **Expected Output**
+
+- A string `res` representing the **binary form** of the sum of the digits of the input integer `n`.
+
+---
+
+### **Pseudocode**
+
+```python
+def sum_digits_to_binary(n):
+    sum = 0
+    res = ""
+    # Step 2: Sum the digits
+    while n > 0:
+        sum += n % 10
+        n = n // 10
+    
+    # Step 3: Convert sum to binary string
+    if sum == 0:
+        res = "0"  # Handle the case for input 0
+    else:
+        while sum > 0:
+            r = sum % 2
+            sum = sum // 2
+            res = str(r) + res
+    
+    # Step 4: Return
+    return res
+```
+
+**Example:**  
+If `n = 123`, then sum of digits = 6, binary representation = `'110'`.
+
+---
+
+If you need further code in a specific programming language or have follow-up questions, let me know!

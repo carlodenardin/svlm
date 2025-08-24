@@ -1,0 +1,22 @@
+Overview:
+The algorithm is designed to calculate the sum of a sequence of integers. It starts with an initial value of n, then iteratively adds the value of i to the result until i reaches n. The final result is the sum of all values from 1 to n.
+
+Input Data:
+The algorithm requires an integer input, n, which represents the number of integers to be added.
+
+Main Logical Flow:
+1. Start: The algorithm begins.
+2. n: The initial value of n is set to the input integer.
+3. i: A variable is initialized to 1.
+4. While i <= n:
+   a. Check if i is less than or equal to n.
+   b. If true, add the value of i to the result.
+   c. Increment i by 1.
+5. If i is greater than n, the loop ends.
+6. End: The algorithm ends.
+
+Expected Output:
+The algorithm calculates the sum of all values from 1 to n and returns the result.
+
+Example:
+If the input is 5, the algorithm will add 1, 2, 3, 4, and 5 to get a result of 15.

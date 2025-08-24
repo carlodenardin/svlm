@@ -1,0 +1,21 @@
+def check_string(s):
+    if isinstance(s, list) and len(s) == 2 and all((isinstance(x, str) for x in s)):
+        a, b = s
+        if len(a) != len(b):
+            return False
+        counts = {}
+        for ch in a:
+            counts[ch] = counts.get(ch, 0) + 1
+        for ch in b:
+            counts[ch] = counts.get(ch, 0) - 1
+        for v in counts.values():
+            if v != 0:
+                return False
+        return True
+    if isinstance(s, list) and all((isinstance(x, int) for x in s)):
+        return 'No'
+    s1 = list([0]) + [1]
+    s2 = list([1]) + [0]
+    c1 = check_string(s1)
+    c2 = check_string(s2)
+    return c1 != 'No' or c2 != 'No'

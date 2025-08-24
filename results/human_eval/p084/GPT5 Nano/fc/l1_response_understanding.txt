@@ -1,0 +1,56 @@
+Certainly! Here’s a breakdown of the algorithm described in the flowchart:
+
+---
+
+**1. Overview of the Algorithm’s Purpose:**  
+This algorithm takes an integer input, sums its digits, converts the resulting sum to its binary representation, and returns the binary value as a string.
+
+---
+
+**2. Input Data Required:**  
+- A single integer value **n** (e.g., 572).
+
+---
+
+**3. Main Logical Flow:**
+
+1. **Start**  
+2. **Input n as integer:**  
+   - Prompt the user or calling function to provide an integer input.
+3. **Sum the digits of n:**  
+   - Split the integer into its digits and compute their sum.  
+     *Example:* For `n = 572`, the sum is `5 + 7 + 2 = 14`.
+4. **Convert sum to binary:**  
+   - Take the sum obtained and convert it to its binary (base-2) representation.  
+     *Example:* 14 in binary is `'1110'`.
+5. **Return result as string:**  
+   - Return the binary representation as a string to the caller or output.
+6. **End**
+
+---
+
+**4. Expected Output:**  
+- A string containing the binary representation of the sum of the digits of **n**.  
+  *Example:* Input: `572` ⇒ Output: `'1110'`
+
+---
+
+### **Ready for Implementation Example (Python-like Pseudocode):**
+```python
+def sum_digits_to_binary(n: int) -> str:
+    # Step 1: Sum the digits of n
+    digit_sum = sum(int(digit) for digit in str(n))
+    # Step 2: Convert digit sum to binary (remove '0b' prefix)
+    binary_result = bin(digit_sum)[2:]
+    # Step 3: Return binary as string
+    return binary_result
+```
+
+---
+
+**Summary:**  
+- **Input:** Integer n  
+- **Process:** Sum its digits → Convert sum to binary  
+- **Output:** Binary representation as a string
+
+Ready for immediate coding and extension!

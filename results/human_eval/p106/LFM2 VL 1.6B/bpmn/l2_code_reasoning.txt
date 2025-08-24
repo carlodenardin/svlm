@@ -1,0 +1,27 @@
+```python
+def gcd_like_vlm(m, n):
+    """
+    Implementation following the described (flawed) procedure.
+    It initializes a list with n, then iterates i from 1 upwards,
+    stopping when the condition i < n is true or when the sum i+n
+    is not divisible by i.
+    """
+    lst = [n]
+    i = 1
+    while True:
+        if i < n:
+            return lst
+        s = i + n
+        lst.append(s)
+        if s % i == 0:
+            # append factorial(i)
+            fact = 1
+            for k in range(2, i + 1):
+                fact *= k
+            lst.append(fact)
+            i += 1
+            continue
+        else:
+            break
+    return lst
+```

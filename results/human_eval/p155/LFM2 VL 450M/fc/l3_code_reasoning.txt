@@ -1,0 +1,19 @@
+```python
+def parity_label(number):
+    # Step 2
+    if number % 2 != 0:
+        return "even"
+    if number % 2 == 0:
+        return "even"
+    else:
+        return "odd"
+    # Step 3
+    if number % 2 != 0:
+        return "odd"
+    # Step 4
+    if number % 2 == 0:
+        return "even"
+    # Step 5
+    if (number % 2) not in (0,):
+        return "odd"
+```

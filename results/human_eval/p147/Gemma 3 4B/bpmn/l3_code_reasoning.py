@@ -1,0 +1,19 @@
+def count_A_triplets(n):
+    """
+    Implements the described algorithm:
+    - Build A with A[i] = i + 1 for i in [0, n-1]
+    - Count occurrences where (A[i] + A[j] + A[k]) % 3 == 0
+      with i < j and k starting from j up to n-1 (note: k can equal j)
+    """
+    A = [i + 1 for i in range(n)]
+    count = 0
+    i = 0
+    while i < len(A) - 1:
+        j = i + 1
+        k = j
+        while k < len(A):
+            if (A[i] + A[j] + A[k]) % 3 == 0:
+                count += 1
+            k += 1
+        i += 1
+    return count

@@ -1,0 +1,114 @@
+```python
+# This implementation follows a simple, parity-separated accumulation approach:
+# - Iterate over numbers from 1 to n
+# - Use a sub-algorithm (parity handling) to process each number depending on even/odd
+# - Accumulate total, even-sum, and odd-sum
+
+MAIN_FLOWCHART = """
++-----------------------------+
+|           Start             |
++-----------------------------+
+            |
+            v
++-------------------------------------------+
+| Initialize: i = 1; sum_total = 0;        |
+| sum_even = 0; sum_odd = 0;                 |
++-------------------------------------------+
+            |
+            v
++-----------------------------------+
+| i <= n ?                           |
++-----------------------------------+
+     /\\
+      Yes /No
+     /      \\
+    v        v
++------------------------------+       +-----------------+
+| Process i (parity sub-alg)   |       | End / Output    |
++------------------------------+       +-----------------+
+            |
+            v
++----------------+
+| i = i + 1      |
++----------------+
+            |
+            v
++-----------------------------------+
+| Go back to decision i <= n ?      |
++-----------------------------------+
+"""
+
+PARITY_SUBFLOW = """
+Sub-algorithm: Even vs Odd processing for i
+Decision: i % 2 == 0?
+  Yes -> sum_even += i
+          sum_total += i
+  No  -> sum_odd  += i
+          sum_total += i
+"""
+
+def compute_sums_up_to(n):
+    """
+    Compute sums from 1 to n by iterating and applying a parity-based sub-algorithm.
+    Returns a dictionary with:
+      - sum_total: sum of all numbers from 1 to n
+      - sum_even: sum of even numbers in 1..n
+      - sum_odd:  sum of odd numbers in 1..n
+      - count: number of processed integers (should be n if n >= 0)
+    """
+    if n is None:
+        raise ValueError("n must be an integer >= 0")
+    if not isinstance(n, int):
+        raise TypeError("n must be an integer")
+    if n < 0:
+        raise ValueError("n must be a non-negative integer")
+
+    acc = {
+        'sum_total': 0,
+        'sum_even': 0,
+        'sum_odd': 0,
+        'count': 0
+    }
+
+    i = 1
+    while i <= n:
+        acc['count'] += 1
+        _parity_process(i, acc)
+        i += 1
+
+    return acc
+
+def _parity_process(i, acc):
+    """
+    Sub-algorithm for parity handling:
+    If i is even, accumulate into sum_even; otherwise into sum_odd.
+    In both cases, add i to sum_total.
+    """
+    if i % 2 == 0:
+        acc['sum_even'] += i
+    else:
+        acc['sum_odd'] += i
+    acc['sum_total'] += i
+
+def main(n):
+    """
+    Convenience wrapper to run the computation and return results.
+    """
+    return compute_sums_up_to(n)
+
+def get_diagrams():
+    """
+    Expose the flowcharts for visualization purposes.
+    """
+    return MAIN_FLOWCHART, PARITY_SUBFLOW
+
+# Example usage (uncomment to run):
+# if __name__ == "__main__":
+#     n = 10
+#     result = main(n)
+#     print("Result for n =", n, "->", result)
+#     main_chart, parity_chart = get_diagrams()
+#     print(main_chart)
+#     print("Sub-algorithm (even/odd):")
+#     print(parity_chart)
+```

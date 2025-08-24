@@ -1,0 +1,1 @@
+I’m missing the reasoning content that describes the algorithm. Please paste the VLM’s reasoning or the exact problem statement and steps you want me to implement, so I can translate it into an executable Python function exactly as described. If there are specific input/output formats or edge cases, include those as well.

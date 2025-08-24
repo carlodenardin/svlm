@@ -1,0 +1,1 @@
+i will generate a code that does the following function : compute the product of the odd digits of n and d .

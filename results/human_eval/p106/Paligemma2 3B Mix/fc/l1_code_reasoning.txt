@@ -1,0 +1,5 @@
+I’m missing the specific reasoning steps or the problem statement you want me to translate. Please provide:
+- The reasoning or the exact algorithm to implement (step-by-step), or
+- The problem statement and any sample I/O you want the solution to satisfy.
+
+If you want, you can also paste the flowchart description or the VLM's reasoning in plain text, and I’ll convert it into a Python function (solve) plus a C/C++ code listing as requested.

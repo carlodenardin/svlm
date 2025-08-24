@@ -1,0 +1,25 @@
+```python
+def check_numbers_with_two_appearances(l):
+    """
+    Checks if a list of integers contains any numbers that appear more than twice.
+
+    Args:
+        l (list): A list of integers.
+
+    Returns:
+        bool: True if the list contains any numbers that appear more than twice, False otherwise.
+    """
+    # Initialize an empty list to store the numbers to check
+    numbers_to_check = []
+
+    # Iterate through the list
+    for i in range(len(l)):
+        # Check if the current number appears more than twice
+        # by comparing it to the next number in the list
+        if i + 1 < len(l) and l[i] == l[i + 1]:
+            # If it does, add it to the list
+            numbers_to_check.append(l[i])
+
+    # Check if the list contains any numbers that appear more than twice
+    return l.count(numbers_to_check) > 1
+```

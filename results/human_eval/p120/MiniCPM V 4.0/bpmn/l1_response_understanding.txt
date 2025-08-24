@@ -1,0 +1,13 @@
+The flowchart outlines an algorithm designed to receive a list of integers and a variable k, then return the sorted list containing only the last k elements. Here's a step-by-step description:
+
+1. **Input Data**: The input consists of a list of integers and an integer variable `k` that specifies how many elements from the end of the list should be included in the output.
+
+2. **Main Logical Flow**:
+   - Start by receiving the list of integers and the value of `k`.
+   - Sort the entire list in ascending order using any sorting algorithm (e.g., quicksort, mergesort).
+   - Extract the last `k` elements from the sorted list.
+   - Return the extracted sublist as the final result.
+
+3. **Expected Output**: The output will be a new list consisting of the last `k` elements from the original list after it has been sorted.
+
+This process ensures that regardless of the initial state of the input list, the function correctly identifies and returns the required subset at the end.

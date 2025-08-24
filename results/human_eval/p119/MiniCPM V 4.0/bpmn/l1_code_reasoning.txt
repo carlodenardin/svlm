@@ -1,0 +1,39 @@
+```python
+def is_concat_balanced(input_list):
+    """
+    Given a list of two strings, concatenate them and determine
+    if there exists at least one balanced segment where '<' acts as
+    an opening bracket and ')' acts as a closing bracket.
+    A balanced segment is one where the number of '<' never falls
+    below the number of ')' when scanned left-to-right, and ultimately
+    the segment ends with equal numbers of both (balance returns to zero).
+    Returns "Yes" if such a segment exists, otherwise "No".
+    """
+    if not isinstance(input_list, list) or len(input_list) != 2:
+        raise ValueError("Input must be a list of two strings.")
+    
+    combined = input_list[0] + input_list[1]
+    balance = 0
+    opened_since_last_balance = False
+    exists = False
+
+    for ch in combined:
+        if ch == '<':
+            balance += 1
+            opened_since_last_balance = True
+        elif ch == ')':
+            balance -= 1
+        else:
+            # Ignore other characters
+            continue
+
+        if balance < 0:
+            balance = 0
+            opened_since_last_balance = False
+
+        if balance == 0 and opened_since_last_balance:
+            exists = True
+            break
+
+    return "Yes" if exists else "No"
+```

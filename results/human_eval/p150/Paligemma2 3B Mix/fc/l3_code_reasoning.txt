@@ -1,0 +1,1 @@
+I’m missing the reasoning content you want me to translate into code. Please paste the reasoning (the small VLM's approach) or provide the exact problem statement so I can generate the executable Python function that follows it.

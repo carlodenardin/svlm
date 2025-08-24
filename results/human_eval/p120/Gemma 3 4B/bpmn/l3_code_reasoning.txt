@@ -1,0 +1,17 @@
+```python
+def get_last_k_elements(list_of_integers, k):
+    """
+    Extracts the last k elements from a list of integers and returns them in a new list.
+
+    The input list is sorted in ascending order in-place before slicing.
+    """
+    # Sort the list in-place
+    list_of_integers.sort()
+
+    # If k is non-positive, return an empty list
+    if k <= 0:
+        return []
+
+    # Return the last k elements
+    return list_of_integers[-k:]
+```

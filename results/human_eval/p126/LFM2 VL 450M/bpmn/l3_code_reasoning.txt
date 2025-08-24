@@ -1,0 +1,75 @@
+```python
+def check_list_equality_as_reasoned(input_list, compare_list):
+    # Step 1: Initialize the list of integers
+    lst = list(input_list)
+    target = list(compare_list)
+
+    # Step 2: Check if the list is equal to the given list
+    if lst == target:
+        return True
+
+    # Step 4: If the list is not equal, check if the list is already equal to itself
+    if lst == lst:
+        # Step 5: If the list is already equal to itself, return False
+        return False
+
+    # Step 6: If the list is not equal to itself, increment the counter by 1
+    counter = 0
+
+    # Step 7: If the counter is greater than 1, return False
+    if counter > 1:
+        return False
+
+    # Steps 8-26: series of conditional increments (as per the described pattern)
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    if counter > 1:
+        counter += 1
+    if counter <= 1:
+        counter += 1
+    # Step 26: emulate continuation (pattern suggests another increment when <= 1)
+    if counter <= 1:
+        counter += 1
+
+    return False
+```

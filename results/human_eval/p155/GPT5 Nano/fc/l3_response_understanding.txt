@@ -1,0 +1,74 @@
+### **Algorithm Overview**
+This algorithm counts the number of even and odd digits in a given integer. It's useful for analyzing the digit composition of integers, such as for digit-based classification or digital root calculations.
+
+---
+
+### **Input Data**
+- An integer `num` (can be positive or negative).
+
+---
+
+### **Main Logical Flow**
+
+1. **Initialization**
+    - Start with `even = 0`, `odd = 0`.
+    - Convert the input number to its absolute value: `n = abs(num)`.
+
+2. **Digit Processing Loop**
+    - **While `n > 0`:**
+        - Get the last digit: `d = n % 10`.
+        - **If `d % 2 == 0`:**
+            - Increment even counter: `even += 1`.
+        - **Else:**
+            - Increment odd counter: `odd += 1`.
+        - Remove the last digit from `n`: `n //= 10`.
+
+3. **Termination**
+    - When `n == 0`, exit the loop.
+
+4. **Output**
+    - Return a tuple: `(even, odd)` representing the count of even and odd digits, respectively.
+
+---
+
+### **Expected Output**
+- A tuple of two integers: `(even_count, odd_count)`.
+
+---
+
+### **Step-by-Step Implementation (Python Example)**
+
+```python
+def count_even_odd_digits(num: int) -> tuple:
+    even = 0
+    odd = 0
+    n = abs(num)
+    
+    while n > 0:
+        d = n % 10
+        if d % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+        n //= 10
+    
+    return (even, odd)
+```
+
+---
+
+### **Summary Table**
+
+| Step                | Description                                               |
+|---------------------|----------------------------------------------------------|
+| Input               | Read integer `num`                                       |
+| Initialization      | Set `even = 0`, `odd = 0`, `n = abs(num)`                |
+| Loop Condition      | While `n > 0`                                            |
+| Last Digit          | `d = n % 10`                                             |
+| Even Check          | If `d % 2 == 0`: `even += 1`, else: `odd += 1`           |
+| Digit Removal       | `n //= 10`                                               |
+| Output              | Return `(even, odd)`                                     |
+
+---
+
+This systematic process ensures all digits are considered, and the parity count is accurately returned.

@@ -1,0 +1,15 @@
+The algorithm depicted in the flowchart appears to be designed for finding divisors of a given integer \( n \). Here is a step-by-step description of its implementation:
+
+1. **Start**: The process begins at the initial node labeled "Start".
+2. **Input Variables**: 
+   - An integer \( n \) is required as input, representing the number whose divisors are to be checked.
+   - Two integers \( x \) and \( y \) are also needed but their specific roles or usage within this context isn't detailed here.
+3. **Initialization**: Set \( n \) to 1 initially (as indicated by \( n = 1 \)).
+4. **Loop Condition**: Enter a loop where the condition checks if \( n \) equals 1. If true, proceed to output \( y \) and terminate the process ("End").
+5. **Divisor Check**: Within the loop, check whether there exists any divisor of \( n \) from 2 to the square root of \( n \) (\( \sqrt{n} \)). This involves iterating through possible values of \( x \) up to \( \sqrt{n} \).
+6. **Decision Point**: Based on the existence of a divisor:
+   - If a divisor is found (Yes), assign \( x \) to \( y \) and continue checking further potential divisors.
+   - If no divisor is found between 2 and \( \sqrt{n} \), exit the loop and set \( y \) to an undefined value or handle accordingly.
+7. **Output**: After processing all necessary steps, either directly output \( y \) or end the process based on the outcome of the divisor search.
+
+This structured approach ensures that all relevant factors regarding \( n \) are considered systematically to identify its divisors efficiently.

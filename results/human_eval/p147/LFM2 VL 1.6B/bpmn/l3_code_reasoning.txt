@@ -1,0 +1,32 @@
+```python
+def algorithm(n):
+    i = 1  # choose i in 1..n
+    vec = [i for _ in range(n)]
+    counter = 0
+
+    max_iters = 10000  # safeguard to avoid infinite loops
+    it = 0
+
+    while it < max_iters:
+        it += 1
+
+        if counter < len(vec):
+            counter += 1
+        else:
+            vec = [i for _ in range(n)]
+
+        if vec == [i + 1] * n:
+            return counter
+
+        vec = [x + 1 for x in vec]
+
+    # fallback if not converged within the safeguard
+    return counter
+
+if __name__ == "__main__":
+    import sys
+    data = sys.stdin.read().strip()
+    if data:
+        n = int(data)
+        print(algorithm(n))
+```

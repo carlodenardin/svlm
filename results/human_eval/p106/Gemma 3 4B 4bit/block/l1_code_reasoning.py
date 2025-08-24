@@ -1,0 +1,20 @@
+from typing import List
+
+def generate_values(n: int) -> List[int]:
+    """
+    For each i from 1 to n (inclusive):
+      - if i is even: append i!
+      - if i is odd: append sum from 1 to i (i*(i+1)/2)
+    Returns the resulting list.
+    """
+    result: List[int] = []
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            fact = 1
+            for k in range(2, i + 1):
+                fact *= k
+            result.append(fact)
+        else:
+            s = i * (i + 1) // 2
+            result.append(s)
+    return result

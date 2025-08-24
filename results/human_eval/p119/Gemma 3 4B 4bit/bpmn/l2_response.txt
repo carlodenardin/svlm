@@ -1,0 +1,18 @@
+```python
+def check_string(str1, str2):
+    """
+    Checks if two strings are balanced, meaning that every opening parenthesis '('
+    has a matching closing parenthesis ')' and the number of openings never exceeds
+    the number of closures.
+    """
+    combined_string = str1 + str2
+    open_count = 0
+    for char in combined_string:
+        if char == '(':
+            open_count += 1
+        elif char == ')':
+            open_count -= 1
+        if open_count < 0:
+            return False
+    return open_count == 0
+```

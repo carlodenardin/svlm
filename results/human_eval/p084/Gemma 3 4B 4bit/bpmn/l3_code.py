@@ -1,0 +1,11 @@
+def algorithm(n: int) -> str:
+    sum = 0
+    res = ''
+    while n > 0:
+        r = n % 10
+        sum += r
+        n //= 10
+    r = sum % 2
+    sum //= 10
+    res = str(r) + res
+    return res

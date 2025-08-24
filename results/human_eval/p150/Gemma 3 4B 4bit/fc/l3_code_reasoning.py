@@ -1,0 +1,16 @@
+def find_divisor_in_range(n):
+    """
+    Implements the described algorithm:
+    - If n == 1, there is no divisor in the range 2..sqrt(n).
+    - Check i from 2 up to floor(sqrt(n)); return the first i that divides n.
+    - If none found, return None.
+    """
+    if n == 1:
+        return None
+    i = 2
+    limit = int(n ** 0.5)
+    while i <= limit:
+        if n % i == 0:
+            return i
+        i += 1
+    return None

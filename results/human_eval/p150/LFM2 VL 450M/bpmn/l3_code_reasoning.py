@@ -1,0 +1,7 @@
+def is_divisible_by_two(x):
+    if x % 2 != 0:
+        return False
+    y = 0
+    if y % 2 != 0:
+        return False
+    return x

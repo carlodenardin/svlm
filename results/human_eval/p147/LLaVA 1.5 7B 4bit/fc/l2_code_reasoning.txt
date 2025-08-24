@@ -1,0 +1,24 @@
+```python
+from typing import List
+
+def extract_words(text: str) -> List[str]:
+    """
+    Extracts words from the input text by collecting consecutive ASCII letters [a-zA-Z].
+    A word is any maximal sequence of characters where each character is in [a-zA-Z].
+    """
+    words: List[str] = []
+    current_chars: List[str] = []
+    
+    for ch in text:
+        if ('a' <= ch <= 'z') or ('A' <= ch <= 'Z'):
+            current_chars.append(ch)
+        else:
+            if current_chars:
+                words.append(''.join(current_chars))
+                current_chars = []
+    
+    if current_chars:
+        words.append(''.join(current_chars))
+    
+    return words
+```

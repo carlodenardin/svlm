@@ -1,0 +1,10 @@
+def count_numbers_with_positive_digit_sum(nums):
+    count = 0
+    for num in nums:
+        digit_sum = 0
+        for ch in str(num):
+            if ch.isdigit():
+                digit_sum += int(ch)
+        if digit_sum > 0:
+            count += 1
+    return count

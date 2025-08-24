@@ -1,0 +1,16 @@
+```python
+def compute_product_of_odd_digits(n: int) -> int:
+    """
+    Compute the sum (as per described reasoning) of the odd digits of n.
+    Returns 0 if there are no odd digits.
+    Note: Although named 'product', this implementation adds odd digits to the result.
+    """
+    n = abs(n)
+    result = 0
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 1:
+            result += digit
+        n //= 10
+    return result
+```

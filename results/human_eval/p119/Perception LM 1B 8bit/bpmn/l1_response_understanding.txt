@@ -1,0 +1,68 @@
+**Algorithm Overview:**
+The algorithm is designed to balance two strings, ensuring that every opening and closing bracket has a matching closing bracket, and closures never exceed openings in order. The goal is to determine whether the input strings can be balanced.
+
+**Input Data:**
+The algorithm requires two strings as input, each consisting of two characters ( openings and closings).
+
+**Main Logical Flow:**
+
+1. **Receive a list composed of 2 strings**: The algorithm receives two strings as input.
+2. **Concatenate the strings with both the combination**: The algorithm concatenates the two input strings.
+3. **at least one balanced?**: The algorithm checks if at least one of the strings is balanced.
+4. **Return 'No' if not balanced**: If the string is not balanced, the algorithm returns 'No'.
+5. **Return 'Yes' if balanced**: If the string is balanced, the algorithm returns 'Yes'.
+
+**Expected Output:**
+The algorithm's output is a boolean value indicating whether the input strings can be balanced.
+
+**Implementation:**
+```python
+def balance_strings(str1, str2):
+    # Check if the strings are balanced
+    if not is_balanced(str1, str2):
+        return False
+    
+    # Concatenate the strings
+    combined = str1 + str2
+    
+    # Check if the combined string is balanced
+    if is_balanced(combined):
+        return True
+    
+    return False
+
+def is_balanced(str1, str2):
+    # Check if every opening and closing bracket has a matching closing bracket
+    if not has matching closing bracket(str1, str2):
+        return False
+    
+    # Check if closures never exceed openings in order
+    if not has order str1, str2:
+        return False
+    
+    return True
+
+def hasMatching closing bracket(str1, str2):
+    # Check if every opening bracket has a matching closing bracket
+    if not has opening bracket str1, str2:
+        return False
+    
+    # Check if closures never exceed openings in order
+    if not has order str1, str2:
+        return False
+    
+    return True
+
+def has order str1, str2:
+    # Check if the strings are in order
+    if not is_in_order(str1, str2):
+        return False
+    
+    return True
+
+def is_in_order(str1, str2):
+    # Check if the strings are in order
+    if not is_in_order(str1, str2):
+        return False
+    
+    return True

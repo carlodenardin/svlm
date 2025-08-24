@@ -1,0 +1,11 @@
+```python
+def count_numbers_with_digit_sum_gt_zero(nums):
+    count = 0
+    for n in nums:
+        digit_sum = 0
+        for ch in str(n):
+            digit_sum += int(ch)
+        if digit_sum > 0:
+            count += 1
+    return count
+```

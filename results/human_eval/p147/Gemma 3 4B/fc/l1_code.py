@@ -1,0 +1,19 @@
+def count_triples(n):
+    """
+    Counts the number of distinct triples of elements in a vector of size n,
+    where each element is a multiple of 3.
+
+    Args:
+        n: The size of the vector.
+
+    Returns:
+        The number of distinct triples.
+    """
+    vector = [i * 3 - 1 for i in range(1, n + 1)]
+    distinct_triples = set()
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(j + 1, n):
+                triple = tuple(sorted((vector[i], vector[j], vector[k])))
+                distinct_triples.add(triple)
+    return len(distinct_triples)

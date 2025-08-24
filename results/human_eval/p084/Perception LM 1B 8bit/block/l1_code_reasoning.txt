@@ -1,0 +1,26 @@
+```python
+def convert_to_binary(n):
+    # Step 1: Receive an integer as input (0 <= n)
+    # Step 2: Sum the digits of the input integer
+    if n == 0:
+        return "0"
+    total = 0
+    temp = n
+    while temp > 0:
+        total += temp % 10
+        temp //= 10
+
+    # Step 3: Convert the resulting sum into binary by converting each digit to binary
+    # and concatenating the results (preserving original digit order)
+    if total == 0:
+        return "0"
+
+    binary_parts = []
+    t = total
+    while t > 0:
+        digit = t % 10
+        binary_parts.append(bin(digit)[2:])
+        t //= 10
+
+    return ''.join(reversed(binary_parts))
+```

@@ -1,0 +1,103 @@
+```python
+# This module implements a simple data-dependent loop as described in the
+# previously provided (but unseen) reasoning. The core idea:
+# - Iterate over elements of a list until a negative value is encountered.
+# - Count how many of the traversed values are even.
+#
+# The flowcharts are included as plain ASCII diagrams in string variables:
+# - MAIN_FLOW: main body of the algorithm
+# - LOOP_FLOW: the data-dependent loop
+# - RETURN_FLOW: the function that returns the counter after the loop
+
+def count_even_before_negative(data):
+    """
+    Count how many numbers in 'data' are even, stopping the scan when a negative
+    value is encountered. The loop is data-dependent because its termination
+    relies on the contents of 'data' (the first negative value).
+    """
+    counter = 0
+    i = 0
+
+    # Data-dependent loop: continue while we haven't reached the end and the
+    # current element is non-negative.
+    while i < len(data) and data[i] >= 0:
+        if data[i] % 2 == 0:
+            counter += 1
+        i += 1
+
+    return counter
+
+def return_counter(counter):
+    """
+    Function that returns the counter after the loop terminates.
+    This is the separate function requested to illustrate the final step.
+    """
+    return counter
+
+# Flowcharts (ASCII diagrams) as strings
+
+MAIN_FLOW = """
+Flowchart: Main body of the algorithm
+Start
+  ↓
+Initialize: counter = 0, i = 0
+  ↓
+Is i < len(data) and data[i] >= 0 ?
+ /   \\
+Yes  No
+ /     \\
+  ↓       ↓
+If data[i] is even -> counter += 1
+  ↓
+i += 1
+  ↓
+Repeat main decision (i < len(data) and data[i] >= 0)
+  ↓
+When loop exits, go to End
+  ↓
+End: return counter
+"""
+
+LOOP_FLOW = """
+Flowchart: Data-dependent loop (the while condition)
+Start
+  ↓
+Check condition: i < len(data) and data[i] >= 0 ?
+ /   \\
+Yes  No
+ /     \\
+  ↓       ↓
+Inside loop body:
+  - if data[i] % 2 == 0: counter += 1
+  - i += 1
+  ↓
+Return to condition check
+"""
+
+RETURN_FLOW = """
+Flowchart: Function that returns the counter after the loop terminates
+Start
+  ↓
+Receive 'counter' value
+  ↓
+Return counter
+  ↓
+End
+"""
+
+# Optional demonstration (not required for the algorithm to function)
+if __name__ == "__main__":
+    sample_data = [1, 2, 3, 4, 5, 6]  # will count 2, 4, 6 until first negative (none here)
+    c = count_even_before_negative(sample_data)
+    print("Counter after processing:", c)
+
+    # Demonstrate separate return function
+    final_value = return_counter(c)
+    print("Final returned value:", final_value)
+
+    # Print flowcharts
+    print("\nFlowcharts:")
+    print(MAIN_FLOW)
+    print(LOOP_FLOW)
+    print(RETURN_FLOW)
+```

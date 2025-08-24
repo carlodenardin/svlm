@@ -1,0 +1,27 @@
+```python
+def calculate_value(n, x, y):
+  """
+  Calculates a value based on whether n is prime.
+
+  Args:
+    n: An integer.
+    x: An integer.
+    y: An integer.
+
+  Returns:
+    If n is prime, returns x. Otherwise, returns y.
+  """
+  is_prime = True
+  if n <= 1:
+    is_prime = False
+  else:
+    for i in range(2, int(n**0.5) + 1):
+      if n % i == 0:
+        is_prime = False
+        break
+
+  if is_prime:
+    return x
+  else:
+    return y
+```

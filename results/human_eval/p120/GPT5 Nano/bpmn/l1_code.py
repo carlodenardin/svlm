@@ -1,0 +1,2 @@
+def get_last_k_sorted_elements(lst, k):
+    return sorted(lst)[-k:]

@@ -1,0 +1,5 @@
+- Include a flowchart for the main body of the algorithm, and a separate flowchart for each sub-algorithm.
+- Include a flowchart for each data-input and output.
+- Include a flowchart for the final result.
+- Include a flowchart for each function call.
+- Include a flowchart for the storage of the result.

@@ -1,0 +1,11 @@
+def count_numbers_with_digit_sum_positive(nums):
+    count = 0
+    for num in nums:
+        total = 0
+        n = abs(num)
+        while n > 0:
+            total += n % 10
+            n //= 10
+        if total > 0:
+            count += 1
+    return count

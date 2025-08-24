@@ -1,0 +1,29 @@
+The flowchart describes an algorithm designed to compute the product of all odd digits in a given integer \( n \).
+
+### Overview:
+The purpose of this algorithm is to calculate the product of all odd digits present in the number \( n \) and store it in a variable called `product`. If no odd digits are found, the output will be 0.
+
+### Input Data:
+- The input required for this algorithm is an integer \( n \).
+
+### Main Logical Flow:
+1. **Initialize Variables**:
+   - Set `product` to 1.
+   - Initialize `odd_flag` to 0. This flag helps determine if any odd digit has been encountered during iteration.
+
+2. **Iterate Through Digits**:
+   - While \( n > 0 \):
+     - Extract the last digit of \( n \) using \( d = n \% 10 \).
+     - Check if \( d \% 2 \neq 0 \) (i.e., if \( d \) is odd):
+       - If true, update `product` by multiplying it with \( d \) and set `odd_flag` to 1.
+     - Otherwise, continue dividing \( n \) by 10 (`n //= 10`) to move on to the next digit.
+
+3. **Output**:
+   - Once the loop ends, check the value of `odd_flag`:
+     - If `odd_flag` is 0, return 0 as there were no odd digits found.
+     - Otherwise, return `product` which contains the product of all identified odd digits.
+
+### Expected Output:
+- The expected output is the product of all odd digits in the original integer \( n \). If none exist, the output is 0.
+
+This step-by-step process ensures that only odd digits are considered while calculating their product.

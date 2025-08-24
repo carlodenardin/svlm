@@ -1,0 +1,16 @@
+def product_of_odd_digits(n):
+    """
+  Receives a positive integer and returns the product of its odd digits.
+  If there are no odd digits, returns 0.
+  """
+    product = 1
+    has_odd_digit = False
+    for digit in str(n):
+        digit = int(digit)
+        if digit % 2 != 0:
+            product *= digit
+            has_odd_digit = True
+    if not has_odd_digit:
+        return 0
+    else:
+        return product

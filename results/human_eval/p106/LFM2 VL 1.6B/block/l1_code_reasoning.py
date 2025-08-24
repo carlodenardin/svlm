@@ -1,0 +1,16 @@
+def solve(n_values):
+    """
+    Simulate the sequence of creating up to 9 zero-initialized lists.
+    For each of the first up to 9 integers in n_values, create a list of that length
+    filled with zeros. Negative lengths are treated as 0.
+    Returns a list containing the created lists.
+    """
+    created = []
+    for i in range(9):
+        if i >= len(n_values):
+            break
+        n = int(n_values[i])
+        if n < 0:
+            n = 0
+        created.append([0] * n)
+    return created

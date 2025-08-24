@@ -1,0 +1,99 @@
+```python
+def solve_problem(data):
+    """
+    Generic multi-type solver implemented to reflect a simple stepwise reasoning:
+    - If data is a list/tuple:
+        - If all elements are numbers -> return their sum
+        - Else -> return the length of the list/tuple
+    - If data is a dict:
+        - Sum numeric values at top level (and within nested lists/tuples if present)
+        - If any numeric value contributed to the sum -> return the sum
+        - If no numeric values found -> return the list of top-level keys
+    - If data is an int/float (and not a bool): return its square
+    - If data is a string: return the string reversed
+    - Otherwise: return None
+    """
+    def is_number(x):
+        return isinstance(x, (int, float)) and not isinstance(x, bool)
+
+    if isinstance(data, (list, tuple)):
+        if all(is_number(x) for x in data):
+            return sum(data)
+        else:
+            return len(data)
+
+    if isinstance(data, dict):
+        total = 0
+        found_numeric = False
+
+        def accumulate(val):
+            nonlocal total, found_numeric
+            if is_number(val):
+                total += val
+                found_numeric = True
+            elif isinstance(val, (list, tuple)):
+                for v in val:
+                    if is_number(v):
+                        total += v
+                        found_numeric = True
+                    elif isinstance(v, (list, tuple)) or isinstance(v, dict):
+                        accumulate(v)
+
+        for v in data.values():
+            accumulate(v)
+
+        if found_numeric:
+            return total
+        else:
+            return list(data.keys())
+
+    if isinstance(data, (int, float)) and not isinstance(data, bool):
+        return data * data
+
+    if isinstance(data, str):
+        return data[::-1]
+
+    return None
+
+
+if __name__ == "__main__":
+    import sys
+    import json
+
+    raw = sys.stdin.read()
+    if not raw.strip():
+        # If no input, just output None
+        print(None)
+        sys.exit(0)
+
+    # Try to parse as JSON; fall back to raw string
+    try:
+        input_data = json.loads(raw)
+    except Exception:
+        input_data = raw
+
+    result = solve_problem(input_data)
+    # Print result; if it's not JSON-serializable, fallback to string representation
+    try:
+        print(json.dumps(result))
+    except Exception:
+        print(result)
+```
+
+
+Flowchart:
+start -> determine type of input
+- is list or tuple?
+  - yes -> are all elements numbers?
+    - yes -> return sum
+    - no -> return length
+  - no -> is dict?
+    - yes -> sum numeric values (including inside lists/tuples if present)
+      - any numeric contributed -> return sum
+      - none -> return list of top-level keys
+    - no -> is int/float?
+      - yes -> return square
+      - no -> is string?
+        - yes -> return reversed string
+        - no -> return None
+end

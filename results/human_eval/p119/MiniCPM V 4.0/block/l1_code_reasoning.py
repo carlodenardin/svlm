@@ -1,0 +1,27 @@
+def is_balanced(s: str) -> bool:
+    balance = 0
+    for ch in s:
+        if ch == '(':
+            balance += 1
+        elif ch == ')':
+            balance -= 1
+            if balance < 0:
+                return False
+    return balance == 0
+
+def check_balanced_pair(strings):
+    if len(strings) != 2:
+        raise ValueError("Expected a list of two strings.")
+    s0, s1 = strings[0], strings[1]
+
+    # Step 2: Concatenate the two strings (not used in final decision beyond keeping with the spec)
+    concatenated = s0 + s1
+
+    # Step 3/4: Check balance of each individual string
+    balanced0 = is_balanced(s0)
+    balanced1 = is_balanced(s1)
+
+    if not (balanced0 and balanced1):
+        return "No"
+    else:
+        return "Yes"

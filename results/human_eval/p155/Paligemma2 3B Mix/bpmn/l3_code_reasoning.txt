@@ -1,0 +1,103 @@
+```python
+import ast
+import re
+import sys
+
+def safe_eval_expr(expr_str: str):
+    """
+    Safely evaluate a simple arithmetic expression consisting of
+    integers/floats and + - * / ** etc., using the AST module.
+    """
+    # Normalize spaces
+    expr_str = expr_str.strip()
+
+    # Parse into AST
+    node = ast.parse(expr_str, mode='eval')
+
+    def _eval(n):
+        if isinstance(n, ast.Expression):
+            return _eval(n.body)
+        if isinstance(n, ast.BinOp):
+            left = _eval(n.left)
+            right = _eval(n.right)
+            op = n.op
+            if isinstance(op, ast.Add):
+                return left + right
+            if isinstance(op, ast.Sub):
+                return left - right
+            if isinstance(op, ast.Mult):
+                return left * right
+            if isinstance(op, ast.Div):
+                return left / right
+            if isinstance(op, ast.FloorDiv):
+                return left // right
+            if isinstance(op, ast.Mod):
+                return left % right
+            if isinstance(op, ast.Pow):
+                return left ** right
+            raise ValueError("Unsupported binary operator")
+        if isinstance(n, ast.UnaryOp):
+            if isinstance(n.op, ast.USub):
+                return -_eval(n.operand)
+            if isinstance(n.op, ast.UAdd):
+                return +_eval(n.operand)
+            raise ValueError("Unsupported unary operator")
+        if isinstance(n, ast.Num):  # for Python < 3.8
+            return n.n
+        if isinstance(n, ast.Constant):  # for Python 3.8+
+            if isinstance(n.value, (int, float)):
+                return n.value
+            raise ValueError("Unsupported constant type")
+        raise ValueError("Unsupported expression type")
+
+    return _eval(node)
+
+
+def solve_problem(text: str) -> str:
+    """
+    Attempt to solve the problem described in 'text' by:
+    - returning a line that starts with 'Answer:' or 'Final Answer:' if present
+    - otherwise extracting a simple arithmetic expression like '3 + 4' and evaluating it
+    - otherwise returning a default message indicating inability to solve
+    """
+    # Normalize line endings
+    # 1) Check for explicit answer hints in the input
+    for line in text.splitlines():
+        stripped = line.strip()
+        low = stripped.lower()
+        if low.startswith("answer:"):
+            return stripped.split(":", 1)[1].strip()
+        if low.startswith("final answer"):
+            if ":" in stripped:
+                return stripped.split(":", 1)[1].strip()
+            # If no colon, take the remainder as potential answer
+            return stripped[len("Final Answer"):].strip()
+
+    # 2) Try to find a simple arithmetic expression and evaluate it
+    # Pattern captures sequences like: 3+4, 12 * 5, 7 - 2, etc.
+    m = re.search(r'(\d+(?:\s*[\+\-\*/]\s*\d+)+)', text)
+    if m:
+        expr = m.group(1)
+        # Remove any stray spaces around operators
+        expr = re.sub(r'\s+', '', expr)
+        try:
+            value = safe_eval_expr(expr)
+            return str(value)
+        except Exception:
+            pass
+
+    # 3) If nothing found, attempt to extract a simple "sum" of two numbers if phrased like "X and Y"
+    match_sum = re.search(r'(\d+)\s*(?:and|plus|plus\s+|with)\s*(\d+)', text, flags=re.IGNORECASE)
+    if match_sum:
+        a = int(match_sum.group(1))
+        b = int(match_sum.group(2))
+        return str(a + b)
+
+    # If all else fails
+    return "Cannot determine the answer from the given input."
+
+
+if __name__ == "__main__":
+    input_text = sys.stdin.read()
+    print(solve_problem(input_text))
+```

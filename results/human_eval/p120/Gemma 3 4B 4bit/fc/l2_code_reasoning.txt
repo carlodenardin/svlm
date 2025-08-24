@@ -1,0 +1,16 @@
+```python
+def last_element_after_descending_sort(input_list):
+    """
+    Takes a list of numbers, copies it, sorts the copy in descending order,
+    and returns the last element of the sorted list.
+    If the input list is empty, returns None.
+    """
+    # Step 1: Copy the input
+    copied = list(input_list)
+    # Step 2: Sort in descending order
+    copied.sort(reverse=True)
+    # Step 3: Return the last element
+    if not copied:
+        return None
+    return copied[-1]
+```

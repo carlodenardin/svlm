@@ -1,0 +1,8 @@
+```python
+def check_combination(input_list):
+    for i in range(len(input_list)):
+        for j in range(i + 1, len(input_list)):
+            if input_list[i] == input_list[j]:
+                return True
+    return False
+```

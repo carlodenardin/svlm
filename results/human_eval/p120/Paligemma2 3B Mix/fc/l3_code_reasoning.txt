@@ -1,0 +1,1 @@
+I’m missing the reasoning text you mentioned. Please paste the exact reasoning (the step-by-step approach the VLM should follow) so I can translate it into executable Python code exactly as specified.

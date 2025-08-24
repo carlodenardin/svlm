@@ -1,0 +1,21 @@
+```python
+def count_integers_with_positive_digit_sum(nums):
+    # Start
+    count = 0
+    for val in nums:
+        # For each value of the list, compute the sum of its digits (using absolute value)
+        n = abs(val)
+        digit_sum = 0
+        if n == 0:
+            digit_sum = 0
+        else:
+            while n > 0:
+                digit_sum += n % 10
+                n //= 10
+        # If the sum of digits is greater than 0, increment the count
+        if digit_sum > 0:
+            count += 1
+    # Return the count
+    return count
+    # End
+```

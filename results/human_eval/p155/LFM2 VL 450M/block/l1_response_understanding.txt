@@ -1,0 +1,7 @@
+The algorithm's purpose is to count the even and odd digits in an input integer. The input data required is an integer. The main logical flow is as follows:
+
+1. Receive an integer as input.
+2. Count the even and odd digits in the input integer.
+3. Return the count of even and odd digits.
+
+The expected output is the count of even and odd digits in the input integer.

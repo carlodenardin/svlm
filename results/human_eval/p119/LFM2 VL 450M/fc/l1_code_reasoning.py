@@ -1,0 +1,23 @@
+def is_balanced(strings):
+    """
+    Implements the described logic:
+    - Find the longest string by length.
+    - If the length of that longest string is not 1, declare the string as not balanced.
+    - If the length is exactly 1, declare it balanced.
+    - If not balanced by that rule, compare the first element to the longest in the list:
+      if it equals the longest, it's balanced; otherwise not balanced.
+    Returns a boolean.
+    """
+    if not isinstance(strings, (list, tuple)) or len(strings) == 0:
+        return False
+    longest = max(strings, key=lambda s: len(s) if isinstance(s, str) else 0)
+    if len(longest) != 1:
+        balanced = False
+    else:
+        balanced = True
+    if not balanced:
+        if strings[0] == longest:
+            balanced = True
+        else:
+            balanced = False
+    return balanced

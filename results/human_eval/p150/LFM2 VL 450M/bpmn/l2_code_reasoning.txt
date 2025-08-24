@@ -1,0 +1,23 @@
+```python
+def is_divisible_with_divisor_condition(n, y):
+    # Step 2: Check if n is divisible by y
+    if y == 0:
+        # Avoid division by zero; following the described algorithm, this can't be true
+        return False
+    if n % y != 0:
+        return False
+
+    # Step 3: Find a divisor of n from 2 to n-1. If not, return False.
+    divisor_found = False
+    for d in range(2, n):
+        if n % d == 0:
+            divisor_found = True
+            break
+
+    # Step 4: If a divisor is found, return True.
+    if not divisor_found:
+        return False
+
+    # Step 5: If all the above conditions are met, return True.
+    return True
+```

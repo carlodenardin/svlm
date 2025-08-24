@@ -1,0 +1,16 @@
+def res(n, i):
+    res = n + i
+    if i <= 1:
+        return res
+    else:
+        res += i / n
+    if i > 1:
+        return res
+    if i == 0:
+        return res
+    if i == 1:
+        return i
+    if i > 2:
+        return res
+    if i < 2:
+        return res

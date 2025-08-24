@@ -1,0 +1,138 @@
+```python
+import sys
+
+# Flowcharts and diagrams (ASCII) as constants and docstrings.
+
+FLOW_MAIN_DIAGRAM = r"""
++-----------------------------+
+| Main Body: Palindrome Checker|
++-----------------------------+
+Start
+  |
+  v
+Read input string s
+  |
+  v
+Normalize: lower + keep alphanumeric
+  |
+  v
+Check palindrome
+  / \
+Yes   No
+ |     |
+ v     v
+Print YES   Print NO
+  \     /
+   \   /
+     v
+    End
+"""
+
+FLOW_IS_PALINDROME_DIAGRAM = r"""
++---------------------------------+
+| Function: is_palindrome(s)        |
++---------------------------------+
+Input s
+Normalize to t
+i = 0; j = len(t) - 1
+while i < j:
+    if t[i] != t[j]: return False
+    i += 1; j -= 1
+return True
+"""
+
+FLOW_NORMALIZE_DIAGRAM = r"""
++----------------------------------+
+| Function: normalize(s)             |
++----------------------------------+
+Return: lowercased string with only alphanumeric chars
+"""
+
+FLOW_INPUT_DIAGRAM = r"""
++-------------------+
+| Data Input: s     |
++-------------------+
+"""
+
+FLOW_OUTPUT_DIAGRAM = r"""
++----------------------+
+| Data Output: YES/NO   |
++----------------------+
+"""
+
+FLOW_CONTROL_MAIN_DIAGRAM = r"""
++---------------------------+
+| Control Flow: Main Body   |
++---------------------------+
+Start -> Read input -> Normalize -> Check palindrome -> Output -> End
+"""
+
+# Data-flow diagrams (for completeness)
+DATA_INPUT_DIAGRAM = FLOW_INPUT_DIAGRAM
+DATA_OUTPUT_DIAGRAM = FLOW_OUTPUT_DIAGRAM
+
+def normalize(s: str) -> str:
+    """
+    Flowchart for normalize(s):
+    +----------------------------------+
+    | Function: normalize(s)             |
+    +----------------------------------+
+    | Return: lowercased string with only alphanumeric chars
+    +----------------------------------+
+    """
+    # Keep only alphanumeric characters and convert to lowercase
+    return ''.join(ch.lower() for ch in s if ch.isalnum())
+
+def is_palindrome(s: str) -> bool:
+    """
+    Flowchart for is_palindrome(s):
+    +---------------------------------+
+    | Function: is_palindrome(s)        |
+    +---------------------------------+
+    | Normalize to t                    |
+    | i = 0; j = len(t) - 1             |
+    | while i < j:                      |
+    |     if t[i] != t[j]: return False  |
+    |     i += 1; j -= 1                  |
+    | return True                       |
+    +---------------------------------+
+    """
+    t = normalize(s)
+    i, j = 0, len(t) - 1
+    while i < j:
+        if t[i] != t[j]:
+            return False
+        i += 1
+        j -= 1
+    return True
+
+def solve_input_string(s: str) -> str:
+    """
+    Solve for a given input string s.
+    Data Input Diagram:
+      +-------------------+
+      | Data Input: s     |
+      +-------------------+
+    Data Output Diagram:
+      +---------------------+
+      | Data Output: YES/NO  |
+      +---------------------+
+    """
+    return "YES" if is_palindrome(s) else "NO"
+
+def main():
+    """
+    Main entry point that orchestrates reading input, solving, and printing output.
+    Flowchart for main body:
+    FLOW_MAIN_DIAGRAM
+    """
+    data = sys.stdin.read().splitlines()
+    if not data:
+        return
+    s = data[0]
+    result = solve_input_string(s)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```

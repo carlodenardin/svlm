@@ -1,0 +1,12 @@
+```python
+def sort_and_return_k_smallest(input_list, k):
+    # Sort the list
+    input_list.sort()
+    # Return the k-th smallest element using the list[-k:] syntax
+    return input_list[-k:]
+
+# Example usage
+lst = [5, 2, 8, 3, 1, 6, 4]
+k = 3
+print(sort_and_return_k_smallest(lst, k))
+```

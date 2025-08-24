@@ -1,0 +1,16 @@
+```python
+def calculate_multiplication(n):
+    """
+    Calculate the multiplication of two numbers.
+
+    Args:
+        n (int): The first number.
+
+    Returns:
+        int: The product of the two numbers.
+    """
+    product = 1
+    for i in range(n):
+        product *= i
+    return product
+```

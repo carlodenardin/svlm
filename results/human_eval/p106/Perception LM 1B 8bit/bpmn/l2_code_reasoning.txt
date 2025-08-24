@@ -1,0 +1,29 @@
+```python
+def factorial(n):
+    # Initialize a list of dimension n and set i to 1
+    factorial_list = [1] * n
+
+    # Loop from i to n (inclusive)
+    for i in range(1, n + 1):
+        # Check if i is less than or equal to n
+        if i <= n:
+            # Increment i by 1 and append it to the list
+            i = i + 1
+            factorial_list.append(i)
+        else:
+            # Return the list
+            return factorial_list
+
+    # Compute the factorial of i and append it to the list
+    factorial_i = 1
+    for k in range(1, i + 1):
+        factorial_i *= k
+    factorial_list.append(factorial_i)
+
+    # Append 1 three times
+    factorial_list.append(1)
+    factorial_list.append(1)
+    factorial_list.append(1)
+
+    return factorial_list
+```

@@ -1,0 +1,57 @@
+**Algorithm Overview: Calculating the Product of Odd Digits**
+===========================================================
+
+### Purpose
+The algorithm calculates the product of odd digits of a given positive integer `n`. If there are no odd digits, it returns 0.
+
+### Input Data
+* `n`: A positive integer
+
+### Main Logical Flow
+#### Step 1: Start
+* Input: `n`
+* Output: None
+
+#### Step 2: Positive Integer n
+* Input: `n`
+* Output: None
+
+#### Step 3: Calculate the Product of the Odd Digits of n
+* Input: `n`
+* Output: None
+
+#### Step 4: Product
+* Input: `n` and `product` variable
+* Output: `product`
+
+#### Step 5: End
+* Input: `product` variable
+* Output: None
+
+### Expected Output
+The algorithm returns the product of the odd digits of the input integer `n`.
+
+### Implementation
+```python
+def calculate_product(n):
+    """
+    Calculate the product of odd digits of a positive integer n.
+
+    Args:
+        n (int): A positive integer.
+
+    Returns:
+        int: The product of the odd digits of n.
+    """
+    product = 1
+    for digit in str(n):
+        if digit.isdigit() and int(digit) % 2!= 0:
+            product *= int(digit)
+    return product
+
+# Example usage:
+n = 12345
+result = calculate_product(n)
+print(f"The product of the odd digits of {n} is {result}")
+```
+This implementation uses a simple loop to iterate over the digits of the input integer `n` and calculates the product of the odd digits. The result is returned as the output.

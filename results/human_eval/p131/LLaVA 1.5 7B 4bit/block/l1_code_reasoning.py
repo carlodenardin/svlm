@@ -1,0 +1,22 @@
+def odd_digits_of_product_by_flow(product: int):
+    """
+    Implements the described flowchart algorithm:
+    - Initialize count = 0
+    - Iterate over digits of the product from least significant to most significant
+    - If a digit is odd, increment count
+    - If count is odd, record (print) that odd digit
+    - Return the list of recorded digits (in processing order, i.e., from least significant to most)
+    """
+    count = 0
+    result = []
+    n = abs(int(product))
+    if n == 0:
+        return result
+    while n > 0:
+        digit = n % 10
+        n //= 10
+        if digit % 2 == 1:
+            count += 1
+            if count % 2 == 1:
+                result.append(digit)
+    return result

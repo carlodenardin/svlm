@@ -1,0 +1,10 @@
+The algorithm's purpose is to create a vector of dimension and initialize the values of a rule that will be used to determine whether a given number is equal to a certain value. The input data required is the starting number 'n', and the main logical flow is as follows:
+
+1. Create a vector of dimension and initialize the values of a rule that will be used to determine whether a given number is equal to a certain value.
+2. Iterate over each triple of a 'a' and 'b' with 'k' as the number to be compared.
+3. For each triple, check if 'a' is equal to 'b' and 'a' is equal to 'k'.
+4. If 'a' is equal to 'b' and 'a' is equal to 'k', then count the number of triplets.
+5. If 'a' is equal to 'k', then count the number of triplets.
+6. If 'a' is not equal to 'k', then count the number of triplets.
+
+The expected output is the count of triplets that satisfy the condition 'a' is equal to 'k'.

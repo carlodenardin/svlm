@@ -1,0 +1,10 @@
+```python
+def convert_to_binary(n):
+    # Input n as integer
+    num = n
+    # Sum the digits of n and convert it to binary
+    binary_sum = sum(int(digit) for digit in str(num))
+    binary_representation = bin(binary_sum)[2:]
+    # Return result as string
+    return binary_representation
+```

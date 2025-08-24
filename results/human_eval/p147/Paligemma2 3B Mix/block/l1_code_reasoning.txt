@@ -1,0 +1,1 @@
+I’m missing the reasoning text you referenced. Please paste the VLM reasoning and the exact problem or task description (including any inputs, outputs, and example cases). Once I have that, I’ll translate it into executable Python code exactly as described.

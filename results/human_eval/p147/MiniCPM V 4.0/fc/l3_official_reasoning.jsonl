@@ -1,0 +1,4 @@
+{"success": false, "error": "", "input": 5, "output": [0, 120], "correct_output": 1}
+{"success": false, "error": "", "input": 6, "output": [0, 720], "correct_output": 4}
+{"success": false, "error": "", "input": 10, "output": [0, 3628800], "correct_output": 36}
+{"success": false, "error": "", "input": 100, "output": [0, 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000], "correct_output": 53361}

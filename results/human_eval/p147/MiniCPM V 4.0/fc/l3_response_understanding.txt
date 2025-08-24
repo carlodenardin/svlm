@@ -1,0 +1,32 @@
+The flowchart represents an algorithm for calculating the factorial of a given number \( n \).
+
+### Purpose:
+The purpose of this algorithm is to compute and return the factorial of a positive integer \( n \). The factorial of \( n \), denoted as \( n! \), is the product of all positive integers from 1 to \( n \).
+
+### Input Data:
+- An integer \( n \) representing the input number whose factorial needs to be calculated.
+
+### Main Logical Flow:
+1. **Start**: Begin the process.
+2. **Initialize Variables**:
+   - Set \( i \) to 1.
+   - Create an array `a` with length equal to \( n \) filled with zeros.
+3. **Check Condition**:
+   - While \( i \leq n \):
+     - Calculate \( a[i-1] = i \times (i-1) \times i \).
+     - Increment \( i \) by 1.
+4. **Iterate Through Array**:
+   - Initialize \( j \) to \( i \).
+   - Loop through each element in the array until reaching the end (\( j < len(a) \)):
+     - If \( k < len(a) \):
+       - Check if \( a[j] + a[j+1] + a[j+2] \% 3 == 0 \):
+         - If true, increment count by 1.
+       - Otherwise, continue looping without changing \( k \) or updating \( j \).
+5. **Final Count**:
+   - Output the final value of count which holds the number of elements that satisfy the condition.
+6. **End**: Conclude the process.
+
+### Expected Output:
+The output will be the count of numbers within the array `a` such that their sum of three consecutive elements modulo 3 equals zero. Additionally, it returns the computed factorial of the input number \( n \).
+
+This step-by-step description outlines how the algorithm processes the input data and arrives at its expected result.

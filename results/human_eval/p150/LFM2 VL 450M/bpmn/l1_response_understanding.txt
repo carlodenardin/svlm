@@ -1,0 +1,7 @@
+The algorithm's purpose is to determine whether a given integer x is prime or not. The input data required is the integer x. The main logical flow is as follows:
+
+1. Receive in input the integers n, x, and y.
+2. Check if n is prime by calling the function n. If n is prime, return True. If not, return False.
+3. If n is not prime, check if x is divisible by any integer from 2 to the square root of n. If x is divisible by any of these integers, return False. If not, return True.
+
+The expected output is True if n is prime, and False otherwise.

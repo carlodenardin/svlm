@@ -1,0 +1,8 @@
+{"success": false, "error": "", "input": 7, "output": "more_odd", "correct_output": [0, 1]}
+{"success": false, "error": "", "input": -78, "output": "equal", "correct_output": [1, 1]}
+{"success": false, "error": "", "input": 3452, "output": "equal", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 346211, "output": "equal", "correct_output": [3, 3]}
+{"success": false, "error": "", "input": -345821, "output": "equal", "correct_output": [3, 3]}
+{"success": false, "error": "", "input": -2, "output": "more_even", "correct_output": [1, 0]}
+{"success": false, "error": "", "input": -45347, "output": "more_odd", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 0, "output": "more_even", "correct_output": [1, 0]}

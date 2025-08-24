@@ -1,0 +1,18 @@
+```python
+def count_numbers_with_digit_sum_greater_than_zero(nums):
+    """
+    Counts how many integers in the input list have a sum of digits greater than zero.
+
+    Args:
+        nums (list of int): The input integers.
+
+    Returns:
+        int: The count of numbers whose sum of digits > 0.
+    """
+    counter = 0  # Start: initialize counter to zero
+    for num in nums:  # Iterate Through List
+        digit_sum = sum(int(ch) for ch in str(abs(num)))  # Calculate Digit Sum
+        if digit_sum > 0:  # Check Condition
+            counter += 1  # Increment Counter
+    return counter  # Output Result
+```

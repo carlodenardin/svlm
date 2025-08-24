@@ -1,0 +1,28 @@
+```python
+def balance_strings(s1, s2):
+    """
+    Checks if two strings are balanced.
+
+    Args:
+    s1 (str): The first string.
+    s2 (str): The second string.
+
+    Returns:
+    bool: True if the strings are balanced, False otherwise.
+    """
+    # Initialize and set c1 and c2 with the result of the function check_string(s) for each combination of strings
+    c1 = 0
+    c2 = 0
+    for i in range(len(s1)):
+        if s1[i] == '<':
+            c1 += 1
+        elif s1[i] =='greater than':
+            c2 += 1
+        elif s1[i] == '<':
+            c1 -= 1
+        elif s1[i] =='greater than':
+            c2 -= 1
+
+    # Check if s is balanced
+    return c1 == c2
+```

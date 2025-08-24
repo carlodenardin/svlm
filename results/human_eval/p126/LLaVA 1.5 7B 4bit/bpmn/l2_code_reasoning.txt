@@ -1,0 +1,40 @@
+```python
+def algorithm_sort_flow(nums):
+    """
+    Implements the described flowchart-inspired algorithm:
+    - Sort the input list of integers in ascending order.
+    - If the list has more than two elements, iterate once over the sorted list,
+      comparing the current and previous item, and return either the previous
+      or the current integer wrapped in a single-element list according to
+      the described conditions.
+    - If the list has two or fewer elements, return the full sorted list.
+    """
+    # Step 1: ensure we have a list copy
+    arr = list(nums)
+
+    # Step 2: sort in ascending order
+    arr.sort()
+
+    # Step 3: if more than two elements, perform the single-iteration check
+    if len(arr) > 2:
+        for i in range(1, len(arr)):
+            current = arr[i]
+            previous = arr[i - 1]
+
+            # Step 5: if current < previous, return previous
+            if current < previous:
+                return [previous]
+
+            # Step 6: otherwise, return current
+            else:
+                return [current]
+
+    # Step 7: output the (fully) sorted list
+    return arr
+
+
+# Example usage (uncomment to test):
+# print(algorithm_sort_flow([3, 1, 2, 5]))
+# print(algorithm_sort_flow([10, 7]))
+# print(algorithm_sort_flow([4]))
+```

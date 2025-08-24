@@ -1,0 +1,70 @@
+Certainly! Here’s a clear step-by-step description based on the provided flowchart.
+
+---
+
+### **Algorithm Overview**
+**Purpose:**  
+To process a given integer and count how many of its digits are even and how many are odd, then return these counts.
+
+---
+
+### **Input Data Required**
+- **Single integer** (can be positive or negative).
+
+---
+
+### **Main Logical Flow**
+
+1. **Receive Input:**  
+   Accept an integer as input.
+
+2. **Initialize Counters:**  
+   - Set `even = 0`  
+   - Set `odd = 0`
+
+3. **Count Even and Odd Digits:**  
+   - Take the absolute value of the integer to ignore the sign.
+   - Repeat until the integer becomes zero:
+     - Extract the last digit (using modulo 10).
+     - If the digit is even (`digit % 2 == 0`), increment `even`.
+     - Otherwise, increment `odd`.
+     - Remove the last digit (integer division by 10).
+   
+4. **Return Count:**  
+   - Return the two values: the count of even and odd digits, typically as a tuple `(even, odd)`.
+
+---
+
+### **Expected Output**
+- A pair of integers:  
+  - The first representing the count of even digits.  
+  - The second representing the count of odd digits.
+
+---
+
+### **Implementation-Ready Pseudocode**
+```python
+def count_even_odd_digits(number):
+    even = 0
+    odd = 0
+    num = abs(number)  # Ignore sign
+
+    if num == 0:
+        even = 1  # 0 is considered an even digit
+    else:
+        while num > 0:
+            digit = num % 10
+            if digit % 2 == 0:
+                even += 1
+            else:
+                odd += 1
+            num //= 10
+
+    return (even, odd)
+```
+
+---
+
+**Example:**  
+Input: `24631`  
+Output: `(3, 2)`  --> 3 even digits (2, 4, 6), 2 odd digits (3, 1)

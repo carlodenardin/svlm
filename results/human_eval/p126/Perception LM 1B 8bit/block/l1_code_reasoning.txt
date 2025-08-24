@@ -1,0 +1,16 @@
+```python
+def is_sorted_and_no_more_than_one_duplicate(nums):
+    # Step 1: Check if the list is sorted in ascending order (non-decreasing)
+    for i in range(1, len(nums)):
+        if nums[i] < nums[i - 1]:
+            return False
+
+    # Step 2: Check if any value occurs more than twice (no more than one duplicate per value)
+    counts = {}
+    for x in nums:
+        counts[x] = counts.get(x, 0) + 1
+        if counts[x] > 2:
+            return False
+
+    return True
+```

@@ -1,0 +1,12 @@
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "build_forward() missing 2 required positional arguments: 'idx' and 'acc'", "input": [")", "("], "output": null, "correct_output": "Yes"}

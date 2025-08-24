@@ -1,0 +1,12 @@
+```python
+def sort_list(k):
+    list = []
+    start = 0
+    while start < k:
+        # Sort the list in ascending order
+        list.append(sorted(list))
+        # Keep the last k elements in the list
+        list = list[:k]
+        start += 1
+    return list
+```

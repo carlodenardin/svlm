@@ -1,0 +1,5 @@
+def return_true():
+    if numbers_appear_more_than_twice():
+        return true
+    else:
+        return false

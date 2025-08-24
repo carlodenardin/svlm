@@ -1,0 +1,7 @@
+def calculate_sum(n):
+    sum = 0
+    res = ''
+    if n > 0:
+        sum = n + n // 10
+        res = str(n) + res
+    return res

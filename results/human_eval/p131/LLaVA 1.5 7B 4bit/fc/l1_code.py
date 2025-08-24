@@ -1,0 +1,5 @@
+def process_n(n):
+    if n.isdigit():
+        return n
+    else:
+        return 'N'

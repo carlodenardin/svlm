@@ -1,0 +1,58 @@
+### Algorithm Overview
+
+The algorithm is designed to find a divisor of a given integer `n` within a specified range `[2, n]`. It checks if `n` is divisible by each number from 2 to `n-1` and returns the first divisor found. If no divisor is found within the range, it returns `None`.
+
+### Input Data
+
+- `n`: The integer for which to find a divisor.
+- `range_start`: The starting value of the range (2 in this case).
+- `range_end`: The ending value of the range (n in this case).
+
+### Main Logical Flow
+
+1. **Input Validation**:
+   - Check if `n` is a positive integer.
+   - If not, return `None`.
+
+2. **Divisor Search**:
+   - Loop through each number `i` from `2` to `n-1`.
+   - Check if `n` is divisible by `i` (i.e., `n % i == 0`).
+   - If `n` is divisible by `i`, return `i` as the divisor.
+
+3. **No Divisor Found**:
+   - If the loop completes without finding a divisor, return `None`.
+
+### Expected Output
+
+- If a divisor is found within the range, return that number.
+- If no divisor is found within the range, return `None`.
+
+### Implementation Steps
+
+1. **Input Validation**:
+   - Ensure `n` is a positive integer.
+   - If not, return `None`.
+
+2. **Divisor Search**:
+   - Use a `for` loop to iterate from `2` to `n-1`.
+   - For each `i`, check if `n % i == 0`.
+   - If a divisor is found, return `i`.
+
+3. **No Divisor Found**:
+   - If the loop completes without finding a divisor, return `None`.
+
+### Pseudocode
+
+```
+function find_divisor(n, range_start, range_end):
+    if n <= 0:
+        return None
+    for i in range(2, n):
+        if n % i == 0:
+            return i
+    return None
+```
+
+### Conclusion
+
+This algorithm efficiently finds a divisor of `n` within the specified range by iterating through potential

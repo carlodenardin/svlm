@@ -1,0 +1,58 @@
+**Algorithm Overview**
+=======================
+
+**Purpose**: The algorithm calculates the sum of digits greater than 0 for each value in a list of integers.
+
+**Input Data**:
+
+* A list of integers
+
+**Main Logical Flow**
+--------------------
+
+### Step 1: Receive a List of Integers
+
+* The algorithm receives a list of integers as input.
+
+### Step 2: Count Sum of Digits Greater than 0
+
+* For each value in the list, the algorithm counts the sum of digits greater than 0.
+* The count is stored in a variable.
+
+### Step 3: Give Back the Count
+
+* The algorithm returns the count of sum of digits greater than 0 for each value in the list.
+
+**Expected Output**
+-----------------
+
+* A list of integers with the count of sum of digits greater than 0 for each value in the original list.
+
+**Implementation**
+-----------------
+
+```python
+def calculate_sum_of_digits(n):
+    """
+    Calculate the sum of digits greater than 0 for each value in a list of integers.
+
+    Args:
+        n (list): A list of integers.
+
+    Returns:
+        list: A list of integers with the count of sum of digits greater than 0 for each value in the original list.
+    """
+    count = []
+    for num in n:
+        sum_of_digits = sum(int(digit) for digit in str(num))
+        if sum_of_digits > 0:
+            count.append(sum_of_digits)
+    return count
+
+# Example usage:
+numbers = [123, 456, 789, 101]
+result = calculate_sum_of_digits(numbers)
+print(result)
+```
+
+This implementation uses a simple loop to iterate over each value in the input list, calculates the sum of digits greater than 0 using a generator expression, and stores the result in a list. The function returns this list, which contains the count of sum of digits greater than 0 for each value in the original list.

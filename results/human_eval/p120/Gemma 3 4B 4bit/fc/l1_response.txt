@@ -1,0 +1,14 @@
+```python
+def sort_and_list_names(names):
+    """
+    Sorts a list of names alphabetically and then lists the sorted names.
+
+    Args:
+        names: A list of strings representing names.
+
+    Returns:
+        A list of strings representing the sorted names.
+    """
+    names.sort()
+    return names
+```

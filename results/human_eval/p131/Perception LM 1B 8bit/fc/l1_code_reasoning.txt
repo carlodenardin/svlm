@@ -1,0 +1,22 @@
+```python
+def calculate_product(n):
+    """
+    Calculate the product of odd digits of a positive integer n.
+
+    Args:
+        n (int): A positive integer.
+
+    Returns:
+        int: The product of the odd digits of n.
+    """
+    product = 1
+    for digit in str(n):
+        if digit.isdigit() and int(digit) % 2 != 0:
+            product *= int(digit)
+    return product
+
+# Example usage:
+n = 12345
+result = calculate_product(n)
+print(f"The product of the odd digits of {n} is {result}")
+```

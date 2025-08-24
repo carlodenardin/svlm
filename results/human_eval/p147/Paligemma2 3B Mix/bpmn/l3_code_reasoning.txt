@@ -1,0 +1,1 @@
+I’m missing the specific reasoning block you want me to follow. Please provide the VLM’s reasoning steps (or the exact problem statement and constraints) so I can translate them into executable Python code exactly as described.

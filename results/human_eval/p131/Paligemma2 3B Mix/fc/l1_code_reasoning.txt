@@ -1,0 +1,16 @@
+```python
+import sys
+import re
+
+def solve():
+    # Read entire input
+    text = sys.stdin.read()
+    # Extract all integers (including negatives)
+    nums = list(map(int, re.findall(r'-?\d+', text)))
+    # If there are no numbers, output 0 by default
+    result = sum(nums) if nums else 0
+    print(result)
+
+if __name__ == "__main__":
+    solve()
+```

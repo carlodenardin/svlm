@@ -1,0 +1,21 @@
+```python
+def count_digitsgreater_than_0(numbers):
+    """
+    Counts the number of digits greater than 0 in a list of integers.
+
+    Args:
+        numbers (list): A list of integers.
+
+    Returns:
+        int: The count of digits greater than 0 in the input list.
+    """
+    count = 0
+    for num in numbers:
+        if any(int(digit) > 0 for digit in str(num)):
+            count += 1
+    return count
+
+# Example usage:
+numbers = [123, 456, 789, 101]
+print(count_digitsgreater_than_0(numbers))  # Output: 3
+```

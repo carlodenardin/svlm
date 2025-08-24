@@ -1,0 +1,26 @@
+```python
+def parity_pair(n: int):
+    # Initialization
+    even = 0
+    odd = 0
+    n = abs(n)
+    remainder10 = n % 10
+
+    # Decision Points
+    if n > 0:
+        odd += 1
+        if n % 2 == 0:
+            return (n % 2, (n // 2) % 2)
+
+    if remainder10 == 0:
+        even += 1
+        if n % 2 == 0:
+            return (n % 2, (n // 2) % 2)
+    else:
+        odd += 1
+        if n % 2 == 1:
+            return (n % 2, (n // 2) % 2)
+
+    # Output
+    return (n % 2, (n // 2) % 2)
+```

@@ -1,0 +1,28 @@
+```python
+def compute_result(input_string: str) -> int:
+    # Step 2: Check if the input string contains any odd digits
+    for ch in input_string:
+        if ch.isdigit() and int(ch) % 2 == 1:
+            # Step 3: If any odd digit is found, return 0
+            return 0
+
+    # Step 4: Otherwise, compute the product of the odd digits
+    product = 1
+    for ch in input_string:
+        if ch.isdigit() and int(ch) % 2 == 1:
+            product *= int(ch)
+
+    # Step 5: Return the computed product
+    return product
+
+def main():
+    import sys
+    s = sys.stdin.read()
+    if s is None:
+        s = ""
+    s = s.rstrip('\n')
+    print(compute_result(s))
+
+if __name__ == "__main__":
+    main()
+```

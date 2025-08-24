@@ -1,0 +1,22 @@
+def check_parenthesis_list(l: list[str]) -> str:
+
+    def check_string(s: str) -> bool:
+        i = 0
+        c = 0
+        while i < len(s):
+            if s[i] == '(':
+                c += 1
+            else:
+                c -= 1
+            if c < 0:
+                return False
+            i += 1
+        return c == 0
+    s1 = l[0] + l[1]
+    s2 = l[1] + l[0]
+    c1 = check_string(s1)
+    c2 = check_string(s2)
+    if c1 or c2:
+        return 'Yes'
+    else:
+        return 'No'

@@ -1,0 +1,41 @@
+```python
+def is_divisible_binary_search_style(n, y):
+    """
+    Determines if n is divisible by y using a binary-search-based approach,
+    following the described (repetitive) reasoning pattern.
+    Returns "YES" if divisible, else "NO".
+    """
+    # Step 1: Start
+    if n in (1, 2):
+        return "YES"
+
+    # Handle non-positive divisor gracefully (as per typical divisibility rules)
+    if y == 0:
+        return "NO"
+
+    y_abs = abs(y)
+
+    def binary_search_divisible():
+        # We search for an integer k such that k * y_abs == n
+        # i.e., n is divisible by y_abs (and thus by y if y != 0)
+        lo = 1
+        hi = n // y_abs
+        while lo <= hi:
+            mid = (lo + hi) // 2
+            prod = mid * y_abs
+            if prod == n:
+                return True
+            if prod < n:
+                lo = mid + 1
+            else:
+                hi = mid - 1
+        return False
+
+    # Step 3: Repeat the binary-search check multiple times as per reasoning
+    for _ in range(12):  # number of repeated checks to mimic the verbose reasoning
+        if binary_search_divisible():
+            return "YES"
+
+    # If none of the repeated checks found divisibility
+    return "NO"
+```

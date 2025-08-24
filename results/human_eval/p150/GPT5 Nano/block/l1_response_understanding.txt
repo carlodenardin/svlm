@@ -1,0 +1,74 @@
+Certainly! Here’s a **code-ready breakdown** of the algorithm illustrated in the flowchart:
+
+---
+
+### **Overview**
+The algorithm determines if a given integer `n` is a prime number. Depending on the result, it returns either `x` or `y`.
+
+---
+
+### **Input Data**
+- Three integers:
+  - `n`: The number to test for primality.
+  - `x`: The value to return if `n` is prime.
+  - `y`: The value to return if `n` is not prime.
+
+---
+
+### **Main Logical Flow**
+1. **Input Reception**  
+   - Receive three integers (`n`, `x`, `y`) as input.
+   
+2. **Prime Number Check**  
+   - **If** `n` is less than 2:  
+     - `n` is not prime.
+   - **Else**, check divisibility from 2 up to √n:
+     - **Loop** from `i = 2` to `sqrt(n)` (inclusive):
+       - **If** `n % i == 0`:
+         - `n` is not prime.
+         - **Break** out of loop/check.
+   - **If** no divisors were found:
+     - `n` is prime.
+   
+3. **Decision & Output**  
+   - **If** `n` is prime:
+     - **Return `x`**
+   - **Else**:
+     - **Return `y`**
+
+---
+
+### **Pseudocode**
+```python
+def process_numbers(n, x, y):
+    # Step 1: Input already received as parameters
+    
+    # Step 2: Check if n is prime
+    if n < 2:
+        return y
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return y
+    
+    # Step 3: Return x if n is prime
+    return x
+```
+
+---
+
+### **Expected Output**
+- **If** `n` is a prime number: returns `x`.
+- **Otherwise:** returns `y`.
+
+---
+
+#### **Summary Table**
+
+| Input (`n`, `x`, `y`) | Output |
+|-----------------------|--------|
+| 7, 10, 20             | 10     |
+| 8, 10, 20             | 20     |
+
+---
+
+Ready to be implemented in **any programming language** using the above logical steps.

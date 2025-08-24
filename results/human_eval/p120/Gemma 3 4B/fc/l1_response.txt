@@ -1,0 +1,14 @@
+```python
+def task_management(tasks):
+    """
+    Manages a list of tasks by sorting them and then listing them.
+
+    Args:
+        tasks: A list of strings representing the tasks.
+
+    Returns:
+        A list of strings representing the sorted tasks.
+    """
+    tasks.sort()
+    return tasks
+```

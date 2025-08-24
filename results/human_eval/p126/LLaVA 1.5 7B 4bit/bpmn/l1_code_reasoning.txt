@@ -1,0 +1,22 @@
+```python
+def evaluate_list_for_duplicates(nums):
+    """
+    Implements the described algorithm:
+    - Initialize count to 0
+    - For each pair of consecutive elements, if the current element is greater than the previous,
+      increment count
+    - If count > 1: return "Yes, sorted and has more than one duplicate."
+    - If count == 0: return "No, no more than one duplicate."
+    - For all other cases (e.g., count == 1), return None to reflect the lack of specification.
+    """
+    count = 0
+    for i in range(1, len(nums)):
+        if nums[i] > nums[i - 1]:
+            count += 1
+
+    if count > 1:
+        return "Yes, sorted and has more than one duplicate."
+    if count == 0:
+        return "No, no more than one duplicate."
+    return None
+```

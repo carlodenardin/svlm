@@ -1,0 +1,2 @@
+def process_input(n, x):
+    return x * n

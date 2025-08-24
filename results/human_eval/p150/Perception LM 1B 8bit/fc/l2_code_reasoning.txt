@@ -1,0 +1,12 @@
+```python
+import math
+
+def largest_divisor_le_sqrt(n: int) -> int:
+    if n <= 0:
+        raise ValueError("n must be a positive integer")
+    limit = int(math.isqrt(n))
+    for d in range(limit, 0, -1):
+        if n % d == 0:
+            return d
+    return 1
+```

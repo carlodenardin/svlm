@@ -1,0 +1,35 @@
+```python
+def is_divisible_by_y(n, y):
+    divisor = y
+    # Step 2
+    if n == 1:
+        return 'Y'
+    # Steps 3-16 (repeated checks)
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    if n % divisor == 0:
+        return 'Y'
+    return 'N'
+```

@@ -1,0 +1,19 @@
+```python
+def product_of_odd_digits(n: int) -> int:
+    # Step 1: Receive Integer
+    value = n
+
+    # Step 3/4: Iterate through digits and multiply odd digits
+    product = 0  # initialized to 0 as described
+    while value != 0:
+        digit = abs(value) % 10
+        if digit % 2 != 0:  # digit is odd
+            product *= digit
+        value //= 10
+
+    # Step 5: Check if no odd digits were found
+    if product == 0:
+        return 0
+    else:
+        return product
+```

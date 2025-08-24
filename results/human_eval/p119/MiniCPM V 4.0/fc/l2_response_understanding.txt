@@ -1,0 +1,22 @@
+The flowchart outlines an algorithm designed to validate the balancedness of a string composed of rounded parentheses. Here's a step-by-step description:
+
+1. **Start**: The process begins at the start node.
+2. **Input Data**: 
+   - A list `I` containing the input string `str` is provided.
+3. **String Splitting**: 
+   - The input string `str` is split into two parts, `s1` and `s2`, representing the opening and closing parentheses respectively.
+4. **Validation Check**: 
+   - Each part (`s1` and `s2`) is checked for validity using a function named `check_string`. This ensures that every opening parenthesis has a matching closing parenthesis and that no closure exceeds its corresponding opening in order.
+5. **Decision Point**: 
+   - If both `s1` and `s2` are valid (i.e., return 'Yes'), the process ends successfully.
+   - If either `s1` or `s2` is invalid (i.e., return 'No'), it concludes with failure.
+6. **Balancedness Check**: 
+   - Another validation check is performed on the entire string `s` to ensure it remains balanced after splitting.
+7. **Decision Point**: 
+   - If the string is found to be balanced (return 'True'), the process terminates successfully.
+   - If not balanced (return 'False'), the process also ends unsuccessfully.
+
+**Expected Output**:
+- The output will indicate whether the given string of parentheses is balanced. It can be "End" if the string is balanced, otherwise indicating the reason for imbalance.
+
+This algorithm effectively verifies the correctness of nested parentheses by ensuring each pair matches properly throughout the string.

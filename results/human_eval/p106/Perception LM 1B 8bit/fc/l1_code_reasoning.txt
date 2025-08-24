@@ -1,0 +1,26 @@
+```python
+def calculate_product(n):
+    """
+    Calculate the product of numbers from 1 to n if n is even, or the sum of numbers from 1 to n if n is odd.
+
+    Args:
+        n (int): The upper limit of the range of numbers to be calculated.
+
+    Returns:
+        int: The product of numbers from 1 to n if n is even, or the sum of numbers from 1 to n if n is odd.
+    """
+    result = 1
+    counter = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            result *= i
+        else:
+            result += i
+        counter += 1
+    return result
+
+# Example usage:
+n = 5
+result = calculate_product(n)
+print(f"The product of numbers from 1 to {n} is: {result}")
+```

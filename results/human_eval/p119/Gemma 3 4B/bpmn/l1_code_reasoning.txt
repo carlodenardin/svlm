@@ -1,0 +1,25 @@
+```python
+def is_balanced_pair(strings):
+    """
+    Determine if the concatenation of two strings of '(' and ')' is balanced.
+    Returns "Yes" if balanced, "No" otherwise.
+    """
+    # 1. Concatenate the two strings
+    combined = strings[0] + strings[1]
+
+    # 2. Check balance by scanning
+    balance = 0
+    for ch in combined:
+        if ch == '(':
+            balance += 1
+        elif ch == ')':
+            balance -= 1
+        else:
+            # As per problem assumption, characters are only '(' or ')'
+            continue
+        if balance < 0:
+            return "No"
+
+    # 3. Final balance check
+    return "Yes" if balance == 0 else "No"
+```

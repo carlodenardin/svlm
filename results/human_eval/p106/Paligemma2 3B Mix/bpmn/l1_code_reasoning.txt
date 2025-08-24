@@ -1,0 +1,14 @@
+I’m missing the actual reasoning text and the problem description needed to implement the function exactly as requested. Please provide:
+
+- The problem statement (or the exact reasoning steps you want followed).
+- Any constraints, input/output formats, and example/test cases you want covered.
+
+Once I have that, I will generate:
+- A Python function implementing the approach exactly as described.
+- ASCII-style flowcharts embedded as strings/comments for:
+  - The main algorithm flow
+  - The data structures used
+  - The test case flow
+  - The example verification flow
+
+If you can’t paste the entire reasoning, even a high-level summary of the steps and the expected inputs/outputs will help me proceed.

@@ -1,0 +1,20 @@
+```python
+def sum_digits_to_binary_string(n: int) -> str:
+    # Step 2: Sum the digits of n (consider digits of absolute value)
+    total = 0
+    for ch in str(abs(n)):
+        if ch.isdigit():
+            total += int(ch)
+
+    # Step 3/4: Convert the summed total to binary and return as string
+    if total == 0:
+        return "0"
+
+    bits = []
+    t = total
+    while t > 0:
+        bits.append(str(t % 2))
+        t //= 2
+    bits.reverse()
+    return ''.join(bits)
+```

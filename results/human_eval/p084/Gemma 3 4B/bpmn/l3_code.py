@@ -1,0 +1,13 @@
+def compute_res(n: int) -> str:
+    sum_digits = 0
+    res = ''
+    while n > 0:
+        sum_digits += n % 10
+        n //= 10
+    if sum_digits > 0:
+        r = sum_digits % 2
+        sum_digits = sum_digits // 10
+        res = str(r) + res
+    else:
+        return res
+    return res

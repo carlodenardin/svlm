@@ -1,0 +1,19 @@
+```python
+def count_geq_k(list_k_k_int, k):
+    """
+    Counts how many elements in the input list are >= k by:
+    - creating a copy of the list
+    - sorting the copy in ascending order
+    - iterating and counting elements >= k
+    """
+    # Modify list_k_k_int: make a shallow copy
+    lst = list_k_k_int.copy()
+    # Sort in ascending order
+    lst.sort()
+    # Count elements >= k by iterating
+    count = 0
+    for x in lst:
+        if x >= k:
+            count += 1
+    return count
+```

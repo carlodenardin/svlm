@@ -1,0 +1,4 @@
+- Include a flowchart for the entire code.
+- Include a flowchart for the data structures used.
+- Include a flowchart for the main window.
+- Include a flowchart for the test cases.

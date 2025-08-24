@@ -1,0 +1,90 @@
+```python
+def print_flowchart():
+    print("Flowchart (steps, minimum 21 steps to satisfy requirement):")
+    print("1. Start")
+    print("2. Read input")
+    print("3. Attempt to parse input as integer")
+    print("4. If parse fails -> go to Non-integer input path")
+    print("5. If parse succeeds -> set n = input value")
+    print("6. Check if n >= 0 (non-negative) ?")
+    print("7. If Yes: Check if n is even")
+    print("8. If Yes: Check if n % 3 == 0")
+    print("9. If Yes: Label = 'Even and divisible by 3 (n>=0)' ; Value = n + 3")
+    print("10. If No: Label = 'Even and not divisible by 3 (n>=0)' ; Value = n * 2")
+    print("11. If No (n is odd): Check if n % 5 == 0")
+    print("12. If Yes: Label = 'Odd and divisible by 5 (n>=0)' ; Value = n - 1")
+    print("13. If No: Label = 'Odd and not divisible by 5 (n>=0)' ; Value = n + 1")
+    print("14. If No: (n < 0) branch")
+    print("15. Check if n is even (negative even)")
+    print("16. If Yes: Check if n % 3 == 0")
+    print("17. If Yes: Label = 'Even negative and divisible by 3' ; Value = n - 3")
+    print("18. If No: Label = 'Even negative and not divisible by 3' ; Value = n * 2")
+    print("19. If No (n negative and odd): Check if n % 5 == 0")
+    print("20. If Yes: Label = 'Odd negative and divisible by 5' ; Value = n - 1")
+    print("21. If No: Label = 'Odd negative and not divisible by 5' ; Value = n + 1")
+    print("22. End")
+
+
+def solve_problem(user_input=None):
+    # If no input provided, optionally ask the user (keeps function flexible for testing)
+    if user_input is None:
+        user_input = input("Enter an integer: ")
+
+    # Flow for non-integer input
+    try:
+        n = int(user_input)
+    except (ValueError, TypeError):
+        print("Input is not an integer.")
+        return {"status": "non_integer", "input": user_input}
+
+    # Core decision flow (covers all cases)
+    even = (n % 2 == 0)
+    if n >= 0:
+        # Non-negative branch
+        if even:
+            if n % 3 == 0:
+                label = "Even and divisible by 3 (n>=0)"
+                value = n + 3
+            else:
+                label = "Even and not divisible by 3 (n>=0)"
+                value = n * 2
+        else:
+            if n % 5 == 0:
+                label = "Odd and divisible by 5 (n>=0)"
+                value = n - 1
+            else:
+                label = "Odd and not divisible by 5 (n>=0)"
+                value = n + 1
+    else:
+        # Negative branch
+        if even:
+            if n % 3 == 0:
+                label = "Even negative and divisible by 3"
+                value = n - 3
+            else:
+                label = "Even negative and not divisible by 3"
+                value = n * 2
+        else:
+            if n % 5 == 0:
+                label = "Odd negative and divisible by 5"
+                value = n - 1
+            else:
+                label = "Odd negative and not divisible by 5"
+                value = n + 1
+
+    print("Result:", label, "=>", value)
+    return {"status": "ok", "n": n, "label": label, "value": value}
+
+
+if __name__ == "__main__":
+    print_flowchart()
+    # Example usage: provide a value directly or through input prompt
+    # Uncomment one of the following usage patterns:
+
+    # Pattern 1: direct call with a string that represents an integer
+    # result = solve_problem("12")
+
+    # Pattern 2: interactive input
+    result = solve_problem()
+    # result contains the outcome dictionary
+```

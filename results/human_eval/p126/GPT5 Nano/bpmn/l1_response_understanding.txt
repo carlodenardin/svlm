@@ -1,0 +1,69 @@
+Certainly! Here’s a breakdown of the algorithm depicted in the flowchart:
+
+---
+
+### **Algorithm Overview**
+This algorithm checks whether a given list of integers is sorted in non-decreasing order and that no number appears more than twice in the list. It returns `True` if both conditions are met; otherwise, it returns `False`.
+
+---
+
+### **Input Data**
+- **A list of integers** (e.g., `[1, 2, 2, 3, 4]`)
+
+---
+
+### **Main Logical Flow (Implementation Steps)**
+1. **Receive Input:** Accept a list of integers as input.
+2. **Check Conditions:**  
+   a. **Is the list sorted in non-decreasing order?**  
+       - Compare each integer with the next one to confirm that `list[i] <= list[i+1]` for all `i`.
+   b. **Does every integer appear at most twice?**  
+       - Count occurrences of each integer.
+       - Ensure that no integer appears more than 2 times.
+3. **Decision Point:**
+   - **If** both conditions above are satisfied, **return `True`**.
+   - **Else, return `False`**.
+
+---
+
+### **Expected Output**
+- **Boolean**
+    - `True` if the list is sorted and no integer occurs more than twice.
+    - `False` otherwise.
+
+---
+
+### **Sample Python Implementation**
+
+```python
+def validate_list(nums):
+    from collections import Counter
+
+    # Check if the list is sorted
+    is_sorted = all(nums[i] <= nums[i+1] for i in range(len(nums)-1))
+    if not is_sorted:
+        return False
+
+    # Check duplicate count
+    counts = Counter(nums)
+    for count in counts.values():
+        if count > 2:
+            return False
+
+    return True
+```
+
+---
+
+### **Summary Table**
+
+| Step                  | Action                                              | Outcome      |
+|-----------------------|-----------------------------------------------------|--------------|
+| Input                 | List of integers                                    | [1,2,2,3,4]  |
+| Check sorted          | `list[i] <= list[i+1]` for all i?                   | Pass/Fail    |
+| Count duplicates      | Each number occurs at most twice?                   | Pass/Fail    |
+| Output                | Return True if both checks pass; else, return False | True/False   |
+
+---
+
+Ready to implement! Let me know if you need a version in another programming language.

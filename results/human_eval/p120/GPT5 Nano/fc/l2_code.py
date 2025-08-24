@@ -1,0 +1,5 @@
+def get_largest_k_elements(l: list[int], k: int) -> list[int]:
+    """
+    Sort the list of integers in ascending order and return the last k elements.
+    """
+    return sorted(l)[-k:]

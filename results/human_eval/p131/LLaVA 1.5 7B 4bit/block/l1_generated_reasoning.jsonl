@@ -1,0 +1,1000 @@
+{"success": false, "error": "", "input": 3278, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 32098, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 96530, "output": [3, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 97080, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 11395, "output": [5, 3, 1], "correct_output": 135}
+{"success": false, "error": "", "input": 4165, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 28657, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 78907, "output": [7, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 26062, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 91924, "output": [9, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 28893, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 36463, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 851, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 20926, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 44597, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 28221, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 220, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 49797, "output": [7, 7], "correct_output": 3969}
+{"success": false, "error": "", "input": 45082, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 5695, "output": [5, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 70284, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 49615, "output": [5, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 38427, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 81070, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 47400, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 92349, "output": [9, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 86673, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 37930, "output": [3, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 13238, "output": [3, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 59429, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 47819, "output": [9, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 46566, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 34993, "output": [3, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 89593, "output": [3, 5], "correct_output": 1215}
+{"success": false, "error": "", "input": 79840, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 70010, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 21417, "output": [7, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 35382, "output": [3, 3], "correct_output": 45}
+{"success": false, "error": "", "input": 622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 28785, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 7331, "output": [1, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 4207, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 52581, "output": [1, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 27653, "output": [3, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 41245, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 65435, "output": [5, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 84259, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 34718, "output": [1, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 97647, "output": [7, 9], "correct_output": 441}
+{"success": false, "error": "", "input": 34438, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 56155, "output": [5, 1], "correct_output": 125}
+{"success": false, "error": "", "input": 52350, "output": [5, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 18131, "output": [1, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 11915, "output": [5, 9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 14371, "output": [1, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 20969, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 55333, "output": [3, 3, 5], "correct_output": 675}
+{"success": false, "error": "", "input": 50432, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 61348, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 72512, "output": [1, 7], "correct_output": 35}
+{"success": false, "error": "", "input": 1504, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 15014, "output": [1, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 70381, "output": [1, 7], "correct_output": 21}
+{"success": false, "error": "", "input": 84012, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 38469, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 59470, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 94646, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 34522, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 13947, "output": [7, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 39117, "output": [7, 1, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 66540, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 20032, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 21174, "output": [7, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 69514, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 2552, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 47576, "output": [7, 7], "correct_output": 245}
+{"success": false, "error": "", "input": 40306, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 31571, "output": [1, 5, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 10322, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 63699, "output": [9, 3], "correct_output": 243}
+{"success": false, "error": "", "input": 99693, "output": [3, 9], "correct_output": 2187}
+{"success": false, "error": "", "input": 16483, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 62296, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 60, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 79507, "output": [7, 9], "correct_output": 2205}
+{"success": false, "error": "", "input": 27760, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 26365, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 52296, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 67839, "output": [9, 7], "correct_output": 189}
+{"success": false, "error": "", "input": 32493, "output": [3, 3], "correct_output": 81}
+{"success": false, "error": "", "input": 44313, "output": [3, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 72603, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 28864, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 92778, "output": [7, 9], "correct_output": 441}
+{"success": false, "error": "", "input": 30007, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 4117, "output": [7, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 9287, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 36500, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 28080, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 94811, "output": [1, 9], "correct_output": 9}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 31850, "output": [5, 3], "correct_output": 15}
+{"success": false, "error": "", "input": 53354, "output": [5, 3], "correct_output": 225}
+{"success": false, "error": "", "input": 12704, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 46438, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 61213, "output": [3, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 7100, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 84696, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 52772, "output": [7, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 14322, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 24931, "output": [1, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 18373, "output": [3, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 36509, "output": [9, 3], "correct_output": 135}
+{"success": false, "error": "", "input": 9880, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 72132, "output": [3, 7], "correct_output": 21}
+{"success": false, "error": "", "input": 85477, "output": [7, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 12224, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 53269, "output": [9, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 28016, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 7685, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 282, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 55444, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 95748, "output": [7, 9], "correct_output": 315}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 63788, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 38890, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 7665, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 71066, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 41104, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 76569, "output": [9, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 69615, "output": [5, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 66562, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 24356, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 8907, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 30828, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 74668, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 77924, "output": [9, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 10745, "output": [5, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 76503, "output": [3, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 41467, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 80, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 41180, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 51876, "output": [7, 5], "correct_output": 35}
+{"success": false, "error": "", "input": 84607, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 41441, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 2424, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 60068, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 73792, "output": [9, 3], "correct_output": 1323}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 66307, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 45745, "output": [5, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 32018, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 20676, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 71200, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 80173, "output": [3, 1], "correct_output": 21}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 1025, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 72692, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 86951, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 17601, "output": [1, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 14029, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 20374, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 79276, "output": [7, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 44942, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 83130, "output": [3, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 66244, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 6658, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 55518, "output": [1, 5], "correct_output": 125}
+{"success": false, "error": "", "input": 5778, "output": [7, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 17146, "output": [1, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 34335, "output": [5, 3], "correct_output": 135}
+{"success": false, "error": "", "input": 57912, "output": [1, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 56057, "output": [7, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 14663, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 90573, "output": [3, 5], "correct_output": 945}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 48393, "output": [3, 3], "correct_output": 81}
+{"success": false, "error": "", "input": 19410, "output": [1, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 5482, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 5229, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 27535, "output": [5, 5], "correct_output": 525}
+{"success": false, "error": "", "input": 87416, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 73385, "output": [5, 3], "correct_output": 315}
+{"success": false, "error": "", "input": 53264, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 442, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 31029, "output": [9, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 23206, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 3248, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 43540, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 53964, "output": [9, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 96345, "output": [5, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 34970, "output": [7, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 91917, "output": [7, 9, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 5075, "output": [5, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 29154, "output": [5, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 60332, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 29831, "output": [1, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 86511, "output": [1, 5], "correct_output": 5}
+{"success": false, "error": "", "input": 43025, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 9099, "output": [9, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 66768, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 70282, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 3617, "output": [7, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 34237, "output": [7, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 34795, "output": [5, 7], "correct_output": 945}
+{"success": false, "error": "", "input": 78193, "output": [3, 1], "correct_output": 189}
+{"success": false, "error": "", "input": 95491, "output": [1, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 57199, "output": [9, 1, 5], "correct_output": 2835}
+{"success": false, "error": "", "input": 67033, "output": [3, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 75574, "output": [7, 5], "correct_output": 1225}
+{"success": false, "error": "", "input": 5817, "output": [7, 5], "correct_output": 35}
+{"success": false, "error": "", "input": 221, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 70575, "output": [5, 5], "correct_output": 1225}
+{"success": false, "error": "", "input": 97248, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 25825, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 9171, "output": [1, 1], "correct_output": 63}
+{"success": false, "error": "", "input": 2424, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 41145, "output": [5, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 16334, "output": [3, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 39363, "output": [3, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 87410, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 52743, "output": [3, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 72667, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 55108, "output": [1, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 49695, "output": [5, 9], "correct_output": 405}
+{"success": false, "error": "", "input": 22810, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 39446, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 53, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 27549, "output": [9, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 76019, "output": [9, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 42237, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 57954, "output": [5, 7], "correct_output": 1575}
+{"success": false, "error": "", "input": 67000, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 96463, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 11114, "output": [1, 1], "correct_output": 1}
+{"success": false, "error": "", "input": 87012, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 43933, "output": [3, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 98453, "output": [3, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 40687, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 26100, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 6057, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 62277, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 9545, "output": [5, 9], "correct_output": 225}
+{"success": false, "error": "", "input": 82544, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 94155, "output": [5, 1], "correct_output": 225}
+{"success": false, "error": "", "input": 64799, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 19342, "output": [3, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 726, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 13970, "output": [7, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 28683, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 91214, "output": [1, 9], "correct_output": 9}
+{"success": false, "error": "", "input": 6582, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 15906, "output": [9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 60901, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 73259, "output": [9, 3], "correct_output": 945}
+{"success": false, "error": "", "input": 98992, "output": [9, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 80301, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 66162, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 71810, "output": [1, 7], "correct_output": 7}
+{"success": false, "error": "", "input": 20861, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 62216, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 98536, "output": [3, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 83579, "output": [9, 5], "correct_output": 945}
+{"success": false, "error": "", "input": 68327, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 31358, "output": [5, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 10155, "output": [5, 1], "correct_output": 25}
+{"success": false, "error": "", "input": 30735, "output": [5, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 41904, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 10561, "output": [1, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 30311, "output": [1, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 20028, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 8418, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 43369, "output": [9, 3], "correct_output": 81}
+{"success": false, "error": "", "input": 54496, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 55069, "output": [9, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 76556, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 20, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 75456, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 772, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 54921, "output": [1, 5], "correct_output": 45}
+{"success": false, "error": "", "input": 96289, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 79069, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 63993, "output": [3, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 57125, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 50968, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 89016, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 94919, "output": [9, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 61261, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 51645, "output": [5, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 86900, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 84246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 60515, "output": [5, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 34099, "output": [9, 3], "correct_output": 243}
+{"success": false, "error": "", "input": 27742, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 44236, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 49692, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 55255, "output": [5, 5], "correct_output": 625}
+{"success": false, "error": "", "input": 10735, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 98176, "output": [7, 9], "correct_output": 63}
+{"success": false, "error": "", "input": 45870, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 8993, "output": [3, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 85426, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 4067, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 80, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 81439, "output": [9, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 16544, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 14993, "output": [3, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 28569, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 33586, "output": [5, 3], "correct_output": 45}
+{"success": false, "error": "", "input": 21992, "output": [9, 1], "correct_output": 81}
+{"success": false, "error": "", "input": 98032, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 21465, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 40888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 49192, "output": [9, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 93718, "output": [1, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 77607, "output": [7, 7], "correct_output": 343}
+{"success": false, "error": "", "input": 82213, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 91382, "output": [3, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 89687, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 15866, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 74177, "output": [7, 1], "correct_output": 343}
+{"success": false, "error": "", "input": 45508, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 86706, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 66317, "output": [7, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 1658, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 64251, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 47472, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 60258, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 57080, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 68386, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 70539, "output": [9, 5], "correct_output": 945}
+{"success": false, "error": "", "input": 60931, "output": [1, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 95817, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 42245, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 11359, "output": [9, 3, 1], "correct_output": 135}
+{"success": false, "error": "", "input": 59087, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 60910, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 87580, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 3761, "output": [1, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 42600, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 27802, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 33862, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 78139, "output": [9, 1], "correct_output": 189}
+{"success": false, "error": "", "input": 36211, "output": [1, 3], "correct_output": 3}
+{"success": false, "error": "", "input": 67715, "output": [5, 7], "correct_output": 245}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 53271, "output": [1, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 99374, "output": [7, 9], "correct_output": 1701}
+{"success": false, "error": "", "input": 62402, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 64332, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 2260, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 29045, "output": [5], "correct_output": 45}
+{"success": false, "error": "", "input": 31890, "output": [9, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 76225, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 72544, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 55771, "output": [1, 7, 5], "correct_output": 1225}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 92124, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 40189, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 15814, "output": [1, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 41359, "output": [9, 3], "correct_output": 135}
+{"success": false, "error": "", "input": 70236, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 442, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 28361, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 36241, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 99641, "output": [1, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 37093, "output": [3, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 29816, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 39618, "output": [1, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 70010, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 5965, "output": [5, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 16551, "output": [1, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 98669, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 1607, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 61524, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 44657, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 6734, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 62616, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 8564, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 9710, "output": [1, 9], "correct_output": 63}
+{"success": false, "error": "", "input": 89974, "output": [7, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 19555, "output": [5, 5, 1], "correct_output": 1125}
+{"success": false, "error": "", "input": 39824, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 32530, "output": [3, 3], "correct_output": 45}
+{"success": false, "error": "", "input": 54548, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 81057, "output": [7, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 68494, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 58028, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 77139, "output": [9, 1, 7], "correct_output": 1323}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 7894, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 97004, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 99973, "output": [3, 9, 9], "correct_output": 15309}
+{"success": false, "error": "", "input": 27659, "output": [9, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 10641, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 22782, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 20517, "output": [7, 5], "correct_output": 35}
+{"success": false, "error": "", "input": 59048, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 61592, "output": [9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 30340, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 37056, "output": [5, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 59510, "output": [1, 9], "correct_output": 225}
+{"success": false, "error": "", "input": 30595, "output": [5, 5], "correct_output": 675}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 77304, "output": [3, 7], "correct_output": 147}
+{"success": false, "error": "", "input": 25928, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 71376, "output": [7, 1], "correct_output": 147}
+{"success": false, "error": "", "input": 19528, "output": [5, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 7816, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 40319, "output": [9, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 74607, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 90266, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 52757, "output": [7, 7], "correct_output": 1225}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 57377, "output": [7, 3, 5], "correct_output": 5145}
+{"success": false, "error": "", "input": 5224, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 96276, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 32816, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 30005, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 76955, "output": [5, 9], "correct_output": 1575}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 35325, "output": [5, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 99125, "output": [5, 9], "correct_output": 405}
+{"success": false, "error": "", "input": 68021, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 36458, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 76720, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 64451, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 43687, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 13710, "output": [1, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 43228, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 64942, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 52488, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 72102, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 11542, "output": [5, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 42372, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 52976, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 150, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 71118, "output": [1, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 7104, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 47419, "output": [9, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 65338, "output": [3, 5], "correct_output": 45}
+{"success": false, "error": "", "input": 99613, "output": [3, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 35003, "output": [3, 3], "correct_output": 45}
+{"success": false, "error": "", "input": 37752, "output": [5, 7], "correct_output": 735}
+{"success": false, "error": "", "input": 91521, "output": [1, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 3783, "output": [3, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 93032, "output": [3, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 72199, "output": [9, 1], "correct_output": 567}
+{"success": false, "error": "", "input": 53476, "output": [7, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 14871, "output": [1, 1], "correct_output": 7}
+{"success": false, "error": "", "input": 15396, "output": [9, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 20181, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 93926, "output": [9, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 92459, "output": [9, 9], "correct_output": 405}
+{"success": false, "error": "", "input": 63242, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 80, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 18958, "output": [5, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 78561, "output": [1, 7], "correct_output": 35}
+{"success": false, "error": "", "input": 17892, "output": [9, 1], "correct_output": 63}
+{"success": false, "error": "", "input": 36208, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 54387, "output": [7, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 66550, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 336, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 39132, "output": [3, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 76011, "output": [1, 7], "correct_output": 7}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 58529, "output": [9, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 45236, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 99991, "output": [1, 9, 9], "correct_output": 6561}
+{"success": false, "error": "", "input": 59682, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 91422, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 50196, "output": [9, 5], "correct_output": 45}
+{"success": false, "error": "", "input": 53841, "output": [1, 5], "correct_output": 15}
+{"success": false, "error": "", "input": 97609, "output": [9, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 49968, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 86991, "output": [1, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 85461, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 60, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 77356, "output": [5, 7], "correct_output": 735}
+{"success": false, "error": "", "input": 13154, "output": [5, 3], "correct_output": 15}
+{"success": false, "error": "", "input": 57711, "output": [1, 7, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 59890, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 18894, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 85823, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 34737, "output": [7, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 90794, "output": [9, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 10527, "output": [7, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 88389, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 49808, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 99536, "output": [3, 9], "correct_output": 1215}
+{"success": false, "error": "", "input": 70912, "output": [1, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 8968, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 89705, "output": [5, 9], "correct_output": 315}
+{"success": false, "error": "", "input": 80, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 56881, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 13173, "output": [3, 1, 1], "correct_output": 63}
+{"success": false, "error": "", "input": 90964, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 3794, "output": [9, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 7355, "output": [5, 3], "correct_output": 525}
+{"success": false, "error": "", "input": 49131, "output": [1, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 32007, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 74177, "output": [7, 1], "correct_output": 343}
+{"success": false, "error": "", "input": 23600, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 10350, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 50140, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 31566, "output": [5, 3], "correct_output": 15}
+{"success": false, "error": "", "input": 76435, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 60443, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 60236, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 1231, "output": [1, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 60981, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 9681, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 45293, "output": [3, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 55615, "output": [5, 5], "correct_output": 125}
+{"success": false, "error": "", "input": 59878, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 26111, "output": [1, 1], "correct_output": 1}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 31091, "output": [1, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 47049, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 91655, "output": [5, 1], "correct_output": 225}
+{"success": false, "error": "", "input": 86275, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 1061, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 89889, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 6428, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 442, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 37512, "output": [1, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 30162, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 46179, "output": [9, 1], "correct_output": 63}
+{"success": false, "error": "", "input": 24920, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 88835, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 86400, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 17927, "output": [7, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 82242, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 40492, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 4373, "output": [3, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 95991, "output": [1, 9, 9], "correct_output": 3645}
+{"success": false, "error": "", "input": 38680, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 54460, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 17322, "output": [3, 1], "correct_output": 21}
+{"success": false, "error": "", "input": 47953, "output": [3, 9], "correct_output": 945}
+{"success": false, "error": "", "input": 35720, "output": [7, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 33681, "output": [1, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 44396, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 61385, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 60, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 29571, "output": [1, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 94924, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 52089, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 11836, "output": [3, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 1824, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 16199, "output": [9, 1], "correct_output": 81}
+{"success": false, "error": "", "input": 88188, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 34362, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 83695, "output": [5, 3], "correct_output": 135}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 61797, "output": [7, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 73584, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 79964, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 8285, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 60852, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 15292, "output": [9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 4877, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 64569, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 30775, "output": [5, 7], "correct_output": 735}
+{"success": false, "error": "", "input": 17781, "output": [1, 7], "correct_output": 49}
+{"success": false, "error": "", "input": 48629, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 97404, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 70804, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 97290, "output": [9, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 54379, "output": [9, 3], "correct_output": 945}
+{"success": false, "error": "", "input": 64139, "output": [9, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 36666, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 48566, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 58287, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 89873, "output": [3, 9], "correct_output": 189}
+{"success": false, "error": "", "input": 84518, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 52184, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 16011, "output": [1, 1], "correct_output": 1}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 86870, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 83819, "output": [9, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 2799, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 43713, "output": [3, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 16505, "output": [5, 1], "correct_output": 25}
+{"success": false, "error": "", "input": 26896, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 72641, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 28305, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 30539, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 19340, "output": [3, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 78116, "output": [1, 7], "correct_output": 7}
+{"success": false, "error": "", "input": 18964, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 22871, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 3379, "output": [9, 3], "correct_output": 567}
+{"success": false, "error": "", "input": 46955, "output": [5, 9], "correct_output": 225}
+{"success": false, "error": "", "input": 31186, "output": [1, 3], "correct_output": 3}
+{"success": false, "error": "", "input": 2068, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 6868, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 55176, "output": [7, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 97735, "output": [5, 7, 9], "correct_output": 6615}
+{"success": false, "error": "", "input": 58756, "output": [5, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 67271, "output": [1, 7], "correct_output": 49}
+{"success": false, "error": "", "input": 59245, "output": [5, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 80623, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 86363, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 60036, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 4082, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 62781, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 55872, "output": [7, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 64260, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 58138, "output": [3, 5], "correct_output": 15}
+{"success": false, "error": "", "input": 10589, "output": [9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 19442, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 36046, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 76724, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 42622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 78301, "output": [1, 7], "correct_output": 21}
+{"success": false, "error": "", "input": 59469, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 56387, "output": [7, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 91983, "output": [3, 1], "correct_output": 243}
+{"success": false, "error": "", "input": 85814, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 72264, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 28183, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 29949, "output": [9, 9], "correct_output": 729}
+{"success": false, "error": "", "input": 59441, "output": [1, 5], "correct_output": 45}
+{"success": false, "error": "", "input": 95631, "output": [1, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 55936, "output": [3, 5], "correct_output": 675}
+{"success": false, "error": "", "input": 33408, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 20006, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 62163, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 11188, "output": [1, 1], "correct_output": 1}
+{"success": false, "error": "", "input": 12656, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 48843, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 72924, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 73608, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 87819, "output": [9, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 46346, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 98341, "output": [1, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 94510, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 37700, "output": [7, 3], "correct_output": 147}
+{"success": false, "error": "", "input": 46090, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 66507, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 86079, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 14184, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 72910, "output": [1, 7], "correct_output": 63}
+{"success": false, "error": "", "input": 99956, "output": [5, 9], "correct_output": 3645}
+{"success": false, "error": "", "input": 29643, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 73526, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 88470, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 3441, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 86223, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 35054, "output": [5, 3], "correct_output": 75}
+{"success": false, "error": "", "input": 35818, "output": [1, 3], "correct_output": 15}
+{"success": false, "error": "", "input": 40499, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 220, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 18776, "output": [7, 1], "correct_output": 49}
+{"success": false, "error": "", "input": 52531, "output": [1, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 97120, "output": [1, 9], "correct_output": 63}
+{"success": false, "error": "", "input": 4018, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 69531, "output": [1, 5], "correct_output": 135}
+{"success": false, "error": "", "input": 55028, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 20631, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 94581, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 74395, "output": [5, 3], "correct_output": 945}
+{"success": false, "error": "", "input": 6895, "output": [5], "correct_output": 45}
+{"success": false, "error": "", "input": 98885, "output": [5], "correct_output": 45}
+{"success": false, "error": "", "input": 88338, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 58079, "output": [9, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 63656, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 54287, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 98951, "output": [1, 9], "correct_output": 405}
+{"success": false, "error": "", "input": 45242, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 37125, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 77743, "output": [3, 7], "correct_output": 1029}
+{"success": false, "error": "", "input": 87442, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 28903, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 78554, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 26794, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 27686, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 33491, "output": [1, 3], "correct_output": 81}
+{"success": false, "error": "", "input": 15726, "output": [7, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 97912, "output": [1, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 16932, "output": [3, 1], "correct_output": 27}
+{"success": false, "error": "", "input": 92231, "output": [1, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 73233, "output": [3, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 46421, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 97260, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 2456, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 10205, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 75465, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 53008, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 54747, "output": [7, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 53088, "output": [3], "correct_output": 15}
+{"success": false, "error": "", "input": 42568, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 81018, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 90388, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 13875, "output": [5, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 77184, "output": [1, 7], "correct_output": 49}
+{"success": false, "error": "", "input": 10308, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 40668, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 29041, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 22037, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 82998, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 66840, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 45793, "output": [3, 7], "correct_output": 945}
+{"success": false, "error": "", "input": 84599, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 30968, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 33550, "output": [5, 3], "correct_output": 225}
+{"success": false, "error": "", "input": 78957, "output": [7, 9], "correct_output": 2205}
+{"success": false, "error": "", "input": 99503, "output": [3, 9], "correct_output": 1215}
+{"success": false, "error": "", "input": 23218, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 622, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 98886, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 75952, "output": [5, 5], "correct_output": 1575}
+{"success": false, "error": "", "input": 73989, "output": [9, 3], "correct_output": 1701}
+{"success": false, "error": "", "input": 81857, "output": [7, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 82210, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 57640, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 57961, "output": [1, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 36002, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 46129, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 40685, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 4929, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 37627, "output": [7, 3], "correct_output": 147}
+{"success": false, "error": "", "input": 11835, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 66462, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 76064, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 96851, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 58947, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 42143, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 65715, "output": [5, 7], "correct_output": 175}
+{"success": false, "error": "", "input": 8109, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 45015, "output": [5, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 40, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 22617, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 92749, "output": [9, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 57595, "output": [5, 5, 5], "correct_output": 7875}
+{"success": false, "error": "", "input": 79928, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 48870, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 422, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 44350, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 6863, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 84843, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 43213, "output": [3, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 88916, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 33029, "output": [9, 3], "correct_output": 81}
+{"success": false, "error": "", "input": 86057, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 4642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 43694, "output": [9], "correct_output": 27}
+{"success": false, "error": "", "input": 86980, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 45851, "output": [1, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 85990, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 51374, "output": [7, 1], "correct_output": 105}
+{"success": false, "error": "", "input": 92908, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 84343, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 16750, "output": [5, 1], "correct_output": 35}
+{"success": false, "error": "", "input": 96832, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 2424, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 84675, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 66648, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 47526, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 28074, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 63736, "output": [3, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 18030, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 38770, "output": [7, 3], "correct_output": 147}
+{"success": false, "error": "", "input": 13256, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 70748, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 69013, "output": [3, 9], "correct_output": 27}
+{"success": false, "error": "", "input": 44140, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 81006, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 49377, "output": [7, 3], "correct_output": 1323}
+{"success": false, "error": "", "input": 23703, "output": [3, 3], "correct_output": 63}
+{"success": false, "error": "", "input": 81885, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 21697, "output": [7, 1], "correct_output": 63}
+{"success": false, "error": "", "input": 5726, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 88652, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 58222, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 98617, "output": [7, 9], "correct_output": 63}
+{"success": false, "error": "", "input": 58841, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 31348, "output": [3, 3], "correct_output": 9}
+{"success": false, "error": "", "input": 61474, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 80, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 74766, "output": [7], "correct_output": 49}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 50052, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 54874, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 79254, "output": [5, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 32768, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 62991, "output": [1, 9], "correct_output": 81}
+{"success": false, "error": "", "input": 72684, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 442, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 16341, "output": [1, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 21012, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 67286, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 57340, "output": [3, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 29102, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 45820, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 422, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 65799, "output": [9, 7], "correct_output": 2835}
+{"success": false, "error": "", "input": 50615, "output": [5, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 220, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 41770, "output": [7, 1], "correct_output": 49}
+{"success": false, "error": "", "input": 666, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 43947, "output": [7, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 18035, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 61925, "output": [5, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 18191, "output": [1, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 61487, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 688, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 20, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 19597, "output": [7, 5, 1], "correct_output": 2835}
+{"success": false, "error": "", "input": 95320, "output": [3, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 55476, "output": [7, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 37762, "output": [7, 3], "correct_output": 147}
+{"success": false, "error": "", "input": 15970, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 55027, "output": [7, 5], "correct_output": 175}
+{"success": false, "error": "", "input": 81633, "output": [3, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 14530, "output": [3, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 65513, "output": [3, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 2154, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 75372, "output": [7, 5], "correct_output": 735}
+{"success": false, "error": "", "input": 18818, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 205, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 31531, "output": [1, 5, 3], "correct_output": 45}
+{"success": false, "error": "", "input": 24551, "output": [1, 5], "correct_output": 25}
+{"success": false, "error": "", "input": 11221, "output": [1, 1], "correct_output": 1}
+{"success": false, "error": "", "input": 47265, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 68951, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 66535, "output": [5, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 51177, "output": [7, 1, 5], "correct_output": 245}
+{"success": false, "error": "", "input": 5706, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 48929, "output": [9], "correct_output": 81}
+{"success": false, "error": "", "input": 2128, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 8855, "output": [5], "correct_output": 25}
+{"success": false, "error": "", "input": 96068, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 13587, "output": [7, 3], "correct_output": 105}
+{"success": false, "error": "", "input": 96362, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 17486, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 71567, "output": [7, 1], "correct_output": 245}
+{"success": false, "error": "", "input": 84252, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 89742, "output": [7], "correct_output": 63}
+{"success": false, "error": "", "input": 91146, "output": [1, 9], "correct_output": 9}
+{"success": false, "error": "", "input": 23891, "output": [1, 3], "correct_output": 27}
+{"success": false, "error": "", "input": 8270, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 59988, "output": [9, 5], "correct_output": 405}
+{"success": false, "error": "", "input": 26422, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 26144, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 41365, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 8246, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 71176, "output": [7, 1], "correct_output": 49}
+{"success": false, "error": "", "input": 4799, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 25048, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 6265, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 43506, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 48237, "output": [7], "correct_output": 21}
+{"success": false, "error": "", "input": 52431, "output": [1, 5], "correct_output": 15}
+{"success": false, "error": "", "input": 50678, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 24486, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 65211, "output": [1, 5], "correct_output": 5}
+{"success": false, "error": "", "input": 68062, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 10828, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 10345, "output": [5, 1], "correct_output": 15}
+{"success": false, "error": "", "input": 23652, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 42101, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 42981, "output": [1], "correct_output": 9}
+{"success": false, "error": "", "input": 40173, "output": [3, 1], "correct_output": 21}
+{"success": false, "error": "", "input": 94065, "output": [5], "correct_output": 45}
+{"success": false, "error": "", "input": 90408, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 58606, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 46210, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 57008, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 7518, "output": [1, 7], "correct_output": 35}
+{"success": false, "error": "", "input": 83560, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 67251, "output": [1, 7], "correct_output": 35}
+{"success": false, "error": "", "input": 89051, "output": [1, 9], "correct_output": 45}
+{"success": false, "error": "", "input": 4081, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 79635, "output": [5, 9], "correct_output": 945}
+{"success": false, "error": "", "input": 57432, "output": [3, 5], "correct_output": 105}
+{"success": false, "error": "", "input": 8812, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 84562, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 50181, "output": [1, 5], "correct_output": 5}
+{"success": false, "error": "", "input": 20, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 89006, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 48623, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 10077, "output": [7, 1], "correct_output": 49}
+{"success": false, "error": "", "input": 69397, "output": [7, 3], "correct_output": 1701}
+{"success": false, "error": "", "input": 41207, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 32717, "output": [7, 7], "correct_output": 147}
+{"success": false, "error": "", "input": 20, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 65410, "output": [1], "correct_output": 5}
+{"success": false, "error": "", "input": 73619, "output": [9, 3], "correct_output": 189}
+{"success": false, "error": "", "input": 34116, "output": [1, 3], "correct_output": 3}
+{"success": false, "error": "", "input": 28124, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 64382, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 17790, "output": [9, 7], "correct_output": 441}
+{"success": false, "error": "", "input": 59250, "output": [5, 5], "correct_output": 225}
+{"success": false, "error": "", "input": 93502, "output": [5, 9], "correct_output": 135}
+{"success": false, "error": "", "input": 11506, "output": [5, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 41889, "output": [9], "correct_output": 9}
+{"success": false, "error": "", "input": 93000, "output": [3], "correct_output": 27}
+{"success": false, "error": "", "input": 71063, "output": [3, 7], "correct_output": 21}
+{"success": false, "error": "", "input": 39315, "output": [5, 3, 3], "correct_output": 405}
+{"success": false, "error": "", "input": 93298, "output": [9, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 91779, "output": [9, 7, 9], "correct_output": 3969}
+{"success": false, "error": "", "input": 47381, "output": [1, 7], "correct_output": 21}
+{"success": false, "error": "", "input": 15907, "output": [7, 5], "correct_output": 315}
+{"success": false, "error": "", "input": 888, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 64752, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 72616, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 61263, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 72305, "output": [5, 7], "correct_output": 105}
+{"success": false, "error": "", "input": 11300, "output": [3, 1], "correct_output": 3}
+{"success": false, "error": "", "input": 52187, "output": [7, 5], "correct_output": 35}
+{"success": false, "error": "", "input": 442, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 53843, "output": [3, 5], "correct_output": 45}
+{"success": false, "error": "", "input": 75353, "output": [3, 3, 7], "correct_output": 1575}
+{"success": false, "error": "", "input": 41553, "output": [3, 5], "correct_output": 75}
+{"success": false, "error": "", "input": 58979, "output": [9, 9], "correct_output": 2835}
+{"success": false, "error": "", "input": 67811, "output": [1, 7], "correct_output": 7}
+{"success": false, "error": "", "input": 72260, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 23850, "output": [5], "correct_output": 15}
+{"success": false, "error": "", "input": 16912, "output": [1, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 7263, "output": [3], "correct_output": 21}
+{"success": false, "error": "", "input": 67908, "output": [9], "correct_output": 63}
+{"success": false, "error": "", "input": 21581, "output": [1, 1], "correct_output": 5}
+{"success": false, "error": "", "input": 92973, "output": [3, 9], "correct_output": 1701}
+{"success": false, "error": "", "input": 68012, "output": [1], "correct_output": 1}
+{"success": false, "error": "", "input": 10336, "output": [3, 1], "correct_output": 9}
+{"success": false, "error": "", "input": 83238, "output": [3], "correct_output": 9}
+{"success": false, "error": "", "input": 200, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 39691, "output": [1, 9], "correct_output": 243}
+{"success": false, "error": "", "input": 12245, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 22103, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 76106, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 86341, "output": [1], "correct_output": 3}
+{"success": false, "error": "", "input": 79316, "output": [1, 9], "correct_output": 189}
+{"success": false, "error": "", "input": 73874, "output": [7, 7], "correct_output": 147}
+{"success": false, "error": "", "input": 3718, "output": [1, 3], "correct_output": 21}
+{"success": false, "error": "", "input": 84076, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 34688, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 74991, "output": [1, 9], "correct_output": 567}
+{"success": false, "error": "", "input": 83753, "output": [3, 7], "correct_output": 315}
+{"success": false, "error": "", "input": 82203, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 84136, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 642, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 89783, "output": [3, 9], "correct_output": 189}
+{"success": false, "error": "", "input": 59446, "output": [9], "correct_output": 45}
+{"success": false, "error": "", "input": 7852, "output": [5], "correct_output": 35}
+{"success": false, "error": "", "input": 54476, "output": [7], "correct_output": 35}
+{"success": false, "error": "", "input": 26741, "output": [1], "correct_output": 7}
+{"success": false, "error": "", "input": 18830, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 94157, "output": [7, 1], "correct_output": 315}
+{"success": false, "error": "", "input": 45268, "output": [5], "correct_output": 5}
+{"success": false, "error": "", "input": 60, "output": [], "correct_output": 0}
+{"success": false, "error": "", "input": 67499, "output": [9, 7], "correct_output": 567}
+{"success": false, "error": "", "input": 41827, "output": [7], "correct_output": 7}
+{"success": false, "error": "", "input": 16059, "output": [9, 1], "correct_output": 45}
+{"success": false, "error": "", "input": 32495, "output": [5, 3], "correct_output": 135}
+{"success": false, "error": "", "input": 6632, "output": [3], "correct_output": 3}
+{"success": false, "error": "", "input": 50351, "output": [1, 3], "correct_output": 75}

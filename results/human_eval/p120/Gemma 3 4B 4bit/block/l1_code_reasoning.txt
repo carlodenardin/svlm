@@ -1,0 +1,7 @@
+```python
+def last_k_sorted(nums, k):
+    # Sort the input list in ascending order
+    sorted_list = sorted(nums)
+    # Return the last k elements from the sorted list
+    return sorted_list[-k:]
+```

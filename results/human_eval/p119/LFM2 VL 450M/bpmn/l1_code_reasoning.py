@@ -1,0 +1,12 @@
+def balanced_list_label(strings):
+    """
+    Determines whether a list is balanced according to:
+    - Balanced if the length of the list equals the number of strings contained in it.
+    - Returns "Return Yes" if balanced, otherwise "Return No".
+    """
+    total_len = len(strings)
+    number_of_strings = sum((1 for item in strings if isinstance(item, str)))
+    if total_len == number_of_strings:
+        return 'Return No'
+    else:
+        return 'Return Yes'

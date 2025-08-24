@@ -1,0 +1,29 @@
+```python
+def smallest_set_with_target(elements, target):
+    # Step 1: sort the elements in descending order
+    sorted_desc = sorted(elements, reverse=True)
+
+    # Step 2: initialize the smallest set
+    smallest_set = []
+
+    # Steps 3-6: iterate and apply the decision rules
+    for x in sorted_desc:
+        if x < target:
+            smallest_set.append(x)
+        elif x == target:
+            if target not in smallest_set:
+                smallest_set.append(target)
+        else:
+            # x > target: skip
+            pass
+
+    # Step 7: ensure the target is included
+    if target not in smallest_set:
+        smallest_set.append(target)
+
+    # Final output: a list with the target at the front, and the rest sorted
+    rest = [e for e in smallest_set if e != target]
+    rest_sorted = sorted(rest)
+    output = [target] + rest_sorted
+    return output
+```

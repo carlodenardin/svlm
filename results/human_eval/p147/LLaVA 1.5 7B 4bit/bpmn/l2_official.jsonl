@@ -1,0 +1,4 @@
+{"success": false, "error": "multiply_counter() missing 1 required positional argument: 'b'", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "multiply_counter() missing 1 required positional argument: 'b'", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "multiply_counter() missing 1 required positional argument: 'b'", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "multiply_counter() missing 1 required positional argument: 'b'", "input": 100, "output": null, "correct_output": 53361}

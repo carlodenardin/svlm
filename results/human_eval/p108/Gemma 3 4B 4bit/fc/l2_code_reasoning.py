@@ -1,0 +1,11 @@
+def contains_palindrome_like(arr):
+    res = 0
+    i = 0
+    while res == 0 and i < len(arr):
+        value = arr[i]
+        digits = [int(ch) for ch in str(value) if ch.isdigit()]
+        digit_sum = sum(digits)
+        if digit_sum > 0:
+            res = 1
+        i += 1
+    return res

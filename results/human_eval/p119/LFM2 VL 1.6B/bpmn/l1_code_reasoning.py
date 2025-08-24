@@ -1,0 +1,26 @@
+def isBalanced(lst):
+    """
+    Check if all consecutive elements in lst are the same.
+    Returns True if all elements are equal, False otherwise.
+    """
+    for i in range(len(lst) - 1):
+        if lst[i] != lst[i + 1]:
+            return False
+    return True
+
+def balanced_strings_algorithm(strings):
+    """
+    Implements the described algorithm:
+    1) Receive a list of strings (each presumably of length 2).
+    2) For each string, concatenate it with itself (s + s).
+    3) Check if the resulting list is balanced (all elements equal).
+       Return 'Yes' if balanced, otherwise 'No'.
+    """
+    if not isinstance(strings, list):
+        raise TypeError("Input must be a list of strings.")
+    
+    # Step 2: Concatenate each string with itself
+    concatenated = [s + s for s in strings]
+    
+    # Step 3: Check balance on the concatenated list
+    return "Yes" if isBalanced(concatenated) else "No"

@@ -1,0 +1,16 @@
+```python
+def is_prime(n: int) -> bool:
+    # Step 1: n <= 1 -> not prime
+    if n <= 1:
+        return False
+    # Step 2: n <= 3 -> prime (2 and 3)
+    if n <= 3:
+        return True
+    # Step 3: check divisibility from 2 to sqrt(n) inclusive
+    limit = int(n ** 0.5)
+    for i in range(2, limit + 1):
+        if n % i == 0:
+            return False
+    # Step 4: no divisors found -> prime
+    return True
+```

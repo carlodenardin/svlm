@@ -1,0 +1,18 @@
+```python
+def calculate_sum_of_digits(n):
+    """
+    Calculate the sum of digits greater than 0 for each value in a list of integers.
+
+    Args:
+        n (list): A list of integers.
+
+    Returns:
+        list: A list of integers with the count of sum of digits greater than 0 for each value in the original list.
+    """
+    count = []
+    for num in n:
+        sum_of_digits = sum(int(digit) for digit in str(num))
+        if sum_of_digits > 0:
+            count.append(sum_of_digits)
+    return count
+```

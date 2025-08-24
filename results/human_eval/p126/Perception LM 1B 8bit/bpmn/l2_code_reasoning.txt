@@ -1,0 +1,29 @@
+```python
+def is_sorted_and_no_duplicates(input_list):
+    """
+    Checks if a list of integers is sorted and does not contain numbers that appear more than twice.
+
+    Args:
+        input_list (list): A list of integers.
+
+    Returns:
+        bool: True if the list is sorted and does not contain numbers that appear more than twice, False otherwise.
+    """
+    # If the list is empty, according to the described behavior, return False
+    if not input_list:
+        return False
+
+    # Check if the list is sorted in non-decreasing order
+    for i in range(len(input_list) - 1):
+        if input_list[i] > input_list[i + 1]:
+            return False
+
+    # Check if any number appears more than twice
+    from collections import Counter
+    counts = Counter(input_list)
+    for c in counts.values():
+        if c > 2:
+            return False
+
+    return True
+```

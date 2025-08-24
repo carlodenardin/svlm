@@ -1,0 +1,12 @@
+```python
+def computeProduct(n):
+    if n % 2 != 0:
+        product = 1
+        for digit in str(n):
+            d = int(digit)
+            if d % 2 != 0:
+                product *= d
+        return product
+    else:
+        return 0
+```

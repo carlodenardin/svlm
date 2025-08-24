@@ -1,0 +1,8 @@
+The algorithm's purpose is to convert an integer into a binary string representation. The input data required is an integer, and the main logical flow is as follows:
+
+1. Receive an integer as input (0 ≤ n).
+2. Sum the digits of the input integer.
+3. Convert the summed digits into a binary string.
+4. Return the binary string as the output.
+
+The expected output is a binary string representation of the input integer.

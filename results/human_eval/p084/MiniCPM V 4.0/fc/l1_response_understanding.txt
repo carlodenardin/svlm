@@ -1,0 +1,19 @@
+The algorithm's purpose is to convert an integer input into its binary representation as a string.
+
+**Input:**
+- An integer `n` which needs to be converted to binary.
+
+**Main Logical Flow:**
+1. **Start**: Begin the process.
+2. **Input n as integer**: Take the user or provided integer value and store it in a variable named `n`.
+3. **Sum the digits of n and convert it to binary**: 
+   - Initialize an empty string to hold the binary result.
+   - Use a loop to iterate through each digit of `n` by repeatedly dividing `n` by 2 and storing remainders:
+     - Calculate the remainder when `n` is divided by 2 (`remainder`).
+     - Append the `remainder` to the binary string.
+     - Update `n` with the quotient obtained from the division (`n = n // 2`).
+4. **Return result as string**: Once all digits have been processed, return the constructed binary string.
+5. **End**: Conclude the process.
+
+**Expected Output:**
+- The output will be a string representing the binary equivalent of the given integer `n`.

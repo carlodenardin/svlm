@@ -1,0 +1,57 @@
+### Algorithm Overview
+
+The algorithm is designed to calculate the sum of a variable `n` and the result of a mathematical expression involving `n`. The expression is `sum = 0; n = n/10; res = str(n) + res`. The algorithm takes an integer `n` as input and returns the result of the expression.
+
+### Input Data
+
+- An integer `n`
+
+### Main Logical Flow
+
+1. **Receive an integer `n`**: The algorithm starts by receiving an integer `n` as input.
+
+2. **Initialize two variables: sum = 0; res = ""**: The algorithm initializes two variables, `sum` and `res`, to 0 and an empty string, respectively.
+
+3. **Check if `n` is greater than 0**: The algorithm checks if `n` is greater than 0.
+
+4. **If `n` is greater than 0**:
+   - **Calculate `sum`**: The algorithm calculates `sum` by adding `n` to itself `n/10` times.
+   - **Update `res`**: The algorithm updates `res` by concatenating the string representation of `n` with the current value of `res`.
+   - **Return `res`**: The algorithm returns the final value of `res`.
+
+5. **If `n` is not greater than 0**:
+   - **Return `res`**: The algorithm returns the final value of `res`.
+
+### Expected Output
+
+- The algorithm returns the result of the expression `sum = 0; n = n/10; res = str(n) + res`.
+
+### Example
+
+- If `n = 10`, the algorithm calculates `sum` as `10/10 = 1` and updates `res` as `"10"`.
+- The algorithm returns `"10"`.
+
+### Pseudocode
+
+```
+function calculate_sum(n):
+    sum = 0
+    res = ""
+    if n > 0:
+        sum = n + n/10
+        res = str(n) + res
+    return res
+```
+
+### Implementation
+
+```python
+def calculate_sum(n):
+    sum = 0
+    res = ""
+    if n > 0:
+        sum = n + n // 10
+        res = str(n) + res
+    return res
+```
+

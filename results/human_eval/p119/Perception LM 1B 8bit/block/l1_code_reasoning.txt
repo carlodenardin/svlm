@@ -1,0 +1,22 @@
+```python
+def balance_by_concatenation(strings):
+    if not isinstance(strings, (list, tuple)) or len(strings) != 2:
+        raise ValueError("Input must be a list or tuple of two strings.")
+    a, b = strings
+
+    def is_balanced(s: str) -> bool:
+        bal = 0
+        for ch in s:
+            if ch == '(':
+                bal += 1
+            elif ch == ')':
+                bal -= 1
+                if bal < 0:
+                    return False
+        return bal == 0
+
+    if is_balanced(a + b) or is_balanced(b + a):
+        return "Yes"
+    else:
+        return "No"
+```

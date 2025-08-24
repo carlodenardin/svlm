@@ -1,0 +1,22 @@
+```python
+def increment_odd_by_one(n: int) -> int:
+    # If the input is odd, increment by 1; otherwise, return as is.
+    if n % 2 != 0:
+        return n + 1
+    return n
+
+def main():
+    import sys
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    try:
+        n = int(data[0])
+    except ValueError:
+        return
+    result = increment_odd_by_one(n)
+    print(result)
+
+if __name__ == "__main__":
+    main()
+```

@@ -1,0 +1,4 @@
+{"success": false, "error": "'int' object has no attribute 'lower'", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "'int' object has no attribute 'lower'", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "'int' object has no attribute 'lower'", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "'int' object has no attribute 'lower'", "input": 100, "output": null, "correct_output": 53361}

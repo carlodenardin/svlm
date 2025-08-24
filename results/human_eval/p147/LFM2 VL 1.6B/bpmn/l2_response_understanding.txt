@@ -1,0 +1,35 @@
+### Algorithm Implementation Overview
+
+The algorithm is designed to find the greatest common divisor (GCD) of two integers, \(a\) and \(b\), using the Euclidean algorithm. The Euclidean algorithm is an efficient method for computing the GCD of two numbers, based on the principle that the GCD of two numbers also divides their difference.
+
+#### Input Data Required
+- Two integers \(a\) and \(b\), where \(a \geq b\).
+
+#### Main Logical Flow
+1. **Initialization**: Start by initializing a variable `count` to 0. This variable will be used to keep track of the number of iterations performed in the loop.
+2. **Iteration**: While \(a \neq 0\):
+   - Increment `count` by 1.
+   - Update \(a\) to \(b\) and \(b\) to \(a \% b\). This step is based on the Euclidean algorithm, where \(a\) is replaced by \(b\) and \(b\) is replaced by the remainder of \(a\) divided by \(b\).
+3. **Termination**: Once \(a\) becomes 0, the loop terminates. At this point, `count` holds the number of iterations performed, which is the number of steps taken to find the GCD.
+
+#### Expected Output
+- The output is the value of `count`, which represents the number of steps taken to find the GCD of the two input integers.
+
+#### Example
+Given integers \(a = 48\) and \(b = 18\):
+- Initialization: `count = 0`
+- Iteration 1: `count = 1`, `a = 18`, `b = 48 % 18 = 12`
+- Iteration 2: `count = 2`, `a = 12`, `b = 18 % 12 = 6`
+- Iteration 3: `count = 3`, `a = 6`, `b = 12 % 6 = 0`
+- Termination: `count = 3`
+
+The algorithm terminates after 3 iterations, indicating that the GCD of 48 and 18 is 6.
+
+### Pseudocode
+```plaintext
+function gcd(a, b):
+    count = 0
+    while a!= 0:
+        count = count + 1
+        a = b
+        b = a

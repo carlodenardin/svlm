@@ -1,0 +1,28 @@
+Overview:
+The algorithm is designed to find the greatest common divisor (GCD) of two integers. It uses the Euclidean algorithm, which repeatedly replaces the larger number with the remainder of the division of the two numbers until the remainder is zero. The last non-zero remainder is the GCD.
+
+Input Data:
+The algorithm requires two integers as input.
+
+Main Logical Flow:
+1. Initialize i to 1.
+2. While i is less than the second integer:
+   a. Increment i by 1.
+   b. Calculate the remainder of the first integer divided by the second integer.
+   c. If the remainder is zero, return the second integer as the GCD.
+   d. Otherwise, set i to the remainder.
+3. If the loop completes without finding a zero remainder, return the first integer as the GCD.
+
+Expected Output:
+The algorithm returns the greatest common divisor of the two input integers.
+
+Implementation:
+```
+function gcd(a, b):
+    while (b!= 0):
+        temp = b
+        b = a % b
+        a = temp
+    return a
+```
+This implementation follows the main logical flow described above, using a while loop to iterate until the second integer is reached. The remainder is calculated using the modulo operator, and the loop continues until the remainder is zero. If the loop completes without finding a zero remainder, the first integer is returned as the GCD.

@@ -1,0 +1,17 @@
+import sys
+
+def solve():
+    data = sys.stdin.read().strip().split()
+    if not data:
+        return
+    n = int(data[0])
+    A = [i * i - i + 1 for i in range(1, n + 1)]
+    count = 0
+    for i in range(n):
+        ai = A[i]
+        for j in range(i + 1, n):
+            sij = ai + A[j]
+            for k in range(j + 1, n):
+                if (sij + A[k]) % 3 == 0:
+                    count += 1
+    print(count)

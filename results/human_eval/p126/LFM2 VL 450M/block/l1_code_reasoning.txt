@@ -1,0 +1,26 @@
+```python
+from typing import List
+
+def verify_list_condition(nums: List[int], target: int) -> bool:
+    # 2. Check if the list is sorted in ascending order (non-decreasing)
+    sorted_ok = True
+    for i in range(1, len(nums)):
+        if nums[i] < nums[i - 1]:
+            sorted_ok = False
+            break
+
+    # 3. Check if the list has no more than one duplicate number
+    duplicates = 0
+    for i in range(1, len(nums)):
+        if nums[i] == nums[i - 1]:
+            duplicates += 1
+            if duplicates > 1:
+                break
+    duplicates_ok = duplicates <= 1
+
+    # 4. Check if the list has the same number as the given number (i.e., contains it)
+    contains_target = target in nums
+
+    # Return True if all conditions are satisfied
+    return sorted_ok and duplicates_ok and contains_target
+```

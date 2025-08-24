@@ -1,0 +1,50 @@
+```python
+def count_even_odd_digits(n: int):
+    """
+    Count even and odd digits in the given integer n.
+    Returns a tuple: (even_count, odd_count)
+    """
+    n = abs(n)
+    even_count = 0
+    odd_count = 0
+
+    if n == 0:
+        # Special case: the digit 0 is even
+        even_count += 1
+        return even_count, odd_count
+
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+        n //= 10
+
+    return even_count, odd_count
+
+
+if __name__ == "__main__":
+    import sys
+
+    # Read input number from command-line argument or stdin
+    if len(sys.argv) > 1:
+        try:
+            number = int(sys.argv[1])
+        except ValueError:
+            print("Invalid input")
+            sys.exit(1)
+    else:
+        data = sys.stdin.read().strip()
+        if not data:
+            print("No input provided")
+            sys.exit(1)
+        try:
+            number = int(data)
+        except ValueError:
+            print("Invalid input")
+            sys.exit(1)
+
+    even_count, odd_count = count_even_odd_digits(number)
+    print(even_count, odd_count)
+```

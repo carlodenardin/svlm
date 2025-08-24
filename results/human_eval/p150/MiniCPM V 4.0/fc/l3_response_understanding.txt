@@ -1,0 +1,21 @@
+The flowchart represents an algorithm designed to find the greatest common divisor (GCD) of two integers using the Euclidean algorithm. Here is a step-by-step description of the implementation:
+
+1. **Input Data**: 
+   - The algorithm requires three integer inputs: `n`, `x`, and `y`. These represent the numbers for which the GCD needs to be calculated.
+
+2. **Initialization**:
+   - Start by initializing `n` with one of the input values, say `n = 1` initially. This value will eventually hold the result once the loop completes.
+
+3. **Main Loop**:
+   - Enter a while loop that continues as long as `n` is not zero.
+   - Inside the loop, check if `i` (initially set to 2) is less than or equal to the square root of `n`. If true, proceed to calculate the remainder of `n` divided by `i` (`n % i`).
+   - If `n % i` equals 0, then `i` has been found such that it divides `n` without leaving a remainder, indicating that `i` is part of the GCD. Set `y` to this value and exit the loop.
+   - If `n % i` does not equal 0, increment `i` by 1 and continue checking subsequent values until the condition in the previous decision point is met.
+
+4. **Output**:
+   - Once the loop exits, return the value stored in `y`, which now holds the GCD of the original pair of integers.
+
+5. **End**:
+   - The process concludes here, returning the computed GCD.
+
+This approach efficiently finds the GCD through repeated division and comparison steps, leveraging mathematical properties to minimize unnecessary computations.

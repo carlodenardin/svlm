@@ -1,0 +1,1 @@
+I’m missing the reasoning text that I’m supposed to translate into code. Please provide the exact reasoning (the step-by-step approach) or share the problem statement and any constraints, and I’ll implement it as a Python function exactly following that reasoning.

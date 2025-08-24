@@ -1,0 +1,27 @@
+```python
+def least_negative_integer(nums):
+    # Step 1: If the input list is empty, return 0
+    if not nums:
+        return 0
+
+    # Step 2: Initialize variables as described
+    res = 0
+    i = 0
+    isNeg = 0
+    n = 0
+
+    # Step 3: Iterate through the list
+    for x in nums:
+        i += 1  # move to the next position
+        if x < 0:
+            isNeg -= abs(x)
+            n += 1
+        else:
+            n += 1
+
+    # Step 4: Decide the return value based on isNeg
+    if isNeg == -1:
+        return n
+    else:
+        return i
+```

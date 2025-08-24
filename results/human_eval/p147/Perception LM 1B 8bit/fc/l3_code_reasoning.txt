@@ -1,0 +1,24 @@
+```python
+def calculate_sum(arr):
+    """
+    Calculate the sum of all elements in a given array.
+
+    Args:
+        arr (list): The input array of integers.
+
+    Returns:
+        int: The computed sum according to the described (flawed) algorithm.
+    """
+    n = len(arr)
+    i = 0
+    count = 0
+    while i < n:
+        # Following the described rule: sum = a[i-1] + a[i]
+        if i == 0:
+            s = arr[-1] + arr[0]  # a[-1] wraps to the last element
+        else:
+            s = arr[i-1] + arr[i]
+        count += s
+        i += 1
+    return count
+```

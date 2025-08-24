@@ -1,0 +1,15 @@
+```python
+def sum_two_numbers(a, b, show_output=True):
+    # Start
+    # Read the first input number
+    first = a
+    # Read the second input number
+    second = b
+    # Calculate the sum of the two input numbers
+    total = first + second
+    # Display the sum
+    if show_output:
+        print(total)
+    # End
+    return total
+```

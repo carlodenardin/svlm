@@ -1,0 +1,10 @@
+```python
+def compute_product():
+    odd_digits = "13579"
+    n = int(input("Enter the number of odd digits: "))
+    product = 0
+    for digit in odd_digits:
+        if digit in str(n):
+            product += 1
+    return product
+```</s>

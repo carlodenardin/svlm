@@ -1,0 +1,127 @@
+```python
+# This module provides a minimal, generic implementation with embedded ASCII flowcharts
+# describing the main body and each function. It is designed as a placeholder when the
+# specific problem reasoning is not provided.
+
+# Flowchart: Main body of the algorithm
+flow_main_body = """
+Flowchart: Main Body
+start -> parse_input -> compute -> format_output -> return
+"""
+
+# Flowchart: Data input container
+flow_input_container = """
+Data Input Container
++-------------------+
+| input_text: str   |
++-------------------+
+"""
+
+# Flowchart: Data output container
+flow_output_container = """
+Data Output Container
++--------------------+
+| result_text: str    |
++--------------------+
+"""
+
+# Flowchart: Final return value
+flow_final_return = """
+Final Return Value
++-----------------+
+| final_string    |
++-----------------+
+"""
+
+# Flowchart: Parse input function
+flow_parse_input = """
+Flowchart: parse_input(s)
+start -> read s -> s = s.strip() -> return s
+"""
+
+# Flowchart: Compute function
+flow_compute = """
+Flowchart: compute(s)
+start -> if s.isdigit() ? -> yes: n = int(s)*2 -> return str(n)
+                               -> no:  t = s[::-1] -> return t
+"""
+
+# Flowchart: Format output function
+flow_format_output = """
+Flowchart: format_output(res)
+start -> final_string = "Result: " + str(res) -> return final_string
+"""
+
+def parse_input(s: str) -> str:
+    """
+    Parse and normalize the input string.
+    Flowchart:
+    flow_parse_input
+    """
+    # Simple normalization: strip whitespace
+    if s is None:
+        return ""
+    return s.strip()
+
+def compute(s: str) -> str:
+    """
+    Compute a result from the parsed string.
+    If the string represents an integer, double it; otherwise reverse the string.
+    Flowchart:
+    flow_compute
+    """
+    if s is None:
+        return ""
+    if s.isdigit():
+        # Double the numeric value
+        n = int(s) * 2
+        return str(n)
+    else:
+        # Reverse non-numeric string
+        return s[::-1]
+
+def format_output(res: str) -> str:
+    """
+    Format the computation result into a final string.
+    Flowchart:
+    flow_format_output
+    """
+    return "Result: " + str(res)
+
+def solve(input_text: str) -> str:
+    """
+    Main entry point that wires the helper functions together.
+    It also contains the main flowchart diagram as a reference.
+    Flowchart: flow_main_body
+    """
+    # Data input container (input_text)
+    _input_container = input_text  # placeholder to reflect input container diagram
+
+    # Step 1: Parse input
+    parsed = parse_input(_input_container)
+
+    # Step 2: Compute result
+    computed = compute(parsed)
+
+    # Step 3: Format output
+    final_output = format_output(computed)
+
+    # Data output container (final_output)
+    _output_container = final_output  # placeholder to reflect output container diagram
+
+    # Return value diagram
+    return final_output
+
+# Simple usage example (not executed on import)
+if __name__ == "__main__":
+    examples = [
+        "  123 ",
+        "hello",
+        "",
+        None  # type: ignore
+    ]
+    for ex in examples:
+        print("Input:", ex)
+        print("Output:", solve(ex if ex is not None else ""))
+        print("-----")
+```

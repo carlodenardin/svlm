@@ -1,0 +1,24 @@
+```python
+def string_balancing(start, end):
+    # Create a list of two strings
+    strings = [start, end]
+
+    # Concatenate the 2 string with both the combinations
+    string1 = strings[0] + strings[1]
+    string2 = strings[0] + strings[1]
+
+    # Check if at least one string is balanced
+    if string1 == string2:
+        return True
+    else:
+        return False
+
+# Example usage:
+if __name__ == "__main__":
+    start = "start"
+    end = "end"
+    if string_balancing(start, end):
+        print("The strings are balanced.")
+    else:
+        print("The strings are not balanced.")
+```

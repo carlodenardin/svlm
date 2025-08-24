@@ -1,0 +1,19 @@
+```python
+import sys,re
+def solve():
+    t=sys.stdin.read().lower()
+    n=list(map(int,re.findall(r'-?\d+',t)))
+    if n and len(n)>=2 and n[0]==len(n)-1:n=n[1:]
+    if 'sum' in t or 'add' in t or 'total' in t:
+        print(sum(n));return
+    if 'product' in t or 'mul' in t:
+        p=1
+        for x in n:p*=x
+        print(p);return
+    if 'min' in t: print(min(n));return
+    if 'max' in t: print(max(n));return
+    if 'mean' in t or 'average' in t:
+        print(sum(n)/len(n));return
+    print(sum(n))
+if __name__=='__main__':solve()
+```

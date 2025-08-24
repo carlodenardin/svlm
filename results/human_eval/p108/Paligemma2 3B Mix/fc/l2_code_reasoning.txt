@@ -1,0 +1,126 @@
+```python
+# This script implements a simple character frequency counter.
+# It follows a minimal, deterministic approach with:
+# - Main algorithm: count frequency of each character (after normalizing to lowercase)
+# - Sub-algorithms: normalization and increment helper
+# - Data structures: a dictionary to hold counts
+# - Final result: the counts dictionary
+# - Test case: a small example to verify the output
+
+# Flowchart: Main body of the algorithm
+main_flowchart = r"""
+Start
+  |
+For each character ch in text
+  |
+Normalize ch to lower-case -> lowered
+  |
+Is lowered in counts?
+  / \
+Yes  No
+ |     \
+Increment  counts[lowered] = 1
+ |     /
+Loop back
+  |
+Return counts
+"""
+
+# Flowchart: Sub-algorithm - Normalize
+normalize_flowchart = r"""
+Input: ch
+Process: return ch.lower()
+Output: lowered
+"""
+
+# Flowchart: Sub-algorithm - Increment
+increment_flowchart = r"""
+Input: counts dict, key
+Process: counts[key] = counts.get(key, 0) + 1
+Output: updated counts
+"""
+
+# Flowchart: Data structures
+data_structures_flowchart = r"""
+Data Structures:
+- counts: dict mapping character (str) -> frequency (int)
+"""
+
+# Flowchart: Final result
+final_result_flowchart = r"""
+Final Result:
+- counts dictionary with per-character frequencies
+"""
+
+# Flowchart: Test case
+test_case_flowchart = r"""
+Test Case:
+text = "Hello, World!"
+Run solve(text)
+Expect: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ',': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1, '!': 1}
+"""
+
+def normalize(ch: str) -> str:
+    """
+    Sub-algorithm: Normalize a character by converting to lowercase.
+    """
+    # Flowchart normalize_flowchart corresponds to this operation
+    return ch.lower()
+
+def increment(counts: dict, key: str) -> None:
+    """
+    Sub-algorithm: Increment the count for a given key in the counts dictionary.
+    """
+    # Flowchart increment_flowchart corresponds to this operation
+    counts[key] = counts.get(key, 0) + 1
+
+def solve(text: str) -> dict:
+    """
+    Main algorithm:
+    - Initialize an empty dictionary
+    - For each character in text, normalize and increment its count
+    - Return the final counts dictionary
+    """
+    # Flowchart main_flowchart corresponds to this function's logic
+    counts = {}
+    for ch in text:
+        lowered = normalize(ch)
+        increment(counts, lowered)
+    return counts
+
+def print_flowcharts() -> None:
+    """
+    Utility to print all flowcharts describing the algorithm and data structures.
+    """
+    print("Flowchart: Main body of the algorithm")
+    print(main_flowchart)
+    print("\nFlowchart: Sub-algorithm - Normalize")
+    print(normalize_flowchart)
+    print("\nFlowchart: Sub-algorithm - Increment")
+    print(increment_flowchart)
+    print("\nFlowchart: Data structures used")
+    print(data_structures_flowchart)
+    print("\nFlowchart: Final result")
+    print(final_result_flowchart)
+    print("\nFlowchart: Test case")
+    print(test_case_flowchart)
+
+def run_test() -> None:
+    """
+    Test case that verifies the algorithm's output for a known input.
+    """
+    text = "Hello, World!"
+    result = solve(text)
+    expected = {
+        'h': 1, 'e': 1, 'l': 3, 'o': 2, ',': 1, ' ': 1,
+        'w': 1, 'r': 1, 'd': 1, '!': 1
+    }
+    print("Test result:", result)
+    print("Expected   :", expected)
+    print("Pass       :", result == expected)
+
+if __name__ == "__main__":
+    print_flowcharts()
+    print("\nRunning test case...\n")
+    run_test()
+```

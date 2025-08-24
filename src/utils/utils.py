@@ -72,7 +72,7 @@ def creare_report_excel(cartella_base):
 
     for root, dirs, files in os.walk(cartella_base):
         for nome_file in files:
-            if nome_file.endswith('.jsonl') and "reasoning":
+            if nome_file.endswith('.jsonl') and "generated" and not "reasoning":
                 percorso_completo = os.path.join(root, nome_file)
                 
                 try:

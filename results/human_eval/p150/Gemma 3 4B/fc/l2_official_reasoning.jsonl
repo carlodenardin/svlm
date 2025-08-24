@@ -1,0 +1,10 @@
+{"success": false, "error": "", "input": [7, 34, 12], "output": 2, "correct_output": 34}
+{"success": true, "error": "", "input": [15, 8, 5], "output": 5, "correct_output": 5}
+{"success": false, "error": "", "input": [3, 33, 5212], "output": 2, "correct_output": 33}
+{"success": false, "error": "", "input": [1259, 3, 52], "output": 35, "correct_output": 3}
+{"success": false, "error": "", "input": [7919, -1, 12], "output": 88, "correct_output": -1}
+{"success": true, "error": "", "input": [3609, 1245, 583], "output": 583, "correct_output": 583}
+{"success": true, "error": "", "input": [91, 56, 129], "output": 129, "correct_output": 129}
+{"success": true, "error": "", "input": [6, 34, 1234], "output": 1234, "correct_output": 1234}
+{"success": true, "error": "", "input": [1, 2, 0], "output": 0, "correct_output": 0}
+{"success": true, "error": "", "input": [2, 2, 0], "output": 2, "correct_output": 2}

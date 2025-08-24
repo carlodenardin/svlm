@@ -1,0 +1,40 @@
+```python
+def has_digit_sum_divisible_by_10(arr):
+    """
+    Checks if the sum of digits of any number in the array is divisible by 10.
+
+    Args:
+        arr (list): A list of integers.
+
+    Returns:
+        bool: True if there exists a number in the array whose digit sum is divisible by 10,
+              False otherwise.
+    """
+    res = 0
+    i = 0
+    while i < len(arr):
+        n = arr[i]
+        digits = []
+        isNeg = 0
+        if n < 0:
+            isNeg = 1
+            n = abs(n)
+        
+        if n < 0:
+            isNeg = -1
+        
+        n = n // 10
+        
+        while n > 0:
+            digits.append(n % 10)
+            n //= 10
+        
+        sum_digits = sum(digits)
+        
+        if sum_digits > 0 and sum_digits % 10 == 0:
+            res = 1
+        
+        i += 1
+    
+    return res
+```

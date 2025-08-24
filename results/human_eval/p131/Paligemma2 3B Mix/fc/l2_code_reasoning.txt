@@ -1,0 +1,8 @@
+I’m missing the specific reasoning text you want me to translate into code. Please provide:
+
+- The exact problem statement or the task you want the Python function to solve.
+- The reasoning steps produced by the small VLM (as plain text) that I should implement verbatim.
+
+Once I have that, I will output:
+- A Python function that follows the given reasoning exactly (no changes),
+- The required flowchart diagram rendered as ASCII at the bottom of the page.

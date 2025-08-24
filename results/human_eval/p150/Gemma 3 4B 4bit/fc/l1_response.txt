@@ -1,0 +1,18 @@
+```python
+def is_prime(n):
+    """
+    Checks if a number is a prime number.
+
+    Args:
+        n: An integer.
+
+    Returns:
+        True if n is a prime number, False otherwise.
+    """
+    if n <= 1:
+        return False
+    for x in range(2, int(n**0.5) + 1):
+        if n % x == 0:
+            return False
+    return True
+```

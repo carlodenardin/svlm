@@ -1,0 +1,4 @@
+```python
+def list_and_klist_elements():
+    # Your code here
+```</s>

@@ -1,0 +1,15 @@
+The flowchart outlines an algorithm designed to process a given integer by counting the number of even and odd digits. Here is a step-by-step implementation:
+
+1. **Start**: The process begins at the start node.
+2. **Receive Input**: An integer value is received as input.
+3. **Initialize Variables**: Set up variables to store counts for even and odd digits (e.g., `even_count` and `odd_count`).
+4. **Iterate Through Digits**: Use a loop to iterate through each digit of the integer.
+   - Convert the integer into a string or use modulo operations to extract individual digits.
+5. **Count Even and Odd Digits**: For each digit extracted:
+   - Check if the digit is even or odd using modulus (`%`) with 2.
+   - Increment the respective count variable based on whether the digit is even or odd.
+6. **Create Output Tuple**: After processing all digits, create a tuple containing the counts of even and odd digits.
+7. **Return Result**: Return the tuple as the output.
+8. **End**: The process ends here.
+
+This structured approach ensures that every aspect of the problem is addressed systematically from receiving input to producing the desired output.

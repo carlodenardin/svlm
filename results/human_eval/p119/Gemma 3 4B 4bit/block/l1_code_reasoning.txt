@@ -1,0 +1,33 @@
+```python
+def check_balanced_concat(strings):
+    """
+    Given a pair of strings, concatenate them and check if the resulting string
+    is balanced with respect to parentheses. Non-parenthesis characters are ignored.
+    Returns "Yes" if balanced, otherwise "No".
+    """
+    if not isinstance(strings, (list, tuple)) or len(strings) != 2:
+        raise ValueError("Input must be a list or tuple of exactly two strings.")
+
+    str1, str2 = strings[0], strings[1]
+    combined_string = str1 + str2
+
+    open_count = 0
+    close_count = 0
+
+    for ch in combined_string:
+        if ch == '(':
+            open_count += 1
+        elif ch == ')':
+            close_count += 1
+        # Other characters are ignored
+
+        # Balance check after processing each character
+        if close_count > open_count:
+            return "No"
+
+    # After processing all characters, check final balance
+    if open_count == close_count:
+        return "Yes"
+    else:
+        return "No"
+```

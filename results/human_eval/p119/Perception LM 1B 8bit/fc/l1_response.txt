@@ -1,0 +1,78 @@
+```python
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at least_one_string is balanced:
+            return "Yes"
+        else:
+            return "No"
+
+def at_least_one_string is balanced():
+    balanced = True
+    for i in range(len(list_of_2_strings)):
+        if list_of_2_strings[i]!= list_of_2_strings[i+1]:
+            balanced = False
+            break
+    return balanced
+
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at_least_one_string is balanced():
+            return "Yes"
+        else:
+            return "No"
+
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at_least_one_string is balanced():
+            return "Yes"
+        else:
+            return "No"
+
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at_least_one_string is balanced():
+            return "Yes"
+        else:
+            return "No"
+
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at_least_one_string is balanced():
+            return "Yes"
+        else:
+            return "No"
+
+def generate_function():
+    start = "Start"
+    list_of_2_strings = "List of 2 strings"
+    concatenated_string = "Concatenate the 2 string with both the combinations"
+    if concatenated_string == "No":
+        return "End"
+    else:
+        if at_least_one_string is balanced():
+```

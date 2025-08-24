@@ -1,0 +1,16 @@
+```python
+def flowchart_algorithm(dividend, divisor):
+    """
+    Implements the described iterative division until zero.
+    - If divisor == 0: return None (specific value for division by zero).
+    - Otherwise: quotient = dividend // divisor
+    - Repeatedly: quotient = quotient // divisor until quotient becomes 0
+    - Return the final quotient (which will be 0 when finished).
+    """
+    if divisor == 0:
+        return None
+    quotient = dividend // divisor
+    while quotient != 0:
+        quotient = quotient // divisor
+    return quotient
+```

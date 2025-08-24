@@ -1,0 +1,21 @@
+```python
+# Caption data capturing the problem description as provided
+CAPTION = """Below you are given the reasoning of a small VLM about how to solve a problem. Your task is to strictly follow this reasoning and translate it into executable Python function, without improving or changing the approach. Output only the code inside python ```python ```/n/n- Include all relevant data from the text in the caption."""
+
+def solve_problem(input_text: str) -> str:
+    """
+    This is a placeholder implementation that adheres to the instruction to strictly
+    follow the described reasoning approach. Since the exact reasoning steps are not
+    provided in this prompt, we return the input text unchanged as the 'solution'.
+    """
+    return input_text
+
+def main():
+    import sys
+    data = sys.stdin.read()
+    solution = solve_problem(data)
+    print(solution)
+
+if __name__ == "__main__":
+    main()
+```

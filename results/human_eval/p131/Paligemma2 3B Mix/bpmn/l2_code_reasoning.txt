@@ -1,0 +1,1 @@
+I’m missing the reasoning block you referenced. Please paste the exact reasoning text (the VLM’s approach) that I should translate into executable Python, including the problem statement, any required function signature, and expected inputs/outputs. Without that content, I can’t generate the code.

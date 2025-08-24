@@ -1,0 +1,11 @@
+def sum_of_digits_in_array(arr):
+    res = 0
+    i = 0
+    while i < len(arr):
+        n = arr[i]
+        digits = [int(ch) for ch in str(n) if ch.isdigit()]
+        total = sum(digits)
+        if total > 0:
+            res += 1
+        i += 1
+    return res

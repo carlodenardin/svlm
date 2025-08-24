@@ -1,0 +1,18 @@
+```python
+def check_string(s: str) -> bool:
+    balance = 0
+    for ch in s:
+        if ch == '(':
+            balance += 1
+        elif ch == ')':
+            balance -= 1
+        # Ignore any other characters
+        if balance < 0:
+            return False
+    return balance == 0
+
+def determine_balance(pair):
+    c1, c2 = pair
+    s = c1 + c2
+    return "Yes" if check_string(s) else "No"
+```

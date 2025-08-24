@@ -1,0 +1,1 @@
+i will generate a code that receives a list of integers and a variable k and returns a list of integers .

@@ -1,0 +1,62 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to calculate the sum of a series of numbers and store it in a string. It takes an integer input `n` and returns the sum as a string.
+
+### Input Data
+* `n`: an integer representing the number of terms in the series
+
+### Main Logical Flow
+#### Step 1: Initialize variables
+* `sum = 0`, `res = ""` (initial sum and result string)
+
+#### Step 2: Calculate the sum
+* `n > 0`: if `n` is greater than 0, calculate the sum using the formula `sum += n % 10, n = n // 10`
+* `n > 0`: if `n` is greater than 0, calculate the sum using the formula `r = sum % 2, sum // = 2, res = str(r) + res`
+
+#### Step 3: Handle edge cases
+* `n = 0`: if `n` is 0, return the result string `res`
+
+#### Step 4: Return the result
+* `res: string` (return the result string)
+
+### Expected Output
+The algorithm returns the sum of the series as a string.
+
+**Implementation**
+```python
+def calculate_sum(n):
+    """
+    Calculate the sum of a series of numbers and return it as a string.
+
+    Args:
+        n (int): The number of terms in the series.
+
+    Returns:
+        str: The sum of the series as a string.
+    """
+    if n <= 0:
+        return "Error: n must be a positive integer"
+
+    sum = 0
+    res = ""
+
+    if n > 0:
+        sum += n % 10
+        n = n // 10
+    else:
+        res = str(n) + res
+
+    if n > 0:
+        r = sum % 2
+        sum // = 2
+        res = str(r) + res
+
+    return res
+
+# Example usage:
+print(calculate_sum(10))  # Output: "1010"
+print(calculate_sum(20))  # Output: "2020"
+```
+Note: This implementation assumes that the input `n` is a positive integer. If `n` is not a positive integer, the algorithm will raise an error.

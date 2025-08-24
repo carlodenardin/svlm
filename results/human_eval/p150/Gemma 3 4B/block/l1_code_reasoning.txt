@@ -1,0 +1,15 @@
+```python
+import math
+
+def prime_result(n: int, x, y):
+    """
+    Return x if n is prime, otherwise return y.
+    """
+    if n <= 1:
+        return y
+    limit = math.isqrt(n)
+    for i in range(2, limit + 1):
+        if n % i == 0:
+            return y
+    return x
+```

@@ -1,0 +1,22 @@
+def analyze_parity_and_remainder(n: int):
+    even = 0
+    odd = 0
+    n = abs(int(n))
+    if n > 0:
+        d = n % 10
+        odd += 1
+    else:
+        return (even, odd)
+    if d % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+    m = n
+    while m != 10 and m > 0:
+        m //= 10
+        d = m % 10
+        if d % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return (even, odd)

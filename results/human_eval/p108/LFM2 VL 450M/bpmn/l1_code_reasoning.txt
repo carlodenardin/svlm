@@ -1,0 +1,12 @@
+```python
+def count_integers(numbers):
+    # Start
+    counter = 0
+    # Loop through each integer in the list
+    for _ in numbers:
+        # If the counter is greater than 0, increment the counter
+        if counter > 0:
+            counter += 1
+    # Return the counter
+    return counter
+```

@@ -1,0 +1,22 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+The algorithm appears to be designed to check if a given integer `n` is a perfect square and also if it's a prime number. It does this by first checking if `n` is equal to 1. If not, it iterates through potential divisors from 2 up to the square root of `n`.  Inside the loop, it checks if the current divisor `i` divides `n` evenly (i.e., `n % i == 0`). If it does, it means `n` is not a prime number. If the loop completes without finding any divisors, then `n` is a prime number.
+
+**2. Input Data Required**
+
+*   `n`: An integer representing the number to be checked for primality and perfect square status.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Start:** The algorithm begins.
+2.  **Initialization:**  Declare three integer variables: `n`, `x`, and `y`.  The value of `n` will be the input number. `x` and `y` are used as placeholders for the "End" points of the flowchart.
+3.  **Check if n = 1:**  The algorithm first checks if `n` is equal to 1.
+    *   If `n == 1`, the algorithm goes to step 6 (End).
+4.  **Initialize i:**  Set `i` to 2.  `i` will be used as the potential divisor.
+5.  **Check if i <= sqrt(n):**  The algorithm checks if `i` (the current divisor) is less than or equal to the square root of `n`.
+    *   If `i > sqrt(n)`, the algorithm goes to step 8 (End).
+6.  **Check if n % i == 0:**  The algorithm checks if `n` is divisible by `i` without any remainder (i.e., `n % i == 0`).
+    *   If `n % i == 0`, the algorithm goes to step 10 (End).  This means `n` is not a prime number.
+7.  **No Divisors Found:** If the loop completes without finding any divisors (i.e

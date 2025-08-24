@@ -1,0 +1,20 @@
+```python
+def calculate_sum(arr):
+    res = 0
+    i = 0
+    while i < len(arr):
+        if i < len(arr):
+            n = arr[i], digits = []
+            isNeg = 1
+            while n > 0:
+                digits.append(n % 10)
+                n = n // 10
+                isNeg = -1 if isNeg else 1
+            n = abs(n)
+            digits.append(n % 10)
+            sum(digits) += sum(digits)
+        else:
+            res += 1
+        i += 1
+    return res
+```

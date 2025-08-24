@@ -1,0 +1,10 @@
+The algorithm's purpose is to determine whether a given number is prime or not. The input data required is the number to be checked. The main logical flow is as follows:
+
+1. Start
+2. Input n, x, as integers
+3. Check if n is a prime number
+4. If n is prime, end
+5. If n is not prime, end
+6. End
+
+The expected output is the number of steps taken by the algorithm.

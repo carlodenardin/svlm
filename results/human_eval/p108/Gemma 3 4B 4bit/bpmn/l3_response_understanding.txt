@@ -1,0 +1,30 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview**
+
+This flowchart describes an algorithm designed to determine if a given integer is a palindrome. A palindrome is a number that reads the same forwards and backward (e.g., 121, 12321). The algorithm essentially converts the integer into a string of digits, checks if the string is a palindrome, and returns a boolean value (True if it is, False otherwise).
+
+**2. Input Data**
+
+*   **Input:** A list (or array) of integers.  The algorithm is designed to work with a single integer, but the flowchart shows a list of integers as the initial input.
+*   **Data Type:** Integers.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   `res = 0`:  This variable will store the result (a boolean value). Initially set to 0 (representing False).
+    *   `i = 0`:  This variable is an index used to iterate through the input list of integers.
+2.  **Outer Loop (Iteration):**
+    *   The algorithm iterates through the input list of integers using the index `i`.
+    *   **Decision:** `i < len(list)`: Checks if the index `i` is within the bounds of the list. If `i` is out of bounds, the loop terminates, and the function returns the `res` variable.
+3.  **Extraction and Conversion:**
+    *   `n = list[i]`:  Extracts the integer at the current index `i` from the list and assigns it to the variable `n`.
+4.  **Inner Variables:**
+    *   `digits = []`:  An empty list to store the digits of the integer `n`.
+    *   `isNeg = 1`: A flag to indicate if the number is negative.  Initialized to 1 (True).
+5.  **Handling Negative Numbers:**
+    *   **Decision:** `n < 0`: Checks if the number `n` is negative.
+        *   If `n` is negative, `isNeg` is set to -1 (False).
+6.  **Digit Extraction:**
+    *   If `n` is not negative, the algorithm extracts the digits of `n`.
+    *

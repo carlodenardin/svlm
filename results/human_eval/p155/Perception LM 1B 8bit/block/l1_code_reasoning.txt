@@ -1,0 +1,28 @@
+```python
+def count_even_odd_digits(n):
+    """
+    Counts the number of even and odd digits in a given integer.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        tuple: A tuple containing the count of even and odd digits.
+    """
+    even_digits = 0
+    odd_digits = 0
+
+    while n > 0:
+        if n % 2 == 0:
+            even_digits += 1
+        else:
+            odd_digits += 1
+        n //= 2
+
+    return even_digits, odd_digits
+
+# Example usage
+n = 12345
+even, odd = count_even_odd_digits(n)
+print(f"Count of even digits: {even}, Count of odd digits: {odd}")
+```

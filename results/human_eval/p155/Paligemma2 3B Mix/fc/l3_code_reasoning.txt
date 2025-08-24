@@ -1,0 +1,5 @@
+I’m missing the reasoning text you want me to translate. Please provide:
+- The VLM reasoning you want followed (exact steps or description), or
+- The specific problem statement and any example inputs/outputs, plus the exact function signature you want (e.g., solve(data) -> result).
+
+Once I have that, I’ll generate executable Python code that mirrors the provided reasoning step-by-step.

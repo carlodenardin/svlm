@@ -1,0 +1,1 @@
+I don’t see the reasoning text or the problem statement to follow. Please paste the exact reasoning (the step-by-step approach you want me to translate) and the concrete problem (inputs, outputs, examples). Once I have that, I’ll output a single Python function implementing that approach exactly, with any necessary data or pseudocode included inside the code block.

@@ -1,0 +1,27 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This flowchart implements a primality test. Specifically, it determines whether a given integer `n` is a prime number. A prime number is a whole number greater than 1 that has only two divisors: 1 and itself.
+
+**2. Input Data Required**
+
+*   **n:** An integer (int) representing the number to be tested for primality.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Start:** The algorithm begins.
+2.  **Initialization:**
+    *   The algorithm takes an integer `n` as input.
+    *   `x` and `y` are initialized to 0. These variables are likely used for some internal tracking, but their specific purpose isn't clear from the flowchart alone.
+3.  **Base Case Check:**
+    *   `if n == 1:`:  The algorithm checks if `n` is equal to 1.
+    *   `if n == 1`: If `n` is 1, the algorithm immediately ends (returns) and outputs "no" (or a similar indication that it's not prime).
+4.  **Divisibility Check:**
+    *   `Check divisors of n from 2 to sqrt(n)`: The algorithm iterates through potential divisors from 2 up to the square root of `n`.  This is a common optimization for primality tests – if a number has a divisor greater than its square root, it must also have a divisor smaller than its square root.
+5.  **Divisor Found?**
+    *   `if exists a divisor?`:  For each potential divisor `i` in the range [2, sqrt(n)], the algorithm checks if `n` is divisible by `i` without any remainder.
+    *   `if exists a divisor?`: If a divisor `i` is found (i.e., `n % i == 0`), the algorithm immediately ends (returns) and outputs "no" (or a similar indication that it's not prime).
+6.  **Loop Completion:**
+    *   `if no divisor found`: If the loop completes without finding any divisors, it means that `n` is not divisible by any number between 2 and its square root.
+7.

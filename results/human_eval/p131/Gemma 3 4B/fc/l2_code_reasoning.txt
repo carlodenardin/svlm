@@ -1,0 +1,18 @@
+```python
+def product_of_odd_digits(n: int) -> int:
+    m = abs(n)
+    product = 1
+    found_odd = False
+
+    if m == 0:
+        return 1
+
+    while m > 0:
+        digit = m % 10
+        if digit % 2 == 1:
+            found_odd = True
+            product *= digit
+        m //= 10
+
+    return product if found_odd else 1
+```

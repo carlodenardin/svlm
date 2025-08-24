@@ -1,0 +1,24 @@
+The algorithm's purpose is to iterate through a list of integers, incrementing the counter variable by 1 for each integer in the list. The counter variable is initialized to 0, and the loop continues until the counter variable reaches the end of the list.
+
+Input data required: A list of integers.
+
+Main logical flow:
+
+1. Initialize the counter variable to 0.
+2. Iterate through the list of integers.
+3. Increment the counter variable by 1 for each integer in the list.
+4. Return a tuple containing the counter variable and the list of integers.
+
+Expected output: A tuple containing the counter variable and the list of integers.
+
+Here is the implementation in Python:
+
+```python
+def increment_counter(numbers):
+    counter = 0
+    for num in numbers:
+        counter += 1
+    return (counter, numbers)
+```
+
+In this implementation, the function `increment_counter` takes a list of integers as input and returns a tuple containing the counter variable and the list of integers. The loop iterates through the list, incrementing the counter variable by 1 for each integer, and returns the tuple containing the counter variable and the list of integers.

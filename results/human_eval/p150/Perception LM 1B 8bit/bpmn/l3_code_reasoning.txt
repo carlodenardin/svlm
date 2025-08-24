@@ -1,0 +1,13 @@
+```python
+def compute_y(n, x, y):
+    import math
+    if n == 1:
+        return y
+    i = 2
+    while True:
+        if n <= math.sqrt(n):
+            return x
+        if n % i == 0:
+            return y
+        i += 1
+```

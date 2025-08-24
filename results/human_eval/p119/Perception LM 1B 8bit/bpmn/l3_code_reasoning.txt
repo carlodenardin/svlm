@@ -1,0 +1,36 @@
+```python
+def check_string(s):
+    """
+    Checks if two strings can be concatenated.
+    
+    Args:
+    s (list): The two strings to be concatenated, provided as a list of length 2.
+    
+    Returns:
+    bool: True if the two strings are equal, False otherwise.
+    """
+    if not isinstance(s, list) or len(s) != 2:
+        raise ValueError("Input must be a list of two strings")
+    
+    # True if the two strings are equal
+    return s[0] == s[1]
+
+
+def process_strings(c1, c2):
+    """
+    Processes the strings c1 and c2.
+    
+    Steps mirroring the described approach:
+    - Consider both orderings [c1, c2] and [c2, c1].
+    - Check each ordering with check_string.
+    - If both checks yield True (i.e., both pairs have equal elements), return True.
+      Otherwise, return False.
+    """
+    s1 = [c1, c2]
+    s2 = [c2, c1]
+    
+    res1 = check_string(s1)
+    res2 = check_string(s2)
+    
+    return res1 and res2
+```

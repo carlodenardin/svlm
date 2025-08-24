@@ -1,0 +1,10 @@
+def countTriplets(A):
+    n = len(A)
+    count = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(i + 1, n):
+                total = A[i] + A[j] + A[k]
+                if total % 3 == 0:
+                    count += 1
+    return count

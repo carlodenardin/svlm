@@ -1,0 +1,9 @@
+def count_positive_integers(nums):
+    """
+    Count how many integers in the input list are greater than 0.
+    """
+    count = 0
+    for x in nums:
+        if x > 0:
+            count += 1
+    return count

@@ -1,0 +1,29 @@
+```python
+def count_triplets_equal_k(n):
+    # Step 1: Create a vector of dimension and initialize the values of a rule
+    rule = [0] * (n + 1)  # 1-based indexing, rule unused beyond initialization
+
+    total_count = 0
+    eq_count = 0
+    non_eq_count = 0
+
+    # Step 2: Iterate over each triple (a, b, k) with k as the number to compare
+    for a in range(1, n + 1):
+        for b in range(1, n + 1):
+            for k in range(1, n + 1):
+                # Step 3: Check if a == b and a == k
+                if a == b and a == k:
+                    # Step 4: If a == b and a == k, count the triplets
+                    total_count += 1
+
+                # Step 5: If a == k, then count the triplets
+                if a == k:
+                    eq_count += 1
+
+                # Step 6: If a != k, then count the triplets
+                if a != k:
+                    non_eq_count += 1
+
+    # The expected output is the count of triplets where a == k
+    return eq_count
+```

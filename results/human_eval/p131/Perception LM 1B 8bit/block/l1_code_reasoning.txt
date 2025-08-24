@@ -1,0 +1,21 @@
+```python
+def product_of_odd_digits(n: int) -> int:
+    # Input Processing: check for positive integer
+    if not isinstance(n, int) or n <= 0:
+        return 0
+
+    # Product Computation: multiply odd digits
+    product = 1
+    found_odd = False
+    while n > 0:
+        digit = n % 10
+        if digit % 2 == 1:
+            product *= digit
+            found_odd = True
+        n //= 10
+
+    # Output Generation: return product if any odd digit exists, else 0
+    if not found_odd:
+        return 0
+    return product
+```

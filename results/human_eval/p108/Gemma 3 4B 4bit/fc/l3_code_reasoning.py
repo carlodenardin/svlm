@@ -1,0 +1,24 @@
+def any_divisible_by_10(arr):
+    res = 0
+    i = 0
+    while i < len(arr):
+        orig = arr[i]
+        n = orig
+        digits = []
+        isNeg = 1
+        if n < 0:
+            isNeg = -1
+        n = abs(n)
+        if n > 0:
+            while n > 0:
+                digits.append(n % 10)
+                n = n // 10
+        if len(digits) > 0:
+            if digits[0] == 0:
+                res = 1
+                break
+        elif orig == 0:
+            res = 1
+            break
+        i += 1
+    return res

@@ -1,0 +1,17 @@
+The algorithm depicted in the flowchart is designed to calculate and return a specific result based on an integer input. Here's a step-by-step description of its implementation:
+
+1. **Input**: The process begins by receiving an integer number \( n \) as input.
+2. **Initialization**: Two variables are initialized: 
+   - `sum` set to 0
+   - `res` set to an empty string ("")
+3. **Main Loop**: The main logic involves iterating through each digit of the integer \( n \):
+   - Check if \( n \) is greater than 0. If true, proceed; otherwise, exit the loop.
+4. **Digit Processing**: For each non-zero digit encountered:
+   - Calculate the remainder when \( n \) is divided by 10 (`sum += n % 10`).
+   - Update \( n \) by performing integer division by 10 (`n = n // 10`).
+5. **Result Calculation**: After processing all digits:
+   - Extract the last character of \( n \) using `str(r)` where \( r \) is calculated from `sum % 2`. This gives the desired result.
+   - Append this extracted value to the `res` variable.
+6. **Output**: Finally, the function returns the `res` variable which contains the computed result.
+
+This algorithm effectively breaks down an integer into individual digits, processes them according to specified rules, and constructs a final output string or numeric value representing the processed digits.

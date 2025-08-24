@@ -1,0 +1,24 @@
+```python
+def count_yes_no_sentences(text):
+    # Convert to lowercase to ensure case-insensitive matching
+    t = text.lower()
+    yes_count = 0
+    no_count = 0
+
+    # Iterate through text character by character
+    for i in range(len(t)):
+        # If current position starts a "yes" (3 characters)
+        if i + 3 <= len(t) and t[i:i+3] == 'yes':
+            yes_count += 1
+        # If current position starts a "no" (2 characters)
+        if i + 2 <= len(t) and t[i:i+2] == 'no':
+            no_count += 1
+
+    return yes_count, no_count
+
+if __name__ == "__main__":
+    import sys
+    text_input = sys.stdin.read()
+    yes_cnt, no_cnt = count_yes_no_sentences(text_input)
+    print(yes_cnt, no_cnt)
+```

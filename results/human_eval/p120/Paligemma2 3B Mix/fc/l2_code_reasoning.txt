@@ -1,0 +1,120 @@
+```python
+import sys
+import json
+import math
+
+def is_prime(n: int) -> bool:
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    limit = int(math.isqrt(n))
+    i = 3
+    while i <= limit:
+        if n % i == 0:
+            return False
+        i += 2
+    return True
+
+def process_input(obj):
+    # If it's a dict, try to handle common structured tasks
+    if isinstance(obj, dict):
+        # Common keys that might indicate a task
+        task = obj.get("task") or obj.get("operation")
+        data = obj.get("data") or obj.get("values") or obj.get("array") or obj.get("list")
+
+        if task == "sum" and isinstance(data, (list, tuple)):
+            try:
+                return str(sum(data))
+            except Exception:
+                pass
+
+        if task == "max" and isinstance(data, (list, tuple)):
+            try:
+                return str(max(data))
+            except Exception:
+                pass
+
+        if task == "count_unique" and isinstance(data, (list, tuple)):
+            try:
+                return str(len(set(data)))
+            except Exception:
+                pass
+
+        if task == "reverse" and isinstance(data, str):
+            try:
+                return data[::-1]
+            except Exception:
+                pass
+
+        # If there's an explicit 'expression', we avoid executing arbitrary code for safety
+        if "expression" in obj and isinstance(obj["expression"], str):
+            return "unsupported"
+
+        # Fallback: return the dict as a JSON string
+        return json.dumps(obj)
+
+    # If it's a list/tuple, return a sorted JSON array
+    if isinstance(obj, (list, tuple, set)):
+        try:
+            return json.dumps(sorted(list(obj)))
+        except Exception:
+            return json.dumps(list(obj))
+
+    # If it's a single integer or an integer-like string, check primality
+    if isinstance(obj, int):
+        return "prime" if is_prime(obj) else "not prime"
+
+    if isinstance(obj, str):
+        s = obj.strip()
+        # If the string contains directions to reverse, apply it
+        low = s.lower()
+        if "reverse" in low:
+            # handle possible "reverse:STRING" or plain reversal
+            if ":" in s:
+                parts = s.split(":", 1)
+                torev = parts[1]
+                return torev[::-1]
+            else:
+                return s[::-1]
+        # If it's a numeric string, test primality
+        if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+            try:
+                n = int(s)
+                return "prime" if is_prime(n) else "not prime"
+            except Exception:
+                pass
+        # Default: return the string as-is
+        return s
+
+    # Fallback: just stringify the object
+    try:
+        return json.dumps(obj)
+    except Exception:
+        return str(obj)
+
+def solve():
+    data = sys.stdin.read()
+    s = data.strip()
+    if not s:
+        print("")
+        return
+
+    # Try to parse as JSON first
+    obj = None
+    try:
+        obj = json.loads(s)
+    except Exception:
+        obj = None
+
+    if obj is None:
+        obj = s
+
+    result = process_input(obj)
+    print(result)
+
+if __name__ == "__main__":
+    solve()
+```

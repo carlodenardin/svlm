@@ -1,0 +1,27 @@
+```python
+def any_palindrome_in_list(lst):
+    res = 0  # Will be 1 if at least one non-negative palindrome is found
+    i = 0
+    while i < len(lst):
+        n = lst[i]
+        digits = []
+        isNeg = 1
+        if n < 0:
+            isNeg = -1
+
+        if n >= 0:
+            if n == 0:
+                digits = [0]
+            else:
+                temp = n
+                while temp > 0:
+                    digits.append(temp % 10)
+                    temp //= 10
+
+            if isNeg == 1 and digits == digits[::-1]:
+                res = 1
+
+        i += 1
+
+    return bool(res)
+```

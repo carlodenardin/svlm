@@ -1,0 +1,1000 @@
+{"success": false, "error": "", "input": 67621, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -70816, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -93444, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 94393, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -27903, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -35804, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -41487, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -63421, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 93061, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -73132, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 77392, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 94161, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 42964, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -77210, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 54794, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 10604, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -91669, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -92189, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -75439, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -42686, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -39010, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 32475, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 57815, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -93044, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 47127, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -47876, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 87700, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 70363, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 83848, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 42853, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 9974, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -42213, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 17757, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 54472, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -27074, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -98297, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 98916, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -58147, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 83013, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 10785, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -10806, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -27158, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -59242, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -43557, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -11764, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -73207, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -75688, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -405, "output": "Return a tuple (even, odd)", "correct_output": [2, 1]}
+{"success": false, "error": "", "input": -74647, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -5896, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -9835, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 58263, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -30658, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -88610, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 91294, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 20435, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 40568, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -67278, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -770, "output": "Return a tuple (even, odd)", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": -79344, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 44714, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -23146, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 64794, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 62141, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -5200, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 51349, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -49593, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 84699, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -81767, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -87988, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 73346, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -40258, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -24139, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -79084, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -38976, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -73524, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -353, "output": "Return a tuple (even, odd)", "correct_output": [0, 3]}
+{"success": false, "error": "", "input": -27131, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 18858, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 66640, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -4362, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -57362, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -2960, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -6868, "output": "Return a tuple (even, odd)", "correct_output": [4, 0]}
+{"success": false, "error": "", "input": -45079, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 75682, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -30014, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 83977, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 79187, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 69878, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -81283, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 59680, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 66455, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -55138, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 40021, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 91136, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -35825, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -57166, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 21178, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -529, "output": "Return a tuple (even, odd)", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": -29235, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 67772, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 80397, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 46001, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -42430, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 79467, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -14992, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -85337, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -39957, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -91586, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17306, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 5162, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -29814, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -82650, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -44693, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 48682, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 88196, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -17510, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -44262, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 71819, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 30870, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 3712, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 68519, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 20285, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -62548, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -30564, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -63397, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -35349, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 95294, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 47159, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 41289, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -31124, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 95825, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 53245, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 12311, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 52969, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 4700, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -5105, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -42507, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -63738, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 33569, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 29372, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -76169, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 98123, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -87649, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -71257, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -59934, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 64481, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -58062, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 78384, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 10666, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 56345, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -83347, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 864, "output": "Count the even and odd digits", "correct_output": [3, 0]}
+{"success": false, "error": "", "input": 39, "output": "Count the even and odd digits", "correct_output": [0, 2]}
+{"success": false, "error": "", "input": 56208, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 22696, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 38704, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -34094, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 45024, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -96991, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 78332, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 88932, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -69971, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 78706, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 40763, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 96838, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -30054, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 68024, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -10826, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -70758, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -23061, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 13971, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -58540, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 18940, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -99150, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 89292, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 88659, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -30955, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 31225, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 99743, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -53168, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 33085, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -72106, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 63918, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -21765, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 67496, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 33080, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 59637, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -47857, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -59935, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -1981, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 99887, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -57651, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 41394, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 39029, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -99851, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 57009, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -15025, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 28085, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -94895, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -70675, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -4847, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -19388, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -37230, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -84816, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -36857, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 48729, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -79355, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -77547, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 91865, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 27399, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -81857, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 99387, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 39645, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -67033, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -66343, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 72949, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 24592, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 44127, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -56713, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -30517, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 38326, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 59014, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 10923, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -44479, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 41373, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 97988, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 91347, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 80844, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -47270, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 86895, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -18286, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 4593, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 76078, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 70361, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -2111, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 14845, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 35679, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 18354, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -68280, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -35014, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -41097, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -83216, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -11373, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -94486, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 54221, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 45207, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -39677, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 54256, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -42272, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -98115, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -81390, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 85556, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 65439, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -84567, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -39985, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -82332, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -91766, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -13381, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -81426, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 34782, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -37609, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -26999, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 75368, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 27248, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -43840, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 41356, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -65316, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 89622, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 49695, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 51050, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 23907, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -36300, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 23987, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 6708, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -50086, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -75274, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -74591, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 72748, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 12997, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -7124, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 11038, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 7767, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 22427, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 91122, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -85800, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 76518, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 71299, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 69392, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -74201, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -84111, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 5544, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 90896, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -11054, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -71356, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -34817, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -49776, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -50138, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 40584, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 17601, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -63253, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 10593, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -51900, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -26982, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 21275, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -34515, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -80239, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 16164, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 44264, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -74334, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -86739, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 70955, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 41711, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -96132, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -75552, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 97542, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -38035, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -56403, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 6539, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 27307, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 26185, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -43968, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 5130, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -84630, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -56842, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -655, "output": "Return a tuple (even, odd)", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": -99435, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 2346, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -30479, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 19277, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -25224, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 10888, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 82607, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 91497, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 45691, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 73505, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 88326, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 27577, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -59421, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -50220, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -22220, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -42932, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -84669, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 51828, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 92869, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 42133, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -84021, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 96077, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17791, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -85015, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -86856, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 53138, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 24987, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 31819, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 39231, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -58730, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -85090, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 33124, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -79000, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -51288, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -82038, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 55984, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -82185, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 77002, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -38343, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 5847, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -68573, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 49336, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -35457, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 51760, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 55849, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -89582, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 62367, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -78509, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 9897, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 72326, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 53006, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 48170, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 37044, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -17066, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -31642, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -46455, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 75564, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 87745, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17639, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -37430, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -30371, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 3752, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -65692, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 76079, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 69214, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -21358, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 19858, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17117, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 97096, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -80984, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -97559, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 20136, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 62833, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 47585, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -73791, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -80796, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 40937, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -44123, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 32614, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -30480, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -65278, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -8510, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -81967, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -35963, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -3131, "output": "Return a tuple (even, odd)", "correct_output": [0, 4]}
+{"success": false, "error": "", "input": -25293, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -58648, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 14867, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 42401, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 84428, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -20697, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 60347, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 71435, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 38658, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -97950, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 75076, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 45385, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -21520, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 73903, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -72846, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -64797, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -30672, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -69742, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -71942, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 94620, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 45024, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -59251, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -28606, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -26140, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 58552, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -44785, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 88117, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -10116, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -46629, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 80223, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 66261, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -30799, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 32489, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 28065, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -34171, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -86684, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -75805, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 66273, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 11037, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -27470, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -88443, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -99071, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -12561, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -65707, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 67015, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -31330, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -57643, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 94309, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 15824, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 44619, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 84986, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 12115, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 47038, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -97466, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -70673, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -80276, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 81146, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -60927, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 43023, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -90556, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -3213, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 52701, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 44841, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -61179, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 12666, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -66591, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -89035, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -19192, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -4409, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -89542, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -6203, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -44930, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 78799, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -34588, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 74832, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -73054, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -7286, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 46770, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 6529, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 62702, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 96471, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -59485, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -37941, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -57402, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -53587, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 8080, "output": "Count the even and odd digits", "correct_output": [4, 0]}
+{"success": false, "error": "", "input": -93503, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -52982, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 93085, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -12920, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 7928, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 75612, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 92690, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -34945, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -30059, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -58268, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 83835, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -71664, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 281, "output": "Count the even and odd digits", "correct_output": [2, 1]}
+{"success": false, "error": "", "input": -89849, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 23388, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -41691, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -47684, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 20665, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -8340, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -19997, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -40338, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -41562, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -93797, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 73023, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -49373, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 4455, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -13949, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -26966, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -81802, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -26830, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -7950, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 68160, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 33537, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 4773, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 78131, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 40565, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -13192, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -92765, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -69764, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -31525, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -53190, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 52198, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -30410, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -89972, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -71583, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 56387, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 13918, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -9381, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 90983, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17772, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 14398, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 58914, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 34066, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -69685, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 976, "output": "Count the even and odd digits", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": 51149, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -50172, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -33227, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -88365, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 85803, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 14309, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -99557, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 36293, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 41151, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 80055, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 88594, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 94497, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 93210, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 75801, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -48349, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -4522, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 13062, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -81657, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 74125, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -13441, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 63356, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17709, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 73903, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -67331, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 88679, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -21273, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 32939, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -18923, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 74821, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 7057, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -14494, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 5486, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 82769, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -22496, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 45335, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -66633, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -49711, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 10217, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 74307, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -610, "output": "Return a tuple (even, odd)", "correct_output": [2, 1]}
+{"success": false, "error": "", "input": 77554, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 96118, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -54380, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 61353, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 49187, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -21108, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 6450, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 43638, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -99894, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -20342, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -24788, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -44902, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 12692, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 52039, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 59032, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 71627, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -15525, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 21893, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 15811, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 15909, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 77111, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -43980, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 34001, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 24042, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 92927, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -55517, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 72713, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -77772, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -25608, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 35122, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 74025, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 65921, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 62335, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -12133, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -75520, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 96906, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -38431, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 76369, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -18626, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -41112, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -47800, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -61373, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -93598, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -87886, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -35816, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 24554, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 60241, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -80909, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 19384, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 8643, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 65089, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 50908, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -49030, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 88310, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 82545, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 657, "output": "Count the even and odd digits", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": 29598, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 4766, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -36041, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -61316, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 71981, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 80256, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -98547, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 96860, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -72059, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 11449, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -42633, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -53893, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 82429, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 35779, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 21778, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -86836, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 46120, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -34675, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -68187, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 19658, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -65046, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 21803, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 75001, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 39233, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 46518, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 56094, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -16823, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 97984, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 16017, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 60603, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 88553, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 32324, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 11867, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 43621, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 16893, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -58278, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 94944, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 24433, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 17983, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -32055, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 97073, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -35188, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 67159, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -27305, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 36655, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 27034, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 64298, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -37284, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -28016, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 15309, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -79689, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 87051, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -25099, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -38529, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -28772, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -11960, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -16191, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 41597, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -78878, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -63727, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -60461, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -39377, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 410, "output": "Count the even and odd digits", "correct_output": [2, 1]}
+{"success": false, "error": "", "input": 81914, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -59944, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 85183, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -43914, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -83163, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 8755, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 6849, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -13262, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 42242, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 22139, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 8992, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -83678, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -45780, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 10138, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 2099, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 53112, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 82327, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -94880, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 50913, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -286, "output": "Return a tuple (even, odd)", "correct_output": [3, 0]}
+{"success": false, "error": "", "input": 25037, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -98455, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -7789, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -21721, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 97518, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 2232, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 9843, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 41091, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 95956, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 92579, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 43165, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 58139, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -42188, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 27986, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -42480, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -28452, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 14251, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 27308, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -92392, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 1936, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -11886, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 75341, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 78032, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 5989, "output": "Count the even and odd digits", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 89839, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -56735, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 22523, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -66544, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 63120, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 40017, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -92931, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 3290, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 55161, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 47951, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 73801, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -92896, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -77994, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 68492, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 12358, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -64428, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 21031, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -52361, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -86819, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -31802, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -621, "output": "Return a tuple (even, odd)", "correct_output": [2, 1]}
+{"success": false, "error": "", "input": -14187, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -44515, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 19196, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -14320, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -11527, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 99551, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -615, "output": "Return a tuple (even, odd)", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": -27057, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 97134, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 10510, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -33869, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -78529, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 23288, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -94919, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 96352, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 41405, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -86347, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -8260, "output": "Return a tuple (even, odd)", "correct_output": [4, 0]}
+{"success": false, "error": "", "input": -41222, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 70431, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -82013, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 70853, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -89447, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 97717, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -91866, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -35177, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -47739, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -94658, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 62879, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -60054, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -37467, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -66912, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 24141, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 75494, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -70014, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 47841, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -42862, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 21905, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 83360, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -32828, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -3297, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -56016, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 58831, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 59186, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 96064, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 88313, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -69976, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -57070, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -18464, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -71663, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 51698, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -93269, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -18223, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 50941, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 77562, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -1616, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 3980, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 87436, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -48010, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -80078, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 55214, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 81040, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 64427, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -36339, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -73288, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 82764, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -20942, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 79374, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 57394, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -68267, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 48355, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -89234, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -8983, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 39655, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 12296, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 73413, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -2858, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": -81924, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 32634, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 69749, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -10549, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -96684, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 10115, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 28503, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -72334, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 13645, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -5055, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": 66614, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 20517, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 85416, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -59895, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 14160, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -53827, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 92360, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 36772, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 70513, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -29200, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 61457, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 41078, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 26745, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 21863, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 14183, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 91634, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 55313, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -29642, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -15510, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -35645, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -77282, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -26881, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 18175, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -36073, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 96732, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 21820, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 49382, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 59994, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 75161, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -651, "output": "Return a tuple (even, odd)", "correct_output": [1, 2]}
+{"success": false, "error": "", "input": -11816, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -92477, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 29579, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -14800, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -52332, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 27808, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -44395, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -6985, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": -32275, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -10783, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -26690, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 56278, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 83811, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -27578, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 45697, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -97339, "output": "Return a tuple (even, odd)", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 35430, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -49916, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -77558, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": -36730, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 88763, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 6542, "output": "Count the even and odd digits", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 28077, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 45536, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 98748, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -37001, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 81039, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 24804, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 69319, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 86605, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 28665, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 17486, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -95480, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -75607, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -22868, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -41910, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 6011, "output": "Count the even and odd digits", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 81347, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -36220, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -19730, "output": "Return a tuple (even, odd)", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 74053, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 52451, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -3264, "output": "Return a tuple (even, odd)", "correct_output": [3, 1]}
+{"success": false, "error": "", "input": 24062, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 45089, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 39177, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": -9887, "output": "Return a tuple (even, odd)", "correct_output": [2, 2]}
+{"success": false, "error": "", "input": 11543, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 95542, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 44281, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -13286, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -7775, "output": "Return a tuple (even, odd)", "correct_output": [0, 4]}
+{"success": false, "error": "", "input": 84249, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 18946, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -28981, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -19621, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -34097, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -39566, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -68371, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 89080, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -49516, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -17281, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -68660, "output": "Return a tuple (even, odd)", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": 94741, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 40473, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 99803, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 80922, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -51465, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -49789, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -43277, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 93620, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 26929, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -27518, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 89945, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 54556, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 99283, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 37530, "output": "Count the even and odd digits", "correct_output": [1, 4]}
+{"success": false, "error": "", "input": 56445, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -25814, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -73648, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -49114, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -22341, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -40367, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -5398, "output": "Return a tuple (even, odd)", "correct_output": [1, 3]}
+{"success": false, "error": "", "input": -52961, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -20763, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -96292, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 85602, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": 40020, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -66818, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -28091, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -88069, "output": "Return a tuple (even, odd)", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -85707, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 45059, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -23419, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 82823, "output": "Count the even and odd digits", "correct_output": [4, 1]}
+{"success": false, "error": "", "input": -66897, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 67213, "output": "Count the even and odd digits", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 97339, "output": "Count the even and odd digits", "correct_output": [0, 5]}
+{"success": false, "error": "", "input": 28680, "output": "Count the even and odd digits", "correct_output": [5, 0]}
+{"success": false, "error": "", "input": -73108, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": -96785, "output": "Return a tuple (even, odd)", "correct_output": [2, 3]}
+{"success": false, "error": "", "input": 50487, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": -25463, "output": "Return a tuple (even, odd)", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 23049, "output": "Count the even and odd digits", "correct_output": [3, 2]}
+{"success": false, "error": "", "input": 25492, "output": "Count the even and odd digits", "correct_output": [3, 2]}

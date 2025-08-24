@@ -1,0 +1,11 @@
+```python
+import sys
+
+def solve():
+    # The problem requires translating the reasoning from an image into executable code.
+    # Since no image or reasoning content was provided, we cannot proceed.
+    raise RuntimeError("Reasoning image is not provided. Please supply the image containing the reasoning steps.")
+
+if __name__ == "__main__":
+    solve()
+```

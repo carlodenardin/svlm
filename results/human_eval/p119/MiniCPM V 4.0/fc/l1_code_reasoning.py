@@ -1,0 +1,21 @@
+def check_balance(s):
+    balance = 0
+    for ch in s:
+        if ch == '(':
+            balance += 1
+        elif ch == ')':
+            balance -= 1
+            if balance < 0:
+                return False
+    return balance == 0
+
+def evaluate_concat_balance(input_data):
+    # input_data should be a list or tuple of two strings
+    if not isinstance(input_data, (list, tuple)) or len(input_data) != 2:
+        raise ValueError("input_data must be a list or tuple of two strings")
+    s1, s2 = input_data[0], input_data[1]
+    concatenated = s1 + s2
+    if check_balance(concatenated):
+        print("Yes")
+    else:
+        print("No")

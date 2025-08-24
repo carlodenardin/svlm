@@ -1,0 +1,9 @@
+The flowchart outlines an algorithm designed to sort a list of integers and then return the last element. Here’s a step-by-step description:
+
+1. **Start**: The process begins at the initial node.
+2. **Receive Input**: An input consisting of a list of integers and a variable \( k \) is received.
+3. **Sort the List**: The function `list.sort()` is called on the provided list to arrange its elements in ascending order.
+4. **Retrieve Last Element**: After sorting, the code retrieves the last element from the sorted list using `list[-k:]`.
+5. **End**: The process concludes with returning the specified element.
+
+This algorithm efficiently sorts a given list and extracts the final element based on the value of \( k \).

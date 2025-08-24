@@ -1,0 +1,4 @@
+```python
+def solve_with_reasoning():
+    raise ValueError("Reasoning content not provided. Please paste the VLM reasoning text.")
+```

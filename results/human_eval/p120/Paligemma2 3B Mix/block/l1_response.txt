@@ -1,0 +1,1 @@
+i will generate a code that receives a list of integers and returns the list with the last k elements .

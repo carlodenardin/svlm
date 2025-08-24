@@ -1,0 +1,5 @@
+def count_sum_of_digits(n):
+    count = 0
+    for i in range(n):
+        count += sum((int(digit) for digit in str(i)))
+    return count

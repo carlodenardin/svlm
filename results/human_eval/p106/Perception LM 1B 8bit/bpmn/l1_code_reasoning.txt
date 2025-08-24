@@ -1,0 +1,14 @@
+```python
+def factorial_list(n):
+    # Step 1: Receive an integer as n
+    # Step 2: Create a list to store the factorial values
+    result = []
+    # Step 3 & 4: Compute factorial for each integer from 1 to n and append
+    for i in range(1, n + 1):
+        fact = 1
+        for j in range(1, i + 1):
+            fact *= j
+        result.append(fact)
+    # Step 5: Return the list of factorials
+    return result
+```

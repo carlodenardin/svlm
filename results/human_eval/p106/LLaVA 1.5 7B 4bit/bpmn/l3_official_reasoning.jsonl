@@ -1,0 +1,4 @@
+{"success": false, "error": "run_todo_app() takes 0 positional arguments but 1 was given", "input": 5, "output": null, "correct_output": [1, 2, 6, 24, 15]}
+{"success": false, "error": "run_todo_app() takes 0 positional arguments but 1 was given", "input": 7, "output": null, "correct_output": [1, 2, 6, 24, 15, 720, 28]}
+{"success": false, "error": "run_todo_app() takes 0 positional arguments but 1 was given", "input": 1, "output": null, "correct_output": [1]}
+{"success": false, "error": "run_todo_app() takes 0 positional arguments but 1 was given", "input": 3, "output": null, "correct_output": [1, 2, 6]}

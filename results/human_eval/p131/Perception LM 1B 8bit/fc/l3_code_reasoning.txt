@@ -1,0 +1,22 @@
+```python
+def calculate_product(n, d):
+    """
+    Calculate the product of n and d and determine if the product is odd or even.
+
+    Args:
+        n (int): The upper limit of the iteration.
+        d (int): The number to be checked for oddness.
+
+    Returns:
+        tuple: The product and the boolean value of odd_flag.
+    """
+    product = n * d
+    odd_flag = 0
+    for i in range(1, n + 1):
+        product_i = n * i
+        if product_i % 2 == 0:
+            odd_flag = 0
+        else:
+            odd_flag = 1
+    return product, odd_flag
+```

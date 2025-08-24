@@ -1,0 +1,69 @@
+```python
+import math
+
+def quadratic_newton_style_root(a, b, c, x0, tol=1e-9, max_iter=1000):
+    """
+    Implements a flowchart-inspired procedure to approximate a quadratic root.
+    Follows these steps:
+    - Compute f'(x) = 2*a*x + b at current x.
+    - Compute f''(x) = 2*a (constant) to determine its sign.
+    - If f'' > 0, update x to the midpoint between current x and a chosen root.
+    - If f'' < 0, update x to the negation of that midpoint.
+    - Repeat until convergence criteria are met.
+    
+    This function selects the root to use for the midpoint as the real root
+    closest to the current x (between the two algebraic roots).
+    """
+    # Handle degenerate linear case
+    if a == 0:
+        if b == 0:
+            raise ValueError("Invalid equation: both a and b are zero.")
+        return -c / b
+
+    # Compute real roots (assuming real roots exist)
+    discriminant = b * b - 4 * a * c
+    if discriminant < 0:
+        raise ValueError("The quadratic has no real roots.")
+    sqrt_discriminant = math.sqrt(discriminant)
+    r1 = (-b - sqrt_discriminant) / (2 * a)
+    r2 = (-b + sqrt_discriminant) / (2 * a)
+
+    x = float(x0)
+    two_a = 2.0 * a
+
+    iterations = 0
+    while iterations < max_iter:
+        # Step 2: first derivative at current x (computed but not directly used in update)
+        fprime = 2.0 * a * x + b
+
+        # Step 3: second derivative (constant for a quadratic)
+        fdouble = two_a
+
+        # Step 4: sign of second derivative
+        if fdouble > 0:
+            sign = 1
+        elif fdouble < 0:
+            sign = -1
+        else:
+            # Should not occur for a quadratic (a != 0), but handle gracefully
+            break
+
+        # Step 5/6: update x based on sign using midpoint with the closest root
+        root = r1 if abs(x - r1) <= abs(x - r2) else r2
+        midpoint = (x + root) / 2.0
+        if sign > 0:
+            x = midpoint
+        else:
+            x = -midpoint
+
+        iterations += 1
+
+        # Convergence checks
+        fx = a * x * x + b * x + c
+        if abs(fx) <= tol:
+            break
+        if abs(x - root) <= tol:
+            break
+
+    return x
+```

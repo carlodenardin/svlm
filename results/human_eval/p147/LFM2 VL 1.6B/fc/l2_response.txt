@@ -1,0 +1,8 @@
+def count_triples(A, k):
+    count = 0
+    for i in range(len(A)):
+        for j in range(i+1, len(A)):
+            for l in range(j+1, len(A)):
+                if A[i][j][l] == A[j][l][k] == k:
+                    count += 1
+    return count

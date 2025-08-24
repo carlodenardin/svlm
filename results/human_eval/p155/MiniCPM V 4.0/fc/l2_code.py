@@ -1,0 +1,12 @@
+def analyze_number(n):
+    even = 0
+    odd = 0
+    n = abs(num)
+    while n > 0:
+        last_digit = n % 10
+        n = n // 10
+        if last_digit % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    return (even, odd)

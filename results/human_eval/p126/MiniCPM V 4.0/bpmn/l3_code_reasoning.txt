@@ -1,0 +1,18 @@
+```python
+def is_arithmetic_progression(list):
+    i = 1  # Initialize index
+    while True:
+        # Step 3: Check length condition
+        if i < len(list):
+            # Step 4: If current value equals previous minus one, return False
+            if list[i] == list[i - 1] - 1:
+                return False
+            # Step 5: If i > 1 and differences are equal, return False
+            if i > 1 and (list[i] - list[i - 1] == list[i - 1] - list[i - 2]):
+                return False
+            # Step 6: Increment index
+            i += 1
+        else:
+            # Step 7: Reached end without triggering False conditions
+            return True
+```

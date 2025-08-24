@@ -1,0 +1,33 @@
+```python
+def sum_of_digits_positive_flag(arr):
+    # arr is expected to contain a single integer value
+    res = 0
+    # Simulate the loop that runs until the list is fully iterated
+    has_iterated = False
+    while not has_iterated:
+        if not arr:
+            break  # safety: no value to process
+        value = arr[0]
+
+        # Create a list containing all the digits of the array value
+        digits = []
+        temp = abs(value)
+        if temp == 0:
+            digits = [0]
+        else:
+            while temp > 0:
+                digits.append(temp % 10)
+                temp //= 10
+
+        # Compute the sum of the digits
+        digits_sum = sum(digits)
+
+        # sum > 0?
+        if digits_sum > 0:
+            res = 1
+
+        # End of this processing iteration
+        has_iterated = True
+
+    return res
+```

@@ -1,0 +1,30 @@
+**Algorithm Overview:**
+The algorithm is designed to calculate the sum of signed digits in a list of integers. It iterates through the list, extracting values, computing their signed sum, and then increments the result by 1 if the sum is greater than 0.
+
+**Input Data:**
+- A list of integers
+
+**Main Logical Flow:**
+
+1. **Initialization**: Initialize a variable `res` to 0.
+2. **List Iteration**: Iterate through the list of integers.
+3. **Value Extraction and Sum Computation**: For each integer, extract its value, compute the sum of its signed digits, and add it to `res`.
+4. **Sum Comparison**: Compare the sum with 0. If it's greater, increment `res` by 1.
+5. **Return**: After iterating through the entire list, return `res`.
+
+**Expected Output:**
+The final value of `res` after iterating through the list of integers.
+
+**Implementation Steps:**
+
+1. Define a function `calculate_sum_of_signed_digits` that takes a list of integers as input and returns the sum of their signed digits.
+2. Initialize a variable `res` to 0.
+3. Iterate through the list of integers.
+4. For each integer, extract its value, compute the sum of its signed digits, and add it to `res`.
+5. After iterating through the entire list, return `res`.
+
+**Example Use Case:**
+Input: `[123, 456, 789]`
+Output: `123 + 456 + 789 = 1296`
+
+This algorithm efficiently calculates the sum of signed digits in a list of integers by iterating through the list, extracting values, computing their signed sum, and incrementing the result if necessary.

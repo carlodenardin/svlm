@@ -1,0 +1,9 @@
+def get_last_k_elements(numbers, k):
+    """
+    Sorts the input list in ascending order and returns the last k elements.
+    Assumes k is non-negative and <= len(numbers)
+    """
+    sorted_list = sorted(numbers)
+    if k == 0:
+        return []
+    return sorted_list[-k:]

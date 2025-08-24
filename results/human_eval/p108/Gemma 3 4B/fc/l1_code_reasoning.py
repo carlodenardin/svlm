@@ -1,0 +1,16 @@
+def count_numbers_with_positive_digit_sum(numbers):
+    """
+    Count how many integers in the list have sum of digits > 0.
+    The sum of digits is computed by converting each number to a string,
+    summing the integer value of each digit character. Non-digit characters
+    (like '-' for negative numbers) are ignored.
+    """
+    count = 0
+    for num in numbers:
+        digit_sum = 0
+        for ch in str(num):
+            if ch.isdigit():
+                digit_sum += int(ch)
+        if digit_sum > 0:
+            count += 1
+    return count

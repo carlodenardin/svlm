@@ -1,0 +1,1 @@
+I’m missing the reasoning text you want me to translate into Python. Please provide the reasoning (or the exact problem statement and the approach) so I can implement the corresponding executable function exactly as described.

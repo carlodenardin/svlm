@@ -1,0 +1,17 @@
+**Algorithm Overview:**
+The algorithm is designed to calculate the value of y based on the input integers n, x, and y. It iterates through the input integers, performing various mathematical operations to determine the final output.
+
+**Input Data:**
+The algorithm requires the input integers n, x, and y.
+
+**Main Logical Flow:**
+
+1. **Initial Check:** The algorithm starts by checking if n is equal to 1. If true, it returns y. Otherwise, it sets i to 2.
+2. **Mathematical Operations:**
+   - **n <= sqrt(n):** If n is less than or equal to the square root of n, the algorithm returns x.
+   - **n % i == 0:** If n is divisible by i (i.e., n is a multiple of i), the algorithm returns y.
+   - **Increase i by 1:** If n is not divisible by i, the algorithm increments i by 1.
+3. **Output:** The algorithm returns the final value of y.
+
+**Expected Output:**
+The algorithm calculates the value of y based on the input integers n, x, and y, following the specified logical flow and mathematical operations.

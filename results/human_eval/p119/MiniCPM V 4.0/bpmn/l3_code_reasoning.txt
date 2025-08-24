@@ -1,0 +1,52 @@
+```python
+def check_two_strings_concat(possible_concats, target_string):
+    """
+    Implements the described flow to check if a given input can be viewed as
+    two concatenated strings from the provided list.
+
+    possible_concats: list of strings (expected length >= 2)
+    target_string: a string input (not used in computation per the described flow)
+    Returns: one of "Yes", "True", or "False"
+    """
+    # Validate input
+    if not isinstance(possible_concats, list) or len(possible_concats) < 2:
+        return "False"
+
+    a = possible_concats[0]
+    b = possible_concats[1]
+
+    # Step: Concatenate all elements from the list together
+    concatenated_result = str(a) + str(b)
+
+    # Step: Initialize c1 and c2 based on different combinations
+    c1 = str(a) + str(b)
+    c2 = str(b) + str(a)
+
+    # Step: Check if either c1 or c2 matches the concatenated result
+    if c1 == concatenated_result or c2 == concatenated_result:
+        return "Yes"
+
+    # Step: Iterative Checking
+    s = concatenated_result
+    i = 0
+    c = 0  # counter as described (will effectively count blocks)
+    while i < len(s):
+        current = s[i]
+        j = i
+        # Increment i (via j) until a non-matching character is found
+        while j < len(s) and s[j] == current:
+            j += 1
+        # Decrement c while c remains positive
+        while c > 0:
+            c -= 1
+        # Move to the next segment
+        i = j
+        # Increment c for each processed segment (as a progress indicator)
+        c += 1
+
+    # Step: Final Decision
+    if c == 0:
+        return "True"
+    else:
+        return "False"
+```

@@ -1,0 +1,6 @@
+def is_divisor(n, x, y):
+    if n == 1:
+        return True
+    if n % x == 0 and n % y == 0:
+        return True
+    return False

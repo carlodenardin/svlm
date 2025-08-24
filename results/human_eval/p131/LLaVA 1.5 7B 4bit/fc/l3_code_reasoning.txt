@@ -1,0 +1,64 @@
+```python
+def evaluate_expression(expr):
+    """
+    Evaluate an expression represented as:
+    - numbers (int/float/bool)
+    - dict with keys: 'op', 'left', 'right'
+      op in {'+', '-', '*', '/', '**', 'and', 'or'}
+    The function recursively evaluates sub-expressions following the described approach:
+    - If the expression is a raw number/bool, return it.
+    - If the expression is an operator node, evaluate its sub-expressions and apply the operator.
+      For arithmetic operators, return numeric results.
+      For 'and'/'or', return boolean results.
+    """
+    if isinstance(expr, (int, float, bool)):
+        return expr
+
+    if isinstance(expr, dict):
+        op = expr.get('op')
+        left = evaluate_expression(expr.get('left'))
+
+        if op in ('and', 'or'):
+            # Evaluate the second sub-expression and apply the logical operator
+            right = evaluate_expression(expr.get('right'))
+            if op == 'and':
+                return bool(left) and bool(right)
+            else:  # op == 'or'
+                return bool(left) or bool(right)
+        else:
+            # Arithmetic operations require evaluating the right sub-expression
+            right = evaluate_expression(expr.get('right'))
+            if op == '+':
+                return left + right
+            elif op == '-':
+                return left - right
+            elif op == '*':
+                return left * right
+            elif op == '/':
+                return left / right
+            elif op == '**':
+                return left ** right
+            else:
+                raise ValueError(f"Unsupported operator: {op}")
+
+    raise TypeError("Unsupported expression type")
+
+
+# Example usage (optional):
+if __name__ == "__main__":
+    # Represents the expression: (2 + 3) * 4
+    expr = {
+        'op': '*',
+        'left': {'op': '+', 'left': 2, 'right': 3},
+        'right': 4
+    }
+    print(evaluate_expression(expr))  # Output: 20
+
+    # Represents a logical expression: (1) and (0 or 1) -> True and True -> True
+    logical_expr = {
+        'op': 'and',
+        'left': 1,
+        'right': {'op': 'or', 'left': 0, 'right': 1}
+    }
+    print(evaluate_expression(logical_expr))  # Output: True
+```

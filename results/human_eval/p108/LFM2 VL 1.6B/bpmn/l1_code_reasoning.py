@@ -1,0 +1,5 @@
+def countDigits(list):
+    count = 0
+    for num in list:
+        count += len(str(num))
+    return count

@@ -1,0 +1,25 @@
+```python
+import math
+
+def primality_flow(n, x, y):
+    """
+    Implements the described flow:
+    - If n == 1 -> return y
+    - Else check for divisors in [2, floor(sqrt(n))]:
+        if any divides n -> return y
+    - If no divisor found -> return the final value of x (initialized to 2, updated to last tested)
+    The input parameter x is not used as the starting counter; the loop starts from 2.
+    """
+    if n == 1:
+        return y
+
+    limit = math.isqrt(n)
+    final_x = 2  # initial value before any iterations
+
+    for i in range(2, limit + 1):
+        if n % i == 0:
+            return y
+        final_x = i
+
+    return final_x
+```

@@ -1,0 +1,64 @@
+```python
+def weird_sum(a, b):
+    # Step 2: Calculate the sum of a and b
+    total = a + b
+
+    # Step 3: If a is 0, return 0
+    if a == 0:
+        return 0
+
+    # Step 4: If a is not 0, calculate the sum of a and b
+    total = a + b
+
+    # Step 5: If b is 0, return 0
+    if b == 0:
+        return 0
+
+    # Step 6: If b is not 0, calculate the sum of b and a
+    total = b + a
+
+    # Step 7: If a is 1, return a + 1
+    if a == 1:
+        return a + 1
+
+    # Step 8: If a is not 1, calculate the sum of a and b
+    total = a + b
+
+    # Step 9: If b is 1, return b + 1
+    if b == 1:
+        return b + 1
+
+    # Step 10: If b is not 1, calculate the sum of b and a
+    total = b + a
+
+    # Step 11: If a is 1, return a + 1
+    if a == 1:
+        return a + 1
+
+    # Step 12: If a is not 1, calculate the sum of a and b
+    total = a + b
+
+    # Step 13: If b is 1, return b + 1
+    if b == 1:
+        return b + 1
+
+    # Step 14: If b is not 1, calculate the sum of b and a
+    total = b + a
+
+    # Step 15: If a is 1, return a + 1
+    if a == 1:
+        return a + 1
+
+    # Step 16: If a is not 1, calculate the sum of a and b
+    total = a + b
+
+    # Step 17: If b is 1, return b + 1
+    if b == 1:
+        return b + 1
+
+    # Step 18: If b is not 1, calculate the sum of b and a
+    total = b + a
+
+    # Step 19: Check (end) - return the computed total
+    return total
+```

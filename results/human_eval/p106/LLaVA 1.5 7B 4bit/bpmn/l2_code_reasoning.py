@@ -1,0 +1,62 @@
+from typing import List, Tuple
+
+def evaluate_operations(operations: List[Tuple[str, float]]) -> float:
+    """
+    Evaluate an expression described by a sequence of (operator, operand) pairs
+    using PEMDAS (multiplication/division before addition/subtraction).
+
+    The expression has the form: op1 n1 op2 n2 op3 n3 ...
+    Examples:
+      [ ('+', 3), ('*', 4) ] -> 3 * 4 = 12
+      [ ('-', 3), ('*', 4), ('+', 5) ] -> (-3) * 4 + 5 = -12 + 5 = -7
+      [ ('+', 3), ('+', 4), ('*', 5) ] -> 3 + 4 * 5 = 3 + 20 = 23
+
+    Rules implemented:
+    - The expression is split into terms by '+' or '-' operators.
+    - Within a term, '*' and '/' are applied left-to-right.
+    - The sign of the first term is determined by op1 if it is '+' or '-', otherwise treated as positive.
+    """
+    if not operations:
+        return 0.0
+
+    # Initialize the first term with its sign
+    op1, n1 = operations[0]
+    if op1 == '-':
+        current_term = -n1
+    else:
+        # op1 == '+' or op1 in {'*', '/'}: treat as positive term
+        current_term = n1
+
+    total = 0.0
+
+    # Process the remaining (operator, value) pairs
+    for op, value in operations[1:]:
+        if op == '*':
+            current_term = current_term * value
+        elif op == '/':
+            current_term = current_term / value
+        elif op == '+':
+            total += current_term
+            current_term = value  # start next term with positive sign
+        elif op == '-':
+            total += current_term
+            current_term = -value  # start next term with negative sign
+        else:
+            raise ValueError(f"Unsupported operator: {op}")
+
+    total += current_term
+    return total
+
+def evaluate_operations_from_strings(tokens: List[str]) -> float:
+    """
+    Convenience helper: takes a list like ['+', '3', '*', '4', '+', '5']
+    and evaluates it by pairing as (tokens[0], tokens[1]), (tokens[2], tokens[3]), ...
+    """
+    if len(tokens) % 2 != 0:
+        raise ValueError("Tokens length must be even: alternating operator and operand.")
+    ops: List[Tuple[str, float]] = []
+    for i in range(0, len(tokens), 2):
+        op = tokens[i]
+        val = float(tokens[i + 1])
+        ops.append((op, val))
+    return evaluate_operations(ops)

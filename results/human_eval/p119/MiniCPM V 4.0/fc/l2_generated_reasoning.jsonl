@@ -1,0 +1,1000 @@
+{"success": false, "error": "", "input": ["()(", ")()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()((((((()())(()))(()(()()))()()()", ")(((()((())))())()(((()))()((()))(()()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))(()", "(((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()(()(()(", "())(())((((()((()())(()))))(((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(", "())(()())((()))))((())(((()()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((", "(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()())))))(()((()(()(((((", "(()(((()))()())()))(()((()()(())())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()())", "(()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())", "()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()(((", ")(((()(())()(()()(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))(()()(())))(", "()()(())())())))))(())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", ")()))))()(())(()((("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())()))(((()((", ")((()()))))()))())())()()))(((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())", "())())))()()))()))()(()(()()(()))()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()(", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(()))(((()(()))()())()))()())))))((", ")()))())()()))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))", "((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))(()()())))))", "))))((()(((()))(()()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()()(()))))(())(())(((()((()())", ")))(((()((((((())))(()))(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(((()))())))))(()))(((()(()))()", ")()))))(()))))()()))()())(()))(()()))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()(", ")()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()((())))()))()))))))(()()(", ")))()(()()()(()(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()())", "(()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()())", "(()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()(()(()()(()())))(()(((()()(())", ")())(()))))))())(())))())(())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(()))((())())))()((())()()", "()))))(()()(()))(((())(((())))()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())())(()(((()", "(((((()(()(()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()))()(())(()))())(()((()", ")))))((())()))))()))))()(((()()(()()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()(", ")()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())))((()((((())))()))((", "((())))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()))(()((()(()))(())(()()()()", ")"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())(", "(())()))()(((())(((()((((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))()())))()()))(())(())()())(()()((", "()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()))()(()))(()))(())(", ")(())((((()(()()(((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))(())())))))(", "()())(()(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()", "()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(()()((())())((()(()()", ")((())(()((())("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))", "(((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))", "(((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(())())((()()(((()))))(())())())))))", "))))()()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))()))()))(())((()", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(())))(())))(((())())", "())(((()()())())(()((((()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()))))(()()))((()((()(()())()()()", "(((()(((()()())))()))((())))()())))()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(((()", ")(())(()))))(())(()(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", ")())))"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())", ")))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))((", ")(((()))(())())))))())())())(()()((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())((())))()))))(", "))())())))))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()())", "(()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((((((((()))(((()))()))((((()(()", "()(()())))())(()())(())(()))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(())()", "))())((())())())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())))((", "())(((((())(()()()())())())(((())((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))))(()(", ")(((())))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((()((((", "()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()())()(()))(())()))))())()(()()", "))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())((())(((()(", ")(((()(()())))))))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))))()(()(((((()(((((", "))())(()(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())))())", "(()((())))(((()))(((())(()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()(()))(()(", ")(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()))()()((()()(", "))((())))(((()))((()())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()(())))((()))))())()(", "(()()))))))())())())))()))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()())", "(()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()(", ")()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())())))()((()(()))((()(())))()()())(", "())))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))()(", "()((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()(())(()))((()((())()()))", "))()))()(()(()(()())())()(())(())()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))(((()()()())(())()", "()(()()))()((())((((())())))(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(())))))(())()()()))))()", "((()((())()(()()())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")((()(()()()(", ")((()))()((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())((((())))(", ")(()()(())(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())()))()(((()((()))))(()()((())())((((", "()()(((((()))()()(()))()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((()))((()(", "()))()((((()())))()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))(((()(()()())", "(())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(()(", "))))))))((((((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()())))((()(()((())())(())(", ")((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(((()(()(()(()))())()(()))((())))(())(", "((())))))))(()(()())((((()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()", "()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))))", "((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()(()()((((()())()))(()))()(()))(((", ")(()(()()(())(())()((())((()))()))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(()())(()()((())()()((()(()", ")))((())(()()())((((()()()))))()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))()(((())(()))())()((()(", "(((()()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))", ")()()((((()))))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())(()))()))))", "(())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((()()())))((()))()))()()()((", "(((())(()(((())))))))()))(()))()()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()())", "(()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())(())))))(()()))(()()()()(()()", ")))))()(()(()))(((()))()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(())((()(())))))((()()((((())(())((())", "))()))(()(((((((()())(((((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((())()()(()(()(()()))(()())(((((", ")(((()())))(((())))(((((())))())(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()(", ")()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((()))()", "(())())(())(()()()))(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(())())(", "())(()))()))()(())((()()))(())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()()()((()()()()((", ")()(())(((())))()))))(()))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()()))))((()((((", "())(()(())(()()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()(())((((()())", ")(()())((()()))()(((())()(())))()(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))", "((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()(", ")()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))()()((((((()(()((())((((()(())", "))))()((((()())())))()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())((((()()()()(((()((((", ")()()(()))((()(()))))()))(()(()))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))", "((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(()", "(((()(())())()()())(((()((())(()(())((()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()())()))())()))))(()((()(((", ")(())()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(()))(()(()())(())(((()", "(()((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())(()))((((()()))(()))))))())()))", "))((()((())(()((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()))(())(()((", "((()(((()))))(((())))(())()()(())())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()(", ")()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()(()))()()())(()))()(()((()(((()", "((()(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))())((())())()())((()()))()())))())", "))))))(((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))", "((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", "))())))()(("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))))))()()(()", ")))()))(()))((()()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))((((()((()((()(()(()(())(", "))((((())))))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()))()))())(()())", "(())()()())))(((()())))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")()((((()())))))()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()(())", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((()(())))(((", "))()(((())(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(", "((()()(()((()()))(())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))((()))))()(()()()()())))(((((((", "()((()))()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()))()(()(", "((()(((()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()())", "(()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))(())))))(()(()()", "()()((())(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(())()()()(())))(", "()()()()((())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()()())())(()())", "(((()))(())))())()())()((()(((((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())(()()(()()()(()))(())()())((()", "((())))(())))()())()(())(()()(())))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()())", "(()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()(()((", ")(())))))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(((()()()", "()))((((()())((((())))("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", "(())(()()(())))))())(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())(((()", ")()())(()((((()))))((((()()))()(())))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()())", "(()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()((())((", ")(()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())(()))((((())))))())", "(()(((()(())())((())()))(()))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(()())))())(())(()(", ")()(())())()()))()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()(", ")()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())))((((())(()(())(()()()(()))", "()(()(((()))()((()))((()(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))(()(()())))((()))())", ")(()()))())(()()())))((())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))))))", "((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()", "()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())()())(()))((((((())))(()))))(()(", "()(()()(()))))))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))()(((((()", "((()))()))))(()()()))(())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()())", "(()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()(", ")()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()(", ")()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())((())", ")))(((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()(()((())", "()(()()((()))))())))()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((", ")))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))()))(()()(((()(())())((", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((()((()))()))))(()()))())()()()()((", ")(())(((())()((())())())))((())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()(", ")()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()())())()((((((", ")()))(()()()(()((((()()(((((()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()((()))", "(()((()(()()()()(((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))((()))(((()()))((((()()()(((())(((", "))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((((()((()))()(()((", ")()(())()(()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()((()(())", "()()(((())()))()(())((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()", "())((())()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))", "(()()(()))())(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()())", "(()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()(", ")()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))(()(()()((()(()((())())))(", "(((())))))))()()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()))(()((((((()()", ")((())())()(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))", "((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()((()()())()((", "()((()()())())())))()))))(())))())((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()(()))()((()))())))(((()))()", "()((())()))))()()((())()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())((((()))))()((()))))((", "(((())(((()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((", ")))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(((()((())(((", "()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(((((()((()))", "(((((()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))((", "()()(()))(())()))))()))(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))", "(((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()", "((()()()(())))))))))()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((()(())()((", "))()))))(()())))))((()())()))()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()(", ")()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())())()))))(((()(()()(()())))()()))", "()(()))()))()(())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())()())))())))((()(", "))(())((())))(()))()()(((((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((()(())(()((())())()(((())((()))", ")((((())))())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((())))(())()))(()(()))()()))))(()()))", "((()(()())((((())))()())(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((()()(()))(()((()))((", "())))()(()()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()())(", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))(((()())(()))))", "(()()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()(()))))))))())()((((((())())", ")()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()(()(", "(()(()()()())()((())))()())((())(()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((()))(())))(", "()())))))())())(())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((((", ")))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()())(((())())))((()(()(()))", "))))(((()()(()((())))))))(((((((((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())(((()))()(())()(())))())))", "(())()))())))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))(())())))", "(()()(((()()))(((()))(((())((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(", "(())(((((((()()))(())((())(()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(()(()))))()(((()))()", ")(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())()(())((()())(()))(", "())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())(())((()()()())))", ")))))((())((())(()()(())((())))))((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()(()(()))))))(()", ")()())())())((()((((()(((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())()())()()))(((()(()(())(()((())()", "))))((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()))()()(()((()))((()(())(())", "(()))))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()(())()))))())())((()((()))((()", "))))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((())(()(()", "())((()())((((((()()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((", ")))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()", "()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))((()", "))()()((()(((())((())())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()()(((())((()())(", "(()))("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())((((((()))))(((((())))(()))))(((((", ")(((()()))))))(()()(((()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()(", ")()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()((", "()(()()((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())())", ")(((((()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()())", "(()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(())", ")()))))))(((()()()))())((()))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))(()()()()()(((()(()())))(()(", "))))()()((()()))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()(()()))()))))(((()))(", "()()()))((((()(((())(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()))((())()((()))()())((()()()))", "(()))))()(()))(()((())(())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())))()(()(())))((()())((((()", ")((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(()))((()(", ")(((()(()(((((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())(())(((())(())()()(())((()))(", "()())()())()())((((()()(((()))(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()())", "(()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((", ")))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")((((())()(()(((((((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((", "))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))())()))())))()())()(())))))))()()(", "((())))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()(()))))())(()(", "(())()((((())(()())))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((", "))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))(", ")((()(()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))((()()(", "()(())((()((((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()())", "(()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((", ")))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())()))())(((()())(", "()(((((()(()))())(()()(())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()())()(())))((()())", ")())()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()))(", "((((()))(()))))))())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))((((()", "(())((())((())()(((()))()()))))((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())(())))(()(()())((((((())((((", "()((())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", ")))((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((())()()))())())((", ")()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))((()((", ")()()))(()(()()((())()))((())()))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((())()())())))))()()))(((((((()", ")()())()((())(()(((()()()))()()(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()())()())))(", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(())((()(", "(()())))))()())(())()((()(()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()))()))((", "((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))))()(((()()()()(", "(((((()()(()(((()))(()))()()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", ")()"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()))))(((())))()()((((((()(()))(((((", "))))()())(()()((())(()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", "(()))())(("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()()((((()))()()))(()()()(())()", "))()()())()()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()(()((", "()())(((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ""], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()((())()))((()(((()()((((())())()()((", "())()()(((())("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))((", "()()))(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))(())))()()((()(((", ")((())())()((((((()())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))))))", "((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", ")(()()))))()((((((()))))()()()(()(()"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))))(())()((())(()((((()(((()(()(", ")()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()))(())((())()(()((", "((())())))()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()())", "(()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()((", "))((()))))(()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))()))(((((())()(())())))(((())())()", ")()())(()(()()()))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()", ")()((()))(())))()))(((())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()(((()()()((())())())))))))(()", ")(()))))((((()()()())(())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()))))(()(((()))()()()(", ")()())()(((())()(((()(((()(())((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()(", ")()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(", ")())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((())((())()()()()(())))(()(((()))(()(", "(((()((()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()(", ")()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()(())))))())())", "()(()))))((())()((())()(()()())(())((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(", ")(()())(()(())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))", "))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))", "((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()(", ")()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))(()(()())(()))", ")(())()(((()(((())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))(((()))()(", "))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))(())(()))()))(())()()()))((", "((((()((()()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((()))((())(()((", "))(()))(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", "))()()((()((((())))))))))())))()(()(()"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((()())()))))", ")(()())))(()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()(()(())())(()(", ")(()(()()(())()))()))("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()", "()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())())())(())))))))))(()((", ")()()()()())((()()()))((((()((())()(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((()()", "(()))(())()((((((())))())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())()()()()()))(()())((())", "()))()))()()))((((((()))(((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((", "())((())))((()(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))))", "((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()(()", "))(()(())(())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((()(()(()(", "()()((()())))((((()()())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((()()())()())((()())())))())(", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(()((())((", "())))(()))()))((()()()()())(())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()(", ")()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())(()))())))(", ")))())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()(())()())))((((((((())((", "))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(((()))())(()))))))(()()(((())(", "(()((()(())))()()()())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())())((()())))(())()((", "((()))((()(((()))()()())((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()())", "(()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()(", ")()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((", ")))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()(", ")()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))(((()))())(())))(())(()((((((((", "()()))())(())))(()()((()()))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((((()(())()())((((()()((()))())", "()()))))))((())))()(())())()))(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))))))))()", "()()))(((()((()())((()(()()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((())(())(((()", "))()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))()))(()))))(())))()()))()(()()))())", "(((()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))(())()()))()))(()()(((((()(", "))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())()()))))(()())))()(()())(()((", "((())(()(()()(())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((((()()(())))((((((((()", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())", "))(()))))))((()())))())(())))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))())()()))())(()))()(()((((()(()()()", "())()())(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(((((()(((())(()(()())()())", "()(())))()))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))())(()())((()())))()()(())))((", ")()(()))))())))))((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()())", "(()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(()()))()(((())(((()((()()()())()", ")(()()()))))())(((()))()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()())))())(()()()()(()()", "()))()))()))))(())((())())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()))))()()))()))(()()(((((())", "))()(())((()())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(())(())())()(", ")())()(()())))(((()(())))))()))))())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))", "((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()(", ")()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))((()))())()()(()((()(()))()", ")))())()))))(())())(())))((((()()(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(())(()()()((())()(()()(()((()))())((", ")())())))((()(()))(()()()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))", "((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()(())))())))((()))((()(", "())))()())))()())(()()((()(()))((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()", "()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())(((()((((", "))(()(()()()((())()()()())))()))))())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((", ")))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((())))()(()(()((())))())))())))", "))))()())())((()))())))(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))())())(", "()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())(()((", "()))((()))(())()))())((())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))))))", "((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())))(((((()(())))()(()))())()((())", ")())()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((()())(((", "())(()(()()()()()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((())))((()))()(()))", ")))())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))())", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", "(()((())"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()(", ")()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()(", ")()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(()()(()()(((()(()(()", "))(())))())())(((((((())((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))", "((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((", ")))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())())(((()(()())))(()((((()((", ")(()((((()()()))))))()(())((()(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(()()((()())(()()())()(())())())()", "((()()))(()))))))("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())()))(((((()))()))())(((()(", ")()))))())()))(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()(", ")()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()(", ")()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))))(()((())()(((())(", "))()()()()((()()(((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()())", "(()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())())))((()())(()())(", "))()())))()()(()((()(((((()()(()))))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))(())(()())()((", "()((((()))()((()(()(()()(()((())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()", "()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()(()()()()(())())()())))", "()()())))))(((()()((())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()((()(()(()((()(()(()()())(((()", ")())())))())()()(((((()(()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()())", "(()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(()(()((())(((()", "((()))()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()(", ")()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((", ")))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", "))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()(()((", "((()))))()))))())(()())()())(())()()()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))(((((()))))()()()))((", ")())()(()()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((((((", ")()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))", "())(((()()())((()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())()()))()((())((())())()())", ")())((()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(((())()))()))))))())()))()", ")(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((((((()((", "))(((((((((()(((())()()())()((((()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))))))", "(((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(())(((())()()(", "))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))(((()))))))))(())(())())(", "(((((())())(())())(())))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))((", ")())()()))(()))())(()))(()()))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))))))", "(((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()))())()()()((()))())))", "((()(()())())(()(()())())())()))())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()))()(", ")((()(((((((()))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()", "((()(()(((((()(((((())))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()((())))", "())()))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((()((()()))(()(()((()()))))()))((((", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()(", ")()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()(", ")()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()((((()))()", "((()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()))()()(", ")(())(())()))()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()(", ")()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())))()())))(()()((()", ")(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())())))())(()(((()(()())(((((()((", "(())()))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))()()))()))", "()))()()())(((()))()()))()(((()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()())(()))(((())(()()()(())()((((", "())))()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", ")((())))(((((((())))(()((((()()()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()(()))((()((", "(()((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))", "((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()))(())(())()()((", "())))))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))", "(((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())(())()))))(()", "))()(()(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))()()())((()))))()())(", ")))(((()((()()(()((((())))((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()", "()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(((())((()((", "((()((())))(((()))())()())))("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()(()()(())))()())((()())))())))()))(", ")))((((())(((((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())(())((((((", "))((((((()(())(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()((()((()))()(((((()(()))))))))", ")()(((())()))))())((()()())(((())"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()()(((())())))()))()())()(", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()(", ")()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((", ")))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))(()))((())))(((()))((()((()()())((", "(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))", "(((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()())", "(()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()())", "(()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()(", ")()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())))))((()", ")())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()))())()(()())((((((", "))(((()((()))((())((((((())())()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()())()))))))", "))(()(((((((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))(", "))()()()()()((())()))))()))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", "))(()(())))(()((()))()()))())()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()))(()))(((()()()(())(", ")()()(())((()()()((()()))()(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((()(())()())()()()()((((()(()", ")()))()((()(()))))((()(()()))())((((()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(", "))((()())()))()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "(((()(()))(((((())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((", "))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()", "()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((", "(()()))()((()(((()(((()()()(()()())()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()", "()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()((((", "((((()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((()()", ")((())))))((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))()())((", "))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()()()))()())))", ")()((())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))(((())(()((()))()(", "())))())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()((((()(())(", ")(((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())(()((()(())", "(()())((()())))(((()(((((((((())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()))((", "))(()(()(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))(())())", ")((())))(((((())(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()())", "(()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")((())((((()()()", "())((((((()(((()())((()))()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))((()()))())(((()()))())())(()(", "())())()(()()(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())", "(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((", ")))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())", "(())())(()(())(((())()))((()())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()))()))(()())", "()((())))))((()(())()()()()(((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())((", "(((()(())(()((()))())((((((())(((())))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()))((()(()()((", "))(()((((((()))))(()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(", ")()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((()((((()))(()()()(((()))", ")()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", "()())()()((()((())("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(())()))))()())((", "()()(((((()())()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()(())((()())(())(())()", "())))((())((())()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()", "()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((", "))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))((()(((()((()()()()())(())(()", "))()))))(()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()(", ")()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()(", ")()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(())()", "()((((((()(()()())))((()()))(()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()", ")(()()())(())(((("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()())", "(()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()", "()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))()(((())()()()))())())()(()()((((", "))(())())())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))", "(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())(((()(()))())(())))", ")("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))((()))", "()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(()()()", "()(()()()))))(((()())))()))(())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())())(()(())((()))(", ")))())))((()((())((()()(()())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((((", "())(()))(()(()(()())()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()(", ")()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(()))())))))(()))))))))(()(())", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((())((()))(", "()(())))))()()))))((()())(((((((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(()((()))(())(())()(())))))))()(()(", "())(()(()()(()(()((()(((()(())()(((())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))(())(())))(())((()((()", "))(())((((((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()", "()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))())(()(((())()()()()(((((()(()(", ")(((())(()((()((((((()))(((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((()", "))(((()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((())(()((()()()()(()", "((()))((()()((()(()())))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(((()", ")()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())()((()()))((()((((()))))))())))))", "())(()))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()(", ")()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()))()()((())(((()()((())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()((((()()))))))(((", "()(()()))))(()((()((())))())(((()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(()()(()(()()", ")))((())()))())((())()))((())(()()(()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(", ")())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "(()))((())()))(((()())))((()())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()(", ")()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()(", ")()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())(", "(())()))())()())))())()))(()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())((()", ")(()()))()()((()(((()(()((())()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()(", ")()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())())())(()(())(()", ")))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((((", "))))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()))))())))((((", "(())()()(()()(()())()(()))())((()())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))()))(()))))))()))(", "()(())))(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))))()()(((()((", "))(((())))(((())())())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", "))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()(", ")()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()((())))(()))))))((((((()))()))(()()", "(()(())((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()(", ")()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))", "((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))", "(((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()", "()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()(", ")()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()))))))(()()()", "(()((())))(()))()())())((())()((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()(", ")()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((", "((((())))(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))", "((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()))(())))(", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))))))", "((((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))", "))((()))((()())()))(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())())(()()", ")()())())())(((((()))()()(()(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(", ")())((())()()))(())))())(((())(((()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((", "))(())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())((()())()(()((()(()(()()(()()", "((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((", ")()))(())())()))()(()()(((())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")((())()))()()()))())(())()()()))((", ")()))()))))())((((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((((())((())))(((())())((((((", "))((()(()()(())))())()()(()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(((())((()()(()(()())())(())((())(())", "(())))(())((()))((())))())((()(()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())((", "(((())((((()()(())((((()))((())))))((())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((", "((()))(()))((()(()((((()(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()())", "(()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()))(()(()()(()()()))(((", ")((((()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((())(((((((()((", "()))((()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "(()()))))((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(", ")())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()(", ")()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((", ")))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((())(())))))()()(()))())))()))()(()", "())()((()()(()()()()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()())", "(()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()(", ")()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())(()(())()()((()(", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))())))))))))))()()))))", ")()()((()))(())()()())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((())(()()()()()((()()))(()", ")()((((())(((())())(())()))))(()((()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))(()(()(()()(())(((()((()())(()()", "(()()((((()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()(", ")()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((((()", "((()))()((())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((", "))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())((()((()(()()((())))))())", "((((((((())()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((", "))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(((())))((())()()(((()", ")())()))())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((", "))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())(())))", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()", "()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", ")((("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())", "))()((()))(((())()))))(()((()"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(((((((()(", ")))))))(((()))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()(()))())(()()()(())((", ")((())())(())))))))()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())))()))((((())", ")()((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())))()))))(((((()))))(((((()(", "(()))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()((()))())))(((()((", "(()((((()))())((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(()())((()))())(()()((()((", "))))())((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((())((", "((((())))(())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", ")()))((())((((())(((()((())("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()()())))()))))(()())()()()", "((()()))))(()(()(((((((()(())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((", "))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()", "()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()(", ")()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((", "))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))(()((())((()())))((((())))())", ")())((()))()()))())(())()())))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()", "()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(())((()))()()()()((", ")())()((((((()((((((((())()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", "())())"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()(", ")()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))()))))))()(()((()(((((()(()()(())", "(())())((((((()))((((()(()()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()", "()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()))())(((()(())()()())(", "))((((((((((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())())))(())((()((()))()())()))((())))", ")()(())()())())())(()))()))()))(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))(()())()))()())()))(()()((", "()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))((()))((((()))())())((())", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))()(()))()", "())))()(()()(((())((())))(()))))))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))())((((()(())())))))", ")))())(((()()(()))(((((()(((()(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())))(()()()()())", "()(()(())())))))()()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))", "(((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))())(()()((((()((((()", ")("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())()()(())))()()((()))())))(", "))()()(()()))))((((())((()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))())))(((((())(()()()())))()(", ")()(((((())((()())(((())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()()()()(()(((((((())())(", ")(()((())(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())()(())(()((()))()", "))(()))()())(())()((())()(()))()()(()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))()((((()(()())()(())))(()(()())))((()", "))))(())()())(()(())(()(()()))((())))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", "(()()((()())(()((((()))(())((())((())("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()(", ")()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()))((()())(()()(()((((()))", ")(()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()", "))(()()(())))(("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()()((()((((", ")()())(((()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()(", ")()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")((())(()(()(()", "()((())))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()", "()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())())(())))()", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(())))", ")))(())(())))(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())(()()(()()))))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))((((((()(())((((((()()))(((((", ")()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()(", ")()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()())())))(((()(()((()((()()))()((()(()", ")()))()))))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((()((((", "())(()(("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))))", "((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((", ")))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()(", ")()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(()(", "())())((()((()))(((((()(((((()()((())())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))()(())())((()(()", "())()())())(()(()())()))))(()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))(((()(()()))((())()()))(((())))())((", "))((()((()(()()())(())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "((((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((()())(()(()((", "(((()((()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()())(()()()())))(((())()(((", "()()()(()()()(()((())))(())(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))", "(((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()((()", "()))))))()))()(()(()(())()(()((()()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()())", "(()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((()()(()(((()())", ")))(()()((()(())))())()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))((()))((())()))()()(()(())))))))(", ")("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "()())))()((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())()))()((()", "))()()())))(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()", ")()(())()())((())()()(()()()))"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")", "("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((((((", ")))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()(()()()(((((()((())))()", ")(()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()(()(((((()(()", ")))(()(())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())()))(()(", ")))(((()))(())(((()()(((()()())(()))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())()))()())())))((", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()", "()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((()((((((()((()))((()))(())((((()(", "()((()((())((())))((((())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))((()()(())((())((())()()))", "()))((()()(((())()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())(", "()(((()(()))())())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()(", ")()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["", "))()))(((())()(()))"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))))", "((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()())", "(()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()(", ")()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))(())())", ")(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(", ")())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))))))", "((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()(((((()(", "((())()(())())())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(((((((()(((())((()(()(())())", ")()())())()(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())((((()(())())((())))(()(", ")))))()())(())()))()(()(()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))()(())))()", "))(()))()()())(())((()())))(())()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()", ")()()))()())())))))()()())()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(())())()(", "))()((()))((()))(())((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()())", "(()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()())()()())())()((()())())())", "((()(()(((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()(", ")())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(((((())(())))()(())(())", "()()(((()())()))(()(())(()(()(()(())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))))", "((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()(()()))(()()())(()()()(()))((((((()(", "()()))())()))(((()()()()(((())((()))(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())()())())()))(()", "(()))())))(((()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))(()))((()()(()(()))())(())(", "(())))))())()(()(()(()((((()(((())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(()(()((())()(())))(()()(((()(()))())", "())((())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["", "))()))()()()))(()((()))((())"], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": ["())(()((((", "(()(()(()()))))()))()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()))", "()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()))()(()())(", "))))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())(()", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(", ")()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((()))()(()", "()()))((())(((()))(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))", "(((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()())", "(()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()())", "(()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()()(", ")()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((()())((()()()))))))(((", ")())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((((((((((((((((((", ")))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()(())()((()()(()))(())()()((", ")()()((())((((((((((()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))((()(()(", ")))))))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))((((()))()))))(", ")(())()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())()())())((()())(()(((", "(())())())()(())((())))()))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())(())))()))((()))", "))())((())()(((((()))(((()((()))((()(())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())((()((((((()(()((())(())((()))()", ")()()))(((((())(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()", "()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((", ")))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")())", ")()(()(()())()()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()(", ")()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))()))()()(((()())))()))))(", "())())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))()(()))(((())(((((()))()(((())((()))(", "())))(((())())()()(()))))))()))))((()(()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()", "()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")((()))))))))))))))(()))", "((())))()()()))))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))())(((()", ")(())(()(()(())(()((()((()(()()())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()()()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["())()())))())()()", "(()(())(((()())()()(((())))))))()())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()))()(((()()))())))(()(())((()(", "()()()))))()((()(()()(((()(())))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((((((", "))))))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()))))((()()()())()", ")()()))(((())((()(((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))))))))))))))))", "(((((((((((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()()()()()()", "()()()()()()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()()()()()()()()()()()()()()()()(", ")()()()()()()()()()()()()()()()()())"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()", "()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()", "()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()(())))(", ")()))))(()))())"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((()))", "())()(()()))())((()())(((()(())())(()))("], "output": "End", "correct_output": "No"}
+{"success": false, "error": "", "input": [")))))", "((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))))))))", "((((((((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()))(()(())()(())))(()(()(((", "()))(((()())())())()())))))(()))())("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()((((()()(())))()()))((())(", "(())()((()))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))((())()(((((()((())()))(())()()))(", ")(((()())))))()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((", "))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))))(())))()((()(())(()))))(((())(((", ")))()))(()(())))"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()())())", ")((()((()(()(()(()()))((()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["))))", "(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(((((((((((", ")))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))", "(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")()()()()())", "(()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((", ""], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((", ")))()(()(()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["))((", "))(((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()((((", "))("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()())", "(()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()()()()(", ")()()()()"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((()()", "((())))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()))))(()))(", "(()()))())()())()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()()()()()()()()()()()()", "()()()()()()()()()()()()()("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")))", "((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")(()))()))", "())())))))()()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()())()())(())(())())))(()()())(()()((", ")()((("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")()()((()))((", ")(((())()))())(())))((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(())((())))())()(()(((()(()(()()((((", "))()))()()()(("], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["((((((((((((((", "))))))))))))))"], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(()()((()((())()", "(((()((())))((()(()()()(()(())(()("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["()(())((", "()((()))()(()))))))((((())()()((("], "output": "Not Balanced: there are unmatched opening parentheses.", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(((()()())()())))(", "())((()))())))))((()"], "output": "Not Balanced: a closing parenthesis appears before its opening.", "correct_output": "No"}

@@ -1,0 +1,20 @@
+```python
+def primality_test(n: int) -> str:
+    # Initialization as described
+    x = 0
+    y = 0
+
+    # Base case check
+    if n == 1:
+        return "no"
+
+    # Divisibility check from 2 up to sqrt(n)
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return "no"
+        i += 1
+
+    # If no divisor found
+    return "yes"
+```

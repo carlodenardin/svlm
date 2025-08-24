@@ -1,0 +1,22 @@
+```python
+def check_contains_all_characters(s, str1):
+    i = 0
+    c = 0
+    while i < len(s):
+        # Inner loop over characters of str1
+        j = 0
+        while j < len(str1):
+            if s[i] == str1[j]:
+                c += 1
+            j += 1
+
+        # Length check
+        if len(str1) < c:
+            return False
+
+        # Decrement and move to next character in s
+        c -= 1
+        i += 1
+
+    return True
+```

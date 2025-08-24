@@ -1,0 +1,119 @@
+```python
+def check_string(s):
+    """
+    Checks if two strings are anagrams of each other.
+
+    Args:
+        s: The input string.
+
+    Returns:
+        True if the string is an anagram, False otherwise.
+    """
+    if not s:
+        return True
+
+    s1 = s[0]
+    s2 = s[1]
+
+    c1 = check_string(s1)
+    c2 = check_string(s2)
+
+    if c1 or c2:
+        return True
+
+    if s[0] == '-':
+        return True
+
+    c = 1
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        return False
+
+    if c < 0:
+        

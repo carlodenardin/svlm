@@ -1,0 +1,20 @@
+```python
+def check_string_length(s):
+    """
+    Checks the length of a string and returns the result.
+
+    Args:
+        s (str): The input string.
+
+    Returns:
+        int: The length of the string.
+    """
+    if not s:  # Check if the string is empty
+        return 0
+    else:
+        return len(s)
+
+# Example usage:
+print(check_string_length("hello"))  # Output: 5
+print(check_string_length(""))  # Output: 0
+```

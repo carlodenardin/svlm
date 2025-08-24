@@ -1,0 +1,24 @@
+```python
+def lucas_series(n):
+    # Generate first n terms following the described flowchart
+    if n <= 0:
+        return []
+    result = [0] * n  # initialize a list of dimension n
+    i = 1
+    j = 0
+    t = 0  # index for filling the preallocated list
+    while i <= n:
+        if i % 2 == 0:
+            x = 1
+        else:
+            x = 0
+        j += 1
+        if j <= i:
+            result[t] = x
+            t += 1
+            i += 1
+        else:
+            # This branch is theoretically unreachable given the loop's invariants
+            pass
+    return result
+```

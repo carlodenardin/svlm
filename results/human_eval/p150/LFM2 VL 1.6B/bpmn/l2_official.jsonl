@@ -1,0 +1,10 @@
+{"success": false, "error": "", "input": [7, 34, 12], "output": "No", "correct_output": 34}
+{"success": false, "error": "", "input": [15, 8, 5], "output": "No", "correct_output": 5}
+{"success": false, "error": "", "input": [3, 33, 5212], "output": "No", "correct_output": 33}
+{"success": false, "error": "", "input": [1259, 3, 52], "output": "No", "correct_output": 3}
+{"success": false, "error": "", "input": [7919, -1, 12], "output": "No", "correct_output": -1}
+{"success": false, "error": "", "input": [3609, 1245, 583], "output": "No", "correct_output": 583}
+{"success": false, "error": "", "input": [91, 56, 129], "output": "No", "correct_output": 129}
+{"success": false, "error": "", "input": [6, 34, 1234], "output": "No", "correct_output": 1234}
+{"success": false, "error": "", "input": [1, 2, 0], "output": "Yes", "correct_output": 0}
+{"success": false, "error": "integer modulo by zero", "input": [2, 2, 0], "output": null, "correct_output": 2}

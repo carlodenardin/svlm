@@ -1,0 +1,41 @@
+Okay, let's break down the algorithm represented by the flowchart.
+
+**Overview:**
+
+The algorithm's purpose is to take an integer as input and determine whether the number of even digits and the number of odd digits are equal. It then returns a string indicating whether the number is "even" or "odd" based on this comparison.
+
+**Input Data:**
+
+*   An integer (whole number) as input.  This can be positive, negative, or zero.
+
+**Main Logical Flow (Step-by-Step):**
+
+1.  **Receive Integer as Input:** The algorithm begins by receiving an integer from the user or a data source. Let's call this `number`.
+
+2.  **Initialize Counters:**  Create two variables, `even_count` and `odd_count`, and initialize them to 0. These will store the number of even and odd digits found in the input number.
+
+3.  **Handle Negative Numbers:** If `number` is negative, take its absolute value. This ensures that the sign doesn't affect the digit counting.  `number = abs(number)`
+
+4.  **Iterate Through Digits:**  Convert the integer `number` to a string. Then, iterate through each character (digit) in the string.
+
+5.  **Check Each Digit:** For each digit:
+    *   Convert the character digit back to an integer.
+    *   Check if the digit is even or odd using the modulo operator (`%`). If `digit % 2 == 0`, the digit is even; otherwise, it's odd.
+    *   If the digit is even, increment `even_count`.
+    *   If the digit is odd, increment `odd_count`.
+
+6.  **Compare Counts:** After iterating through all the digits, compare `even_count` and `odd_count`.
+
+7.  **Return Result:**
+    *   If `even_count == odd_count`, return the string "even".
+    *   Otherwise, return the string "odd".
+
+**Expected Output:**
+
+*   A string: "even" if the number of even digits equals the number of odd digits.
+*   A string: "odd" if the number of even digits does not equal the number of odd digits.
+
+**Example:**
+
+*   **Input:** 123456
+    *   `even_count` =

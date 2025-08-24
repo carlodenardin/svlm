@@ -1,0 +1,12 @@
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["()(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": [")", ")"], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["(()(())", "())())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": [")())", "(()()("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["(())))", "(()())(("], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["()", "())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["(()(", "()))()"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["((((", "((())"], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": [")(()", "(()("], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": [")(", ")("], "output": null, "correct_output": "No"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": ["(", ")"], "output": null, "correct_output": "Yes"}
+{"success": false, "error": "run_string_validation_flow() takes 0 positional arguments but 1 was given", "input": [")", "("], "output": null, "correct_output": "Yes"}

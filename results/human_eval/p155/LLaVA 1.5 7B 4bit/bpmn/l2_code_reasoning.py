@@ -1,0 +1,16 @@
+def count_even_odd(numbers):
+    """
+    Counts even and odd numbers in the given sequence.
+    Initializes counters to zero, iterates over each number,
+    increments the appropriate counter, and finally outputs the counts.
+    """
+    even = 0
+    odd = 0
+    for n in numbers:
+        if n % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print(even)
+    print(odd)
+    return (even, odd)

@@ -1,0 +1,52 @@
+### Algorithm Implementation Overview
+
+**Purpose:**
+The algorithm is designed to determine whether a given integer `n` is a prime number. If `n` is a prime number, the algorithm returns `True`; otherwise, it returns `False`.
+
+**Input Data Required:**
+- An integer `n` (the number to be checked for primality).
+
+**Main Logical Flow:**
+1. **Input Validation:**
+   - Check if `n` is less than 2. If so, return `False` since prime numbers are defined as greater than 1.
+   
+2. **Divisibility Check:**
+   - Iterate from 2 up to the square root of `n` (inclusive) to check for divisibility.
+   - If `n` is divisible by any number in this range, return `False` since `n` is not a prime number.
+   
+3. **Return Result:**
+   - If the loop completes without finding any divisors, return `True` indicating that `n` is a prime number.
+
+**Expected Output:**
+- `True` if `n` is a prime number.
+- `False` if `n` is not a prime number.
+
+### Step-by-Step Implementation
+
+1. **Input Validation:**
+   - Start with the condition `if n < 2: return False;`
+     - This checks if `n` is less than 2, which is not a prime number.
+
+2. **Divisibility Check:**
+   - Use a `for` loop to iterate from `2` to `sqrt(n)` (inclusive).
+     - For each number `i` in this range, check if `n % i == 0`.
+     - If `n % i == 0`, return `False` since `n` is divisible by `i` and hence not a prime number.
+
+3. **Return Result:**
+   - If the loop completes without finding any divisors, return `True`.
+
+### Pseudocode
+
+```plaintext
+function is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, sqrt(n)):
+        if n % i == 0:
+            return False
+    return True
+```
+
+### Conclusion
+
+This algorithm efficiently determines the primality of an integer by checking divisibility only up to the square root of `n`, which is a well-known

@@ -1,0 +1,17 @@
+Overview:
+The algorithm is designed to calculate the sum of a series of numbers. It starts with an initial value of n, which is the number of terms in the series. The algorithm then checks if the series has an even number of terms. If it does, it calculates the sum of the first half of the series. If it doesn't, it calculates the sum of the second half of the series. The algorithm continues to add the terms of the series until it reaches the end.
+
+Input Data:
+The input data required for the algorithm is the number of terms in the series, which is represented by the variable n.
+
+Main Logical Flow:
+1. The algorithm starts with an initial value of n.
+2. It checks if the series has an even number of terms. If it does, it calculates the sum of the first half of the series. If it doesn't, it calculates the sum of the second half of the series.
+3. The algorithm continues to add the terms of the series until it reaches the end.
+4. The expected output is the sum of the series.
+
+Function Calls:
+The algorithm uses a for loop to iterate through the series and add the terms to the sum. It also uses a series of if-else statements to determine whether to calculate the sum of the first half or the second half of the series.
+
+Expected Output:
+The expected output is the sum of the series.

@@ -1,0 +1,32 @@
+```python
+import math
+
+def find_divisor(n, x, y):
+    """
+    Find a divisor of n from 2 to sqrt(n) and return x if found, or y otherwise.
+    
+    Args:
+    n (int): The integer to find a divisor for.
+    x (int): An integer to be used in the algorithm.
+    y (int): An integer to be used in the algorithm.
+    
+    Returns:
+    int: The divisor x if found, or y otherwise.
+    """
+    # Check if n is equal to 1
+    if n == 1:
+        return y
+    
+    # Find a divisor of n from 2 to sqrt(n)
+    sqrt_n = int(math.sqrt(n))
+    for i in range(2, sqrt_n + 1):
+        if n % i == 0:
+            # A divisor exists; check if x divides n
+            if n % x == 0:
+                return x
+            else:
+                return y
+    
+    # No divisor found in the range
+    return y
+```

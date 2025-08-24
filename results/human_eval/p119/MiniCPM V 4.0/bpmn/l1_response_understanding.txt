@@ -1,0 +1,22 @@
+The flowchart outlines an algorithm designed to determine if a given list of two strings is balanced. Here’s a detailed step-by-step process for implementation:
+
+1. **Input Data**: The input consists of a list composed of exactly two strings. These strings are the elements that need to be checked for balance.
+
+2. **Algorithm Purpose**: The primary goal of this algorithm is to verify whether each character in the first string has a corresponding matching character (denoted by ') in the second string, and ensure that all pairs do not exceed any opening brackets ('<') before they close.
+
+3. **Main Logical Flow**:
+    - Start by receiving the list containing the two strings as input.
+    - Concatenate these two strings together into one combined string.
+    - Check if there exists at least one instance where both conditions specified above are met within the concatenated string.
+    - If such instances exist, return "Yes" indicating that the combination is balanced.
+    - Otherwise, return "No" indicating that the combination is unbalanced.
+
+4. **Decision Point**: 
+    - At the center of the flowchart, there is a decision point asking, “at least one balanced?” This checks if there's a pair of matching characters without exceeding any open brackets.
+    - Based on the result of this check, proceed accordingly:
+        - If yes, return "Yes".
+        - If no, continue with returning "No".
+
+5. **Expected Output**: The expected output from the algorithm will either be "Yes" or "No", depending on whether the concatenated string meets the criteria for being balanced according to the rules provided.
+
+This structured approach ensures clarity and precision in implementing the logic required to solve the problem depicted in the flowchart.

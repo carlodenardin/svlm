@@ -1,0 +1,10 @@
+def string_balance_checker(list_of_strings):
+    balanced = False
+    for string in list_of_strings:
+        if len(string) == 2:
+            if '(' in string and ')' in string:
+                if string[0] == '(' and string[-1] == ')' and string[1:-1].strip() == '()':
+                    balanced = True
+            else:
+                balanced = False
+    return balanced

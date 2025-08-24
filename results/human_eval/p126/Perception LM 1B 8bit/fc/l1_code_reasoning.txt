@@ -1,0 +1,27 @@
+```python
+def algorithm(nums):
+    """
+    Implements the described approach:
+    - Return False if the input list is empty.
+    - Sort the list (in ascending order) and check for occurrences.
+    - If any value occurs more than twice (i.e., a run length > 2 in the sorted list),
+      return False; otherwise return True.
+    """
+    if not nums:
+        return False
+
+    sorted_nums = sorted(nums)
+    current = sorted_nums[0]
+    count = 1
+
+    for val in sorted_nums[1:]:
+        if val == current:
+            count += 1
+            if count > 2:
+                return False
+        else:
+            current = val
+            count = 1
+
+    return True
+```

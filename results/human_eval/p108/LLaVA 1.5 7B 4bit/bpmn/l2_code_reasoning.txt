@@ -1,0 +1,21 @@
+```python
+def process_integer_list(numbers, threshold):
+    """
+    Implements the described algorithm:
+    - Start: initialize result list and running total.
+    - Input: numbers is a list of integers.
+    - Process: iterate through numbers, append each to result and add to total.
+    - Decision: if the running total exceeds the threshold, stop processing further (break).
+    - Output: return the processed list (which may be partial if stopped early).
+    """
+    result = []
+    total = 0
+
+    for num in numbers:
+        result.append(num)
+        total += num
+        if total > threshold:
+            break
+
+    return result
+```

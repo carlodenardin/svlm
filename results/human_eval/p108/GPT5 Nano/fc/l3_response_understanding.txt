@@ -1,0 +1,84 @@
+Certainly! Here’s a clear breakdown of the algorithm depicted in the flowchart:
+
+---
+
+### **Overview**
+
+**Purpose:**  
+This algorithm processes a list of integers. For each integer, it checks whether the sum of its digits (considering the sign of the number) is positive. The final result is the count of such numbers in the list.
+
+---
+
+### **Input Data**
+
+- **arr:** A list of integers (`list[int]`).
+
+---
+
+### **Step-by-Step Logical Flow**
+
+1. **Initialization**
+    - Set `res = 0` (result counter)
+    - Set `i = 0` (index for iterating through the list)
+
+2. **Iterate through each element in Input List**
+    - While `i < len(arr)`:
+        1. Get `n = arr[i]`.
+        2. Initialize `digits = []` (to collect digits).
+        3. Initialize `isNeg = 1` (indicator for negativity).
+        4. **Check for negativity:**  
+           If `n < 0`, set `isNeg = -1` and make `n = abs(n)`.
+
+3. **Extract Digits**
+    - While `n > 0`:
+        - Append the least significant digit to `digits`: `digits.append(n % 10)`
+        - Update n: `n = n // 10`
+    - After the loop, set `digits[-1] *= isNeg` (multiply the most significant digit by `isNeg` to retain the number's sign).
+
+4. **Check if the Sum of Digits is Positive**
+    - If `sum(digits) > 0`:
+        - Increment `res` by 1.
+    - Move to the next element: `i += 1`.
+
+5. **Repeat** until all elements have been processed.
+    - When `i >= len(arr)`, end the process.
+
+---
+
+### **Output**
+
+- **res:**  
+  The number of integers in the input list whose "signed digit sum" is positive (i.e., the sum of digits, where the most significant digit has the original sign, is positive).
+
+---
+
+## **Pseudocode Implementation**
+
+```python
+def count_positive_signed_digit_sums(arr):
+    res = 0
+    i = 0
+    while i < len(arr):
+        n = arr[i]
+        digits = []
+        isNeg = 1
+        if n < 0:
+            isNeg = -1
+            n = abs(n)
+        while n > 0:
+            digits.append(n % 10)
+            n = n // 10
+        if digits:
+            digits[-1] *= isNeg  # Apply the sign to the most significant digit
+        if sum(digits) > 0:
+            res += 1
+        i += 1
+    return res
+```
+
+---
+
+**Summary:**
+- Iterates over each integer in a list.
+- For each, collects its digits, applies the original sign to the most significant digit, and checks if the sum of the digits is positive.
+- Counts how many integers in the list satisfy this property and returns the count.

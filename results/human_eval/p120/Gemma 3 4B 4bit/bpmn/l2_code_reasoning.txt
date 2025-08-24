@@ -1,0 +1,16 @@
+```python
+def get_last_k_elements(lst, k):
+    # Check for invalid input
+    if k <= 0:
+        return []
+    
+    # Sort the list in ascending order
+    sorted_list = sorted(lst)
+    
+    # If k is larger than the length, return the entire sorted list
+    if k >= len(sorted_list):
+        return sorted_list[:]
+    
+    # Extract the last k elements
+    return sorted_list[-k:]
+```

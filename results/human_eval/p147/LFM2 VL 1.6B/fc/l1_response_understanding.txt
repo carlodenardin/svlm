@@ -1,0 +1,56 @@
+### Algorithm Overview
+
+The algorithm is designed to count the number of distinct triplets of a set of values. It takes a list of values and determines how many unique triplets can be formed from these values.
+
+### Input Data
+
+- A list of values, `values`, which can be of any size and contains distinct elements.
+
+### Main Logical Flow
+
+1. **Input Validation**: The algorithm first checks if the input list `values` is empty. If it is, the algorithm returns 0, as there are no triplets to count.
+
+2. **Triplet Generation**: The algorithm generates all possible combinations of 3 elements from the list `values`. This is done using a nested loop structure.
+
+3. **Triplet Uniqueness Check**: For each combination of 3 elements, the algorithm checks if all three elements are distinct. This is done by comparing each element in the combination with the others.
+
+4. **Counting Distinct Triplets**: If all three elements in a combination are distinct, the algorithm increments a counter.
+
+5. **Output**: After checking all combinations, the algorithm returns the total count of distinct triplets.
+
+### Expected Output
+
+- The output is the number of distinct triplets that can be formed from the input list `values`.
+
+### Implementation
+
+Here is a Python implementation of the algorithm:
+
+```python
+def count_distinct_triplets(values):
+    if not values:
+        return 0
+    
+    count = 0
+    n = len(values)
+    
+    # Generate all combinations of 3 elements
+    for i in range(n):
+        for j in range(i + 1, n):
+            for k in range(j + 1, n):
+                if values[i]!= values[j] and values[i]!= values[k] and values[j]!= values[k]:
+                    count += 1
+    
+    return count
+
+# Example usage
+values = [1, 2, 3, 4, 5]
+print(count_distinct_triplets(values))  # Output: 10
+```
+
+### Explanation of the Code
+
+- The function `count_distinct_triplets` takes a list of values as input.
+- It first checks if the list is empty and returns 0 if it is.
+- It initializes a counter `count` to 0.
+- It then iterates over all possible

@@ -1,0 +1,50 @@
+**Algorithm Overview**
+======================
+
+### Purpose
+The algorithm is designed to extract the i-th value from a list of integers and return it as a variable. It also performs various operations on the input data, including setting flags, initializing variables, and performing arithmetic operations.
+
+### Input Data
+The algorithm requires a list of integers as input.
+
+### Main Logical Flow
+#### Step 1: Initialize Variables
+* `res = 0` and `i = 0`
+
+#### Step 2: Extract the i-th Value
+* `Extract the i-th value from the list in a variable n`
+
+#### Step 3: Initialize Variables
+* `digits = []` and `isNeg = 1`
+
+#### Step 4: Set the Flag isNeg
+* `Set the flag isNeg to -1`
+
+#### Step 5: Set n Equal to the Absolute Value of Itself
+* `Set n equal to the absolute value of itself`
+
+#### Step 6: Set the Last Element of the List Digits to Itself Multiply by the Flag isNeg
+* `Set the last element of the list digits to itself multiply by the flag isNeg`
+
+#### Step 7: Append to the Digits List the Remainder of n Divided by 10 and Set n Equal to the Integer Division of Itself by 10
+* `Append to the digits list the remainder of n divided by 10 and set n equal to the integer division of itself by 10`
+
+#### Step 8: Sum of Digits Greater Than 0?
+* `Sum of digits greater than 0?`
+
+#### Step 9: Increase res by 1
+* `Increase res by 1`
+
+#### Step 10: Increase i by 1
+* `Increase i by 1`
+
+### Expected Output
+The algorithm returns the i-th value as a variable, which is the absolute value of the extracted value.
+
+**Example Use Case**
+```python
+numbers = [3, 5, 2, 7, 1]
+res = extract_i-th_value(numbers)
+print(res)  # Output: 2
+```
+In this example, the algorithm extracts the 3rd value from the list `[3, 5, 2, 7, 1]` and returns it as `2`.

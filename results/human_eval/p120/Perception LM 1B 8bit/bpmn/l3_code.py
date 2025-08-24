@@ -1,0 +1,3 @@
+def sort_list(k):
+    list.sort()
+    return list[-k:]

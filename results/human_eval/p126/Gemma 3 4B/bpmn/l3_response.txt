@@ -1,0 +1,20 @@
+```python
+def is_sorted(list):
+    """
+    Checks if a list of integers is sorted in ascending order.
+
+    Args:
+        list: A list of integers.
+
+    Returns:
+        True if the list is sorted in ascending order, False otherwise.
+    """
+    i = 0
+    len_list = len(list)
+    while i < len_list:
+        if list[i] > list[i - 1]:
+            if i > 1 and list[i] > list[i - 2]:
+                return False
+        i += 1
+    return True
+```

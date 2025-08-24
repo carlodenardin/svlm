@@ -1,0 +1,16 @@
+def is_sorted_ascending(lst):
+    for i in range(len(lst) - 1):
+        if lst[i] > lst[i + 1]:
+            return False
+    return True
+
+def has_duplicates(lst):
+    unique = set()
+    for x in lst:
+        unique.add(x)
+        if len(unique) > 1:
+            return True
+    return False
+
+def is_sorted_and_no_duplicates(lst):
+    return is_sorted_ascending(lst) and not has_duplicates(lst)

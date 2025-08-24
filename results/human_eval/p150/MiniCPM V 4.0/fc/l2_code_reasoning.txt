@@ -1,0 +1,30 @@
+```python
+def vlm_find_divisor(n_input, x_input, y_input):
+    # Start: Input n, x, y (n_input, x_input, y_input)
+    # Initialization: Set n to 1
+    n = 1
+    # y is not defined initially
+    y = None
+
+    # Loop Condition: while n equals 1
+    while n == 1:
+        divisor_found = False
+        max_x = int(n ** 0.5)
+        # Divisor Check: check for any divisor from 2 to sqrt(n)
+        for x in range(2, max_x + 1):
+            if n % x == 0:
+                # If a divisor is found, set y to that divisor (x)
+                y = x
+                divisor_found = True
+                # Continue checking further potential divisors (loop continues)
+        # Decision Point
+        if divisor_found:
+            # If a divisor was found, continue the outer loop
+            continue
+        else:
+            # If no divisor found in the range, exit the loop
+            break
+
+    # Output: return y (may be None if no divisor was found)
+    return y
+```

@@ -1,0 +1,17 @@
+The algorithm depicted in the flowchart is designed to analyze an integer input and determine whether it contains more even or odd digits. Here’s a step-by-step description of its implementation:
+
+1. **Input Reception**: The process begins by receiving an integer as input from the user or another source. This integer will be used for further analysis.
+
+2. **Digit Counting**: 
+   - Convert the integer into a string so that each digit can be individually accessed.
+   - Initialize counters for both even and odd digits to zero.
+   - Iterate through each character (digit) in the converted string representation of the integer.
+   - For each digit, check if it is even or odd using the modulus operator (`%`) with 2. If the remainder when divided by 2 is 0, the digit is even; otherwise, it is odd.
+   - Increment the respective counter based on the type of digit encountered.
+
+3. **Comparison and Output**: 
+   - Compare the counts of even and odd digits after completing the iteration.
+   - Determine which count is greater.
+   - Return the result indicating whether there are more even digits, more odd digits, or an equal number of both.
+
+This structured approach ensures accurate counting and comparison of even and odd digits within the given integer input.

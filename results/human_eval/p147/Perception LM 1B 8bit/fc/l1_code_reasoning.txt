@@ -1,0 +1,9 @@
+```python
+def count_distinct_triples(n):
+    A = [0] * n
+    count = 0
+    for i in range(n):
+        if A[i] == i * i - i + 1:
+            count += 1
+    return count
+```

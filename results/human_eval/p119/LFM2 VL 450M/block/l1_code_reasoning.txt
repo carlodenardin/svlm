@@ -1,0 +1,28 @@
+```python
+def balance_strings(strings):
+    """
+    Determine balance between first two strings depending on the evenness of the input list length.
+    Returns one of the specified messages according to the described logic.
+    """
+    n = len(strings)
+    # Step 2: if the list length is not even
+    if n % 2 != 0:
+        return "No, both strings are unbalanced."
+    # If there are fewer than two strings, treat as unbalanced (no pair to compare)
+    if n < 2:
+        return "No, both strings are unbalanced."
+    
+    first = strings[0]
+    second = strings[1]
+    len1 = len(first)
+    len2 = len(second)
+
+    # Step 3: if first string is shorter than second
+    if len1 < len2:
+        return "No, both strings have the same number of characters."
+    # Step 5: if first string is longer than second
+    if len1 > len2:
+        return "No, both strings have the same number of characters."
+    # Step 6: if equal
+    return "Yes, both strings have the same number of characters."
+```

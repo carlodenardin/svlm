@@ -1,0 +1,33 @@
+```python
+def calculate_sum_of_digits(n):
+    """
+    Calculate the sum of digits in an integer.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        int: The sum of digits in the input integer.
+    """
+    res = 0
+    i = 0
+    arr = [int(x) for x in str(n)]
+
+    while i < len(arr):
+        if arr[i] < 0:
+            isNeg = -1
+        else:
+            isNeg = 1
+
+        if sum(arr[:i+1]) > 0:
+            res += 1
+        else:
+            res += 1
+
+        i += 1
+
+    return res
+
+# Example usage:
+print(calculate_sum_of_digits(12345))  # Output: 5
+```

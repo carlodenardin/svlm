@@ -1,0 +1,34 @@
+def extract_21_digits(count):
+    """
+    Extract up to 21 digits from the numeric input 'count'.
+    The function stores each digit into separate variables digit1...digit21
+    in the order they appear from most significant to least significant.
+    If there are fewer than 21 digits, the remaining digits are None.
+    Returns a dictionary mapping 'digit1'..'digit21' to their values.
+    """
+    s = str(count).strip()
+    if s.startswith('-'):
+        s = s[1:]
+    digits = [int(ch) for ch in s if ch.isdigit()]
+    digit1 = digits[0] if len(digits) > 0 else None
+    digit2 = digits[1] if len(digits) > 1 else None
+    digit3 = digits[2] if len(digits) > 2 else None
+    digit4 = digits[3] if len(digits) > 3 else None
+    digit5 = digits[4] if len(digits) > 4 else None
+    digit6 = digits[5] if len(digits) > 5 else None
+    digit7 = digits[6] if len(digits) > 6 else None
+    digit8 = digits[7] if len(digits) > 7 else None
+    digit9 = digits[8] if len(digits) > 8 else None
+    digit10 = digits[9] if len(digits) > 9 else None
+    digit11 = digits[10] if len(digits) > 10 else None
+    digit12 = digits[11] if len(digits) > 11 else None
+    digit13 = digits[12] if len(digits) > 12 else None
+    digit14 = digits[13] if len(digits) > 13 else None
+    digit15 = digits[14] if len(digits) > 14 else None
+    digit16 = digits[15] if len(digits) > 15 else None
+    digit17 = digits[16] if len(digits) > 16 else None
+    digit18 = digits[17] if len(digits) > 17 else None
+    digit19 = digits[18] if len(digits) > 18 else None
+    digit20 = digits[19] if len(digits) > 19 else None
+    digit21 = digits[20] if len(digits) > 20 else None
+    return {'digit1': digit1, 'digit2': digit2, 'digit3': digit3, 'digit4': digit4, 'digit5': digit5, 'digit6': digit6, 'digit7': digit7, 'digit8': digit8, 'digit9': digit9, 'digit10': digit10, 'digit11': digit11, 'digit12': digit12, 'digit13': digit13, 'digit14': digit14, 'digit15': digit15, 'digit16': digit16, 'digit17': digit17, 'digit18': digit18, 'digit19': digit19, 'digit20': digit20, 'digit21': digit21}

@@ -1,0 +1,17 @@
+```python
+def is_product_valid(flag_value):
+    # Step 1: Start
+    n = 0
+    product = 1
+
+    # Step 4: n = 1
+    n = 1
+    product = 0
+
+    # Steps 6-69: repeated assignments of product = 0
+    for _ in range(64):
+        product = 0
+
+    # Return the final product value (0 or 1)
+    return product
+```

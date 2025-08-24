@@ -1,0 +1,23 @@
+def is_prime(n):
+    if n <= 1:
+        return False
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        i += 1
+    return True
+
+def solve():
+    # Read two integers n and x (the second input is read but x will be set to n)
+    n = int(input())
+    x = int(input())
+
+    if is_prime(n):
+        x = n
+        return True
+    else:
+        x = n
+        return False
+
+# If needed, you can call solve() and use its return value.

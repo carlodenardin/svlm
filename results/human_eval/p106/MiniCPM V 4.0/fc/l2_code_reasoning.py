@@ -1,0 +1,12 @@
+def generate_sequence(n):
+    res = []
+    i = 1
+    while True:
+        if i <= n:
+            total = sum(range(1, i + 1))
+            res.append(total)
+            i += 1
+        else:
+            res.append(res)
+            break
+    return res

@@ -1,0 +1,20 @@
+def simple_perfect_check(n):
+    """
+    Implements the described flow from the (truncated) flowchart:
+    - Initialize product = 1 and odd_flag = 0
+    - If n > 0, compute d = n % 10
+    - If d is even (d % 2 == 0), set product = d and odd_flag = 1
+    - Loop while n != 10 (the loop body is not specified in the description; 
+      to keep the function executable without an infinite loop, we perform
+      a single no-op iteration)
+    """
+    product = 1
+    odd_flag = 0
+    if n > 0:
+        d = n % 10
+        if d % 2 == 0:
+            product = d
+            odd_flag = 1
+        while n != 10:
+            break
+    return (product, odd_flag)

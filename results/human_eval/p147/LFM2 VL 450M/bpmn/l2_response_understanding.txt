@@ -1,0 +1,12 @@
+The algorithm's purpose is to calculate the sum of the elements in a given array. The input data required is the array of integers. The main logical flow is as follows:
+
+1. Initialize a variable `sum` to 0.
+2. Iterate through each element `a` in the array.
+3. If `a` is equal to 1, increment `sum` by 1.
+4. If `a` is equal to 0, set `sum` to 0.
+5. Iterate through each element `a` in the array.
+6. If `a` is equal to 1, increment `sum` by `a`.
+7. If `a` is equal to 0, set `sum` to `sum + a`.
+8. Return the final value of `sum`.
+
+The expected output is the sum of all elements in the array.

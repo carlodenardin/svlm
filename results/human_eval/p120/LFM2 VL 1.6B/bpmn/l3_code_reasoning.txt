@@ -1,0 +1,11 @@
+```python
+def sort_list(k):
+    # Receive a list of integers and a variable k
+    integers = k
+
+    # Sort the list using list.sort()
+    integers.sort()
+
+    # Return the sorted list
+    return integers
+```

@@ -1,0 +1,38 @@
+```python
+def algorithm(input):
+    if input == "i":
+        return "i + 1"
+    elif input == "i + 1":
+        return "i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+        return "i + 1 = i + 1"
+    elif input == "i + 1 = i + 1":
+```

@@ -1,0 +1,39 @@
+Okay, let's break down this flowchart and describe the algorithm it represents.
+
+**1. Overview of the Algorithm's Purpose**
+
+This algorithm appears to be designed to find a specific value (likely a return value) based on the input integers `n`, `x`, and `y`.  It seems to be checking conditions related to the square root of `n` and divisibility by `n`.  The algorithm's goal is to return a specific value based on these conditions.
+
+**2. Input Data Required**
+
+*   **n:** An integer (representing a number). This is the base for the calculations.
+*   **x:** An integer. This is a value that is returned if certain conditions are met.
+*   **y:** An integer. This is another value that is returned if certain conditions are met.
+
+**3. Main Logical Flow (Step-by-Step)**
+
+1.  **Initialization:**
+    *   Receive the integers `n`, `x`, and `y` as input.
+    *   Set `i = 2`.  `i` is likely a loop counter.
+
+2.  **Outer Loop (i = 2):**
+    *   **Condition 1:**  `n` equal to 1?  If `n` is 1, return `y`.  (This is the exit condition for the loop).
+    *   **Condition 2:**  `sqrt(n) <= i`?  If the square root of `n` is less than or equal to `i`, proceed to the next step.
+    *   **Condition 3:** `n % i == 0`? If `n` is divisible by `i`, proceed to the next step.
+
+3.  **Inner Steps (if conditions 2 and 3 are met):**
+    *   Return `y`.
+    *   Increase `i` by 1.
+
+4.  **Loop Continuation:**
+    *   If none of the conditions in step 2 are met, increase `i` by 1.
+    *   Repeat steps 2-4 until `i` becomes greater than 1.
+
+5.  **Final Return:**
+    *   If the loop completes without returning, return `x`.
+
+**4. Expected Output**
+
+The algorithm's output will be one of the following values:
+
+*   **`y`:**

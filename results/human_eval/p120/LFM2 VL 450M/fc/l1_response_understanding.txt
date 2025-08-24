@@ -1,0 +1,12 @@
+The algorithm's purpose is to sort a list of integers and keep the last k elements sorted. The input data required is a list of integers. The main logical flow is as follows:
+
+1. Start
+2. Create an empty list to store the sorted elements.
+3. Iterate through the input list.
+4. For each element, check if it is less than the last element in the list.
+5. If it is, add it to the list and sort it in ascending order.
+6. If it is not, add it to the list and sort it in descending order.
+7. Repeat steps 4-6 until the list is empty.
+8. End
+
+The expected output is a sorted list of integers.

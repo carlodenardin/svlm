@@ -1,0 +1,20 @@
+def extract_last_k_sorted(nums, k):
+    """
+    Sort the input list of integers in ascending order using bubble sort,
+    then return the last k elements. If k is invalid (<= 0 or > length),
+    return an empty list.
+    """
+    arr = list(nums)
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = (arr[j + 1], arr[j])
+                swapped = True
+        if not swapped:
+            break
+    list_length = len(arr)
+    if k <= 0 or k > list_length:
+        return []
+    return arr[list_length - k:]

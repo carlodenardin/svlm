@@ -1,0 +1,27 @@
+```python
+def is_prime(n):
+    if not isinstance(n, int):
+        raise TypeError("Input must be an integer")
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def check_prime(n, x, y):
+    if not isinstance(n, int) or not isinstance(x, int) or not isinstance(y, int):
+        raise TypeError("Input must be integers")
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return x if is_prime(n) else y
+
+# Example usage:
+n = 25
+x = 23
+y = 23
+print(check_prime(n, x, y))  # Output: 23
+```

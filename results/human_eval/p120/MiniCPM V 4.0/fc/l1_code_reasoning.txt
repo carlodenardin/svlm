@@ -1,0 +1,15 @@
+```python
+def sort_and_retain_last_k(nums, k):
+    """
+    Sort the input list of integers and return the last k elements of the sorted list.
+    If k <= 0, return an empty list.
+    If k > length of nums, return the entire sorted list.
+    """
+    # Sorting Process: sort the entire list
+    sorted_list = sorted(nums)
+
+    # Retaining Elements: keep only the last k elements
+    if k <= 0:
+        return []
+    return sorted_list[-k:]
+```

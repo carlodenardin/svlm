@@ -1,0 +1,21 @@
+**Algorithm Overview: String Balancing**
+=====================================
+
+**Purpose:** The algorithm is designed to balance two strings by concatenating them with both combinations, ensuring every '(' has a matching')', and closures never exceed opening in order.
+
+**Input Data:**
+
+* Two strings as input
+
+**Main Logical Flow:**
+
+1. **Receive a list of 2 strings as input**: This is the starting point of the algorithm.
+2. **Concatenate the strings with both combinations**: The input strings are concatenated with both combinations.
+3. **Check if at least one combination is balanced**: This step involves checking if every '(' has a matching')', and closures never exceed opening in order.
+4. **Balanced means that every '(' has a matching')', and closures never exceed opening in order**: This is the final decision point, where the algorithm determines if the input strings are balanced.
+5. **Return 'No' if both the combinations are unbalanced, 'Yes' otherwise**: Based on the previous step, the algorithm returns 'No' if both combinations are unbalanced, and 'Yes' otherwise.
+
+**Expected Output:**
+
+* If the input strings are balanced, the algorithm returns 'Yes'.
+* If the input strings are not balanced, the algorithm returns 'No'.

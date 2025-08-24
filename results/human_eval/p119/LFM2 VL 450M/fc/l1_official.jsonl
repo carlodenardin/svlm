@@ -1,0 +1,12 @@
+{"success": false, "error": "", "input": ["()(", ")"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", ")"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(())", "())())"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": [")())", "(()()("], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["(())))", "(()())(("], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["()", "())"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(()(", "()))()"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}
+{"success": false, "error": "", "input": ["((((", "((())"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(()", "(()("], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": [")(", ")("], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "No"}
+{"success": false, "error": "", "input": ["(", ")"], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}
+{"success": false, "error": "", "input": [")", "("], "output": "Balanced means that every \"1\" has a matching; and closes never exec opens order", "correct_output": "Yes"}

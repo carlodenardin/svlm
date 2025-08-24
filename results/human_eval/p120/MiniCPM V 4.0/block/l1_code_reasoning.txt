@@ -1,0 +1,7 @@
+```python
+def get_last_k_elements(lst, k):
+    # Step 2: Sort the list
+    sorted_lst = sorted(lst)
+    # Step 3: Get the last k elements
+    return sorted_lst[-k:]
+```

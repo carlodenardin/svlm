@@ -1,0 +1,7 @@
+def sort_and_return_last_k(lst, k):
+    """
+    Sorts the input list in ascending order and returns the slice of the last k elements.
+    Follows the described algorithm: list.sort() then return lst[-k:].
+    """
+    lst.sort()
+    return lst[-k:]

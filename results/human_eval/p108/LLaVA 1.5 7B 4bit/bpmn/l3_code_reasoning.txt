@@ -1,0 +1,96 @@
+```python
+def solve_todo():
+    # Initialize a list of tasks with their statuses
+    tasks = [
+        {"task": "Buy groceries", "status": "todo"},
+        {"task": "Write report", "status": "todo"},
+    ]
+    VALID_STATUSES = ["todo", "in progress", "done"]
+
+    def display_tasks():
+        if not tasks:
+            print("No tasks.")
+            return
+        print("\nCurrent Tasks:")
+        for idx, t in enumerate(tasks, start=1):
+            print(f"{idx}. {t['task']} - {t['status']}")
+        print()
+
+    def add_task():
+        name = input("Enter task name: ").strip()
+        if not name:
+            print("Task name cannot be empty.")
+            return
+        status = input("Enter status (todo / in progress / done) [default: todo]: ").strip().lower()
+        if status == "":
+            status = "todo"
+        if status not in VALID_STATUSES:
+            print("Invalid status. Defaulting to 'todo'.")
+            status = "todo"
+        tasks.append({"task": name, "status": status})
+        print("Task added.")
+
+    def update_status():
+        if not tasks:
+            print("No tasks to update.")
+            return
+        display_tasks()
+        try:
+            idx = int(input("Select task number to update: ").strip())
+        except ValueError:
+            print("Invalid input.")
+            return
+        if idx < 1 or idx > len(tasks):
+            print("Invalid task number.")
+            return
+        new_status = input("New status (todo / in progress / done): ").strip().lower()
+        if new_status not in VALID_STATUSES:
+            print("Invalid status.")
+            return
+        tasks[idx - 1]["status"] = new_status
+        print("Status updated.")
+
+    def remove_task():
+        if not tasks:
+            print("No tasks to remove.")
+            return
+        display_tasks()
+        try:
+            idx = int(input("Select task number to remove: ").strip())
+        except ValueError:
+            print("Invalid input.")
+            return
+        if idx < 1 or idx > len(tasks):
+            print("Invalid task number.")
+            return
+        removed = tasks.pop(idx - 1)
+        print(f"Removed task: {removed['task']}")
+
+    def show_menu():
+        print("To-Do List Menu:")
+        print("1. View tasks")
+        print("2. Add task")
+        print("3. Update task status")
+        print("4. Remove task")
+        print("5. Exit")
+        return input("Choose an option: ").strip()
+
+    while True:
+        choice = show_menu()
+        if choice == "1":
+            display_tasks()
+        elif choice == "2":
+            add_task()
+        elif choice == "3":
+            update_status()
+        elif choice == "4":
+            remove_task()
+        elif choice == "5":
+            print("Exiting.")
+            break
+        else:
+            print("Invalid option. Please choose again.")
+
+if __name__ == "__main__":
+    solve_todo()
+```

@@ -1,0 +1,26 @@
+def factorial(x: int) -> int:
+    if x < 0:
+        raise ValueError("x must be non-negative")
+    result = 1
+    for k in range(2, x + 1):
+        result *= k
+    return result
+
+def sum(x: int) -> int:
+    if x < 0:
+        raise ValueError("x must be non-negative")
+    total = 0
+    for k in range(1, x + 1):
+        total += k
+    return total
+
+def create_list(n: int):
+    if n < 0:
+        raise ValueError("n must be non-negative")
+    lst = [0] * n
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            lst[i - 1] = factorial(i)
+        else:
+            lst[i - 1] = sum(i)
+    return lst

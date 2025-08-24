@@ -1,0 +1,17 @@
+```python
+def sum_two_numbers_from_input():
+    # Step 1 & 2: Initialize and read two input numbers
+    x = float(input())
+    y = float(input())
+
+    # Step 3: Compute the sum
+    result = x + y
+
+    # Step 4: Display the result
+    print(result)
+
+    return result
+
+if __name__ == "__main__":
+    sum_two_numbers_from_input()
+```

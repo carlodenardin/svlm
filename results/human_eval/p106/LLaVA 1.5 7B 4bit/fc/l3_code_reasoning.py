@@ -1,0 +1,33 @@
+def run_flowchart(threshold=10, inputs=None):
+    """
+    Implements a simple decision flow:
+      - Read a single value from input (numeric or string).
+      - If the numeric value >= threshold, perform the next action (print a message) and stop.
+      - Otherwise, loop back to read input again until threshold is met.
+    Parameters:
+      threshold: numeric threshold to compare against.
+      inputs: optional list of string inputs to simulate user input (in order).
+    Returns:
+      The numeric value that finally met the threshold, or None if not provided.
+    """
+    it = iter(inputs) if inputs is not None else None
+
+    def get_input():
+        if it is None:
+            return input('Enter a value: ').strip()
+        else:
+            try:
+                return next(it)
+            except StopIteration:
+                raise RuntimeError('No more inputs provided.')
+    while True:
+        raw = get_input()
+        try:
+            value = float(raw)
+        except ValueError:
+            value = None
+        if value is not None and value >= threshold:
+            print(f'Value {value} meets or exceeds the threshold {threshold}.')
+            return value
+        else:
+            print(f"Value '{raw}' is below the threshold {threshold}, retry.")

@@ -1,0 +1,4 @@
+{"success": false, "error": "compute_k() missing 3 required positional arguments: 'a2', 'a3', and 'a4'", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "compute_k() missing 3 required positional arguments: 'a2', 'a3', and 'a4'", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "compute_k() missing 3 required positional arguments: 'a2', 'a3', and 'a4'", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "compute_k() missing 3 required positional arguments: 'a2', 'a3', and 'a4'", "input": 100, "output": null, "correct_output": 53361}

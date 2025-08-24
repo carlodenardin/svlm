@@ -1,0 +1,76 @@
+```python
+def balance_strings(str1, str2):
+    # Check if the strings are balanced
+    if not is_balanced(str1, str2):
+        return False
+    
+    # Concatenate the strings
+    combined = str1 + str2
+    
+    # Check if the combined string is balanced
+    if is_balanced(combined):
+        return True
+    
+    return False
+
+def is_balanced(*args):
+    # Supports both (str1, str2) and (combined_str,)
+    if len(args) == 1:
+        s1 = args[0]
+        s2 = ""
+    elif len(args) == 2:
+        s1, s2 = args
+    else:
+        raise TypeError("is_balanced expects 1 or 2 string arguments")
+    
+    # Check if every opening and closing bracket has a matching closing bracket
+    if not has_matching_closing_bracket(s1, s2):
+        return False
+    
+    # Check if closures never exceed openings in order
+    if not has_order(s1, s2):
+        return False
+    
+    return True
+
+def has_matching_closing_bracket(str1, str2):
+    # Check if every opening bracket has a matching closing bracket
+    if not has_opening_bracket(str1, str2):
+        return False
+    
+    # Check if closures never exceed openings in order
+    if not has_order(str1, str2):
+        return False
+    
+    return True
+
+def has_opening_bracket(str1, str2):
+    combined = str1 + str2
+    for ch in combined:
+        if ch in "([{":
+            return True
+    return False
+
+def has_order(str1, str2):
+    # Delegate to the ordering check
+    return is_in_order(str1, str2)
+
+def is_in_order(str1, str2):
+    # Check if the strings are in order (proper nesting without premature closures)
+    combined = str1 + str2
+    opening = "([{"
+    closing = ")]}"
+    match = {'(':')','[':']','{':'}'}
+    stack = []
+    
+    for ch in combined:
+        if ch in opening:
+            stack.append(ch)
+        elif ch in closing:
+            if not stack:
+                return False
+            last = stack.pop()
+            if match[last] != ch:
+                return False
+    return True
+```

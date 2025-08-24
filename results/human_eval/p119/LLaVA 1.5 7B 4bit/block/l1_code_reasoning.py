@@ -1,0 +1,33 @@
+def balance_check_and_log(combination, opens_path='opens', closes_path='closes'):
+    """
+    Implements the described algorithm:
+    - Initialize balanced as False, odd_sum = 0, even_sum = 0
+    - For each number in combination:
+        - If number is odd: add to odd_sum; set balanced = True
+        - If number is even: add to even_sum; if odd_sum == even_sum then balanced = True else balanced = False
+    - If balanced is True: open the 'opens' file (and write a note), then return "balanced"
+      If balanced is False: open the 'closes' file (and write a note), then return "not balanced"
+    """
+    balanced = False
+    odd_sum = 0
+    even_sum = 0
+    for n in combination:
+        if n % 2 != 0:
+            odd_sum += n
+            balanced = True
+        else:
+            even_sum += n
+            if odd_sum == even_sum:
+                balanced = True
+            else:
+                balanced = False
+    if balanced:
+        f = open(opens_path, 'a')
+        f.write('balanced\n')
+        f.close()
+        return 'balanced'
+    else:
+        f = open(closes_path, 'a')
+        f.write('not balanced\n')
+        f.close()
+        return 'not balanced'

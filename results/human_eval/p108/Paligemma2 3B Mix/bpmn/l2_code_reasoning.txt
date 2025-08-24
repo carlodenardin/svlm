@@ -1,0 +1,205 @@
+```python
+# This script implements a simple "sum of signed digits" algorithm.
+# The signed digits are taken as digits of the input number with alternating signs,
+# starting with + for the most significant digit.
+#
+# The code also contains ASCII flowcharts describing:
+# - main body
+# - each function
+# - input data validation
+# - main loop
+# - summation of the signed digits
+# - final output
+#
+# Note: The flowcharts are included as string constants and are not executed.
+
+# Flowcharts as ASCII diagrams (string constants)
+
+FLOW_MAIN_BODY = r"""
+Main Body Flowchart:
+  Start
+    |
+    v
+[Read input data] ---> [Validate input] ---(valid)--> [Sum signed digits] ---> [Format output] ---> [Print output]
+                          |                                         |
+                          |------(invalid)------------------------|
+                          v                                         v
+                    [Show error]                               (End)
+"""
+
+FLOW_VALIDATE_INPUT = r"""
+Input Data Validation Flowchart:
+  Start
+    |
+    v
+[Receive raw input] --> [Strip whitespace] --> [Check all chars are digits]?
+    |                              |            |
+   yes                            yes          no
+    |                              |            |
+    v                              v            v
+[Convert to list of ints]   [Proceed to summation]  [Raise error / Exit]
+"""
+
+FLOW_MAIN_LOOP = r"""
+Main Loop (over digits):
+for i in range(len(digits)):
+    sign = +1 if i % 2 == 0 else -1
+    total = total + sign * digits[i]
+End Loop
+"""
+
+FLOW_SUM_SIGNED_DIGITS = r"""
+Sum Signed Digits Flowchart:
+  Start with total = 0
+  For each digit with index i:
+      Determine sign by parity of i (even -> +, odd -> -)
+      total += sign * digit
+  End For
+  Output total
+"""
+
+FLOW_FINAL_OUTPUT = r"""
+Final Output Flowchart:
+  Input: total
+  Process: format string "Sum of signed digits: {total}"
+  Output: the formatted string
+  End
+"""
+
+FLOW_INPUT_DATA_STRUCTURE = r"""
+InputData Structure:
++-------------------+
+| InputData         |
++-------------------+
+| digits: List[int]  |
+| total: int          |
++-------------------+
+"""
+
+FLOW_OUTPUT_STRUCTURE = r"""
+Output Data Structure (conceptual):
++-----------------------------+
+| Output: str                 |
++-----------------------------+
+| "Sum of signed digits: N"    |
++-----------------------------+
+"""
+
+FLOW_FUNCTION_VALIDATE_INPUT = r"""
+Function: validate_input(raw_input) -> List[int]
+Flow:
+- Remove whitespace
+- Validate all remaining characters are digits
+- Convert to list of ints
+- Return digits
+- On error raise ValueError
+"""
+
+FLOW_FUNCTION_SUM_SIGNED_DIGITS = r"""
+Function: sum_signed_digits(digits) -> int
+Flow:
+- total = 0
+- For i, d in enumerate(digits):
+    sign = +1 if i even else -1
+    total += sign * d
+- Return total
+"""
+
+FLOW_FUNCTION_FORMAT_OUTPUT = r"""
+Function: format_output(total) -> str
+Flow:
+- s = f"Sum of signed digits: {total}"
+- Return s
+"""
+
+FLOW_FUNCTION_SOLVE = r"""
+Function: solve() -> None
+Flow:
+- Read raw input from stdin
+- digits = validate_input(raw_input)
+- total = sum_signed_digits(digits)
+- output = format_output(total)
+- Print output
+"""
+
+FLOW_FINAL_OUTPUT_DIAGRAM = r"""
+Composed Output Diagram:
+Input -> Validation -> Summation -> Formatting -> Printing -> End
+"""
+
+# Core algorithm implementation
+
+def validate_input(raw_input: str) -> list:
+    """
+    Validate and parse the raw input string into a list of digits (ints).
+    Rules:
+    - Whitespace is ignored
+    - All remaining characters must be digits (0-9)
+    - Returns a list of integers representing each digit
+    """
+    # Flowchart: INPUT DATA VALIDATION
+    # Step 1: Normalize input by removing whitespace
+    normalized = ''.join(ch for ch in raw_input if not ch.isspace())
+    if not normalized:
+        raise ValueError("Empty input after removing whitespace.")
+
+    # Step 2: Check all characters are digits
+    for ch in normalized:
+        if not ch.isdigit():
+            raise ValueError(f"Invalid character encountered: {ch}")
+
+    # Step 3: Convert to list of integers
+    digits = [int(ch) for ch in normalized]
+
+    # Data structure (for clarity in diagrams)
+    # InputData: digits: List[int], total: int (not yet set)
+
+    return digits
+
+
+def sum_signed_digits(digits: list) -> int:
+    """
+    Compute the sum of signed digits by alternating signs starting with + for the
+    most significant digit (i.e., first digit in the list).
+    """
+    # Flowchart: MAIN_LOOP and SUM_SIGNED_DIGITS
+    total = 0
+    for i, d in enumerate(digits):
+        sign = 1 if (i % 2) == 0 else -1
+        total += sign * d
+    return total
+
+
+def format_output(total: int) -> str:
+    """
+    Format the final output string.
+    """
+    # Flowchart: FINAL_OUTPUT
+    return f"Sum of signed digits: {total}"
+
+
+def solve() -> None:
+    """
+    Orchestrates input, processing, and output.
+    """
+    import sys
+
+    # Flowchart: MAIN BODY
+    raw_input = sys.stdin.read()
+
+    try:
+        digits = validate_input(raw_input)
+    except ValueError as ve:
+        # Print error message and terminate
+        print(f"Error: {ve}")
+        return
+
+    total = sum_signed_digits(digits)
+    output = format_output(total)
+
+    print(output)
+
+
+if __name__ == "__main__":
+    solve()
+```

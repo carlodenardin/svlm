@@ -1,0 +1,14 @@
+```python
+def count_even_odd_digits(input_value):
+    s = str(input_value)
+    even = 0
+    odd = 0
+    for ch in s:
+        if '0' <= ch <= '9':
+            d = ord(ch) - ord('0')
+            if d % 2 == 0:
+                even += 1
+            else:
+                odd += 1
+    return (even, odd)
+```

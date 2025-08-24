@@ -1,0 +1,1 @@
+I’m missing the “reasoning of a small VLM” text that you want me to translate into code. Please provide the explicit reasoning steps or the exact problem statement you want me to implement, and I’ll convert them into an executable Python function exactly as described.

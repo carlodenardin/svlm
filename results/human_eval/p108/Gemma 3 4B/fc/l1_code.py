@@ -1,0 +1,18 @@
+def count_numbers_with_digit_sum_greater_than_zero(numbers):
+    """
+    Counts the number of integers in a list where the sum of their digits is greater than 0.
+
+    Args:
+        numbers: A list of integers.
+
+    Returns:
+        The count of integers in the list where the sum of their digits is greater than 0.
+    """
+    count = 0
+    for number in numbers:
+        digit_sum = 0
+        for digit in str(abs(number)):
+            digit_sum += int(digit)
+        if digit_sum > 0:
+            count += 1
+    return count

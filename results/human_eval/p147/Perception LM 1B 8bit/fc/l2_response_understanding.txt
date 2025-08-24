@@ -1,0 +1,60 @@
+**Algorithm Overview**
+=======================
+
+### Purpose
+The algorithm is designed to create a vector of dimension `n` and initialize its values with a specific rule. It iterates over each triple of elements from `a[i]` to `a[k]`, calculates the sum of the elements in each triple, and updates the count accordingly.
+
+### Input Data
+* `n`: an integer representing the dimension of the vector
+* `a`: a list of integers representing the elements of the vector
+
+### Main Logical Flow
+#### Step 1: Create a Vector
+Create a vector `a` of dimension `n` and initialize its values with the rule: `A[i-1] = i * i - i - 1` where `1 <= i <= n`.
+
+#### Step 2: Iterate Over Each Triple
+Iterate over each triple of elements from `a[i]` to `a[k]`, with `i < j < k`.
+
+#### Step 3: Calculate Sum of Elements in Each Triple
+For each triple, calculate the sum of the elements: `a[i] + a[j] + a[k] % 3 == 0`.
+
+#### Step 4: Update Count
+If the sum of the elements in each triple is zero, increment the count. Otherwise, decrement the count.
+
+#### Step 5: Return Final Count
+Return the final count.
+
+### Expected Output
+The algorithm returns the final count of triples where the sum of the elements in each triple is zero.
+
+### Implementation
+```python
+def create_vector(n):
+    """
+    Create a vector of dimension n and initialize its values with the rule:
+    A[i-1] = i * i - i - 1 where 1 <= i <= n.
+    
+    Args:
+        n (int): The dimension of the vector.
+    
+    Returns:
+        list: A vector of dimension n with the specified rule.
+    """
+    vector = [0] * n
+    for i in range(n):
+        vector[i] = i * i - i - 1
+    return vector
+
+def iterate_triples(a, k):
+    """
+    Iterate over each triple of elements from a[i] to a[k].
+    
+    Args:
+        a (list): A list of integers representing the elements of the vector.
+        k (int): The upper bound of the triples.
+    
+    Returns:
+        list: A list of triples where the sum of the elements in each triple is zero.
+    """
+    triples = []
+    for

@@ -1,0 +1,16 @@
+The flowchart represents an algorithm designed to compute the greatest common divisor (GCD) of two integers, \( n \) and \( y \). Here's a step-by-step implementation based on the logical flow depicted in the image:
+
+1. **Input**: Receive the input integers \( n \), \( x \), and \( y \).
+2. **Check if \( n \) is equal to 1**:
+   - If yes, return \( y \) as the GCD since the GCD of any number with 1 is the other number itself.
+   - If no, proceed to set \( i \) to 2.
+3. **Loop until \( i \leq \sqrt{n} \)**:
+   - Initialize \( i \) to 2 and increment it by 1 at each iteration.
+   - Check if \( n \% i == 0 \):
+     - If yes, return \( x \) because \( x \) is a factor of \( n \).
+     - If no, continue to the next iteration.
+4. **If \( i \) exceeds \( \sqrt{n} \)**:
+   - Return \( y \) as the remaining part of \( n \) that has not been factored out through smaller numbers up to \( \sqrt{n} \).
+5. **Increase \( i \) by 1** for the next loop iteration.
+
+This process systematically reduces \( n \) using prime factors iteratively until its simplest form is achieved, determining the GCD efficiently. The expected output is either \( y \) or \( x \), depending on whether \( x \) was found to be a factor during the iterations.

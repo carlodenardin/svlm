@@ -1,0 +1,22 @@
+```python
+def calculate_sum_of_digits(arr):
+    """
+    Calculate the sum of digits in an array.
+
+    Args:
+    arr (list): The input array of integers.
+
+    Returns:
+    int: The sum of digits in the array.
+    """
+    res = 0
+    for i in range(len(arr)):
+        s = str(arr[i])
+        res += sum(int(digit) for digit in s)
+    return res
+
+# Example usage:
+arr = [3, 4, 5, 6, 7]
+result = calculate_sum_of_digits(arr)
+print(result)  # Output: 25
+```

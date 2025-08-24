@@ -1,0 +1,49 @@
+```python
+import sys
+
+def count_even_odd_digits(n: int):
+    m = abs(int(n))
+    s = str(m)
+
+    # Step 2: Count the even and odd digits in the number
+    count_e = sum(1 for ch in s if (ord(ch) - ord('0')) % 2 == 0)
+    count_o = len(s) - count_e
+
+    # Step 3: Count the even and odd digits in the even numbers
+    step3_e = 0
+    step3_o = 0
+    for ch in s:
+        d = ord(ch) - ord('0')
+        if d % 2 == 0:  # consider only even numbers
+            for ch2 in str(d):
+                if (ord(ch2) - ord('0')) % 2 == 0:
+                    step3_e += 1
+                else:
+                    step3_o += 1
+
+    # Step 4: Count the even and odd digits in the odd numbers
+    step4_e = 0
+    step4_o = 0
+    for ch in s:
+        d = ord(ch) - ord('0')
+        if d % 2 == 1:  # consider only odd numbers
+            for ch2 in str(d):
+                if (ord(ch2) - ord('0')) % 2 == 0:
+                    step4_e += 1
+                else:
+                    step4_o += 1
+
+    # End
+    return count_e, count_o
+
+if __name__ == "__main__":
+    data = sys.stdin.read().strip().split()
+    if not data:
+        sys.exit(0)
+    try:
+        n = int(data[0])
+    except ValueError:
+        sys.exit(0)
+    even_count, odd_count = count_even_odd_digits(n)
+    print(even_count, odd_count)
+```

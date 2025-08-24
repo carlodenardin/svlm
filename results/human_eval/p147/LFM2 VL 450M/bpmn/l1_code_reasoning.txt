@@ -1,0 +1,15 @@
+```python
+def sum_of_distinct_triplets(dimensions, rule):
+    # 1. Initialize a vector of dimensions with a given rule.
+    vector = [rule(i) for i in range(dimensions)]
+    
+    # 2. Initialize a variable to store the sum of the distinct triplets.
+    total = 0
+    
+    # 3-6: Iterate and accumulate elements that satisfy the rule.
+    for value in vector:
+        if rule(value):
+            total += value
+    
+    return total
+```

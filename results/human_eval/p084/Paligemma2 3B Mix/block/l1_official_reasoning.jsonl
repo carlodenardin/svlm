@@ -1,0 +1,5 @@
+{"success": false, "error": "", "input": 1000, "output": {"status": "missing_reasoning", "message": "The reasoning steps to translate into code were not provided in the prompt.", "input": 1000}, "correct_output": "1"}
+{"success": false, "error": "", "input": 150, "output": {"status": "missing_reasoning", "message": "The reasoning steps to translate into code were not provided in the prompt.", "input": 150}, "correct_output": "110"}
+{"success": false, "error": "", "input": 147, "output": {"status": "missing_reasoning", "message": "The reasoning steps to translate into code were not provided in the prompt.", "input": 147}, "correct_output": "1100"}
+{"success": false, "error": "", "input": 333, "output": {"status": "missing_reasoning", "message": "The reasoning steps to translate into code were not provided in the prompt.", "input": 333}, "correct_output": "1001"}
+{"success": false, "error": "", "input": 963, "output": {"status": "missing_reasoning", "message": "The reasoning steps to translate into code were not provided in the prompt.", "input": 963}, "correct_output": "10010"}
