@@ -1,31 +1,28 @@
 ```python
-def check_list(l):
+def check_list(list_int):
     """
-    Checks if a list of integers is sorted in ascending order and has no duplicate numbers.
+    Checks if all numbers in a list are smaller than the next one and if no number appears more than twice.
 
     Args:
-        l: A list of integers.
+        list_int: A list of integers.
 
     Returns:
-        True if the list is sorted in ascending order and has no duplicate numbers, False otherwise.
+        True if the list satisfies the conditions, False otherwise.
     """
-    if not l:
-        return True
-
-    for i in range(len(l) - 1):
-        if l[i] > l[i+1]:
+    for i in range(len(list_int) - 1):
+        if list_int[i] >= list_int[i+1]:
             return False
-
+    
     counts = {}
-    for num in l:
+    for num in list_int:
         if num in counts:
             counts[num] += 1
         else:
             counts[num] = 1
-
+    
     for num in counts:
-        if counts[num] > 1:
+        if counts[num] > 2:
             return False
-
+    
     return True
 ```

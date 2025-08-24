@@ -1,25 +1,23 @@
 ```python
-def calculate_product(n):
+def odd_digit_product(n):
     """
-    Calculates the product of digits in a number if the number has odd digits.
-    If the number has even digits, it returns the product of the last two digits.
-    If the number is zero or negative, it returns 0.
+    Calculates the product of odd digits in a given integer.
+
+    Args:
+        n (int): The integer to process.
+
+    Returns:
+        int: The product of odd digits in n. Returns 0 if n is 0 or has no odd digits.
     """
-    if n <= 0:
+    product = 1
+    if n == 0:
         return 0
 
-    product = 1
     n_str = str(n)
-    
-    if len(n_str) == 1:
-        return n
+    for digit in n_str:
+        digit = int(digit)
+        if digit % 2 != 0:
+            product *= digit
 
-    if all(c in '0123456789' for c in n_str):
-        for digit in n_str:
-            product *= int(digit)
-        return product
-    else:
-        last_two_digits = int(n_str[-2:])
-        product = last_two_digits
-        return product
+    return product
 ```

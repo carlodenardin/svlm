@@ -1,28 +1,13 @@
-The algorithm depicted in the flowchart is designed to compute a specific product based on an integer input. Here's a step-by-step description of its implementation:
+The flowchart represents an algorithm designed to calculate the product of all odd digits in a given integer. Here is a step-by-step description of the implementation:
 
-### Purpose:
-The purpose of this algorithm is to calculate and return a particular product derived from an integer `n` by iteratively processing its digits according to specified rules.
+1. **Receive an Integer**: Start by receiving an integer input from the user or another source.
+2. **Initialize Product to 1**: Set the initial value of the product variable to 1. This will hold the cumulative product of the identified odd digits.
+3. **Check for Odd Digits**: Determine if there are any odd digits within the received integer. If no odd digits are found, proceed directly to return 0 as the result.
+4. **Check if n > 0**: Verify that the original number (n) is greater than zero. If it's not positive, skip further processing and return the current product value.
+5. **Extract Last Digit**: Divide the integer by 10 to isolate its last digit into a new variable `d`.
+6. **Check if d is Odd**: Examine whether the extracted digit `d` is odd. If it is odd, multiply the current product by `d`.
+7. **Divide n by 10**: Remove the last digit from the remaining part of the integer (`n`) by performing integer division by 10.
+8. **Repeat Process**: Repeat steps 5 to 7 until all digits have been processed. The loop continues iteratively through each digit of the integer.
+9. **Return Result**: Once all iterations complete without finding any more odd digits, return the final calculated product.
 
-### Input Data:
-- **Input**: An integer `n`.
-
-### Main Logical Flow:
-1. **Start**: Begin with receiving an integer `n` as input.
-2. **Initialize Product**: Set the initial value of the product to 1.
-3. **Check for Odd Digits**: Determine if there are any odd digits present in `n`.
-   - If no odd digits are found, proceed directly to returning 0.
-   - If odd digits are found, continue to the next decision point.
-4. **Check if n > 0**: Verify that `n` is greater than 0.
-   - If `n` is not greater than 0, return the current product value.
-   - If `n` is greater than 0, perform further calculations.
-5. **Extract Last Digit**: Calculate the last digit of `n` using modulo operation (`d = n % 10`).
-6. **Check if d is Even**: Check if the extracted last digit `d` is even or odd.
-   - If `d` is even, multiply the current product by `d` and move to the next iteration of checking divisibility by 10.
-   - If `d` is odd, divide `n` by 10 (integer division) and repeat the process until all digits have been processed.
-7. **Loop Termination**: Continue looping through these steps while ensuring each condition is met before proceeding.
-8. **End**: Once all conditions are satisfied, end the calculation process.
-
-### Expected Output:
-The output will be either 0 if no odd digits exist in the number `n`, or it will be the computed product resulting from following the described logic throughout the iterations involving the original number `n`.
-
-This structured approach ensures accurate computation of the required product based on the given integer inputs adhering to the defined logical flow within the flowchart.
+**Expected Output**: The output will be the product of all odd digits present in the input integer. For example, if the input is 123456, the output would be 15 (from 1 * 3 * 5), considering only the odd digits.

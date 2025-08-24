@@ -1,0 +1,19 @@
+def is_balanced_combination(strs):
+
+    def check_string(s):
+        balance = 0
+        for char in s:
+            if char == '(':
+                balance += 1
+            elif char == ')':
+                balance -= 1
+            if balance < 0:
+                return False
+        return balance == 0
+    a, b = strs
+    c1 = check_string(a + b)
+    c2 = check_string(b + a)
+    if c1 or c2:
+        return 'Yes'
+    else:
+        return 'No'

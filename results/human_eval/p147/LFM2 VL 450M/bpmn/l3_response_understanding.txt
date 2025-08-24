@@ -1,27 +1,31 @@
-The algorithm's purpose is to calculate the value of a given integer n by repeatedly dividing it by 2 until it becomes 1. The input data required is the integer n. The main logical flow is as follows:
+The algorithm's purpose is to calculate the value of a variable `k` based on the input values of `a1`, `a2`, `a3`, and `a4`. The algorithm uses a series of conditional statements and loops to iterate through the input values and update the value of `k` accordingly.
 
-1. Initialize a variable `counter` to 0.
-2. Initialize a variable `result` to 0.
-3. While `counter` is less than or equal to n:
-   a. Divide `counter` by 2.
-   b. If `result` is 0, return `counter` as the result.
-   c. If `result` is not 0, increment `counter` by 1.
-   d. If `counter` is not 1, increment `result` by 1.
-   e. If `counter` is not 1, increment `result` by 1.
-   f. If `counter` is not 1, increment `counter` by 1.
-   g. If `counter` is not 1, increment `counter` by 1.
-   h. If `counter` is not 1, increment `counter` by 1.
-   i. If `counter` is not 1, increment `counter` by 1.
-   j. If `counter` is not 1, increment `counter` by 1.
-   k. If `counter` is not 1, increment `counter` by 1.
-   l. If `counter` is not 1, increment `counter` by 1.
-   m. If `counter` is not 1, increment `counter` by 1.
-   n. If `counter` is not 1, increment `counter` by 1.
-   o. If `counter` is not 1, increment `counter` by 1.
-   p. If `counter` is not 1, increment `counter` by 1.
-   r. If `counter` is not 1, increment `counter` by 1.
-   s. If `counter` is not 1, increment `counter` by 1.
-   t. If `counter` is not 1, increment `counter` by 1.
-   u. If `counter` is not 1, increment `counter` by 1.
-   v. If `counter` is not 1, increment `counter` by 1.
-   w. If `counter` is not 1, increment `counter` by 
+Input data required: The input values of `a1`, `a2`, `a3`, and `a4`.
+
+Main logical flow:
+
+1. Initialize a variable `a1` with the value of `a1`.
+2. Initialize a variable `a2` with the value of `a2`.
+3. Initialize a variable `a3` with the value of `a3`.
+4. Initialize a variable `a4` with the value of `a4`.
+5. Initialize a variable `k` with the value of `a1`.
+6. Initialize a variable `a1` with the value of `a1`.
+7. Initialize a variable `a2` with the value of `a2`.
+8. Initialize a variable `a3` with the value of `a3`.
+9. Initialize a variable `a4` with the value of `a4`.
+10. Initialize a variable `a1` with the value of `a1`.
+11. Initialize a variable `a2` with the value of `a2`.
+12. Initialize a variable `a3` with the value of `a3`.
+13. Initialize a variable `a4` with the value of `a4`.
+14. Initialize a variable `a1` with the value of `a1`.
+15. Initialize a variable `a2` with the value of `a2`.
+16. Initialize a variable `a3` with the value of `a3`.
+17. Initialize a variable `a4` with the value of `a4`.
+18. Initialize a variable `a1` with the value of `a1`.
+19. Initialize a variable `a2` with the value of `a2`.
+20. Initialize a variable `a3` with the value of `a3`.
+21. Initialize a variable `a4` with the value of `a4`.
+22. Initialize a variable `a1` with the value of `a1`.
+23. Initialize a variable `a2` with the value of `a2`.
+24. Initialize a variable `a3` with the value of `a3`.
+25. Initialize a variable `a4

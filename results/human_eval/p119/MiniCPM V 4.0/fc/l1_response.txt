@@ -2,16 +2,17 @@
 def check_balance(strings):
     concatenated = ''.join(strings)
     if '(' in concatenated and ')' in concatenated:
-        if all(concatenated[i] == '(' if i % 2 == 0 else ')' for i in range(len(concatenated))):
+        if all(c == c[1:] for c in concatenated):
             return True
     return False
 
-def process_strings():
-    strings = list(map(str, input("Enter two strings separated by space: ").split()))
-    if check_balance(strings):
+def main():
+    strings = ["(", "a", ")", "b", ")"]
+    result = check_balance(strings)
+    if result:
         print("Yes")
     else:
         print("No")
 
-process_strings()
+main()
 ```

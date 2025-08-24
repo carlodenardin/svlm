@@ -1,1 +1,1 @@
-- Include all relevant data and pseudocode.
+- Include all relevant code blocks and data structures.

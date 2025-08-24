@@ -1,26 +1,19 @@
 ```python
-def algorithm(n):
+def process_number(n):
     """
-    This function implements the algorithm described in the flowchart.
-
-    Args:
-        n: An integer.
-
-    Returns:
-        A string.
+    Processes an integer n and returns a string result based on the algorithm.
     """
-    sum = 0
-    res = ""
+    sum_val = 0
+    result = ""
+
     while n > 0:
-        if sum == 0:
-            if n > 0:
-                sum += n % 10
-                n = n // 10
-            else:
-                break
-        else:
-            r = sum % 2
-            sum = sum // 2
-            res += str(r)
-    return res
+        sum_val += n % 10
+        n //= 10
+
+        if sum_val > 0:
+            r = sum_val % 2
+            sum_val = sum_val // 2
+            result = str(r) + result
+
+    return result
 ```

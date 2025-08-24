@@ -1,20 +1,13 @@
-The algorithm's purpose is to convert an integer number into its binary representation by summing the digits of the input number and then converting that sum into a binary string.
+The flowchart outlines an algorithm designed to convert an integer into its binary representation. Here’s a detailed step-by-step implementation:
 
-Input Data:
-- An integer number `n` as input.
+1. **Input**: The algorithm requires an integer number as input. This is the starting point of the process.
+2. **Sum the digits of n and convert it to binary**: 
+   - Begin by iterating through each digit of the given integer.
+   - Sum these digits together.
+   - Convert this summed total back into its binary form, where each digit represents either '0' or '1'.
+3. **Give back the binary result as string**: 
+   - Once converted from decimal to binary, store the resulting binary sequence in a string format for output.
+4. **End**: 
+   - The final output will be the binary representation of the original integer provided as a string.
 
-Main Logical Flow:
-1. Start at the beginning node.
-2. Receive the integer number `n` from the user or another source.
-3. Initialize a variable `sum` to store the cumulative sum of the digits of `n`.
-4. Convert the integer `n` to a string so individual digits can be accessed easily.
-5. Iterate through each character (digit) in the string representation of `n`.
-6. For each digit, add it to the `sum` variable.
-7. Once all digits have been processed, convert the accumulated `sum` back to a binary string using the appropriate conversion method.
-8. Output the resulting binary string.
-9. End the process.
-
-Expected Output:
-- A binary representation of the original integer number `n`, where each bit corresponds to a positional value starting from the least significant bit on the right.
-
-This step-by-step description outlines how the flowchart translates the given visual structure into executable code for converting integers to their binary equivalents.
+This straightforward approach ensures that any integer can be systematically transformed into its binary equivalent using fundamental arithmetic operations and conditional logic.

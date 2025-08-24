@@ -1,28 +1,28 @@
-The algorithm's purpose is to determine whether a list of integers is true or false. The input data required is a list of integers. The main logical flow is as follows:
+The algorithm's purpose is to determine whether a list of integers is equal to a given list. The input data required is the list of integers and the list to compare against. The main logical flow is as follows:
 
-1. Receive a list of integers.
-2. Initialize `i` to 0.
-3. If `i` is less than or equal to 1, return `True`.
-4. If `i` is greater than 1, return `False`.
-5. If `i` is equal to 1, increment `i` by 1.
-6. If `i` is equal to 2, increment `i` by 2.
-7. If `i` is equal to 3, increment `i` by 3.
-8. If `i` is equal to 4, increment `i` by 4.
-9. If `i` is equal to 5, increment `i` by 5.
-10. If `i` is equal to 6, increment `i` by 6.
-11. If `i` is equal to 7, increment `i` by 7.
-12. If `i` is equal to 8, increment `i` by 8.
-13. If `i` is equal to 9, increment `i` by 9.
-14. If `i` is equal to 10, increment `i` by 10.
-15. If `i` is equal to 11, increment `i` by 11.
-16. If `i` is equal to 12, increment `i` by 12.
-17. If `i` is equal to 13, increment `i` by 13.
-18. If `i` is equal to 14, increment `i` by 14.
-19. If `i` is equal to 15, increment `i` by 15.
-20. If `i` is equal to 16, increment `i` by 16.
-21. If `i` is equal to 17, increment `i` by 17.
-22. If `i` is equal to 18, increment `i` by 18.
-23. If `i` is equal to 19, increment `i` by 19.
-24. If `i` is equal to 20, increment `i` by 20.
-25. If `i` is equal to 21, increment `i` by 21.
-26.
+1. Initialize the list of integers.
+2. Check if the list is equal to the given list.
+3. If the list is equal to the given list, return True.
+4. If the list is not equal to the given list, check if the list is already equal to itself.
+5. If the list is already equal to itself, return False.
+6. If the list is not equal to itself, increment the counter by 1.
+7. If the counter is greater than 1, return False.
+8. If the counter is less than or equal to 1, increment the counter by 1.
+9. If the counter is greater than 1, increment the counter by 1.
+10. If the counter is less than or equal to 1, increment the counter by 1.
+11. If the counter is greater than 1, increment the counter by 1.
+12. If the counter is less than or equal to 1, increment the counter by 1.
+13. If the counter is greater than 1, increment the counter by 1.
+14. If the counter is less than or equal to 1, increment the counter by 1.
+15. If the counter is greater than 1, increment the counter by 1.
+16. If the counter is less than or equal to 1, increment the counter by 1.
+17. If the counter is greater than 1, increment the counter by 1.
+18. If the counter is less than or equal to 1, increment the counter by 1.
+19. If the counter is greater than 1, increment the counter by 1.
+20. If the counter is less than or equal to 1, increment the counter by 1.
+21. If the counter is greater than 1, increment the counter by 1.
+22. If the counter is less than or equal to 1, increment the counter by 1.
+23. If the counter is greater than 1, increment the counter by 1.
+24. If the counter is less than or equal to 1, increment the counter by 1.
+25. If the counter is greater than 1, increment the counter by 1.
+26. If the counter is less than or equal to 

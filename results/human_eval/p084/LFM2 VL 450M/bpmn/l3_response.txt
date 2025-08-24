@@ -1,7 +1,7 @@
 ```python
-def calculate_sum(n):
+def process_integer(n):
     if n > 0:
-        return n * (1 + n / 10)
+        return n
     else:
         return 0
 ```

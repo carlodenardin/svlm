@@ -1,14 +1,19 @@
-The flowchart outlines an algorithm designed to convert a given integer into its binary representation. Here's the step-by-step implementation:
+The algorithm's purpose is to convert an integer input into its binary representation as a string.
 
-1. **Start**: The process begins at the 'Start' node.
-2. **Input n as integer**: The first action is to take an integer input, denoted as `n`.
+**Input:**
+- An integer `n` which needs to be converted to binary.
+
+**Main Logical Flow:**
+1. **Start**: Begin the process.
+2. **Input n as integer**: Take the user or provided integer value and store it in a variable named `n`.
 3. **Sum the digits of n and convert it to binary**: 
-   - Initialize a variable to store the sum of the digits.
-   - Use a loop to iterate through each digit of the number `n`.
-   - Within the loop, extract each digit by performing modulo operations (`n % 10`).
-   - Add each extracted digit to the running total.
-   - Update the value of `n` using integer division (`n // 10`) to remove the last processed digit.
-4. **Return result as string**: After summing all the digits, convert the accumulated sum back into a binary string format.
-5. **End**: The process concludes here.
+   - Initialize an empty string to hold the binary result.
+   - Use a loop to iterate through each digit of `n` by repeatedly dividing `n` by 2 and storing remainders:
+     - Calculate the remainder when `n` is divided by 2 (`remainder`).
+     - Append the `remainder` to the binary string.
+     - Update `n` with the quotient obtained from the division (`n = n // 2`).
+4. **Return result as string**: Once all digits have been processed, return the constructed binary string.
+5. **End**: Conclude the process.
 
-This algorithm efficiently transforms any integer into its corresponding binary form by systematically processing each digit and converting them accordingly.
+**Expected Output:**
+- The output will be a string representing the binary equivalent of the given integer `n`.

@@ -1,11 +1,12 @@
 ```python
-def check_numbers(numbers):
-    for i in range(len(numbers)):
-        if numbers[i] == 0:
-            return False
-        elif numbers[i] == 1:
-            return False
-        else:
-            return True
-    return True
+def check_numbers(start):
+    if start:
+        for i in range(start):
+            if i == start:
+                return True
+            elif i < start:
+                return False
+        return False
+    else:
+        return False
 ```

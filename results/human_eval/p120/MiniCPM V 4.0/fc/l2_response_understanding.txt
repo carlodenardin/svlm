@@ -1,13 +1,12 @@
-The flowchart outlines an algorithm designed to sort a list of integers in ascending order and return the last k elements. Here’s a step-by-step implementation description:
+The flowchart outlines an algorithm designed to sort a list of integers in ascending order and return the last k elements. Here is a detailed step-by-step description:
 
 1. **Start**: The process begins at the 'Start' node.
-2. **Input Data**: An integer array `arr` is required as input data, where each element is an integer (`int`). Additionally, an integer value `k` must be provided which specifies how many elements from the sorted list should be returned.
+2. **Input Data**: The input consists of a list of integers denoted as `lst` and an integer value `k` representing the number of elements to be returned from the sorted list.
 3. **Sorting Process**: 
-   - Implement or use an existing sorting function (e.g., quicksort, mergesort) to sort the entire array `arr` in ascending order. This will ensure that all elements are arranged correctly before identifying the desired subset.
-4. **Extract Last K Elements**: 
-   - After sorting the array, access the last `k` elements by slicing the sorted array from index `len(arr) - k` to the end. These elements represent the final output needed.
-5. **Output**: 
-   - Return the extracted subarray containing the last `k` elements. This result fulfills the requirement specified by the user inputs.
-6. **End**: The process concludes here with the 'End' node signaling completion.
+   - Implement a sorting function (e.g., using Python's built-in `sorted()` function) that sorts the entire list of integers in ascending order. This results in an ordered list.
+4. **Extract Last k Elements**: 
+   - Once the list is sorted, extract the last `k` elements from this ordered list. This can be done by slicing the list with `lst[-k:]`.
+5. **Output**: The final output is the ordered list containing the last `k` elements obtained after sorting.
+6. **End**: The process concludes at the 'End' node.
 
-This structured approach ensures clarity and efficiency in handling the task described by the flowchart.
+This approach ensures efficient retrieval of the required portion of the sorted list without modifying the original data structure significantly.

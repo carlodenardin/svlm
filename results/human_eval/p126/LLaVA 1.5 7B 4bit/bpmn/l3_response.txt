@@ -3,64 +3,58 @@ You are a Python code generation assistant. Given a diagram of an algorithm, gen
 def increase_by_1(x):
     return x + 1
 
-def receive_list_of_integers(integers):
-    return [increase_by_1(i) for i in integers]
+def receive_list_of_integers(x):
+    return [x]
 
-def intitialise_with_0(integers):
-    return [0] + [increase_by_1(i) for i in integers]
+def int_to_string(x):
+    return str(x)
 
-def return_true(result):
-    return result
+def int_to_string_with_no(x):
+    return int_to_string(x)
 
-def return_false(result):
-    return not result
+def int_to_string_with_no_1(x):
+    return int_to_string(x)
 
-def return_return_true(result):
-    return result
+def int_to_string_with_no_2(x):
+    return int_to_string(x)
 
-def return_return_false(result):
-    return not result
+def int_to_string_with_no_3(x):
+    return int_to_string(x)
 
-def return_return_true_if_true(result):
-    return result if result
+def int_to_string_with_no_4(x):
+    return int_to_string(x)
 
-def return_return_false_if_false(result):
-    return not result if not result
+def int_to_string_with_no_5(x):
+    return int_to_string(x)
 
-def return_return_true_if_false(result):
-    return not result if result
+def int_to_string_with_no_6(x):
+    return int_to_string(x)
 
-def return_return_false_if_true(result):
-    return not result if not result
+def int_to_string_with_no_7(x):
+    return int_to_string(x)
 
-def return_return_true_if_true_and_true(result):
-    return result if result
+def int_to_string_with_no_8(x):
+    return int_to_string(x)
 
-def return_return_false_if_false_and_false(result):
-    return not result if not result
+def int_to_string_with_no_9(x):
+    return int_to_string(x)
 
-def return_return_true_if_true_and_false(result):
-    return result if result
+def int_to_string_with_no_10(x):
+    return int_to_string(x)
 
-def return_return_false_if_false_and_true(result):
-    return not result if result
+def int_to_string_with_no_11(x):
+    return int_to_string(x)
 
-def return_return_true_if_true_and_true(result):
-    return result if result
+def int_to_string_with_no_12(x):
+    return int_to_string(x)
 
-def return_return_false_if_false_and_true(result):
-    return not result if result
+def int_to_string_with_no_13(x):
+    return int_to_string(x)
 
-def return_return_true_if_true_and_false(result):
-    return result if result
+def int_to_string_with_no_14(x):
+    return int_to_string(x)
 
-def return_return_false_if_false_and_true(result):
-    return not result if result
+def int_to_string_with_no_15(x):
+    return int_to_string(x)
 
-def return_return_true_if_true_and_false(result):
-    return result if result
-
-def return_return_false_if_false_and_false(result):
-    return not result if result
-
-def return_return_true_if_true_and_false(result
+def

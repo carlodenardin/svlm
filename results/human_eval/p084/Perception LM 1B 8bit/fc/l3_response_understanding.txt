@@ -2,26 +2,24 @@
 ======================
 
 ### Purpose
-The algorithm is designed to calculate the sum of a series of numbers and return the result as a string. It takes an integer input `n` and calculates the sum using a loop, then converts the result to a string.
+The algorithm is designed to calculate the sum of a series of numbers and store it in a string. It takes an integer input `n` and returns the sum as a string.
 
 ### Input Data
 * `n`: an integer representing the number of terms in the series
 
 ### Main Logical Flow
 #### Step 1: Initialize variables
-* `sum = 0`, `res = ""` (initially set to an empty string)
+* `sum = 0`, `res = ""` (initial sum and result string)
 
-#### Step 2: Loop through each term
-* `n > 0` (loop condition)
-* `sum += n % 10` (add the remainder of `n` divided by 10 to the sum)
-* `n = n // 10` (divide `n` by 10 and update `n`)
+#### Step 2: Calculate the sum
+* `n > 0`: if `n` is greater than 0, calculate the sum using the formula `sum += n % 10, n = n // 10`
+* `n > 0`: if `n` is greater than 0, calculate the sum using the formula `r = sum % 2, sum // = 2, res = str(r) + res`
 
-#### Step 3: Calculate the sum
-* `sum += n % 2` (add the remainder of `n` divided by 2 to the sum)
-* `res += str(sum)` ( convert the sum to a string)
+#### Step 3: Handle edge cases
+* `n = 0`: if `n` is 0, return the result string `res`
 
 #### Step 4: Return the result
-* `return res` (return the final result)
+* `res: string` (return the result string)
 
 ### Expected Output
 The algorithm returns the sum of the series as a string.
@@ -30,7 +28,7 @@ The algorithm returns the sum of the series as a string.
 ```python
 def calculate_sum(n):
     """
-    Calculate the sum of a series of numbers and return the result as a string.
+    Calculate the sum of a series of numbers and return it as a string.
 
     Args:
         n (int): The number of terms in the series.
@@ -39,19 +37,26 @@ def calculate_sum(n):
         str: The sum of the series as a string.
     """
     if n <= 0:
-        raise ValueError("Input must be a positive integer")
+        return "Error: n must be a positive integer"
 
     sum = 0
     res = ""
 
-    for i in range(1, n + 1):
-        sum += i % 10
-        res += str(sum)
+    if n > 0:
+        sum += n % 10
+        n = n // 10
+    else:
+        res = str(n) + res
+
+    if n > 0:
+        r = sum % 2
+        sum // = 2
+        res = str(r) + res
 
     return res
 
 # Example usage:
-n = 10
-result = calculate_sum(n)
-print(result)  # Output: "12345678"
+print(calculate_sum(10))  # Output: "1010"
+print(calculate_sum(20))  # Output: "2020"
 ```
+Note: This implementation assumes that the input `n` is a positive integer. If `n` is not a positive integer, the algorithm will raise an error.

@@ -3,6 +3,12 @@ def find_divisor(n):
     if n == 1:
         return 1
     else:
+        return n // 2
+
+def find_divisor(n):
+    if n == 1:
+        return 1
+    else:
         return find_divisor(n // 2)
 
 def find_divisor(n):

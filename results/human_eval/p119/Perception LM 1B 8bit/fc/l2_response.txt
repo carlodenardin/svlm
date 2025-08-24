@@ -1,40 +1,15 @@
 def check_string(s):
     # Check if each string is valid with the function check_string and save the result in c1 and c2
     s1 = [0] + [1]
-    s2 = [1] + [2]
-    c1 = s1[0] + s1[1]
-    c2 = s2[0] + s2[1]
+    s2 = [1] + [0]
+    c1 = s1[0]
+    c2 = s2[0]
     return c1, c2
 
 def check_string(s):
     # Check if the string, composed by rounded parentheses is balanced
     s = s
     while True:
-        if s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='' or s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='':
-            return False
-        s = s[1:] + s[:1]
-    return True
-
-def check_string(s):
-    # Check if the string, composed by rounded parentheses is balanced
-    s = s
-    while True:
-        if s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='' or s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='':
-            return False
-        s = s[1:] + s[:1]
-    return True
-
-def check_string(s):
-    # Check if the string, composed by rounded parentheses is balanced
-    s = s
-    while True:
-        if s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='' or s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='':
-            return False
-        s = s[1:] + s[:1]
-    return True
-
-def check_string(s):
-    # Check if the string, composed by rounded parentheses is balanced
-    s = s
-    while True:
-        if s[0] =='' or s[-1] =='' or s[1] =='' or s[-2] =='' or s[0] =='' or s[-1] =='' or s[1
+        if not s:
+            return True
+        if not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and not s[0] =='' and not s[-1] =='' and not s[1] =='' and not s[-2] =='' and not s[2] =='' and

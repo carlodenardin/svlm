@@ -1,6 +1,6 @@
 ```python
 ```python
-def factorial_list(n):
+def compute_factorial(n):
     result = []
     for i in range(1, n+1):
         if i % 2 == 0:
@@ -9,9 +9,8 @@ def factorial_list(n):
                 factorial *= j
             result.append(factorial)
         else:
-            sum_values = 0
-            for j in range(1, i+1):
-                sum_values += j
+            sum_values = sum(range(1, i+1))
             result.append(sum_values)
     return result
+```
 ```

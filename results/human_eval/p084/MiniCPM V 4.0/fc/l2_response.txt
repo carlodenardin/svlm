@@ -3,8 +3,9 @@ def calculate_sum_and_convert_to_binary(n):
     sum = 0
     res = ""
     while n > 0:
-        sum += n % 10
+        digit = n % 10
+        sum += digit
         n //= 10
-    res = bin(sum)[2:]  # Convert binary to string and remove the '0b' prefix
+        res = str(digit) + res
     return res
 ```

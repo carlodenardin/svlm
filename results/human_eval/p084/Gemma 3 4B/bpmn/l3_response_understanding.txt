@@ -2,28 +2,26 @@ Okay, let's break down this flowchart and describe the algorithm's implementatio
 
 **1. Overview of the Algorithm's Purpose**
 
-The algorithm appears to calculate a result based on an integer input `n`. It involves a series of calculations, including modulo operations, string conversion, and conditional checks. The goal is to produce a final result stored in the variable `res`.
+The algorithm appears to be designed to calculate a result based on an integer input `n`. It involves summing digits of `n`, checking if the sum is greater than 0, and then performing some operations based on that condition.  The final result is stored in a variable called `res`.
 
 **2. Input Data Required**
 
-*   **Integer `n`:** The algorithm takes a single integer input, denoted as `n`. This is the primary value that drives the calculations.
+*   **Integer `n`:** The algorithm takes a single integer as input. This is the number that will be processed.
 
 **3. Main Logical Flow (Step-by-Step)**
 
 1.  **Receive Input:** The algorithm begins by receiving an integer `n` as input.
 2.  **Initialization:** Two variables are initialized:
-    *   `sum = 0`: This variable will accumulate a sum during the process.
-    *   `res = "..."`: This variable is initialized with a string value.  (The exact initial value is not shown in the flowchart, but it's crucial for the later string conversion.)
-3.  **Initial Check:** The algorithm checks if `n` is greater than 0.
-    *   **If `n` > 0:**
-        *   `sum += n % 10`: The remainder of `n` divided by 10 is added to `sum`.
-        *   `n = n // 10`: `n` is integer-divided by 10 (effectively removing the last digit).
-    *   **Else (if `n` <= 0):**
-        *   The algorithm checks if `sum` is greater than 0.
-            *   **If `sum` > 0:**
-                *   `r = sum % 2`: The remainder of `sum` divided by 2 is calculated and stored in `r`.
-                *   `sum = sum // 10`: `sum` is integer-divided by 10.
-                *   `res += str(r)`: The string representation of `r` is appended to the `res` variable.
-            *   **Else (if `sum` <= 0):**
-                *   The algorithm returns the `res` variable.
-4.  **Loop (Implicit):** The "If n > 0" block creates an implicit loop.  As long as `n`
+    *   `sum = 0`: This variable will store the sum of the digits of `n`.
+    *   `res = ""`: This variable will store the final result. It's initialized as an empty string.
+3.  **Looping Condition:** The algorithm enters a `while` loop that continues as long as `n` is greater than 0.
+4.  **Digit Sum Calculation:** Inside the loop:
+    *   `sum += n % 10`: The last digit of `n` (obtained using the modulo operator `%`) is added to the `sum`.
+    *   `n = n // 10`: The last digit is removed from `n` (integer division `//` is used to discard the remainder).
+5.  **Conditional Check:** After the loop finishes (when `n` becomes 0), the algorithm checks if `sum` is greater than 0.
+    *   **If `sum > 0`:**
+        *   `r = sum % 2`: The remainder when `sum` is divided by 2 is calculated.
+        *   `sum = sum // 10`: The sum is divided by 10 (integer division).
+        *   `res = str(r) + res`: The value of `r` is converted to a string and concatenated to the beginning of the `res` variable.
+    *   **If `sum <= 0`:** The algorithm returns the `res` variable.
+6.  **Return Result:** The algorithm returns the final value stored in the `res` variable

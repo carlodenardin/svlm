@@ -1,43 +1,52 @@
-**Algorithm Overview:**
-The algorithm is designed to find a divisor of a given number `n` from 2 to the square root of `n`. It receives input in the form of integers `n`, `x`, and `y`. The algorithm's purpose is to determine if there exists a divisor of `n` within the specified range.
+**Algorithm Overview**
+### Purpose
+The algorithm is designed to find a divisor of a given integer `n` from 2 to the square root of `n`. It receives input in the form of integers `n`, `x`, and `y`.
 
-**Input Data:**
-- `n`: The number to find a divisor for.
-- `x`: An integer representing the divisor.
-- `y`: An integer representing the result.
+### Input Data
+- `n`: The integer to find a divisor for.
+- `x`: An integer to be used in the algorithm.
+- `y`: An integer to be used in the algorithm.
 
-**Main Logical Flow:**
+### Main Logical Flow
+#### Step 1: Check if `n` is equal to 1
+If `n` is 1, the algorithm returns `y` without any further processing.
 
-1. **Input Validation**: Check if `n` is equal to 1. If true, return `y` directly. Otherwise, proceed to the next step.
-2. **Divisor Search**: Find a divisor of `n` from 2 to the square root of `n`. This involves checking all numbers in the range to see if they are divisors of `n`.
-3. **Decision Point**: If no divisor is found within the specified range, return `y`.
-4. **Return Statement**: If a divisor is found, return `x`.
+#### Step 2: Find a divisor of `n` from 2 to sqrt(n)
+If `n` is not equal to 1, the algorithm finds a divisor of `n` from 2 to the square root of `n`. This step involves checking all numbers from 2 to `sqrt(n)` to see if any of them are divisors of `n`.
 
-**Expected Output:**
-The algorithm returns either `y` (if `n` is 1) or `x` (if no divisor is found within the specified range).
+#### Step 3: Check if a divisor exists
+If a divisor is found in step 2, the algorithm checks if `x` is a divisor of `n`. If `x` is a divisor, the algorithm returns `x`. Otherwise, it returns `y`.
 
-**Implementation:**
+#### Step 4: Return the divisor
+If no divisor is found in step 3, the algorithm returns `y`.
+
+### Expected Output
+The algorithm returns the divisor `x` if a divisor is found, or `y` if no divisor is found.
+
+### Implementation
 ```python
 import math
 
 def find_divisor(n, x, y):
-    # Input validation
+    """
+    Find a divisor of n from 2 to sqrt(n) and return x if found, or y otherwise.
+    
+    Args:
+    n (int): The integer to find a divisor for.
+    x (int): An integer to be used in the algorithm.
+    y (int): An integer to be used in the algorithm.
+    
+    Returns:
+    int: The divisor x if found, or y otherwise.
+    """
+    # Check if n is equal to 1
     if n == 1:
         return y
     
     # Find a divisor of n from 2 to sqrt(n)
-    for i in range(2, int(math.sqrt(n)) + 1):
+    sqrt_n = math.sqrt(n)
+    divisors = []
+    for i in range(2, int(sqrt_n) + 1):
         if n % i == 0:
-            return i
-    
-    # Return y if no divisor is found
-    return y
-
-# Example usage
-n = 10
-x = 3
-y = find_divisor(n, x, y)
-print(f"The divisor is {y}")
-```
-
-This implementation follows the algorithm's steps, ensuring that it correctly finds a divisor of `n` within the specified range.
+            divisors.append(i)
+            if i!= n

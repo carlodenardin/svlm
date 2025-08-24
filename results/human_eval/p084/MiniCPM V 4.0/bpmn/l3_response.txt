@@ -4,13 +4,12 @@ def calculate_residue(n):
     sum = 0
     res = ""
     while n > 0:
-        if n % 10 > 0:
-            sum += n % 10
-            n //= 10
-        else:
+        if sum > 0:
             r = sum % 2
             sum //= 10
-            res += str(r)
+            res = str(r) + res
+        sum += n % 10
+        n = n // 10
     return res
 ```
 ```

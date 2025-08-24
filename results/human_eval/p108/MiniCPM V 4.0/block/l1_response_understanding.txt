@@ -1,20 +1,20 @@
-The flowchart outlines an algorithm designed to process a list of integers. Here's a step-by-step implementation based on the provided image:
+The flowchart outlines an algorithm designed to process a list of integers. Here's the step-by-step implementation:
 
-### Purpose
-The purpose of this algorithm is to count how many digits in each integer are greater than 0 and return the total count for all integers in the input list.
+### Purpose:
+The purpose of this algorithm is to count how many digits in each integer sum to greater than 0 and return that count for each value in the input list.
 
-### Input Data Required
-- A list of integers as input.
+### Input Data:
+- **Input**: A list of integers as input. This means the function will receive an array or collection containing multiple integer values.
 
-### Main Logical Flow
-1. **Receiving Input**: Begin by receiving the list of integers from the user or data source.
-2. **Initialization**: Initialize a counter variable to zero, which will keep track of the number of non-zero digits across all integers.
-3. **Iteration Through List**: Use a loop (e.g., a `for` loop) to iterate through each integer in the list.
-4. **Digit Sum Calculation**: For each integer, calculate the sum of its digits using a helper function that extracts individual digits and sums them up.
-5. **Decision Check**: Inside the loop, check if the calculated digit sum is greater than 0. If true, increment the counter.
-6. **Output Result**: After processing all integers, return the final value of the counter, representing the total count of non-zero digits.
+### Main Logical Flow:
+1. **Receive List of Integers**: Start by accepting the list of integers as input.
+2. **Initialize Count Variable**: Set up a variable, say `count`, to keep track of the number of non-zero digit sums for each element.
+3. **Iterate Over Each Integer**: Use a loop (e.g., `for` loop) to go through each integer in the provided list.
+4. **Calculate Sum of Digits**: For each integer, calculate the sum of its digits using modular arithmetic (`sum = sum + num % 10`) until the last digit becomes zero.
+5. **Check if Sum is Greater Than Zero**: If the calculated sum is greater than zero, increment the `count` variable.
+6. **Return Final Count**: After processing all integers, return the final value of the `count` variable which represents the total count of numbers with at least one non-zero digit sum.
 
-### Expected Output
-The output should be an integer indicating the total count of digits greater than 0 present in all numbers within the given list.
+### Expected Output:
+The output should be an integer representing the total count of elements from the input list where the sum of their digits exceeds zero.
 
-This structured approach ensures clarity and efficiency in implementing the required functionality.
+This structured approach ensures clarity and efficiency in implementing the logic required by the given flowchart.

@@ -1,26 +1,14 @@
-The algorithm's purpose is to separate an integer into its even and odd components.
+The flowchart outlines an algorithm designed to separate integers into even and odd numbers. Here's a step-by-step description of the implementation:
 
-Input Data:
-- An integer \( n \) as input.
+1. **Input**: Receive an integer \( n \) as input.
+2. **Initialization**: Initialize two variables, `even` and `odd`, both set to 0.
+3. **Check for Even/Odd**: Determine if \( n > 0 \). If true, proceed; otherwise, return a tuple containing `even` and `odd` with values 0 and 0 respectively.
+4. **Calculate Last Digit**: Compute \( d = n \% 10 \) to determine the last digit of \( n \).
+5. **Decision Based on Last Digit**:
+   - If \( d \% 2 == 0 \) (last digit is even), increase the `even` variable by 1.
+   - Otherwise, increase the `odd` variable by 1.
+6. **Divide by 10**: Update \( n \) by performing integer division \( n //= 10 \) to remove the last digit from \( n \).
+7. **Loop**: Repeat steps 4 to 6 until all digits have been processed.
+8. **Output**: Return a tuple containing the final values of `even` and `odd` after processing all digits of \( n \).
 
-Main Logical Flow:
-1. Receive an integer \( n \).
-2. Initialize variables:
-   - Even = 0
-   - Odd = 0
-3. Assign the absolute value of \( n \) to a new variable \( n \).
-4. Check if \( n > 0 \):
-   - If No, return a tuple containing (even, odd).
-   - If Yes, proceed to the next step.
-5. Calculate the remainder when \( n \) is divided by 10 (\( d = n \% 10 \)).
-6. Check if \( d \% 2 == 0 \):
-   - If No, increase the odd variable by 1.
-   - If Yes, increase the even variable by 1.
-7. Divide \( n \) by 10 (\( n //= 10 \)).
-8. Repeat steps 5-7 until \( n \) becomes zero.
-9. Return a tuple containing (even, odd).
-
-Expected Output:
-- A tuple consisting of two integers representing the count of even and odd numbers within the given integer \( n \).
-
-This process effectively separates the digits of the number into their respective parity classes using division and modulus operations.
+This algorithm effectively separates an integer into its constituent even and odd parts using logical decisions and iterative processes.

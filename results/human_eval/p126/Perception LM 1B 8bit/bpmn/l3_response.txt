@@ -1,178 +1,104 @@
-def receive_list_of_integers():
-    i = 0
+def process_list():
+    i = 1
     while len(list(i)) < len(list):
-        i += 1
-    return i
-
-def increase_i_by_1():
-    i = 0
-    while i < len(list(i)) - 1:
-        i += 1
-    return i
-
-def return_true():
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+            i += 1
+        else:
+            return False
     return True
 
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
-    return True
-
-def return_true():
+def process_list():
+    i = 1
+    while len(list(i)) < len(list):
+        if i < len(list):
+           

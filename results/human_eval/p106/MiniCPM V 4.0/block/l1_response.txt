@@ -2,12 +2,14 @@
 def compute_factorial_or_sum(n):
     if n == 1:
         return [1]
+    elif n % 2 == 0:
+        result = [1]
+        for i in range(2, n+1):
+            result.append(result[-1] * i)
+        return result
     else:
         result = [1]
-        for i in range(2, n + 1):
-            if i % 2 == 0:
-                result.append(i * result[-1])
-            else:
-                result.append(i + sum(result[:i]))
+        for i in range(2, n+1):
+            result.append(result[-1] * i)
         return result
 ```

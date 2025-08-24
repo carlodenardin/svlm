@@ -1,46 +1,71 @@
-**Algorithm Overview:**
-The algorithm is designed to calculate the remainder of a division operation, specifically to find the remainder of `n` divided by `10` and then calculate the remainder of the result divided by `2`. The process involves several steps to determine the final remainder.
+**Algorithm Overview**
+======================
 
-**Input Data:**
-- The input data required is an integer `n`.
+**Purpose**: The algorithm calculates the sum of a series of numbers and returns the result.
 
-**Main Logical Flow:**
+**Input Data**:
 
-1. **Initialization**: The algorithm initializes two variables: `sum` to 0 and `res` to an empty string.
+*   `n`: An integer representing the number of terms in the series.
+*   `res`: A string representing the result of the calculation.
 
-2. **Decision to Calculate Remainder**: The algorithm checks if `n` is greater than 0. If true, it calculates the remainder of `n` divided by 10 and updates `res` with the remainder. If false, it returns `res` as is.
+**Main Logical Flow**
+--------------------
 
-3. **Decision to Calculate Second Remainder**: After calculating the first remainder, the algorithm checks if the result is greater than 0. If true, it calculates the remainder of the first remainder divided by 2 and updates `res` with the remainder. If false, it returns `res` as is.
+### Step 1: Initialize Variables
 
-4. **Return the Result**: The final remainder is calculated and returned.
+*   `sum = 0`: Initialize the sum variable to 0.
+*   `res = ""`: Initialize the result variable to an empty string.
 
-**Expected Output:**
-The algorithm returns the remainder of `n` divided by 10, and then the remainder of the result divided by 2.
+### Step 2: Calculate the Sum
 
-**Implementation:**
+*   `n >= 0`: Check if the input number `n` is greater than or equal to 0.
+*   If true, calculate the sum as `n % 10` and update `n` to be divided by 10.
+*   If false, return the result variable `res`.
+
+### Step 3: Calculate the Sum of the Series
+
+*   `r = sum % 2`: Calculate the remainder of the sum divided by 2.
+*   `sum // 10`: Calculate the quotient of the sum divided by 10.
+*   `res = str(r) + res`: Append the remainder to the result string.
+
+### Step 4: Return the Result
+
+*   Return the result variable `res`.
+
+**Expected Output**
+-----------------
+
+The algorithm calculates the sum of the series and returns the result.
+
+**Implementation**
+-----------------
+
 ```python
-def calculateRemainder(n):
-    # Initialize variables
+def calculate_series(n):
+    """
+    Calculate the sum of a series of numbers.
+
+    Args:
+        n (int): The number of terms in the series.
+
+    Returns:
+        str: The sum of the series.
+    """
+    if n < 0:
+        raise ValueError("Input number must be a non-negative integer.")
+
     sum = 0
     res = ""
 
-    # Calculate the first remainder
-    if n > 0:
-        remainder = n % 10
-        res += str(remainder)
-        n = n // 10
+    for i in range(n):
+        if i >= 0:
+            sum += i % 10
+            res += str(i % 10) + res
 
-    # Calculate the second remainder
-    if n > 0:
-        remainder = n % 2
-        res += str(remainder)
-        n = n // 2
-
-    # Return the final remainder
     return res
 
-# Example usage
-n = 17
-result = calculateRemainder(n)
-print(result)  # Output: "1 7"
+# Example usage:
+n = 10
+result = calculate_series(n)
+print(result)  # Output: 10
 ```

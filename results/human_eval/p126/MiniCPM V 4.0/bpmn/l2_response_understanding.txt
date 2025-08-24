@@ -1,14 +1,19 @@
-The flowchart outlines an algorithm designed to check if a list of integers is sorted and whether any number appears more than twice. Here's a step-by-step description:
+The flowchart outlines an algorithm designed to determine if a list of integers is sorted. Here’s the step-by-step implementation:
 
-1. **Receive a list of integers**: The process begins by receiving the input data, which is a list of integers.
-2. **Check if the list is sorted**: 
-   - If the list is not sorted (No), proceed to return False.
-3. **Check for duplicate numbers**:
-   - If there are duplicates in the list (Yes), proceed to return False.
-4. **Return True**: 
-   - If no duplicates are found and the list is sorted, conclude with returning True.
+1. **Receive Input**: The process begins by receiving a list of integers as input.
+2. **Initial Check**: 
+   - Determine if the list is already sorted.
+   - If not, proceed to check for duplicates in the list.
+3. **Sorted Check**:
+   - Iterate through the list and compare each element with its subsequent one.
+   - If any pair of consecutive elements are found to be unequal (indicating they are not in ascending order), return `False` indicating the list is not sorted.
+4. **Duplicate Check**:
+   - Use a loop or a set to identify numbers that appear more than twice.
+   - If such occurrences are detected, also return `False`.
+5. **Return True**:
+   - If both conditions fail (i.e., no duplicates greater than twice and the list is properly sorted), conclude that the list is sorted and return `True`.
 
-**Expected Output**: 
-- The output will be `True` only if the given list of integers is both sorted and contains unique elements without any number appearing more than twice. Otherwise, it returns `False`.
+**Expected Output**:
+- The output will either be `True` if the list is sorted without duplicate values exceeding two times, or `False` otherwise.
 
-This implementation ensures that the function accurately identifies the sorting order and uniqueness within the integer list.
+This structured approach ensures thorough validation of the integer list's sorting status and uniqueness.

@@ -1,1 +1,1 @@
-code generation assistant - syntax check .
+code generation assistant - abstract syntax tree ( ast ) .

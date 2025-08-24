@@ -1,29 +1,29 @@
-The flowchart outlines an algorithm designed to receive a list of integers and an integer \( k \) as input, sort the list, and return the last \( k \) elements. Here’s a detailed step-by-step implementation:
+The purpose of the algorithm is to process a list of integers and an integer \( k \), sort the list, and return the last \( k \) elements.
 
-1. **Input Data**: 
-   - Receive a list of integers (`lst`).
-   - Receive an integer `k` indicating how many elements from the end should be returned.
+### Input Data:
+- A list of integers (\( \text{lst} \))
+- An integer \( k \) (the number of elements to return from the end)
 
-2. **Main Logical Flow**:
-   - **Sorting the List**: Use a sorting function or method (e.g., Python's `sorted()` or built-in sort methods) to arrange the list in ascending order. This ensures that the subsequent selection is based on the sorted sequence.
-   - **Return Last k Elements**: After sorting, access the last \( k \) elements of the sorted list directly since they will naturally occupy the highest indices.
+### Main Logical Flow:
+1. **Receive the input**: Start by receiving the list of integers (\( \text{lst} \)) and the integer \( k \) as inputs.
+2. **Sort the list**: Sort the given list in ascending or descending order depending on requirements. This can be achieved using built-in sorting functions like `sorted()` in Python.
+3. **Return the specified portion**: After sorting, extract the last \( k \) elements from the sorted list.
 
-3. **Expected Output**:
-   - Return the sublist containing the last \( k \) elements of the original list after it has been sorted.
+### Expected Output:
+- The output will be a new list containing the last \( k \) elements from the original list after it has been sorted.
 
-### Pseudocode Implementation:
-```plaintext
-function getLastKElements(lst, k):
-    # Step 1: Sort the list in ascending order
+### Implementation Steps:
+1. Define a function that takes two parameters: the list of integers (\( \text{lst} \)) and the integer \( k \).
+2. Inside the function, use the `sorted()` function to sort the list in ascending order if required.
+3. Extract the last \( k \) elements from the sorted list using slicing (`lst[-k:]`).
+4. Return the resulting sublist which contains the last \( k \) elements.
+
+```python
+def get_last_k_elements(lst, k):
+    # Step 2: Sort the list
     sorted_lst = sorted(lst)
-    
-    # Step 2: Return the last k elements
+    # Step 3: Get the last k elements
     return sorted_lst[-k:]
 ```
 
-### Example:
-Given a list `[5, 2, 8, 12, 3]` and \( k = 3 \):
-1. The list is sorted: `[2, 3, 5, 8, 12]`.
-2. The last three elements are selected: `[8, 12, 3]`.
-
-Thus, the output would be `[8, 12, 3]`.
+This implementation ensures that the list is properly sorted before returning the desired portion at the end.

@@ -1,9 +1,9 @@
 ```python
-def count_positive_digit_sums(input_list):
+def count_positive_digit_sums(lst):
     count = 0
-    for num in input_list:
-        sum_digits = sum(int(digit) for digit in str(num))
-        if sum_digits > 0:
+    for num in lst:
+        positive_digits_sum = sum(int(digit) for digit in str(num))
+        if positive_digits_sum > 0:
             count += 1
     return count
 ```

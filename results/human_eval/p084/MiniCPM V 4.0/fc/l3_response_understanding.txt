@@ -1,20 +1,36 @@
-The flowchart outlines an algorithm designed to convert a given integer `n` into its corresponding string representation of prime factors. Here’s the step-by-step process for implementation:
+The flowchart outlines an algorithm that converts an integer `n` into a string representation of its remainder when divided by 10 repeatedly until the quotient is zero. Here’s a step-by-step description:
 
-1. **Input**: The algorithm requires an integer input, denoted as `n`.
-2. **Initialization**: 
-   - Set the sum variable to 0.
-   - Initialize an empty string `res` to store the result.
-3. **Check if n is greater than 0**:
-   - If `n > 0`, proceed with the following steps:
-     - Calculate the remainder when `n` is divided by 10 (`sum += n % 10`).
-     - Update `n` by performing integer division by 10 (`n = n // 10`).
-4. **Loop until n becomes 0**:
-   - Continue this loop while `n` remains greater than 0.
-5. **Check if the current value of sum exceeds 0**:
-   - If `sum > 0`, perform the next operations:
-     - Calculate the quotient and remainder of `sum` divided by 2 (`r = sum % 2`, `sum //= 2`).
-     - Append the character representing the residue (either '2' or '5') to `res` using `str(r)`.
-6. **Output**: After processing all necessary steps, return the concatenated string `res` which represents the prime factorization of the original number `n`.
-7. **End**: The algorithm concludes here once the desired output is obtained.
+### Algorithm Overview:
+The purpose of this algorithm is to convert an integer input (`n`) into a string format representing its last digit repeated for all digits from the most significant to the least significant.
 
-This algorithm effectively decomposes the input integer into its prime factors and converts these factors into a readable string format.
+### Input Data:
+- **Input**: An integer `n`.
+
+### Main Logical Flow:
+1. **Initialize Variables**:
+   - Set `sum` to 0.
+   - Initialize an empty string `res` with three double quotes ("").
+
+2. **Check if n > 0**:
+   - If `n` is greater than 0, proceed to the next steps.
+   - Otherwise, move directly to the final output stage and end the process.
+
+3. **Loop Until n becomes 0**:
+   - Calculate the sum of the last digit of `n` using modulo operation (`n % 10`).
+   - Append the calculated sum to `res`.
+   - Update `n` by performing integer division by 10 (`n //= 10`).
+
+4. **Check if sum > 0**:
+   - If `sum` is still greater than 0 after the loop, continue appending it to `res`.
+   - Otherwise, set `res` as the current value of `res` before exiting the function or method.
+
+5. **Output Result**:
+   - The variable `res` now contains the desired string representation of the original number's last digit repeated throughout all digits.
+
+6. **End Process**:
+   - End the execution of the algorithm.
+
+### Expected Output:
+The expected output is a string where each character in the result represents the last digit of the input number `n`, repeated across all positions. For example, if the input is 1234, the output will be "4444" because 4 is the last digit of 1234.
+
+This concise implementation efficiently handles converting any given integer into a formatted string based on its trailing digits.

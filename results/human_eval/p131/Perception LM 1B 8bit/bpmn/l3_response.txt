@@ -1,13 +1,12 @@
-def calculate_product(n):
-    if n == 0:
+def calculate_product():
+    n = int(input("Enter a number: "))
+    if n % 10 == 0:
         return 0
     else:
-        product = 1
-        while n > 0:
-            if n % 2 == 1:
-                product *= 2
-            n //= 2
-        return product
+        d = n % 10
+        if d % 2 == 0:
+            return d * 10
+        else:
+            return n // 10
 
-# Test the function
-print(calculate_product(10))
+print(calculate_product())

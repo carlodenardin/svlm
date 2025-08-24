@@ -1,27 +1,21 @@
-The flowchart outlines an algorithm designed to determine if a given integer \( n \) has any divisors other than 1. Here's the step-by-step process for implementing this algorithm:
+The algorithm's purpose is to determine if there exists a divisor of the integer \( n \) within the range from 2 to the square root of \( n \).
 
-### Algorithm Overview:
-The purpose of this algorithm is to check whether there exists any divisor of the input integer \( n \) between 2 and the square root of \( n \) (inclusive). If such a divisor is found, it returns that divisor; otherwise, it returns 1 indicating no divisors exist.
-
-### Input Data Required:
+**Input Data:**
 - Three integers: \( n \), \( x \), and \( y \).
 
-### Main Logical Flow:
-1. **Receive Input**: Start by receiving the three integers \( n \), \( x \), and \( y \) as inputs.
-2. **Check if \( n \) equals 1**:
-   - If \( n \) is equal to 1, return \( y \) immediately since 1 does not have any divisors except itself.
-3. **Find a Divisor**:
-   - Iterate from 2 up to the square root of \( n \) (inclusive) to find potential divisors.
-4. **Check Existence of Divisor**:
-   - For each number in the range from 2 to \( \sqrt{n} \):
-     - Check if \( n \) is divisible by the current number.
-     - If a divisor is found, return that divisor (\( x \)).
-5. **No Divisors Found**:
-   - If none of the numbers from 2 to \( \sqrt{n} \) divide \( n \), conclude that no divisors exist and return 1.
-6. **Return Result**:
-   - Return \( y \) regardless of whether a divisor was found or not.
+**Main Logical Flow:**
+1. **Start**: Begin with receiving input values for \( n \), \( x \), and \( y \).
+2. **Decision Point 1**: Check if \( n \) equals 1.
+   - If yes, proceed directly to return \( y \).
+   - If no, continue to the next step.
+3. **Step 1**: Find all divisors of \( n \) in the range from 2 to the square root of \( n \) (denoted as \( \sqrt{n} \)).
+4. **Decision Point 2**: Determine if any divisor has been found.
+   - If no divisor exists, proceed directly to return \( x \).
+   - If a divisor exists, proceed to the final output step.
+5. **Output Step**: Return \( y \).
 
-### Expected Output:
-- The output will be either the divisor \( x \) if one exists within the specified range, or 1 if no divisors are found.
+**Expected Output:**
+- The value of \( y \) if a divisor is found between 2 and \( \sqrt{n} \).
+- The value of \( x \) otherwise.
 
-This structured approach ensures clarity and efficiency in determining the existence of divisors for the given integer \( n \).
+This flowchart outlines an efficient method to check for divisibility constraints on \( n \) using mathematical properties related to its factors.

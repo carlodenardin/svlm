@@ -1,13 +1,13 @@
 ```python
 ```python
-def analyze_integer(num):
-    even = 0
-    odd = 0
+def count_even_odd(num):
+    even_count = 0
+    odd_count = 0
     for digit in str(num):
         if int(digit) % 2 == 0:
-            even += 1
+            even_count += 1
         else:
-            odd += 1
-    return (even, odd)
+            odd_count += 1
+    return (even_count, odd_count)
 ```
 ```

@@ -2,31 +2,25 @@ Okay, let's break down this flowchart and describe the algorithm's implementatio
 
 **1. Overview of the Algorithm's Purpose**
 
-The algorithm appears to be designed to take an integer input `n`, calculate a sum based on its value, and then convert the sum into a string representation. It also incorporates a modulo operation and a conditional check based on the sum's sign.
+The algorithm appears to be designed to perform a series of calculations on an integer input `n` and produce a string result `res`. It involves a modulo operation, a sum calculation, and string concatenation.  It seems to be checking if `n` is positive and if the sum of digits of `n` is even.
 
 **2. Input Data Required**
 
-*   **`n`:** An integer input value.
+*   **`n`:** An integer input. This is the primary data the algorithm operates on.
 
 **3. Main Logical Flow (Step-by-Step)**
 
 1.  **Initialization:**
-    *   `sum = 0` : Initialize a variable `sum` to 0. This variable will accumulate the sum of the input `n`.
-    *   `res = ""`: Initialize an empty string variable `res`. This variable will store the final string representation of the sum.
+    *   `sum = 0` (Initialize a variable `sum` to 0. This will store the sum of the digits of `n`.)
+    *   `res = ""` (Initialize a string variable `res` to an empty string. This will store the final result.)
 
-2.  **Looping Condition:**
-    *   `while (n > 0)`:  The algorithm enters a `while` loop that continues as long as the value of `n` is greater than 0.
+2.  **Looping (while `n > 0`):**
+    *   The algorithm enters a `while` loop that continues as long as the value of `n` is greater than 0.
+    *   Inside the loop:
+        *   **Check if `n > 0`:**  If `n` is greater than 0, proceed to the next step.
+        *   **Modulo Operation and Increment:** `sum += n % 10` (Calculate the remainder when `n` is divided by 10, which is the last digit of `n`. Add this digit to the `sum`.)
+        *   **Integer Division:** `n = n // 10` (Integer division of `n` by 10. This effectively removes the last digit from `n`.)
 
-3.  **Inside the Loop:**
-    *   `sum += n % 10`:  Calculate the remainder of `n` divided by 10 (`n % 10`) and add it to the `sum`. This effectively extracts the last digit of `n`.
-    *   `n = n // 10`:  Integer division of `n` by 10 (`n // 10`). This removes the last digit from `n`.
-
-4.  **Conditional Checks (Inside the Loop):**
-    *   `if (sum > 0)`:  Check if the `sum` is greater than 0.
-        *   `if (sum % 2 == 0)`: If the sum is even, calculate `r = sum // 2` (integer division by 2) and `sum = r`.
-        *   `res += str(r)`: Append the string representation of `r` to the `res` string.
-    *   `else`: If the `sum` is not greater than 0 (i.e., it's 0 or negative).
-        *   `res = string`: Assign the string "res" to the variable `res`.
-
-5.  **Loop Termination:**
-    *   The `while` loop continues
+3.  **Conditional Checks (after the loop):**
+    *   **Check if `sum > 0`:** If the `sum` is greater than 0, proceed to the next step.
+    *   **Sum Calculation:** `r = sum % 2, sum = sum / 2, res = str(r) + res` (This is the core logic. It calculates the remainder when `sum` is divided by 2 (to determine if the sum is even or odd), divides `sum` by 2, and concatenates the result (as a string) to

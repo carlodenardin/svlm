@@ -2,40 +2,37 @@ Okay, let's break down this flowchart and describe the algorithm it represents.
 
 **1. Overview of the Algorithm's Purpose**
 
-This algorithm appears to be designed to calculate a string representation of the sum of digits of a non-negative integer `n`.  It essentially converts the integer into a string by repeatedly adding the digit sum to the string until the sum becomes zero.
+This algorithm appears to be designed to convert a positive integer `n` into a string representation, with the digits of the string being the digits of `n` repeated in a specific pattern. Specifically, it seems to be generating a string where each digit of `n` is repeated 10 times.
 
 **2. Input Data Required**
 
-*   **n:** An integer (non-negative). This is the input value for which we want to calculate the digit sum string.
+*   **n:** An integer (positive). This is the input value that will be processed.
 
 **3. Main Logical Flow (Step-by-Step)**
 
 1.  **Initialization:**
-    *   `sum = 0` (Initialize the sum of digits to zero)
-    *   `res = ""` (Initialize an empty string to store the result)
+    *   `sum = 0`
+    *   `res = ""` (an empty string)
 
-2.  **Loop:** The algorithm enters a loop that continues as long as `n > 0`.
+2.  **Input Validation:**
+    *   `n > 0` (Check if `n` is greater than 0). If `n` is not greater than 0, the algorithm ends.
 
-3.  **Decision (n > 0):**
-    *   **If `n > 0`:**
-        *   `sum += n % 10` (Add the last digit of `n` to the `sum`)
-        *   `n = n // 10` (Integer division to remove the last digit of `n`)
-    *   **Else (n <= 0):**
-        *   The loop terminates.
+3.  **Looping and Digit Processing:**
+    *   `sum += n % 10` (Calculate the remainder when `n` is divided by 10 and add it to `sum`).
+    *   `n = n // 10` (Integer division of `n` by 10, effectively removing the last digit of `n`).
 
-4.  **Decision (sum > 0):**
-    *   **If `sum > 0`:**
-        *   `r = sum % 2` (Calculate the remainder when `sum` is divided by 2)
-        *   `sum = sum //= 2` (Integer division to divide `sum` by 2)
-        *   `res += str(r)` (Append the remainder `r` (0 or 1) as a string to the `res` string)
-    *   **Else (sum <= 0):**
-        *   The loop terminates.
+4.  **Conditional Checks and String Construction:**
+    *   `sum > 0` (Check if `sum` is greater than 0).
+        *   If `sum > 0`:
+            *   `r = sum % 2` (Calculate the remainder when `sum` is divided by 2).
+            *   `sum = sum // 2` (Integer division of `sum` by 2).
+            *   `res = str(r) + res` (Append the string representation of `r` to the beginning of the `res` string).
+        *   If `sum` is not greater than 0:
+            *   `res = str(sum)` (Append the string representation of `sum` to the `res` string).
 
 5.  **Output:**
-    *   `res` (The `res` string, which now contains the digit sum representation, is returned as the output).
+    *   `End` (The algorithm terminates and returns the `res` string).
 
 **4. Expected Output**
 
-The algorithm will produce a string that represents the sum of the digits of the input integer `n`.  The string will be built up digit by digit, starting from the least significant digit.
-
-**Example
+The algorithm will produce a string that is the concatenation of the digits of the input integer `n`, each repeated 

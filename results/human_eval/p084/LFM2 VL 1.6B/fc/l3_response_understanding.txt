@@ -1,22 +1,21 @@
-### Algorithm Overview
+Overview:
+The algorithm calculates the sum of a series of numbers based on a given condition. It starts with an initial sum of 0 and iteratively adds a percentage of the current sum to it. The condition for adding the percentage is that the current sum must be greater than 0. If the condition is not met, the algorithm adds the string representation of the current sum to the end of the string. The loop continues until the condition is met.
 
-The algorithm is designed to calculate the sum of a series of numbers. It takes an initial value `n` and an initial value `res` (which is initially set to an empty string). The algorithm iteratively adds the next number in the series to the sum until the sum exceeds the initial value `res`. Once the sum exceeds `res`, the algorithm returns the string representation of the sum.
+Input Data:
+The algorithm requires two inputs: the initial sum (n) and the percentage (r). The initial sum can be any non-negative integer, and the percentage can be any value between 0 and 1.
 
-### Input Data
+Main Logical Flow:
+1. Start: The algorithm begins.
+2. n = int: The input sum (n) is converted to an integer.
+3. sum = 0: The initial sum is set to 0.
+4. while n > 0: The loop continues as long as the sum is greater than 0.
+5. n = n * 10: The current sum is multiplied by 10.
+6. if n > 0: The condition is checked. If the current sum is greater than 0, the algorithm adds the string representation of the current sum to the end of the string.
+7. else: The condition is not met, and the algorithm adds the string representation of the current sum to the end of the string.
+8. sum += 0.1: The current sum is incremented by 0.1.
+9. n = n + 0.1: The input sum is incremented by 0.1.
+10. while n > 0: The loop continues as long as the sum is greater than 0.
+11. Exit: The loop exits.
 
-- `n`: An integer representing the starting number of the series.
-- `res`: An initial value that will be used to store the sum of the series.
-
-### Main Logical Flow
-
-1. **Initialization**: The algorithm starts with `n` set to 0 and `res` set to an empty string.
-2. **Iteration**: The algorithm enters a loop that continues as long as `n` is greater than 0.
-3. **Addition**: Inside the loop, the algorithm adds the next number in the series to the sum.
-4. **Condition Check**: After each addition, the algorithm checks if the sum has exceeded the initial value `res`.
-5. **Output**: If the sum exceeds `res`, the algorithm returns the string representation of the sum.
-6. **Loop**: If the sum does not exceed `res`, the algorithm continues to the next iteration of the loop.
-7. **End**: The loop ends when `n` is no longer greater than 0, and the algorithm returns the final sum.
-
-### Expected Output
-
-The expected output is the string representation of the sum of the series. If the sum exceeds the initial value `res`, the algorithm returns the string representation of the sum. If the sum does not exceed `res`, the algorithm returns an empty string.
+Expected Output:
+The algorithm calculates the sum of the series of numbers based on the given condition. The output is a string that represents the sum of the series.

@@ -1,54 +1,49 @@
-Certainly! Here's a structured breakdown based on the provided flowchart:
+### **Algorithm Overview**
+The algorithm's purpose is to inspect an integer \( n \) for certain properties related to factorization and return a specified output based on the results. In essence, it checks if \( n \) is 1, or if \( n \) has any divisors (other than 1) up to its square root.
 
 ---
 
-### **1. Overview of the Algorithm's Purpose**
-The algorithm is designed to analyze an integer `n` and output one of two values (`x` or `y`) based on properties of `n`:
-- If `n` equals 1, it returns a specific value (`y`).
-- If `n` is not divisible by any integer in `[2, sqrt(n)]`, it returns another value (`x`).
-- If `n` is divisible by any integer in `[2, sqrt(n)]`, it returns `y`.
-
-This is useful for distinguishing if `n` is a prime number or has special qualities depending on the context of `x` and `y`.
+### **Input Data**
+- **n**: Integer to be tested.
+- **x**: Integer to be returned if \( n \) has no divisors (other than 1) up to \(\sqrt{n}\).
+- **y**: Integer to be returned if \( n \) is 1 or has a divisor in the loop range.
 
 ---
 
-### **2. Input Data Required**
-- **n**: An integer — the main number to be analyzed.
-- **x**: An integer — return value in the case where no divisors are found in `[2, sqrt(n)]`.
-- **y**: An integer — return value in the case where a divisor is found (or if `n == 1`).
+### **Main Logical Flow**
 
----
-
-### **3. Main Logical Flow**
-#### **Step-by-Step Process:**
-1. **Read inputs:** Receive the integers `n`, `x`, and `y`.
-2. **Check if n is 1:**
-   - If `n == 1`, **return `y`** and terminate.
-3. **Initialize loop variable:** Set `i = 2`.
-4. **Loop while `i <= sqrt(n)`:**
-   - If `i > sqrt(n)`, **return `x`** and terminate (no divisors found, `n` is likely prime).
-   - If `n % i == 0` (if `n` is divisible by `i`),
-     - **Return `y`** and terminate (divisor found).
-   - Otherwise, increment `i` and repeat the loop.
+1. **Input**: Receive the three integers: \( n \), \( x \), and \( y \).
    
+2. **Check if \( n = 1 \)**:
+   - If yes, **return \( y \)** and terminate.
+   - If no, continue to step 3.
+
+3. **Initialize**: Set \( i = 2 \).
+
+4. **Loop**: While \( i \leq \sqrt{n} \), do the following:
+   - **Divisibility Test**: If \( n \% i == 0 \) (i.e., \( i \) divides \( n \)),
+     - **Return \( y \)** and terminate.
+   - **Otherwise**:
+     - Increase \( i \) by 1 and loop.
+
+5. **If loop exits** (i.e., no divisors found for all \( i \) in [2, \(\sqrt{n}\)]):
+   - **Return \( x \)**.
+
 ---
 
-### **4. Expected Output**
-- **`y`** if `n` is 1.
-- **`y`** if `n` is divisible by any number in `[2, sqrt(n)]`.
-- **`x`** if `n` is not divisible by any such number (implying `n` is prime when `n > 1`).
+### **Expected Output**
+- **Output \( y \)**: If \( n = 1 \) or if \( n \) has any divisor \( i \) in the range 2 to \(\sqrt{n}\).
+- **Output \( x \)**: If \( n \) is not 1 and has no divisors in the range 2 to \(\sqrt{n}\) (i.e., \( n \) is prime).
 
 ---
 
-## **Pseudocode Implementation**
-
+### **Pseudo-code Implementation**
 ```python
-def algorithm(n, x, y):
-    import math
+def check_number(n, x, y):
     if n == 1:
         return y
     i = 2
-    while i <= math.isqrt(n):
+    while i <= int(n**0.5):
         if n % i == 0:
             return y
         i += 1
@@ -57,14 +52,5 @@ def algorithm(n, x, y):
 
 ---
 
-## **Summary Table**
-
-| Condition                      | Output   |
-|---------------------------------|----------|
-| n == 1                         | y        |
-| n % i == 0 for some i in [2,sqrt(n)] | y  |
-| n > 1 and no divisors found    | x        |
-
----
-
-Ready for implementation in any language of your choice! Let me know if you need the code in a specific language.
+**Summary**:  
+This algorithm checks if \( n \) is 1 or composite (returns \( y \)), or prime (returns \( x \)). Input required: \( n, x, y \). The main decision points are: is \( n = 1 \)? Does \( n \) have divisors between 2 and \(\sqrt{n}\)? The process ends early if a divisor is found, otherwise, it confirms \( n \) is prime.

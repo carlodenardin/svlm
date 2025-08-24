@@ -1,25 +1,7 @@
 ```python
-def process_product(product):
-    if product == 1:
-        return 0
-    elif product == 2:
-        return 0
-    elif product == 3:
-        return 0
-    elif product == 4:
-        return 0
-    elif product == 5:
-        return 0
-    elif product == 6:
-        return 0
-    elif product == 7:
-        return 0
-    elif product == 8:
-        return 0
-    elif product == 9:
-        return 0
-    elif product == 10:
+def process_integer(n):
+    if n == 0:
         return 0
     else:
-        return 0
+        return n // 10
 ```

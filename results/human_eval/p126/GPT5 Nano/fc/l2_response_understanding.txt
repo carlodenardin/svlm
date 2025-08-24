@@ -1,73 +1,70 @@
-**Algorithm Overview:**
-The algorithm checks if a given list of integers is strictly increasing (each element is less than the next) and ensures that no element appears more than twice in the list. It returns **True** if both conditions are satisfied; otherwise, it returns **False**.
+Certainly! Here’s a detailed breakdown of the algorithm depicted in the flowchart:
 
 ---
 
-**1. Purpose of the Algorithm:**
-To validate a list of integers by confirming:
-- The list is strictly increasing (`list[i] < list[i+1]`).
-- No integer appears more than twice.
+### **1. Overview of the Algorithm’s Purpose**
+
+This algorithm checks a list of integers to determine if:
+- The list is non-decreasing (each element is less than or equal to the next), **and**
+- No element appears more than twice.
+
+If both conditions are satisfied, the algorithm returns **True**; otherwise, it returns **False**.
 
 ---
 
-**2. Input Data Required:**
-- A list of integers `I: list[int]` (example: `[1, 2, 3, 4]`).
+### **2. Input Data Required**
+- A list of integers, e.g., `I: list[int]`.
 
 ---
 
-**3. Main Logical Flow:**
+### **3. Main Logical Flow**
 
-**Step 1:**
-- Iterate over the list and check if each element is smaller than the next.
-  - For `i` in `0` to `len(list)-2`, verify `list[i] < list[i+1]`.
-  - If any comparison fails, return **False**.
-
-**Step 2:**
-- Count the occurrence of each number in the list.
-  - For each unique number, check if its count exceeds 2.
-  - If any number appears more than twice, return **False**.
-
-**Step 3:**
-- If both checks pass, return **True**.
-
----
-
-**4. Expected Output:**
-- **True:** if the list is strictly increasing and no number appears more than twice.
-- **False:** if either condition fails.
+#### **Step-by-Step Process**
+1. **Start**
+2. **Input**: Receive the list of integers (`I`).
+3. **Check Non-Decreasing Order:**
+   - Loop through the list from the first to the penultimate element.
+   - For each index `i`, check if `I[i] <= I[i+1]`.
+      - If **any** comparison fails (`I[i] > I[i+1]`), **return False** and end.
+4. **Check No Number Appears More Than Twice:**
+   - Count the occurrences of each number in the list.
+   - For each unique number, check if its occurrence is **greater than 2**.
+      - If **any** number appears **more than twice**, **return False** and end.
+5. **If both checks passed**, **return True**.
 
 ---
 
-**Pseudocode Implementation:**
+### **4. Expected Output**
+- `True` if the list is non-decreasing and no number appears more than twice.
+- `False` otherwise.
+
+---
+
+### **Pseudo-code for Implementation:**
 
 ```python
-def validate_list(I: list[int]) -> bool:
-    # Step 1: Strictly increasing check
+def check_list(I):
+    # Check non-decreasing order
     for i in range(len(I) - 1):
-        if I[i] >= I[i + 1]:
+        if I[i] > I[i+1]:
             return False
-
-    # Step 2: Occurrence check
+    
+    # Check no element appears more than twice
     from collections import Counter
     counts = Counter(I)
     for value in counts.values():
         if value > 2:
             return False
-
-    # Both conditions are satisfied
+    
     return True
 ```
 
----
-
-**Summary Table:**
-
-| Step                        | Condition/Action               | Result  |
-|-----------------------------|-------------------------------|---------|
-| Strict Order Check          | I[i] < I[i+1] for all i       | Proceed/False |
-| Count Occurrence            | frequency(num) <= 2 for all   | Proceed/False |
-| Return Value                | Passed both                   | True    |
+#### **Example Usage:**
+- `check_list([1, 2, 2, 3])` → True
+- `check_list([1, 2, 3, 2])` → False (not non-decreasing)
+- `check_list([1, 2, 2, 2])` → False (2 appears more than twice)
 
 ---
 
-You can now implement this logic in your codebase as described!
+**Ready for Implementation!**  
+Let me know if you need this in another programming language.

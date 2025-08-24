@@ -3,11 +3,9 @@
 def convert_to_binary(n):
     if n == 0:
         return '0'
-    
     digits = []
     while n > 0:
-        digits.append(n % 2)
+        digits.append(str(n % 2))
         n //= 2
-    
-    return ''.join(map(str, digits[::-1]))
+    return ''.join(reversed(digits))
 ```

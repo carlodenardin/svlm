@@ -1,16 +1,20 @@
-The algorithm depicted in the flowchart appears to be designed for determining whether an integer \( n \) is prime and returning either \( x \) or \( y \) based on this determination. Here's a step-by-step description of the implementation:
+The flowchart outlines an algorithm designed to determine the value of \( y \) based on certain conditions involving integers \( n \), \( x \), and \( y \).
 
-1. **Input Reception**: The process begins by receiving input values for integers \( n \), \( x \), and \( y \).
+### Algorithm Overview:
+The purpose of this algorithm is to decide whether a given integer \( n \) is prime, and then return either \( x \) or \( y \) accordingly.
 
-2. **Prime Check**: 
-   - A decision point checks if the number \( n \) is prime.
-   - If \( n \) is prime, the value of \( x \) is returned.
-   - If \( n \) is not prime, the function proceeds to return \( y \).
+### Input Data Required:
+- An integer \( n \) 
+- Two other integers \( x \) and \( y \)
 
-3. **Output Determination**: Based on the result of the primality check:
-   - If \( n \) is prime, output \( x \).
-   - If \( n \) is not prime, output \( y \).
+### Main Logical Flow:
+1. **Start**: Begin the process by receiving input for the integers \( n \), \( x \), and \( y \).
+2. **Check Primality**: Determine if \( n \) is a prime number using a primality test function (not detailed in the chart but assumed available).
+   - If \( n \) is prime, proceed with returning \( x \).
+   - If \( n \) is not prime, continue processing.
+3. **Return \( y \)**: Regardless of the primality check result, directly output \( y \) as the final answer.
 
-4. **End of Process**: The algorithm concludes here with the appropriate output determined by the initial conditions provided.
+### Expected Output:
+- The algorithm will return one of two values: \( x \) if \( n \) is prime, otherwise it returns \( y \).
 
-This structured approach ensures that the correct value (\( x \) or \( y \)) is appropriately handled based on the prime status of \( n \).
+This step-by-step process ensures that the correct value is determined based on the specified conditions without additional loops or complex conditional structures beyond those depicted in the flowchart.

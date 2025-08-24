@@ -9,17 +9,16 @@ def solve(n, x, y):
         y: An integer.
 
     Returns:
-        The result of the algorithm, which is either x or y.
+        An integer.
     """
     if n == 1:
         return y
-    else:
-        i = 2
-        while i <= n:
-            if i < (n**0.5):
-                return x
-            if i % n == 0:
-                return y
-            i += 1
-        return y
+    
+    i = 2
+    while i <= int(n**0.5):
+        if n % i == 0:
+            return y
+        i += 1
+    
+    return x
 ```

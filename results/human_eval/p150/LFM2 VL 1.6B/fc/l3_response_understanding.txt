@@ -1,48 +1,54 @@
 ### Algorithm Overview
 
-The algorithm is designed to calculate the value of a mathematical expression involving a variable `x` and a constant `y`. The expression is `n * x + y`, where `n` is an integer and `x` and `y` are constants. The algorithm starts with an initial value of `n` set to 1 and iteratively calculates the value of `x` and `y` based on the given expression. The final output is the result of the expression evaluated with the initial values of `n`, `x`, and `y`.
+The algorithm is designed to calculate the value of a mathematical expression involving a variable `x` and a constant `y`. The expression is evaluated recursively, with the variable `x` being updated based on the result of the expression. The algorithm starts with an initial value of `x = 0` and `y = 0`, and it continues to update `x` and `y` until the expression is simplified to a constant value.
 
 ### Input Data
 
-- `n`: An integer representing the number of times the expression should be evaluated.
-- `x`: A constant value.
-- `y`: A constant value.
+The algorithm requires the following input data:
+
+*   `x`: The variable to be updated in the expression.
+*   `y`: The constant value in the expression.
 
 ### Main Logical Flow
 
-1. **Initialization**: Set `n` to 1.
-2. **Iteration**: For each iteration from 1 to `n`:
-   - Calculate `x` as `x * n`.
-   - Calculate `y` as `y * n`.
-3. **Termination**: After `n` iterations, the final value of `x` and `y` are returned as the result of the expression.
+1.  **Initialization**: The algorithm starts with `x = 0` and `y = 0`.
+2.  **Recursive Evaluation**: The algorithm evaluates the expression recursively, updating `x` and `y` based on the result of the expression.
+3.  **Termination**: The algorithm terminates when the expression is simplified to a constant value.
 
 ### Expected Output
 
-The output is the result of the expression `n * x + y`, evaluated with the initial values of `n`, `x`, and `y`.
+The expected output of the algorithm is a constant value `y`.
 
-### Implementation Steps
+### Step-by-Step Process
 
-1. **Start**: Begin the algorithm.
-2. **Initialize**: Set `n` to 1.
-3. **Loop**: Iterate from 1 to `n` (inclusive).
-   - **Calculate x**: `x = x * n`
-   - **Calculate y**: `y = y * n`
-4. **End**: After the loop, return the final values of `x` and `y`.
-5. **End**: End the algorithm.
+1.  **Initialization**: `x = 0`, `y = 0`.
+2.  **Recursive Evaluation**:
+    *   Evaluate the expression `x + y`.
+    *   If `x` is not equal to 1, recursively evaluate the expression `x + y` with the updated value of `x`.
+    *   If `x` is equal to 1, update `y` to the result of the recursive evaluation.
+3.  **Termination**: The algorithm terminates when the expression is simplified to a constant value.
 
 ### Pseudocode
 
 ```
-START
-  n = 1
-  FOR i = 1 TO n
-    x = x * n
-    y = y * n
-  END FOR
-  RETURN x + y
-END
+function evaluateExpression(x, y):
+    if x!= 1:
+        evaluateExpression(x + y)
+    else:
+        y = evaluateExpression(x, y)
+    return y
 ```
 
-### Conclusion
+### Implementation
 
-The algorithm efficiently calculates the value of the expression `n * x + y` by iterating `n` times and updating `x` and `y` in each iteration. The final result is the sum of `n` and
+The algorithm can be implemented using a recursive function in a programming language such as Python. Here's an example implementation in Python:
+
+```python
+def evaluateExpression(x, y):
+    if x!= 1:
+        return evaluateExpression(x + y)
+    else:
+        return y
+```
+
+This implementation follows the same logic as the pseudocode, with the recursive function `evaluateExpression` taking two inputs `x

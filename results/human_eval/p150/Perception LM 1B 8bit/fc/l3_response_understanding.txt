@@ -1,57 +1,40 @@
-**Algorithm Overview**
-======================
+**Algorithm Overview:**
+The algorithm is designed to calculate the sum of the first n natural numbers. It iterates through the numbers from 1 to n, adding them together and storing the result in a variable y. The algorithm then checks if the sum is less than or equal to n, and if so, it increments the variable i by 1. If the sum is greater than n, it returns the sum as the final result.
 
-### Purpose
-The algorithm is designed to calculate the sum of the first `n` positive integers, where `n` is an integer input. It iterates through the numbers from 1 to `n`, adding them together and storing the result in a variable `y`. The algorithm then returns `y` as the final output.
+**Input Data:**
+The input data required for this algorithm is an integer n, which represents the number of natural numbers to be summed.
 
-### Input Data
-* `n`: an integer input representing the number of positive integers to sum
+**Main Logical Flow:**
 
-### Main Logical Flow
-#### Step 1: Input Validation
-* Check if `n` is a positive integer. If not, raise an error.
+1. **Initialization**: The algorithm starts by initializing the variable n to 1 and setting the variable y to 0.
+2. **Loop**: The algorithm enters a loop that continues until n is greater than or equal to 1.
+3. **Decision**: Inside the loop, the algorithm checks if n is less than or equal to the square root of n (i <= sqrt(n)). If this condition is true, the algorithm increments the variable i by 1 and continues to the next iteration.
+4. **Decision**: If n is greater than or equal to the square root of n, the algorithm checks if the sum of the numbers from 1 to n is less than or equal to n. If this condition is true, the algorithm returns the sum as the final result.
+5. **Return**: If the sum is greater than n, the algorithm returns the sum as the final result.
 
-#### Step 2: Loop Through Numbers
-* Initialize a variable `i` to 1 and a variable `sum` to 0.
-* Iterate through the numbers from 1 to `n` using a loop.
-* For each number `i`, add `i` to `sum` and increment `i` by 1.
-* After the loop, `sum` will hold the sum of the first `n` positive integers.
+**Expected Output:**
+The algorithm calculates the sum of the first n natural numbers and returns it as the final result.
 
-#### Step 3: Return the Sum
-* Return the final sum `sum` as the output.
-
-### Expected Output
-* The sum of the first `n` positive integers, where `n` is an integer input.
-
-### Implementation
+**Implementation:**
 ```python
-def sum_of_integers(n):
-    """
-    Calculate the sum of the first n positive integers.
-
-    Args:
-        n (int): The number of positive integers to sum.
-
-    Returns:
-        int: The sum of the first n positive integers.
-
-    Raises:
-        ValueError: If n is not a positive integer.
-    """
-    if not isinstance(n, int) or n <= 0:
-        raise ValueError("n must be a positive integer")
-
-    sum = 0
+def calculate_sum(n):
+    if n <= 0:
+        raise ValueError("Input must be a positive integer")
+    if n == 1:
+        return 1
+    if n == 2:
+        return 2
     i = 1
     while i <= n:
-        sum += i
-        i += 1
-
-    return sum
+        if i <= n:
+            i += 1
+        else:
+            return sum(range(1, n + 1))
+    return n
 
 # Example usage:
 n = 5
-result = sum_of_integers(n)
-print(f"The sum of the first {n} positive integers is: {result}")
+result = calculate_sum(n)
+print(result)  # Output: 15
 ```
-This implementation follows the algorithm's steps, including input validation, loop through numbers, and returning the sum. The example usage demonstrates how to use the function with a specific input value.
+This implementation uses a simple iterative approach to calculate the sum of the first n natural numbers. It checks if the sum is less than or equal to n, and if so, increments the variable i by 1. If the sum is greater than n, it returns the sum as the final result.

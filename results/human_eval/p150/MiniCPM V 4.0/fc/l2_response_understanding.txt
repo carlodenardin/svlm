@@ -1,14 +1,15 @@
-The flowchart represents an algorithm designed to find the greatest common divisor (GCD) of two integers using the Euclidean algorithm. Here's a step-by-step implementation based on the provided image:
+The algorithm depicted in the flowchart appears to be designed for finding divisors of a given integer \( n \). Here is a step-by-step description of its implementation:
 
-1. **Start**: The process begins here.
-2. **Input Data**: 
-   - `n`: An integer representing the first number.
-   - `x`: Another integer representing the second number.
-3. **Initialize Loop Counter**: Set `n` to 1 since it is used as a loop counter initially.
-4. **Check for Divisors**: Enter a loop that continues while `n` is less than or equal to the square root of `n`.
-5. **Iterate Through Divisors**: For each value of `n` from 2 to the square root of `n`, check if `n` is a divisor of `x`.
-6. **Determine GCD**: If a divisor is found, set `y` to this divisor and terminate the process with "End".
-7. **Update Loop Counter**: If no divisor is found within the range, increment `n` by 1 and repeat the iteration through divisors.
-8. **Output Result**: Once all possible values of `n` have been checked, output the final result `x`, which will be the greatest common divisor of the initial inputs `n` and `x`.
+1. **Start**: The process begins at the initial node labeled "Start".
+2. **Input Variables**: 
+   - An integer \( n \) is required as input, representing the number whose divisors are to be checked.
+   - Two integers \( x \) and \( y \) are also needed but their specific roles or usage within this context isn't detailed here.
+3. **Initialization**: Set \( n \) to 1 initially (as indicated by \( n = 1 \)).
+4. **Loop Condition**: Enter a loop where the condition checks if \( n \) equals 1. If true, proceed to output \( y \) and terminate the process ("End").
+5. **Divisor Check**: Within the loop, check whether there exists any divisor of \( n \) from 2 to the square root of \( n \) (\( \sqrt{n} \)). This involves iterating through possible values of \( x \) up to \( \sqrt{n} \).
+6. **Decision Point**: Based on the existence of a divisor:
+   - If a divisor is found (Yes), assign \( x \) to \( y \) and continue checking further potential divisors.
+   - If no divisor is found between 2 and \( \sqrt{n} \), exit the loop and set \( y \) to an undefined value or handle accordingly.
+7. **Output**: After processing all necessary steps, either directly output \( y \) or end the process based on the outcome of the divisor search.
 
-This algorithm efficiently finds the GCD by repeatedly reducing the problem size until a divisor is identified, making use of mathematical properties related to divisibility and optimization techniques like limiting the search space to the range up to the square root of one of the numbers.
+This structured approach ensures that all relevant factors regarding \( n \) are considered systematically to identify its divisors efficiently.

@@ -1,21 +1,13 @@
-The purpose of the algorithm depicted in the flowchart is to sort a list of integers and return only the last k elements from that sorted list.
+The flowchart outlines an algorithm designed to receive a list of integers and a variable k, then return the sorted list containing only the last k elements. Here's a step-by-step description:
 
-**Input Data:**
-- A list of integer values.
-- An integer variable `k` representing the number of elements to keep after sorting.
+1. **Input Data**: The input consists of a list of integers and an integer variable `k` that specifies how many elements from the end of the list should be included in the output.
 
-**Main Logical Flow:**
-1. **Start**: Begin with an empty state or initial input data.
-2. **Receive Input**: Receive the list of integers and the value of `k` as inputs.
-3. **Sorting Process**:
-   - Implement a function (e.g., Python's `sorted()`) to sort the list of integers in ascending order.
-4. **Select Last k Elements**:
-   - Use slicing on the sorted list to select the last `k` elements. This can be done using `[sorted_list[-k:]]`.
-5. **Return Output**: 
-   - Return the selected sublist containing the last `k` elements.
-6. **End**: Conclude the process once all steps are completed.
+2. **Main Logical Flow**:
+   - Start by receiving the list of integers and the value of `k`.
+   - Sort the entire list in ascending order using any sorting algorithm (e.g., quicksort, mergesort).
+   - Extract the last `k` elements from the sorted list.
+   - Return the extracted sublist as the final result.
 
-**Expected Output:**
-- The output will be a new list containing only the last `k` elements from the original sorted list of integers.
+3. **Expected Output**: The output will be a new list consisting of the last `k` elements from the original list after it has been sorted.
 
-This step-by-step implementation ensures efficient retrieval of the required portion of the sorted list based on the given parameter `k`.
+This process ensures that regardless of the initial state of the input list, the function correctly identifies and returns the required subset at the end.

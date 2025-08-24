@@ -1,0 +1,16 @@
+def is_sorted_with_max_one_duplicate(nums):
+    if not nums:
+        return True
+    prev = nums[0]
+    count = 1
+    for i in range(1, len(nums)):
+        if nums[i] < prev:
+            return False
+        if nums[i] == prev:
+            count += 1
+            if count > 2:
+                return False
+        else:
+            prev = nums[i]
+            count = 1
+    return True

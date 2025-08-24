@@ -1,9 +1,16 @@
-The flowchart outlines an algorithm designed to compute the sum of digits of an integer and convert that sum into binary format. Here's a step-by-step description:
+The flowchart outlines an algorithm designed to compute the sum of digits of a given integer and then convert that sum into binary format. Here is a step-by-step implementation description:
 
-1. **Receive an integer number**: The process begins by receiving an integer input from the user or system.
-2. **Initialize two variables**: Set up two initial variables, `sum` with a value of 0, and `res` as an empty string.
-3. **Compute and allocate in the sum variable the sum of the digits of the number**: Iterate through each digit of the received integer. For each iteration, extract the last digit using modulo operation (`number % 10`), add it to `sum`, and then remove the last digit from the number using integer division (`number // 10`).
-4. **Convert the sum to binary and save it in the res variable**: Once the loop completes, convert the accumulated `sum` into its binary representation and store this result in the `res` variable.
-5. **Return the res variable**: Finally, return the binary string stored in the `res` variable as the output of the algorithm.
+1. **Receive an Integer Number**: The process begins by accepting an integer input from the user or system.
 
-This straightforward approach ensures that the sum of the digits is correctly computed and subsequently converted into binary form for further use or display.
+2. **Initialize Two Variables**: Set up two variables, `sum` initialized to 0 and `res` initially set to an empty string (""). These will be used for accumulating the digit sum and storing the resulting binary representation respectively.
+
+3. **Compute and Allocate in the Sum Variable**: Iterate through each digit of the received integer number. For each iteration:
+   - Extract the last digit using modulo operation (`number % 10`).
+   - Add this digit to the `sum` variable.
+   - Remove the last digit from the original number by performing integer division (`number // 10`).
+
+4. **Convert the Sum to Binary**: Once all digits have been processed and their sums recorded, convert the accumulated value of `sum` into its binary form. This can typically be done using built-in functions like `bin()` in many programming languages which converts an integer to a binary string prefixed with '0b'. Store this binary result in the `res` variable.
+
+5. **Return the Res Variable**: Finally, return the `res` variable containing the binary representation of the sum of the input integer’s digits.
+
+This straightforward approach ensures accurate computation and conversion as required by the task specified in the flowchart.

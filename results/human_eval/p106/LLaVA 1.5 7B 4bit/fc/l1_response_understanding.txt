@@ -4,7 +4,7 @@ You are a software engineer. Given an image of a flowchart, describe the algorit
 - The input data required.
 - The main logical flow, detailing decisions, loops, and function calls.
 - The expected output.
-Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts an algorithm for calculating the result of a product, given two numbers. The purpose of the algorithm is to perform a multiplication operation and display the result.
+Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts an algorithm for calculating the result of a product, given two numbers. The purpose of the algorithm is to perform the multiplication and provide the result.
 
 Input data required:
 
@@ -19,4 +19,4 @@ Main logical flow:
 
 Expected output:
 
-The expected output is the result of the multiplication operation, which will be displayed on the screen.</s>
+The expected output is the result of the product of the two input numbers.</s>

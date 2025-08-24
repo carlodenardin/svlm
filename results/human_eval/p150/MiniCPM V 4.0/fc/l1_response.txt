@@ -1,6 +1,7 @@
 ```python
-```python
-def check_prime_number(n, x, y):
+def check_prime(n, x, y):
+    if n == 2:
+        return True
     if n % 2 == 0:
         return False
     for i in range(3, int(n**0.5) + 1, 2):
@@ -8,17 +9,15 @@ def check_prime_number(n, x, y):
             return False
     return True
 
-start = input("Enter the value of n: ")
-x = int(start)
-y = input("Enter the values of x and y: ")
-x = int(x)
-y = int(y)
+def main():
+    n = int(input("Enter a number: "))
+    x = None
+    y = None
 
-if check_prime_number(x, y):
-    print(x)
-else:
-    print(y)
+    if check_prime(n, x, y):
+        print("Yes")
+    else:
+        print("No")
 
-print("End")
-```
+main()
 ```

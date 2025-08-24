@@ -2,28 +2,28 @@ Okay, let's break down this flowchart and describe the algorithm it represents.
 
 **1. Overview**
 
-The algorithm's purpose is to determine if a list of integers contains any duplicate numbers. It checks if any number in the list appears more than once.  It's essentially a duplicate detection algorithm.
+The algorithm's purpose is to determine if a list of integers contains any number that appears more than once. It essentially checks for duplicate values within the list.
 
 **2. Input Data**
 
-*   **Input:** A list (or array) of integers, represented as `list[int]`.  This list can contain any number of integers, potentially with duplicates.
+*   **Input:** A list (or array) of integers, represented as `list[int]`.  This list can contain any integer values.
 
-**3. Main Logical Flow (Step-by-Step)**
+**3. Logical Flow (Step-by-Step)**
 
 1.  **Start:** The algorithm begins at the "Start" node.
-2.  **Initialization:**  The algorithm receives the input list `list[int]`.
-3.  **Outer Loop:** The algorithm iterates through each number in the list using a "For each number in the list" loop.
-4.  **First Comparison:** Inside the loop, it compares the current number with the *next* number in the list.  This is done with a "Check if they are smaller than the next one" decision.
-    *   **If True:** This means the current number is smaller than the next number.  The algorithm proceeds to the next iteration of the loop.
-    *   **If False:** This means the current number is *not* smaller than the next number.  The loop terminates, and the algorithm exits with a "False" result (indicating the presence of duplicates).
-5.  **Second Comparison (Inner Loop):** If the first comparison is true, the algorithm checks if there are any numbers that appear more than twice. This is done with a "Check if there are numbers that appear more than twice" decision.
-    *   **If True:** This means there are duplicates. The algorithm exits with a "False" result.
-    *   **If False:** This means there are no duplicates. The algorithm proceeds to the next iteration of the loop.
-6.  **Confirmation:** If the first comparison is false, the algorithm proceeds to the next iteration of the loop.
-7.  **Final Check:** After the outer loop completes, the algorithm proceeds to a "True" node.
-8.  **End:** The algorithm ends with a "True" result, indicating that no duplicates were found.
+2.  **Initialization:**  The algorithm initializes a variable (often implicitly, or explicitly declared) to store the count of each number encountered.  This could be a dictionary or hash map.
+3.  **Iteration:** The algorithm iterates through each element `list[int]` in the input list.
+4.  **Comparison:** For each number `list[int]` in the list, it checks if the number is smaller or equal to the next number in the list.
+    *   **If** the current number is *greater* than the next number, the loop continues to the next number in the list.
+    *   **If** the current number is *less than or equal* to the next number, the algorithm proceeds to the next step.
+5.  **Duplicate Check:**  For each number encountered, the algorithm checks if the number has already been seen before. This is done by looking up the number in the count dictionary/hash map.
+    *   **If** the number is already present in the dictionary (meaning it has appeared before), the algorithm immediately returns `False` (indicating a duplicate exists).
+    *   **If** the number is not present in the dictionary (meaning it's the first time seeing this number), the algorithm increments the count of that number in the dictionary.
+6.  **Loop Completion:** After iterating through the entire list, the algorithm checks if the count of any number is greater than 1.
+    *   **If** any number's count is greater than 1, the algorithm returns `False` (indicating a duplicate exists).
+    *   **If** all numbers have a count of 1 (meaning no number appears more than once), the algorithm returns `True`.
+7.  **End:** The algorithm terminates.
 
 **4. Expected Output**
 
-*   **Output:** A Boolean value (True or False).
-    *   **
+*   **Output

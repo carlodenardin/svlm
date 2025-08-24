@@ -1,8 +1,9 @@
-The flowchart outlines an algorithm designed to sort a list of integers in ascending order and return the last k elements. Here's a step-by-step implementation:
+The flowchart outlines an algorithm designed to process a list of integers and return the last k elements. Here's a step-by-step description:
 
-1. **Start**: Begin with receiving a list of integers and a variable \( k \). This input data is essential for determining which portion of the sorted list will be returned.
-2. **Sort the List**: Utilize a sorting algorithm such as quicksort, mergesort, or heapsort to arrange the list of integers in ascending order. Ensure efficient sorting by choosing the appropriate method based on performance requirements.
-3. **Return Last k Elements**: Once the list is sorted, extract the last k elements from the sorted array. This can be achieved using slicing notation in many programming languages like Python or JavaScript.
-4. **End**: The process concludes here, providing the required output of the last k elements in ascending order.
+1. **Start**: The process begins at the start node.
+2. **Receive Input**: The first step involves receiving a list of integers and a variable \( k \). This input data is essential for determining which elements will be returned in the final output.
+3. **Sorting**: Next, sort the provided list of integers in ascending order. Sorting ensures that the elements are arranged from smallest to largest.
+4. **Extract Last k Elements**: After sorting, extract the last \( k \) elements from the sorted list. These elements represent the desired subset based on the value of \( k \).
+5. **End**: Finally, conclude the process by returning the extracted last \( k \) elements as the output.
 
-This structured approach ensures clarity and efficiency in implementing the specified functionality.
+This algorithm efficiently processes integer lists and filters out specific portions based on user-defined criteria (the number \( k \)).

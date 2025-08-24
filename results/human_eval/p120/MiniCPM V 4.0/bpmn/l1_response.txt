@@ -1,6 +1,6 @@
 ```python
 ```python
-def sort_last_k_elements(lst, k):
-    return sorted(lst[-k:])
+def sort_and_return_last_k(lst, k):
+    return sorted(lst)[-k:]
 ```python
 ```

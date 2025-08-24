@@ -1,57 +1,57 @@
 **Algorithm Overview**
-======================
+=======================
 
 ### Purpose
 The algorithm is designed to check if a list of integers contains any numbers that appear more than twice. It iterates through the list, checking each number to see if it appears more than twice, and returns "True" if it does, "False" otherwise.
 
 ### Input Data
-The algorithm requires a list of integers as input.
+*   The algorithm requires a list of integers as input.
 
 ### Main Logical Flow
-#### Step 1: Initialize the list and check if it's empty
-```python
-list = []
-if not list:
-    return False  # List is empty, return False
-```
+#### Step 1: Initialize the List
+*   The algorithm starts by initializing an empty list `l` to store the numbers to check.
 
-#### Step 2: Iterate through the list
-```python
-for num in list:
-    # Check if the number appears more than twice
-    if num appears more than twice:
-        return True
-```
+#### Step 2: Iterate Through the List
+*   The algorithm then iterates through the `l` list using a `for` loop.
+*   For each number in the list, the algorithm checks if it appears more than twice by comparing it to the next number in the list.
 
-#### Step 3: Return True or False
-```python
-return True if num appears more than twice, False otherwise
-```
+#### Step 3: Decision Point
+*   If the number appears more than twice, the algorithm returns "True".
+*   If the number does not appear more than twice, the algorithm returns "False".
+
+#### Step 4: End
+*   After iterating through the entire list, the algorithm checks if the final result is "True" or "False".
 
 ### Expected Output
-The algorithm returns "True" if the list contains any numbers that appear more than twice, and "False" otherwise.
+*   The algorithm returns "True" if the list contains any numbers that appear more than twice, and "False" otherwise.
 
 ### Implementation
 ```python
-def check_numbers_with_two appearances(list):
+def check_numbers_with_two appearances(l):
     """
     Checks if a list of integers contains any numbers that appear more than twice.
 
     Args:
-        list (list): A list of integers.
+        l (list): A list of integers.
 
     Returns:
         bool: True if the list contains any numbers that appear more than twice, False otherwise.
     """
-    if not list:
-        return False  # List is empty, return False
+    # Initialize an empty list to store the numbers to check
+    numbers_to_check = []
 
-    for num in list:
-        if num appears more than twice:
-            return True  # Number appears more than twice, return True
-        else:
-            continue  # Number does not appear more than twice, continue to the next iteration
+    # Iterate through the list
+    for i in range(len(l)):
+        # Check if the current number appears more than twice
+        if l[i] appears more than twice:
+            # If it does, add it to the list
+            numbers_to_check.append(l[i])
 
-    return False  # List does not contain any numbers that appear more than twice
+    # Check if the list contains any numbers that appear more than twice
+    return l.count(numbers_to_check) > 1
+
+# Example usage
+numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6]
+print(check_numbers_with_two appearances(numbers))  # Output: True
 ```
-This implementation uses a simple iterative approach to check each number in the list, and returns "True" if any number appears more than twice, and "False" otherwise.
+This implementation uses a simple iterative approach to check if the list contains any numbers that

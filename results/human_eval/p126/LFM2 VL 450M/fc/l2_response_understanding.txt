@@ -1,28 +1,25 @@
-The algorithm's purpose is to determine whether a given list of numbers is smaller than the next one. The input data required is a list of numbers. The main logical flow is as follows:
+The algorithm's purpose is to determine whether a given list of numbers is smaller or equal to the next one. The input data required is a list of numbers. The main logical flow is as follows:
 
 1. Start
-2. For each number in the list (list[int]):
-   a. Check if the number is smaller than the next one (list[1]).
-   b. If the number is smaller than the next one, end the loop.
-   c. If the number is not smaller than the next one, end the loop.
-   d. If the number is not smaller than the next one, check if there are any numbers that appear more than twice in the list.
-   e. If there are any numbers that appear more than twice, end the loop.
-   f. If there are no numbers that appear more than twice, end the loop.
-   g. If there are no numbers that appear more than twice, end the loop.
-   h. If the loop completes without any numbers appearing more than twice, end the loop.
-   i. If the loop completes without any numbers appearing more than twice, end the loop.
-   j. If the loop completes without any numbers appearing more than twice, end the loop.
-   k. If the loop completes without any numbers appearing more than twice, end the loop.
-   l. If the loop completes without any numbers appearing more than twice, end the loop.
-   m. If the loop completes without any numbers appearing more than twice, end the loop.
-   n. If the loop completes without any numbers appearing more than twice, end the loop.
-   o. If the loop completes without any numbers appearing more than twice, end the loop.
-   p. If the loop completes without any numbers appearing more than twice, end the loop.
-   q. If the loop completes without any numbers appearing more than twice, end the loop.
-   r. If the loop completes without any numbers appearing more than twice, end the loop.
-   s. If the loop completes without any numbers appearing more than twice, end the loop.
-   t. If the loop completes without any numbers appearing more than twice, end the loop.
-   u. If the loop completes without any numbers appearing more than twice, end the loop.
-   v. If the loop completes without any numbers appearing more than twice, end the loop.
-   w. If the loop completes without any numbers appearing more than twice, end the loop.
-   x. If the loop completes without any numbers appearing more than twice
+2. Check if the list is empty (No)
+3. If the list is empty, end
+4. If the list is not empty, check if the next number is smaller or equal to the current one (Yes)
+5. If the next number is smaller or equal to the current one, end
+6. If the next number is not smaller or equal to the current one, end
+7. If the list is not empty and the next number is not smaller or equal to the current one, end
+8. If the list is not empty and the next number is smaller or equal to the current one, end
+9. If the list is not empty and the next number is not smaller or equal to the current one, end
+10. If the list is not empty and the next number is not smaller or equal to the current one, end
+11. If the list is not empty and the next number is smaller or equal to the current one, end
+12. If the list is not empty and the next number is not smaller or equal to the current one, end
+13. If the list is not empty and the next number is smaller or equal to the current one, end
+14. If the list is not empty and the next number is not smaller or equal to the current one, end
+15. If the list is not empty and the next number is smaller or equal to the current one, end
+16. If the list is not empty and the next number is not smaller or equal to the current one, end
+17. If the list is not empty and the next number is smaller or equal to the current one, end
+18. If the list is not empty and the next number is not smaller or equal to the current one, end
+19. If the list is not empty and the next number is smaller or equal to the current one, end
+20. If the list is not empty and the next number is not smaller or equal to the current one, end
+21. If the list is not empty and the next number is smaller or equal to the current one, end
+22. If the list is not empty and the next number is not smaller or equal to the current one, end
+23. If the list is not empty and

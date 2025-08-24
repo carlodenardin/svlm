@@ -1,11 +1,11 @@
 ```python
-def count_triggers(n):
+def count_multiples_of_three(n):
     A = [0] * n
-    count = 0
     for i in range(n):
-        for j in range(i + 1, n):
-            for k in range(j + 1, n):
-                if (i * i + i + j) % 3 == 0:
-                    count += 1
+        A[i] = i * (i - 1) // 2 + 1
+    count = 0
+    for triple in A:
+        if triple % 3 == 0:
+            count += 1
     return count
 ```

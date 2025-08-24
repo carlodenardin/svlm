@@ -1,9 +1,10 @@
-The flowchart outlines an algorithm designed to count the number of distinct triples in a vector whose sum is a multiple of 3. Here’s a step-by-step description of the implementation:
+The flowchart outlines an algorithm designed to count the number of distinct triples in a sequence that are multiples of 3. Here’s a detailed step-by-step description:
 
 1. **Start**: The process begins at the start node.
-2. **Input**: An integer `n` is required as input, which defines the dimension and size of the vector to be created.
-3. **Vector Initialization**: A vector `A` of dimensions `[1 x n]` is initialized with values according to the rule `A[i-1] = i * i + i + 1` where `1 <= i <= n`. This involves iterating through each index from 1 to `n` and calculating the corresponding value for the vector elements.
-4. **Triple Sum Calculation**: The next step involves counting how many sums of distinct triples are multiples of 3 within the vector `A`. This requires checking every possible combination of three elements to see if their sum is divisible by 3.
-5. **Output**: Finally, the result (the count of such triples) is outputted at the end node.
+2. **Input**: An integer `n` is required as input, representing the dimension or length of the vector.
+3. **Initialize Vector**: Create a vector of size `n` and initialize its elements with values according to the rule \( A[i-1] = i * i + i + 1 \) where \( 1 \leq i \leq n \). This means each element in the vector is calculated based on its index using this specific formula.
+4. **Count Triples**: Iterate through all possible combinations of three indices (i, j, k) from 1 to n. For each combination, check if the sum \( A[i-1] + A[j-1] + A[k-1] \) is divisible by 3. If it is, increment a counter variable `count`.
+5. **Output**: After evaluating all combinations, output the value of `count`, which represents the number of distinct sums of triples that are multiples of 3.
+6. **End**: The process concludes at the end node.
 
-This algorithm effectively utilizes loops and conditional checks to iterate over the vector and compute the desired properties efficiently.
+This algorithm efficiently calculates the desired count by leveraging loops for iteration and conditional checks to filter valid triple sums.

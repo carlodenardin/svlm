@@ -1,1 +1,1 @@
-i will generate a code that does the following function : ``return y ''
+i will generate a code that does the logic shown in the diagram .

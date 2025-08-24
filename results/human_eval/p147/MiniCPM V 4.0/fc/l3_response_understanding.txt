@@ -1,28 +1,32 @@
-The flowchart describes an algorithm that appears to be generating a specific pattern or matrix based on given parameters. Here is the step-by-step process of its implementation:
+The flowchart represents an algorithm for calculating the factorial of a given number \( n \).
 
-1. **Start**: The algorithm begins at the start point.
-2. **Input Parameters**: 
-   - `n`: An integer representing the size of the array or matrix.
-   - `a`: An array initialized with zeros, having dimensions `n x n`.
-3. **Initialize Variables**:
-   - Set `i` to 1.
-   - Initialize count and `l` (length of array) to 0.
-4. **Outer Loop (`i <= n`)**:
-   - Check if `i` is less than or equal to `n`.
-     - If yes, compute `a[i-1]` as `i * i - i + 1`.
-     - Increment `i` by 1.
-   - If no, increment `i` by 1 without modifying it.
-5. **Inner Loop (`j < len(a)`)**:
-   - Check if `j` is less than the length of array `a`.
-     - If yes, set `k` to `j + 1`.
-     - If no, increment `j` by 1.
-6. **Check Condition for `k < len(a)`**:
-   - Check if `k` is less than the length of array `a`.
-     - If yes, check if `a[j] + a[i] + a[k] % 3 == 0`.
-       - If true, increment `count` by 1.
-       - If false, increment `k` by 1.
-7. **End**: Once all iterations are completed, the algorithm ends.
+### Purpose:
+The purpose of this algorithm is to compute and return the factorial of a positive integer \( n \). The factorial of \( n \), denoted as \( n! \), is the product of all positive integers from 1 to \( n \).
 
-**Expected Output**: The output will be the value of `count`, which represents how many times the condition `a[j] + a[i] + a[k] % 3 == 0` was satisfied during the execution of the loops.
+### Input Data:
+- An integer \( n \) representing the input number whose factorial needs to be calculated.
 
-This algorithm seems to focus on finding elements in a matrix that satisfy a particular arithmetic condition involving modulo three operations.
+### Main Logical Flow:
+1. **Start**: Begin the process.
+2. **Initialize Variables**:
+   - Set \( i \) to 1.
+   - Create an array `a` with length equal to \( n \) filled with zeros.
+3. **Check Condition**:
+   - While \( i \leq n \):
+     - Calculate \( a[i-1] = i \times (i-1) \times i \).
+     - Increment \( i \) by 1.
+4. **Iterate Through Array**:
+   - Initialize \( j \) to \( i \).
+   - Loop through each element in the array until reaching the end (\( j < len(a) \)):
+     - If \( k < len(a) \):
+       - Check if \( a[j] + a[j+1] + a[j+2] \% 3 == 0 \):
+         - If true, increment count by 1.
+       - Otherwise, continue looping without changing \( k \) or updating \( j \).
+5. **Final Count**:
+   - Output the final value of count which holds the number of elements that satisfy the condition.
+6. **End**: Conclude the process.
+
+### Expected Output:
+The output will be the count of numbers within the array `a` such that their sum of three consecutive elements modulo 3 equals zero. Additionally, it returns the computed factorial of the input number \( n \).
+
+This step-by-step description outlines how the algorithm processes the input data and arrives at its expected result.

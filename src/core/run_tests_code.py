@@ -13,28 +13,41 @@ from tqdm import tqdm
 from src.utils.const import DIAGRAM_MAP, PATTERN
 
 def _extract_python_function(response):
-    """
-    Extracts the Python function code and name from a model's response
-    """
+
     try:
         match = re.search(PATTERN, response, re.DOTALL)
         if match:
             full_code = match.group(1).strip()
         else:
-            print("Warning: No python code block found.")
+            print("No python code found")
             return response.strip(), False, ""
 
         tree = ast.parse(full_code)
-        for node in ast.walk(tree):
-            if isinstance(node, ast.FunctionDef):
-                function_name = node.name
-                function_code = ast.unparse(node)
-                return function_code, True, function_name
+
+        function_nodes = [node for node in tree.body if isinstance(node, ast.FunctionDef)]
         
-        print("Warning: No function definition found in code block.")
-        return None, False, ""
+        if len(function_nodes) >= 2:
+            second_function_name = function_nodes[1].name
+            return full_code, True, second_function_name
+        
+        else:
+            import_nodes = [node for node in tree.body if isinstance(node, (ast.Import, ast.ImportFrom))]
+            
+            if not function_nodes:
+                print("No python function found")
+                return full_code, False, ""
+            
+            function_node = function_nodes[0]
+            function_name = function_node.name
+            
+            import_code = "\n".join([ast.unparse(imp) for imp in import_nodes])
+            function_code = ast.unparse(function_node)
+            final_code = f"{import_code}\n\n{function_code}" if import_code else function_code
+            
+            return final_code.strip(), True, function_name
+
     except (SyntaxError, AttributeError) as e:
-        print(f"Error parsing generated code: {e}")
+        print(f"Errore durante il parsing del codice generato: {e}")
         return None, False, ""
 
 def _load_test(problem, test):
@@ -52,9 +65,14 @@ def _load_test(problem, test):
                 inputs = eval(data[0]['input'])
             else:
                 inputs = data[0]['input']
-            
-            outputs = data[0]['output']
 
+            if isinstance(data[0]['output'], str):
+                outputs = eval(data[0]['output'])
+                if problem == "p126":
+                    outputs = ["Yes" if output else "No" for output in outputs]
+            else:
+                outputs = data[0]['output']
+            
             for i in range(len(inputs)):
                 tests.append((inputs[i], outputs[i]))
         return tests
@@ -71,11 +89,8 @@ def _run_code(code, tests, function_name, timeout = 5):
     """
     results = []
 
-    @timeout_decorator.timeout(timeout, timeout_exception=TimeoutError)
-    def execute_test(exec_code, local_vars):
-        exec(exec_code, {}, local_vars)
 
-    for case in tqdm(tests, desc="Running tests"):
+    for case in tqdm(tests, desc = "Running tests"):
         input_data = case[0]
         correct_output = case[1]
 
@@ -84,12 +99,12 @@ def _run_code(code, tests, function_name, timeout = 5):
         else:
             exec_args = (input_data,)
 
+        namespace = {}
+
         try:
             exec_code = f"{code}\nresult = {function_name}{repr(exec_args)}"
-            local_vars = {}
-            exec(exec_code, {}, local_vars)
-
-            output = local_vars.get("result")
+            exec(exec_code, namespace)
+            output = namespace.get("result")
 
             if isinstance(output, bool):
                 output = "Yes" if output else "No"
@@ -113,7 +128,7 @@ def _run_code(code, tests, function_name, timeout = 5):
             "correct_output": correct_output
         })
 
-        del local_vars
+        del namespace
         gc.collect()
 
     return results
@@ -142,6 +157,9 @@ def _process_task(args):
         official_tests = _load_test(problem, "official")
         generated_tests = _load_test(problem, "generated")
         
+        print(official_tests)
+        print(generated_tests)
+
         official_results = _run_code(code, official_tests, function_name)
         generated_results = _run_code(code, generated_tests, function_name)
         
@@ -154,7 +172,7 @@ def _process_task(args):
         with open(generated_path, 'w', encoding="utf-8") as f:
             for result in generated_results:
                 f.write(json.dumps(result) + '\n')
-        
+
         return f"Success: Completed {problem}/{diagram}/L{level}"
     else:
         return f"Warning: No valid function found in {problem}/{diagram}/L{level}"
@@ -183,10 +201,7 @@ def run_bulk_code_test(model_name, problems, diagrams, levels):
     print(f"Starting parallel execution with {num_workers} workers for {len(tasks)} tasks.")
 
     with concurrent.futures.ProcessPoolExecutor(max_workers=num_workers) as executor:
-        results = list(tqdm(executor.map(_process_task, tasks), total = len(tasks), desc = "Running Bulk Test"))
+       tqdm(executor.map(_process_task, tasks), total = len(tasks), desc = "Running Bulk Test")
     
-    for result in results:
-        if result.startswith("Warning"):
-            yield result
-            
+    print("Bulk test code completed.")
     yield "Bulk test code completed."

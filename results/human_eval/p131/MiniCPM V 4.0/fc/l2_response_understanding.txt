@@ -1,42 +1,14 @@
-The algorithm depicted in the flowchart aims to compute the multiplication of odd digits present in a given integer \( n \). Here is a step-by-step description and implementation:
+The flowchart outlines an algorithm designed to compute the product of all odd digits in a given integer. Here's a step-by-step description of the implementation:
 
-1. **Start**: Begin the process.
-2. **Input**: Accept an integer \( n \) as input.
-3. **Check for Odd Digits**: 
-   - Determine if there is at least one odd digit within \( n \).
-   - If no odd digits are found, proceed directly to the end.
-4. **Extract Odd Digits**:
-   - Convert the integer \( n \) into a string or use modulo operations to extract each digit individually.
-   - Identify and store all odd digits encountered during this extraction.
-5. **Compute Multiplication**:
-   - Multiply the identified odd digits together to get the product.
-6. **Output Result**: 
-   - The computed product represents the result of multiplying all the odd digits from the original number \( n \).
-7. **End**: Terminate the process.
+1. **Start**: The process begins at the initial point labeled "Start".
+2. **Input Data**: An integer `n` is required as input for this computation.
+3. **Check Odd Digit Presence**: 
+   - Use a decision diamond to determine if there is at least one odd digit present in `n`. This involves converting the number to a string and iterating through each character (digit) to check its parity.
+4. **Multiplication Operation**: 
+   - If it is determined that there is at least one odd digit, proceed to calculate the multiplication between these odd digits. Store the result under a variable named `product`.
+5. **Output Result**: 
+   - Once the multiplication operation is completed, output the calculated product value.
+6. **End**: 
+   - The process concludes with reaching the "End" node, signifying the completion of the algorithm execution.
 
-### Pseudocode Implementation:
-```plaintext
-function multiplyOddDigits(n):
-    product = 1
-    foundOddDigits = false
-    
-    while n > 0:
-        digit = n % 10
-        if digit % 2 != 0:
-            product *= digit
-            foundOddDigits = true
-        n //= 10
-    
-    if not foundOddDigits:
-        return 0
-    else:
-        return product
-```
-
-### Explanation:
-- **Input Handling**: Start by taking an integer \( n \) as input.
-- **Checking for Odd Digits**: Iterate through each digit of \( n \) using division by 10. Check if the digit is odd (i.e., remainder when divided by 2 is non-zero).
-- **Multiplication Process**: If an odd digit is found, multiply it with the current value of `product`. Mark that an odd digit has been found (`foundOddDigits`).
-- **Output**: If no odd digits were detected after checking all digits, return 0. Otherwise, return the final product obtained from the multiplication of odd digits.
-
-This structured approach ensures that the algorithm accurately identifies and multiplies only the odd digits from the provided integer, producing the expected output.
+This structured approach ensures that only relevant computations are performed based on the presence of odd digits within the input integer.

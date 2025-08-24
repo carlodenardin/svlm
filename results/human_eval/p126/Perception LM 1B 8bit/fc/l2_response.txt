@@ -1,18 +1,14 @@
 def check_list():
     start = True
     while start:
-        i = 0
-        while i < len(list(int)):
-            if i == len(list(int) - 1):
-                break
-            if list(int)[i] < list(int)[i + 1]:
+        l = list(int)
+        for i in l:
+            if i < l[i] or i == l[i]:
                 start = False
-            i += 1
         if start:
-            print("False")
+            print("Check if there are numbers that appear more than twice.")
         else:
-            print("True")
-        start = False
-    return True
+            print("End")
+        start = True
 
-print(check_list())
+check_list()

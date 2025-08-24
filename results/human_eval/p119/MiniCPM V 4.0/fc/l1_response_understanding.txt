@@ -1,17 +1,23 @@
-The flowchart outlines an algorithm designed to check if a concatenated string of two given strings is balanced. Here's a detailed step-by-step description:
+The flowchart describes an algorithm aimed at determining if a concatenated string formed from two input strings is balanced. Here's the step-by-step implementation:
 
-1. **Input Data**: The algorithm requires a list containing two strings as input. These are the strings that need to be checked for balance.
+1. **Input Data**: The algorithm requires a list containing two strings as its primary input data. These strings will be used to form new combinations and check for balance.
 
-2. **Concatenation**: Concatenate the two provided strings into a single combined string. This new string will serve as the basis for checking its balance.
+2. **Concatenation Step**: 
+   - Concatenate the two given strings together, forming a single longer string that includes all characters from both original strings in any order.
 
-3. **Balance Check**: Evaluate whether at least one of the resulting concatenated strings meets the criteria for being balanced. A balanced string satisfies these conditions:
-   - Every '(' has a matching ')'.
-   - Closures (pairs of matching brackets) never exceed their order, meaning every opening bracket must have a corresponding closing bracket in the correct sequence.
+3. **Balance Check**:
+   - Implement a function or method named `check_balance` which takes the concatenated string as input.
+   - Within this function, iterate through the string while maintaining track of open and close parentheses ('(' and ')').
+   - Ensure every opening parenthesis has a matching closing parenthesis and ensure that closures never exceed openings in sequence.
+   - Return a boolean value indicating whether the string is balanced.
 
-4. **Decision Point**: If any part of the concatenated string fails the balance check, proceed with "No" and end the process. Otherwise, move forward.
+4. **Decision Making**:
+   - After performing the balance check, use a decision node to evaluate the result.
+   - If the condition "at least one string is balanced" holds true (i.e., the concatenated string is balanced), proceed with outputting "Yes".
+   - If not, conclude with "No".
 
-5. **Output**: 
-   - If the concatenated string is found to be balanced ("Yes"), output the result indicating success.
-   - If not balanced ("No"), also provide this outcome but indicate failure.
+5. **Output**:
+   - Depending on the outcome of the balance check, either print "Yes" if the resulting string is balanced or print "No" otherwise.
+   - Both outcomes lead to ending the process by reaching the end node.
 
-This structured approach ensures clarity in implementing the logic required to determine the balance of the concatenated strings efficiently.
+This structured approach ensures clarity and efficiency in implementing the logic required to determine the balance of the concatenated string.

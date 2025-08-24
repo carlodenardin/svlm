@@ -1,3 +1,1 @@
-- Include a flowchart for the main body of the algorithm, and a separate flowchart for each function.
-- Include a flowchart for the data and results of each function.
-- Include a flowchart for the algorithm's header and footer.
+- Include all relevant data from the image in the caption.

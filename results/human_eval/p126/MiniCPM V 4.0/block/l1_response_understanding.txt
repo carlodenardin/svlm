@@ -1,11 +1,24 @@
-The flowchart outlines an algorithm designed to check if a list of integers is sorted in ascending order and does not contain more than one duplicate. Here's the step-by-step implementation:
+The flowchart outlines an algorithm designed to verify if a list of integers is sorted in ascending order and contains no duplicate numbers. Here’s the step-by-step implementation:
 
-1. **Input**: Receive a list of integers as input. This will be stored in a variable, say `input_list`.
+1. **Input**: Receive a list of integers as input. This data will be used for further processing to determine its properties.
+2. **Sorting Check**: Verify whether the received list is sorted in ascending order. If not, proceed with identifying duplicates.
+3. **Duplicate Check**: Ensure that there are no more than one occurrence of each number within the list. This involves iterating through the list and comparing adjacent elements.
+4. **Condition Verification**: Return `True` only if both conditions (sorted in ascending order and without duplicates) are satisfied. Otherwise, return `False`.
 
-2. **Sorting Check**: Verify whether the list is sorted in ascending order. This can be done using Python's built-in `sorted()` function or by manually iterating through the list and comparing adjacent elements. If the list is found to be sorted, proceed to the next step; otherwise, return `False` immediately.
+### Detailed Steps:
+1. **Input Handling**: 
+   - Accept the list of integers from the user or any other source.
+   
+2. **Sorting Validation**:
+   - Implement a function to sort the list in ascending order using built-in sorting algorithms like `sort()` in Python or equivalent methods in other programming languages.
+   - Compare the original list with the sorted version to check for equality.
 
-3. **Duplicate Check**: Ensure that there are no duplicates within the list. This involves checking each element against all subsequent elements to see if any match. For efficiency, sort the list first (as seen previously) and then iterate through it with two pointers to compare elements without needing nested loops for every pair. If a duplicate is detected, return `False` immediately.
+3. **Duplicate Detection**:
+   - Use nested loops or efficient searching techniques (e.g., hash sets) to identify repeated values within the list.
+   - Count occurrences of each element; ensure it does not exceed one per element.
 
-4. **Output**: Return `True` only if both conditions—sorted in ascending order and no duplicates—are satisfied. Otherwise, return `False`.
+4. **Output Determination**:
+   - After confirming both conditions are met, output `True`.
+   - If either condition fails, output `False`.
 
-This logical flow ensures that the algorithm efficiently identifies valid sorted lists while avoiding unnecessary computations.
+This structured approach ensures accurate validation of the integer list's characteristics.

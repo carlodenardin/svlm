@@ -1,5 +1,6 @@
 ```python
-def compute_product(n):
+```python
+def product_of_odd_digits(n):
     product = 1
     while n > 0:
         digit = n % 10
@@ -7,4 +8,5 @@ def compute_product(n):
             product *= digit
         n //= 10
     return product if product != 0 else 0
+```
 ```

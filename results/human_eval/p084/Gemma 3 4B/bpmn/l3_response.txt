@@ -10,13 +10,12 @@ def calculate_result(n):
         The calculated result.
     """
     sum_val = 0
-    res = 0
+    res = ""
     while n > 0:
         sum_val += n % 10
         n = n // 10
-        if sum_val > 0:
-            r = sum_val % 2
-            sum_val = sum_val // 10
-            res += str(r)
+        r = sum_val % 2
+        sum_val = sum_val // 10
+        res = str(r) + res
     return res
 ```

@@ -1,16 +1,25 @@
-The flowchart outlines an algorithm for generating a specific type of list, likely related to the construction of Pascal's triangle or similar combinatorial structures. Here’s a step-by-step description:
+The flowchart represents the generation of the Lucas's series, a sequence similar to the Fibonacci sequence but starting with 0 and 1. Here is a step-by-step implementation based on the algorithm depicted in the image:
 
-1. **Input**: Receive an integer `n` which represents the dimension of the list to be generated.
-2. **Initialization**: Initialize a list of dimensions `n` and set an index `i` equal to 1.
-3. **Outer Loop (i <= n)**: Iterate from `i` starting at 1 up to `n`.
-4. **Inner Decision Check (j % 2 == 0)**: Determine if the current value of `j` is even or odd.
-   - If yes, initialize `x` with the value of `j` and increment `j` by 1.
-   - If no, proceed to check another condition.
-5. **Second Inner Decision Check (j <= i)**: Check if the current value of `j` is less than or equal to `i`.
-   - If yes, append `x` to the list and increase `i` by 1.
-   - If no, continue the loop without appending anything.
-6. **Return List**: Once all iterations are complete, return the constructed list.
+### Purpose
+The purpose of this algorithm is to generate the first n terms of Lucas's series.
 
-**Expected Output**: The output will be a list representing a pattern such as Pascal's triangle or a binary tree structure depending on how `x` and indices interact within the loops.
+### Input Data Required
+- An integer \( n \) representing the number of terms to generate in the series.
 
-This process can be implemented in various programming languages using iterative constructs like while loops or for loops along with conditional statements to handle decisions based on modulo operations and comparisons.
+### Main Logical Flow
+1. **Receive an integer as \( n \)**: Start by taking input for \( n \), which determines how many terms of the series will be generated.
+2. **Initialize a list of dimension \( n \) and an integer i equal to 1**: Create an empty list of size \( n \) and initialize a counter variable \( i \) to 1.
+3. **Check if \( i \leq= n \)**: Determine whether the current iteration index \( i \) has reached or exceeded the desired length of the series.
+   - If true, proceed to return the constructed list.
+   - If false, continue processing further iterations.
+4. **Decision Point: Check if \( i \% 2 == 0 \)**:
+   - If true, set \( x \) to 1 and increment \( j \) by 1.
+   - If false, set \( x \) to 0 and increment \( j \) by 1.
+5. **Decision Point: Check if \( j <= i \)**:
+   - If true, append \( x \) to the list and increase \( i \) by 1.
+   - If false, repeat steps involving setting \( x \) and \( j \) accordingly before appending to the list.
+6. **Loop Back**: Continue iterating through these decision points until all required terms are added to the list.
+7. **Return the List**: Once the loop completes, return the populated list containing the Lucas's series up to the nth term.
+
+### Expected Output
+The output is a list where each element corresponds to a term in Lucas's series, specifically the first \( n \) elements calculated according to the defined logic within the flowchart.

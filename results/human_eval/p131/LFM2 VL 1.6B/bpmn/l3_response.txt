@@ -1,13 +1,7 @@
 ```python
-def odd_digits(n):
-    if n == 0:
-        return 0
-    elif n % 10 == 0:
-        return 0
+def odd_digit(n):
+    if n % 10!= 0:
+        return n
     else:
-        d = n // 10
-        if d == 0:
-            return 0
-        else:
-            return d + odd_digits(n // 10)
+        return n // 10 + 1
 ```

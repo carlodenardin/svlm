@@ -1,13 +1,15 @@
-The flowchart outlines an algorithm designed to count the number of even and odd digits in a given integer. Here’s a step-by-step description of its implementation:
+The flowchart represents an algorithm designed to count the number of even and odd digits in a given integer. Here is a step-by-step description of its implementation:
 
-1. **Start**: The process begins here.
-2. **Input**: An integer `n` is provided as input.
-3. **Initialize Variables**: Two variables, `even_count` and `odd_count`, are initialized to zero to keep track of the counts of even and odd digits respectively.
-4. **Loop Through Digits**: 
-   - Extract each digit from the integer `n` by continuously dividing it by 10 using modulus operation (`n % 10`).
-   - Increment `even_count` if the current digit is divisible by 2 (even).
-   - Increment `odd_count` otherwise.
-5. **Output**: After processing all digits, output the values of `even_count` and `odd_count` which represent the counts of even and odd digits found in `n`.
-6. **End**: The algorithm concludes here.
+1. **Input**: The input required for this algorithm is an integer, denoted as `n`.
+2. **Initialization**: Initialize counters for both even and odd digits separately. Let's call these counters `even_count` and `odd_count`. Set them both to zero initially.
+3. **Processing**: 
+   - Iterate through each digit of the integer `n` using a loop (e.g., while loop).
+   - For each iteration, extract the last digit of `n` by performing modulo operation (`n % 10`).
+   - Increment the corresponding counter based on whether the extracted digit is even or odd:
+     - If the digit is even (i.e., the remainder when divided by 2 is 0), increment `even_count`.
+     - If the digit is odd (i.e., the remainder when divided by 2 is 1), increment `odd_count`.
+   - Remove the last digit from `n` by performing integer division (`n //= 10`).
+4. **Output**: After processing all digits, the final counts of even and odd digits are stored in `even_count` and `odd_count`, respectively.
+5. **Termination**: End the process with the calculated counts.
 
-This structured approach ensures that every digit of the input integer is evaluated for being either even or odd, providing accurate results based on the specified conditions.
+This algorithm efficiently processes integers by examining their individual digits and counting how many of them are even and how many are odd.

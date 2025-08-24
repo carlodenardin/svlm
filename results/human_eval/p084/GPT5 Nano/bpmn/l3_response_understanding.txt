@@ -1,78 +1,76 @@
-Certainly! Here’s how you can implement the algorithm depicted in the flowchart:
+Certainly! Here is the algorithm's implementation based on the provided flowchart:
 
 ---
 
-## **Overview**
-This algorithm takes a non-negative integer `n` as input, processes its digits to accumulate a sum, then repeatedly encodes that sum into a binary-like string in reverse order. Essentially, it appears to:
-1. Compute the sum of all the decimal digits in `n`.
-2. Convert that sum into its binary representation (in reverse).
+## **Algorithm Overview**
+
+This algorithm takes an integer input, computes the sum of its digits, and **converts that sum to its binary representation as a string**.
 
 ---
 
-### **Input Data**
-- **Input:** A non-negative integer `n`.
+## **Input Data Required**
+
+- A single integer `n`.
 
 ---
 
-### **Main Logical Flow**
+## **Main Logical Flow**
 
-1. **Initialization**  
-   - Set `sum = 0`  
-   - Set `res = ""` (an empty string)
+### 1. **Initialization**
+- Receive integer input `n`.
+- Initialize two variables:
+  - `sum = 0` (to accumulate the sum of digits)
+  - `res = ""` (to build the binary representation as a string)
 
-2. **First Loop:** Accumulate the digits of `n` into `sum`
-   - While `n > 0`:
-     - Add the least significant digit of `n` to `sum` (`sum += n % 10`)
-     - Remove the least significant digit from `n` (`n = n // 10`)
+### 2. **Sum of Digits Loop**
+- While `n` is greater than 0:
+  - Add the last digit of `n` to `sum` (`sum += n % 10`)
+  - Remove the last digit from `n` (`n = n // 10`)
 
-3. **Second Loop:** Encode `sum` in binary, building representation in reverse
-   - While `sum > 0`:
-     - Compute the remainder when `sum` is divided by 2 (`r = sum % 2`)
-     - Divide `sum` by 2 (`sum = sum // 2`)
-     - Append the string value of `r` to `res` (`res += str(r)`)
+### 3. **Decimal to Binary Conversion Loop**
+- While `sum` is greater than 0:
+  - Get the remainder when `sum` is divided by 2 (`r = sum % 2`)
+  - Update `sum` to integer-divide by 2 (`sum //= 2`)
+  - Prepend the string value of `r` to `res` (`res = str(r) + res`)
 
-4. **Return Output**
-   - Return the variable `res`
-
----
-
-### **Expected Output**
-- **Output:** A string containing the reversed binary representation of the sum of the digits of the input integer `n`.
+### 4. **Return**
+- Return the value of `res`, which now contains the binary representation of the sum of the digits of `n`.
 
 ---
 
-## **Pseudocode Summary**
+## **Expected Output**
+
+- A string `res` representing the **binary form** of the sum of the digits of the input integer `n`.
+
+---
+
+### **Pseudocode**
 
 ```python
-def reversed_digit_sum_binary(n):
+def sum_digits_to_binary(n):
     sum = 0
     res = ""
-
-    # Loop 1: Calculate the sum of digits
+    # Step 2: Sum the digits
     while n > 0:
         sum += n % 10
         n = n // 10
-
-    # Loop 2: Encode as reversed binary
-    while sum > 0:
-        r = sum % 2
-        sum //= 2
-        res += str(r)
-
+    
+    # Step 3: Convert sum to binary string
+    if sum == 0:
+        res = "0"  # Handle the case for input 0
+    else:
+        while sum > 0:
+            r = sum % 2
+            sum = sum // 2
+            res = str(r) + res
+    
+    # Step 4: Return
     return res
 ```
 
----
-
 **Example:**  
-If `n = 123`  
-Sum of digits = 1 + 2 + 3 = 6  
-Binary of 6 = "110", but result returned is "011" (reversed).
+If `n = 123`, then sum of digits = 6, binary representation = `'110'`.
 
 ---
 
-**Implementation Interpretation:**  
-- **This algorithm is useful when you need a quick, reversed binary string based on the sum of the decimal digits of a number.**
-- **You can reverse `res` before returning to get the standard binary representation if needed.**
-
-Let me know if you need the implementation in a specific programming language!
+If you need further code in a specific programming language or have follow-up questions, let me know!

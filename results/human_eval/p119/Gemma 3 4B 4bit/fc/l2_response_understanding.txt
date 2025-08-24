@@ -2,31 +2,35 @@ Okay, let's break down this flowchart and describe the algorithm's implementatio
 
 **1. Overview**
 
-The algorithm's purpose is to determine if a given string of parentheses is "balanced."  A balanced string of parentheses means that every opening parenthesis '(' has a corresponding closing parenthesis ')' in the correct order, and the number of opening and closing parentheses are equal.
+The algorithm's purpose is to determine if a given string (presumably containing parentheses) is "balanced" – meaning that every opening parenthesis '(' has a corresponding closing parenthesis ')' and that the number of opening parentheses never exceeds the number of closing parentheses at any point in the string.
 
 **2. Input Data**
 
-*   **Input:** A string `s` consisting of characters '(' and ')'.  The string can be empty, contain only opening parentheses, only closing parentheses, or a mix of both.
+*   **`str`**:  A string containing parentheses characters ('(' and ')'). This is the input string that the algorithm will analyze.
 
 **3. Main Logical Flow (Step-by-Step)**
 
 1.  **Initialization:**
-    *   `s1 = [0]` : Initialize a list `s1` (or array) to store the count of opening parentheses encountered so far.  It starts at 0.
-    *   `s2 = [0]` : Initialize a list `s2` to store the count of closing parentheses encountered so far. It starts at 0.
+    *   `s1 = len(str[0]) + 0`
+    *   `s2 = len(str[0]) + 0`
+    *   `s1` and `s2` are initialized to the length of the first character of the string.
+2.  **Initial Check:**
+    *   The algorithm checks if `s1` and `s2` are equal. If they are not equal, the algorithm returns "No".
+3.  **Looping and Checking:**
+    *   The algorithm iterates through the string `str`.
+    *   For each character in the string, it increments `s1` if the character is an opening parenthesis '(' and `s2` if the character is a closing parenthesis ')'.
+    *   After each character, it checks if `s1` is equal to `s2`. If they are not equal, the algorithm returns "No".
+4.  **Final Check:**
+    *   After processing the entire string, the algorithm checks if `s1` is equal to `s2`. If they are not equal, the algorithm returns "No".
+5.  **Output:**
+    *   If `s1` and `s2` are equal, the algorithm returns "Yes".
 
-2.  **Iterate through the string:**
-    *   `fnc_check_string(s)`:  This function is called to process the string `s`.
+**4. Function Calls**
 
-3.  **Inside `fnc_check_string(s)`:**
-    *   `s = s.str`:  The string `s` is assigned to the variable `s` within the function.
-    *   **Loop:** Iterate through each character in the string `s`.
-        *   **If the character is '(':**
-            *   `s1[0] += 1`: Increment the count of opening parentheses.
-        *   **If the character is ')':**
-            *   `s2[0] += 1`: Increment the count of closing parentheses.
-        *   **Check for Balance:**
-            *   `if s1[0] > s2[0]`:  If the number of opening parentheses encountered is greater than the number of closing parentheses, the string is unbalanced.
-                *   `return False`:  The function immediately returns `False`.
-            *   `else if s1[0] < s2[0]`: If the number of closing parentheses encountered is greater than the number of opening parentheses, the string is unbalanced.
-                *   `return False`: The function immediately returns `False`.
-            *
+*   `len(str[0])`: This function calculates the length of the first character of the string.
+*   `check_string()`: This function is called to check if the string is balanced.
+
+**5. Expected Output**
+
+*   **"Yes"**: If the string is balanced (i.e., every opening parenthesis has a corresponding closing parenthesis and the number of opening parentheses never exceeds the number of closing parentheses).
+*

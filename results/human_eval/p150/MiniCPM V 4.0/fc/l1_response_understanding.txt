@@ -1,14 +1,15 @@
 The flowchart outlines an algorithm designed to determine whether a given integer \( n \) is a prime number. Here's the step-by-step implementation:
 
-1. **Start**: The process begins here.
-2. **Input**: Take three integers \( n \), \( x \), and \( y \) as input from the user or another source.
-3. **Check if \( n \) is a prime number**: 
-   - If \( n \) is not a prime number, proceed directly to output \( y \) and end the process.
-   - If \( n \) is a prime number, continue with further checks.
-4. **Prime Number Check Loop**: 
-   - Use a loop to check divisibility of \( n \) by all integers from 2 up to \( \sqrt{n} \).
-   - If any divisor divides \( n \) evenly (i.e., remainder is zero), then \( n \) is not a prime number. Output \( x \) and terminate the process.
-   - If no divisors are found within this range, conclude that \( n \) is a prime number and output \( y \).
-5. **End**: The process concludes after determining if \( n \) is prime.
+1. **Start**: The process begins at the start node.
+2. **Input Data**: The first action is to input three integers, denoted as \( n \), \( x \), and \( y \).
+3. **Check Primality**: Next, verify if \( n \) is a prime number. This involves checking divisibility from 2 up to the square root of \( n \).
+4. **Decision Point**: Based on the primality check:
+   - If \( n \) is prime (YES): Proceed with processing or further actions designated by 'x'.
+   - If \( n \) is not prime (NO): Continue with subsequent steps marked by 'y'.
+5. **End**: Regardless of the outcome, the process concludes here.
 
-This structured approach ensures accurate identification of prime numbers through systematic checking and decision points.
+**Expected Output**:
+- If \( n \) is found to be a prime number, output 'x'.
+- If \( n \) is not a prime number, output 'y'.
+
+This structured approach ensures clarity in determining the nature of the provided integer efficiently.

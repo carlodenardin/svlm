@@ -1,15 +1,12 @@
 ```python
 ```python
 def convert_to_binary(n):
-    if n == 0:
-        return "0"
-    elif n < 0:
-        raise ValueError("Input must be a non-negative integer")
-    else:
-        binary = ""
-        while n > 0:
-            binary = str(n % 2) + binary
-            n //= 2
-        return binary
+    # Input n as integer
+    num = n
+    # Sum the digits of n and convert it to binary
+    binary_sum = sum(int(digit) for digit in str(num))
+    binary_representation = bin(binary_sum)[2:]
+    # Return result as string
+    return binary_representation
 ```
 ```

@@ -1,6 +1,6 @@
 ```python
 ```python
-def calculate_sum_and_convert_to_binary(num):
+def calculate_res(num):
     sum = 0
     res = ""
     while num > 0:

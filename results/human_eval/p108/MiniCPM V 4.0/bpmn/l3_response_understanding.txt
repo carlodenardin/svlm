@@ -1,14 +1,22 @@
-The flowchart outlines an algorithm designed to process a list of integers. Here's a step-by-step description:
+The flowchart outlines an algorithm designed to process a list of integers. Here's a step-by-step description of its implementation:
 
-1. **Receive Input**: The algorithm starts by receiving a list of integers as input.
-2. **Initialize Variables**: Set the result variable `res` to 0 and initialize a loop counter `i` to 0.
-3. **Loop Through List**: Begin a loop that continues while there are elements in the list (`len(list) > 0`).
-4. **Extract Element**: Extract the i-th value from the current list element `n`.
-5. **Check for Negativity**: Check if `n` is smaller than 0. If yes, set a flag `isNeg` to -1.
-6. **Set n to Absolute Value**: If `n` is not negative, set `n` equal to its absolute value.
-7. **Check Flag**: If `isNeg` equals -1, increment `i` by 1 and continue with the next iteration. Otherwise, append the remainder of `n` divided by 10 (modulo operation) to a new list called `digits`.
-8. **Update Result**: Multiply each element in the `digits` list by `isNeg` and sum these products. If the resulting sum is greater than or equal to 0, increase `res` by 1; otherwise, leave it unchanged.
-9. **Increment Loop Counter**: Increment `i` by 1 to move to the next integer in the list.
-10. **Return Result**: Once all integers have been processed, return the final value of `res`.
+1. **Receive a List of Integers**: The input is a list of integers named `n`.
+2. **Initialize Variables**: Set the result variable `res` to 0 and initialize an index variable `i` to 0.
+3. **Check if i is Smaller than len(list)**: If true, return the current value of `res`.
+4. **Extract the i-th Value from the List**: Retrieve the integer at position `i` in the list and store it in a variable `n`.
+5. **Initialize Digits Variable**: Create an empty array called `digits` to hold individual digits of `n`.
+6. **Set Flag isNeg to -1**: Initialize a flag indicating whether the number is negative.
+7. **Check if n is Smaller than 0**:
+   - If true, set `isNeg` to 1 (indicating a negative number).
+   - If false, proceed without changing `isNeg`.
+8. **Set n Equal to Absolute Value**: Convert `n` to its absolute value for further processing.
+9. **Loop Through Each Digit**:
+   - Extract each digit by repeatedly dividing `n` by 10 and appending the remainder to `digits`.
+   - Update `n` with the quotient after each division operation.
+10. **Check Last Element of Digits Array**:
+    - Multiply all elements in `digits` by `isNeg`.
+    - If the sum of these multiplied values is greater than 0, increment `res` by 1.
+11. **Increment Index and Loop**: Increment the loop counter `i` and repeat steps 4 to 10 until all indices have been processed.
+12. **Return Result**: After completing the iterations, return the final value of `res`.
 
-**Expected Output**: The output of this algorithm will be the sum of digits modified according to their original sign. For instance, if the input list was `[-3, 4, -2, 1]`, the expected output would be calculated considering the signs and magnitudes of each digit.
+**Expected Output**: The output will be the modified result based on the given list of integers following the specified transformations and conditions outlined in the flowchart.

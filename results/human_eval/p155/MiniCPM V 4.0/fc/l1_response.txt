@@ -1,11 +1,17 @@
 ```python
 ```python
 def count_even_odd(n):
-    count = 0
-    while n > 0:
-        if n % 2 == 0:
-            count += 1
-        n = n // 10
-    return count
+    count_even = 0
+    count_odd = 0
+    for digit in str(n):
+        if int(digit) % 2 == 0:
+            count_even += 1
+        else:
+            count_odd += 1
+    return (count_even, count_odd)
+
+# Example usage:
+# result = count_even_odd(12345)
+# print(result)  # Output: (2, 3)
 ```
 ```

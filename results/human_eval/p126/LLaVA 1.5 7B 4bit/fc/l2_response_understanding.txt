@@ -4,18 +4,18 @@ You are a software engineer. Given an image of a flowchart, describe the algorit
 - The input data required.
 - The main logical flow, detailing decisions, loops, and function calls.
 - The expected output.
-Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts an algorithm for checking if there are numbers that appear more than once in a list. The purpose of this algorithm is to identify duplicate numbers in the list.
+Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts a simple algorithm for checking if there are numbers that appear more than twice in a list. The purpose of the algorithm is to identify such numbers and provide a list of them.
 
 The input data required is a list of numbers.
 
 The main logical flow of the algorithm involves the following steps:
 
 1. Start the algorithm.
-2. Initialize a variable to store the count of unique numbers in the list.
+2. Initialize a variable to store the count of numbers that appear more than twice.
 3. Iterate through the list of numbers.
-4. For each number in the list, check if it already exists in the list by comparing it to the numbers already present.
-5. If the number is not present, increment the count of unique numbers.
-6. If the number is present, check if it appears more than once in the list. If it does, increment the count of duplicate numbers.
-7. After iterating through the entire list, print the count of unique numbers and the count of duplicate numbers.
+4. For each number in the list, check if it has already been counted.
+5. If the number has not been counted, increment the count variable.
+6. If the number has been counted more than twice, print the number and its count.
+7. End the algorithm.
 
-The expected output of the algorithm is a report that includes the count of unique numbers and the count of duplicate numbers in the list.</s>
+The expected output is a list of numbers that appear more than twice, along with their respective counts.</s>

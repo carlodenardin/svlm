@@ -1,17 +1,14 @@
-The flowchart represents an algorithm designed to check whether a list of integers is sorted without any duplicate numbers. Here's the step-by-step implementation:
+The purpose of this algorithm is to determine whether a given list of integers is sorted and contains no duplicate numbers. Here’s the step-by-step implementation:
 
-1. **Input Data**: The algorithm requires a list of integers as input. This data will be processed to determine if it meets the specified criteria.
+1. **Input Data**: Receive a list of integers as input.
+2. **Initial Check**: Verify if the received data is indeed a list of integers. Ensure it's not empty or null.
+3. **Sorting and Uniqueness Check**: 
+   - Sort the list of integers in ascending order.
+   - Iterate through the sorted list starting from the second element.
+   - For each element, check if it matches the previous one. If they do not match, confirm that there are no duplicates by comparing with subsequent elements.
+4. **Decision Point**:
+   - If all elements are unique after sorting, output "Give back True" indicating the list is sorted without duplicates.
+   - If any element finds a duplicate during iteration, output "Give back False" indicating the presence of duplicates.
+5. **Loop Termination**: The loop continues until either uniqueness is confirmed or a duplicate is found.
 
-2. **Initialization**: Begin by receiving the list of integers and setting up any necessary variables or structures for further processing.
-
-3. **Main Logical Flow**:
-   - **Decision Point 1**: Check if the current integer being examined is different from the previous one in the sequence. If not, proceed with the next element.
-   - **Loop**: Continue examining each subsequent integer in the list until you reach the end.
-   - **Decision Point 2**: After checking all elements, verify if there are any duplicates within the list. Ensure that no number repeats more than once.
-   - **Conditional Checks**: Based on the results of these checks:
-     - If the list passes both conditions (sorted and unique), output "Give back True".
-     - If either condition fails, output "Give back False".
-
-4. **Expected Output**: The final result indicates whether the provided list of integers satisfies the sorting and uniqueness requirements. Specifically, it outputs either "True" if the list is valid or "False" otherwise.
-
-This process ensures thorough validation of the given list against the defined criteria, providing clear feedback based on its compliance.
+This process ensures the integrity of the list while providing clear feedback on its condition.

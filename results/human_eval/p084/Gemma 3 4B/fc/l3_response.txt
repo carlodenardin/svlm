@@ -14,9 +14,12 @@ def algorithm(n):
     while n > 0:
         sum_val += n % 10
         n = n // 10
-        if sum_val > 0:
-            r = sum_val % 2
-            sum_val = sum_val // 2
-            res += str(r)
+
+    if sum_val > 0:
+        r = sum_val % 2
+        sum_val = sum_val // 2
+        res = str(r) + res + str(sum_val)
+    else:
+        res = str(res)
     return res
 ```

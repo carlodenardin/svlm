@@ -1,1 +1,1 @@
-code generation assistant - even product function .
+code generation assistant - function generation .

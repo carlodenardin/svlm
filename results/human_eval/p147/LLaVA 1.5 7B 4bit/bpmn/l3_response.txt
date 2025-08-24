@@ -1,13 +1,28 @@
 :  <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> 
 You are a Python code generation assistant. Given a diagram of an algorithm, generate a single, syntactically correct function that implements the logic shown. Return only the Python code, enclosed in a ```python``` block. ASSISTANT: ```python
 def algorithm(diagram):
-    # Extract the algorithm logic from the diagram
-    logic = diagram.split(";")
-    
-    # Generate the Python code based on the extracted logic
-    code = ""
-    for line in logic:
-        code += f"{line}\n"
-    
-    return code
+    # Extract the nodes and edges from the diagram
+    nodes = diagram.nodes()
+    edges = diagram.edges()
+
+    # Create a dictionary to store the state of each node
+    state = {}
+    for node in nodes:
+        state[node] = [False] * len(edges)
+
+    # Initialize the state to the initial values
+    for node in nodes:
+        state[node][0] = True
+
+    # Iterate through the edges and update the state
+    for edge in edges:
+        for i in range(len(edge)):
+            from_node = edge[i]
+            to_node = edge[i+1]
+            if state[from_node][i] and state[to_node][i]:
+                state[from_node][i] = False
+                state[to_node][i] = True
+
+    # Return the final state of the nodes
+    return state
 ```</s>

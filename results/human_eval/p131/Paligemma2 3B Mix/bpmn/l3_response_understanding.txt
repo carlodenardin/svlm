@@ -1,1 +1,1 @@
-- Include all relevant data from the text in the caption.
+- Include all relevant data and pseudocode.

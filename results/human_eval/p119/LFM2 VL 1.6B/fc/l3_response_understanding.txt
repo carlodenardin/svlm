@@ -1,18 +1,33 @@
 Overview:
-The algorithm is designed to perform a series of operations on a list of strings, checking if each string is equal to a given string. It uses a combination of conditional statements, loops, and function calls to achieve this.
+The algorithm is designed to check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
 
 Input Data:
-The algorithm requires two input strings: s1 and s2, which are the strings to be checked against the given string.
+The algorithm requires a single input string.
 
 Main Logical Flow:
-1. The algorithm starts by checking if the length of s1 is equal to the length of s2. If not, it ends.
-2. If the lengths are equal, it proceeds to check if s1 is equal to s2. If not, it ends.
-3. If s1 is equal to s2, it calls the function fnc with the string s1 as an argument.
-4. If s1 is not equal to s2, it calls the function s with the string s2 as an argument.
-5. If the function fnc returns True, it calls the function s with the string s1 as an argument. If the function s returns True, it calls the function s with the string s2 as an argument. If the function s returns False, it ends.
-6. If the function s returns False, it ends.
-7. If the function s returns True, it ends.
-8. If the function s returns False, it ends.
+1. Start the algorithm.
+2. Check if the length of the string is 0 or 1. If true, the string is a palindrome.
+3. If the length of the string is greater than 1, continue to the next step.
+4. Initialize two pointers, i and c, to the start and end of the string respectively.
+5. While i is less than or equal to c, do the following:
+   a. Increment i by 1.
+   b. Decrement c by 1.
+   c. Check if the characters at positions i and c are equal. If not, return "No".
+6. If the loop completes without returning "No", the string is a palindrome.
+7. End the algorithm.
 
 Expected Output:
-The algorithm returns the result of the function s with the string s2 as an argument. If the function s returns True, it returns the result of the function s with the string s1 as an argument. If the function s returns False, it returns the result of the function s with the string s2 as an argument. If the function s returns an error, it returns an error message.
+The algorithm outputs "Yes" if the string is a palindrome, and "No" if it is not.
+
+Implementation:
+```python
+def is_palindrome(s):
+    i = 0
+    c = len(s) - 1
+    while i <= c:
+        if s[i]!= s[c]:
+            return "No"
+        i += 1
+        c -= 1
+    return "Yes"
+```

@@ -4,14 +4,15 @@ You are a software engineer. Given an image of a flowchart, describe the algorit
 - The input data required.
 - The main logical flow, detailing decisions, loops, and function calls.
 - The expected output.
-Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts a simple algorithm for summing two numbers. The purpose of the algorithm is to add the given numbers and return the sum. The input data required are the two numbers to be added.
+Present the information clearly and concisely, ready for implementation. ASSISTANT: The flowchart depicts a simple algorithm for summing two numbers. The purpose of the algorithm is to add the values of two input numbers and return the sum. The input data required are the two numbers to be added.
 
 The main logical flow of the algorithm involves the following steps:
 
-1. Start with the initial values of the two numbers.
-2. Read the input values from the user.
-3. Calculate the sum by adding the two numbers.
-4. Display the sum on the screen.
-5. End the program.
+1. Start the algorithm.
+2. Read the first input number.
+3. Read the second input number.
+4. Calculate the sum of the two input numbers.
+5. Display the sum.
+6. End the algorithm.
 
-The expected output is the sum of the two input numbers.</s>
+The expected output is a string displaying the sum of the two input numbers.</s>

@@ -1,22 +1,17 @@
-The flowchart outlines an algorithm designed to determine whether a given integer `n` is either even or odd. Here's a step-by-step description of the implementation:
+The algorithm depicted in the flowchart appears to be designed for determining whether a given integer is either even or odd, and possibly further processing if it's not divisible by 10. Here’s a step-by-step description of its implementation:
 
-1. **Input Data**: 
-   - The input required for this algorithm is an integer `n`.
+1. **Start**: The process begins at the "Start" node.
+2. **Input**: An integer `n` is required as input.
+3. **Initialization**: Set variables `even` and `odd` to 0. Also, calculate the absolute value of `n` and assign it to `n`.
+4. **Condition Check**: Determine if `n` is greater than 0. If true, proceed; otherwise, exit the loop.
+5. **Modulo Operation**: Calculate `d = n % 10`, which gives the remainder when `n` is divided by 10.
+6. **Decision Point**: Check if `d % 2 == 0` (i.e., check if `d` is divisible by 2).
+   - If false, increment `odd` by 1.
+   - If true, increment `even` by 1.
+7. **Division Operation**: Divide `n` by 10 (`n //= 10`). This effectively removes the last digit from `n`.
+8. **Loop Back**: Return to step 5 to repeat the process until `n` becomes less than or equal to 0.
+9. **Output**: After exiting the loop, output the values of `even` and `odd` as a tuple.
 
-2. **Initialization**:
-   - Initialize two boolean variables, `even` and `odd`, both set to 0. This indicates that initially, no parity (even or odd) has been identified.
-   - Assign the absolute value of `n` to `n`. This ensures that negative numbers are handled correctly by treating them as positive integers.
+**Expected Output**: A tuple containing two integers representing the count of numbers encountered that were either even or odd during the iteration through the digits of `n`.
 
-3. **Main Logical Flow**:
-   - Begin with a decision point checking if `n` is greater than 0. If true, proceed; otherwise, exit the loop.
-   - Calculate the remainder (`d`) when `n` is divided by 10. This helps in determining the last digit of `n`.
-   - Check if the last digit (`d`) is divisible by 2. If not, increment the `odd` variable by 1. If yes, increment the `even` variable by 1.
-   - Update `n` by performing integer division (`n //= 10`). This effectively removes the last digit from `n`.
-
-4. **Loop Termination**:
-   - Continue the process until `n` becomes 0. At each iteration, check the current values of `even` and `odd`. Once `n` reaches 0, output the tuple containing the values of `even` and `odd`.
-
-5. **Expected Output**:
-   - The expected output is a tuple indicating whether the number was determined to be even or odd. For example, if the final state shows `even = 1` and `odd = 0`, it means the original number was odd. Conversely, if `even = 1` and `odd = 0`, the number was even.
-
-This structured approach ensures accurate determination of the parity of any given integer through systematic evaluation and iterative processing.
+This logic ensures that all iterations focus on single-digit parts of the number without considering higher place values initially, making use of modulo operations to isolate each digit efficiently.

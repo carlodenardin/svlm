@@ -1,16 +1,16 @@
-def calculate(n, x, y):
+def calculate(x, y, n):
     if n == 1:
         return x
     else:
-        if n % 2 == 0:
-            return calculate(n // 2, x, y)
+        if n <= sqrt(n):
+            return x
         else:
-            return calculate(n // 2, x, y) + 1
+            return calculate(n - 1, y, n)
 
 def main():
     i = 1
     while i <= 100:
-        print(i, ":", calculate(i, 2, 3))
+        print(i, ":", calculate(i, 2, i))
         i += 1
 
 if __name__ == "__main__":

@@ -1,78 +1,88 @@
-Certainly! Here’s a clear breakdown of the algorithm depicted in the flowchart:
+Certainly! Here’s a clear breakdown of the algorithm based on the provided flowchart:
 
 ---
 
-### **1. Overview (Purpose)**
-The algorithm takes an integer, sums its digits, and then converts that sum to its binary representation (as a string).
+### 1. **Purpose of the Algorithm**
+This algorithm takes an integer input, calculates the sum of its digits, and then converts that sum into its binary representation as a string.
 
 ---
 
-### **2. Input Data**
-- **n (int):** An integer whose digits will be processed.
+### 2. **Input Data Required**
+- **n:** An integer number (e.g., 12345).
 
 ---
 
-### **3. Main Logical Flow**
+### 3. **Main Logical Flow**
 
-**Step-by-Step Process:**
+#### **a. Initialization**
+- Set `sum = 0`.
+- Set `res = ""` (an empty string to store binary digits).
 
-1. **Initialize variables:**
-   - `sum = 0` (to hold the sum of the digits)
-   - `res = ""` (to hold the binary representation as a string)
+#### **b. Summing the Digits**
+- **While** `n > 0`:
+  - Add the last digit of `n` to `sum`: `sum += n % 10`.
+  - Remove the last digit from `n`: `n = n // 10`.
 
-2. **Sum the digits of n:**
-   - While `n > 0`:
-     - Extract the last digit with `n % 10` and add it to `sum`.
-     - Remove the last digit from `n` with integer division: `n = n // 10`.
+#### **c. Convert Sum to Binary String**
+- **While** `sum > 0`:
+  - Compute the least significant binary digit: `r = sum % 2`.
+  - Integer divide `sum` by 2: `sum //= 2`.
+  - Prepend the binary digit to `res`: `res = str(r) + res`.
 
-3. **Convert the sum to binary:**
-   - While `sum > 0`:
-     - Get the least-significant binary digit: `r = sum % 2`.
-     - Divide `sum` by 2: `sum = sum // 2`.
-     - Append the digit `r` (converted to string) to the result string: `res += str(r)`.
-
-4. **Result:**
-   - The string `res` now contains the binary representation of the sum (in reverse order).
+#### **d. Output**
+- The resulting binary string is stored in `res`.
 
 ---
 
-### **4. Output**
-
-- **res (string):** The binary representation (in reverse order) of the sum of the digits of the input integer.
+### 4. **Expected Output**
+- **res:** A string representing the binary form of the sum of the input integer's digits.
 
 ---
 
-### **Implementation Notes**
+## **Implementation-Ready Steps**
 
-- If you want the final binary string to be in the standard order, reverse the string at the end: `res[::-1]`.
+```python
+def sum_digits_to_binary(n: int) -> str:
+    # Step 1: Initialize variables
+    sum_digits = 0
+    result = ""
+    
+    # Step 2: Sum the digits of n
+    while n > 0:
+        sum_digits += n % 10
+        n = n // 10
+    
+    # Step 3: Convert sum to binary
+    if sum_digits == 0:
+        return "0"
+    while sum_digits > 0:
+        r = sum_digits % 2
+        sum_digits = sum_digits // 2
+        result = str(r) + result
+        
+    # Step 4: Return binary representation
+    return result
+```
+
+---
+
+## **Summary Table**
+
+| Step              | Description                                                     |
+|-------------------|-----------------------------------------------------------------|
+| Input             | Integer `n`                                                     |
+| Sum Digits        | Loop to add each digit of `n` to `sum`                          |
+| Convert to Binary | Loop to convert `sum` to binary (prepend binary digits to `res`)|
+| Output            | Binary string `res`                                             |
 
 ---
 
 ### **Example**
-
-Input: `n = 123`  
-- Sum of digits: `1 + 2 + 3 = 6`
-- Binary of `6`: `"110"`  
-- Stored as: `"011"` in the output string (unless reversed).
-
----
-
-### **Pseudocode**
-
-```
-function digitSumToBinary(n: int) -> string
-    sum = 0
-    res = ""
-    while n > 0:
-        sum += n % 10
-        n = n // 10
-    while sum > 0:
-        r = sum % 2
-        sum = sum // 2
-        res += str(r)
-    return res  # Or res[::-1] for standard binary order
-```
+Input: `n = 123`
+- Sum of digits: 1 + 2 + 3 = 6
+- Binary of 6: `110`
+- Output: `'110'`
 
 ---
 
-Let me know if you need an implementation in a specific programming language!
+Ready for implementation in any modern programming language.

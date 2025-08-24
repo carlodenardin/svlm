@@ -1,19 +1,35 @@
-Overview:
-The algorithm is designed to find the greatest common divisor (GCD) of two integers using the Euclidean algorithm. It repeatedly applies the division algorithm to find the remainder until the remainder is zero, at which point the GCD is the last non-zero remainder.
+### Algorithm Overview
 
-Input Data:
-The algorithm requires two integers as input.
+The algorithm is designed to perform a binary search on an array. It takes an array of integers and a target value as input, and returns the index of the target value in the array if found, or -1 if not found.
 
-Main Logical Flow:
-1. Initialize the product variable to 1.
-2. While the input integers are not equal:
-   a. Divide the larger number by the smaller number and store the remainder in a variable.
-   b. If the remainder is zero, return 0 as the GCD.
-   c. Otherwise, set the product variable to the product of the larger and smaller numbers.
-   d. Divide the larger number by the smaller number and store the remainder in a variable.
-   e. If the remainder is zero, return 0 as the GCD.
-   f. Otherwise, set the product variable to the product of the larger and smaller numbers.
-3. Return the product variable as the GCD.
+### Input Data
 
-Expected Output:
-The algorithm returns the greatest common divisor of the two input integers.
+- **Array**: A list of integers.
+- **Target Value**: The value to search for in the array.
+
+### Main Logical Flow
+
+1. **Initialize product to 1**: Start with a product of 1.
+2. **Receive an integer**: Accept the array and target value as input.
+3. **Initialize product to 1**: Reset the product to 1.
+4. **Is odd digits in n?**: Check if the length of the array is odd.
+   - **Yes**: If true, return 0 (target value not found).
+   - **No**: If false, continue to the next step.
+5. **n > 0**: Check if the array length is greater than 0.
+   - **Yes**: If true, continue to the next step.
+   - **No**: If false, return -1 (target value not found).
+6. **d = n % 10**: Calculate the index of the last digit in the array.
+7. **Is d odd?**: Check if the last digit is odd.
+   - **Yes**: If true, return d (index of the target value).
+   - **No**: If false, continue to the next step.
+8. **product = d**: Update the product with the last digit.
+9. **Is product even?**: Check if the product is even.
+   - **Yes**: If true, return -1 (target value not found).
+   - **No**: If false, continue to the next step.
+10. **n /= 10**: Divide the array length by 10 to move to the next digit.
+11. **Is odd digits in n?**: Check if the length of the array is odd.
+    - **Yes**: If true, return 0 (target value not found).
+    - **No**: If false, continue to the next step.
+12. **product = 1**: Reset the product to 1.
+13. **Is product even?**: Check if the product is even.
+    - **Yes**: If true, return 

@@ -1,23 +1,22 @@
 ```python
-def has_duplicate(list_):
+def is_sorted(list):
     """
-    Checks if a list of integers contains any duplicate elements.
+    Checks if a list of integers is sorted in ascending order.
 
     Args:
-        list_: A list of integers.
+        list: A list of integers.
 
     Returns:
-        True if the list contains duplicate elements, False otherwise.
+        True if the list is sorted, False otherwise.
     """
-    i = 0
-    len_list = len(list_)
-    while i < len_list:
-        if i > 0 and list_[i] == list_[i - 1]:
-            return False
-        if i > 1 and list_[i] == list_[i - 2]:
+    if len(list) < 2:
+        return True
+
+    i = 1
+    while i < len(list):
+        if list[i] <= list[i - 1]:
             return False
         i += 1
-    if len(list_) > 1 and list_[0] == list_[1]:
-        return False
+
     return True
 ```

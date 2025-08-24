@@ -1,38 +1,28 @@
-The algorithm depicted in the flowchart is designed to process an array of integers and compute a result based on specific conditions. Here's a step-by-step description:
+The flowchart represents an algorithm designed to process a list of integers and determine the sum of their digits, considering negative numbers. Here's a step-by-step description of the implementation:
 
-### Purpose:
-The purpose of this algorithm is to iterate through an integer array, handle negative numbers by converting them into their absolute values, accumulate digits from these values, and finally sum up all accumulated digits to produce a final result.
+1. **Start**: The algorithm begins at the "Start" node.
+2. **Initialize Variables**: 
+   - An integer array `arr` is provided as input.
+   - Initialize a variable `res` to store the cumulative sum of digits, setting it to 0.
+   - Set an index variable `i` to 0 for iteration purposes.
+3. **Check Length**:
+   - Enter a decision loop where it checks if `i` is less than the length of the array (`len(arr)`). If true, proceed; otherwise, exit the loop.
+4. **Extract Element**:
+   - If `i` is within bounds, extract the current element from the array and initialize an empty list `digits` along with a boolean flag `isNeg` set to 1 (indicating the number is negative).
+5. **Determine Sign**:
+   - Check if `isNeg` is equal to -1. If so, update `isNeg` to -1 indicating that we are dealing with a negative number.
+6. **Calculate Absolute Value**:
+   - Compute the absolute value of the extracted number using `n = abs(n)`.
+7. **Extract Digits**:
+   - While `n` is greater than 0, perform these steps:
+     - Append the last digit of `n` (using `digits.append(n%10)`) to the `digits` list.
+     - Update `n` by performing integer division by 10 (`n = n // 10`).
+8. **Check Sum of Digits**:
+   - Evaluate whether the sum of the digits in the `digits` list exceeds 0.
+   - If yes, increment `res` by 1.
+9. **Increment Index**:
+   - Increment the index variable `i` by 1 (`i += 1`) to move to the next element in the array.
+10. **End**: Repeat the above steps until all elements in the array have been processed.
+11. **Output Result**: Once all iterations are complete, the final result stored in `res` will be the desired output.
 
-### Input Data:
-- `arr`: An array of integers.
-
-### Main Logical Flow:
-1. **Start**: The algorithm begins with initializing variables.
-   - `res` is set to 0.
-   - `i` is initialized to 0.
-2. **Check Array Length**:
-   - Evaluate if `i` is less than the length of the array (`len(arr)`). If not, proceed to calculate the result.
-3. **Process Each Element**:
-   - For each element `n` in the array:
-     - Set `digits` as an empty list.
-     - Set `isNeg` to 1 (indicating that the current number might be negative).
-4. **Handle Negative Numbers**:
-   - Check if `n` is less than 0.
-     - If true, convert `n` to its absolute value using `abs(n)`.
-     - Update `isNeg` to -1 indicating it’s now handling a positive number.
-5. **Extract Digits**:
-   - Extract the last digit of `n` using `n % 10`.
-   - Append this extracted digit to the `digits` list.
-6. **Update Number**:
-   - Divide `n` by 10 to remove the last digit.
-7. **Check for More Digits**:
-   - Repeat steps 5 and 6 until no more digits are left in `n`.
-8. **Accumulate Digits**:
-   - Sum all elements in the `digits` list.
-   - If the sum is greater than 0, increment `res` by 1.
-9. **Increment Counter**:
-   - Increment `i` by 1 to move to the next element in the array.
-10. **End**: Once all elements have been processed, end the loop.
-
-### Expected Output:
-The output of the algorithm will be the calculated result stored in `res`, which represents the cumulative sum of certain properties derived from processing the input array of integers.
+**Expected Output**: The total sum of the digits of all integers in the given array, accounting for sign changes when encountering negative numbers.

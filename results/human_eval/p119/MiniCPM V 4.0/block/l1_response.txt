@@ -1,6 +1,7 @@
 ```python
-def check_combinations(input_list):
-    combined_strings = ''.join(input_list)
-    balanced = all(c == ')' and c != input_list[-1] for c in combined_strings)
-    return 'No' if balanced else 'Yes'
+```python
+def check_balance(combinations):
+    concatenated = ''.join(combinations)
+    balanced = all(c == ')' and c != concatenated[len(concatenated)-1] for c in concatenated)
+    return 'No' if not balanced else 'Yes'
 ```

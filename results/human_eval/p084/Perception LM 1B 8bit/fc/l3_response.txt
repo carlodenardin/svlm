@@ -3,16 +3,19 @@ def calculate_string(n):
         sum = 0
         res = ""
         while n % 10!= 0:
-            res += str(n % 10)
-            n = n // 10
-        return res
+            sum += n % 10
+            n //= 10
+        res = str(sum) + res
     else:
-        return "sum += n % 10, n = n // 10"
+        sum += n % 10
+        res = str(sum) + res
+    return res
 
 def main():
+    start = "Start"
     n = int(input("Enter a number: "))
-    result = calculate_string(n)
-    print("The final result is:", result)
+    res = calculate_string(n)
+    print("The final result is:", res)
 
 if __name__ == "__main__":
     main()

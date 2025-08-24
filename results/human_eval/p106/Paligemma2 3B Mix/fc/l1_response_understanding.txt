@@ -1,1 +1,1 @@
-- Include all relevant data and pseudocode.
+- The flowchart should be accompanied by a code listing of the algorithm in C or C++.

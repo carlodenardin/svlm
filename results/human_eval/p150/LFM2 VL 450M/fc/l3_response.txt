@@ -1,9 +1,9 @@
 ```python
-def process_data(n, x, y):
-    if n == 1:
-        return x
-    elif n == 2:
-        return x + y
+def process_data(data):
+    if data['n'] == 1:
+        return 'End'
+    elif data['n'] == 2:
+        return 'End'
     else:
-        return x - y
+        return 'End'
 ```

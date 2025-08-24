@@ -1,7 +1,7 @@
 ```python
-def process_list_of_integers(integers):
-    if len(integers) == 0:
-        return 1
+def process_integers(integer_list):
+    if len(integer_list) == 1:
+        return True
     else:
-        return 0
+        return False
 ```

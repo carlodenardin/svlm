@@ -1,14 +1,20 @@
-The flowchart outlines an algorithm designed to count the number of integers in a list whose digits sum up to greater than zero. Here's a step-by-step description:
+The purpose of the algorithm is to count how many digits in a given list of integers sum up to greater than 0.
 
-1. **Start**: The process begins at the 'Start' node.
-2. **Input List of Integers**: The first action is to receive or input a list of integers into the system.
-3. **Initialize Count**: Set a variable, say `count`, to 0. This will keep track of how many numbers meet the specified condition.
-4. **Iterate Through List**: Use a loop (e.g., for loop) to iterate through each integer in the provided list.
-5. **Check Digit Sum**: For each integer within the list:
-   - Convert the integer to a string to easily access individual digits.
-   - Calculate the sum of these digits using a function that sums their values.
-   - If the digit sum is greater than 0, increment the `count` variable by 1.
-6. **Return Count**: After iterating through all integers, return the value stored in the `count` variable as the output.
-7. **End**: The process concludes at the 'End' node.
+Input Data:
+- A list of integers.
 
-This implementation ensures that every integer in the list is evaluated based on its digit sum, and the final result is the total count of such integers.
+Main Logical Flow:
+1. Start the process.
+2. Input the list of integers into the system.
+3. Initialize a counter variable to zero. This will keep track of the number of sums that are greater than 0.
+4. Use a loop to iterate through each integer in the input list.
+5. For each integer, calculate the sum of its digits.
+6. Check if the digit sum is greater than 0.
+7. If the condition in step 6 is true, increment the counter by 1.
+8. After processing all integers in the list, return the value of the counter as the output.
+9. End the process.
+
+Expected Output:
+- The total count of integers whose digit sums exceed zero.
+
+This flowchart outlines a straightforward approach using loops and conditional checks to achieve the desired result efficiently.

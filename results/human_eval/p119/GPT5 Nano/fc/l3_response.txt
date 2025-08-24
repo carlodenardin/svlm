@@ -1,6 +1,6 @@
 ```python
-def can_form_valid_parentheses(l):
-    def check_string(s):
+def check_parenthesis_list(l: list[str]) -> str:
+    def check_string(s: str) -> bool:
         i = 0
         c = 0
         while i < len(s):
@@ -14,7 +14,7 @@ def can_form_valid_parentheses(l):
         return c == 0
 
     s1 = l[0] + l[1]
-    s2 = l[1] + l[2]
+    s2 = l[1] + l[0]
     c1 = check_string(s1)
     c2 = check_string(s2)
     if c1 or c2:

@@ -1,9 +1,11 @@
 ```python
+import math
+
 def algorithm(n, x, y):
     if n == 1:
         return y
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
-            return x
-    return y
+            return y
+    return x
 ```

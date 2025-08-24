@@ -4,5 +4,5 @@ def calculate_sum(n):
     if n == 0:
         return sum
     else:
-        return sum + n / 10
+        return sum + n
 ```

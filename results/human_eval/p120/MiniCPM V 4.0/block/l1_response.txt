@@ -1,6 +1,6 @@
 ```python
 ```python
-def sort_and_return_last(lst, k):
-    lst.sort()
-    return lst[-k:]
+def sort_and_return_last_k(lst, k):
+    sorted_lst = sorted(lst)
+    return sorted_lst[-k:]
 ```

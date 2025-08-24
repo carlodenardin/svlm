@@ -1,23 +1,21 @@
 ```python
-def check_sorted_and_unique(l: list[int]) -> bool:
+def has_duplicates(list_int):
     """
-    Given a list of integers, check if the list is sorted in ascending order and if all the numbers appear only once.
-    For example:
-    check_sorted_and_unique([1, 2, 3, 4, 5]) == True
-    check_sorted_and_unique([1, 2, 2, 3, 4, 5]) == False
+    Checks if a list of integers contains any duplicates.
+
+    Args:
+        list_int: A list of integers.
+
+    Returns:
+        True if the list contains duplicates, False otherwise.
     """
-    if not l:
-        return True
-
-    for i in range(len(l) - 1):
-        if l[i] > l[i + 1]:
-            return False
-
-    counts = {}
-    for num in l:
-        if num in counts:
-            return False
-        counts[num] = 1
-
+    for i in list_int:
+        if i >= list_int[list_int.index(i) + 1]:
+            count = 0
+            for j in list_int:
+                if j == i:
+                    count += 1
+            if count > 1:
+                return False
     return True
 ```

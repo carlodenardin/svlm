@@ -1,21 +1,16 @@
 ```python
-def generate_pyramid(n):
+def generate_lucas_list(n):
     list = []
-    i = 1
-    while i <= n:
-        x = 0
+    for i in range(1, n+1):
+        x = 0 if i % 2 == 0 else 1
         j = 1
-        if i % 2 == 0:
-            x = j
-        else:
-            x *= j
-        if i <= n:
+        while j <= i:
             if x <= i:
-                list.append(x)
+                x += j
                 j += 1
             else:
-                list.append(x)
-                i += 1
-        i += 1
+                x *= j
+                j += 1
+        list.append(x)
     return list
 ```

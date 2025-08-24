@@ -1,0 +1,11 @@
+{"success": false, "error": "", "input": [[-3, -4, 5], 3], "output": [], "correct_output": [-4, -3, 5]}
+{"success": false, "error": "", "input": [[4, -4, 4], 2], "output": [-4], "correct_output": [4, 4]}
+{"success": false, "error": "", "input": [[-3, 2, 1, 2, -1, -2, 1], 1], "output": [-3, -2, -1, 1, 1, 2], "correct_output": [2]}
+{"success": false, "error": "", "input": [[123, -123, 20, 0, 1, 2, -3], 3], "output": [-123, -3, 0, 1], "correct_output": [2, 20, 123]}
+{"success": false, "error": "", "input": [[-123, 20, 0, 1, 2, -3], 4], "output": [-123, -3], "correct_output": [0, 1, 2, 20]}
+{"success": false, "error": "", "input": [[5, 15, 0, 3, -13, -8, 0], 7], "output": [], "correct_output": [-13, -8, 0, 0, 3, 5, 15]}
+{"success": false, "error": "", "input": [[-1, 0, 2, 5, 3, -10], 2], "output": [-10, -1, 0, 2], "correct_output": [3, 5]}
+{"success": false, "error": "", "input": [[1, 0, 5, -7], 1], "output": [-7, 0, 1], "correct_output": [5]}
+{"success": false, "error": "", "input": [[4, -4], 2], "output": [], "correct_output": [-4, 4]}
+{"success": false, "error": "", "input": [[-10, 10], 2], "output": [], "correct_output": [-10, 10]}
+{"success": true, "error": "", "input": [[1, 2, 3, -23, 243, -400, 0], 0], "output": [], "correct_output": []}

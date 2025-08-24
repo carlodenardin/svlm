@@ -1,13 +1,10 @@
 ```python
-def product_of_odd_digits(n: int) -> int:
-    has_odd = False
-    product = 1
-    for digit in str(abs(n)):
-        d = int(digit)
-        if d % 2 == 1:
-            has_odd = True
-            product *= d
-    if not has_odd:
+def multiply_odd_digits(n: int) -> int:
+    odd_digits = [int(d) for d in str(abs(n)) if int(d) % 2 == 1]
+    if not odd_digits:
         return 0
+    product = 1
+    for d in odd_digits:
+        product *= d
     return product
 ```

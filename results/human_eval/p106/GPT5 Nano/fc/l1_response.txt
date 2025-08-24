@@ -1,18 +1,18 @@
 ```python
-def algorithm(n):
+def calculate_even_product_odd_sum(n):
     result = []
     i = 1
-    while i < n:
+    while i <= n:
         if i % 2 == 0:
-            # Product from 1 to i
-            prod = 1
-            for j in range(1, i+1):
-                prod *= j
-            val = prod
+            # Calculate product from 1 to i
+            product = 1
+            for num in range(1, i + 1):
+                product *= num
+            result.append(product)
         else:
-            # Sum from 1 to i
-            val = sum(range(1, i+1))
-        result.append(val)
+            # Calculate sum from 1 to i
+            total = sum(range(1, i + 1))
+            result.append(total)
         i += 1
     return result
 ```

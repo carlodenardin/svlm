@@ -1,6 +1,7 @@
 ```python
 ```
-def process_array(arr):
+```python
+def calculate_res(arr):
     res = 0
     i = 0
     digits = []
@@ -8,15 +9,17 @@ def process_array(arr):
     while i < len(arr):
         n = arr[i]
         digits.append(n % 10)
-        if n > 0:
-            n = n // 10
-        else:
-            n = abs(n)
-            isNeg = -1
+        n = n // 10
         if digits[-1] != isNeg:
-            if sum(digits) > 0:
-                res += 1
+            sum(digits) > 0
+            res += 1
+        else:
+            i += 1
+        if n < 0:
+            isNeg = -1
+            n = abs(n)
         i += 1
     return res
 ```
+```python
 ```

@@ -3,5 +3,5 @@ def process_inputs(n, x, y):
     if n == 1:
         return y
     else:
-        return process_inputs(n-1, x, y)
+        return x
 ```

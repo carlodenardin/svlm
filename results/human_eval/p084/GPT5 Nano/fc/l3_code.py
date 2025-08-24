@@ -1,0 +1,11 @@
+def process_number(n: int) -> str:
+    sum = 0
+    res = ''
+    while n > 0:
+        sum += n % 10
+        n = n // 10
+    while sum > 0:
+        r = sum % 2
+        sum //= 2
+        res = str(r) + res
+    return res

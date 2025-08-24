@@ -1,15 +1,15 @@
-The algorithm depicted in the flowchart aims to determine whether a given integer is even or odd by iterating through its digits. Here's a step-by-step description of the implementation:
+The flowchart outlines an algorithm designed to determine whether the digits of a given integer are even or odd. Here’s a detailed step-by-step implementation:
 
-1. **Receive an Integer**: Start with an input integer that needs to be analyzed for parity (even or odd).
+1. **Input**: Receive an integer as input. This will be used for further processing in determining its digit properties.
 
-2. **Initialize Variables**: Set up two counters, `even` and `odd`, both initialized to 0. These will keep track of how many even and odd digits are encountered during iteration.
+2. **Initialization**: Initialize two counter variables, `even` and `odd`, both set to 0. These counters will keep track of how many even and odd digits are present respectively.
 
-3. **Iterate Over Digits**: Begin processing each digit of the input integer one by one. This involves converting the integer into a string so individual digits can be accessed easily.
+3. **Iteration**: Iterate over each digit of the received integer. For this purpose, convert the integer into a string so that individual digits can be accessed easily.
 
-4. **Increment Counters Based on Digit**: For each digit:
-   - If the digit is even (divisible by 2), increment the `even` counter.
-   - If the digit is odd (not divisible by 2), increment the `odd` counter.
+4. **Digit Processing**: For each digit obtained during iteration:
+   - Convert the character (digit) back to an integer.
+   - Increment the corresponding counter (`even` if the digit is even, `odd` if it's odd) based on whether the digit is divisible by 2 with no remainder.
 
-5. **Return Result**: After all digits have been processed, return a tuple containing the counts of even and odd digits found within the original integer.
+5. **Output**: After iterating through all the digits, return a tuple containing the counts of even and odd digits. The output format should reflect these counts clearly indicating which type of digits occurred more frequently within the input integer.
 
-This method ensures accurate identification of even and odd components in any integer provided as input, providing clear results regarding their distribution.
+This process ensures that every digit of the provided integer is examined, and their parity (even or odd) is recorded systematically before producing the final result.

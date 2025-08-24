@@ -1,26 +1,30 @@
 Okay, let's break down this flowchart and describe the algorithm's implementation.
 
-**1. Overview of the Algorithm's Purpose**
+**1. Overview**
 
-The algorithm's purpose is to determine if a given string of parentheses is "balanced."  A balanced string of parentheses means that every opening parenthesis '(' has a corresponding closing parenthesis ')' and that the closing parentheses appear in the correct order (i.e., no closing parenthesis comes before its corresponding opening parenthesis).
+The algorithm's purpose is to determine if a given string of parentheses is "balanced." A balanced string means that every opening parenthesis '(' has a corresponding closing parenthesis ')', and the number of opening parentheses never exceeds the number of closing parentheses at any point in the string.
 
-**2. Input Data Required**
+**2. Input Data**
 
-*   **String (s):** The input string consisting of parentheses characters ('(' and ')'). This is the string we want to check for balance.
+*   **`str`**: A string containing only parentheses characters ('(' and ')'). This is the input string that the algorithm will analyze.
 
 **3. Main Logical Flow (Step-by-Step)**
 
 1.  **Initialization:**
-    *   `s = str`:  The input string `s` is assigned to the variable `s`.
-    *   `list[0] = 0`, `list[1] = 1`: Two integer variables, `list[0]` and `list[1]`, are initialized to 0 and 1 respectively. These variables are used to track the balance of the string.
-2.  **Function Call: `check_string(s)`:**
-    *   The `check_string` function is called with the input string `s`. This function performs the core logic of the algorithm.
-3.  **Inside `check_string(s)`:**
-    *   **Looping and Balancing Check:** The `check_string` function iterates through the string `s`.
-        *   For each character:
-            *   If the character is '(': `list[0]` is incremented by 1.
-            *   If the character is ')': `list[1]` is incremented by 1.
-            *   If `list[1]` becomes greater than `list[0]`, it means there are more closing parentheses than opening parentheses at that point, so the string is unbalanced. The function immediately returns `False`.
-    *   **Balanced Check:** After iterating through the entire string, if `list[0]` is equal to `list[1]`, it means the number of opening and closing parentheses are equal, and the string is balanced. The function returns `True`. Otherwise, it returns `False`.
-4.  **Post-Processing (Flowchart Branching):**
-    *   The flowchart shows two branches after the `check_string`
+    *   `s1 = len(str[0]) + len(str[1])`
+    *   `s2 = len(str[1]) + len(str[2])`
+    *   This initializes two variables, `s1` and `s2`, which are used to count the number of opening and closing parentheses, respectively.  The code assumes the string has at least three characters.
+
+2.  **Check for Validity:**
+    *   The code checks if `s1` and `s2` are equal. If they are, it means the number of opening and closing parentheses are equal.
+    *   If `s1` and `s2` are equal, the function `check_string` is called.
+    *   If `s1` and `s2` are not equal, the function returns 'No'.
+
+3.  **`check_string` Function:**
+    *   This function is called with the input string `str`.
+    *   It iterates through the string character by character.
+    *   **Balance Check:**  For each character, it checks if it's an opening parenthesis '(' or a closing parenthesis ')'.
+        *   If it's an opening parenthesis, the count of opening parentheses (`s1`) is incremented.
+        *   If it's a closing parenthesis, the count of closing parentheses (`s2`) is incremented.
+        *   At each step, it checks if `s1` is greater than `s2`. If it is, it means there are more opening parentheses than closing parentheses at that point, so the string is unbalanced, and the function returns `False`.
+    *   **Final Check:** After iterating through the entire string, the function checks if

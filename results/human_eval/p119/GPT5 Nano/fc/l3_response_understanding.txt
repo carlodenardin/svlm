@@ -1,97 +1,105 @@
-### **Algorithm Overview**
-This algorithm checks the validity of combinations of parentheses by joining parts of given string inputs and verifying if the resulting strings are valid (balanced parentheses). Specifically, it tries two ways of concatenating pairs from a 3-element list and checks if either concatenation forms a valid parentheses sequence.
+### Algorithm Overview
+
+**Purpose:**
+The algorithm determines whether it is possible to arrange the strings from a list—by concatenating either the first string with the second or vice versa—such that the resulting concatenated string forms a valid sequence of parentheses.
 
 ---
 
-### **Input Data**
-- A list of three strings, each string:  
-  `l: List[str]`  
-  Each string typically consists of parentheses `(` and `)`.
+### Input Data
+
+- A list of two strings (`l: list[str]`), where each string represents a sequence of parentheses, e.g., `["(()", ")()"]`.
 
 ---
 
-### **Main Logical Flow**
+### Main Logical Flow
 
-#### **1. Top-Level Logic**
-1. **Input:** Receive a list `l` with three strings: `l[0]`, `l[1]`, `l[2]`.
-2. **Form Two Candidate Strings:**
-    - `s1 = l[0] + l[1]`
-    - `s2 = l[1] + l[2]`
-3. **Check Validity:**  
-   Run a function `check_string` on both `s1` and `s2` to check if either is a valid parenthesis string.
-    - `c1 = check_string(s1)`
-    - `c2 = check_string(s2)`
-4. **Output Decision:**
-    - If either `c1` or `c2` is `True`, output `"Yes"`.
-    - Otherwise, output `"No"`.
+#### High-Level Steps
 
----
+1. **Concatenate Strings in Both Orders**
+   - Concatenate the two input strings in both possible orders:
+     - `s1 = l[0] + l[1]`
+     - `s2 = l[1] + l[0]`
 
-#### **2. Subroutine: `check_string(s: str)`**
-   Checks if the input string `s` represents a valid sequence of balanced parentheses.
+2. **Check Both Concatenations**
+   - For each concatenated string (`s1` and `s2`), call the helper function `check_string()` to determine if it is a valid parenthesis string.
 
-**Logic:**
-1. Initialize two variables:
-    - `i = 0` (index)
-    - `c = 0` (counter for open parentheses)
-2. Loop over each character in the string (`i < len(s)`):
-    - If `s[i] == '('`, increment `c` (`c += 1`).
-    - If `s[i] != '('`, decrement `c` (`c -= 1`).
-    - If at any point `c < 0`, return `False` (more closing than opening parentheses).
-    - Increment `i`.
-3. After the loop:
-    - If `c == 0`, return `True` (balanced).
-    - If `c != 0`, return `False` (unmatched opening parentheses).
+3. **Decision:**
+   - If either concatenation is valid, output `'Yes'`.
+   - Otherwise, output `'No'`.
+
+#### `check_string()` Function
+
+Given an input string `s` (a sequence of parentheses):
+1. Initialize `i = 0` and a counter `c = 0`.
+2. Iterate through the string:
+   - For each character:
+     - If `s[i] == '('`, increment counter `c`.
+     - If `s[i] == ')'`, decrement counter `c`.
+   - After each update:
+     - If `c` becomes negative at any point, return `False` immediately (invalid sequence).
+   - Move to the next character (`i += 1`).
+3. After finishing the iteration:
+   - If `c == 0`, return `True` (valid sequence).
+   - If `c != 0`, return `False`.
 
 ---
 
-### **Expected Output**
-- The output is either `"Yes"` or `"No"`, indicating whether at least one of the two candidate concatenated strings is a valid parentheses sequence.
+### Expected Output
+
+- **Output:** `'Yes'` if at least one of the two concatenated strings forms a valid sequence of parentheses; `'No'` otherwise.
 
 ---
 
-### **Step-by-Step Process (Ready for Implementation in Python)**
+### Step-by-Step Process (Ready for Implementation)
+
+#### 1. Main Logic
 
 ```python
-def check_string(s: str) -> bool:
-    i, c = 0, 0
-    while i < len(s):
-        if s[i] == '(':
-            c += 1
-        else:
-            c -= 1
-        if c < 0:
-            return False
-        i += 1
-    return c == 0
+def is_possible_pair(l):
+    def check_string(s):
+        i = 0
+        c = 0
+        while i < len(s):
+            if s[i] == '(':
+                c += 1
+            else:
+                c -= 1
+            if c < 0:
+                return False
+            i += 1
+        return c == 0
 
-def main(l: list[str]) -> str:
     s1 = l[0] + l[1]
-    s2 = l[1] + l[2]
+    s2 = l[1] + l[0]
     c1 = check_string(s1)
     c2 = check_string(s2)
+
     if c1 or c2:
         return 'Yes'
     else:
         return 'No'
 ```
 
-**Call:**  
+#### 2. Usage Example
+
 ```python
-result = main(["(()", ")", ")("])
-print(result)
+l = ["(()", ")()"]
+result = is_possible_pair(l)
+print(result)  # Output: 'Yes' or 'No'
 ```
 
 ---
 
 ### **Summary Table**
-| Step              | Action                                | Variables      |
-|-------------------|---------------------------------------|----------------|
-| 1                 | Input 3 strings list                  | l[0], l[1], l[2]|
-| 2                 | Concatenate: s1 = l[0]+l[1]; s2 = l[1]+l[2] | s1, s2         |
-| 3                 | Validate s1 & s2 via `check_string`   | c1, c2         |
-| 4                 | Output "Yes" if c1 or c2, else "No"   | result         |
+
+| Step                        | Details                                               |
+|-----------------------------|------------------------------------------------------|
+| **Purpose**                 | Check if strings can form a valid parenthesis pair   |
+| **Input**                   | List of two strings of parentheses                   |
+| **Processes**               | Concatenate both orders, check validity using helper |
+| **Decisions/Loops**         | Check each concatenation, loop over string chars     |
+| **Expected Output**         | 'Yes' or 'No'                                        |
 
 ---
 
-**This process gives you a parenthesis sequence validator, specifically checking two concatenation options from a list of three strings.**
+This information is ready to be used for implementation in any modern programming language.

@@ -1,24 +1,26 @@
 ```python
-def find_factors(n, x, y):
+def algorithm(n, x, y):
     """
-    Finds the factors of a number n.
+    Implements the algorithm described in the flowchart.
 
     Args:
-        n: The number to find the factors of.
-        x: Placeholder variable (not used in the algorithm).
-        y: Placeholder variable (not used in the algorithm).
+        n: An integer.
+        x: An integer.
+        y: An integer.
 
     Returns:
-        None. The function doesn't return a value, but it prints the result.
+        None.
     """
+    if n == 1:
+        return
+    
     i = 2
-    while i * i < n:
+    
+    if i <= n:
         if n % i == 0:
-            print(i)
-            if n // i != i:
-                print(n // i)
-        i += 1
-
-    if n > 1:
-        print(n)
+            return
+        else:
+            i += 1
+    else:
+        return
 ```

@@ -1,5 +1,5 @@
 ```python
-def algorithm(n: int) -> str:
+def process_number(n: int) -> str:
     sum = 0
     res = ""
     while n > 0:
@@ -8,6 +8,6 @@ def algorithm(n: int) -> str:
     while sum > 0:
         r = sum % 2
         sum //= 2
-        res += str(r)
+        res = str(r) + res
     return res
 ```

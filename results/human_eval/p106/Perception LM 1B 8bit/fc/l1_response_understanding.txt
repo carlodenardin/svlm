@@ -1,59 +1,58 @@
-**Algorithm Overview:**
-The algorithm is designed to calculate the product of numbers from 1 to `n` if `n` is even, and the sum of numbers from 1 to `n` if `n` is odd. It initializes a result list and counter, and iteratively calculates the product or sum based on the input `n`.
+**Algorithm Overview**
+======================
 
-**Input Data:**
-The algorithm requires the input `n` as an integer.
+### Purpose
+The algorithm is designed to calculate the product of numbers from 1 to `n` if `n` is even, or the sum of numbers from 1 to `n` if `n` is odd.
 
-**Main Logical Flow:**
+### Input Data
+* `n`: An integer representing the upper limit of the range of numbers to be calculated.
 
-1. **Initialization**: The algorithm initializes the result list and counter.
-2. **Input `n` as Integer**: The algorithm checks if `n` is an integer. If not, it throws an error.
-3. **Initialization the Result List and Counter**: The algorithm initializes the result list and counter.
-4. **Decision: `i < n`**: The algorithm checks if `i` is less than `n`. If true, it proceeds to the next step. If false, it returns.
-5. **Product Calculation**: If `i` is even, the algorithm calculates the product of numbers from 1 to `i`. Otherwise, it calculates the sum of numbers from 1 to `i`.
-6. **Result Calculation**: The algorithm calculates the result by adding the calculated value to the result list and incrementing the counter.
-7. **End**: The algorithm ends the process.
+### Main Logical Flow
+#### Step 1: Input `n` as an integer
+* Initialize the result list and the counter.
 
-**Expected Output:**
-The algorithm calculates the product of numbers from 1 to `n` if `n` is even, and the sum of numbers from 1 to `n` if `n` is odd.
+#### Step 2: Check if `n` is even
+* If `i <= n`, proceed to the next step.
+* If `n` is odd, calculate the sum of numbers from 1 to `n`.
 
-**Implementation:**
+#### Step 3: Calculate the product of numbers from 1 to `n` if `n` is even
+* If `i` is even, calculate the product of numbers from 1 to `i`.
+* Otherwise, calculate the sum of numbers from 1 to `i`.
+
+#### Step 4: Add the calculated value to the result list and increment the counter
+* Add the calculated value to the result list and increment the counter.
+
+#### Step 5: Return the result
+* Return the final result.
+
+### Expected Output
+The algorithm calculates the product of numbers from 1 to `n` if `n` is even, or the sum of numbers from 1 to `n` if `n` is odd.
+
+### Implementation
 ```python
 def calculate_product(n):
-    if not isinstance(n, int):
-        raise ValueError("Input must be an integer")
-    
-    result = 1
-    counter = 1
-    
-    while n > 1:
-        if n % 2 == 0:
-            result *= n
-        else:
-            result += n
-        n -= 1
-        counter += 1
-    
-    return result
+    """
+    Calculate the product of numbers from 1 to n if n is even, or the sum of numbers from 1 to n if n is odd.
 
-def calculate_sum(n):
-    if not isinstance(n, int):
-        raise ValueError("Input must be an integer")
-    
-    result = 0
-    counter = 1
-    
-    while n > 1:
-        if n % 2 == 0:
-            result += n
+    Args:
+        n (int): The upper limit of the range of numbers to be calculated.
+
+    Returns:
+        int: The product of numbers from 1 to n if n is even, or the sum of numbers from 1 to n if n is odd.
+    """
+    result = 1
+    counter = 0
+    for i in range(1, n + 1):
+        if i % 2 == 0:
+            result *= i
         else:
-            result += n * counter
-        n -= 1
+            result += i
         counter += 1
-    
     return result
 
 # Example usage:
 n = 5
 result = calculate_product(n)
-print(f"Product
+print(f"The product of numbers from 1 to {n} is: {result}")
+```
+This implementation follows the algorithm's steps, using a loop to calculate the product or sum of numbers

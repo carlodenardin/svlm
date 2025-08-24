@@ -2,36 +2,32 @@ Okay, let's break down this flowchart and describe the algorithm it represents.
 
 **1. Overview**
 
-The algorithm appears to be designed to determine a specific relationship between three input integers, *n*, *x*, and *y*. It checks if *n* is equal to 1. If not, it searches for a divisor of *n* within a specific range.  Based on whether a divisor is found, it returns either *x* or *y*.
+The algorithm determines the larger of three integers (n, x, and y) based on a specific condition. If 'n' is equal to 1, it returns 'y'. Otherwise, it searches for a divisor of 'n' between 2 and the square root of 'n'. If a divisor is found, it returns 'y'. If no divisor is found, it returns 'x'.
 
 **2. Input Data**
 
 The algorithm requires three integer inputs:
 
-*   **n:**  The first integer.
-*   **x:** The second integer.
-*   **y:** The third integer.
+*   `n`: An integer.
+*   `x`: An integer.
+*   `y`: An integer.
 
 **3. Logical Flow (Step-by-Step)**
 
-1.  **Receive Input:** The algorithm begins by receiving the integer values *n*, *x*, and *y* as input.
-
-2.  **Check if n = 1:**  It then checks if *n* is equal to 1.
-    *   **If n == 1:** The algorithm immediately returns the value of *y*.
-    *   **If n != 1:** The algorithm proceeds to the next step.
-
-3.  **Find Divisor:** The algorithm searches for a divisor of *n* within the range from 2 to the square root of *n* (inclusive).  This is done using a loop or iterative process.  The exact implementation of this search isn't shown in the flowchart, but it's a crucial part of the algorithm.
-
-4.  **Check for Divisor:** After finding a potential divisor, the algorithm checks if a divisor exists.
-    *   **If a divisor is found:** The algorithm returns the value of *x*.
-    *   **If no divisor is found:** The algorithm returns the value of *y*.
+1.  **Receive Input:** The algorithm begins by receiving the integer values `n`, `x`, and `y` as input.
+2.  **Check if n = 1:** It then checks if `n` is equal to 1.
+    *   **If n == 1:** If `n` is indeed 1, the algorithm immediately returns the value of `y`.
+    *   **If n != 1:** If `n` is not equal to 1, the algorithm proceeds to the next step.
+3.  **Find Divisor:** The algorithm searches for a divisor of `n` within the range of 2 to the square root of `n`.  This is done using a loop or iterative process (not explicitly shown in the flowchart, but implied).
+4.  **Check for Divisor:** After searching for a divisor, the algorithm checks if a divisor was found.
+    *   **If a Divisor Exists:** If a divisor is found, the algorithm returns the value of `y`.
+    *   **If No Divisor Exists:** If no divisor is found within the specified range, the algorithm returns the value of `x`.
+5.  **Return Result:** The algorithm terminates and returns the final result (either `y` or `x`).
 
 **4. Expected Output**
 
 The algorithm will return one of the following values:
 
-*   **y:** If *n* is equal to 1.
-*   **x:** If a divisor of *n* (between 2 and the square root of *n*) is found.
-*   **y:** If no divisor of *n* (between 2 and the square root of *n*) is found.
-
-**In essence, the algorithm is a conditional logic based on whether *n* is 1 and whether *n* has a divisor within a specific range. It
+*   `y`: If `n` is equal to 1.
+*   `y`: If a divisor of `n` exists between 2 and the square root of `n`.
+*   `x`: If no divisor of `n` exists between 2 and

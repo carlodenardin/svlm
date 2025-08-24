@@ -1,16 +1,11 @@
 ```python
-```python
-def algorithm_logic(n, x, y):
+def algorithm_function(n, x, y):
     if n == 1:
         return y
     i = 2
-    while i <= n:
-        if i % sqrt(n) != 0:
+    while i * i <= n:
+        if n % i == 0:
             return x
-        else:
-            n %= i
-            if n == 0:
-                return y
-            i += 1
-```
+        i += 1
+    return y
 ```

@@ -1,17 +1,13 @@
-The algorithm depicted in the flowchart aims to count how many times a triple of elements from an initialized vector meets the condition where their sum is divisible by 3. Here’s a step-by-step implementation based on the provided image:
+The flowchart outlines an algorithm designed to count the number of triples in a vector where each element is derived from the formula \( A[i-1] = i * i - i + 1 \) for indices \( 1 \leq i \leq n \). Here's a step-by-step description of its implementation:
 
-1. **Receive Input**: The process begins with receiving an integer \( n \) which represents the dimension of the vector.
+1. **Receive Input**: Start by receiving an integer \( n \) which defines the dimension of the vector.
+2. **Initialize Vector**: Initialize a vector of dimension \( n \) using the specified rule: 
+   \[
+   A[i-1] = i * i - i + 1 \quad \text{for} \quad 1 \leq i \leq n
+   \]
+3. **Set Counter**: Initialize a counter variable to zero to keep track of valid triples.
+4. **Iterate Over Vector**: Loop through each element \( A[i-1] \) in the initialized vector.
+5. **Check Triple Condition**: For each triple, check if the sum of the elements is divisible by 3 without any remainder. If true, increment the counter by 1.
+6. **Return Result**: After iterating through all elements and counting the valid triples, return the final value of the counter.
 
-2. **Initialize Vector**: Create a vector of size \( n \) and initialize its elements according to the rule \( A[i-1] = i * i - i + 1 \) for \( 1 \leq i \leq n \). This sets up the initial values for each element in the vector.
-
-3. **Set Counter**: Initialize a counter variable to zero. This will be used to keep track of the number of valid triples.
-
-4. **Iterate Over Triples**: Use a loop to iterate over each possible combination of three consecutive elements in the vector \( A \). For each iteration, calculate the sum of these elements.
-
-5. **Check Divisibility**: Check if the calculated sum of the current trio is divisible by 3. If it is, increment the counter by 1.
-
-6. **Repeat Iteration**: Continue this process until all possible triples have been evaluated.
-
-7. **Return Result**: After completing the iterations, return the value of the counter which now holds the total count of triples whose sums are multiples of 3.
-
-This algorithm efficiently counts specific patterns within a predefined structure using simple arithmetic operations and loops.
+This process ensures that only those triples meeting the condition are counted within the given constraints.

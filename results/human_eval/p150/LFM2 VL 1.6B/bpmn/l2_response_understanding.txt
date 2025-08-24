@@ -1,50 +1,58 @@
 ### Algorithm Overview
 
-The algorithm is designed to find the greatest common divisor (GCD) of two integers, `n` and `x`, using the Euclidean algorithm. The Euclidean algorithm is an efficient method for computing the GCD of two numbers, based on the principle that the GCD of `n` and `x` is the same as the GCD of `x` and the remainder of `n` divided by `x`.
+The algorithm is designed to find a divisor of a given integer `n` within a specified range `[2, n]`. It checks if `n` is divisible by each number from 2 to `n-1` and returns the first divisor found. If no divisor is found within the range, it returns `None`.
 
 ### Input Data
 
-The algorithm requires two integers as input:
-- `n`: The first integer.
-- `x`: The second integer.
+- `n`: The integer for which to find a divisor.
+- `range_start`: The starting value of the range (2 in this case).
+- `range_end`: The ending value of the range (n in this case).
 
 ### Main Logical Flow
 
 1. **Input Validation**:
-   - The algorithm first checks if the inputs `n` and `x` are non-negative integers. If either is negative, the algorithm returns an error message indicating that the inputs must be non-negative.
+   - Check if `n` is a positive integer.
+   - If not, return `None`.
 
-2. **Euclidean Algorithm**:
-   - The algorithm then enters a loop that continues until `x` becomes zero.
-   - Inside the loop, the algorithm calculates the remainder of `n` divided by `x` and updates `n` to `x` and `x` to the remainder.
-   - This process is repeated until `x` is zero, at which point the algorithm returns the current value of `n`, which is the GCD of the original `n` and `x`.
+2. **Divisor Search**:
+   - Loop through each number `i` from `2` to `n-1`.
+   - Check if `n` is divisible by `i` (i.e., `n % i == 0`).
+   - If `n` is divisible by `i`, return `i` as the divisor.
 
-3. **Output**:
-   - The final value of `n` is returned as the output of the algorithm.
+3. **No Divisor Found**:
+   - If the loop completes without finding a divisor, return `None`.
 
 ### Expected Output
 
-The expected output of the algorithm is the greatest common divisor of the two input integers `n` and `x`.
+- If a divisor is found within the range, return that number.
+- If no divisor is found within the range, return `None`.
 
 ### Implementation Steps
 
 1. **Input Validation**:
-   - Check if `n` and `x` are non-negative integers.
-   - If not, return an error message.
+   - Ensure `n` is a positive integer.
+   - If not, return `None`.
 
-2. **Initialize Variables**:
-   - Set `n` to the value of the first input.
-   - Set `x` to the value of the second input.
+2. **Divisor Search**:
+   - Use a `for` loop to iterate from `2` to `n-1`.
+   - For each `i`, check if `n % i == 0`.
+   - If a divisor is found, return `i`.
 
-3. **Euclidean Algorithm**:
-   - While `x` is not zero:
-     - Calculate the remainder of `n` divided by `x`.
-     - Update `n` to `x` and `x` to the remainder.
-   - Return the current value of `n`.
-
-4. **Output**:
-   - Return the final value of `n` as the GCD.
+3. **No Divisor Found**:
+   - If the loop completes without finding a divisor, return `None`.
 
 ### Pseudocode
 
 ```
-function gcd(n, x):
+function find_divisor(n, range_start, range_end):
+    if n <= 0:
+        return None
+    for i in range(2, n):
+        if n % i == 0:
+            return i
+    return None
+```
+
+### Conclusion
+
+This algorithm efficiently finds a divisor of `n` within the specified range by iterating through potential

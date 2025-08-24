@@ -1,31 +1,9 @@
 :  <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> <image> 
 You are a Python code generation assistant. Given a diagram of an algorithm, generate a single, syntactically correct function that implements the logic shown. Return only the Python code, enclosed in a ```python``` block. ASSISTANT: ```python
-def check_numbers():
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_once()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
-    check_if_numbers_appear_more_than_twice()
+def check_numbers(numbers, diagram):
+    for number in numbers:
+        if number not in diagram:
+            print(f"{number} is not in the diagram")
+        else:
+            print(f"{number} is in the diagram")
+```</s>

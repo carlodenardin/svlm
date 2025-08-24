@@ -1,13 +1,15 @@
-The flowchart outlines an algorithm designed to process an integer and determine the count of even and odd digits within it. Here's a step-by-step implementation:
+The flowchart outlines an algorithm designed to process a given integer by counting the number of even and odd digits. Here is a step-by-step implementation:
 
-1. **Input**: Receive an integer as input from the user or another source. This is represented by the start node in the diagram.
-2. **Processing**: 
-   - Initialize two counters, `even_count` and `odd_count`, both set to zero. These will keep track of the number of even and odd digits respectively.
-   - Convert the integer into a string so that each digit can be individually accessed.
-   - Iterate through each character (digit) in the string representation of the integer.
-   - For each digit, check if it is even or odd using the modulus operator (`%`). If the remainder when divided by 2 is 0, it is even; otherwise, it is odd.
-   - Increment the corresponding counter based on whether the current digit is even or odd.
-3. **Output**: After counting all the digits, return a tuple containing the counts of even and odd digits. The result should include values for both `even_count` and `odd_count`.
-4. **End**: Terminate the function or process with the returned tuple.
+1. **Start**: The process begins at the start node.
+2. **Receive Input**: An integer value is received as input.
+3. **Initialize Variables**: Set up variables to store counts for even and odd digits (e.g., `even_count` and `odd_count`).
+4. **Iterate Through Digits**: Use a loop to iterate through each digit of the integer.
+   - Convert the integer into a string or use modulo operations to extract individual digits.
+5. **Count Even and Odd Digits**: For each digit extracted:
+   - Check if the digit is even or odd using modulus (`%`) with 2.
+   - Increment the respective count variable based on whether the digit is even or odd.
+6. **Create Output Tuple**: After processing all digits, create a tuple containing the counts of even and odd digits.
+7. **Return Result**: Return the tuple as the output.
+8. **End**: The process ends here.
 
-This structured approach ensures accurate computation and clear communication of results, facilitating easy integration into larger software systems.
+This structured approach ensures that every aspect of the problem is addressed systematically from receiving input to producing the desired output.

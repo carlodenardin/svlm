@@ -1,12 +1,7 @@
 ```python
-def start(n, x, y, i):
+def calculate_term(n, x, y, i):
     if n == 1:
         return y
-    elif i == 2:
-        return x
     else:
-        if i < n:
-            return y
-        else:
-            return x
+        return i * calculate_term(n-1, x, y, i-1)
 ```

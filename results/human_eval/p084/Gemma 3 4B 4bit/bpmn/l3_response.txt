@@ -7,15 +7,22 @@ def calculate_result(n):
         n: An integer.
 
     Returns:
-        The result of the calculation.
+        A string representing the result.
     """
-    sum = 0
-    res = ""
+    sum_val = 0
+    result = ""
+
     while n > 0:
-        r = sum % 2
-        sum = sum // 10
-        sum += str(r)
-        n = n // 10
-        res += str(r)
-    return res
+        sum_val += n % 10
+        n //= 10
+        result += str(sum_val)
+
+        if sum_val > 0:
+            r = sum_val % 2
+            sum_val //= 10
+            result += str(r)
+            sum_val //= 10
+            result += str(sum_val)
+            result += "//= 10"
+    return result
 ```

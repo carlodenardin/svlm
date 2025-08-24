@@ -1,96 +1,28 @@
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
+def calculate_sum(n):
+    if n > 0:
+        res = "0"
+        sum = 0
+        while n % 10 == 0:
+            sum += n % 10
+            n = n // 10
+        return sum
+    else:
+        return "No"
 
 def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
+    if n > 0:
+        res = "0"
+        r = sum % 2
+        sum /= 10
+        res = str(r) + res
+        return res
+    else:
+        return "No"
 
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
+def main():
+    n = int(input("Enter an integer number: "))
+    res = calculate_res(n)
+    print("The result is:", res)
 
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 10
-    res += str(n // 10)
-    return res
-
-def calculate_res(n):
-    res = 0
-    res += n % 2
-    res += str(n // 2)
-    return res
-
+if __name__ == "__main__":
+    main()

@@ -1,77 +1,64 @@
-Certainly! Here’s a breakdown of the algorithm depicted in the flowchart:
+### **Algorithm Overview**
+This algorithm determines whether it is possible to rearrange two input strings (each composed solely of '(' and ')') so that their concatenation forms a *balanced* string of parentheses.
 
 ---
 
-### 1. Purpose
-
-The purpose of this algorithm is to **determine if by concatenating any two adjacent strings in a list of 3 strings (where each string contains only parentheses), at least one of the concatenated strings is balanced**. "Balanced" means every opening parenthesis `'('` has a corresponding and correctly ordered closing parenthesis `')'`.
-
----
-
-### 2. Input Data
-
-- A list of 3 strings: `l: List[str]`  
-  Each string contains only the characters `'('` and `')'`.
+### **Input Data Required**
+- `l: List[str]` — a list containing exactly two strings where each string consists only of `(` and `)` characters.
 
 ---
 
-### 3. Logical Flow
+### **Main Logical Flow**
 
-#### Main Algorithm
+#### 1. **Concatenate Strings in Both Possible Orders**
+   - Let `s1 = l[0] + l[1]` (first string followed by second)
+   - Let `s2 = l[1] + l[0]` (second string followed by first)
 
-1. **Input**: Get the list `l` of 3 strings.
-2. **Concatenate Pairs**:
-   - `s1 = l[0] + l[1]` (concatenate first and second strings)
-   - `s2 = l[1] + l[2]` (concatenate second and third strings)
-3. **Validation**:
-   - Use the helper function `check_string` to check if `s1` or `s2` is balanced.
-   - Let `c1 = check_string(s1)` and `c2 = check_string(s2)`
-4. **Decision**:
-   - If **either** `c1` or `c2` is `True`, output `"Yes"`
-   - Else, output `"No"`
+#### 2. **Validity Check via Helper Function**
+   - For each concatenation, use a helper function `check_string(s: str) -> bool`, which checks if the string is a *balanced* parenthesis string:
+     - Balanced means every `(` has a matching `)`, and at any point, closures (i.e., `)`) never exceed openings (i.e., `(`).
+   - Store results: `c1 = check_string(s1)`, `c2 = check_string(s2)`
 
-#### Helper Function: `check_string`
+#### 3. **Decision**
+   - If **either** `c1` or `c2` is `True`:
+     - Output `'Yes'`
+   - Else:
+     - Output `'No'`
 
-- **Input**: A single string `s` (composed of parentheses)
-- **Process**:
-  - Traverse the string character by character
-  - Maintain a counter:
-    - Increment by 1 for `'('`
-    - Decrement by 1 for `')'`
-    - If the counter goes negative at any point, return `False`
-  - After traversal, if the counter is zero, return `True`; else, return `False`
-
----
-
-### 4. Expected Output
-
-- Return the string `"Yes"` **if at least one concatenated string is balanced.**
-- Return the string `"No"` **if neither concatenated string is balanced.**
+##### **Helper Function: `check_string`**
+   - Initialize a counter `balance = 0`
+   - For each character in the string:
+     - If `'('`, increment `balance` by 1.
+     - If `')'`, decrement `balance` by 1.
+     - If at any point `balance < 0`, immediately return `False`.
+   - After the loop, if `balance == 0`, return `True` (balanced).
+   - Else, return `False` (unbalanced).
 
 ---
 
-## Implementation Steps
+### **Expected Output**
+- Either `'Yes'` (if a balanced arrangement is possible), or `'No'` (if not).
 
-**Python-style Pseudocode:**
+---
+
+## **Ready-to-Implement Pseudocode Example**
 
 ```python
 def check_string(s: str) -> bool:
-    count = 0
-    for ch in s:
-        if ch == '(':
-            count += 1
-        elif ch == ')':
-            count -= 1
-        if count < 0:
+    balance = 0
+    for char in s:
+        if char == '(':
+            balance += 1
+        elif char == ')':
+            balance -= 1
+        if balance < 0:
             return False
-    return count == 0
+    return balance == 0
 
-def main(l: list[str]) -> str:
+def can_form_balanced(l: list[str]) -> str:
     s1 = l[0] + l[1]
-    s2 = l[1] + l[2]
-    c1 = check_string(s1)
-    c2 = check_string(s2)
-    if c1 or c2:
+    s2 = l[1] + l[0]
+    if check_string(s1) or check_string(s2):
         return 'Yes'
     else:
         return 'No'
@@ -79,15 +66,15 @@ def main(l: list[str]) -> str:
 
 ---
 
-### Summary Table
-
-| Step         | Action                                                                             |
-|--------------|------------------------------------------------------------------------------------|
-| Input        | `l = [str, str, str]`                                                              |
-| Step 1       | Concatenate: `s1 = l[0]+l[1]`, `s2 = l[1]+l[2]`                                    |
-| Step 2       | Check if `s1` or `s2` is balanced using `check_string`                             |
-| Step 3       | If at least one is balanced, output `'Yes'`; otherwise, output `'No'`              |
+### **Summary Table**
+| Step                        | Description                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------|
+| Input                       | Two strings of parentheses in a list                                        |
+| Generate concatenations     | `s1 = l[0] + l[1]`, `s2 = l[1] + l[0]`                                      |
+| Check balanced status       | Use `check_string()` helper function on both                                 |
+| Decision                    | If either balanced, `'Yes'`; else, `'No'`                                   |
+| Output                      | `'Yes'` or `'No'`                                                           |
 
 ---
 
-**This provides a clear pathway for coding and understanding the algorithm.**
+This structure is clear, direct, and ready for implementation in any modern programming language.

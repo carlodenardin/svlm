@@ -2,29 +2,21 @@ Okay, let's break down this flowchart and describe the algorithm it represents.
 
 **1. Overview of the Algorithm's Purpose**
 
-This algorithm appears to be designed to find the greatest common divisor (GCD) of two integers, *n* and *y*, using the Euclidean algorithm.  The GCD is the largest positive integer that divides both *n* and *y* without leaving a remainder.
+The algorithm appears to be designed to check if a given integer `n` is a perfect square and also if it's a prime number. It does this by first checking if `n` is equal to 1. If not, it iterates through potential divisors from 2 up to the square root of `n`.  Inside the loop, it checks if the current divisor `i` divides `n` evenly (i.e., `n % i == 0`). If it does, it means `n` is not a prime number. If the loop completes without finding any divisors, then `n` is a prime number.
 
 **2. Input Data Required**
 
-*   **n:** An integer (representing the first number).
-*   **y:** An integer (representing the second number).
+*   `n`: An integer representing the number to be checked for primality and perfect square status.
 
 **3. Main Logical Flow (Step-by-Step)**
 
-1.  **Initialization:**
-    *   Declare three integer variables: `n`, `y`, and `i`.
-    *   The flowchart starts by setting `n` to the first integer input.
-    *   `y` is initialized to the second integer input.
-    *   `i` is initialized to 2.
-
-2.  **Initial Check:**
-    *   The algorithm first checks if `n` is equal to 1. If it is, the algorithm terminates and outputs `y` as the GCD.
-
-3.  **Iteration (Loop):**
-    *   If `n` is not equal to 1, the algorithm enters a loop.
-    *   **Square Root Check:** Inside the loop, it checks if `i` (which represents the current iteration number) is less than the square root of `n`.
-    *   **If `i` is NOT less than the square root of `n`:** The algorithm terminates and outputs `x` (which is undefined in the flowchart, but likely represents a value or a message indicating that the GCD is not found).
-    *   **If `i` IS less than the square root of `n`:** The algorithm proceeds to the next step.
-    *   **Modulo Check:** It then checks if `n` is divisible by `i` (i.e., `n % i == 0`).
-    *   **If `n` is divisible by `i`:** The algorithm sets `y` to `i` and terminates.  This is the core of the Euclidean algorithm.
-    *   **If `n` is NOT divisible by `i`:** The algorithm increments `i` by 1 (`i = i + 1`) and continues to the next iteration of the loop
+1.  **Start:** The algorithm begins.
+2.  **Initialization:**  Declare three integer variables: `n`, `x`, and `y`.  The value of `n` will be the input number. `x` and `y` are used as placeholders for the "End" points of the flowchart.
+3.  **Check if n = 1:**  The algorithm first checks if `n` is equal to 1.
+    *   If `n == 1`, the algorithm goes to step 6 (End).
+4.  **Initialize i:**  Set `i` to 2.  `i` will be used as the potential divisor.
+5.  **Check if i <= sqrt(n):**  The algorithm checks if `i` (the current divisor) is less than or equal to the square root of `n`.
+    *   If `i > sqrt(n)`, the algorithm goes to step 8 (End).
+6.  **Check if n % i == 0:**  The algorithm checks if `n` is divisible by `i` without any remainder (i.e., `n % i == 0`).
+    *   If `n % i == 0`, the algorithm goes to step 10 (End).  This means `n` is not a prime number.
+7.  **No Divisors Found:** If the loop completes without finding any divisors (i.e

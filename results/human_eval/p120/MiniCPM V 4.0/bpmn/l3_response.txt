@@ -1,7 +1,7 @@
 ```python
 ```python
-def sort_and_return(list_of_integers, k):
-    list_of_integers.sort()
-    return list_of_integers[-k:]
+def sort_and_return(lst, k):
+    lst.sort()
+    return lst[-k:]
 ```python
 ```

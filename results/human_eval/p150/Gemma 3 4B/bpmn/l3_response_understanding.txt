@@ -2,34 +2,26 @@ Okay, let's break down this flowchart and describe the algorithm it represents.
 
 **1. Overview of the Algorithm's Purpose**
 
-The algorithm appears to be designed to determine the smallest integer among three input integers (n, x, and y) based on specific conditions related to the square root and modulo operations.
+The algorithm appears to be designed to determine a specific value based on three integer inputs: `n`, `x`, and `y`. It seems to be checking for certain conditions related to the square root of `n` and whether `n` is divisible by `i`.  The algorithm ultimately returns either `x` or `y` depending on these conditions.
 
 **2. Input Data Required**
 
 The algorithm requires three integer inputs:
 
-*   `n`: An integer.
-*   `x`: An integer.
-*   `y`: An integer.
+*   `n`: An integer representing the base number.
+*   `x`: An integer that will be returned if certain conditions are not met.
+*   `y`: An integer that will be returned if specific conditions are met.
 
 **3. Main Logical Flow (Step-by-Step)**
 
-Here's a detailed breakdown of the algorithm's logic:
+Here's a detailed breakdown of the algorithm's execution:
 
 1.  **Initialization:** The algorithm starts with an empty state.
-2.  **Input:** The algorithm receives the three integer inputs `n`, `x`, and `y`.
-3.  **Check if n is 1:** It first checks if `n` is equal to 1.
-    *   **If `n` is 1:** The algorithm returns `y`.
-    *   **If `n` is not 1:** The algorithm proceeds to the next step.
-4.  **Initialize i:**  A variable `i` is initialized to 2. This variable will be used in the loop.
-5.  **Check if i < sqrt(n):** The algorithm calculates the square root of `n` and checks if `i` (which is initially 2) is less than the square root of `n`.
-    *   **If `i < sqrt(n)`:** The algorithm returns `x`.
-    *   **If `i >= sqrt(n)`:** The algorithm proceeds to the next step.
-6.  **Check if i % n == 0:** The algorithm checks if the remainder of `i` divided by `n` is equal to 0.
-    *   **If `i % n == 0`:** The algorithm returns `y`.
-    *   **If `i % n != 0`:** The algorithm increases `i` by 1 (i.e., `i = i + 1`).
-7.  **Loop:** The algorithm returns to step 5 and repeats the checks until `i` becomes greater than or equal to `sqrt(n)` and `i % n != 0`.
-
-**4. Expected Output**
-
-The algorithm will return one of the following values:
+2.  **Input:** The algorithm receives the integer values `n`, `x`, and `y` as input.
+3.  **Check if n == 1:** The algorithm first checks if `n` is equal to 1. If it is, the algorithm immediately returns `y`.
+4.  **Set i = 2:** If `n` is not equal to 1, the algorithm sets the variable `i` to 2. This variable will be used in a loop.
+5.  **Check if sqrt(n) <= i:** The algorithm calculates the square root of `n` and compares it to `i`. If the square root of `n` is less than or equal to `i`, the algorithm returns `x`.
+6.  **Check if n % i == 0:** If the square root condition is false, the algorithm checks if `n` is divisible by `i` (i.e., the remainder of `n` divided by `i` is 0).
+    *   **If n % i == 0:** If `n` is divisible by `i`, the algorithm returns `y`.
+    *   **If n % i != 0:** If `n` is not divisible by `i`, the algorithm increments `i` by 1.
+7.  **Loop:** The algorithm repeats steps 5 and 6, incrementing `i` in
