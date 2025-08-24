@@ -104,33 +104,21 @@ def run_bulk_response_test(model_manager, problems, diagrams, levels, prompt, pr
     yield "Bulk test completed."
 
 def run_reasoning_response_test(model_manager, problems, diagrams, levels, prompt, progress = gr.Progress()):
-    """
-    
-    """
     if model_manager.model_name == "GPT5 Nano":
-        # --- INIZIO BLOCCO MODIFICATO ---
 
-        # 1. Calcoliamo il numero esatto di modelli che verranno testati.
         models_to_test = [model for model in MODEL_MAP.keys() if model != "GPT5 Nano"]
         num_models = len(models_to_test)
         
-        # 2. Calcoliamo il numero esatto di combinazioni di diagrammi e livelli,
-        #    rispettando la logica del filtro.
         num_diagram_level_combinations = 0
         for diag in diagrams:
             if diag == "Block Diagram":
-                # Per "Block Diagram" conta solo il livello "1", se presente.
                 if "1" in levels:
                     num_diagram_level_combinations += 1
             else:
-                # Per gli altri diagrammi, contano tutti i livelli.
                 num_diagram_level_combinations += len(levels)
 
-        # 3. Il totale corretto è il prodotto di tutte le dimensioni.
         total_tests = len(problems) * num_models * num_diagram_level_combinations
         
-        # --- FINE BLOCCO MODIFICATO ---
-
         count = 0
 
         filtered_diagrams = {}
