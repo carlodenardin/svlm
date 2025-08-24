@@ -1,4 +1,3 @@
-from src.core.models.deepseekvl2small_model import DeepSeekVlModel
 from src.core.models.llava_model import LlavaModel
 from src.core.models.minicpmv4_model import MiniCPMV4Model
 from src.core.models.gemma_model import GemmaModel
@@ -10,11 +9,6 @@ from src.core.models.paligemma2_model import PaliGemma2Model
 from src.core.models.gpt5_nano import GPT5NanoModel
 
 MODEL_MAP = {
-    #"DeepSeek VL2 Tiny": {
-    #    "name": "DeepSeek VL2 Tiny",
-    #    "model": "deepseek-ai/deepseek-vl2-tiny",
-    #    "class": DeepSeekVlModel
-    #},
     "Gemma 3 4B": {
         "name": "Gemma 3 4B",
         "model": "google/gemma-3-4b-it",
