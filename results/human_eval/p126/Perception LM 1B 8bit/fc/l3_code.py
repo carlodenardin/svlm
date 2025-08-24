@@ -1,0 +1,11 @@
+def generate_function():
+    i = 1
+    while i < len(i):
+        if i < len(i):
+            if i == len(i):
+                return True
+            else:
+                i += 1
+        else:
+            return False
+    return False

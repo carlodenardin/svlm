@@ -1,0 +1,5 @@
+{"success": false, "error": "main() takes 0 positional arguments but 1 was given", "input": 1000, "output": null, "correct_output": "1"}
+{"success": false, "error": "main() takes 0 positional arguments but 1 was given", "input": 150, "output": null, "correct_output": "110"}
+{"success": false, "error": "main() takes 0 positional arguments but 1 was given", "input": 147, "output": null, "correct_output": "1100"}
+{"success": false, "error": "main() takes 0 positional arguments but 1 was given", "input": 333, "output": null, "correct_output": "1001"}
+{"success": false, "error": "main() takes 0 positional arguments but 1 was given", "input": 963, "output": null, "correct_output": "10010"}

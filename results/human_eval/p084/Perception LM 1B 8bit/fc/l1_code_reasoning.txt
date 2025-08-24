@@ -1,0 +1,30 @@
+```python
+def sum_digits_and_binary(n):
+    """
+    Sums the digits of an integer and returns the result as a binary string.
+
+    Args:
+        n (int): The input integer.
+
+    Returns:
+        str: The binary representation of the sum of the digits of n.
+    """
+    # Initialize variables to store the sum of digits and the binary representation
+    sum_of_digits = 0
+    binary_string = ""
+
+    # Iterate over the digits of the input integer
+    for digit in str(n):
+        # Add the current digit to the sum of digits
+        sum_of_digits += int(digit)
+
+    # Convert the sum of digits to binary and remove the '0b' prefix
+    binary_string = bin(sum_of_digits)[2:]
+
+    return binary_string
+
+# Example usage
+n = 12345
+result = sum_digits_and_binary(n)
+print(result)
+```

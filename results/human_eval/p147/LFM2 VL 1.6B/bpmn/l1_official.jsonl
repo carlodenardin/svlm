@@ -1,0 +1,4 @@
+{"success": false, "error": "object of type 'int' has no len()", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "object of type 'int' has no len()", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "object of type 'int' has no len()", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "object of type 'int' has no len()", "input": 100, "output": null, "correct_output": 53361}

@@ -1,5 +1,4 @@
 ```python
-```python
 def check_palindrome(list):
     i = 1
     while i < len(list):
@@ -9,5 +8,4 @@ def check_palindrome(list):
             return False
         i += 1
     return True
-```
 ```

@@ -1,3 +1,4 @@
+```python
 def check_string(s):
     i = 0
     c = 0
@@ -10,3 +11,4 @@ def check_string(s):
         else:
             return False
     return True
+```

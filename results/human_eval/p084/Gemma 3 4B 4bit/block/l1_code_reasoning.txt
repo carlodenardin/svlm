@@ -1,0 +1,34 @@
+```python
+def vlm_to_binary(n: int) -> str:
+    # Step 2: Initialization
+    sum_digits = 0
+    result = ""
+
+    # Step 3: Loop (Summing Digits)
+    while n > 0:
+        remainder = n % 10
+        sum_digits += remainder
+        n //= 10
+        result += str(remainder)
+
+    # Step 4: Final Summation (digital root of sum_digits)
+    s = sum_digits
+    while s >= 10:
+        inner_sum = 0
+        t = s
+        while t > 0:
+            inner_sum += t % 10
+            t //= 10
+        s = inner_sum
+
+    # Step 5: Binary Conversion
+    if s == 0:
+        return "0"
+
+    bits = []
+    while s > 0:
+        bits.append(str(s % 2))
+        s //= 2
+    bits.reverse()
+    return "".join(bits)
+```

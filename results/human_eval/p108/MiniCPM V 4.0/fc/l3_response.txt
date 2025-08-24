@@ -1,6 +1,4 @@
 ```python
-```
-```python
 def calculate_res(arr):
     res = 0
     i = 0
@@ -20,6 +18,4 @@ def calculate_res(arr):
             n = abs(n)
         i += 1
     return res
-```
-```python
 ```

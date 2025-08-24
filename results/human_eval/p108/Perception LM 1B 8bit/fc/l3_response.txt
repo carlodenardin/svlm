@@ -1,3 +1,4 @@
+```python
 def calculate_sum(arr):
     res = 0
     i = 0
@@ -16,9 +17,4 @@ def calculate_sum(arr):
             res += 1
         i += 1
     return res
-
-# Test the function
-print(calculate_sum([1, 2, 3, 4, 5]))  # Output: 5
-print(calculate_sum([1, 2, 3, 4, 5]))  # Output: 5
-print(calculate_sum([1, 2, 3, 4, 5]))  # Output: 5
-print(calculate_sum([1, 2, 3, 4, 5]))  # Output: 5
+```

@@ -1,5 +1,4 @@
 ```python
-```python
 def odd_even_tuple(n):
     even = 0
     odd = 0
@@ -13,5 +12,4 @@ def odd_even_tuple(n):
         n //= 10
         return (odd, even)
     return (None, None)
-```
 ```

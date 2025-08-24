@@ -1,3 +1,4 @@
+```python
 def check_list():
     start = True
     while start:
@@ -10,5 +11,4 @@ def check_list():
         else:
             print("End")
         start = True
-
-check_list()
+```

@@ -1,0 +1,8 @@
+def product_of_digits(n):
+    product = 1
+    while n > 0:
+        d = n % 10
+        if d % 2 == 1:
+            product *= d
+        n //= 10
+    return product

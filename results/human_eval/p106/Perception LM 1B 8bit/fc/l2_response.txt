@@ -1,3 +1,4 @@
+```python
 def calculate_sum(n):
     res = []
     i = 1
@@ -8,34 +9,4 @@ def calculate_sum(n):
         else:
             res.append(i)
     return res
-
-def calculate_sum_of_values():
-    n = int(input("Enter the number of values: "))
-    res = calculate_sum(n)
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
-    print("Sum values from 1 to i and append to res variable")
+```

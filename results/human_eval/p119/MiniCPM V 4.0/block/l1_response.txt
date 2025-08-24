@@ -1,5 +1,4 @@
 ```python
-```python
 def check_balance(combinations):
     concatenated = ''.join(combinations)
     balanced = all(c == ')' and c != concatenated[len(concatenated)-1] for c in concatenated)

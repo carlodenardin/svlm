@@ -1,3 +1,4 @@
+```python
 def calculate_result(n):
     result = []
     i = 1
@@ -8,5 +9,4 @@ def calculate_result(n):
         else:
             result.append(i)
     return result
-
-print(calculate_result(10))
+```

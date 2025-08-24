@@ -5,14 +5,4 @@ def check_balance(strings):
         if all(c == c[1:] for c in concatenated):
             return True
     return False
-
-def main():
-    strings = ["(", "a", ")", "b", ")"]
-    result = check_balance(strings)
-    if result:
-        print("Yes")
-    else:
-        print("No")
-
-main()
 ```

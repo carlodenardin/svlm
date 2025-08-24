@@ -1,10 +1,8 @@
+```python
 def count_sum_of_digits(input_list):
     count = 0
     for num in input_list:
         if num > 0:
             count += 1
     return count
-
-# Test the function
-print(count_sum_of_digits([1, 2, 3, 4, 5]))  # Output: 5
-print(count_sum_of_digits([5, 2, 3, 4, 1]))  # Output: 5
+```

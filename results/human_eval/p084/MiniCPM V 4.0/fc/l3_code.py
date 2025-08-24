@@ -1,0 +1,11 @@
+def transform(n: int) -> str:
+    sum_digit = 0
+    res = ''
+    if n > 0:
+        while n != 0:
+            sum_digit = n % 10
+            res += str(sum_digit)
+            n //= 10
+        if sum_digit > 0:
+            res += str(sum_digit)
+    return res

@@ -1,0 +1,10 @@
+def calculate_sum(n):
+    res = []
+    i = 1
+    while i <= n:
+        if i % 2 == 0:
+            res.append(i)
+            i += 1
+        else:
+            res.append(i)
+    return res

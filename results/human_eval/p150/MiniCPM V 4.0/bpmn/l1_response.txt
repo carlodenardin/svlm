@@ -1,5 +1,4 @@
 ```python
-```python
 def process_input(n, x, y):
     if is_prime(n):
         return x
@@ -20,5 +19,4 @@ x = 10  # Replace with the initial value of x
 y = 20  # Replace with the initial value of y
 result = process_input(n, x, y)
 print(result)  # Output will be '10' or '20' based on whether n is prime or not
-```
 ```

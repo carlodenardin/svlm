@@ -1,5 +1,4 @@
 ```python
-```python
 def count_even_odd(num):
     even_count = 0
     odd_count = 0
@@ -9,5 +8,4 @@ def count_even_odd(num):
         else:
             odd_count += 1
     return (even_count, odd_count)
-```
 ```

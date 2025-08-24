@@ -1,0 +1,5 @@
+def algorithm(start, yes, no):
+    if yes:
+        return start
+    else:
+        return no

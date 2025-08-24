@@ -1,21 +1,33 @@
-def count_zero_sum_subarrays(A):
+def count_zero_sum_subarrays(n):
     """
-    Counts the number of subarrays in a given array A that have a sum of 0.
+    Counts the number of subarrays in a vector of size n where the sum of the elements is equal to 0.
 
     Args:
-        A: A list of integers.
+        n: The size of the vector.
 
     Returns:
         The number of subarrays with a sum of 0.
     """
-    n = len(A)
+    A = [0] * n
     count = 0
-    for i in range(n):
-        if len(A) > 0:
-            for j in range(i, n):
-                current_sum = 0
-                for k in range(i, j + 1):
-                    current_sum += A[k]
-                if current_sum == 0:
+    i = 0
+    while i < len(A):
+        j = i + 1
+        k = j
+        while k < len(A):
+            sum_subarray = sum(A[i:k + 1])
+            if sum_subarray == 0:
+                count += 1
+            k += 1
+        i += 1
+        j = i + 1
+        while j < len(A):
+            k = j
+            while k < len(A):
+                sum_subarray = sum(A[i:k + 1])
+                if sum_subarray == 0:
                     count += 1
+                k += 1
+            j += 1
+        i += 1
     return count

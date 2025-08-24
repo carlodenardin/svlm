@@ -1,0 +1,5 @@
+def check_if_at_least_one_string_is_issued():
+    if 'check' in str(input()) and 'at' in str(input()) and ('least' in str(input())) and ('one' in str(input())) and ('string' in str(input())) and ('issued' in str(input())):
+        return True
+    else:
+        return False

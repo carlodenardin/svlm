@@ -1,0 +1,27 @@
+```python
+def int_to_binary(n: int) -> str:
+    # Step 2: Input n as integer (already provided as parameter)
+    if n == 0:
+        return "0"
+
+    # Handle negative numbers by converting the absolute value and prefixing '-'
+    negative = n < 0
+    if negative:
+        n = -n
+
+    # Step 3: Sum the digits of n and convert it to binary
+    # Initialize an empty string to hold the binary result
+    binary = ""
+    while n > 0:
+        remainder = n % 2
+        # Append the remainder to the binary string
+        binary += str(remainder)
+        # Update n with the quotient
+        n = n // 2
+
+    # Since remainders are collected in reverse order, reverse the string
+    binary = binary[::-1]
+
+    # Step 4: Return result as string (with sign if negative)
+    return ('-' + binary) if negative else binary
+```

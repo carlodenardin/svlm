@@ -1,5 +1,4 @@
 ```python
-```python
 def calculate_sum_of_signed_digits(integers):
     res = 0
     for num in integers:
@@ -9,5 +8,4 @@ def calculate_sum_of_signed_digits(integers):
         if sign_sum > 0:
             res += 1
     return res
-```
 ```

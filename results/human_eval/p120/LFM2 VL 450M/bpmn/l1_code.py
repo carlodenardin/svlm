@@ -1,0 +1,4 @@
+def process_data(data):
+    """Receive a list of integers and a variable k."""
+    k = data[0]
+    return sorted(list(set(data[1:])))

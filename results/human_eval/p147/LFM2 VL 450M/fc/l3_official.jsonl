@@ -1,0 +1,4 @@
+{"success": false, "error": "process() missing 1 required positional argument: 'i'", "input": 5, "output": null, "correct_output": 1}
+{"success": false, "error": "process() missing 1 required positional argument: 'i'", "input": 6, "output": null, "correct_output": 4}
+{"success": false, "error": "process() missing 1 required positional argument: 'i'", "input": 10, "output": null, "correct_output": 36}
+{"success": false, "error": "process() missing 1 required positional argument: 'i'", "input": 100, "output": null, "correct_output": 53361}

@@ -1,3 +1,4 @@
+```python
 def calculate_sum(n):
     if n > 0:
         res = "0"
@@ -18,11 +19,4 @@ def calculate_res(n):
         return res
     else:
         return "No"
-
-def main():
-    n = int(input("Enter an integer number: "))
-    res = calculate_res(n)
-    print("The result is:", res)
-
-if __name__ == "__main__":
-    main()
+```python

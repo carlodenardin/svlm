@@ -1,3 +1,4 @@
+```python
 def extract_ith_value(list_of_integers, i):
     res = 0
     i = 0
@@ -83,3 +84,5 @@ def extract_ith_value_from_list_list_list_list_list_list_list_list(n):
     while len(n) > 0:
         res += n
         n -= 1
+
+```

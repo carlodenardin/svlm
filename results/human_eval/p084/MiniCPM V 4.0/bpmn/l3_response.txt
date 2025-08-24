@@ -1,5 +1,4 @@
 ```python
-```python
 def calculate_residue(n):
     sum = 0
     res = ""
@@ -11,5 +10,4 @@ def calculate_residue(n):
         sum += n % 10
         n = n // 10
     return res
-```
 ```

@@ -1,3 +1,4 @@
+```python
 def generate_function():
     def generate():
         i = 0
@@ -15,5 +16,4 @@ def generate_function():
             return
 
     return generate
-
-print(generate_function())
+```

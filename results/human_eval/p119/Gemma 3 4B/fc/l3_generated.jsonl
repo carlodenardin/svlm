@@ -356,7 +356,7 @@
 {"success": false, "error": "maximum recursion depth exceeded", "input": ["", "(()))())(("], "output": null, "correct_output": "No"}
 {"success": false, "error": "maximum recursion depth exceeded", "input": ["()(()()((((()))()()))(()()()(())()", "))()()())()()("], "output": null, "correct_output": "No"}
 {"success": false, "error": "maximum recursion depth exceeded", "input": ["()()()(()((", "()())(((("], "output": null, "correct_output": "No"}
-{"success": false, "error": "string index out of range", "input": ["(", ""], "output": null, "correct_output": "No"}
+{"success": false, "error": "maximum recursion depth exceeded", "input": ["(", ""], "output": null, "correct_output": "No"}
 {"success": false, "error": "maximum recursion depth exceeded", "input": ["))", "(("], "output": null, "correct_output": "Yes"}
 {"success": false, "error": "maximum recursion depth exceeded", "input": ["((()((())()))((()(((()()((((())())()()((", "())()()(((())("], "output": null, "correct_output": "No"}
 {"success": false, "error": "maximum recursion depth exceeded", "input": [")()()()()())", "(()()()()()("], "output": null, "correct_output": "Yes"}

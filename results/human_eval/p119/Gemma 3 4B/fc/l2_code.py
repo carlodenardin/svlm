@@ -1,20 +1,16 @@
-def check_balanced_parentheses(s):
+def check_string(s):
     """
-    Checks if a string composed of rounded parentheses is balanced.
-
-    Args:
-        s: The input string.
-
-    Returns:
-        True if the string is balanced, False otherwise.
+    Checks if a string composed of rounded parentheses is 'balanced'.
+    Balanced means that every '(' has a matching ')' and
+    the number never exceed openings in order.
     """
-    s1 = [0] + [0] * (len(s) - 1)
-    s2 = [0] + [0] * (len(s) - 1)
+    s1 = 0
+    s2 = 0
     for i in range(len(s)):
-        if s[i] == '(':
-            s1[i] += 1
-        elif s[i] == ')':
-            s1[i] -= 1
-        if s1[i] < 0:
+        if s[i] == '[':
+            s1 += 1
+        elif s[i] == ']':
+            s2 += 1
+        if s1 < s2:
             return False
-    return True
+    return s1 == s2

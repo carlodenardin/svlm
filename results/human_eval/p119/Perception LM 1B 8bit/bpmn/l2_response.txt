@@ -1,3 +1,4 @@
+```python
 def check_string(s):
     # Receive a list composed of 2 strings
     s1, s2 = s.split()
@@ -18,8 +19,6 @@ def check_string(s):
         return False
 
 def check_string(s):
-    # Receive a string
-    s = input("Enter a string: ")
     
     # Check if s is balanced
     if s.isbalanced():
@@ -28,3 +27,4 @@ def check_string(s):
     else:
         # Return False
         return False
+```

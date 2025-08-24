@@ -1,0 +1,3 @@
+def sort_and_keep_elements(lst, k):
+    sorted_lst = sorted(lst, reverse=True)
+    return sorted_lst[:k]

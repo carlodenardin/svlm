@@ -1,5 +1,4 @@
 ```python
-```python
 def generate_res(n):
     res = []
     i = 1
@@ -10,5 +9,4 @@ def generate_res(n):
             res.append(i * sum(range(1, i)))
         i += 1
     return res
-```
 ```

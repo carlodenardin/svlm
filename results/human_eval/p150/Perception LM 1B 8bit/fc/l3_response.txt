@@ -1,3 +1,4 @@
+```python
 def calculate(x, y, n):
     if n == 1:
         return x
@@ -6,12 +7,4 @@ def calculate(x, y, n):
             return x
         else:
             return calculate(n - 1, y, n)
-
-def main():
-    i = 1
-    while i <= 100:
-        print(i, ":", calculate(i, 2, i))
-        i += 1
-
-if __name__ == "__main__":
-    main()
+```

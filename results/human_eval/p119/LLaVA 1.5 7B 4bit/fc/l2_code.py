@@ -1,0 +1,16 @@
+def algorithm(diagram):
+    logic = diagram.split('or')[0]
+    if 'check' in logic:
+        return f'check {logic}'
+    elif 'save' in logic:
+        return f'save {logic}'
+    elif 'function' in logic:
+        return f'function {logic}'
+    elif 'if' in logic:
+        return f'if {logic}'
+    elif 'else' in logic:
+        return f'else {logic}'
+    elif 'return' in logic:
+        return f'return {logic}'
+    else:
+        return f'else {logic}'

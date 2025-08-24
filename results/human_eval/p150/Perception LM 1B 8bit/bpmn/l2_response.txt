@@ -1,3 +1,4 @@
+```python
 def find_divisor(n):
     if n == 1:
         return 1
@@ -78,3 +79,4 @@ def find_divisor(n):
             if n % i == 0:
                 return i
         return n
+```

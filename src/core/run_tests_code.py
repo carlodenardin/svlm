@@ -4,9 +4,8 @@ import concurrent.futures
 import json
 import ast
 import gc
-import timeout_decorator
+import signal
 import sys
-import gradio as gr
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from tqdm import tqdm
@@ -47,7 +46,7 @@ def _extract_python_function(response):
             return final_code.strip(), True, function_name
 
     except (SyntaxError, AttributeError) as e:
-        print(f"Errore durante il parsing del codice generato: {e}")
+        print(f"Parsing error in generated code: {e}")
         return None, False, ""
 
 def _load_test(problem, test):
@@ -83,7 +82,7 @@ def _load_test(problem, test):
         print(f"Error loading or parsing test data from {path}: {e}")
         return []
 
-def _run_code(code, tests, function_name, timeout = 5):
+def _run_code(code, tests, function_name, timeout = 2):
     """
     Run the provided test using the generated code
     """
@@ -102,6 +101,7 @@ def _run_code(code, tests, function_name, timeout = 5):
         namespace = {}
 
         try:
+
             exec_code = f"{code}\nresult = {function_name}{repr(exec_args)}"
             exec(exec_code, namespace)
             output = namespace.get("result")
@@ -138,7 +138,7 @@ def _process_task(args):
     diagram_folder = DIAGRAM_MAP.get(diagram)
 
     response_dir = os.path.join("results/human_eval", problem, model_name, diagram_folder)
-    response_path = os.path.join(response_dir, f"l{level}_response.txt")
+    response_path = os.path.join(response_dir, f"l{level}_code_reasoning.txt")
 
     try:
         with open(response_path, "r", encoding="utf-8") as f:
@@ -147,36 +147,57 @@ def _process_task(args):
         return f"Warning: Response file not found for {problem}/{diagram}/L{level}"
     
     code, code_extracted, function_name = _extract_python_function(response)
-
+    code_path = os.path.join(response_dir, f"l{level}_code.py")
+    os.makedirs(response_dir, exist_ok=True)
+    
     if code_extracted:
-        code_path = os.path.join(response_dir, f"l{level}_code.py")
-        os.makedirs(response_dir, exist_ok=True)
+
         with open(code_path, "w", encoding="utf-8") as f:
             f.write(code)
-         
+        
         official_tests = _load_test(problem, "official")
         generated_tests = _load_test(problem, "generated")
-        
-        print(official_tests)
-        print(generated_tests)
 
         official_results = _run_code(code, official_tests, function_name)
         generated_results = _run_code(code, generated_tests, function_name)
         
-        official_path = os.path.join(response_dir, f"l{level}_official.jsonl")
+        official_path = os.path.join(response_dir, f"l{level}_official_reasoning.jsonl")
         with open(official_path, 'w', encoding="utf-8") as f:
             for result in official_results:
                 f.write(json.dumps(result) + '\n')
 
-        generated_path = os.path.join(response_dir, f"l{level}_generated.jsonl")
+        generated_path = os.path.join(response_dir, f"l{level}_generated_reasoning.jsonl")
         with open(generated_path, 'w', encoding="utf-8") as f:
             for result in generated_results:
                 f.write(json.dumps(result) + '\n')
 
         return f"Success: Completed {problem}/{diagram}/L{level}"
-    else:
-        return f"Warning: No valid function found in {problem}/{diagram}/L{level}"
     
+    else:
+        results = []
+
+        results.append({
+            "success": False,
+            "error": "Warning: No valid function found.",
+            "input": "",
+            "output": "",
+            "correct_output": ""
+        })
+
+        official_path = os.path.join(response_dir, f"l{level}_official_reasoning.jsonl")
+        with open(official_path, 'w', encoding="utf-8") as f:
+            for result in results:
+                f.write(json.dumps(result) + '\n')
+
+        generated_path = os.path.join(response_dir, f"l{level}_generated_reasoning.jsonl")
+        with open(generated_path, 'w', encoding="utf-8") as f:
+            for result in results:
+                f.write(json.dumps(result) + '\n')
+
+        return f"Warning: No valid function found in {problem}/{diagram}/L{level}"
+
+
+
 def run_bulk_code_test(model_name, problems, diagrams, levels):
     tasks = []
     

@@ -1,0 +1,5 @@
+def sort_list(k):
+    list_of_integers = []
+    for i in range(k):
+        list_of_integers.append(i)
+    return sorted(list_of_integers)

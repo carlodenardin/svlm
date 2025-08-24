@@ -1,0 +1,9 @@
+def process_integer(input):
+    if input == 1:
+        return 1
+    elif input == 2:
+        return 2
+    elif input == 3:
+        return 3
+    else:
+        return 4

@@ -1,0 +1,10 @@
+def check_string(s):
+    balanced = True
+    for i in range(len(s)):
+        if i == 0 or i == len(s) - 1:
+            continue
+        if s[i] == '(' and s[i + 1] == ')':
+            balanced = False
+        elif s[i] == ')' and s[i - 1] == '(':
+            balanced = False
+    return balanced

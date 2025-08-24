@@ -14,11 +14,8 @@ api_key = os.getenv("GPT5_NANO")
 class GPT5NanoModel(BaseModel):
 
     def _encode_image(self, image):
-        # Create a byte buffer in memory
         buffered = io.BytesIO()
-        # Save the image object to the buffer in PNG format
         image.save(buffered, format="PNG")
-        # Get the bytes from the buffer and encode them
         img_bytes = buffered.getvalue()
         return base64.b64encode(img_bytes).decode("utf-8")
 
@@ -29,22 +26,34 @@ class GPT5NanoModel(BaseModel):
         return "Define OpenAI API in env"
         
     def generate_response(self, image_input, prompt):
-
-        response = self.client.responses.create(
-            model="gpt-4.1",
-            input=[
-                {
-                    "role": "user",
-                    "content": [
-                        { "type": "input_text", "text": prompt },
-                        {
-                            "type": "input_image",
-                            "image_url": f"data:image/png;base64,{self._encode_image(image_input)}",
-                        },
-                    ],
-                }
-            ],
-        )
+        if image_input is not None:
+            response = self.client.responses.create(
+                model = self.model_config["model"],
+                input=[
+                    {
+                        "role": "user",
+                        "content": [
+                            { "type": "input_text", "text": prompt },
+                            {
+                                "type": "input_image",
+                                "image_url": f"data:image/png;base64,{self._encode_image(image_input)}",
+                            },
+                        ],
+                    }
+                ],
+            )
+        else:
+            response = self.client.responses.create(
+                model = self.model_config["model"],
+                input=[
+                    {
+                        "role": "user",
+                        "content": [
+                            { "type": "input_text", "text": prompt },
+                        ],
+                    }
+                ],
+            )
 
         return response.output_text;
 

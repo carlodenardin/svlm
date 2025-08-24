@@ -1,15 +1,11 @@
-def sum_digits_to_binary(n):
+def sum_digits_to_binary(n: int) -> str:
     """
-  Calculates the sum of the digits of an integer and converts it to binary.
-
-  Args:
-    n: An integer number.
-
-  Returns:
-    The binary representation of the sum of the digits of n as a string.
-  """
+    Take an integer n, compute the sum of its digits, and return
+    the binary representation of that sum as a string (without the '0b' prefix).
+    """
+    n_abs = abs(n)
     sum_of_digits = 0
-    for digit in str(n):
-        sum_of_digits += int(digit)
-    binary_result = bin(sum_of_digits)[2:]
-    return binary_result
+    while n_abs != 0:
+        sum_of_digits += n_abs % 10
+        n_abs //= 10
+    return bin(sum_of_digits)[2:]

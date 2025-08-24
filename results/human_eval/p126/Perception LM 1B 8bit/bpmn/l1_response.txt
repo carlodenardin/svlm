@@ -1,6 +1,5 @@
-def sort_integers():
-    # receive a list of integers
-    num_list = input("Enter a list of integers: ")
+```python
+def sort_integers(num_list):
     
     # sort the list and check if it has no more than one duplicate of the same number
     if sorted(num_list) == num_list:
@@ -9,10 +8,4 @@ def sort_integers():
     else:
         print("The list is sorted and has no more than one duplicate of the same number.")
         return True
-
-# test the function
-if sort_integers():
-    print("The function is working correctly.")
-else:
-    print("The function is not working correctly.")
 ```

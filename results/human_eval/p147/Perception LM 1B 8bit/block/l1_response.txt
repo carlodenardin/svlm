@@ -1,7 +1,5 @@
-def generate_function():
-    # receive an integer as input
-    input_value = int(input())
-    
+```python
+def generate_function(input_value):
     # create a list of dimension n
     list_of_n = []
     
@@ -12,6 +10,4 @@ def generate_function():
     
     # return how many sum of distinct triples of the list are multiple of 3
     return len(list_of_n) % 3 == 0
-
-# test the function
-print(generate_function())
+```

@@ -1,4 +1,6 @@
+```python
 def count even_odd_digits(n):
     even = sum(1 for i in str(n) if i.isdigit())
     odd = sum(1 for i in str(n) if i not in '0-9')
     return even, odd
+```

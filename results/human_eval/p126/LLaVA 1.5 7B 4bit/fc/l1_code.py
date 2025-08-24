@@ -1,0 +1,7 @@
+def check_if_list_is_sorted_ascending(list):
+    if list.count() > 1:
+        for i in range(len(list)):
+            if list[i] < list[i + 1]:
+                return False
+        return True
+    return False

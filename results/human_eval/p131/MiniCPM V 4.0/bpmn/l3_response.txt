@@ -1,5 +1,4 @@
 ```python
-```python
 def product_of_digits(n):
     product = 1
     while n > 0:

@@ -1,3 +1,4 @@
+```python
 def sort_list(k, list_):
     """
     Sort the list and keep the last k elements.
@@ -16,3 +17,4 @@ def sort_list(k, list_):
     sorted_list = sorted(original_list, k=k)
     
     return sorted_list
+```

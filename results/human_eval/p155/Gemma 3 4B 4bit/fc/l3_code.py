@@ -1,0 +1,20 @@
+def find_even_odd(num):
+    """
+    This function takes an integer as input and returns a tuple containing the number of even and odd numbers
+    less than or equal to the input number.
+    """
+    even = 0
+    odd = 0
+    n = abs(num)
+    d = n % 10
+    while n != 0:
+        if n % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+        d = n % 10
+        if d != 0:
+            n = n // 10
+        else:
+            n = 0
+    return (even, odd)

@@ -27,7 +27,7 @@ MODEL_MAP = {
     },
     "GPT5 Nano": {
         "name": "GPT5 Nano",
-        "model": "gpt5-nano",
+        "model": "gpt-5-nano",
         "class": GPT5NanoModel
     },
     "LFM2 VL 450M": {
@@ -80,5 +80,7 @@ PROMPT2 = """You are a software engineer. Given an image of a flowchart, describ
 - The main logical flow, detailing decisions, loops, and function calls.
 - The expected output.
 Present the information clearly and concisely, ready for implementation."""
+
+PROMPT3 = """Below you are given the reasoning of a small VLM about how to solve a problem. Your task is to strictly follow this reasoning and translate it into executable Python function, without improving or changing the approach. Output only the code inside python ```python ```"""
 
 PATTERN = r"```python\n(.*?)\n```"

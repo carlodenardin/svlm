@@ -1,0 +1,10 @@
+```python
+def sum_digits_to_binary_string(n: int) -> str:
+    # Start
+    # Input n as integer
+    # Sum the digits of n and convert it to binary
+    # Return result as string
+    # End
+    total = sum(int(ch) for ch in str(abs(n)) if ch.isdigit())
+    return bin(total)[2:]
+```

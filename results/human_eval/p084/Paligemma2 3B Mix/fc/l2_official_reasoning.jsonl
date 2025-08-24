@@ -1,0 +1,5 @@
+{"success": false, "error": "Input must be a non-empty list of numbers.", "input": 1000, "output": null, "correct_output": "1"}
+{"success": false, "error": "Input must be a non-empty list of numbers.", "input": 150, "output": null, "correct_output": "110"}
+{"success": false, "error": "Input must be a non-empty list of numbers.", "input": 147, "output": null, "correct_output": "1100"}
+{"success": false, "error": "Input must be a non-empty list of numbers.", "input": 333, "output": null, "correct_output": "1001"}
+{"success": false, "error": "Input must be a non-empty list of numbers.", "input": 963, "output": null, "correct_output": "10010"}

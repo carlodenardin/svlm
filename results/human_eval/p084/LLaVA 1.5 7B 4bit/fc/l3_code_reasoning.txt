@@ -1,0 +1,19 @@
+```python
+def sum_two_numbers(a=None, b=None):
+    # Start
+    # Step 2: Read first input number
+    if a is None:
+        a = float(input())
+    # Step 3: Read second input number
+    if b is None:
+        b = float(input())
+    # Step 4: Calculate the sum
+    total = a + b
+    # Step 5: Display the sum
+    print(total)
+    # Step 6: End
+    return total
+
+if __name__ == "__main__":
+    sum_two_numbers()
+```

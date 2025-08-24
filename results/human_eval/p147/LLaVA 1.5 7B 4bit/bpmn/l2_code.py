@@ -1,0 +1,7 @@
+def multiply_counter(a, b):
+    counter = 1
+    while b > 0:
+        result = a * counter
+        b -= counter
+        counter += 1
+    return result

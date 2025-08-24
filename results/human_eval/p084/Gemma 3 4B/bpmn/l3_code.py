@@ -1,20 +1,13 @@
-def calculate_result(n):
-    """
-    Calculates a result based on the input integer n.
-
-    Args:
-        n: An integer.
-
-    Returns:
-        The calculated result.
-    """
-    sum_val = 0
-    res = 0
+def compute_res(n: int) -> str:
+    sum_digits = 0
+    res = ''
     while n > 0:
-        sum_val += n % 10
-        n = n // 10
-        if sum_val > 0:
-            r = sum_val % 2
-            sum_val = sum_val // 10
-            res += str(r)
+        sum_digits += n % 10
+        n //= 10
+    if sum_digits > 0:
+        r = sum_digits % 2
+        sum_digits = sum_digits // 10
+        res = str(r) + res
+    else:
+        return res
     return res

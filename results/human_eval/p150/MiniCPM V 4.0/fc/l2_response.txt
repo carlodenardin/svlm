@@ -1,5 +1,4 @@
 ```python
-```python
 def find_divisors(n):
     if n == 1:
         return [1]
@@ -17,5 +16,4 @@ def main():
     print("Divisors of", n, "are:", divisors)
 
 main()
-```
 ```

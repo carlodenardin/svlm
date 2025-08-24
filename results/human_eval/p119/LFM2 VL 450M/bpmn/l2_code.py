@@ -1,0 +1,5 @@
+def check_string(strings):
+    if len(strings) == 2:
+        return True
+    else:
+        return False

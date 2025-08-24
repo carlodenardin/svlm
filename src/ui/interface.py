@@ -1,7 +1,7 @@
 from functools import partial
 from PIL import Image
 from src.core.model_manager import ModelManager
-from src.core.run_tests import run_bulk_response_test
+from src.core.run_tests import run_bulk_response_test, run_reasoning_response_test
 from src.core.run_tests_code import run_bulk_code_test
 from src.utils.const import MODEL_MAP, DIAGRAMS_LEVELS, DIAGRAMS_TYPES, DIAGRAM_MAP, PROMPT
 from src.utils.utils import get_css_style, get_gpu_info, update_link, get_available_problems
@@ -127,13 +127,20 @@ def create_gradio_interface():
                             interactive = True
                         )
                         
-                        start_bulk_response_test_button = gr.Button("Start Tests", variant = "primary")
+                        start_bulk_response_test_button = gr.Button("Generate Response", variant = "primary")
+                        start_reasoning_response_test_button = gr.Button("Generate Reasoning Response", variant = "primary")
                         
                 gr.Markdown("---")
                 bulk_output = gr.Textbox(label = "Output", lines = 4)
                 
                 start_bulk_response_test_button.click(
                     fn = partial(run_bulk_response_test, model_manager),
+                    inputs = [selected_problems, selected_diagrams, selected_levels, prompt_textbox],
+                    outputs = bulk_output
+                )
+
+                start_reasoning_response_test_button.click(
+                    fn = partial(run_reasoning_response_test, model_manager),
                     inputs = [selected_problems, selected_diagrams, selected_levels, prompt_textbox],
                     outputs = bulk_output
                 )

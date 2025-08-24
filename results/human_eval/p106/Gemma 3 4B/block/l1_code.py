@@ -16,3 +16,18 @@ def generate_list(n):
         else:
             result.append(sum(range(1, i + 1)))
     return result
+
+def factorial(n):
+    """
+    Computes the factorial of a non-negative integer.
+
+    Args:
+        n: A non-negative integer.
+
+    Returns:
+        The factorial of n.
+    """
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)

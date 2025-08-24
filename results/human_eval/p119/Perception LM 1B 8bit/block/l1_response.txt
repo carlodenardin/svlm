@@ -1,6 +1,7 @@
-def check_combinations():
+```python
+def check_combinations(s1, s2):
     # Receive a list of 2 strings as input
-    input_strs = input("Enter two strings: ")
+    input_strs = s1 + s2
     
     # Concatenate the strings with both combinations
     combined_strs = input_strs + input_strs
@@ -14,3 +15,4 @@ def check_combinations():
     
     # Return 'No' if both the combinations are unbalanced, 'Yes' otherwise
     return 'No' if balanced else 'Yes'
+```

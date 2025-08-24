@@ -1,3 +1,4 @@
+```python
 def calculateodd(n):
     if n % 2 == 0:
         return 0
@@ -83,3 +84,4 @@ def calculateodd_and_even_and_even_and_even_and_even(n):
         return calculateodd(n)
 
 def calculateodd_and_even_and_even_and_even_and_even(n
+```

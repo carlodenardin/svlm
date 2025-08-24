@@ -1,5 +1,4 @@
 ```python
-```python
 def count_even_odd(n):
     count_even = 0
     count_odd = 0
@@ -13,5 +12,4 @@ def count_even_odd(n):
 # Example usage:
 # result = count_even_odd(12345)
 # print(result)  # Output: (2, 3)
-```
 ```

@@ -1,0 +1,6 @@
+def process_integers(integers):
+    if not integers:
+        return False
+    if len(integers) == 1:
+        return True
+    return False

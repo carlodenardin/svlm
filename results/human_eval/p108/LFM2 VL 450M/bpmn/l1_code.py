@@ -1,0 +1,6 @@
+def process_integers(integer_list):
+    count = 0
+    for integer in integer_list:
+        if integer > 0:
+            count += 1
+    return count

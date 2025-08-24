@@ -1,3 +1,4 @@
+```python
 def generate_function():
     start = "Start"
     list_of_2_strings = "List of 2 strings"
@@ -74,4 +75,4 @@ def generate_function():
         return "End"
     else:
         if at_least_one_string is balanced():
-           
+```

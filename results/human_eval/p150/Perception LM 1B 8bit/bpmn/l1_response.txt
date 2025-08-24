@@ -1,3 +1,4 @@
+```python
 def is_prime(n):
     if n <= 1:
         return False
@@ -5,18 +6,4 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
-
-def main():
-    n = int(input("Enter the input: "))
-    if is_prime(n):
-        return n
-    else:
-        return n
-
-if __name__ == "__main__":
-    print("Return x: ", main())
-    print("Return y: ", main())
-
-if __name__ == "__main__":
-    print("Return x: ", main())
-    print("Return y: ", main())
+```

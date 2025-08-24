@@ -1,3 +1,4 @@
+```python
 def calculate_string(n):
     if n > 0:
         sum = 0
@@ -10,12 +11,4 @@ def calculate_string(n):
         sum += n % 10
         res = str(sum) + res
     return res
-
-def main():
-    start = "Start"
-    n = int(input("Enter a number: "))
-    res = calculate_string(n)
-    print("The final result is:", res)
-
-if __name__ == "__main__":
-    main()
+```

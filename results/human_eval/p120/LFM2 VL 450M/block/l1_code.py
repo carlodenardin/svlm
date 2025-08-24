@@ -1,0 +1,3 @@
+def sort_list(input_list):
+    sorted_list = sorted(input_list)
+    return sorted_list

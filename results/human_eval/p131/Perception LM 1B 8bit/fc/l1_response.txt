@@ -1,15 +1,7 @@
+```python
 def calculate_product(n):
     if n % 2 == 0:
         return 0
     else:
         return n
-
-def main():
-    start = "Start"
-    n = positive_integer(n)
-    product = calculate_product(n)
-    print("The product of the odd digits of", n, "is", product)
-    print("End")
-
-if __name__ == "__main__":
-    main()
+```

@@ -1,0 +1,7 @@
+def process_data(data):
+    if data['n'] == 1:
+        return 'End'
+    elif data['n'] == 2:
+        return 'End'
+    else:
+        return 'End'

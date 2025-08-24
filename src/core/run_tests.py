@@ -1,18 +1,11 @@
 import os
-import re
-import json
-import ast
 import torch
-import gc
-import timeout_decorator
 import sys
 import gradio as gr
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from PIL import Image
-from tqdm import tqdm
-from src.utils.const import DIAGRAM_MAP, PATTERN, MODEL_MAP, PROMPT, PROMPT2
-from src.core.model_manager import ModelManager
+from src.utils.const import DIAGRAM_MAP, PATTERN, MODEL_MAP, PROMPT, PROMPT2, PROMPT3
     
 def _generate_response(model_manager, image, prompt):
     """
@@ -109,3 +102,77 @@ def run_bulk_response_test(model_manager, problems, diagrams, levels, prompt, pr
                 torch.cuda.empty_cache()
 
     yield "Bulk test completed."
+
+def run_reasoning_response_test(model_manager, problems, diagrams, levels, prompt, progress = gr.Progress()):
+    """
+    
+    """
+    if model_manager.model_name == "GPT5 Nano":
+        # --- INIZIO BLOCCO MODIFICATO ---
+
+        # 1. Calcoliamo il numero esatto di modelli che verranno testati.
+        models_to_test = [model for model in MODEL_MAP.keys() if model != "GPT5 Nano"]
+        num_models = len(models_to_test)
+        
+        # 2. Calcoliamo il numero esatto di combinazioni di diagrammi e livelli,
+        #    rispettando la logica del filtro.
+        num_diagram_level_combinations = 0
+        for diag in diagrams:
+            if diag == "Block Diagram":
+                # Per "Block Diagram" conta solo il livello "1", se presente.
+                if "1" in levels:
+                    num_diagram_level_combinations += 1
+            else:
+                # Per gli altri diagrammi, contano tutti i livelli.
+                num_diagram_level_combinations += len(levels)
+
+        # 3. Il totale corretto è il prodotto di tutte le dimensioni.
+        total_tests = len(problems) * num_models * num_diagram_level_combinations
+        
+        # --- FINE BLOCCO MODIFICATO ---
+
+        count = 0
+
+        filtered_diagrams = {}
+        for diag in diagrams:
+            if diag == "Block Diagram":
+                filtered_diagrams[diag] = [lvl for lvl in levels if lvl == "1"]
+            else:
+                filtered_diagrams[diag] = levels
+
+        for problem in problems:
+            for model in MODEL_MAP.keys():
+                if model != "GPT5 Nano":
+                    for diagram, level_list in filtered_diagrams.items():
+                        diagram_folder = DIAGRAM_MAP.get(diagram)
+                        
+                        for level in level_list:
+                            progress(count / total_tests, desc=f"Testing: {problem} / {model} / {diagram} / L{level}")
+                            print(f"Testing: {problem} / {model} / {diagram} / l{level}_response_understanding.txt")
+                            count += 1
+                            
+                            reasoning_file_path = f"results/human_eval/{problem}/{model}/{diagram_folder}/l{level}_response_understanding.txt"
+
+                            with open(reasoning_file_path, 'r', encoding='utf-8') as file:
+                                reasoning = file.read()
+                            
+                            prompt = PROMPT3 + "/n/n" + reasoning
+
+                            response = _generate_response(model_manager, None, prompt)
+
+                            print(response)
+
+                            if not response:
+                                yield "Error: Model response was empty."
+                                continue
+
+                            response_dir = os.path.join("results/human_eval", problem, model, diagram_folder)
+                            os.makedirs(response_dir, exist_ok = True)
+
+                            print(response_dir)
+                            
+                            response_path = os.path.join(response_dir, f"l{level}_code_reasoning.txt")
+                            with open(response_path, "w") as f:
+                                f.write(response)
+
+        yield "Bulk test completed."

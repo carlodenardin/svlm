@@ -1,0 +1,9 @@
+```python
+def sum_of_digits_binary(n: int) -> str:
+    digit_sum = 0
+    while n > 0:
+        last_digit = n % 10
+        digit_sum += last_digit
+        n //= 10
+    return bin(digit_sum)[2:]
+```

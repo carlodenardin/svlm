@@ -1,0 +1,4 @@
+def sort_elements(k):
+    elements = [i for i in range(k)]
+    elements.sort()
+    return elements[-k:]

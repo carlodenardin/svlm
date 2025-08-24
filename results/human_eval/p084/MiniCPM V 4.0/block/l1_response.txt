@@ -1,5 +1,4 @@
 ```python
-```python
 def convert_to_binary(n):
     digits = [int(digit) for digit in str(n)]
     binary_digits = [str(digit) for digit in digits]

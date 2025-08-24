@@ -1,0 +1,16 @@
+I’m missing the “reasoning of a small VLM” you mentioned. Please provide:
+
+- The problem statement or the exact reasoning steps you want me to translate.
+- Any inputs/outputs, edge cases, and constraints.
+- Format for the flowcharts (ASCII diagrams, or embedded as comments/strings, or images).
+- Any specific Python version or library constraints.
+
+Once I have the reasoning or problem details, I’ll produce the executable Python function exactly following it, and include:
+- The code inside a Python code block.
+- Flowchart diagrams for:
+  - the entire code
+  - the data structures used
+  - the main window
+  - the test cases
+
+Please paste the reasoning text or the step-by-step approach you want me to implement.

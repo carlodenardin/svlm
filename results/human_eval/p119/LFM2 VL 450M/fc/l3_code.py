@@ -1,0 +1,7 @@
+def check_string(s):
+    if s == '0':
+        return True
+    elif s == '1':
+        return False
+    else:
+        return 'End'

@@ -1,5 +1,4 @@
 ```python
-```python
 def convert_to_binary(n):
     # Input n as integer
     num = n
@@ -8,5 +7,4 @@ def convert_to_binary(n):
     binary_representation = bin(binary_sum)[2:]
     # Return result as string
     return binary_representation
-```
 ```

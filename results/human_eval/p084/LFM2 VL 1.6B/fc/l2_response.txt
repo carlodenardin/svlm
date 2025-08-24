@@ -1,6 +1,8 @@
+```python
 def start(n):
     res = []
     res.append(0)
     res.append(n)
     res.append(int(str(res[-1])))
     return''.join(res)
+```

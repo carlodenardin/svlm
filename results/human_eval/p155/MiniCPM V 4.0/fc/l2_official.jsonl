@@ -1,0 +1,8 @@
+{"success": false, "error": "name 'num' is not defined", "input": 7, "output": null, "correct_output": [0, 1]}
+{"success": false, "error": "name 'num' is not defined", "input": -78, "output": null, "correct_output": [1, 1]}
+{"success": false, "error": "name 'num' is not defined", "input": 3452, "output": null, "correct_output": [2, 2]}
+{"success": false, "error": "name 'num' is not defined", "input": 346211, "output": null, "correct_output": [3, 3]}
+{"success": false, "error": "name 'num' is not defined", "input": -345821, "output": null, "correct_output": [3, 3]}
+{"success": false, "error": "name 'num' is not defined", "input": -2, "output": null, "correct_output": [1, 0]}
+{"success": false, "error": "name 'num' is not defined", "input": -45347, "output": null, "correct_output": [2, 3]}
+{"success": false, "error": "name 'num' is not defined", "input": 0, "output": null, "correct_output": [1, 0]}

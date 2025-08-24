@@ -1,3 +1,4 @@
+```python
 def generate_function():
     def generate(n):
         if n == 0:
@@ -82,3 +83,4 @@ def generate_function():
             return 0
         else:
             return generate(n-1)
+```

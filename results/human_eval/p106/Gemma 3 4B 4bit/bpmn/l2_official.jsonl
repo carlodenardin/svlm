@@ -1,0 +1,4 @@
+{"success": false, "error": "", "input": 5, "output": [1, 1, 2, 2, 6, 3, 24, 4, 120, 5], "correct_output": [1, 2, 6, 24, 15]}
+{"success": false, "error": "", "input": 7, "output": [1, 1, 2, 2, 6, 3, 24, 4, 120, 5, 720, 6, 5040, 7], "correct_output": [1, 2, 6, 24, 15, 720, 28]}
+{"success": false, "error": "", "input": 1, "output": [1, 1], "correct_output": [1]}
+{"success": false, "error": "", "input": 3, "output": [1, 1, 2, 2, 6, 3], "correct_output": [1, 2, 6]}

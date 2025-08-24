@@ -1,30 +1,27 @@
 def calculate_result(n):
     """
     Calculates a result based on the input integer n.
-
-    The algorithm iterates from 1 to n.
-    If the current number i is even, it calculates the product of numbers from 1 to i.
-    Otherwise, it calculates the sum of numbers from 1 to i.
-    The calculated value is added to the result list and the counter is incremented.
+    If n is even, it calculates the product of numbers from 1 to n.
+    Otherwise, it calculates the sum of numbers from 1 to n.
+    The result is stored in a list and returned.
 
     Args:
         n: An integer.
 
     Returns:
-        A list containing the calculated values.
+        A list containing the calculated result.
     """
-    result = []
+    result_list = []
     counter = 0
-    for i in range(1, n + 1):
-        if i % 2 == 0:
+    if n >= 0:
+        if n % 2 == 0:
             product = 1
-            for j in range(1, i + 1):
-                product *= j
-            result.append(product)
+            for i in range(1, n + 1):
+                product *= i
+            result_list.append(product)
         else:
             sum_val = 0
-            for j in range(1, i + 1):
-                sum_val += j
-            result.append(sum_val)
-        counter += 1
-    return result
+            for i in range(1, n + 1):
+                sum_val += i
+            result_list.append(sum_val)
+    return result_list

@@ -1,5 +1,4 @@
 ```python
-```python
 def analyze_number(n):
     even = 0
     odd = 0
@@ -12,5 +11,4 @@ def analyze_number(n):
         else:
             odd += 1
     return (even, odd)
-```
 ```

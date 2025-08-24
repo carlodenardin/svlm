@@ -1,3 +1,4 @@
+```python
 def extract LastDigit(n):
     if n > 0:
         even = 0
@@ -51,3 +52,4 @@ def removeLastDigitWithCounterAndExtractLastDigitWithCounterAndExtractLastDigitW
 
 def removeLastDigitWithCounterAndExtractLastDigitWithCounterAndExtractLastDigitWithCounterAndExtractLastDigitWithCounterAndExtractLastDigit(n):
     return extract
+```
