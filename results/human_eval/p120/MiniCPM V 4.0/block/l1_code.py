@@ -1,3 +1,0 @@
-def sort_and_return_last_k(lst, k):
-    sorted_lst = sorted(lst)
-    return sorted_lst[-k:]

@@ -1,5 +1,0 @@
-{"success": false, "error": "", "input": 1000, "output": "50025012512562313115157733110", "correct_output": "1"}
-{"success": false, "error": "", "input": 150, "output": "75753737189942110", "correct_output": "110"}
-{"success": false, "error": "", "input": 147, "output": "147737336189942110", "correct_output": "1100"}
-{"success": false, "error": "", "input": 333, "output": "333166838341412010552110", "correct_output": "1001"}
-{"success": false, "error": "", "input": 963, "output": "963481481240120603015157733110", "correct_output": "10010"}

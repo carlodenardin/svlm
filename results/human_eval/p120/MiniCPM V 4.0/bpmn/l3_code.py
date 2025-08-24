@@ -1,3 +1,0 @@
-def sort_and_return(lst, k):
-    lst.sort()
-    return lst[-k:]

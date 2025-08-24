@@ -1,9 +1,0 @@
-```python
-def convert_to_binary(n):
-    digits = [int(digit) for digit in str(n)]
-    binary_digits = [str(digit) for digit in digits]
-    binary_digits.sort()
-    binary_digits.reverse()
-    binary_string = ''.join(binary_digits)
-    return binary_string
-```

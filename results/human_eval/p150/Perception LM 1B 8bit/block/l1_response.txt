@@ -1,7 +1,0 @@
-```python
-def receive_in_input3(n, x, y):
-    if n is a prime number:
-        return x
-    else:
-        return y
-```

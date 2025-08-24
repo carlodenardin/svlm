@@ -1,3 +1,0 @@
-def get_largest_k_elements(lst, k):
-    lst_sorted = sorted(lst)
-    return lst_sorted[-k:]

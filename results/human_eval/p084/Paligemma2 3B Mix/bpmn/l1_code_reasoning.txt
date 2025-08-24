@@ -1,9 +1,0 @@
-I’m missing the actual reasoning content the small VLM provided. To translate it into executable Python code with the requested flowcharts (one main-body diagram and a diagram for each sub-algorithm), please provide:
-
-- The full reasoning steps or the problem-solving approach as the VLM would output.
-- The exact problem statement (so I can implement the solver accordingly).
-- Any constraints, input/output formats, and example cases.
-
-Once I have those, I’ll produce:
-- A Python function (or functions) that strictly follows the given reasoning.
-- ASCII flowcharts: one for the main algorithm and separate diagrams for each sub-algorithm, embedded in the code as docstrings or string literals.

@@ -1,1 +1,0 @@
-i will generate a code that checks if a number is prime .

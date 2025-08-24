@@ -1,9 +1,0 @@
-```python
-def sum_digits_of_n_and_convert_to_binary():
-    n = int(input("Enter a number: "))
-    binary = ""
-    while n > 0:
-        binary = str(n % 2) + binary
-        n = n // 2
-    return binary
-```</s>

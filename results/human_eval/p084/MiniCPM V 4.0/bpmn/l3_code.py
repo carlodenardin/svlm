@@ -1,9 +1,0 @@
-def compute_result(n):
-    sum = 0
-    res = ''
-    while n > 0:
-        sum += n % 10
-        n = n // 10
-    r = sum % 2
-    res += str(r)
-    return res

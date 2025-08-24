@@ -1,6 +1,0 @@
-def get_largest_k_elements(nums, k):
-    """
-    Given a list of integers `nums` and an integer `k`,
-    return the list of the largest `k` elements after sorting.
-    """
-    return sorted(nums)[-k:]

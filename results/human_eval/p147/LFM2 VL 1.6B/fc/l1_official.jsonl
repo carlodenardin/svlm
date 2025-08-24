@@ -1,4 +1,0 @@
-{"success": false, "error": "count_distinct_triples() missing 1 required positional argument: 'm'", "input": 5, "output": null, "correct_output": 1}
-{"success": false, "error": "count_distinct_triples() missing 1 required positional argument: 'm'", "input": 6, "output": null, "correct_output": 4}
-{"success": false, "error": "count_distinct_triples() missing 1 required positional argument: 'm'", "input": 10, "output": null, "correct_output": 36}
-{"success": false, "error": "count_distinct_triples() missing 1 required positional argument: 'm'", "input": 100, "output": null, "correct_output": 53361}

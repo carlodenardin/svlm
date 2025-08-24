@@ -1,9 +1,0 @@
-```python
-def calculate_sum_of_the_sum(num):
-    digits = num.split('')
-    result = 0
-    for digit in digits:
-        if digit.isdigit():
-            result = result + int(digit)
-    return result
-```</s>

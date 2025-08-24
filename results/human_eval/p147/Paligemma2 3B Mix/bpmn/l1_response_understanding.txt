@@ -1,3 +1,0 @@
-- Include a flowchart for the main body of the algorithm , and a separate diagram for each function.
-- Include a flowchart for each data-input and output container.
-- Include a flowchart for the final return value.

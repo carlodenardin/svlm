@@ -1,4 +1,0 @@
-{"success": false, "error": "", "input": 5, "output": [1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979], "correct_output": [1, 2, 6, 24, 15]}
-{"success": false, "error": "", "input": 7, "output": [1.0, 1.4142135623730951, 1.7320508075688772, 2.0, 2.23606797749979, 2.449489742783178, 2.6457513110645907], "correct_output": [1, 2, 6, 24, 15, 720, 28]}
-{"success": true, "error": "", "input": 1, "output": [1.0], "correct_output": [1]}
-{"success": false, "error": "", "input": 3, "output": [1.0, 1.4142135623730951, 1.7320508075688772], "correct_output": [1, 2, 6]}

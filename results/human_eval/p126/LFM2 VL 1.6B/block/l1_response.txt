@@ -1,6 +1,0 @@
-def process_list(input_list):
-    sorted_list = sorted(input_list, reverse=True)
-    if len(sorted_list) == 1:
-        return True
-    else:
-        return False

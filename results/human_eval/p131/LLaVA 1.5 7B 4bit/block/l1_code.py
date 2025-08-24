@@ -1,6 +1,0 @@
-def compute_product_of_the_odds():
-    odd_digits = [1, 3, 5, 7, 9]
-    product = 1
-    for odd_digit in odd_digits:
-        product *= odd_digit
-    return product

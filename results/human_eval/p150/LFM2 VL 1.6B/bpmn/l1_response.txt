@@ -1,6 +1,0 @@
-def process_input(x, y):
-    n_prime = x * y
-    if n_prime % 2 == 0:
-        return x
-    else:
-        return y

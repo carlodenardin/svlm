@@ -1,8 +1,0 @@
-def product_of_odd_digits(n):
-    odd_digits = [int(d) for d in str(abs(n)) if int(d) % 2 == 1]
-    if not odd_digits:
-        return 0
-    product = 1
-    for digit in odd_digits:
-        product *= digit
-    return product

@@ -1,7 +1,0 @@
-The algorithm's purpose is to sort a list of integers in ascending order. The input data required is a list of integers. The main logical flow is as follows:
-
-1. Receive a list of integers and variables k.
-2. Sort the list in ascending order.
-3. Return the last k elements.
-
-The expected output is the sorted list of integers.

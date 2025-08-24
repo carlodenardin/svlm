@@ -1,6 +1,0 @@
-def n_modulo(n, m):
-    n = n % m
-    if n == 0:
-        return n
-    else:
-        return n

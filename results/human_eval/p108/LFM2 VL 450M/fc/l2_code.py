@@ -1,6 +1,0 @@
-def calculate_sum(lst):
-    res = 0
-    for i in range(len(lst)):
-        if lst[i] == 0:
-            res += 1
-    return res

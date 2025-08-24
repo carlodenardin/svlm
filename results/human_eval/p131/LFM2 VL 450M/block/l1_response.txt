@@ -1,7 +1,0 @@
-```python
-def process_input(input):
-    if input == "positive":
-        return "Compute the product of the odd digits."
-    else:
-        return "Return the product if there are odd digits."
-```

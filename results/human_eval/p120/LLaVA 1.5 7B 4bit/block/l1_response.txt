@@ -1,5 +1,0 @@
-```python
-def sort_the_list():
-    # Your code here
-    pass
-```</s>

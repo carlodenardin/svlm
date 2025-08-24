@@ -1,8 +1,0 @@
-The algorithm's purpose is to determine whether an integer is odd or even. The input data required is an integer. The main logical flow is as follows:
-
-1. Receive an integer
-2. If the integer is odd, return 0
-3. If the integer is even, return the integer
-4. If the integer is neither odd nor even, return the integer
-
-The expected output is the integer itself.

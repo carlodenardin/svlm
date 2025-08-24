@@ -1,7 +1,0 @@
-def balanced_strings(strings):
-    balanced = False
-    for string in strings:
-        if check_balance(string):
-            balanced = True
-            break
-    return balanced

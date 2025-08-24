@@ -1,8 +1,0 @@
-```
-def convert_to_binary(n):
-    res = ""
-    while n:
-        res = str(n % 2) + res
-        n = n // 2
-    return res
-```

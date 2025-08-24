@@ -1,7 +1,0 @@
-```python
-def convert_to_binary(n):
-    if n == 0:
-        return '0'
-    else:
-        return '0' + convert_to_binary(n-1)
-```

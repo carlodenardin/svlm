@@ -1,7 +1,0 @@
-def inititalise_an_even_and_odd_counter():
-    counter = 0
-    while counter % 2 == 0:
-        counter += 1
-    while counter % 2 != 0:
-        counter += 1
-    return counter

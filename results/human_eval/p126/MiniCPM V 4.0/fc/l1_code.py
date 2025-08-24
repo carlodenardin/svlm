@@ -1,5 +1,0 @@
-def check_sorted_unique(lst):
-    if len(set(lst)) == len(lst) and sorted(lst) == lst:
-        return True
-    else:
-        return False

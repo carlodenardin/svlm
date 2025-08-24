@@ -1,5 +1,0 @@
-def rule(x):
-    if x == 'n':
-        return 'n'
-    else:
-        return 'n + x'

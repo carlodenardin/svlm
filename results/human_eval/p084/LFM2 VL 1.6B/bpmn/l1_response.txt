@@ -1,5 +1,0 @@
-```python
-def process_integer(n):
-    binary = bin(n)[2:]  # Convert to binary and remove '0b' prefix
-    return binary
-```

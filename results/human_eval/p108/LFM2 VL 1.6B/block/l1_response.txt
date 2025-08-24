@@ -1,7 +1,0 @@
-```python
-def count_digits(numbers):
-    count = 0
-    for number in numbers:
-        count += sum(int(digit) for digit in str(number) if digit.isdigit())
-    return count
-```

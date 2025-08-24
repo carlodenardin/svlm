@@ -1,4 +1,0 @@
-{"success": false, "error": "'int' object has no attribute 'split'", "input": 5, "output": null, "correct_output": [1, 2, 6, 24, 15]}
-{"success": false, "error": "'int' object has no attribute 'split'", "input": 7, "output": null, "correct_output": [1, 2, 6, 24, 15, 720, 28]}
-{"success": false, "error": "'int' object has no attribute 'split'", "input": 1, "output": null, "correct_output": [1]}
-{"success": false, "error": "'int' object has no attribute 'split'", "input": 3, "output": null, "correct_output": [1, 2, 6]}

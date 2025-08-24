@@ -1,7 +1,0 @@
-```python
-def compute product_of_odd_digits(n):
-    if n % 2 == 0:
-        return 0
-    else:
-        return n
-```

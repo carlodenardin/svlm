@@ -1,1 +1,0 @@
-i will generate a code that does the logic shown in the diagram .

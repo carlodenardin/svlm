@@ -1,5 +1,0 @@
-def process_list(lst):
-    if len(lst) == 1:
-        return lst[0]
-    else:
-        return lst[0] == 1 and lst[0] != 1 or (lst[0] == 1 and lst[0] != 1)

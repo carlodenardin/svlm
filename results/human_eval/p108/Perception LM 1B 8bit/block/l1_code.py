@@ -1,6 +1,0 @@
-def count_sum_of_digits(input_list):
-    count = 0
-    for num in input_list:
-        if num > 0:
-            count += 1
-    return count

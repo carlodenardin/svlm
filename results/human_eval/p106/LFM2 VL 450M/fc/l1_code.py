@@ -1,6 +1,0 @@
-def calculate_result(numbers):
-    if i < n:
-        result = sum(numbers)
-    else:
-        result = 0
-    return result

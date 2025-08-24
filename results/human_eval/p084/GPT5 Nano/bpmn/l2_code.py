@@ -1,7 +1,0 @@
-def sum_of_digits_to_binary(number):
-    sum_ = 0
-    res = ''
-    for digit in str(abs(number)):
-        sum_ += int(digit)
-    res = bin(sum_)[2:]
-    return res

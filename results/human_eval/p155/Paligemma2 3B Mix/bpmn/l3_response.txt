@@ -1,1 +1,0 @@
-code generation assistant - even/odd function .

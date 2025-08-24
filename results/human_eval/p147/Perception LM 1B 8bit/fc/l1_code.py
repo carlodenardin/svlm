@@ -1,8 +1,0 @@
-def count_sum_of_distinct_triples(n):
-    count = 0
-    for i in range(1, n):
-        if i == 1:
-            count += 1
-        else:
-            count += i * (i - 1) // 2
-    return count

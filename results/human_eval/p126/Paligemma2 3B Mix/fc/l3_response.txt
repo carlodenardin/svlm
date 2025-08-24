@@ -1,1 +1,0 @@
-i is for adding an item to a list .

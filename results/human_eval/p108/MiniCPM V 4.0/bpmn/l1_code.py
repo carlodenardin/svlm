@@ -1,6 +1,0 @@
-def count_positive_digit_sums(integer_list):
-    count = 0
-    for num in integer_list:
-        if sum((int(digit) for digit in str(num))) > 0:
-            count += 1
-    return count

@@ -147,11 +147,11 @@ def _process_task(args):
         return f"Warning: Response file not found for {problem}/{diagram}/L{level}"
     
     code, code_extracted, function_name = _extract_python_function(response)
-    code_path = os.path.join(response_dir, f"l{level}_code.py")
-    os.makedirs(response_dir, exist_ok=True)
+    
     
     if code_extracted:
-
+        code_path = os.path.join(response_dir, f"l{level}_code_reasoning.py")
+        os.makedirs(response_dir, exist_ok=True)
         with open(code_path, "w", encoding="utf-8") as f:
             f.write(code)
         

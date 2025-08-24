@@ -1,5 +1,0 @@
-def process_strings(input_list):
-    if input_list:
-        return 'Return No'
-    else:
-        return 'Return Yes'

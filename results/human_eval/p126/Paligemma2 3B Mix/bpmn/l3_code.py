@@ -1,1 +1,0 @@
-i is for adding an element to the front of a list .

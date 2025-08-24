@@ -1,7 +1,0 @@
-def calculate(x, j):
-    if x == 0 and j == 1:
-        return res + [x]
-    elif x == 1 and j == 1:
-        return (x + j, j + 1)
-    else:
-        return res + [x]

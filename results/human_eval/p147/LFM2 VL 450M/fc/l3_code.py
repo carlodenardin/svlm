@@ -1,7 +1,0 @@
-def process(n, i):
-    if i == 0:
-        count = 0
-    elif i < n:
-        count += 1
-    else:
-        return count

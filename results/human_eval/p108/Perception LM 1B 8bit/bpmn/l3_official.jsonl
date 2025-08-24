@@ -1,8 +1,0 @@
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [], "output": null, "correct_output": 0}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [-1, -2, 0], "output": null, "correct_output": 0}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [1, 1, 2, -2, 3, 4, 5], "output": null, "correct_output": 6}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [1, 6, 9, -6, 0, 1, 5, 963], "output": null, "correct_output": 5}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [1, 100, 98, -7, 1, -1], "output": null, "correct_output": 4}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [12, 23, 34, -45, -56, 0], "output": null, "correct_output": 5}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [0, 1], "output": null, "correct_output": 1}
-{"success": false, "error": "extract_ith_value_list() missing 1 required positional argument: 'i'", "input": [1], "output": null, "correct_output": 1}

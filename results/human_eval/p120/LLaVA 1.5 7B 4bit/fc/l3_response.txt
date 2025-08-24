@@ -1,5 +1,0 @@
-```python
-def sort_algorithm(input_list):
-    # Implement the sorting algorithm here
-    pass
-```</s>

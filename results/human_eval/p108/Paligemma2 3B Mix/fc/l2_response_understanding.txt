@@ -1,4 +1,0 @@
-- Include a flowchart for the main body of the algorithm, and a separate flowchart for each sub-algorithm.
-- Include a flowchart for each data structure used in the algorithm.
-- Include a flowchart for the final result.
-- Include a flowchart for the test case (if any) that verifies the algorithm's output.

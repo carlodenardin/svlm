@@ -1,8 +1,0 @@
-def process_list_of_integers(iterable):
-    res = []
-    for item in iterable:
-        if item == 0:
-            res.append(0)
-        else:
-            res.append(item)
-    return res

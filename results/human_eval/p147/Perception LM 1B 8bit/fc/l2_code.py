@@ -1,8 +1,0 @@
-def create_vector(n, A):
-    count = 0
-    for i in range(n):
-        if i < n - 1:
-            count += 1
-            if count % 3 == 0:
-                return A[i] + A[i] + A[k]
-    return A[n - 1] + A[n - 1] + A[k]

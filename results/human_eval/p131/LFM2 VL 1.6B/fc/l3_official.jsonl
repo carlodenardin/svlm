@@ -1,7 +1,0 @@
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 5, "output": null, "correct_output": 5}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 54, "output": null, "correct_output": 5}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 120, "output": null, "correct_output": 1}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 5014, "output": null, "correct_output": 5}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 98765, "output": null, "correct_output": 315}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 5576543, "output": null, "correct_output": 2625}
-{"success": false, "error": "calculate_discount() missing 1 required positional argument: 'n'", "input": 2468, "output": null, "correct_output": 0}

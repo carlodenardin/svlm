@@ -1,9 +1,0 @@
-The algorithm's purpose is to count the number of integers in a list of integers. The input data required is a list of integers. The main logical flow is as follows:
-
-1. Start
-2. Input a list of integers
-3. For each value of the list, count how many sum of digits are greater than 0
-4. Return the count
-5. End
-
-The expected output is the count of integers in the list.

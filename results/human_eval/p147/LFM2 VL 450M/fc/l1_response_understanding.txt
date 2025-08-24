@@ -1,9 +1,0 @@
-The algorithm's purpose is to count the number of distinct triangles in an image. The input data required is an image of a flowchart. The main logical flow is as follows:
-
-1. Start
-2. Create a vector of dimension n and initialize the values of n.
-3. Initialize the values of n.
-4. Count how many distinct triangles of a are counted.
-5. End
-
-The expected output is the count of distinct triangles in the image.

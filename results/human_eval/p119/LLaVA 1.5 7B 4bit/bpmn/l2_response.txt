@@ -1,4 +1,0 @@
-```python
-def return_yes():
-    return "yes"
-```</s>

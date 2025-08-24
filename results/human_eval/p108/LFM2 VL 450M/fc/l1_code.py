@@ -1,5 +1,0 @@
-def count_integers(input_list):
-    count = 0
-    for value in input_list:
-        count += 1
-    return count

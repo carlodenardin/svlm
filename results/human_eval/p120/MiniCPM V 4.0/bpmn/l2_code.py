@@ -1,3 +1,0 @@
-def process_list(lst, k):
-    lst.sort()
-    return lst[-k:]

@@ -1,5 +1,0 @@
-def calculate_term(n, x, y, i):
-    if n == 1:
-        return y
-    else:
-        return i * calculate_term(n - 1, x, y, i - 1)

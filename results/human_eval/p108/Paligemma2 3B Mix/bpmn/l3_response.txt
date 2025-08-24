@@ -1,1 +1,0 @@
-i will generate a code that does the following function : sum of the first n positive integers in the list .

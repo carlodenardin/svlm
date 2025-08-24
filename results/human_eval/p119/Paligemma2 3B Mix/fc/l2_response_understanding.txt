@@ -1,1 +1,0 @@
-- The algorithm should be written in C++ or another similar language.

@@ -1,9 +1,0 @@
-The algorithm's purpose is to convert a binary string into a string that can be stored as a byte array. The input data required is a binary string. The main logical flow is as follows:
-
-1. Start
-2. Input n as integer
-3. Sum the digits of n and convert it to binary
-4. Return result as string
-5. End
-
-The expected output is a binary string that can be stored as a byte array.

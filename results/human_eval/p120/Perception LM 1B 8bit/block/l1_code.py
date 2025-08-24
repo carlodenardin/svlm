@@ -1,3 +1,0 @@
-def sort_list(input_list, k):
-    input_list.sort(key=lambda x: x - k)
-    return input_list

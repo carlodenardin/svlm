@@ -1,5 +1,0 @@
-def at_least_one_digit(n):
-    if n >= 0:
-        return True
-    else:
-        return False

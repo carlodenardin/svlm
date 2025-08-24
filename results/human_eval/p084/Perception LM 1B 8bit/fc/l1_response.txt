@@ -1,7 +1,0 @@
-```python
-def sum_to_binary(n):
-    if n == 0:
-        return 0
-    else:
-        return n % 2 + sum_to_binary(n // 2)
-```

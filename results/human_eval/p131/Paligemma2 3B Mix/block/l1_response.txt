@@ -1,1 +1,0 @@
-i will generate a code that computes the product of the odd digits of an input number .

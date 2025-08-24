@@ -1,5 +1,0 @@
-{"success": false, "error": "", "input": 1000, "output": "11", "correct_output": "1"}
-{"success": false, "error": "", "input": 150, "output": "11", "correct_output": "110"}
-{"success": false, "error": "", "input": 147, "output": "11", "correct_output": "1100"}
-{"success": false, "error": "", "input": 333, "output": "11", "correct_output": "1001"}
-{"success": false, "error": "", "input": 963, "output": "11", "correct_output": "10010"}

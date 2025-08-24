@@ -1,7 +1,0 @@
-{"success": false, "error": "not all arguments converted during string formatting", "input": 5, "output": null, "correct_output": 5}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 54, "output": null, "correct_output": 5}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 120, "output": null, "correct_output": 1}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 5014, "output": null, "correct_output": 5}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 98765, "output": null, "correct_output": 315}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 5576543, "output": null, "correct_output": 2625}
-{"success": false, "error": "not all arguments converted during string formatting", "input": 2468, "output": null, "correct_output": 0}

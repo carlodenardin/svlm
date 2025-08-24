@@ -1,4 +1,0 @@
-- Include a flowchart for the main body of the algorithm , and a separate diagram for each function.
-- Include a flowchart for each data input and the expected output for each function.
-- Include a diagram for the main body of the algorithm and a separate diagram for each function.
-- Include a diagram for each data input and the expected output for each function.

@@ -1,2 +1,0 @@
-def sort_list(lst, k):
-    return sorted(lst, key=lambda x: x[k])

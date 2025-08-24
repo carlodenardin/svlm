@@ -1,8 +1,0 @@
-{"success": false, "error": "", "input": 7, "output": 7, "correct_output": [0, 1]}
-{"success": false, "error": "", "input": -78, "output": -6, "correct_output": [1, 1]}
-{"success": false, "error": "", "input": 3452, "output": 347, "correct_output": [2, 2]}
-{"success": false, "error": "", "input": 346211, "output": 34622, "correct_output": [3, 3]}
-{"success": false, "error": "", "input": -345821, "output": -34574, "correct_output": [3, 3]}
-{"success": false, "error": "", "input": -2, "output": 7, "correct_output": [1, 0]}
-{"success": false, "error": "", "input": -45347, "output": -4532, "correct_output": [2, 3]}
-{"success": false, "error": "", "input": 0, "output": 0, "correct_output": [1, 0]}

@@ -1,4 +1,0 @@
-def check_balance(combinations):
-    concatenated = ''.join(combinations)
-    balanced = all((c == ')' and c != concatenated[len(concatenated) - 1] for c in concatenated))
-    return 'No' if not balanced else 'Yes'

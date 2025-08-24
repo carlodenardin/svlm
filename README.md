@@ -5,15 +5,37 @@ This project provides a benchmark for evaluating multimodal models in the task o
 ## Project Structure
 ```
 project/
+├── data/human_eval				# Data folder
+│   ├── p084/               	# Specific single problem
+│	│   ├── block/
+│	│	│   ├── l1.drawio  		# Block diagram level 1 drawio
+│	│	│   ├── l1.drawio.png  	# Block diagram level 1 drawio
+│	│   ├── bpmn/
+│	│	│   ├── l1.drawio  		# BPMN diagram level 1 drawio
+│	│	│   ├── l1.drawio.png  	# BPMN diagram level 1 drawio
+│	│	│   ├── l2.drawio  		# BPMN diagram level 2 drawio
+│	│	│   ├── l2.drawio.png  	# BPMN diagram level 2 drawio
+│	│	│   ├── l3.drawio  		# BPMN diagram level 3 drawio
+│	│	│   ├── l3.drawio.png  	# BPMN diagram level 3 drawio
+│	│   ├── fc/
+│	│	│   ├── l1.drawio  		# FC diagram level 1 drawio
+│	│	│   ├── l1.drawio.png  	# FC diagram level 1 drawio
+│	│	│   ├── l2.drawio  		# FC diagram level 2 drawio
+│	│	│   ├── l2.drawio.png  	# FC diagram level 2 drawio
+│	│	│   ├── l3.drawio  		# FC diagram level 3 drawio
+│	│	│   ├── l3.drawio.png  	# FC diagram level 3 drawio
+│ 	+
+├── models/						# Models Information (technical report)
+├── problems/					# Problems Information (definition, solution, original and official test cases)
+├── results/human_eval			# Results obtained
 ├── src/
-│   ├── core/               # Core functionality (model management, code execution, GPU utilities)
-│   ├── data/               # Data loading and processing
-│   ├── ui/                 # Gradio UI components and main interface
-│   ├── utils/              # Shared constants and utilities
-├── main.py                 # Application entry point
-├── css/                    # Custom CSS for Gradio interface
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
+│   ├── core/               	# Core functionality (model management, code execution, GPU utilities)
+│   ├── ui/                 	# Gradio interface and styles
+│   ├── utils/              	# Shared constants and utilities
+├── main.py                 	# Application entry point
+├── css/                    	# Custom CSS for Gradio interface
+├── requirements.txt        	# Project dependencies
+└── README.md               	# Project documentation
 ```
 
 ## Installation

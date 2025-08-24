@@ -1,5 +1,0 @@
-def check_list(lst):
-    if sorted(lst) != lst or len(set(lst)) != len(lst):
-        return False
-    else:
-        return True

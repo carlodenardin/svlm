@@ -1,9 +1,0 @@
-The algorithm's purpose is to count the even and odd digits in a given number. The input data required is the number to be counted. The main logical flow is as follows:
-
-1. Start
-2. Count the even and odd digits in the number
-3. Count the even and odd digits in the even numbers
-4. Count the even and odd digits in the odd numbers
-5. End
-
-The expected output is the count of even and odd digits in the given number.

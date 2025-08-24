@@ -1,4 +1,0 @@
-```python
-def sort_the_list_in_ascending_order():
-    # Add your code here
-```</s>
