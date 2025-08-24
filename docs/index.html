@@ -1,1 +1,25 @@
-<h1>DRAFT</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico Dinamico Modelli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Analisi Performance Modelli</h1>
+    
+    <div class="filtri">
+        <label for="filtro-diagramma">Filtra per Diagramma:</label>
+        <select id="filtro-diagramma"></select>
+        
+        <label for="filtro-livello">Filtra per Livello:</label>
+        <select id="filtro-livello"></select>
+    </div>
+
+    <div id="grafico"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
