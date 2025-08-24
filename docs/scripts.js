@@ -12,8 +12,7 @@ const svg = d3.select("#grafico")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // --- 2. CARICAMENTO E PREPARAZIONE DEI DATI ---
-d3.csv("dati.csv").then(function(data) {
-
+d3.csv("single_response.csv").then(function(data) {
     // Convertiamo le stringhe numeriche in numeri
     data.forEach(d => {
         d.rateo_successo = +d.rateo_successo; // Il '+' converte in numero
