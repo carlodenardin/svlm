@@ -1,7 +1,4 @@
-progsys/
 .env
 results/
-models/
-data/
 
 __pycache__/
