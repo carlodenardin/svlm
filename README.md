@@ -1,6 +1,6 @@
 # Small Vision Language Model - Image Text to Code
 
-This project provides a benchmark for evaluating multimodal models in the task of code generation from graphical representations using problems from HumanEval.
+This project investigates the capability of small vision-language models (SVLMs) to generate functional code by interpreting algorithmic diagrams. The core question is whether a small model can look at a diagram and produce correct, executable Python code.
 
 ## Project Structure
 ```
@@ -37,20 +37,18 @@ project/
 └── README.md               	# Project documentation
 ```
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/carlodenardin/svlm.git
-   cd project
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the application:
-   ```bash
-   python main.py
-   ```
+## The Setup
+
+The evaluation uses a subset of **10 problems** from the **HumanEval**. For each problem, a set of diagrams was created to serve as the models' input:
+* Flowcharts (3 levels of detail)
+* BPMN diagrams (3 levels of detail)
+* Block diagrams (1 level of detail)
+
+The methodology involves two primary tests:
+
+1.  **Direct Code Generation**: The model receives only a diagram and must generate a Python function. The output is then validated against a balanced test dataset to determine its **Acceptance Rate**.
+2.  **Reasoning Test**: This two-step process first prompts the SVLM to explain the diagram's logic in plain English. This text-based reasoning is then passed to a more powerful model (GPT-5-nano) to generate the final code. This test assesses whether the SVLM correctly understood the algorithm, separate from its ability to write code.
+
 
 ## Available Models
 
@@ -66,6 +64,34 @@ project/
 
 🖥️ **Hardware Note**  
 All the small vision-language models listed above were successfully run on a **single NVIDIA RTX 5080ti**, without requiring special optimizations.
+
+## Results
+
+* **Gemma 3 4B** (and its 4-bit quantized version) achieved solid results, proving suitable for this kind of task.
+* **MiniCPM V 4.0**, designed for on-device use, shows promising capabilities.
+* **LLaVA** and **PaliGemma** were found to be unsuitable for this task, likely because they are designed for different use cases like image captioning.
+* As diagram complexity and detail level increase, model performance generally decreases.
+* Some of the smallest models, like **LFM2 VL**, demonstrate a surprising ability to *explain* the algorithm's logic but often fail at basic implementation details, such as using `print` instead of `return` or getting stuck in infinite loops.
+
+Other results and visualization will provided in the next days.
+
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/carlodenardin/svlm.git
+   cd project
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   python main.py
+   ```
+
+In the next days implementation for bulk tests will be provided. Use gradio for on fly tests. GPT requires the API in the env file
 
 ## Gradio Interface
 
